@@ -1,0 +1,2 @@
+# nms-numtheory
+LU NMS - Neklātienes matemātikas skola (the distance learning of mathematics at the University of Latvia) offers IMO-style olympiad training to Latvian high-school students (typically 16-18 years old). The courseware documents (handouts, worksheets, exams and tests, olympiad problems) in this repository are in Latvian mostly - in open formats like LaTeX, Markdown or RST. Some Python scripts or visualizations could be used. Our focus is Number Theory - it is one out of four math olympiad topics - along with Algebra, Geometry and Combinatorics.
