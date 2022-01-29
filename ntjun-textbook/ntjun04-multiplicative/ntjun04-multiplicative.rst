@@ -315,6 +315,110 @@ Dalītāju summas funkcija
 
 
 
+Ieslēgšanas-Izslēgšanas princips
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Piemērs:** 
+  Skolā pavisam ir ap :math:`1000` bērni. 300 mācās vācu valodu, 250 mācās franču valodu, :math:`150` mācās abas.
+  Cik daudzi nemācās nevienu?
+  
+**Pierādījums:** 
+  Divām kopām var izmantot ieslēgšanas izslēgšanas principu: 
+  
+  .. image:: figs-ntjun04-multiplicative/two-set-inclusion-exclusion.png
+     :width: 2in
+     
+  Divām kopām ieslēgšanas-izslēgšanas metode izskatītos sekojoši:
+  
+  .. math::
+  
+    |A \cup B| = |A| + |B| - |A \cap B|. 
+    
+  Ievietojam uzdevumā dotos skaitļus, lai atrastu, cik ir skolēnu, kuri mācās vismaz vienu svešvalodu (vācu vai franču): 
+  
+  .. math::
+  
+    |A \cup B| = 300 + 250 - 150 = 400. 
+
+    
+  Tātad to, kuri nemācās nevienu no šīm svešvalodām ir :math:`1000 - 400 = 600`. 
+  
+  :math:`\square`
+
+
+**Piemērs:** 
+  Zīmējumā attēlota kopa :math:`U` (universs) un trīs tā apakškopas :math:`A,B,C`. 
+  Zināms elementu skaits katrā no kopām (un arī to šķēlumos pa divām vai trim).
+  Atrast elementu skaitu visu trīs kopu apvienojumā.
+
+  .. image:: figs-ntjun04-multiplicative/venn-diagram-3.png
+     :width: 1.2in
+
+**Risinājums:** 
+
+  .. math::
+  
+    |A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|.
+
+
+
+Eilera funkcija
+^^^^^^^^^^^^^^^^^
+
+Skaitļu teorijā bieži ir vieglāk noteikt dažādu skaitļu kopu šķēlumu
+nevis apvienojumu. Apvienojuma elementu saskaitīšanai
+var noderēt ieslēgšanas-izslēgšanas princips.
+
+**Piemērs:**
+  Zīmējumā attēloti veselie skaitļi :math:\{1,2,\ldots,210\}`. 
+  Krāsaino ovālu iekšpusē ir skaitļi, kuri dalās attiecīgi ar
+  :math:`2`, :math:`3`, :math:`5`, :math:`7`. 
+  Skaitlis :math:`210 = 2 \cdot 3 \cdot 5 \cdot 7` 
+  ir pirmo četru pirmskaitļu reizinājums.
+
+  .. image:: figs-ntjun04-multiplicative/venn-diagam-4augmented.png
+     :width: 2.4in
+     
+  * Atrast skaitļu piemērus apgabalā ar zilo bumbulīti. 
+  * Cik ir pelēkā un zaļā ovāla šķēlumā?
+  * Cik ir ārpus visiem ovāliem? Cik no veselajiem skaitļiem 
+    intervālā :math:`[1;100]` ir tādi, kas nedalās ne ar :math:`2`, 
+    ne ar :math:`3`, ne ar :math:`5`, ne ar :math:`7`?
+
+
+**Risinājums:** 
+
+  .. math::
+  
+    \begin{array}{rl}
+      & 210 - \frac{210}{2} - \frac{210}{3} - \frac{210}{5} - \frac{210}{7} + 
+    \frac{210}{2 \cdot 3} + \frac{210}{2 \cdot 5} + \frac{210}{2 \cdot 7} + \frac{210}{3 \cdot 5} + \frac{210}{3 \cdot 7} + \frac{210}{5 \cdot 7} - 
+    \frac{210}{2 \cdot 3 \cdot 5} - \frac{210}{2 \cdot 3 \cdot 7} - \frac{210}{2 \cdot 5 \cdot 7} - \frac{210}{3 \cdot 5 \cdot 7} +
+    \frac{210}{2 \cdot 3 \cdot 5 \cdot 7} = \\
+    = & 210 \cdot \left( 1 - \frac{1}{2}\right) \cdot \left( 1 - \frac{1}{2}\right) \cdot \left( 1 - \frac{1}{5}\right) \cdot \left( 1 - \frac{1}{7}\right).\\
+    \end{array}
+
+
+
+
+     
+
+**Piemērs:**
+  Pieņemsim, ka skaitlim :math:`n` ir tikai :math:`3` pirmskaitļu dalītāji :math:`p,q,r`.
+  Ar :math:`M_a` apzīmēsim, cik intervālā :math:`[1;n]` ir skaitļa :math:`a` daudzkārtņu.
+
+  Iegūsim, šādu sakarību:
+
+  .. math::
+
+    \begin{array}{rl}
+    \varphi(n) = & n - (M_p + M_q + M_r) + (M_{pq} + M_{pr} + M_{qr}) - M_{pqr} = \\
+    = &  n - \left( \frac{n}{p} + \frac{n}{q} + \frac{n}{r} \right) +
+    \left( \frac{n}{pq} + \frac{n}{pr} + \frac{n}{qr} \right) - \frac{n}{pqr} =
+    n \left(1 - \frac{1}{p} \right) \left(1 - \frac{1}{q} \right) \left(1 - \frac{1}{r} \right).\\
+    \end{array}
+
+
 **Teorēma:**
   Eilera funkcija :math:`\varphi(n)` ir multiplikatīva.
 
@@ -338,40 +442,20 @@ Dalītāju summas funkcija
 
     \begin{array}{l}
     \varphi(10) = \varphi(5) \cdot \varphi(2) = (5 - 1)(2-1) = 4. \\
+    \varphi(70) = \varphi(2) \cdot \varphi(5) \cdot \varphi(7) = (2-1)(5-1)(7-1) = 24.\\
     \varphi(100) = \varphi(25) \cdot \varphi(4) = (25 - 5)(4-2) = 40. \\
     \varphi(2012)=\varphi(4) \cdot \varphi(503)=(2^2-2^1)(503-1)=2 \cdot 502=1004.
     \end{array}
 
 
+**Piemērs:** 
+  Attēlā dots Eilera funkcijas grafiks. 
+  Tās īpašības analizētas arī `<https://mathworld.wolfram.com/TotientFunction.html>`_.
+  
+  .. image:: figs-ntjun04-multiplicative/euler-phi.png
+     :width: 3in
 
-Eilera funkcija un ieslēgšanas-izslēgšanas princips
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Skaitļu teorijā bieži ir vieglāk noteikt dažādu skaitļu kopu šķēlumu
-nevis apvienojumu. Apvienojuma elementu saskaitīšanai
-var noderēt ieslēgšanas-izslēgšanas princips.
-
-**Piemērs:**
-  Cik no veselajiem skaitļiem intervālā :math:`[1;100]` ir tādi,
-  kas nedalās ne ar 2, ne ar 3, ne ar 5, ne ar 7?
-
-  .. image:: figs-ntjun04-multiplicative/venn-diagram-4.png
-     :width: 2.4in
-
-**Piemērs:**
-  Pieņemsim, ka skaitlim :math:`n` ir tikai :math:`3` pirmskaitļu dalītāji :math:`p,q,r`.
-  Ar :math:`M_a` apzīmēsim, cik intervālā :math:`[1;n]` ir skaitļa :math:`a` daudzkārtņu.
-
-  Iegūsim, šādu sakarību:
-
-  .. math::
-
-    \begin{array}{rl}
-    \varphi(n) = & n - (M_p + M_q + M_r) + (M_{pq} + M_{pr} + M_{qr}) - M_{pqr} = \\
-    = &  n - \left( \frac{n}{p} + \frac{n}{q} + \frac{n}{r} \right) +
-    \left( \frac{n}{pq} + \frac{n}{pr} + \frac{n}{qr} \right) - \frac{n}{pqr} =
-    n \left(1 - \frac{1}{p} \right) \left(1 - \frac{1}{q} \right) \left(1 - \frac{1}{r} \right).\\
-    \end{array}
 
 
 
@@ -581,7 +665,6 @@ Sacensību uzdevumi
 
   Hipotēze: :math:`f(n) = 2^{\omega(n)}`, kur ar :math:`\omega(n)` apzīmē skaitļa :math:`n`
   dažādo pirmskaitļu dalītāju skaitu, neņemot vērā to, kādā pakāpē tie ietilpst skaitlī :math:`n`. 
-
 
 
 
