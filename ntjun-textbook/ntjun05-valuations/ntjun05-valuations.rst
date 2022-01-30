@@ -66,7 +66,21 @@ tā ir zāģveidīga trepīte, kurā ar regulārām atstarpēm rodas arvien gar�
   * :math:`\nu_p(a) = \infty` tad un tikai tad, ja :math:`a = 0`. (Visiem citiem veseliem skaitļiem 
     atrodas tik augsta pirmskaitļa :math:`p` pakāpe :math:`p^{k+1}`, ka :math:`a` vairs nedalās ar :math:`p^{k+1}`.)
   * :math:`\nu_p(ab) = \nu_p(a) + \nu_p(b)`. (Augstākās pakāpes saskaitās, ja abus skaitļus :math:`a` un :math:`b` reizina.)
-  * :math:`\nu_p(a + b) \geq \min(\nu_p(a), \nu_p(b))`. Šajā izteiksmē pastāv vienādība, ja \math:`\nu_p(a) \neq \nu_p(b)`. 
+  * :math:`\nu_p(a + b) \geq \min(\nu_p(a), \nu_p(b))`. Šajā izteiksmē pastāv vienādība, ja :math:`\nu_p(a) \neq \nu_p(b)`. 
+
+
+Valuāciju funkcijas :math:`\nu_2(n)`, :math:`\nu_3(n)` un citas nevar būt periodiskas, jo laiku pa laikam 
+parādās arvien lielākas vērtības, piemēram, :math:`\nu_2(2^k) = k`. No otras puses, to 
+grafikiem piemīt savdabīga simetrija. Arī katrai konstantei :math:`C>0` funkcija :math:`f(n) = \min(C, \nu_2(n))` ir periodiska
+(periodiskumu var panākt, ja lielās vērtības \"apgriež\" tā, lai tās nepārsniegtu :math:`C`).
+
+
+
+.. figure:: figs-ntjun05-valuations/2-valuations-n.png
+   :width: 3in
+
+   Funkcijas :math:`\nu_2(n)` grafiks (lokālie maksimumi pie :math:`n=64` un :math:`n=128`).
+
 
 
 
@@ -87,9 +101,35 @@ Ležandra teorēma
   (Izskatās, ka šajā vienādībā ir bezgalīga summa, bet jebkurām :math:`n` un :math:`p` vērtībām 
   šajā summā ir tikai galīgs skaits nenulles saskaitāmo.)
 
-  .. image:: figs-ntjun05-valuations/legendre-example-2.png
+  .. figure:: figs-ntjun05-valuations/legendre-example-2.png
      :width: 2.5in
-     
+
+     Funkcijas :math:`\nu_2(n!)` tabula.
+
+
+**Apgalvojums:** 
+  Lielākā :math:`2` pakāpe, ar ko dalās :math:`n!` ir 
+  :math:`n - S_2(n)`, kur ar :math:`S_2(n)` apzīmēta :math:`n` ciparu summa divnieku pierakstā. 
+  
+  
+**Piemērs:** 
+  Skaitļa :math:`100` divnieku pieraksts ir :math:`\mathtt{1100100}_2`, tādēļ ciparu summa ir 
+  :math:`S_2(100) = S_2(\mathtt{1100100}_2) = 3`. 
+  Iegūstam, ka :math:`\nu_2(100!) = 100 - 3 = 97`. 
+
+
+
+
+
+**Lemma:** 
+  Starp pirmajiem :math:`m` naturālajiem skaitļiem ir tieši 
+  :math:`\lfloor m/n \rfloor` skaitļa :math:`n` daudzkārtņu.
+  
+  (Ar :math:`\lfloor x \rfloor` apzīmē skaitļa apakšējo veselo daļu -- 
+  vislielāko veselo skaitli, kas nepārsniedz :math:`x`.) 
+
+
+
 
 **Piemērs:** 
   Ar kādu lielāko :math:`2` pakāpi dalās skaitlis :math:`36!`? 
@@ -97,6 +137,18 @@ Ležandra teorēma
   .. image:: figs-ntjun05-valuations/legendre-36-factorial.png
      :width: 3in
      
+
+  Pārformulēsim šo citādi: Iztēlosimies, ka :math:`36!` sadalīts pirmreizinātājos: 
+
+  .. math:: 
+  
+    36! = 2^{k_2} \cdot 3^{k_3} \cdot 5^{k_5} \cdot 7^{k_7} \cdot \ldots \cdot 31^{k_{31}}. 
+
+
+  Atradīsim :math:`k_2` jeb kāpinātāju pie pirmskaitļa :math:`2` šajā izteiksmē.
+  (Kāpēc :math:`36!` dalās tikai ar pirmajiem :math:`11` pirmskaitļiem no :math:`2` līdz :math:`31`?)
+
+
   Zīmējumā redzami visi reizinātāji, kuri veido :math:`36!`. 
   Tie, kuri dalās ar :math:`2`, attēloti ar klucīšu stabiņu, kas
   rāda, cik divniekus (kā pirmreizinātājus) šis skaitlis pievienojis
@@ -108,8 +160,42 @@ Ležandra teorēma
   Rēķinot faktoriālu, klucīši summējas pa kolonnām. 
   Ležandra formula tos saskaita pa rindiņām (vispirms sarkanos, tad oranžos, 
   utt.)
+  
+  Šī diagramma ilustrē svarīgu metodi: Ja ir jānovērtē veselu skaitļu summa, ko var 
+  saskaitīt divos dažādos veidos (piemēram, krāsaino klucīšu zīmējumā gan pa kolonnām, gan pa rindiņām), 
+  to bieži ir vērts mēģināt darīt, lai iegūtu ērtāku izteiksmi. 
+  Šoreiz ietaupījums ir acīmredzams – tai vietā lai saskaitītu :math:`18` stabiņos esošos klucīšus, 
+  pietiek (rindiņās) summēt tikai piecus skaitļus, kurus turklāt vieglāk izrēķināt precīzi.
+  Lielākiem :math:`n` Ležandra formulas ietaupījums ir vēl lielāks:
+  Ja :math:`n = 1000`, tad saskaitāmo skaits samazinās no :math:`500` līdz :math:`10`, 
+  jo jau :math:`1000/2^{10} < 1`. 
 
 
+  Lietojot Ležandra formulu arī citiem pirmskaitļiem, :math:`p>2`, iegūstam šādu sadalījumu pirmreizinātājos:
+  
+  .. math::
+  
+    36! = 2^{34} \cdot 3^{17} \cdot 5^{8} \cdot 7^{5} \cdot 11^{3} \cdot 13^{2} \cdot 17^2 \cdot 19^1 \cdot 23^1 \cdot 29^1 \cdot 31^1.
+    
+  Šis skaitlis beidzas ar :math:`\min(\nu_2(36!), \nu_5(36!)) = \min(34,8) = 8` nullēm -- katra nulle decimālpierakstā rodas, sareizinoties 
+  pirmreizinātājam :math:`2` ar pirmreizinātāju :math:`5`. 
+  Skaitļa :math:`36!` tiešs aprēķins, sareizinot pirmos :math:`36` naturālos skaitļus, rāda to pašu:
+  
+  
+  .. code-block:: python
+  
+    >>> from functools import reduce
+    >>> reduce(lambda a, b: a*b, range(1,37))
+    371993326789901217467999448150835200000000
+
+
+
+**Piemērs:** 
+  Atrast robežas (skaitļus, kuriem neierobežoti tuvojas izteiksme zem robežas tad, ja :math:`n` kļūst ļoti liels):
+  
+  * :math:`{\displaystyle \lim_{n \rightarrow \infty} \frac{\nu_2(n!)}{n}}`.
+  * :math:`{\displaystyle \lim_{n \rightarrow \infty} \frac{\nu_3(n!)}{n}}`.
+  * :math:`{\displaystyle \lim_{n \rightarrow \infty} \frac{\nu_5(n!)}{n}}`.
 
 
 Kummera teorēma
@@ -135,14 +221,125 @@ un izmantojot Ležandra teorēmu.
   tie neattiecas uz veselo skaitļu funkciju tēmu.  
 
 
+**Piemērs:** 
+  Zīmējumā attēlots Paskāla trijstūris, kurā iepelēkotas visas nepāru šūnas. 
+  Pēc Kummera teorēmas tās ir visas tās kombinācijas pa :math:`m` no :math:`n`, 
+  kam :math:`m` var saskaitīt :math:`n-m` binārajā pierakstā pilnīgi bez pārnesumiem.
+  
+  
+.. image:: figs-ntjun05-valuations/binomial-coefficients.png
+   :width: 2in
+
+
+**Apgalvojums:** 
+  Dots naturāls skaitlis :math:`n`. Pierādīt, ka jebkuru :math:`n` pēc kārtas ņemtu naturālu 
+  skaitļu reizinājums dalās ar :math:`n!`. 
+  
+**Pierādījums:** 
+  Apzīmēsim lielāko no reizinātajiem skaitļiem ar :math:`m`. Tad jāpierāda, ka
+
+  .. math::
+  
+    \frac{m(m-1)(m-2)\cdots{}(m-n+1)}{n!} \in \mathbb{N}.
+
+  Pierakstītā izteiksme sakrīt ar :math:`C_m^n = \frac{m!}{n!(m-n)!}`. 
+  Tā kā kombinācijas (pie :math:`n\leq m`) apzīmē, cik veidos no :math:`m` elementiem 
+  var izvēlēties nesakārtotu izlasi ar :math:`n` elementiem, kombinācijas 
+  vienmēr ir naturāli skaitļi.
+
+
+**Piemērs:** 
+  Zīmējumā attēlots funkcijas :math:`f(n) = \nu_3(C_n^7)` grafiks. 
+  Vairumam skaitļu kombinācija pa :math:`7` no :math:`n` dalās ar 
+  nelielām :math:`3` pakāpēm. 
+
+
+.. image:: figs-ntjun05-valuations/kummer-graph.png
+   :width: 3in
+
+
+Lūkas teorēma
+^^^^^^^^^^^^^^^
+
+**Teorēma (Lucas):** 
+  Visiem nenegatīviem :math:`m` un :math:`n`, un jebkuram pirmskaitlim :math:`p`, ir spēkā šāda sakarība:
+
+  .. math::
+  
+    \binom{m}{n} \equiv \prod_{i = 0}^k \binom{m_i}{n_i} \pmod {p},
+    
+  kur :math:`n = n_k p^k + n_{k-1} p^{k-1} + \ldots + n_1 p + n_0`, 
+  bet  :math:`m = m_k p^k + m_{k-1} p^{k-1} + \ldots + m_1 p + m_0`.
+
+
+
+
+
+**Piemērs:**
+  Attēlā dots Paskāla trijstūris (:math:`k`-tais elements šī trijstūra :math:`n`-tajā rindiņā
+  attēlo, cik dažādos veidos var izvēlēties :math:`k` elementus no :math:`n` elementu kopas). 
+  Šis Paskāla trijstūris
+  izkrāsots :math:`3` krāsās (aplītis ir sarkans, ja tajā vietā ierakstītais skaitlis dalās ar :math:`3`; 
+  aplītis ir melns, ja dod atlikumu :math:`1`, dalot ar :math:`3`, aplītis ir zaļš, 
+  ja dod atlikumu :math:`2`, dalot ar :math:`3`).
+  Atrast, cik ir melno aplīšu šī Paskāla trijstūra :math:`1000` rindiņā: Cik daudzi no 
+  visiem :math:`1001` skaitļiem šajā rindiņā dod atlikumu :math:`1`, dalot ar :math:`3`.
+
+
+.. image:: figs-ntjun05-valuations/pascal-triangle.png
+   :width: 2in
+  
+
+**Risinājums:** 
+  :math:`\mathtt{16}`. 
+  
+  Pierakstām skaitli :math:`1000 = 729 + 243 + 27 + 1 = 3^6 + 3^5 + 3^3 + 1 = \mathtt{1101001}_3` 
+  trijnieku skaitīšanas sistēmā. 
+
+  Aplūkosim vispirms kombinācijas :math:`C_{999}^k`. 
+  Pamatosim, ka ir tieši :math:`8` vērtības, kurām :math:`C_{999}^k \equiv 1 \pmod{3}` 
+  jeb rodas melni aplīši (visām pārējām :math:`C_{999}^k` dalās ar :math:`3`: šie aplīši ir sarkani).
+
+  .. math::
+
+    C_{999}^0 \equiv C_{999}^{27} \equiv C_{999}^{243} \equiv C_{999}^{270} \equiv C_{999}^{729} \equiv C_{999}^{756} \equiv C_{999}^{972} \equiv C_{999}^{999} \equiv 1 \pmod{3}.
+
+  Izmantojot Kummera teorēmu var pamatot, ka visiem citiem :math:`k`, 
+  :math:`C_{999}^k \equiv 0 \pmod{3}`. 
+  Tas ir tāpēc, ka visos citos gadījumos iegūt skaitli, kura decimālpieraksts ir :math:`999` 
+  (:math:`999_{10} = \mathtt{1101000}_3`)
+  var tikai saskaitot :math:`k` un :math:`999-k` tā, 
+  ka rodas pārnesums (saskaitot stabiņā trijnieku skaitīšanas sistēmā). 
+  Ir tikai :math:`8` veidi kā sadalīt trīs vieniniekus no :math:`\mathtt{1101000}_3` pa 
+  abiem saskaitāmajiem tā, lai nerastos neviens pārnesums.
+
+  Savukārt visas astoņas vērtības, kas minētas kongruencē (sk. vienādojumu augstāk) ir vienādas ar :math:`1` (nevis ar :math:`2`)
+  saskaņā ar Lūkas teorēmu. 
+
+  Zem Paskāla trijstūra rindiņas, kurā ir visi :math:`C_{999}^k`, 
+  ir nākamā rindiņa, kurā ir visi :math:`C_{1000}^k`. Šajā 
+  rindiņā melno elementu būs divreiz vairāk, jo katrs no astoņiem melnajiem, 
+  kas minēti (augšējā vienādojumā) 
+  saskaitīsies ar sarkano kaimiņu kreisajā un arī labajā pusē. Kopā būs :math:`16` melni elementi
+  (bet zaļo - tādu :math:`C_{1000}^k`, kas kongruenti ar :math:`2` pēc moduļa :math:`3`) nebūs. 
+  To secina vai nu no iepriekšējās rindiņas, vai arī tieši izmantojot Lūkas teorēmu.
+
+
+
+
+
 
 Kāpinātāja pacelšanas lemmas
 -------------------------------
+
 
 Kāpinātāja pacelšanas lemmas (Lifting the Exponent Lemmas) ir vairāki savstarpēji 
 saistīti rezultāti, kuri ļauj atrast :math:`p`-valuācijas divu skaitļu pakāpju 
 starpībai vai summai. 
 
+
+Valuācijas nepāra pirmskaitļiem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 Šajā nodaļā aplūkosim vienkāršāko gadījumu, ja :math:`p` ir nepāra skaitlis. 
@@ -160,6 +357,28 @@ starpībai vai summai.
     
   Šo skaitli var sadalīt vairākos reizinātājos (katrs reizinātājs dalās ar :math:`3`, bet nedalās ar :math:`9`
   (var pārbaudīt ar ciparu summām). Tas ļauj droši noskaidrot, ar kādu :math:`3` pakāpi dalās :math:`N`.
+
+
+
+**Piemērs:** 
+  Zīmējam grafiku veselu skaitļu funkcijai :math:`f(k) = \nu_3(10^k - 1)`, kur :math:`k \in \mathbb{N}`.
+
+  .. math::  
+  
+    \begin{array}{ll}
+    9 = 3 \cdot 3, & f(1) = 2,\\
+    99 = 9 \cdot 11, & f(2) = 2,\\
+    999 = 9 \cdot 111, & f(3) = 3,\\
+    9999 = 9 \cdot 1111, & f(4) = 2,\\
+    99999 = 9 \cdot 11111, & f(5) = 2,\\
+    999999 = 9 \cdot 1001 \cdot 111, & f(6) = 3,\\
+    9999999 = 9 \cdot 1111111, & f(7) = 2,\\
+    99999999 = 9 \cdot 11111111, & f(8) = 2,\\
+    999999999 = 9 \cdot 1001001 \cdot 111, & f(9) = 4.\\
+    \end{array}
+
+  Katru no skaitļiem, kas uzrakstīti ar visiem deviņniekiem, mēģinām dalīt reizinātājos tā, 
+  lai katram reizinātājam (:math:`111` utml.) būtu viegli atrodama :math:`3`-valuācija.
 
 
 
@@ -269,10 +488,58 @@ izteiksmi :math:`x^n - y^n`, kur var izteikt :math:`n = k \cdot p^m`
 (kur :math:`k` nedalās ar :math:`p`):
 
 .. image:: figs-ntjun05-valuations/lte-lemma-proof.png
-   :width: 3in
+   :width: 4in
 
 
 
+**Piemērs:** 
+  Ar kādu lielāko skaitļa :math:`41` pakāpi dalās šāds skaitlis:
+  
+  .. math::
+  
+    \underbrace{9999\ldots{}9999}_{\mbox{$8405$ deviņnieki}}. 
+
+**Risinājums:** 
+  Citiem vārdiem, mums jāatrod :math:`\nu_{41}(10^{8405} - 1)`. 
+  Dalām reizinātājos :math:`8401 = 5 \cdot 41^2`. 
+  
+  Lemmu 1 nevar pielietot uzreiz izteiksmei :math:`10^{5 \cdot 41^2} - 1^{5 \cdot 41^2}`, jo :math:`10-1` nedalās ar :math:`41`.   
+  Par laimi, jau :math:`99999 = 10^5 - 1` dalās ar :math:`41`. Pārveidojam izteiksmi: 
+  
+  .. math::
+  
+    \nu_{41} (10^{5 \cdot 41^2} - 1^{5 \cdot 41^2}) = (100000^{41^2} - 1^{5 \cdot 41^2}) = 
+    \nu_{41} (10000 -1) + \nu_41(41^2) = 3. 
+    
+  Tātad minētais skaitlis dalās ar :math:`41^3` (bet nedalās ar lielāku :math:`41` pakāpi).
+
+
+
+**Piemērs:**
+  Katram dotajam naturālam skaitlim :math:`k>0`
+  atrast iespējami mazu :math:`n` vērtību, kurai :math:`10^n - 1` dalās ar :math:`3^k`, izmantojot 
+  divas dažādas metodes: 
+  
+  * Eilera teorēmu
+  * LTE Lemmu 1
+  
+**Risinājums:**
+  Ievērosim, ka dotajam :math:`3^k` Eilera funkcijas vērtība ir :math:`\varphi(3^k) = 3^k - 3^{k-1}`. 
+  Pēc Eilera teorēmas, skaitlis :math:`10^{\varphi(3^k)} - 1` garantēti dalīsies ar :math:`3^k`. 
+  Savukārt pēc kāpinātāja pacelšanas lemmas mums vajag lai :math:`\nu_3(10-1) + \nu_3(n)`. 
+  
+  Apkoposim iegūtās vērtības tabulā (skaitļus formā :math:`10^n-1`, kas dalās ar vajadzīgo :math:`3` pakāpi): 
+  
+  ================  ================  ================  ===================  ===================  ===================  ===================
+  :math:`k`         :math:`1`         :math:`2`         :math:`3`            :math:`4`            :math:`5`            :math:`5`
+  Eilera teorēma    :math:`10^1-1`    :math:`10^6-1`    :math:`10^{18}-1`    :math:`10^{54}-1`    :math:`10^{162}-1`   :math:`10^{486}-1`
+  LTE Lemma         :math:`10^1-1`    :math:`10^1-1`    :math:`10^3-1`       :math:`10^9-1`       :math:`10^{27}-1`    :math:`10^{81}-1`
+  ================  ================  ================  ===================  ===================  ===================  ===================
+  
+  Kā redzam tabulā, LTE Lemma dod daudz precīzāku novērtējumu; atrastās :math:`n` vērtības tiešām ir minimālās, 
+  kam :math:`10^n - 1`. Savukārt Eilera teorēma piedāvā sešreiz lielāku skaitli, kurš arī der un :math:`10^n - 1` dalās ar :math:`3^k`, bet 
+  tas var nebūt mazākais. Šajā piemērā tas pat vienmēr ir sešreiz lielāks nekā LTE dotais novērtējums.
+  
    
 
 
@@ -299,7 +566,7 @@ izteiksmi :math:`x^n - y^n`, kur var izteikt :math:`n = k \cdot p^m`
   
   .. math::
   
-    x^{121} + y^{27} = 10^{121} + 1^{121} = 1\underbrace{00\ldots00}_{120 nulles}1
+    x^{121} + y^{27} = 10^{121} + 1^{121} = 1\underbrace{00\ldots00}_{\mbox{\footnotesize $120$ nulles}}1
 
   dalās ar :math:`11^k` pie :math:`k = \nu_{11}(10+1) + \nu_{11}(121) = 1+2 = 3`
   (t.i. dalās ar  :math:`11^3 = 1331`). 
@@ -307,12 +574,54 @@ izteiksmi :math:`x^n - y^n`, kur var izteikt :math:`n = k \cdot p^m`
 
 
 **Pierādījums:** 
-  Lemmu 2 pierāda, aizstājot :math:`y` ar :math:(-y) un izmantojot iepriekšējo 
+  Lemmu 2 pierāda, aizstājot :math:`y` ar :math:`(-y)` un izmantojot iepriekšējo 
   Lemmu 1. (Šeit ir būtiski, lai :math:`n` ir nepāra; lai gan pats 
   :math:`y`, gan arī :math:`(-y)^{n}` maina zīmi. :math:`\square`
 
 
 
+
+Valuācijas pirmskaitlim 2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Uzdevums (Valsts4Posms-1993.9-12.2):** 
+  Dots naturāls skaitlis :math:`a>2`. 
+  Pierādīt, ka eksistē tikai galīgs skaits tādu naturālu :math:`n`, ka :math:`a^n - 1` dalās ar :math:`2^n`.
+
+
+Izvēlamies \"patvaļīgu\" naturālu skaitli :math:`a=17`. Apskatīsim :math:`17^n-1` dalāmību ar :math:`2` pakāpēm -- 
+ieviešam funkciju :math:`{\displaystyle f(n) = \nu_2\left(17^n-1 \right)}`.
+
+
+.. image:: figs-ntjun05-valuations/2-valuations-17n-1.png
+   :width: 3in
+
+Salīdzināsim šo ar citu naturālu skaitli :math:`a =15`.
+Līdzīgi kā iepriekš apskatām funkciju :math:`{\displaystyle f(n) = \nu_2\left(15^n-1 \right)}`.
+
+
+.. image:: figs-ntjun05-valuations/2-valuations-15n-1.png
+   :width: 3in
+
+
+Ievērosim, ka abi grafiki izturas līdzīgi nepāra vērtībām :math:`n`. Tie sakrīt ar :math:`\nu_2(n)` grafiku, 
+kas pabīdīts :math:`4` vienības uz augšu. 
+Toties pie nepāra :math:`n` uzvedības atšķiras: :math:`{\displaystyle \nu_2\left(17^n-1 \right) = 4}`
+un :math:`{\displaystyle \nu_2\left(15^n-1 \right) = 1}`.
+
+
+**Lemma (Lifting the Exponent, LTE) 3:** 
+  Skaitļi :math:`x` un :math:`y` ir divi veseli nepāra skaitļi 
+  un :math:`n` ir pozitīvs **pāra** skaitlis. Tad 
+  
+  .. math::
+  
+    \nu_2 (x^n - y^n) = \nu_2(x - y) + \nu(x+y) + \nu_2(n) - 1.
+
+
+  Ja savukārt :math:`n` ir pozitīvs **nepāra** skaitlis, tad 
+
+    \nu_2 (x^n - y^n) = \nu_2(x - y).
 
 
 
@@ -379,12 +688,21 @@ Sacensību uzdevumi
   
 
 **2.uzdevums (CGMO2012.8)**
-  Cik kopā :math:`\{0,1,2,\ldots,2012\}` ir elementu :math:`k`, kam :math:`C_{2022}^k`: dalās ar :math:`2012`?
+  Cik kopā :math:`\{0,1,2,\ldots,2012\}` ir elementu :math:`k`, kam :math:`C_{2012}^k`: dalās ar :math:`2012`?
   Ar :math:`C_n^k` apzīmējam kombinācijas no :math:`n` pa :math:`k` jeb
   
   .. math:: 
   
     C_n^k = \frac{n!}{k!(n-k)!}
+    
+
+**Ieteikumi:** 
+
+  * Sadalām reizinātājos: :math:`2012 =2^2 \cdot 503`
+  * Ievērojam, ka :math:`503 \mid C_{2012}^k` tad un tikai tad, ja :math:`503` nedala :math:`k`.
+  * Ievērojam, ka :math:`4 \mid C_{2012}^k` tad un tikai tad, ja saskaitot binārajā pierakstā :math:`k` un :math:`2012-k`
+    rodas vismaz divi pārnesumi (Kummera teorēma). 
+
     
 **3.uzdevums (IMO2019.P4)**
   Atrast visus naturālo skaitļu :math:`(k,n)` pārus, kuriem izpildās
@@ -414,8 +732,42 @@ Sacensību uzdevumi
   Noteikt visus veselos skaitļus :math:`n>1`, kam :math:`\frac{2^n + 1}{n^2}` ir vesels skaitlis. 
 
 
+**8.uzdevums (BW2015.16):**
+  Ar :math:`P(n)` apzīmējam lielāko pirmskaitli, ar ko dalās :math:`n`. Atrast
+  visus naturālos skaitļus :math:`n \geq 2`, kam
+
+  .. math::
+  
+    P(n) + \left\lfloor \sqrt{n} \right\rfloor = P(n+1) + \left\lfloor \sqrt{n+1} \right\rfloor.
 
 
+**9.uzdevums (BW2015.17):**
+  Atrast visus naturālos skaitļus :math:`n`, kuriem :math:`n^{n-1} - 1` dalās ar :math:`2^{2015}`, 
+  bet nedalās ar :math:`2^{2016}`. 
+  
+**Ieteikumi:** 
+  Apzīmēsim virkni :math:`a_n = \nu_2(n^{n-1} - 1)`. 
+  Pamatot, ka :math:`a_n = 2\nu_2(n-1) + \nu_2(n+1) - 1`. 
+
+  
+
+
+**10.uzdevums (Valsts4Posms-1992.12.1):**
+  Pierādīt, ka eksistē bezgalīgi daudz naturālu skaitļu kvadrātu, 
+  kurus var iegūt, divas reizes pēc kārtas uzrakstot kādu naturālu skaitli.
+
+**Ieteikumi:** 
+  Divreiz uzrakstāmos skaitļus var mērķtiecīgāk meklēt, ja mēģina dalīt reizinātājos izteiksmi :math:`10^n + 1`.
+  Dalītāji :math:`101`, :math:`1001`, :math:`10001` utt. parādās tad, ja aplūko 
+  divreiz pēc kārtas uzrakstītus skaitļus, piemēram, :math:`1212`,  :math:`123123`,  :math:`12341234`.
+  Savukārt, :math:`10^n + 1` labi dalās reizinātājos, ja aplūko, teiksim, :math:`\nu_{11}(10^n + 1)`.
+  Atkārtojamo ciparu skaitu :math:`n` var pielāgot tā, lai :math:`10^n + 1` dalītos ar to, ko mums vajag.
+
+  .. figure:: figs-ntjun05-valuations/11-valuations.png
+     :width: 4in
+     :alt: 11-valuation graph
+
+     Grafiks funkcijai :math:`f(n) = \nu_{11}(10^n + 1)` (Kāpinātāja Pacelšanas Lemma 2)
 
 
 Atsauces
@@ -423,5 +775,7 @@ Atsauces
 
 1. `<https://cp4space.hatsya.com/2014/04/13/lifting-the-exponent/>`_. 
 2. `<https://bit.ly/3KdtxBH>`_. 
-
+3. `<http://artofproblemsolving.com/articles/files/SatoNT.pdf>`_.
+4. `<http://www.aquatutoring.org/KummerTheoremLucasTheorem.pdf>`_.
+5. `<http://reu.dimacs.rutgers.edu/~mslusky/>`_.
 
