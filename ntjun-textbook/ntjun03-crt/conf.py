@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'NT Chinese Remainder Theorem'
+project = 'ntjun03'
 copyright = '2021, NMS'
 author = 'NMS'
 

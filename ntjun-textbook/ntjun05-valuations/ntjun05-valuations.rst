@@ -501,7 +501,7 @@ izteiksmi :math:`x^n - y^n`, kur var izteikt :math:`n = k \cdot p^m`
 
 **Risinājums:** 
   Citiem vārdiem, mums jāatrod :math:`\nu_{41}(10^{8405} - 1)`. 
-  Dalām reizinātājos :math:`8401 = 5 \cdot 41^2`. 
+  Dalām reizinātājos :math:`8405 = 5 \cdot 41^2`. 
   
   Lemmu 1 nevar pielietot uzreiz izteiksmei :math:`10^{5 \cdot 41^2} - 1^{5 \cdot 41^2}`, jo :math:`10-1` nedalās ar :math:`41`.   
   Par laimi, jau :math:`99999 = 10^5 - 1` dalās ar :math:`41`. Pārveidojam izteiksmi: 
@@ -509,7 +509,7 @@ izteiksmi :math:`x^n - y^n`, kur var izteikt :math:`n = k \cdot p^m`
   .. math::
   
     \nu_{41} (10^{5 \cdot 41^2} - 1^{5 \cdot 41^2}) = (100000^{41^2} - 1^{5 \cdot 41^2}) = 
-    \nu_{41} (10000 -1) + \nu_41(41^2) = 3. 
+    \nu_{41} (10000 -1) + \nu_{41} (41^2) = 3. 
     
   Tātad minētais skaitlis dalās ar :math:`41^3` (bet nedalās ar lielāku :math:`41` pakāpi).
 
@@ -610,7 +610,7 @@ Toties pie nepāra :math:`n` uzvedības atšķiras: :math:`{\displaystyle \nu_2\
 un :math:`{\displaystyle \nu_2\left(15^n-1 \right) = 1}`.
 
 
-**Lemma (Lifting the Exponent, LTE) 3:** 
+**Lemma 3 (Lifting the Exponent, LTE):** 
   Skaitļi :math:`x` un :math:`y` ir divi veseli nepāra skaitļi 
   un :math:`n` ir pozitīvs **pāra** skaitlis. Tad 
   
@@ -620,6 +620,8 @@ un :math:`{\displaystyle \nu_2\left(15^n-1 \right) = 1}`.
 
 
   Ja savukārt :math:`n` ir pozitīvs **nepāra** skaitlis, tad 
+  
+  .. math::
 
     \nu_2 (x^n - y^n) = \nu_2(x - y).
 

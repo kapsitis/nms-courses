@@ -1,3 +1,11 @@
+Some results about sequences of natural numbers. 
+Some 
+
+
+
+
+Not really needed
+-------------------
 Indices (discrete logarithms) - Diffie Hellman
 Rabin-Muller algorithm - RSA
 Integer polynomials, GF(2^8)
