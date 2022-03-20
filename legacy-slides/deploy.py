@@ -11,7 +11,7 @@ src = ['other',
 
 
 
-dest = '/var/www/html/training/discrete-2022-spring' 
+dest = '/var/www/html/training/numtheory' 
 
 for src_dir in src:
     files = os.listdir(src_dir)
