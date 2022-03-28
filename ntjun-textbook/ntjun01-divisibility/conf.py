@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ntjun01'
+project = 'ntjun01-divisibility'
 copyright = '2022, NMS'
 author = 'NMS'
 

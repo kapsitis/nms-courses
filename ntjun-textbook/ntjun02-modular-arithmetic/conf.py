@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Ntjun02'
+project = 'ntjun02-modular-arithmetic'
 copyright = '2022, NMS'
 author = 'NMS'
 

@@ -48,9 +48,9 @@ if [%2] == [] (
         %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -t Internal
         rem python replace.py
 	    cd _build\latex
-	    xelatex ntjun01-divisibility
-        ren ntjun01-divisibility.pdf ntjun01-divisibility-solutions.pdf
-        xcopy ntjun01-divisibility-solutions.pdf ..\.. /Y
+	    xelatex ntjun06-rational
+        ren ntjun06-rational.pdf ntjun06-rational-solutions.pdf
+        xcopy ntjun06-rational-solutions.pdf ..\.. /Y
 		cd ..\..
     ) else (
         echo.Building questions
@@ -58,7 +58,7 @@ if [%2] == [] (
 	    cd _build\latex
         REM ren homework01.pdf homework01-questions.pdf
         REM xcopy homework01-questions.pdf ..\.. /Y
-        xcopy ntjun01-divisibility.pdf ..\.. /Y
+        xcopy ntjun06-rational.pdf ..\.. /Y
 		cd ..\..		
 	)
 )

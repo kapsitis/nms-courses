@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ntjun05'
+project = 'ntjun05-valuations'
 copyright = '2022, NMS'
 author = 'NMS'
 

@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ntjun04'
+project = 'ntjun04-multiplicative'
 copyright = '2022, NMS'
 author = 'NMS'
 

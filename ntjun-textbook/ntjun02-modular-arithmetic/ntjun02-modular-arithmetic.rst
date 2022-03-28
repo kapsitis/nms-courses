@@ -50,18 +50,21 @@ Ievaduzdevums
   
   .. math:: 
   
-    n = c_1 \cdot 10^{k-1} + c_2 \cdot 10^{k-2} + \ldots + c_{k-1} \cdot 10^{1} + c_k \cdot 10^{0}). 
+    n = c_1 \cdot 10^{k-1} + c_2 \cdot 10^{k-2} + \ldots + c_{k-1} \cdot 10^{1} + c_k \cdot 10^{0}. 
     
   Ja aprēķinām ciparu summu :math:`S(n) = c_1 + c_2 + \ldots + c_{k-1} + c_k`, 
   tad tā atšķiras no :math:`n` ar to, ka saskaitāmo :math:`c_i \cdot 10^{k-i}` vietā 
-  ir saskaitāmie :math:`c_i`. (Piemēram, ja ceturtais cipars no skaitļa beigām jeb *tūkstošu cipars* 
-  ir :math:`c_{k-3} = 7`, tad vērtības :math:`7 \cdot 1000` vietā pieskaitām vienkārši vērtību :math:`7`.)
+  ir saskaitāmie :math:`c_i`. 
+  Piemēram, ja ceturtais cipars no skaitļa beigām jeb *tūkstošu cipars* 
+  ir :math:`c_{k-3} = 7`, tad vērtības :math:`7 \cdot 1000` vietā pieskaitām 
+  vērtību :math:`7`.
   
   Starpība abām vērtībām ir :math:`c_i \cdot 10^{k-i} - c_i = c_i \cdot \overline{99\ldots99}`, kur
   cipars :math:`c_i` ir pareizināts ar skaitli kas sastāv no daudziem deviņniekiem. 
-  Šis skaitlis, acīmredzot dalās ar :math:`9`. Tāpēc atlikums, dalot ar :math:`9` (ja 
-  skaitli :math:`n` aizstāj ar :math:`S(n)` jeb katru ciparu :math:`c_i` piesummē vienkārši, 
-  nevis reizina ar :math:`10` pakāpi :math:`c_i \cdot 10^{k-i}`) nemainās. :math:`\square`
+  Šis skaitlis, acīmredzot dalās ar :math:`9`. Tāpēc atlikums, dalot ar :math:`9` nemainās, 
+  ja skaitli :math:`n` aizstāj ar :math:`S(n)` jeb katru ciparu 
+  :math:`c_i` piesummē vienkārši, nevis reizina ar :math:`10` pakāpi 
+  :math:`c_i \cdot 10^{k-i}`. :math:`\square`
 
   
 **Apgalvojums 2:** 
@@ -208,9 +211,10 @@ nosaka vienīgi operandu atlikumi, dalot ar :math:`m`.
 Saskaitāmo un reizinātāju :math:`3` un :math:`5` vietā var izvēlēties jebkuru 
 pārstāvi no attiecīgās kongruenču klases. 
 
-Citiem vārdiem, modulārā aritmētika kongruences klašu kopā :math:`\mathbb{Z}_7` izkrāso visus skaitļus
-:math:`7` krāsās. Un balstās uz faktu, ka saskaitot divus skaitļus ar noteiktu krāsu, rezultāta krāsa
-arī būs viennozīmīgi noteikta.
+Citiem vārdiem, modulārā aritmētika kongruences klašu kopā 
+:math:`\mathbb{Z}_7` izkrāso visus skaitļus
+:math:`7` krāsās. Un balstās uz faktu, ka saskaitot divus skaitļus 
+ar noteiktu krāsu, rezultāta krāsa arī būs viennozīmīgi noteikta.
   
 .. image:: figs-ntjun02-modular-arithmetic/congruence-classes.png
    :width: 3.5in
@@ -403,18 +407,357 @@ kvintiljoniem reizināšanas darbību, kas prasītu ievērojamu laiku arī uz ļ
   
 
 
+
+Atņemšana kongruenču klasēs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Katram elementam no :math:`\mathbb{Z}_m` 
+eksistē pretējais (saskaitot elementu ar tam pretējo, iegūstam :math:`0`).
+
+.. math:: 
+
+  \begin{array}{l}
+  -1 \equiv 6 \pmod {7}\\
+  -2 \equiv 5 \pmod {7}\\
+  -3 \equiv 4 \pmod {7}\\
+  -4 \equiv 3 \pmod {7}\\
+  -5 \equiv 2 \pmod {7}\\
+  -6 \equiv 1 \pmod {7}\\
+  \end{array}
+  
+Pretējā elementa eksistēšana nozīmē, ka kongruencei var abām pusēm 
+pieskaitīt un atņemt tādu pašu kongruences klasi: 
+
+.. math:: 
+
+  \mbox{Ja}\; x+a \equiv y+a \pmod {m},\; \mbox{tad}\; x \equiv y \pmod {m}. 
+  
+No abām kongruences pusēm var atņemt to pašu skaitli, noīsinot abus saskaitāmos. 
+Jebkuram naturālam modulim :math:`m \in \mathbb{N}` var šādi īsināt. 
+
+.. image:: figs-ntjun02-modular-arithmetic/addition-table-mod7.png
+   :width: 1.6in
+   
+Saskaitīšanas tabula rāda, ka ikvienā rindiņā parādās visas iespējamās 
+vērtības (tāpēc jebkura skaitļa pieskaitīšana pēc moduļa :math:`m` 
+ir injektīva darbība -- tā saglabā informāciju un 
+tātad var atņemt to pašu konstanti no abām pusēm).
+
+
+
+Dalīšana kongruenču klasēs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Vai no :math:`ka \equiv kb \pmod {m}` seko, ka :math:`a \equiv b \pmod {m}`? 
+Atbilde atkarīga no tā, vai reizināšana ar :math:`k` ir injektīva 
+(t.i. "nesalipina" divus skaitļus) vai nē. Tikai injektīvām funkcijām eksistē inversās.
+Reizināšanas tabulai pēc pirmskaitļa moduļa reizināšana ir injektīva
+(reizināšanai eksistē inversā darbība). Vienīgais izņēmums ir reizināšana
+ar kongruenču klasi :math:`0`. 
+
+Savukārt reizināšanas tabula pēc salikta skaitļa satur tādas kongruenču klases
+(tostarp atšķirīgas no :math:`0`)), kuras reizinot var iegūt atkārtotas vērtības. 
+Reizināšanas tabula (mod :math:`6`) ar izsvītrotiem :math:`n`, kam :math:`\gcd(n,6)>1`.
+
+
+.. image:: figs-ntjun02-modular-arithmetic/multiplication-table-mod6.png
+   :width: 1.6in
+
+   
+Piemēram kongruenču klasēm (pēc moduļa :math:`6`) 
+ir dažas klases (:math:`2,3,4`), kuras atšķiras no :math:`0`, 
+bet reizināšanas tabula satur atkārtotas rindas. 
+
+.. math:: 
+
+  2 \cdot 3 \equiv 6 \equiv 0 \pmod {6}
+    
+Arī pēdējie cipari (atlikumi pēc :math:`10`) neveido injektīvu reizināšanas 
+darbību. Piemēram, nevar viennozīmīgi atrisināt šādu kongruenču vienādojumu: 
+
+.. math:: 
+
+  4x \equiv 2 \pmod {10}. 
+  
+Eksistē divas saknes :math:`x \equiv 3 \pmod {10}` un 
+:math:`x \equiv 8 \pmod {10}`. 
+
+
+
+
+
+
+
+
+
 Mazā Fermā teorēma
 ---------------------
 
+**Teorēma:**
+  Ja :math:`p` ir pirmskaitlis, tad katram :math:`a`, 
+  kurš nedalās ar :math:`p` ir spēkā sakarība:
+
+  .. math::
+
+    a^{p-1} \equiv 1 \pmod p
+
+
+**Pierādījums:** 
+  Aplūkojam visus skaitļus :math:`\{1,2,\ldots,p-1\}`. 
+  Piereizinām tos visus ar :math:`a`. 
+  Iegūsim :math:`\{1 \cdot a,2 \cdot a,\ldots,(p-1)\cdot a\}`. 
+  
+  Nav iespējams, ka diviem dažādiem :math:`i,j \in \{ 1,2,\ldots,p-1 \}`
+  izpildās :math:`i \cdot a \equiv j \cdot a \pmod p`. 
+  Citādi sanāktu, ka reizinājums :math:`a(i-j)` dalās ar :math:`p`, kur 
+  :math:`a` nedalās ar :math:`p` un arī :math:`(i-j)<p`. 
+  Tātad :math:`p` nebūtu pirmskaitlis -- pretruna.
+  
+  Tādēļ kopa :math:`\{ 1 \cdot a, 2 \cdot a, \ldots ,(p-1) \cdot a \}`  
+  satur visas tās pašas kongruenču klases, ko 
+  :math:`\{1,2,\ldots,p-1\}` 
+  (tikai, iespējams, citā secībā). 
+  Sareizinot visas šīs kongruenču klases, iegūsim 
+
+  .. math::  
+
+    (p-1)! a^{p-1} \equiv (p-1)! \pmod p
+    
+  Saīsinām abas kongruences puses ar faktoriālu
+  (kurš nav kongruents ar :math:`0`, jo nevar dalīties ar :math:`p`)
+  un iegūstam teorēmas apgalvojumu: 
+  
+  .. math::
+  
+    a^{p-1} \equiv 1 \pmod p
 
 
 
+**Sekas:** 
+  Jebkuram pirmskaitlim :math:`p>5`,
+  skaitlis, kura decimālpieraksts sastāv no :math:`p-1` 
+  deviņniekiem dalās ar :math:`p`. 
+
+**Piemērs:** 
+  Skaitlis no :math:`40` deviņniekiem 
+  :math:`9999999999999999999999999999999999999999` 
+  dalās ar :math:`41`. 
+  (Faktiski, jau daudz īsāks skaitlis :math:`99999` 
+  dalās ar :math:`41`, bet arī, uzrakstot šo piecu deviņnieku 
+  grupu astoņas reizes, iegūstam četrdesmit deviņniekus un 
+  arī tas dalās ar :math:`41`. )
+
+**Piemērs:** 
+  Pirmskaitlim :math:`p = 7` skaitlis :math:`999999` (skaitlis 
+  no :math:`p-1 = 6` deviņniekiem) dalās ar :math:`7`. 
+  (Un ar mazāku deviņnieku skaitu nepietiek.) 
+
+
+**Teorēma:** 
+  Ja :math:`p` ir nepāra pirmskaitlis un 
+  :math:`a` ir jebkurš skaitlis, kas nedalās ar :math:`p`, tad 
+
+  .. math::
+    
+    a^{\frac{p-1}{2}}  \equiv \pm 1 \pmod p. 
+
+**Pierādījums.** 
+  Zināms (M.Fermā teorēma), ka :math:`a^p - 1` dalās ar :math:`p`, jeb 
+  
+  .. math:: 
+  
+    \left( a^{\frac{p-1}{2}} \right)^2-1 \equiv 0 \pmod p. 
+
+    \left( a^{\frac{p-1}{2}}-1 \right) \left( a^{\frac{p-1}{2}}+1 \right) \equiv 0 \pmod p.
+
+  Ja reizinājums dalās ar :math:`p`, tad viens no reizinātājiem dalās ar :math:`p`. 
+  Tātad izteiksme :math:`{\displaystyle a^{\frac{p-1}{2}}}` 
+  ir kongruenta vai nu ar :math:`+1` vai ar :math:`-1` pēc :math:`p` moduļa.
+
+
+**Piemērs:** 
+  Aplūkojam :math:`p = 11` un visas kongruenču klases pēc šī moduļa: 
+
+  ============================  ======  ======  ======  ======  ======  ======  ======  ======  ======  ======
+  :math:`a`                     1       2       3       4       5       6       7       8       9       10
+  :math:`a^5`                   1       32      243     1024    3125    7776    16807   32768   59049   100000
+  :math:`a^5\ \text{mod}\ 11`   1       10      1       1       1       10      10      10      1       10      
+  ============================  ======  ======  ======  ======  ======  ======  ======  ======  ======  ======
+  
+
+
+M.Fermā teorēma un periodiskas decimāldaļas
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Mazā Fermā teorēma nav tikai gari formulēts matemātikas 
+rezultāts, kas lietojams īpašās situācijās. 
+Tās izpausmes ir redzamas, piemēram, ikreiz, kad 
+ar kalkulatoru dala divus veselus skaitļus. 
+
+Vienkāršības dēļ aplūkosim daļas :math:`1/p`, kur skaitli 
+:math:`1` dala ar pirmskaitli :math:`p`, bet 
+atrastie daļu periodi der arī citām 
+racionālām daļām ar to pašu saucēju. 
+
+
+Tabulā attēlots novērojums, ka :math:`1/p` bezgalīgās decimāldaļas perioda 
+garums sakrīt ar mazāko :math:`k`, kuram :math:`10^k - 1` (skaitlis, 
+ko veido :math:`k` deviņnieki) dalās ar :math:`p`. 
+Un pēc Mazās Fermā teorēmas -- vai nu :math:`k = p-1`, 
+vai arī :math:`k` ir skaitļa :math:`p-1` dalītājs. 
+
+===========  ====================================  ================================================
+:math:`p`    Min.dalāmais formā :math:`10^k - 1`   :math:`1/p` kā decimāldaļa
+:math:`3`    :math:`10^1 -1 = 9`                   :math:`1/3 = 0.(3)=0.33\ldots`
+:math:`7`    :math:`10^6 - 1 = 999999`             :math:`1/7 = 0.(142857) =0.142857142857\ldots`
+:math:`11`   :math:`10^2 - 1 = 99`                 :math:`1/11 = 0.(09) = 0.0909 \ldots`
+:math:`13`   :math:`10^6 - 1 = 999999`             :math:`1/13 = 0.(076923)`
+:math:`17`   :math:`10^{16} - 1`                   :math:`1/17 = 0.(0588235294117647)`
+:math:`19`   :math:`10^{18} - 1`                   :math:`1/19 = 0.(052631578947368421)`
+:math:`23`   :math:`10^{22} - 1`                   :math:`1/23 = 0.(0434782608695652173913)`
+:math:`29`   :math:`10^{28} - 1`                   :math:`1/29 = 0.(0344827586206896551724137931)`
+:math:`31`   :math:`10^{15} - 1`                   :math:`1/31 = 0.(032258064516129)`
+:math:`37`   :math:`10^{3} - 1 = 999`              :math:`1/37 = 0.(027)= 0.027027\ldots`
+:math:`41`   :math:`10^{5} - 1 = 99999`            :math:`1/41 = 0.(02439)`
+:math:`43`   :math:`10^{21} - 1`                   :math:`1/43 = 0.(023255813953488372093)`
+===========  ====================================  ================================================
+
+Varam ar konkrētu piemēru aplūkot detalizēti, kā veidojas periodiski decimāldaļskaitļi. 
+
+**Piemērs:**
+  Aprēķinām :math:`1/13`, dalot stabiņā. 
+
+  .. image:: figs-ntjun02-modular-arithmetic/school-division.png
+     :width: 4in
+  
+  Aplūkojot šo dalīšanas algoritmu kā veselu skaitļu aritmētikas problēmu, 
+  rēķinām virkni ar atlikumiem: 
+  
+  .. math::
+  
+    x_n = \left\{ \begin{array}{ll}
+    1, & \mbox{if $n = 0$,}\\
+    \left( 10 \cdot x_{n-1} \right)\ \text{mod}\ 13, & \mbox{if $n > 0$.}\\
+    \end{array} \right.
+    
+  Pirmie šīs virknes locekļi: 
+  
+  .. math:: 
+  
+    1, 10, 9, 12, 3, 4, 1, \ldots
+
+  Tā kā ikviens no šīs virknes locekļiem viennozīmīgi atkarīgs no iepriekšējā 
+  (un iespējamo atlikumu ir tikai :math:`12`, jo dalīšanas rezultātā nevar rasties
+  atlikums :math:`0`, bet var rasties citi atlikumi :math:`\{1,\ldots,12 \}`). 
+  
+  Redzot, ka šīs virknes periods ir tieši seši locekļi, 
+  iegūstam, ka :math:`x_{n+6} \equiv \left( 10^6 \cdot x_n \right) \pmod {13}`. 
+  No šejienes iegūstam, ka :math:`10^6 \equiv 1 \pmod {13}`. 
+  
+
+
+Lai no periodiskas decimāldaļas atgrieztos pie racionālas daļas, aplūkojam sekojošu 
+piemēru (kas ļaus konstruēt jebkuru periodisku daļskaitli ar periodu :math:`6`): 
+
+.. math:: 
+
+  1:999999 = 0.000001000001000001000001\ldots = 0.(000001)
+  
+Par šo vienādību pārliecinās vai nu dalot stabiņā, vai arī summējot bezgalīgi 
+dilstošu ģeometrisku progresiju, izmantojot formulu :math:`b_1/(1-q)`, kur 
+:math:`b_1` ir progresijas pirmais loceklis, bet :math:`q` ir tās kvocients. 
+
+.. math:: 
+
+  0.(000001) = \frac{1}{10^6} + \frac{1}{10^12} + \frac{1}{10^18} + \frac{1}{10^24} + \ldots
+  
+  S = \frac{b_1}{1 - q} = \frac{\frac{1}{10^6}}{1 - \frac{1}{10^6}} = \frac{1}{10^6 - 1} = \frac{1}{999999}
+  
+
+
+Aplūkosim kādu citu periodisku daļskaitli ar periodu :math:`6`: 
+
+.. math:: 
+
+  0.076923076923076923076923\ldots = 76923 \cdot 0.000001000001000001\ldots = \frac{76923}{999999}
+
+Pēc noīsināšanās iegūstam, ka 
+
+.. math:: 
+
+  \frac{76923}{999999} = \frac{1}{13}. 
+
+**Apgalvojums (Pazīme, ka n/p periodā ir k cipari):**
+  Dots pirmskaitlis :math:`p` un :math:`n` nedalās ar :math:`p`. 
+  Skaitlis :math:`n/p` ir periodiska daļa ar periodu :math:`k` tad un tikai tad, 
+  ja :math:`k` ir mazākais naturālais skaitlis, kam :math:`10^k - 1` dalās ar :math:`p`. 
+
+
+
+
+  
+
+
+
+Vingrinājumi par Mazo Fermā teorēmu
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Piemērs:** 
+  Pārveidot sekojošu periodisku decimāldaļskaitli par racionālu daļu: 
+  :math:`0.(20221115)`.
+  
+**Piemērs:** 
+  Uzrakstīt tādu :math:`1/p` 
+  (:math:`p` ir pirmskaitlis), 
+  kura decimālpierakstā ir periods tieši no :math:`4` cipariem.
+
+**Piemērs:** 
+  Kāds ir mazākais naturālu skaitļu kopas izmērs, lai no šīs kopas
+  noteikti varētu izvēlēties tādus :math:`a,b` 
+  kuru piekto pakāpju starpība :math:`a^5 - b^5` dalītos ar :math:`11`?
 
 
 
 
 Pretrunas moduļa metode
 -------------------------
+
+Pretrunas moduļa metode parāda, ka vienādojumam nav atrisinājumu veselos
+skaitļos (jo vienādojuma kreisā puse ir kongruenta ar citiem atlikumiem nekā labā puse, 
+tātad tās nevar būt vienādas). 
+Lietojot pretrunas moduli, svarīgi ievērot šādas vadlīnijas: 
+
+* Izvēlamies tikai pirmskaitļus vai to pakāpes. 
+* Ja vesela izteiksme satur mainīgos arī kāpinātājos, tad var iznākt, 
+  ka pretruna parādās tikai moduļiem :math:`m`, 
+  kas satur dažādus pirmreizinātājus. 
+  Tomēr šo pretrunu var iegūt arī aplūkojot tikai pirmskaitļa pakāpes.
+* Sākam ar maziem moduļiem :math:`2, 3, 4, 5, 7, 8, 9, 11,\ldots`.
+* Izvēlamies moduļus, kas ir vienādojuma koeficientu dalītāji, 
+  samazinot vienādojuma locekļu skaitu.
+* Vienādojumos, kuros figurē skaitļu k-tās pakāpes, 
+  aplūkojam moduļus :math:`k^2` un visus pirmskaitļus, kas izsakāmi formā :math:`mk+1`. 
+
+
+
+**Piemēri:** 
+  Pierādīt, ka sekojošiem vienādojumiem nav atrisinājumu veselos skaitļos:
+  
+  **(A)**
+    :math:`y^2 - 5x^2 = 6`,
+
+  **(B)**
+    :math:`15x^2 - 7y^2 = 9`,
+    
+  **(C)**
+    :math:`x^2 - 2y^2 + 8z = 9`, 
+    
+  **(D)**
+    :math:`x^3 + y^3 + z^3 = 1969^2`. 
+  
+
+
+
 
 
 
@@ -539,31 +882,564 @@ Pagaidām pieņemsim bez pierādījuma šo formulu, kas :math:`\varphi(n)` atrod
 Dalāmības pazīmes
 --------------------
 
+Kas ir pazīmes?
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Matemātikā, medicīnā un citās jomās par *pazīmēm* 
+sauc nosacījumus, kas ir nepieciešami un pietiekami kādam apgalvojumam 
+(*necessary and sufficient conditions*). 
+Tās atšķiramas no *īpašībām* (*necessary conditions*), 
+kas ir nepieciešamas, bet var nebūt pietiekamas.
+
+.. image:: figs-ntjun02-modular-arithmetic/necessary-sufficient-conditions.png
+   :width: 3in
+   
+
+Pazīmes darbojas abos virzienos, tādēļ 
+tās viegli lietot, lai "pārtulkotu" kādu apgalvojumu citā formā. 
+Ģeometrijā sakarības starp malām vai leņķiem var norādīt uz 
+kādas figūras speciālu īpašību. Arī skaitļu teorijā šāda tulkošana ir noderīga. 
+
+===================================================  ==========================================
+**Aprakstošs/kvalitatīvs apgalvojums**               **Ekvivalents/kvantitatīvs apgalvojums**
+Skaitlis :math:`n` ir pāra skaitlis                  Var izteikt :math:`n = 2k`
+Skaitlis :math:`n` ir nepāra skaitlis                Var izteikt :math:`n = 2k+1`
+Skaitlis :math:`n` nedalās ar :math:`3`              :math:`n \equiv \pm 1 \pmod 3`
+:math:`n` pieraksts beidzas ar :math:`37`            :math:`n \equiv 37 \pmod 100`
+:math:`n` pieraksts ir :math:`\overline{abcabc}`     :math:`n = 1001 \cdot \overline{abc}`
+:math:`a` un :math:`b` nav savstarpēji pirmskaitļi   :math:`\text{LKD}(a,b)>1`
+Skaitlis :math:`n` ir pilns kvadrāts                 Var izteikt :math:`n = k^2`
+Skaitlis :math:`x` ir racionāls                      :math:`x = \frac{p}{q}`
+Skaitlis :math:`x` ir galīga decimāldaļa             :math:`x = \frac{p}{2^m \cdot 5^n}`
+Skaitlis :math:`n` dalās ar :math:`9`                :math:`n` ciparu summa dalās ar :math:`9`
+===================================================  ==========================================
+
+
+
+Dalāmības pazīmes ar 2 un 5 pakāpēm
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+*Dalāmības pazīme* (*divisibility rule*) ir kāds paņēmiens, kas
+ļauj noskaidrot skaitļa :math:`n` dalāmību ar kādu nelielu 
+skaitli :math:`m`. Parasti dalāmības pazīme dod atbildi par dalāmību 
+ātrāk nekā pilnvērtīga :math:`n` dalīšana ar :math:`m`, piemēram, stabiņā.
+
+Aplūkosim tās dalāmības pazīmes, kuras pārveido :math:`n`
+par kādu daudz mazāku skaitli :math:`f(n)`, kas dod tādu pašu atlikumu, 
+dalot ar :math:`m` kā sākotnējais skaitlis :math:`n`. 
+Tādēļ dalāmības pazīmes ne tikai paātrina aprēķinus, bet ļauj 
+labāk saprast skaitļa decimālpierakstu.
+
+
+**Teorēma (dalāmība ar 2 pakāpēm):** 
+  Jebkuram naturālam skaitlim :math:`n` ir spēkā sekojoši apgalvojumi:
+  
+  * :math:`n` dalās ar :math:`2` tad un tikai tad, ja :math:`n` pēdējais cipars dalās ar :math:`2` . 
+  * :math:`n` dalās ar :math:`2` tad un tikai tad, ja :math:`n` pēdējie divi cipari (kā skaitlis)
+    dalās ar :math:`4` (:math:`n` beidzas ar :math:`00,04,08,12,\ldots,96`).
+  * :math:`n` dalās ar :math:`8` tad un tikai tad, ja :math:`n` pēdējie trīs cipari (kā skaitlis) 
+    dalās ar :math:`8` (:math:`n` beidzas ar :math:`000,008,016,\ldots,992`).
+
+**Teorēma (dalāmība ar 5 pakāpēm):** 
+  Jebkuram naturālam skaitlim :math:`n` ir spēkā sekojoši apgalvojumi:
+
+  * Skaitlis dalās ar :math:`5` tad un tikai tad, ja tā pēdējais cipars dalās ar :math:`5` 
+    (beidzas ar ciparu :math:`0` vai `5`). 
+  * Skaitlis dalās ar :math:`25` tad un tikai tad, ja tā pēdējo divu ciparu veidotais skaitlis 
+    dalās ar :math:`25` (beidzas ar :math:`00,25,50,75`).
+  * Skaitlis dalās ar :math:`125` tad un tikai tad, ja tā pēdējo trīs ciparu veidotais skaitlis 
+    dalās ar :math:`125` (beidzas ar :math:`000, 125, 250, 375, 500, 625, 750, 875`).
+
+Visas šīs dalāmības pazīmes var vispārināt arī tiem gadījumiem, ja skaitlis :math:`n`
+nedalās ar pārbaudāmo skaitli. 
+Piemēram, var iegūt šādu apgalvojumu: 
+
+**Sekas:** 
+  Jebkuram naturālam skaitlim :math:`n` ir spēkā sekojošs apgalvojums:
+  :math:`n` dod tādu pašu atlikumu dalot ar :math:`4` (vai ar :math:`25`) kādu 
+  dod tā pēdējie divi cipari. Citiem vārdiem, ja :math:`n = \overline{d_kd_{k-1}\ldots{}d_1d_0}`,
+  kur :math:`d_i` ir skaitļa :math:`n` decimālpieraksta cipari, tad 
+  
+  .. math::
+  
+    \begin{array}{l}
+    n \equiv \overline{d_1d_0} \pmod {4}\\
+    n \equiv \overline{d_1d_0} \pmod {25}\\
+    \end{array}
+    
+Iemesls, kādēļ drīkst atmest visus pārējos ciparus ir tas, ka pilni simti (arī tūkstoši, 
+desmittūkstoši utt.) dalās ar :math:`4` un ar :math:`25` bez atlikuma. Tie neizmaina
+:math:`n` kongruences klasi. 
+  
+
+Minētos rezultātus var vispārināt arī dažiem citiem skaitļiem (piemēram, 
+atrodot dalāmības pazīmi ar :math:`10, 20, 40, 50` utt.). 
+
+Tabulā redzamas visas iespējamās kombinācijas ar skaitļu :math:`2` un :math:`5` 
+pakāpēm un to reizinājumiem. 
+Izceltajās tabulas šūnās ierakstīti skaitļi (:math:`16,80,400,2000, 10000, 
+5000, 2500, 1250,625`), kuru dalāmības noskaidrošanai 
+pietiek aplūkot skaitļa :math:`n` pēdējos :math:`4` ciparus. 
+Visus desmittūkstošu (un vēl vecākus) ciparus var atmest, 
+jo :math:`10000` dalās ar visiem nosauktajiem skaitļiem. 
+
+
+.. image:: figs-ntjun02-modular-arithmetic/two-five-powers.png
+   :width: 3in
+   
+
+Runājot par dalāmības pazīmēm, 
+skaitļi :math:`k = 2^m5^n` ieņem īpašu vietu. Katram no tiem eksistē mazākā desmitnieka pakāpe, 
+kas dalās ar :math:`k`. Dalāmības pazīme var atmest ciparus, 
+kuru pozīcija (vieta decimālpierakstā no labās puses) ir lielāka par :math:`\max(m,n)`.
+
+
+
+Dalāmības pazīmes ar 3, 9
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Teorēma:** 
+  Ar :math:`S(n)` apzīmējam skaitļa :math:`n` ciparu summu. 
+  Tad :math:`S(n) \equiv n \pmod {9}`. 
+
+**Pierādījums:** 
+  Sākotnējais skaitlis ir 
+  
+  .. math:: 
+  
+    n = \overline{d_kd_{k-1}d_{k-2}\ldots{}d_2d_1d_0} = 
+    = d_k \cdot 10^k + a_{k-1} \cdot 10^{k-1} + \ldots + d_1 \cdot 10 + d_0
+        
+  Šeit :math:`d_i` apzīmē ciparus. 
+  Ja šo skaitli aizstāj ar :math:`S(n) = d_k + d_{k-1} + \ldots + d_1 + d_0`, 
+  tad reizinātājs pie jebkura cipara :math:`d_j` bija :math:`10^j`, bet kļuva :math:`1`. 
+  No viena decimālpieraksta  ir samazinājums par šādu lielumu:
+  
+  .. math:: 
+  
+    \left( 10^j d_j - d_j \right) = \underbrace{\overline{9999\ldots{}9999}}_{\mbox{$j$ deviņnieki}}
+  
+  Skaitlim samazinoties par :math:`(10^j - 1)d_j`, atlikums, 
+  dalot ar :math:`9`, nemainās.
+  
+
+**Sekas:** 
+  Katram naturālam skaitlim ir spēkā kongruence :math:`n \equiv S(n) \pmod {3}`. 
+  
+**Sekas:** 
+  Skaitlis :math:`n` dalās ar :math:`9` (vai ar :math:`3`) tad un tikai tad, ja 
+  ciparu summa :math:`S(n)` dalās ar :math:`9` (vai ar :math:`3`). 
+  
+
+
+.. note:: 
+  Citu skaitļu, izņemot 3 un 9) ar līdzīgu dalāmības pazīmi nav.  
+  Šeit izmantojam faktu, ka veselie skaitļi $9, 99, 999, \ldots$ visi dalītos ar $3$ vai ar $9$.
 
 
 
 
+Dalāmības pazīmes ar 11 kā arī 7 un 13
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Naturāla skaitļa decimālpieraksts ir 
+:math:`n = \overline{d_{2k-1}d_{2k-1}d_{2k-2}\ldots{}d_2d_1d_0}`.
+(Ja skaitlī ir nepāra skaits ciparu, tad tam priekšā pieraksta nulli tā, lai 
+ciparu skaits būtu tieši :math:`2k`.)
+Apzīmējam atsevišķi pāru un nepāru ciparu summas šajā skaitlī.
+
+.. math:: 
+
+  S_0(n) = \sum_{j=0}^{k-1} d_{2j} = d_0 + d_2 + d_4 + \ldots + d_{2k-2}
+
+  S_1(n) = \sum_{j=0}^{k-1} d_{2j+1} = d_1 + d_3 + d_5 + \ldots + d_{2k-1}
+
+Tātad :math:`S_0(n)` apzīmē skaitļa :math:`n` vienu ciparu plus 
+simtu ciparu plus desmittūkstošu ciparu, utt. 
+Savukārt :math:`S_1(n)` apzīmē skaitļa :math:`n` 
+desmitu ciparu plus tūkstošu ciparu plus simttūkstošu ciparu, utt. 
+  
+
+
+**Teorēma:** 
+  Katram naturālam :math:`n`, :math:`S_0(n) - S_1(n) \equiv n \pmod {11}`. 
+
+
+**Pierādījums:** 
+  Sākotnējais skaitlis ir 
+  
+  .. math:: 
+    
+    n = \overline{d_{2k-1}d_{2k-1}d_{2k-2}\ldots{}d_2d_1d_0} = 
+    
+    = d_{2k-1} 10^{2k-1} a_{2k-2} 10^{2k-2} + \ldots + d_2 10^2 + d_1 10^1 + d_0. 
+
+  Visas pāra pakāpes :math:`10^{2j}` dod atlikumu :math:`1`, dalot ar :math:`11`, 
+  bet visas nepāra pakāpes :math:`10^{2j+1}` dod atlikumu :math:`-1`, dalot ar :math:`11`. 
+  Tas seko no fakta, ka :math:`10 \equiv (-1) \pmod {11}`. 
+  
+  Tāpēc skaitlim :math:`n` spēkā šāda kongruence: 
+  
+  .. math:: 
+  
+    d_{2k-1} 10^{2k-1} + a_{2k-2} 10^{2k-2} + \ldots + d_2 10^2 + d_1 10^1 + d_0 \equiv
+    
+    \equiv d_{2k-1} \cdot (-1) + d_{2k-2} \cdot 1 + \ldots + d_2 \cdot 1 + d_1 \cdot (-1) + d_0 \cdot 1 \equiv
+    
+    \equiv \left(d_{2k-2} + d_{2k-4} + \ldots + d_2 + d_0 \right) + \left(d_{2k-1} + d_{2k-3} + \ldots + d_3 + d_1 \right) \equiv
+    
+    \equiv S_0(n) - S_1(n) \pmod {11}. 
+  
 
 
 
 
+**Sekas:** 
+  Skaitlis dalās ar :math:`11` tad un tikai tad, ja tā ciparu summa, 
+  kas atrodas pāra pozīcijās, mīnus ciparu summa, 
+  kas atrodas nepāra pozīcijās, dalās ar :math:`11`.
+
+
+**Teorēma:**
+  Dots naturāls skaitlis :math:`n \in \mathbb{N}`; 
+  :math:`n = \overline{d_{3k-1}d_{3k-2}d_{3k-3}\ldots{}d_2d_1d_0}`.   
+  Grupējam tā ciparus pa trīs, skaitot no labās puses, un izveidojam 
+  summu ar mainītām zīmēm :math:`1,-1,1,-1,\ldots`. 
+
+  .. math:: 
+      
+    S_3(n) = \overline{d_2d_1d_0} - \overline{d_5d_4d_3} + \overline{d_8d_7d_6} - \ldots + (-1)^k \overline{d_{3k-1}d_{3k-2}d_{3k-3}}. 
+
+  Skaitlis :math:`S_3(n)` apmierina kongruences :math:`S_3(n) \equiv n \pmod {m}`, kur 
+  :math:`m = 7,11,13` vai :math:`m=1001`. 
+
+**Piemērs:** 
+  :math:`n = 62510448`. Papildinām to līdz deviņiem cipariem: :math:`n = (062)(510)(448)`. 
+  Iegūstam :math:`S_3(62510448) = 448 - 510 + 062 = 0`.  
+  Tā kā :math:`0` dalās ar jebko, tad :math:`n = 62510448` dalās ar :math:`7`, :math:`11`, :math:`13` 
+  un arī :math:`1001`.
 
 
 
+**Piemērs:**
+  :math:`n = 729183`. Iegūstam :math:`S_3(n) = 183 - 729 = -546`. 
+  Tā kā :math:`S_3(n) = -546` dalās ar :math:`7` un :math:`13`, 
+  tad arī :math:`729183` dalās ar :math:`7` un :math:`13` (bet ne ar :math:`11`). 
 
 
 
-Cikliski procesi
+Citas dalāmības pazīmes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ir virkne tādu dalāmības pazīmju, kas ļauj pārbaudīt dalāmību ar kādu skaitli :math;`m`, 
+bet lieto tādus pārveidojumus, kas nesaglabā kongruenci pēc :math:`m` moduļa. 
+Sk. apkopojumu `<http://www.savory.de/maths1.htm>`_. 
+
+**Teorēma:** 
+  Naturāls skaitlis :math:`n` dalās ar :math:`7` tad un tikai tad, ja nosvītrojot pēdējo ciparu, 
+  divkāršojot to un atņemot no "saīsinātā" skaitļa, rezultāts dalās ar :math:`7`.  
+  Citiem vārdiem, ja :math:`n = 10a + b`, kur :math:`b` ir skaitļa pēdējais cipars, tad 
+  
+  .. math::
+  
+    7 \mid{} 10a+b\  \leftrightarrow\  7 \mid{} a - 2b.
+
+
+Attēlā redzama dalāmības pazīmes ar :math:`7` lietošana lielam skaitlim: 
+
+.. image:: figs-ntjun02-modular-arithmetic/divisibility-rule-7.png
+   :width: 2in
+   
+
+
+
+Vingrinājumi dalāmības pazīmēm
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Piemērs:** 
+  Atrast :math:`S_0(n)` un :math:`S_1(n)` dotajiem skaitļiem; pārbaudīt
+  to dalāmību ar :math:`11`. 
+  
+  * :math:`n = 1331`. 
+  * :math:`n = 14641`.
+  * :math:`n = 1001`.
+  * :math:`n = 979`. 
+  * :math:`n = 16808`. 
+
+
+**Definīcija:** 
+  Skaitļa decimālpierakstu sauc par *palindromu*, ja ciparu virkne ir identiska, 
+  to lasot no abiem galiem. Piemēram, :math:`44` un :math:`131` ir palindromi, 
+  bet :math:`1431` nav, jo, lasot no otra gala, veidojas cits skaitlis :math:`1341`.
+
+**Piemērs:** 
+  Vai piecciparu palindroms var būt pirmskaitlis?
+  Vai sešciparu palindroms var būt pirmskaitlis?
+  
+  
+**Risinājums:** 
+  Tā kā palindromā pastāv simetrija starp cipariem, kuri ir vienādi tālu no sākuma 
+  un beigām, tad (izņemot skaitli :math:`11`) nebūs palindromu-pirmskaitļu, 
+  kuros ir pāru skaits ciparu. Tas seko no dalāmības pazīmes ar :math:`11`. 
+  Savukārt piecciparu palindromus atras nav grūti –- jau :math:`10001`, 
+  :math:`10101`, :math:`10201` ir salikti skaitļi. 
+  Bet jau :math:`10301` ir pirmskaitlis. 
+
+
+
+**Piemērs:** 
+  Autobusa biļetei ir sešciparu numurs no :math:`000000` līdz :math:`999999`. 
+  Kādu biļešu ir vairāk: tādu, kuru numuru pirmo trīs ciparu summa ir vienāda 
+  ar pēdējo trīs ciparu summu, vai tādu, kuru numurs dalās ar :math:`11`?
+
+
+**Piemērs:** 
+  Pēc kārtas izrakstīti visu naturālo skaitļu (no 1 līdz 2016) kubu decimālpierakstu cipari: 
+  
+  .. math:: 
+  
+    \textcolor{red}{1}8\textcolor{red}{27}64\textcolor{red}{125}216\textcolor{red}{343}512\textcolor{red}{729}1000\ldots{}8193540096
+    
+  (Pēdējie cipari apzīmē to, ka :math:`2016^3=8193540096`.) 
+  Atrast atlikumu, šo garo skaitli dalot ar :math:`9`.
+
+
+**Piemērs:** 
+  Pamatot sekojošu dalāmības pazīmi ar :math:`13`:
+  "Skaitlis dalās ar :math:`13` tad un tikai tad, ja šim skaitlim 
+  nosvītrojot pēdējo ciparu, četrkāršojot to un pieskaitot "saīsinātajam" skaitlim,
+  iegūtais rezultāts dalās ar :math:`13`. 
+  Citiem vārdiem, ja :math:`n = 10a + b`, kur :math:`b` ir skaitļa pēdējais cipars, tad 
+  
+  .. math::
+  
+    13 \mid{} 10a+b\  \leftrightarrow\  13 \mid{} a + 4b.
+    
+  Vai skaitļa :math:`n = 10a + b` aizstāšana ar :math:`n' = a + 4b` saglabā skaitļa
+  kongruences klasi? Citiem vārdiem, vai :math:`n \equiv n' \pmod {13}`?
+
+
+
+Periodiski procesi
 -------------------
 
-Pamatapgalvojums
-^^^^^^^^^^^^^^^^^^^^
+Ja kādā sistēmā ir galīgs skaits stāvokļu un katru nākamo 
+stāvokli viennozīmīgi nosaka viens vai daži iepriekšējie stāvokļi. 
+tad sistēmas stāvokļi pēc kāda laika sāk periodiski atkārtoties. 
+
+**Piemēri:** 
+
+* Naturālu skaitļu aritmētisku progresiju atlikumi (mod :math:`m`). 
+* Naturālu skaitļu ģeometrisku progresiju atlikumi (mod :math:`m`).
+* Fibonači virknes locekļu atlikumi (piemēram, pēdējie :math:`2` cipari Fibonači virknes locekļiem).
+* Ciparu virkne aiz komata skaitļa :math:`\frac{P}{Q}` decimālpierakstā.
+
+Visi šie procesi ir periodiski. Dažreiz virkne ir *tīri periodiska* 
+(periods sākas jau no paša sākuma), citreiz virknei ir priekšperiods (*prefix*)
+un tā kļūst periodiska sākot ar kādu vietu, bezgalīgi atkārtojot 
+vienu un to pašu periodu (*repetend*). Sk. `<https://bit.ly/3tHRQBv>`_
+
+
+
+Kādos gadījumos rodas priekšperiods
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Attēlā redzami trīs grafi ar stāvokļu pārejas bultiņām. 
+Pirmajam no tiem nav priekšperioda (visas bultiņas ir sarkanas), 
+pārējiem diviem ir priekšperiods (aiz zilajām bultiņām seko 
+sarkanā bultiņa - stabils/bezgalīgs periods). 
+
+.. image:: figs-ntjun02-modular-arithmetic/finite-set-of-states.png
+   :width: 4in
+
+Šie attēli ilustrē racionālu skaitļu izteikšanu bezgalīgu 
+decimāldaļu veidā: 
+
+.. math:: 
+
+  \begin{array}{l}
+  \frac{7}{13} = 0.\textcolor{red}{(538461)} = 0.\textcolor{red}{538461}53846153846\ldots\\[1ex]  
+  \frac{7}{12} = 0.\textcolor{blue}{58}(3)\ldots = 0.\textcolor{blue}{58}\textcolor{red}{3}33\ldots\\[1ex]  
+  \frac{2020}{5125} = 0.\textcolor{blue}{394}\textcolor{red}{14634}14634\ldots\\[1ex]  
+  \end{array}
+
+Dalot ar :math:`13` nav priekšperioda (skaitlis ir tīri periodisks ar sešu ciparu 
+periodu). Dalot ar :math:`12` ir divu ciparu priekšperiods un tad periods no viena cipara. 
+Dalot ar :math:`5125 = 125 \cdot 41` ir trīs ciparu priekšperiods un tad piecu ciparu periods. 
+
+
+
+.. image:: figs-ntjun02-modular-arithmetic/remainders-as-states.png
+   :width: 4in
+   
+Kāpēc veselu skaitļu dalīšana var noved pie šiem atšķirīgajiem gadījumiem? 
+Aplūkojam dalīšanu stabiņā kā stāvokļu pārejas starp atlikumiem. 
+
+Dalot ar :math:`13` stāvokļu pārejas veido parastu, "tīru" ciklu. 
+Savukārt, dalot ar :math:`12`, atlikumam :math:`4` "iedur" divas bultiņas. 
+Ja :math:`10a \equiv 4 \pmod {12}`, tad iespējamas divas situācijas: 
+vai nu :math:`a = 4`, vai arī :math:`a = 10`. 
+
+
+
+
+**Jautājumi par periodiskām virknēm**
+  Katrai no virknēm noteikt, vai tā ir tīri periodiska vai arī periodiska no kādas vietas (un ja ir, 
+  tad atrast tās periodu un arī priekšperiodu). 
+
+  **(A)** 
+    Virknes :math:`1`; :math:`1+2`; :math:`1+2+3`; :math:`1+2+3+4`; :math:`\ldots`  pēdējais cipars? 
+
+  **(B)**
+    Katram naturālam :math:`n` definējam :math:`b_n`, kas ir virknes :math:`n!` pēdējais nenulles cipars.
+
+  **(C)**
+    Fibonači skaitļu virknes :math:`F(n)` pēdējie divi cipari (Fibonači skaitļa atlikums, dalot ar :math:`100`). 
+    
+  **(D)**
+    Virkne, kas satur locekli :math:`+1`, ja 
+    :math:`\sin\left( \frac{13\pi{}n}{7} \right) > 1`, bet :math:`-1` pretējā gadījumā. 
+    Šeit :math:`n \in \mathbb{N}` ir patvaļīgs naturāls skaitlis. 
+    
+  **(E)**
+    Atlikums, dalot :math:`a^n` ar :math:`b`, kur :math:`a,b` ir abi naturāli. 
+
+  **(F)**
+    Pēdējie :math:`4` cipari :math:`5^n` pierakstā?
+    
+  **(G)**
+    Skaitļa :math:`\sin\left( \frac{n}{10} \right)`, :math:`n \in \mathbb{N}` zīme?
+
+  **(H)**
+    :math:`n`-tais cipars aiz komata skaitļa :math:`7/13` decimālpierakstā?
+
+
+
+**Risinājumi:** 
+
+  **(A)**
+    Virkne ir periodiska – periods ir 20. 
+
+  **(B)** 
+    Faktoriālam katru nākamo elementu viennozīmīgi nosaka iepriekšējais, 
+    Tomēr pēdējais nenulles cipars viennozīmīgi neizriet no iepriekšējā faktoriāla pēdējā nenulles cipara. 
+    (Tas gan **nav** pierādījums, ka virkne nav periodiska, bet tajā neizpildās nepieciešamais periodiskuma nosacījums). 
+    
+  **(C)**
+    Fibonači skaitļa pēdējie divi cipari viennozīmīgi nenosaka nākamā locekļa pēdējos divus ciparus. 
+    Bet Fibonači skaitļu pārītis nosaka. Tādēļ ir periodiska.
+    
+  **(D)** 
+    Ja :math:`n` pārlec :math:`14` vienības uz priekšu, tad sinusa zīme (un arī vērtība) nemainās.
 
 
 
 
 
 
-Cikli ar priekšperiodu un bez tā
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Piemērs:** 
+  Vai eksistē Fibonači skaitlis, kura decimālpieraksts beidzas ar divām nullēm?
+  
+
+**Piemērs:** 
+  Cik ir tādu :math:`n`, kam  :math:`5^n \equiv 25 \pmod {10000}` ?  
+
+
+**Piemērs:**
+  Cik ir tādu :math:`n`, kam :math:`17^n \equiv 1 \pmod {100000}`? 
+  Citiem vārdiem, :math:`17^n` decimālpieraksts beidzas ar cipariem :math:`\mathtt{00001}`. 
+
+**Ieteikumi:** 
+  Visos gadījumos jānoskaidro, vai process, kurš ieciklojas, ir viennozīmīgi apvēršams. 
+  
+  Salīdzinām, teiksim :math:`7/41` decimālpierakstu ar :math:`{7}{12}` decimālpierakstu. 
+  Pirmajam no skaitļiem nav pusperioda, tas uzreiz aiz komata sāk :math:`5` ciparu periodu. 
+  Savukārt, dalot ar :math:`12`, rodas pusperiods.
+
+
+
+
+
+
+
+
+
+Uzdevumi
+---------
+
+**1.jautājums (BW.2018.18):** 
+  Dots tāds naturāls skaitlis :math:`n \geq 3`, ka :math:`4n+1` ir pirmskaitlis. 
+  Pierādiet, ka :math:`n^{2n}-1` dalās ar :math:`4n+1`.
+
+
+
+**Atrisinājums:**
+  No Fermā teorēmas tieši seko, ka :math:`n^{4n} - 1` dalās ar :math:`4n+1`. 
+  Jo :math:`n^{p-1} \equiv 1 \pmod p`. 
+
+  Bet par kongruenču klasi :math:`n^{2n}` ir divas iespējas. 
+  Ja šīs klases kvadrāts ir :math:`1`, tad pati klase varētu būt gan :math:`+1`, 
+  gan arī :math:`-1`. 
+
+**2.jautājums (BW.2016.1):** 
+  Atrast visus pirmskaitļu pārus :math:`(p,q)`, kuriem
+  
+  .. math::
+  
+    p^3 - q^5 = (p+q)^2. 
+
+
+**Atrisinājums:** 
+  Izrakstām iespējamās starpības :math:`p^3 - q^5` un meklēsim tajā pilnus kvadrātus. 
+  Šai izteiksmei jābūt nenegatīvai, lai tā būtu vienāda ar :math:`(p+q)^2`. 
+
+  .. image:: figs-ntjun02-modular-arithmetic/cube-table.png
+     :width: 3in
+   
+  Aplūkojam atlikumu pārīšus (pēc 3 moduļa)
+  
+  .. image:: figs-ntjun02-modular-arithmetic/table-mod3.png
+     :width: 3in
+     
+  Pārliecināmies, ka skaitlim :math:`p` vai :math:`q` ir jādalās ar :math:`3`; 
+  tātad kāds no tiem ir vienāds ar :math:`3` (jo ir pirmskaitlis). 
+  Pārskatot nedaudzos gadījumus ar pirmskaitli :math:`3`, iegūsim, ka 
+  :math:`(p,q) = (7,3)` ir vienīgais atrisinājums.
+  
+  
+**3.jautājums (BWTST.2018.13):**
+  Vai eksistē tāds pirmskaitlis :math:`q`, ka nevienam pirmskaitlim :math:`p` skaitlis 
+
+  .. math:: 
+   
+    \sqrt[3]{p^2 + q}
+
+  nav naturāls?
+
+**Atrisinājums:** 
+  Ja :math:`q=2`, tad nesanāk, jo :math:`5^2+2=3^3` ir pilns kubs.
+
+  Ja :math:`q=3`, tad sanāk. Pierādījuma shēma – "pretrunas modulis"
+  Atrodam tādu :math:`m`, ka :math:`p^2` dod nelielu atlikumu skaitu, dalot ar :math:`m`.
+  Tad arī :math:`p^2+3` dod nedaudzus, paredzamus atlikumus.
+  Vienlaikus var panākt, ka šādi atlikumi ir neiespējami naturāla skaitļa kubam :math:`a^3`. 
+
+
+  Nepāru skaitļu pilniem kvadrātiem ir izdevīgi aplūkot atlikumus, 
+  dalot ar :math:`8` –- tas arī būs mūsu pretrunas modulis.
+  
+  Ievērojam, ka jebkurš nepāru skaitļu kvadrāts :math:`n^2` 
+  dod atlikumu :math:`1`, dalot ar :math:`8`.
+  (Lai par to pārliecinātos, apzīmējam :math:`n = 2k+1`. 
+  Tad :math:`(2k+1)^2=4k^2+4k+1=4k(k+1)+1`. 
+  Tieši viens no :math:`k, k+1` ir pāru skaitlis, 
+  tātad reizinājums :math:`4k(k+1)` dalās ar :math:`8`.)
+  
+  Esam pārbaudījuši, ka :math:`\sqrt[3]{p^2+3}` 
+  nav vesels skaitlis, jo vai nu :math:`p^2 + 3 = 7` (ja :math:`p=2`), 
+  vai arī :math:`p^2+3` dod atlikumu :math:`4`, dalot ar :math:`8` 
+  Tas nav iespējams, jo visu pāru skaitļu kubi dalās ar :math:`8`.
+
 

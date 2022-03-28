@@ -556,15 +556,14 @@ Ar dalītāju summas funkciju saistīta neparasta skaitļu kategorija -- *perfek
 
 
 **Piemēri:**
-  Ja :math:`p=2`, tad :math:`p^2 - 1 = 3` ir Mersenna pirmskaitlis (
+  * Ja :math:`p=2`, tad :math:`p^2 - 1 = 3` ir Mersenna pirmskaitlis.
 
-
-:math:`2^p-1` var būt pirmskaitlis tikai tad, ja :math:`p` ir pirmskaitlis.
-Pirmskaitļus šādā formā :math:`2^p-1` sauc par Mersenna skaitļiem.
-(Zināmi :math:`50` šādi pirmskaitļi.)
-Nav zināms, vai Mersenna pirmskaitļu ir bezgalīgi daudz.
-Un arī nav zināms, vai neeksistē perfekti skaitļi kādā citā formā
-(tsk.\ vai ir iespējami nepāra perfekti skaitļi).
+  * :math:`2^p-1` var būt pirmskaitlis tikai tad, ja :math:`p` ir pirmskaitlis.
+    Pirmskaitļus šādā formā :math:`2^p-1` sauc par Mersenna skaitļiem.
+    (Zināmi :math:`50` šādi pirmskaitļi.)
+    Nav zināms, vai Mersenna pirmskaitļu ir bezgalīgi daudz.
+    Un arī nav zināms, vai neeksistē perfekti skaitļi kādā citā formā
+    (tsk.\ vai ir iespējami nepāra perfekti skaitļi).
 
 
 
@@ -643,6 +642,8 @@ Sacensību uzdevumi
     \right.
     
   Ja :math:`n=10`, tad ir četri atrisinājumi: 
+  
+  .. math::
 
     \left\{ \begin{array}{l}
     1^2 \equiv 1 \pmod {10}\\
@@ -660,7 +661,7 @@ Sacensību uzdevumi
   * :math:`n=1`.
   * :math:`n = p`, kur :math:`p` ir pirmskaitlis. 
   * :math:`n = p^k`, kur :math:`p^k` ir pirmskaitļa pakāpe. 
-  * :math:n = pq`, kas ir divu pirmskaitļu reizinājums. 
+  * :math:`n = pq`, kas ir divu pirmskaitļu reizinājums. 
  
 
   Hipotēze: :math:`f(n) = 2^{\omega(n)}`, kur ar :math:`\omega(n)` apzīmē skaitļa :math:`n`

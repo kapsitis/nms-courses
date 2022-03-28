@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ntjun03-crt'
-copyright = '2021, NMS'
+project = 'ntjun06-rational'
+copyright = '2022, NMS'
 author = 'NMS'
 
 
@@ -51,6 +51,8 @@ html_theme = 'alabaster'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+
+
 latex_elements = {
   'extraclassoptions': 'openany,oneside',
   'maketitle': '',  # No Title Page
@@ -69,3 +71,4 @@ latex_additional_files = ["mystyle.sty"]
 
 def setup(app):
     app.add_config_value('releaselevel', 'beta', 'env')
+
