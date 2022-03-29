@@ -464,15 +464,17 @@ Skaitliski piemēri
   Atrast pēdējos divus nenulles ciparus skaitļa :math:`2021!` decimālpierakstā.
 
 
+
+
 Sacensību uzdevumi
 -------------------
 
-**1.Jautājums**
+**1.Uzdevums**
   Pierādīt, ka eksistē :math:`99` pēc kārtas sekojoši naturāli skaitļi
   :math:`a_1, a_2, \ldots, a_{99}`, kuriem :math:`a_i` dalās ar kāda naturāla
   skaitļa kubu, kas lielāks par :math:`1`. 
 
-**Stratēģija:** 
+**Ieteikumi:** 
   Lai pamatotu, ka eksistē skaitļi ar noteikta veida 
   neparastu īpašību, sadalām šo īpašību daudzās lineārās kongruencēs 
   (pēc moduļiem, kuri ir savstarpēji pirmskaitļi)
@@ -480,7 +482,7 @@ Sacensību uzdevumi
 
  
 
-**2.Jautājums (LV.VO.2001.9.1):** 
+**2.Uzdevums (LV.VO.2001.9.1):** 
   Sienāža lēciena garums ir :math:`5`. 
   Viņš sākotnēji atrodas punktā ar koordinātām :math:`(0;0)` 
   un var pārvietoties tikai pa punktiem, kam abas koordinātas ir veseli skaitļi.
@@ -490,7 +492,7 @@ Sacensību uzdevumi
 
 
 
-**3.Jautājums (LT.VUMIF.2016.10.3):**
+**3.Uzdevums (LT.VUMIF.2016.10.3):**
 
   Atrodiet mazāko naturālo skaitli :math:`n`, kuram skaitļi 
   :math:`\sqrt[5]{5n}`, :math:`\sqrt[6]{6n}`, :math:`\sqrt[7]{7n}`
@@ -498,14 +500,14 @@ Sacensību uzdevumi
 
 
   Sk. Viļņas universitātes Matemātikas un informātikas fakultātes rīkotā olimpiāde skolēniem:  
-  `<http://mif.vu.lt/matematikos-olimpiados/mif/>`
+  `<http://mif.vu.lt/matematikos-olimpiados/mif/>`_.
 
 
 
 
 
 
-**4.Jautājums (USAMO.2008.1):**
+**4.Uzdevums (USAMO.2008.1):**
   Pierādīt, ka jebkuram naturālam :math:`n`, eksistē :math:`n+1` 
   savstarpēji pirmskaitļi :math:`k_0,k_1,\ldots,k_n`, kas visi lielāki par :math:`1`, kuriem 
   :math:`k_0 \cdot k_1 \cdot \ldots \cdot k_n - 1`
@@ -526,12 +528,12 @@ Sacensību uzdevumi
 
 
 
-**5.Jautājums (US.MPGO.2010.2):**
-  Pierādīt, ka jebkuram naturālam `$n$`, eksistē veseli skaitļi :math:`a` un :math:`b`, 
+**5.Uzdevums (US.MPGO.2010.2):**
+  Pierādīt, ka jebkuram naturālam :math:`n`, eksistē veseli skaitļi :math:`a` un :math:`b`, 
   kuriem :math:`4a^2 + 9b^2 - 1` dalās ar :math:`n`. 
 
 
-**6.Jautājums (BW.2016.2):**
+**6.Uzdevums (BW.2016.2):**
   Pierādīt vai apgāzt sekojošus apgalvojumus:  
   
   **(a)** 
@@ -547,7 +549,7 @@ Sacensību uzdevumi
 
   
   
-**7.Jautājums:**
+**7.Uzdevums:**
   Sauksim režģa punktu :math:`X` rūtiņu plaknē par *redzamu* no 
   koordinātu sākumpunkta :math:`O`, ja nogrieznis :math:`O` nesatur 
   citus režģa punktus, izņemot :math:`O` un :math:`X`. 
@@ -558,10 +560,10 @@ Sacensību uzdevumi
 
 
 
-**8.Jautājums:**
+**8.Uzdevums:**
 
   Vai eksistē bezgalīgi daudzi Fibonači skaitļi, kuri:    
-  Dalās ar :math:`1001` bez atlikuma (atlikums `0`),  
+  Dalās ar :math:`1001` bez atlikuma (atlikums :math:`0`),  
 
   Vai eksistē bezgalīgi daudzi Fibonači skaitļi, kuri:    
   dod atlikumu :math:`900`, dalot ar :math:`1001`.
@@ -570,15 +572,14 @@ Sacensību uzdevumi
   dod atlikumu :math:`1000`, dalot ar :math:`1001`.
 
 
-.. note:: 
-  Fibonači virkni (:math:`0,1,1,2,3,5,8,13,21,\ldots`) definē šādi:  
-  :math:`F_0 = 0`, :math:`F_1 = 1` un :math:`F_{k+1} = F_{k-1}+F_{k}` 
-  visiem :math:`k \geq 1`. (Katrs nākamais
-  loceklis ir divu iepriekšējo locekļu summa.)
+  .. note:: 
+    Fibonači virkni (:math:`0,1,1,2,3,5,8,13,21,\ldots`) definē šādi:  
+    :math:`F_0 = 0`, :math:`F_1 = 1` un :math:`F_{k+1} = F_{k-1}+F_{k}` 
+    visiem :math:`k \geq 1`. (Katrs nākamais
+    loceklis ir divu iepriekšējo locekļu summa.)
 
 
-**9.Jautājums (BW.2016.2)**
-
+**9.Uzdevums (BW.2016.2)**
   Pierādīt vai apgāzt sekojošus apgalvojumus:  
 
   1. Jebkuram :math:`k \geq 2`, un jebkuriem :math:`k` pēc kārtas sekojošiem naturāliem 
@@ -590,8 +591,8 @@ Sacensību uzdevumi
      
      
 
-**Ieteikums 2. apgalvojuma apgāšanai:**
-  Ar mēģinājumu/kļūdu metodi atrod, ka atbilde ir :math:`17`: 
+**Ieteikumi:**
+  Otrajā apgalvojumā ar mēģinājumu/kļūdu metodi atrod, ka atbilde ir :math:`17`: 
   Var atrast :math:`17` skaitļu intervālu :math:`[n;n+16]`; 
   kuru var pārklāt ar aritmētiskām progresijām ar diferencēm 
   :math:`d = 2,3,5,7,11,13` (un no katras progresijas virknē ir vismaz 

@@ -460,7 +460,7 @@ konstrukciju nevis algebras vai skaitļu teorijas metodes par pirmreizinātājie
 
   Ap punktu :math:`C` ar rādiusu :math:`m` velkam riņķa līniju, kas krusto hipotenūzu :math:`AC`
   punktā :math:`D`. Šajā punktā velkam pieskari riņķa līnijai - tā ir perpendikulāra 
-  nogrieznim :math:`AC` (riņķa rādiusam), un krusto kateti :math:`AB` punktā :math:E`. 
+  nogrieznim :math:`AC` (riņķa rādiusam), un krusto kateti :math:`AB` punktā :math:`E`. 
 
   Nogriežņu garumi :math:`|AD| = n-m` (jo no hipotenūzas :math:`n` atšķelts nogrieznis 
   :math:`CD` garumā :math:`m`). 

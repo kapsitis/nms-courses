@@ -4,6 +4,32 @@ NMS Skaitļu teorija #7: Kvadrātiskas kongruences
 
 
 
+Piemēram šāds rezultāts:
+
+**Lagranža Teorēma** (*Joseph-Louis Lagrange*): 
+  Ikvienu naturālu skaitli var izteikt kā četru pilnu kvadrātu summu. 
+  
+
+Arī šādu rezultātu pierādīšanai lieto metodes, kas radušās, pētot skaitļu dalāmību. 
+Interese par skaitļu dalāmību, par pirmskaitļiem jau antīkajā pasaulē tālu pārsniegusi tiešo praktisko
+lietojumu, veicinājusi loģikas un formalizētas domāšanas attīstību. 
+
+Tā kā dalāmības attiecību ne vienmēr var izpildīt veselos skaitļos, dalāmības faktus 
+ir dabiski paust ar predikātu loģikas formulām. Piemēri: 
+
+* :math:`\forall a \in \mathbb{Z}\ (a \neq 0 \rightarrow a\;\mid\;0)`.
+  "Visiem veseliem skaitļiem :math:`a` ir spēkā: Ja :math:`a` nav :math:`0`, tad :math:`a` dala :math:`0`" (jeb nulli 
+  var izdalīt ar :math:`a`. 
+* :math:`\forall a \in \mathbb{Z}\ (0 \nmid a)`. 
+  "Visiem veseliem :math:`a`, :math:`0` nedala :math:`a`."
+
+
+
+
+
+
+
+
 Lineāras rekurences
 ---------------------
 

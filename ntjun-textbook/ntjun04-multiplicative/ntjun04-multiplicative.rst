@@ -341,9 +341,7 @@ Ieslēgšanas-Izslēgšanas princips
     |A \cup B| = 300 + 250 - 150 = 400. 
 
     
-  Tātad to, kuri nemācās nevienu no šīm svešvalodām ir :math:`1000 - 400 = 600`. 
-  
-  :math:`\square`
+  Tātad to, kuri nemācās nevienu no šīm svešvalodām ir :math:`1000 - 400 = 600`.  :math:`\blacksquare`
 
 
 **Piemērs:** 
@@ -370,7 +368,7 @@ nevis apvienojumu. Apvienojuma elementu saskaitīšanai
 var noderēt ieslēgšanas-izslēgšanas princips.
 
 **Piemērs:**
-  Zīmējumā attēloti veselie skaitļi :math:\{1,2,\ldots,210\}`. 
+  Zīmējumā attēloti veselie skaitļi :math:`\{1,2,\ldots,210\}`. 
   Krāsaino ovālu iekšpusē ir skaitļi, kuri dalās attiecīgi ar
   :math:`2`, :math:`3`, :math:`5`, :math:`7`. 
   Skaitlis :math:`210 = 2 \cdot 3 \cdot 5 \cdot 7` 
@@ -606,9 +604,9 @@ Skaitliski piemēri
 
 
 Sacensību uzdevumi
-^^^^^^^^^^^^^^^^^^^^^^^
+--------------------
 
-**1.jautājums:**
+**1.Uzdevums:**
   Parādīt, ka
 
   .. math::
@@ -617,7 +615,7 @@ Sacensību uzdevumi
     \left\lfloor \frac{n}{2} \right\rfloor + \ldots + \left\lfloor \frac{n}{n} \right\rfloor.
 
 
-**2.jautājums:**
+**2.Uzdevums:**
   Parādīt, ka
 
   .. math::
@@ -626,34 +624,12 @@ Sacensību uzdevumi
     2 \cdot \left\lfloor \frac{n}{2} \right\rfloor + \ldots + n \cdot \left\lfloor \frac{n}{n} \right\rfloor.
 
 
-**3.jautājums:**
+**3.Uzdevums:**
   Dots naturāls skaitlis :math:`n`. Noteikt atkarībā no :math:`n`, 
   cik ir skaitļu :math:`x \in \{ 1, 2, \ldots, n\}`, kuriem :math:`x^2 \equiv x \pmod {n}`. 
 
-**Piemēri:**
-  Divi atrisinājumi acīmredzami der arī ja :math:`n` ir pirmskaitlis: 
-  
-  .. math::
-  
-    \left\{ \begin{array}{l}
-    1^2 \equiv 1 \pmod {n}\\
-    n^2 \equiv n \pmod {n}\\
-    \end{array}
-    \right.
-    
-  Ja :math:`n=10`, tad ir četri atrisinājumi: 
-  
-  .. math::
 
-    \left\{ \begin{array}{l}
-    1^2 \equiv 1 \pmod {10}\\
-    5^2 \equiv 5 \pmod {10}\\
-    6^2 \equiv 6 \pmod {10}\\
-    10^2 \equiv 10 \pmod {10}\\
-    \end{array}
-    \right.
-
-**Ieteikums:**
+**Ieteikumi:**
   Meklēto atrisinājumu skaitu var vispirms atrast vienkāršākajiem gadījumiem.
   Apzīmējam meklēto atrisinājumu skaitu vienādojumam :math:`x^2 \equiv x \pmod {n}` (no kopas
   :math:`\{ 1,\ldots{},n \}`  ar :math:`f(n)`. Atradīsim to sekojošiem :math:`n`:
@@ -668,4 +644,31 @@ Sacensību uzdevumi
   dažādo pirmskaitļu dalītāju skaitu, neņemot vērā to, kādā pakāpē tie ietilpst skaitlī :math:`n`. 
 
 
+.. only:: Internal
+
+  **Atbilde:**
+
+    Divi atrisinājumi acīmredzami der arī ja :math:`n` ir pirmskaitlis: 
+  
+    .. math::
+  
+      \left\{ \begin{array}{l}
+      1^2 \equiv 1 \pmod {n}\\
+      n^2 \equiv n \pmod {n}\\
+      \end{array}
+      \right.
+    
+    Ja :math:`n=10`, tad ir četri atrisinājumi: 
+  
+    .. math::
+
+      \left\{ \begin{array}{l}
+      1^2 \equiv 1 \pmod {10}\\
+      5^2 \equiv 5 \pmod {10}\\
+      6^2 \equiv 6 \pmod {10}\\
+      10^2 \equiv 10 \pmod {10}\\
+      \end{array}
+      \right.
+
+  :math:`\square`
 

@@ -699,19 +699,19 @@ Pēc noīsināšanās iegūstam, ka
 
 
 
-Vingrinājumi par Mazo Fermā teorēmu
+Jautājumi par Mazo Fermā teorēmu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Piemērs:** 
+**1.jautājums:** 
   Pārveidot sekojošu periodisku decimāldaļskaitli par racionālu daļu: 
   :math:`0.(20221115)`.
   
-**Piemērs:** 
+**2.jautājums:** 
   Uzrakstīt tādu :math:`1/p` 
   (:math:`p` ir pirmskaitlis), 
   kura decimālpierakstā ir periods tieši no :math:`4` cipariem.
 
-**Piemērs:** 
+**3.jautājums:** 
   Kāds ir mazākais naturālu skaitļu kopas izmērs, lai no šīs kopas
   noteikti varētu izvēlēties tādus :math:`a,b` 
   kuru piekto pakāpju starpība :math:`a^5 - b^5` dalītos ar :math:`11`?
@@ -905,7 +905,7 @@ kādas figūras speciālu īpašību. Arī skaitļu teorijā šāda tulkošana i
 Skaitlis :math:`n` ir pāra skaitlis                  Var izteikt :math:`n = 2k`
 Skaitlis :math:`n` ir nepāra skaitlis                Var izteikt :math:`n = 2k+1`
 Skaitlis :math:`n` nedalās ar :math:`3`              :math:`n \equiv \pm 1 \pmod 3`
-:math:`n` pieraksts beidzas ar :math:`37`            :math:`n \equiv 37 \pmod 100`
+:math:`n` pieraksts beidzas ar :math:`37`            :math:`n \equiv 37 \pmod {100}`
 :math:`n` pieraksts ir :math:`\overline{abcabc}`     :math:`n = 1001 \cdot \overline{abc}`
 :math:`a` un :math:`b` nav savstarpēji pirmskaitļi   :math:`\text{LKD}(a,b)>1`
 Skaitlis :math:`n` ir pilns kvadrāts                 Var izteikt :math:`n = k^2`
@@ -1132,7 +1132,7 @@ desmitu ciparu plus tūkstošu ciparu plus simttūkstošu ciparu, utt.
 Citas dalāmības pazīmes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ir virkne tādu dalāmības pazīmju, kas ļauj pārbaudīt dalāmību ar kādu skaitli :math;`m`, 
+Ir virkne tādu dalāmības pazīmju, kas ļauj pārbaudīt dalāmību ar kādu skaitli :math:`m`, 
 bet lieto tādus pārveidojumus, kas nesaglabā kongruenci pēc :math:`m` moduļa. 
 Sk. apkopojumu `<http://www.savory.de/maths1.htm>`_. 
 
@@ -1154,10 +1154,10 @@ Attēlā redzama dalāmības pazīmes ar :math:`7` lietošana lielam skaitlim:
 
 
 
-Vingrinājumi dalāmības pazīmēm
+Jautājumi par dalāmības pazīmēm
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Piemērs:** 
+**1.jautājums:** 
   Atrast :math:`S_0(n)` un :math:`S_1(n)` dotajiem skaitļiem; pārbaudīt
   to dalāmību ar :math:`11`. 
   
@@ -1173,28 +1173,31 @@ Vingrinājumi dalāmības pazīmēm
   to lasot no abiem galiem. Piemēram, :math:`44` un :math:`131` ir palindromi, 
   bet :math:`1431` nav, jo, lasot no otra gala, veidojas cits skaitlis :math:`1341`.
 
-**Piemērs:** 
+**2.jautājums:** 
   Vai piecciparu palindroms var būt pirmskaitlis?
   Vai sešciparu palindroms var būt pirmskaitlis?
+
+.. only:: Internal
   
+  **Atbilde:** 
   
-**Risinājums:** 
-  Tā kā palindromā pastāv simetrija starp cipariem, kuri ir vienādi tālu no sākuma 
-  un beigām, tad (izņemot skaitli :math:`11`) nebūs palindromu-pirmskaitļu, 
-  kuros ir pāru skaits ciparu. Tas seko no dalāmības pazīmes ar :math:`11`. 
-  Savukārt piecciparu palindromus atras nav grūti –- jau :math:`10001`, 
-  :math:`10101`, :math:`10201` ir salikti skaitļi. 
-  Bet jau :math:`10301` ir pirmskaitlis. 
+    Tā kā palindromā pastāv simetrija starp cipariem, kuri ir vienādi tālu no sākuma 
+    un beigām, tad (izņemot skaitli :math:`11`) nebūs palindromu-pirmskaitļu, 
+    kuros ir pāru skaits ciparu. Tas seko no dalāmības pazīmes ar :math:`11`. 
+    Savukārt piecciparu palindromus atras nav grūti –- jau :math:`10001`, 
+    :math:`10101`, :math:`10201` ir salikti skaitļi. 
+    Bet jau :math:`10301` ir pirmskaitlis. 
+
+  :math:`\square`
 
 
-
-**Piemērs:** 
+**3.jautājums:** 
   Autobusa biļetei ir sešciparu numurs no :math:`000000` līdz :math:`999999`. 
   Kādu biļešu ir vairāk: tādu, kuru numuru pirmo trīs ciparu summa ir vienāda 
   ar pēdējo trīs ciparu summu, vai tādu, kuru numurs dalās ar :math:`11`?
 
 
-**Piemērs:** 
+**4.jautājums:** 
   Pēc kārtas izrakstīti visu naturālo skaitļu (no 1 līdz 2016) kubu decimālpierakstu cipari: 
   
   .. math:: 
@@ -1205,7 +1208,7 @@ Vingrinājumi dalāmības pazīmēm
   Atrast atlikumu, šo garo skaitli dalot ar :math:`9`.
 
 
-**Piemērs:** 
+**5.jautājums:** 
   Pamatot sekojošu dalāmības pazīmi ar :math:`13`:
   "Skaitlis dalās ar :math:`13` tad un tikai tad, ja šim skaitlim 
   nosvītrojot pēdējo ciparu, četrkāršojot to un pieskaitot "saīsinātajam" skaitlim,
@@ -1349,12 +1352,11 @@ vai nu :math:`a = 4`, vai arī :math:`a = 10`.
 
 **Piemērs:**
   Cik ir tādu :math:`n`, kam :math:`17^n \equiv 1 \pmod {100000}`? 
-  Citiem vārdiem, :math:`17^n` decimālpieraksts beidzas ar cipariem :math:`\mathtt{00001}`. 
+  (T.i. :math:`17^n` decimālpieraksts beidzas ar :math:`\mathtt{00001}`.) 
 
 **Ieteikumi:** 
-  Visos gadījumos jānoskaidro, vai process, kurš ieciklojas, ir viennozīmīgi apvēršams. 
-  
-  Salīdzinām, teiksim :math:`7/41` decimālpierakstu ar :math:`{7}{12}` decimālpierakstu. 
+  Visos gadījumos jānoskaidro, vai process, kurš ieciklojas, ir viennozīmīgi apvēršams.   
+  Salīdzinām, teiksim :math:`\frac{7}{41}` decimālpierakstu ar :math:`\frac{7}{12}` decimālpierakstu. 
   Pirmajam no skaitļiem nav pusperioda, tas uzreiz aiz komata sāk :math:`5` ciparu periodu. 
   Savukārt, dalot ar :math:`12`, rodas pusperiods.
 
@@ -1366,50 +1368,78 @@ vai nu :math:`a = 4`, vai arī :math:`a = 10`.
 
 
 
-Uzdevumi
----------
+Sacensību Uzdevumi
+-------------------
 
-**1.jautājums (BW.2018.18):** 
+**1.Uzdevums (BW.2018.18):** 
   Dots tāds naturāls skaitlis :math:`n \geq 3`, ka :math:`4n+1` ir pirmskaitlis. 
   Pierādiet, ka :math:`n^{2n}-1` dalās ar :math:`4n+1`.
 
 
 
-**Atrisinājums:**
-  No Fermā teorēmas tieši seko, ka :math:`n^{4n} - 1` dalās ar :math:`4n+1`. 
-  Jo :math:`n^{p-1} \equiv 1 \pmod p`. 
+.. only:: Internal
 
-  Bet par kongruenču klasi :math:`n^{2n}` ir divas iespējas. 
-  Ja šīs klases kvadrāts ir :math:`1`, tad pati klase varētu būt gan :math:`+1`, 
-  gan arī :math:`-1`. 
+  **Atbilde:**
+  
+    No Fermā teorēmas tieši seko, ka :math:`n^{4n} - 1` dalās ar :math:`4n+1`. 
+    Jo :math:`n^{p-1} \equiv 1 \pmod p`. 
 
-**2.jautājums (BW.2016.1):** 
+    Bet par kongruenču klasi :math:`n^{2n}` ir divas iespējas. 
+    Ja šīs klases kvadrāts ir :math:`1`, tad pati klase varētu būt gan :math:`+1`, 
+    gan arī :math:`-1`.
+  
+  :math:`\square`
+
+**2.Uzdevums (BW.2016.1):** 
   Atrast visus pirmskaitļu pārus :math:`(p,q)`, kuriem
   
   .. math::
   
     p^3 - q^5 = (p+q)^2. 
 
+.. only:: Internal
 
-**Atrisinājums:** 
-  Izrakstām iespējamās starpības :math:`p^3 - q^5` un meklēsim tajā pilnus kvadrātus. 
-  Šai izteiksmei jābūt nenegatīvai, lai tā būtu vienāda ar :math:`(p+q)^2`. 
+  **Atbilde:**
 
-  .. image:: figs-ntjun02-modular-arithmetic/cube-table.png
-     :width: 3in
+    Izrakstām iespējamās starpības :math:`p^3 - q^5` un meklēsim tajā pilnus kvadrātus. 
+    Šai izteiksmei jābūt nenegatīvai, lai tā būtu vienāda ar :math:`(p+q)^2`. 
+
    
-  Aplūkojam atlikumu pārīšus (pēc 3 moduļa)
+    ===========  ===========  ===========  ===========  ===========  ============  ============  ============  ============
+    :math:`\,`   :math:`q=2`  :math:`q=3`  :math:`q=5`  :math:`q=7`  :math:`q=11`  :math:`q=13`  :math:`q=17`  :math:`q=19`
+    :math:`q=2`           --           --           93          311          1299          2165          4881          6827
+    :math:`q=3`           --           --           --          100          1088          1954          4670          6616
+    :math:`q=5`           --           --           --           --            --            --          1788          3734
+    ===========  ===========  ===========  ===========  ===========  ============  ============  ============  ============
   
-  .. image:: figs-ntjun02-modular-arithmetic/table-mod3.png
-     :width: 3in
-     
-  Pārliecināmies, ka skaitlim :math:`p` vai :math:`q` ir jādalās ar :math:`3`; 
-  tātad kāds no tiem ir vienāds ar :math:`3` (jo ir pirmskaitlis). 
-  Pārskatot nedaudzos gadījumus ar pirmskaitli :math:`3`, iegūsim, ka 
-  :math:`(p,q) = (7,3)` ir vienīgais atrisinājums.
+   
+    Aplūkojam atlikumu pārīšus (pēc 3 moduļa). Dažādām izteiksmēm izrakstām, ar ko 
+    tās kongruentas.
   
   
-**3.jautājums (BWTST.2018.13):**
+    ================  ================  ================  ================  ================  ==============================
+    :math:`p`         :math:`q`         :math:`p^3`       :math:`q^5`       :math:`(p+q)^2`   :math:`p^3-q^5\equiv (p+q)^2`
+    :math:`\equiv 0`  :math:`\equiv 0`  :math:`\equiv 0`  :math:`\equiv 0`  :math:`\equiv 0`  :math:`\mathtt{True}`
+    :math:`\equiv 0`  :math:`\equiv 1`  :math:`\equiv 0`  :math:`\equiv 1`  :math:`\equiv 1`  :math:`\mathtt{False}`
+    :math:`\equiv 0`  :math:`\equiv 2`  :math:`\equiv 0`  :math:`\equiv 2`  :math:`\equiv 1`  :math:`\mathtt{True}`
+    :math:`\equiv 1`  :math:`\equiv 0`  :math:`\equiv 1`  :math:`\equiv 0`  :math:`\equiv 1`  :math:`\mathtt{True}`
+    :math:`\equiv 1`  :math:`\equiv 1`  :math:`\equiv 1`  :math:`\equiv 1`  :math:`\equiv 1`  :math:`\mathtt{False}`
+    :math:`\equiv 1`  :math:`\equiv 2`  :math:`\equiv 1`  :math:`\equiv 2`  :math:`\equiv 0`  :math:`\mathtt{False}`
+    :math:`\equiv 2`  :math:`\equiv 0`  :math:`\equiv 2`  :math:`\equiv 0`  :math:`\equiv 1`  :math:`\mathtt{False}`
+    :math:`\equiv 2`  :math:`\equiv 1`  :math:`\equiv 2`  :math:`\equiv 1`  :math:`\equiv 0`  :math:`\mathtt{False}`
+    :math:`\equiv 2`  :math:`\equiv 2`  :math:`\equiv 2`  :math:`\equiv 2`  :math:`\equiv 1`  :math:`\mathtt{False}`
+    ================  ================  ================  ================  ================  ==============================
+
+  
+    Pārliecināmies, ka skaitlim :math:`p` vai :math:`q` ir jādalās ar :math:`3`; 
+    tātad kāds no tiem ir vienāds ar :math:`3` (jo ir pirmskaitlis). 
+    Pārskatot nedaudzos gadījumus ar pirmskaitli :math:`3`, iegūsim, ka 
+    :math:`(p,q) = (7,3)` ir vienīgais atrisinājums.
+  
+  :math:`\square`
+  
+  
+**3.Uzdevums (BWTST.2018.13):**
   Vai eksistē tāds pirmskaitlis :math:`q`, ka nevienam pirmskaitlim :math:`p` skaitlis 
 
   .. math:: 
@@ -1418,28 +1448,32 @@ Uzdevumi
 
   nav naturāls?
 
-**Atrisinājums:** 
-  Ja :math:`q=2`, tad nesanāk, jo :math:`5^2+2=3^3` ir pilns kubs.
+.. only:: Internal
 
-  Ja :math:`q=3`, tad sanāk. Pierādījuma shēma – "pretrunas modulis"
-  Atrodam tādu :math:`m`, ka :math:`p^2` dod nelielu atlikumu skaitu, dalot ar :math:`m`.
-  Tad arī :math:`p^2+3` dod nedaudzus, paredzamus atlikumus.
-  Vienlaikus var panākt, ka šādi atlikumi ir neiespējami naturāla skaitļa kubam :math:`a^3`. 
+  **Atbilde:** 
 
-
-  Nepāru skaitļu pilniem kvadrātiem ir izdevīgi aplūkot atlikumus, 
-  dalot ar :math:`8` –- tas arī būs mūsu pretrunas modulis.
+    Ja :math:`q=2`, tad nesanāk, jo :math:`5^2+2=3^3` ir pilns kubs.
   
-  Ievērojam, ka jebkurš nepāru skaitļu kvadrāts :math:`n^2` 
-  dod atlikumu :math:`1`, dalot ar :math:`8`.
-  (Lai par to pārliecinātos, apzīmējam :math:`n = 2k+1`. 
-  Tad :math:`(2k+1)^2=4k^2+4k+1=4k(k+1)+1`. 
-  Tieši viens no :math:`k, k+1` ir pāru skaitlis, 
-  tātad reizinājums :math:`4k(k+1)` dalās ar :math:`8`.)
-  
-  Esam pārbaudījuši, ka :math:`\sqrt[3]{p^2+3}` 
-  nav vesels skaitlis, jo vai nu :math:`p^2 + 3 = 7` (ja :math:`p=2`), 
-  vai arī :math:`p^2+3` dod atlikumu :math:`4`, dalot ar :math:`8` 
-  Tas nav iespējams, jo visu pāru skaitļu kubi dalās ar :math:`8`.
+    Ja :math:`q=3`, tad sanāk. Pierādījuma shēma – "pretrunas modulis"
+    Atrodam tādu :math:`m`, ka :math:`p^2` dod nelielu atlikumu skaitu, dalot ar :math:`m`.
+    Tad arī :math:`p^2+3` dod nedaudzus, paredzamus atlikumus.
+    Vienlaikus var panākt, ka šādi atlikumi ir neiespējami naturāla skaitļa kubam :math:`a^3`. 
 
+
+    Nepāru skaitļu pilniem kvadrātiem ir izdevīgi aplūkot atlikumus, 
+    dalot ar :math:`8` –- tas arī būs mūsu pretrunas modulis.
+  
+    Ievērojam, ka jebkurš nepāru skaitļu kvadrāts :math:`n^2` 
+    dod atlikumu :math:`1`, dalot ar :math:`8`.
+    (Lai par to pārliecinātos, apzīmējam :math:`n = 2k+1`. 
+    Tad :math:`(2k+1)^2=4k^2+4k+1=4k(k+1)+1`. 
+    Tieši viens no :math:`k, k+1` ir pāru skaitlis, 
+    tātad reizinājums :math:`4k(k+1)` dalās ar :math:`8`.)
+  
+    Esam pārbaudījuši, ka :math:`\sqrt[3]{p^2+3}` 
+    nav vesels skaitlis, jo vai nu :math:`p^2 + 3 = 7` (ja :math:`p=2`), 
+    vai arī :math:`p^2+3` dod atlikumu :math:`4`, dalot ar :math:`8` 
+    Tas nav iespējams, jo visu pāru skaitļu kubi dalās ar :math:`8`.
+
+  :math:`\square`
 

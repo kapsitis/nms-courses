@@ -677,9 +677,9 @@ ir kopīgi dalītāji vēl neseko, ka :math:`C_{2012}^{17}` nedalās ar :math:`2
 
 
 Sacensību uzdevumi
-^^^^^^^^^^^^^^^^^^^
+---------------------
 
-**1.uzdevums:**
+**1.Uzdevums:**
   Pamatot, ka harmoniskas rindas pirmo :math:`n` locekļu summa: 
   
   .. math:: 
@@ -689,7 +689,7 @@ Sacensību uzdevumi
   nevar būt vesels skaitlis, ja :math:`n > 1`. 
   
 
-**2.uzdevums (CGMO2012.8)**
+**2.Uzdevums (CGMO2012.8)**
   Cik kopā :math:`\{0,1,2,\ldots,2012\}` ir elementu :math:`k`, kam :math:`C_{2012}^k`: dalās ar :math:`2012`?
   Ar :math:`C_n^k` apzīmējam kombinācijas no :math:`n` pa :math:`k` jeb
   
@@ -706,23 +706,23 @@ Sacensību uzdevumi
     rodas vismaz divi pārnesumi (Kummera teorēma). 
 
     
-**3.uzdevums (IMO2019.P4)**
+**3.Uzdevums (IMO2019.P4)**
   Atrast visus naturālo skaitļu :math:`(k,n)` pārus, kuriem izpildās
   
   .. math::
   
     k! = (2^n - 1)(2^n - 2)(2^n - 4)\cdots(2^n - 2^{n-1}).
     
-**4.uzdevums (IMO2000.5):**
+**4.Uzdevums (IMO2000.5):**
   Vai eksistē naturāls :math:`n`, ka skaitlim :math:`n` ir tieši :math:`2000` dalītāji, kuri ir pirmskaitļi, un 
   :math:`2^n+1` dalās ar :math:`n`. (Skaitlis :math:`n` drīkst dalīties arī ar pirmskaitļu pakāpēm.)
 
 
-**5.uzdevums (APMO1997.2):**
+**5.Uzdevums (APMO1997.2):**
   Atrast veselu skaitli :math:`n`, kam :math:`100 \leq n \leq 1997`, ka :math:`n` dala :math:`2^n + 2`. 
 
 
-**6.uzdevums (Sierpinski):**
+**6.Uzdevums (Sierpinski):**
   Pierādīt, ka nevienam :math:`n > 1` neizpildās 
   
   .. math:: 
@@ -730,11 +730,11 @@ Sacensību uzdevumi
     n \mid 2^{n-1} + 1. 
     
     
-**7.uzdevums (IMO1990.3):**
+**7.Uzdevums (IMO1990.3):**
   Noteikt visus veselos skaitļus :math:`n>1`, kam :math:`\frac{2^n + 1}{n^2}` ir vesels skaitlis. 
 
 
-**8.uzdevums (BW2015.16):**
+**8.Uzdevums (BW2015.16):**
   Ar :math:`P(n)` apzīmējam lielāko pirmskaitli, ar ko dalās :math:`n`. Atrast
   visus naturālos skaitļus :math:`n \geq 2`, kam
 
@@ -743,7 +743,7 @@ Sacensību uzdevumi
     P(n) + \left\lfloor \sqrt{n} \right\rfloor = P(n+1) + \left\lfloor \sqrt{n+1} \right\rfloor.
 
 
-**9.uzdevums (BW2015.17):**
+**9.Uzdevums (BW2015.17):**
   Atrast visus naturālos skaitļus :math:`n`, kuriem :math:`n^{n-1} - 1` dalās ar :math:`2^{2015}`, 
   bet nedalās ar :math:`2^{2016}`. 
   
@@ -754,7 +754,7 @@ Sacensību uzdevumi
   
 
 
-**10.uzdevums (Valsts4Posms-1992.12.1):**
+**10.Uzdevums (Valsts4Posms-1992.12.1):**
   Pierādīt, ka eksistē bezgalīgi daudz naturālu skaitļu kvadrātu, 
   kurus var iegūt, divas reizes pēc kārtas uzrakstot kādu naturālu skaitli.
 

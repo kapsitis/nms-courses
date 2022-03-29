@@ -46,9 +46,9 @@ if [%2] == [] (
     if [%2] == [solutions] (
         echo.Building solutions
         %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -t Internal
-        rem python replace.py
+        python replace.py
 	    cd _build\latex
-	    xelatex ntjun03-crt
+	    pdflatex ntjun03-crt
         ren ntjun03-crt.pdf ntjun03-crt-solutions.pdf
         xcopy ntjun03-crt-solutions.pdf ..\.. /Y
 		cd ..\..
@@ -56,8 +56,8 @@ if [%2] == [] (
         echo.Building questions
 		%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 	    cd _build\latex
-        REM ren homework01.pdf homework01-questions.pdf
-        REM xcopy homework01-questions.pdf ..\.. /Y
+        REM ren ntjun-textbook-single.pdf ntjun-textbook-single-questions.pdf
+        REM xcopy ntjun-textbook-single-questions.pdf ..\.. /Y
         xcopy ntjun03-crt.pdf ..\.. /Y
 		cd ..\..		
 	)
