@@ -8,7 +8,8 @@ src = ['other',
         '../ntjun-textbook/ntjun03-crt',
         '../ntjun-textbook/ntjun04-multiplicative',
         '../ntjun-textbook/ntjun05-valuations',
-        '../ntjun-textbook/ntjun06-rational']
+        '../ntjun-textbook/ntjun06-rational',
+        '../onlinetests']
 
 
 
