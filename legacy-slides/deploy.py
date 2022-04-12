@@ -9,6 +9,9 @@ src = ['other',
         '../ntjun-textbook/ntjun04-multiplicative',
         '../ntjun-textbook/ntjun05-valuations',
         '../ntjun-textbook/ntjun06-rational',
+        '../ntjun-textbook-single',
+        '../regional-workshops',
+        '../problems/selection_problems_2020_2021', 
         '../onlinetests']
 
 
