@@ -1,0 +1,32 @@
+IMO Izlase, NMS, 2022-06-13
+=============================
+
+Varam atminēties dažas definīcijas un apgalvojumus.
+
+
+
+
+
+Ievaduzdevumi
+---------------
+
+
+
+
+
+Sacensību uzdevumi
+--------------------
+
+
+
+.. math::
+
+  a = \frac{\sqrt{3}}{2}.
+
+.. only:: Internal
+
+  **Atbilde:**
+
+    Stuff
+
+  :math:`\square`

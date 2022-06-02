@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.DS_Store
 
 # C extensions
 *.so
@@ -138,3 +139,4 @@ _build
 
 ntjun-textbook-single/*
 !ntjun-textbook-single/*.pdf
+source-material/*
