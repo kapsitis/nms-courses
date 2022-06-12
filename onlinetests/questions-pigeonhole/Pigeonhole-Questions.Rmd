@@ -1,0 +1,1258 @@
+---
+title: Pigeonhole principle
+date: "2022-04-22"
+output: word_document
+---
+
+
+# Pigeonhole principle (Dirihlē princips, Принцип Діріхле)
+
+
+
+
+**Question 1:**
+<!--c.dirichlet.intro.q1--> 
+
+In a very dark room there is a dark wardrobe -- it contains 
+socks of $12$ different colors; there are $20$ socks of every color. 
+What is the smallest number of socks that should be randomly retrieved from this 
+wardrobe to be guaranteed to get $2$ socks of the same color.
+
+
+
+
+
+**Question 2:**
+<!--c.dirichlet.intro.q2-->
+
+Some factory produces bricks -- each brick has weight 
+between 2.7 kilograms and 3.0 kilograms. 
+Each brick has its weight written on it (rounded to the nearest gram). 
+
+What is the smallest number of bricks that we need to purchase 
+to ensure that there are at least two bricks with the same weight in grams
+written on them. 
+
+
+**Question 3:**
+<!--c.dirichlet.intro.q3-->
+
+What is the smallest possible count of positive integers 
+you need to remove from the sequence $1,2,3,4,5,6,7,8$ 
+so that among the remaining numbers one cannot find two numbers $a,b$ 
+such that $a + b = 9$? 
+
+
+**Question 4:**
+<!--c.dirichlet.intro.q6-->
+
+$16$ rabbits are somehow placed into $17$ cages. 
+Which statement is always correct (regardless of how they are placed):  
+
+a. There must be a cage containing exactly two rabbits. 
+b. There must be a cage that is empty.
+c. There must be a cage containing exactly one rabbit. 
+d. There must be at least two cages containing at least one rabbit each. 
+
+**Question 5:**
+<!--c.dirichlet.intro.q7-->
+
+We randomly draw $15$ play cards (out of a pack of $52$ playing cards). 
+Playing cards are in two colors - black or red. 
+
+What number of the playing cards (out of the $15$) is guaranteed 
+to be in the same color? 
+
+
+**Question 6:**
+<!--c.dirichlet.intro.q10-->
+
+In a very dark wardrobe there are $100$ black, $100$ blue and $100$ green socks. 
+What is the smallest number of socks to be drawn randomly 
+from this wardrobe in order to 
+get either two black or two blue socks? 
+The answer should reflect the 
+worst-case scenario -- what number of socks always guarantees 
+that two black or two blue ones will be selected.
+
+
+
+
+**Question 7:**
+<!--c.dirichlet.intro.q11--> 
+
+Language $L$ contains all $5$-letter words made
+from two letters "A" and "B" (words containing several equal letters next to each 
+other are also allowed - for example "AAAAA" or "BBBBA"). 
+
+How many words in this language should be written down so that 
+we necessarily have two equal words among them?
+
+
+
+**Question 8:**
+<!--c.dirichlet.intro.q12-->
+
+What is the smallest number of numbers to be selected
+out of the numbers $1,2,3,4,5,6,7,8,9$ so that 
+there must be two such numbers $a,b$ (among the selected ones)
+which have sum $a + b = 10$ ? 
+
+
+
+**Question 9:**
+<!--c.dirichlet.intro.q13-->
+
+In a open-air concert there are $10$ very long benches. 
+There are $100$ girls already sitting on these benches 
+(we do not know how many of the girls sit on every bench).
+
+What is the largest number of boys that can be seated in
+this concert, if no two boys can sit next to each other on the same bench? 
+
+
+
+
+**Question 10:**
+<!--c.dirichlet.generalizations.q2-->
+
+What is the smallest people that should be riding on the same bus so 
+that at least $6$ of them have their birthdays on the same month? 
+
+
+
+**Question 11:**
+<!--c.dirichlet.generalizations.q3-->
+
+A dealer of used cars has $20$ Audi cars, 
+$20$ BMW cars, $20$ VW cars and $20$ Volvo cars. 
+For what smallest number of cars sold it is possible to say that among the sold cars
+there must be at least $5$ cars of the same type? 
+
+
+
+**Question 12:**
+<!--c.dirichlet.generalizations.q5-->
+
+There are $n$ people in a room; and the following statement is true: "At least 
+three of them are born on the same weekday (Monday through Sunday). 
+But it might happen that it is impossible to find 
+four people who are all born on the same weekday." 
+Find the largest value of $n$ for which this statement is true. 
+
+
+**Question 13:**
+<!--c.dirichlet.generalizations.q6-->
+
+Decorating a cake requires either two oranges, 
+or three apples, or five apricots or seven cherries. 
+Little Mia bought 
+$n$ fruit (every fruit is either an orange, an apple, 
+an apricot or a cherry). 
+What is the smallest value of $n$ to guarantee that there
+will be enough fruit to decorate the cake? 
+
+
+
+**Question 14:**
+<!--c.dirichlet.generalizations.q7-->
+
+On a remote island there is an elementary school with 
+$20$ students. Each student has exactly two grandfathers. 
+Every two students have at least one grandfather in common. 
+It is also known that there does not exist a grandfather who 
+is common to all $20$ students. 
+
+What is the largest possible number of the grandfathers 
+(who are grandfathers for at least one student in this school)? 
+
+
+
+
+**Question 15:**
+<!--c.dirichlet.generalizations.q12-->
+
+What is the largest possible amount of numbers 
+that can be chosen out of $\{ 1,2,\ldots,50 \}$ so that 
+there do **not** exist two selected numbers $a,b$ having 
+their sum divisible by $7$? 
+
+
+**Question 16:**
+<!--c.dirichlet.generalizations.q14-->
+
+Consider a quadratic grid of $6 \times 6$ points ($36$ points 
+ordered in $6$ horizontal lines and $6$ vertical columns). 
+What is the smallest number of points out of the $36$ that should be colored black 
+so that there exists a horizontal or a vertical line containing at least 
+$4$ black points? 
+
+
+**Question 17:** 
+<!--c.dirichlet.generalizations.q15-->
+
+There are $12$ students in some class. Each student somehow  chooses $n$ other students
+and sends an Easter greeting to each of the chosen students. 
+What is the smallest value of $n$ which guarantees that there are two such 
+students who have sent Easter greetings to each other? 
+
+
+
+
+**Question 18:**
+<!--c.dirichlet.combinatorics.q1-->
+
+Candies are put into bags -- each bag may contain any number of candy between 
+$11$ and $20$ (including both endpoints). 
+It is known that whenever $n$ candies are put in the bags in this way -- 
+either there are two bags with the same number of candy (or two bags 
+where the counts of candy add up to $31$). 
+
+Find the smallest possible value of $n$.
+
+
+
+
+**Question 20:**
+<!--c.dirichlet.combinatorics.q4-->
+
+Fröken Bock (Nanny Bock/Bokas jaunkundze) every day 
+goes up the stair exactly $49$ steps (Level 0 to Level 49). 
+Each of her steps goes up either $1$, $2$ or $3$ levels. 
+She always steps up so that the total number of steps 
+(to overcome all $49$ levels) is $30$. 
+(She never needs to step down, since Karlsson-on-the-roof
+always magically brings her down again.) 
+
+Assume that Fröken Bock has already stepped up that staircase five times. 
+Let $n$ denote the largest number of times she has
+stepped on some level (not counting Level 0 and Level 49 - her 
+starting point and destination). 
+
+What is the smallest possible value of $n$? 
+
+
+
+**Question 21:**
+<!--c.dirichlet.combinatorics.q8-->
+
+There are $n$ identically looking coins; their masses are all different. 
+We need to find the heaviest coin. 
+We also have scales (which can compare masses of two coins at a time). 
+We know that $3$ uses of scales is insufficient to find the heaviest coin. 
+
+Find the smallest $n$ for which this is true. 
+
+
+
+**Question 22:** 
+<!--c.dirichlet.combinatorics.q11-->
+
+Michael tossed a coin $n$ times; and wrote either $H$ 
+or $T$ (depending on whether it was heads or tails). 
+What is the smallest value $n$ such that there is necessarily 
+two identical substrings of length $3$.
+(Substrings may also overlap; for example, "HTHTH" 
+contains two identical fragments "HTH".)
+
+
+
+
+
+**Question 23:**
+<!--c.dirichlet.combinatorics.q12--> 
+
+What is the largest number of chess bishops to be placed on 
+a chessboard of size $6 \times 6$ so that these bishops do not
+attack each other. 
+(Bishop attacks all the cells that are placed on the same diagonal
+as the current position of the bishop.)
+
+
+
+**Question 24:** 
+<!--c.dirichlet.combinatorics.q13-->
+
+What is the smallest number of rooks to place on a chessboard of size
+$6 \times 6$ cells so that there are necessarily three rooks 
+who do not attack each other (i.e. are not located on the same 
+horizontal or the same vertical)? 
+
+In this problem you choose the number of rooks, 
+but not the way how they are placed on the board. 
+Namely, what is the number of rooks that guarantees
+that some $3$ rooks can be chosen so that neither of
+them attacks the other two. 
+
+
+
+**Question 25:**
+<!--c.dirichlet.shapes.q4-->
+
+On a horizontal line we paint a sequence of points (the distance of any 
+two neighboring points is exactly $1$ centimenter)
+Each point is either blue, green or red. 
+
+What is the smallest number of points you should select (without looking at their colors
+and exact locations) so that 
+there will always exist some three points $A,B,C$ such that 
+they are all of the same color; and all their pairwise distances
+are divisible by $3$? 
+
+
+**Question 26:**
+<!--c.dirichlet.shapes.q8-->
+
+On the plane there are $11$ points; no three points are located on the 
+same line. 
+Every two of these points are connected with a line in one of four colors
+(blue, green, orange or red). What is the **largest** $n$ such 
+that you can always find some $n$ line segments that are in the same color? 
+
+
+
+**Question 27:**
+<!--c.dirichlet.nt.q4-->
+
+The table summarizes positive integers, their cubes, and the remainders
+of their cubes when divided by $7$. 
+How many positive integers (none of them divisible by $7$) should you choose
+so that you can always find three integers such that their 
+cubes are all congruent modulo $7$. 
+
+```{r c.dirichlet.nt.q4.fig1, fig.width=3.5, fig.height=1, echo=FALSE, message=FALSE, warning=FALSE, dev='CairoPNG', fig.path='questionbase-dirichlet/'}
+require(grid)
+grid.newpage()
+mainVP <- viewport(name="mainVP", width = 1, height = 1)
+pushViewport(mainVP)
+#grid.rect()
+subVP1 <- viewport(name="subVP1", x=0.5, y=0.5, width=0.95, height=0.95)
+pushViewport(subVP1)
+
+
+theData <- list()
+theData[[1]] <- (0:7)
+theData[[2]] <- ((0:7)^3)
+theData[[3]] <- ((0:7)^3 %% 7)
+
+
+Nx <- 7
+TitleWidth <- 3
+Ux <- 1/(Nx+TitleWidth)
+
+Ny <- 3
+Uy <- 1/Ny
+
+titles <- c("n (mod 7)", "n^3", "n^3 (mod 7)")
+for (i in 0:(Ny-1)) {
+  grid.rect(x=0,y=i*Uy,width=TitleWidth*Ux,height=Uy,
+            gp=gpar(fill="white"),just=c("left","bottom"))
+  grid.text(label=titles[Ny-i],gp=gpar(fontsize=10),
+            x=(TitleWidth/2)*Ux,y=(i+0.5)*Uy)
+  for (j in 0:(Nx-1)) {
+    grid.rect(x=(j+TitleWidth)*Ux,y=i*Uy,width=Ux,height=Uy,
+              gp=gpar(fill="white"),just=c("left","bottom"))
+    grid.text(label=sprintf("%d",theData[[Ny-i]][j+1]),gp=gpar(fontsize=10),
+              x=(j+TitleWidth+0.5)*Ux,y=(i+0.5)*Uy)
+
+  }
+}
+
+popViewport(2)
+
+```
+
+
+
+
+
+**Question 28:**
+<!--c.dirichlet.nt.q6-->
+
+Michael chose some integers from the interval $[1;11]$; 
+their squares give different remainders, if divided by $11$. 
+(For example, Michael cannot choose $4$ and $7$ at the same time, 
+since $16$ and $49$ are both congruent to $5$ modulo $11$.)
+What is the largest number of numbers that Michael can choose in this way? 
+
+
+
+
+**Question 29:**
+<!--c.dirichlet.nt.q7-->
+
+All the numbers from $1$ to $100$ are partitioned into multiple geometric series with 
+common ratio $2$:
+
+Each progression starts with an odd number, every next number 
+in a series is twice the previous one.
+Some series (if they start with $51$ or something larger) 
+may contain just one term. This is how some series look like:
+$$\{1,2,4,8,16,32,64 \}$$
+$$\{3,6,12,24,48,96\}$$
+$$\{ 5,10,20,40,80 \}$$
+
+What is the smallest number of integers that one should select from $[1;100]$ to 
+guarantee that two selected numbers $a<b$ are in the same progression?
+
+
+**Question 30:**
+<!--c.dirichlet.nt.q13-->
+
+What is the largest number of positive integers from $1$ to $840$ that 
+one can select so that no two selected numbers have 
+their difference $2$, or $3$, or $5$. (All the other differences are allowed.)
+
+
+
+
+
+**Question 31:**
+<!--c.dirichlet.nt.q14-->
+
+There is a set of positive integers $S$ that contains 
+some numbers from  $\{1,2,3,\ldots,100\}$. 
+It satisfies the following property: If $S$ contains numbers $a,b$ 
+and $a>b$, then $a+b$ is not divisible by $a-b$. 
+What is the largest possible value of $|S|$ (the number of elements in $S$)?
+
+
+
+
+# Appendix: More Questions on the Topic
+
+In case, you enjoy such questions, there are many more... 
+
+
+**Question 32:**
+<!--c.dirichlet.generalizations.q8-->
+
+On a remote island there is an elementary school with 
+$20$ students. Each student has exactly two grandfathers. 
+Every two students have at least one grandfather in common.
+
+Somebody claims that there exists a grandfather with at least $n$ 
+grandchildren among the students in this school (without even knowing anything
+about their relationships). 
+What is the largest value of $n$ for which this claim can be 
+reliably made?
+
+
+**Question 33:**
+<!--c.dirichlet.generalizations.q9-->
+
+$k$ rabbits have been somehow distributed among $m$ cages.
+Let $L$ denote the number of rabbits in the cage, which has the 
+largest rabbit population. 
+
+Identify the inequality that is necessarily satisfied by $L$.   
+(Here $\lfloor x \rfloor$ denotes the *floor function* - 
+the largest integer not exceeding $x$. For example, 
+$\lfloor 4 \rfloor = 4$ and $\lfloor 3.99 \rfloor = 3$.)
+
+a. ${\displaystyle L \geq \lfloor \frac{k}{m} \rfloor}$
+b. ${\displaystyle L \geq \lfloor \frac{k-1}{m} \rfloor + 1}$
+c. ${\displaystyle L \geq \lfloor \frac{k+1}{m} \rfloor}$
+d. ${\displaystyle L \geq \lfloor \frac{k+1}{m}+1 \rfloor}$
+e. ${\displaystyle L \geq \lfloor \frac{k}{m-1} \rfloor}$
+
+
+
+**Question 33:**
+<!--c.dirichlet.generalizations.q10-->
+
+In a full set of playing cards there are $52$ different cards
+in four suits (diamonds, clubs, hearts and spades). 
+In every suit there are $13$ ranks
+("2" (the Two), "3", "4", "5", "6", "7", 
+"8", "9", "10" (the Ten),
+"J" (Jack), "Q" (Queen), "K" (King), and "A" (ace)). 
+
+What is the smallest number of playing cards that one must 
+select to guarantee that among the selected cards there will 
+be cards of the same suit and neighboring ranks? 
+(For example "2 and 3 of diamonds" or 
+"10 and J of hearts" or "J and Q of clubs" or "K and A of spades".)
+
+
+**Question 34:**
+<!--c.dirichlet.generalizations.q13--> 
+
+The set $A$ contains some positive integers from $[1;100]$. 
+It is known that for any two elements $a,b \in A$, 
+$a + b \neq 125$. 
+What is the largest possible value of $|A|$?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Answers
+
+
+**Question 1:** 
+<!--c.dirichlet.intro.q1--> 
+
+Answer: `13`  
+
+The retrieved socks are like "pigeons" and their possible colors are like 
+"pigeonholes". Since there are $N = 12$ colors/pigeonholes, we need 
+at least $N+1 = 13$ socks to guarantee that two will belong to the same category. 
+
+$12$ socks clearly does not guarantee this, since every sock can be in a different color. 
+
+
+
+
+**Question 2:**
+<!--c.dirichlet.intro.q2-->
+
+Answer: `302`  
+
+In the interval $[2700;3000]$ there are exactly $301$ integer numbers. 
+Once you choose $302$ bricks, at least two of them will round to the 
+same number of grams. 
+
+
+
+**Question 3:**
+<!--c.dirichlet.intro.q3-->
+
+Answer: `4`  
+
+There are $4$ "pigeonholes - number pairs that add up to $9$: 
+$(1,8)$, $(2,7)$, $(3,6)$, $(4,5)$. 
+If we remove one number from each pair, then we destroy all the possibilities
+to get the sum equal to $9$. 
+
+If we would remove fewer numbers (three or less), then 
+at least one pair stays intact and their sum will be $9$. 
+
+
+
+**Question 4:**
+<!--c.dirichlet.intro.q6-->
+
+Answer: `b`  
+
+If there are more cages than the rabbits, then one cage must be empty. 
+(This is a variant of pigeonhole principle - not every cage receives a rabbit.)
+Other statements can be refuted by counterexamples. 
+
+
+
+**Question 5:**
+<!--c.dirichlet.intro.q7-->
+
+Answer: `8`  
+
+If there would be only `7` cards from each color (black and red), 
+then their total cannot be more than $2 \cdot 7 = 14$. 
+
+
+
+
+
+**Question 6:**
+<!--c.dirichlet.intro.q10-->
+
+Answer: `103`  
+
+It is not enough to retrieve $102$ socks, since the "worst-case" 
+scenario can give you $100$ green socks, $1$ black and $1$ blue. 
+Retrieving $103$ socks is always enough, since at least $3$ of them 
+cannot be green (so two will be of the same color). 
+
+
+
+
+**Question 7:**
+<!--c.dirichlet.intro.q11--> 
+
+Answer: `9`  
+
+In language $L$ there $32$ different words.
+Once you write $33$ words, there must be a word that is written twice. 
+
+
+
+
+
+
+**Question 8:**
+<!--c.dirichlet.intro.q12-->
+
+Answer: `5`  
+
+One can choose the number $5$ and then one number 
+from every pair 
+$(1,9)$, $(2,8)$, $(3,7)$, $(4,6)$.
+
+If one chooses more than five numbers, then 
+at least two numbers would fall into the same pair; 
+so there will be a sum equal to $10$. 
+
+
+
+
+
+**Question 9:**
+<!--c.dirichlet.intro.q13-->
+
+Answer: `110`  
+
+Before any girls had arrived, there were $10$ 
+"cages" (every bench is like a "cage"). 
+Every seated girl increases the number of "cages" by $1$, 
+as it  divides some bench or its part into two. 
+When all girls are seated, there will be $110$ "cages"  
+(bench segments which are appropriate to seat one boy each).   
+Therefore the count of boys cannot exceed $110$. 
+
+
+
+**Question 10:**
+<!--c.dirichlet.generalizations.q2-->
+
+Answer: `61`  
+
+There are $12$ months. If there just $60$ people, it is possible
+to have $5$ people born every month. 
+As soon as you have $61$ people, at least one month should have at least $6$ people. 
+
+
+
+
+**Question 11:**
+<!--c.dirichlet.generalizations.q3-->
+
+Answer: `17`  
+
+If there are just $16$ cars, it is possible that only $4$ cars of every 
+category are sold. Once there are $17$ cars it is impossible, since 
+$4 \cdot 4 < 17$. 
+
+
+
+**Question 12:**
+<!--c.dirichlet.generalizations.q5-->
+
+Answer: `21`  
+
+If the number $n$ of people is between $15$ and $21$ (including both endpoints)
+we would get (by the generalized Pigeonhole principle) 
+at least $\lceil n/7 \rceil = 3$ people born on the "most popular" weekday 
+(in the meantime, we do not necessarily need any weekday with $4$ people
+as $3 \cdot 7 \leq n$)
+
+As soon as $n>21$, there will be a weekday with $4$ people, using 
+the same generalized Pigeonhole principle. 
+
+
+**Question 13:**
+<!--c.dirichlet.generalizations.q6-->
+
+Answer: `14`  
+
+
+The number $n = (2-1)+(3-1)+(5-1)+(7-1)=2+3+5+7-4=13$ 
+is the worst-case way to bring the fruit ($1$ orange, $2$ apples, 
+$4$ appricots and $6$ cherries). 
+As soon as one more fruit is added (the total count of fruit is $14$)
+then at least one category of fruit will reach its threshold value.
+
+
+
+**Question 14:**
+<!--c.dirichlet.generalizations.q7-->
+
+Answer: `3`  
+
+If there are three grandfathers $A,B,C$, 
+then the conditions are possible to satisfy: 
+If every student has a pair of grandfathers 
+($(A,B)$, $(A,C)$, or $(B,C)$), then 
+every two students share some grandfather -- since
+every two pairs intersect.
+
+What happens, if we have $4$ grandfathers? 
+Let us consider the students $a_1,a_2,\ldots,a_{20}$ one at a time.
+Let the grandfathers of $a_1$ be named $A$ and $B$. 
+Denote by $a_2$ some student who does not have the same pair $(A,B)$ 
+of grandfathers; let $(A,C)$ be his grandfathers. 
+Such $a_2$ must exist, since no grandfather (say, $B$) can be 
+a grandfather of everyone. 
+
+For a similar reason there must be $a_3$ with grandfather pair 
+$(B,C)$ -- since there $A$ cannot be everyone's grandfather 
+and $a_3$ grandfathers must intersect with both $a_1$ and also $a_2$. 
+
+As we consider students $a_4,a_5,\ldots$ -- they must 
+have some existing pair $(A,B)$, $(A,C)$, or $(B,C)$. 
+Introducing a new grandfather $D$ is impossible -- otherwise it 
+won't intersect with some of the existing pairs 
+$(A,B)$, $(A,C)$, or $(B,C)$.
+
+
+
+**Question 15:**
+<!--c.dirichlet.generalizations.q12-->
+
+Answer: `23`  
+
+
+
+Kādu lielāko skaitu skaitļu var izvēlēties no 
+kopas $\{ 1,2,\ldots,50 \}$ tā, lai starp izvēlētajiem 
+neatrastos divi dažādi skaitļi, kuru summa dalās ar $7$?
+
+Classify the numbers into congruence classes: 
+
+* There are $7$ numbers ($7,14,\ldots,49$) with remainder $0$ when dividing with $7$. 
+* There are $8$ numbers ($1,8,15,\ldots,50$) with remainder $1$ when dividing with $7$.
+* There are $7$ numbers ($2,9,16,\ldots,44$) with remainder $2$. And so on.
+* There are $7$ numbers ($6,13,20,\ldots,48$) with remainder $6$.
+
+To avoid any sum divisible by $7$, we must not select two numbers
+with remainders $0$. We also must not 
+pick remainders $1$ and $6$ (or $2$ and $5$, or $3$ and $4$). 
+
+The best option is to pick one number with remainder $0$, 
+all possible numbers with remainders $1$, $2$, and $3$. 
+The total count is $1+8+7+7 = 23$.
+
+
+**Question 16:**
+<!--c.dirichlet.generalizations.q14-->
+
+Answer: `19`  
+
+If you color $19$ points black, there will be 
+at least $\lceil 19/6 \rceil = 4$ black points 
+on the same horizontal line. 
+
+If you choose only $18$ black points, then it is possible 
+to color the grid $6 \times 6$ to avoid that, for example, in the 
+checkerboard pattern. 
+
+
+```{r c.dirichlet.generalizations.q14.fig1, fig.width=2, fig.height=2, echo=FALSE, message=FALSE, warning=FALSE, dev='CairoPNG', fig.path='questionbase-dirichlet/'}
+require(grid)
+grid.newpage()
+mainVP <- viewport(name="mainVP", width = 1, height = 1)
+pushViewport(mainVP)
+
+
+subVP1 <- viewport(name="subVP1", 
+                   x=0.5, y=0.5, width=0.95, height=0.95)
+pushViewport(subVP1)
+
+N <- 6
+uX <- 1/N
+uY <- 1/N
+
+for (j in 1:N) {
+  grid.lines(x=c(0.5*uX,1-0.5*uX), y=rep((j-0.5)*uY, times=2), gp=gpar(col="#cccccc"))
+  grid.lines(x=rep((j-0.5)*uX, times=2), y=c(0.5*uY,1-0.5*uY), gp=gpar(col="#cccccc"))
+  
+}
+
+for (i in 1:N) {
+  for (j in 1:N) {
+    theColor <- if ((i+j) %% 2 == 0) "black" else "white"
+    grid.circle(x=(i-0.5)*uX, y=(j-0.5)*uY, r=0.04, 
+                gp=gpar(fill=theColor))
+  }
+}
+
+popViewport(2)
+
+```
+
+
+
+
+**Question 17:** 
+<!--c.dirichlet.generalizations.q15-->
+
+Answer: `6`  
+
+Represent the students as points on a circle. 
+They are connected by $C_12^2 = \frac{12 \cdot 11}{2}=66$ 
+edges (which are "channels" to exchange the letters - each channel
+can be used in one or in both directions). 
+
+If eveybody sends $6$ greetings, there is the total of
+$12 \cdot 6$ = $72$ letters, and some letter will not get a 
+separate "channel" - so two letters will be exchanged on the same 
+channel (these two students will send letters to each other). 
+
+To create a counterexample with just $5$ greetings, 
+denote the students with numbers 
+$0$ to $11$. A student with number
+$N \in \{ 0,\ldots,11 \}$ sends five letters to the students
+$N+1, \ldots, N+5$ (modulo $12$). For this construction it is impossible
+to have two students who send letters to each other, since 
+$N+i+j$ (where $i,j \in \{ 1,2,3,4,5\}$)
+cannot be congruent to $N$ modulo $12$.
+
+
+```{r c.dirichlet.generalizations.q15.fig1, fig.width=1.98, fig.height=2.2, echo=FALSE, message=FALSE, warning=FALSE, dev='CairoPNG', fig.path='questionbase-dirichlet/'}
+require(grid)
+grid.newpage()
+mainVP <- viewport(name="mainVP", width = 1, height = 1)
+pushViewport(mainVP)
+
+
+subVP1 <- viewport(name="subVP1", just=c("left","bottom"),
+                   x=0, y=0.1, width=1, height=0.9)
+pushViewport(subVP1)
+
+
+subVP11 <- viewport(name="subVP11",
+                   x=0.5, y=0.5, width=0.92, height=0.92)
+pushViewport(subVP11)
+
+N <- 12
+uX <- 1/N
+uY <- 1/N
+M <- 5
+
+R1 <- 0.4
+R2 <- 0.5
+
+#grid.circle(x=0.5, y=0.5, r=0.5, gp=gpar(col="#cccccc", fill=NA))
+
+cx <- 0.5+R1*cos(2*(0:(N-1))*pi/N)
+cy <- 0.5+R1*sin(2*(0:(N-1))*pi/N)
+
+grid.circle(x=cx, y=cy, r=0.04, gp=gpar(fill="white"))
+grid.text(label=as.character(0:11), 
+          x = 0.5+R2*cos(2*(0:(N-1))*pi/N),
+          y = 0.5+R2*sin(2*(0:(N-1))*pi/N))
+
+for (i in 1:M) {
+  grid.lines(x = c(cx[1],cx[1+i]), y = c(cy[1],cy[1+i]),
+             gp=gpar(col="red", lwd=2),
+             arrow = arrow(angle = 15, length = unit(0.15, "inches"),
+                           ends = "last", type = "open"))
+  grid.lines(x = c(cx[2],cx[2+i]), y = c(cy[2],cy[2+i]),
+             gp=gpar(col="blue", lwd=2),
+             arrow = arrow(angle = 15, length = unit(0.15, "inches"),
+                           ends = "last", type = "open"))
+}
+
+popViewport(2)
+
+
+subVP2 <- viewport(name="subVP2", just=c("left","bottom"), 
+                   x=0, y=0, width=1, height=0.1)
+pushViewport(subVP2)
+
+
+grid.text(label="1.z\u012Bm.", x=0.5,y=0.5)
+
+popViewport(1)
+
+
+```
+
+
+
+
+
+
+
+
+**Question 18:**
+<!--c.dirichlet.combinatorics.q1-->
+
+Answer: `106`  
+
+To build the counterexample for $90$, 
+compute the arithmetic expression:
+$$16+17+18+19+20 = 90.$$
+
+As soon as the count of candy exceeds $90$, it is impossible to 
+have $5$ bags of candy. We need at least $6$ bags, so at least two of the bags will contain 
+identical number of candy (or 
+we will need to choose both numbers from some pair $(11,20)$, $(12,19)$, 
+$(13,18)$, $(14,17)$, $(15,16)$ -- so we will end up having two bags that add up to $31$). 
+
+
+
+
+
+
+**Question 20:**
+<!--c.dirichlet.combinatorics.q4-->
+
+Answer: `4`  
+
+The total number of levels (excepting levels $0$ and $49$) is $48$.
+After making $0$ steps upward Fröken Bock is on level $0$, 
+but after making $30$ steps upward she is on level $49$). 
+
+Therefore she spends exactly $29$ steps somewhere in the middle. 
+The product is $29 \cdot 5 = 145$. If we try to distribute "evenly"
+all her $145$ steps into $48$ "buckets" (i.e. levels on the staircase), 
+we will get that at least one level gets 
+$\lceil 145/48 \rceil = \lceil 3.02 \rceil = 4$ of her steps. 
+
+(**Note:** Fröken Bock's ability to step up exactly 
+$1$, $2$, or $3$ levels is not very essential -- one could make it possible 
+for her to step up any larger amount of steps as well, we would still 
+get the same answer.)
+
+
+
+**Question 21:**
+<!--c.dirichlet.combinatorics.q8-->
+
+Answer: `5`  
+
+If there are $4$ coins, it is possible to 
+make exactly $3$ comparisons so that at every stage a coin (the current 
+maximum) is compared with all the remaining ones. And whichever 
+coin turns out to be heavier, is promoted to the next round. 
+
+If there are $5$ coins, imagine them all as "isolated islands"
+Every time you compare any two coins, you build a bridge between the
+islands (reducing the number of islands by $1$). 
+
+After you build three bridges, there are still $5 - 3 = 2$ isolated 
+pieces that have never been compared between themeselves. 
+Announcing that some coin is the heaviest at this point
+may lead to an error (since the actual heaviest coin may happen 
+to be on another isolated piece). 
+
+
+
+**Question 22:** 
+<!--c.dirichlet.combinatorics.q11-->
+
+Answer: `11`  
+
+If the length of the coin tosses is $11$, then 
+it must have $9$ fragments of length $3$
+(the first fragment starts from the 1st letter, the last one
+starts from the 9th letter). 
+From these $9$ fragments at least two will be identical, 
+since the two letters ($\mathtt{H,T}$) can form only 
+$2^3=8$ fragments of length $3$. 
+
+The answer $10$ is too small, since you can 
+have the sequence $\mathtt{HHHTHTTTHH}$, where 
+every 3-letter fragment occurs exactly once.
+
+
+
+
+
+**Question 23:**
+<!--c.dirichlet.combinatorics.q12--> 
+
+Answer: `10`  
+
+There are two kinds of bishops -- on black and on white cells. 
+Let us consider black diagonals only. 
+There is one diagonal direction which has only $5$ black diagonals 
+(the other has $6$). Clearly, each of these $5$ black diagonals 
+can contain no more than one bishop. So, there can be no more than $5$ 
+"black" bishops. Same thing is true about the "white" bishops. 
+So the total number of bishops cannot exceed $5+5=10$. 
+
+```{r c.dirichlet.combinatorics.q12.fig1, fig.width=1.8, fig.height=2, echo=FALSE, message=FALSE, warning=FALSE, dev='CairoPNG', fig.path='dirichlet03-combinatorics/'}
+require(grid)
+require(RColorBrewer)
+grid.newpage()
+mainVP <- viewport(name="mainVP", width = 1, height = 1)
+pushViewport(mainVP)
+
+## caption
+subVP1 <- viewport(name="subVP1", just=c("left","bottom"), 
+                   x=0, y=0, width=1, height=0.1)
+pushViewport(subVP1)
+grid.text("1.z\u012Bm.",x=0.5,y=0.5)
+popViewport(1)
+#end caption
+
+subVP12 <- viewport(name="subVP12", just=c("left","bottom"), 
+                    x=0, y=0.1, width=1, height=0.9)
+pushViewport(subVP12)
+subVP121 <- viewport(name="subVP12", just=c("left","bottom"), 
+                    x=0.025, y=0.025, width=0.95, height=0.95)
+pushViewport(subVP121)
+Nx <- 7
+Ny <- 7
+uX <- 1/Nx
+uY <- 1/Ny
+
+for (i in 0:(Ny-2)) {
+  for (j in 0:(Nx-2)) {
+    theColor <- if ((i+j) %% 2 == 0) "#999999" else "white"
+    grid.rect(x=j*uX,y=i*uY,width=uX,height=uY,
+              gp=gpar(fill=theColor),just=c("left","bottom"))
+  }
+}
+xx <- c(2,4,6,6,6)
+yy <- c(6,6,6,4,2)
+xxD1 <- c(2,4,6,6,6)
+yyD1 <- c(6,6,6,4,2)
+xxD2 <- c(0,0,0,2,4)
+yyD2 <- c(4,2,0,0,0)
+for (k in 1:5) {
+  grid.lines(x = c(xx[k]+0.9,xx[k]+0.2)*uX, y = c(yy[k]+0.9,yy[k]+0.2)*uY,
+             gp=gpar(col="#999999", lwd=2),
+             arrow = arrow(angle = 15, length = unit(0.10, "inches"),
+                           ends = "last", type = "open"))
+  grid.lines(x = c(xxD1[k],xxD2[k])*uX, y = c(yyD1[k],yyD2[k])*uY, 
+             gp=gpar(col="red", lwd=2, lty="dotted"))
+}
+
+popViewport(2)
+
+popViewport(1)
+
+```
+
+
+Here is a way to place $10$ bishops:
+
+```{r c.dirichlet.combinatorics.q12.fig2, fig.width=1.8, fig.height=2, echo=FALSE, message=FALSE, warning=FALSE, dev='CairoPNG', fig.path='dirichlet03-combinatorics/'}
+require(grid)
+require(RColorBrewer)
+grid.newpage()
+mainVP <- viewport(name="mainVP", width = 1, height = 1)
+pushViewport(mainVP)
+
+## caption
+subVP1 <- viewport(name="subVP1", just=c("left","bottom"), 
+                   x=0, y=0, width=1, height=0.1)
+pushViewport(subVP1)
+grid.text("2.z\u012Bm.",x=0.5,y=0.5)
+popViewport(1)
+#end caption
+
+subVP12 <- viewport(name="subVP12", just=c("left","bottom"), 
+                    x=0, y=0.1, width=1, height=0.9)
+pushViewport(subVP12)
+subVP121 <- viewport(name="subVP12", just=c("left","bottom"), 
+                    x=0.025, y=0.025, width=0.95, height=0.95)
+pushViewport(subVP121)
+Nx <- 6
+Ny <- 6
+uX <- 1/Nx
+uY <- 1/Ny
+
+for (i in 0:(Ny-1)) {
+  for (j in 0:(Nx-1)) {
+    theColor <- if ((i+j) %% 2 == 0) "#999999" else "white"
+    grid.rect(x=j*uX,y=i*uY,width=uX,height=uY,
+              gp=gpar(fill=theColor),just=c("left","bottom"))
+  }
+}
+xx <- c(0:(Nx-1), 1:(Nx-2))
+yy <- c(rep(Ny-1,times=Nx), rep(0,times=Nx-2))
+for (k in 1:length(xx)) {
+  grid.circle(x=(xx[k]+0.5)*uX, y=(yy[k]+0.5)*uY,r=min(uX,uY)/4,gp=gpar(fill="yellow"))
+}
+
+popViewport(2)
+
+popViewport(1)
+
+```
+
+
+
+
+
+
+
+**Question 24:** 
+<!--c.dirichlet.combinatorics.q13-->
+
+Answer: `13`  
+
+If there are $12$ or fewer rooks, you can place them on two horizontal 
+lines ($6 + 6$). Clearly, you cannot select $3$ rooks that mutually 
+do not attack each other (as two of them will be on the same horizontal). 
+
+As soon as you have $13$ rooks, find some horizontal $H_1$ containing 
+at least three rooks. (Such a horizontal must exist by the generalized 
+Pigeonhole principle). Mark all the three rooks on this horizontal, 
+and after that - strike out this horizontal.
+
+We how have an estimate from above (no horizontal can  contain 
+more than $6$ rooks); so there must be 
+$13-6=7$ rooks on the horizontals that have not been striked. 
+From the remaining horizontals find some horizontal $H_2$ 
+containing at least $2$ rooks - and strike out that as well. 
+Finally there is at least $13 - 2 \cdot 6 = 1$ rook on some
+other horizontal $H_3$. 
+
+Now we pick the only remaining rook from $H_3$, then some non-conflicting
+rook from $H_2$ (it has two rooks), and, finally, some non-conflicting 
+rook from $H_1$ (which does not attack anything we have selected before). 
+After this whole process we have constructed three rooks that do not attack 
+each other.
+
+
+
+**Question 25:**
+<!--c.dirichlet.shapes.q4-->
+
+Answer: `19`  
+
+Introduce some "origin" point on this coordinate line -- declare that
+its coordinate is $x = 0$ (and all the other colored points get other integer 
+coordinates). 
+
+For each colored point find the remainder of its coordinate when divided by $3$
+(you can get three remainders $0$, $1$, or $2$). 
+Now categorize all points into $9$ categories -- depending on their color and 
+remainder (you could have, e.g. "red points congruent to $2$ modulo $3$" or 
+"blue points congruent to $0$ modulo $3$" and so on). 
+
+As soon as the number of points reaches $19$, you would get at least
+$\lceil 19/9 \rceil = 3$ points in some category -- in this case 
+they are all in the same color, and all their mutual distances are divisible by $3$. 
+
+
+
+
+**Question 26:**
+<!--c.dirichlet.shapes.q8-->
+
+Answer: `14`  
+
+Out of $11$ points you can pick the two endpoints of some 
+line segment in $C_{11}^2 = \frac{11 \cdot 10}{2} = 55$ different ways. 
+One can color these line segments in $4$ different colors. 
+So there must be at least 
+$\lceil 55/4 \rceil = 14$ segments that have the same color. 
+
+
+**Question 27:**
+<!--c.dirichlet.nt.q4-->
+
+
+Answer: `4`  
+
+There are altogether $3$  remainders, if you divide cubes of 
+integer numbers by $7$. So, if you choose at least $4$ numbers, 
+there will be two equal remainders. 
+
+
+
+
+
+
+**Question 28:**
+<!--c.dirichlet.nt.q6-->
+
+Answer: `6`  
+
+We will always have $n^2 \equiv (-n)^2\ (\mbox{mod} {11})$. 
+Therefore we must have: 
+
+* $5^2 \equiv (-5)^2 \equiv 6^2 \equiv 3$, 
+* $4^2 \equiv (-4)^2 \equiv 7^2 \equiv 5$, 
+* $3^2 \equiv (-3)^2 \equiv 8^2 \equiv 9$, 
+* $2^2 \equiv (-2)^2 \equiv 9^2 \equiv 4$, 
+* $1^2 \equiv (-1)^2 \equiv 10^2 \equiv 1$. 
+
+So, we can have only $6$ different remainders (also including $0^2 \equiv 0$), 
+but cannot have $7$ remainders.
+
+
+
+**Question 29:**
+<!--c.dirichlet.nt.q7-->
+
+
+Answer: `51`  
+
+In every progression there is exactly one number that is not 
+divisible by $2$ (and there are exactly $50$ odd numbers --
+$1,3,5,7,9,\ldots,99$). For each odd number we have its own progression. 
+
+As soon as you select one more number (i.e. $50+1 = 51$ numbers out of $100$), 
+there will be two numbers $a,b$ in the same progression, 
+and their ratio will be some power of two: $2^k$. 
+
+
+
+
+**Question 30:**
+<!--c.dirichlet.nt.q13-->
+
+Answer: `240`  
+
+Out of every $7$ numbers it is possible to choose 
+no more than $2$ numbers. 
+Let us consider the sequence $(1,2,3,4,5,6,7)$ (or any other consecutive 
+numbers shifted forward). 
+Obviously, one cannot choose more than one
+number out of the triplets $(1,3,6)$ or $(2,4,7)$,
+since all the differences between the numbers in these triplets are "forbidden" 
+(equal to  $2$, $3$ vai $5$). 
+
+So, the only way to choose three numbers out of these seven 
+$(1,2,3,4,5,6,7)$ would be - to choose the number $5$ and also 
+one number out of each triplet $(1,3,6)$; $(2,4,7)$. 
+The number $5$ conflicts with numbers $2$ and $7$ (so we must choose 
+number $4$ from the triplet $(2,4,7)$). 
+
+On the other hand, $4$ coflicts with both $1$ and $6$
+(so we must also choose $3$ from the triplet $(1,3,6)$). 
+But $5$ and $3$ at the same time are impossible, since their difference is $2$. 
+So it is impossible to pick three numbers out of any seven consecutive numbers; 
+we can pick at most two non-conflicting numbers. 
+
+Next, subdivide all the numbers from $1$ to $840$ into $120$ groups (seven consecutive
+numbers in each group). The maximum that can be selected in those groups is 
+$2 \cdot 120 = 240$. 
+
+
+
+**Question 31:**
+<!--c.dirichlet.nt.q15-->
+
+
+Answer: `34`  
+
+
+You can choose the set $S$ with all those numbers that are congruent to $1$ 
+modulo $3$. Namely,  
+$$S = \{ 1,4,7,10,13,\ldots,97,100 \}.$$
+
+Then the sum of any two numbers will be congruent to $2$ modulo $3$. 
+Meanwhile, their difference $a-b$ will be divisible by $3$. 
+Thus, the sum $a+b$ is never divisible by $a-b$ (since it is not divisible by $3$). 
+
+As soon as you pick more than $34$ numbers, there will be at least two numbers $a,b$ 
+with their distance $|a - b|$ equal to
+$2$ or $1$ (and in this case $a+b$ is always divisible by $|a-b|$). 
+
+
+
+
+
+
+
+

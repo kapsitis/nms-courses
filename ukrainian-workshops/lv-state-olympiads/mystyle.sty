@@ -1,0 +1,30 @@
+\ProvidesPackage{mystyle}[2021/08/11 Custom style]
+
+\renewcommand{\DOCH}{%
+\mghrulefill {\RW }\par \nobreak \CNV \FmN { LU Neklātienes matemātikas skola (NMS): Remote Math School, 2022 }\par \nobreak \CNoV State Mathematical Olympiad \par \nobreak \vskip -1\baselineskip \vskip 5pt\mghrulefill {\RW
+ }\par \nobreak \vskip 20\p@
+}
+
+\usepackage{multicol}
+\setcounter{chapter}{2}
+
+%\renewcommand{\DOCH}{%
+%\mghrulefill {\RW }\par \nobreak \CNV \FmN {\@chapapp }\par \nobreak \CNoV \TheAlphaChapter \par \nobreak \vskip -1\baselineskip \vskip 5pt\mghrulefill {\RW
+% }\par \nobreak \vskip 20\p@
+%}
+
+%\newenvironment{sphinxclassred}{\color{red}}{}
+
+
+\usepackage{fontspec} % loaded by polyglossia, but included here for transparency 
+\usepackage{polyglossia}
+\setmainlanguage{russian} 
+\setotherlanguage{english}
+
+
+\newfontfamily\cyrillicfont[Script=Cyrillic]{Times New Roman}
+\newfontfamily\cyrillicfontsf[Script=Cyrillic]{Arial}
+\newfontfamily\cyrillicfonttt[Script=Cyrillic]{Courier New}
+
+
+\endinput  
