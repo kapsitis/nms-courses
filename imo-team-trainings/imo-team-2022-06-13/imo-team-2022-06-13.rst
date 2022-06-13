@@ -1,16 +1,124 @@
-IMO Izlase, NMS, 2022-06-13
-=============================
-
-Varam atminēties dažas definīcijas un apgalvojumus.
+IMO Izlase, Darba lapa, 2022-06-13
+====================================
 
 
+Frobēniusa monētu (pastmarku problēma):
+  Ja ir divu veidu monētas ar vērtībām attiecīgi :math:`a` un :math:`b`,
+  kas ir savstarpēji pirmskaitļi, tad lielākā summa, kuru nevar izteikt
+  formā :math:`ax+by` (kur :math:`x,y \geq 0` ir veseli skaitļi) ir
+  :math:`ab - a -b`. Turklāt ir tieši :math:`\frac{(a-1)(b-1)}{2}` pozitīvi
+  veseli skaitļi, kurus nevar šādi samaksāt.
+
+
+Kāpinātāja pacelšanas lemma 3:
+  Dots naturāls :math:`n` un nepāra skaitļi :math:`a,b`. Ir spēkā vienādība:
+
+  :math:`\nu_2(a^n - b^n) = \nu_2(a - b) + \nu_2(a+b) + \nu_2(n) - 1`.
+
+Polinoma racionālo sakņu teorēma:
+  Dots vienādojums :math:`a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x + a_0 = 0`
+  ar veseliem koeficientiem, kur :math:`a_0,a_n \neq 0`.
+  Ja :math:`x = p/q` ir kāda šī polinoma racionāla sakne uzrakstīta kā
+  nesaīsināma daļa, tad skaitītājs :math:`p` dala brīvo koeficientu :math:`a_0`,
+  bet saucējs :math:`q` dala vecāko koeficientu :math:`a_n`.
+
+Mēbiusa funkcija:
+  Naturāliem skaitļiem :math:`n` definējam funkciju:
+
+  .. math::
+
+    \mu(n) = \left\{ \begin{array}{ll}
+    1, & \mbox{ja $n=1$ vai $n$ nesatur pirmskaitļu kvadrātus un tam ir pāra skaits pirmreizinātāju,}\\
+    -1, & \mbox{ja $n$ nesatur pirmskaitļu kvadrātus un tam ir nepāra skaits pirmreizinātāju,}\\
+    0, & \mbox{ja $n$ satur kādu pirmskaitļa kvadrātu.}\\
+    \end{array} \right.
+
+
+Mēbiusa inversijas formula:
+  Ja :math:`n = g(n)=\sum_{d \mid n}f(d)`,
+  tad :math:`f(n) = \sum_{d \mid n}\mu(d) \cdot g\left(\frac{n}{d}\right)`
+
+  .. https://ximera.osu.edu/math4573/April1/April1/April1
+
+  Piemērs (Eilera funkcija):
+    :math:`n = \sum_{d \mid n} \varphi(d)` un vienlaikus
+    :math:`\varphi(n) = \sum_{d \mid n} \mu(d) \cdot \frac{n}{d} = \sum_{d \mid n} \mu\left( \frac{n}{d} \right) \cdot d`
+
+  Piemērs (Dalītāju skaita funkcija):
+    :math:`\sigma_0(n) = \sum_{d \mid n} 1` un vienlaikus
+    :math:`1 = \sum_{d \mid n} \mu(d) \cdot \sigma_0 \left( \frac{n}{d} \right)`
+
+
+Lemma par polinoma vērtību summu:
+  Dots pirmskaitlis :math:`p` un polinoms ar veseliem koeficientiem :math:`P(x)`,
+  kura pakāpe :math:`\mbox{deg}(F) \leq p-2`. Tad polinoma :math:`p` pēc
+  kārtas ņemtu vērtību summa
+  :math:`{\displaystyle \sum\limits_{k=1}^p P(k)}` dalās ar :math:`p`.
 
 
 
 Ievaduzdevumi
 ---------------
 
+1. Kuras nesaīsināmas racionālas daļas :math:`r = p/q`
+   izpilda secinājumu polinoma racionālo sakņu teorēmai,
+   ja algebriskais vienādojums ir šāds:
+   :math:`3 r^3 + r^2 - 7 r - 5 = 0`.
+   Sadalīt šo izteiksmi reizinātājos.
 
+2. Kādu atlikumu, dalot ar :math:`7`, dod
+   :math:`1^4 + 2^4 + \ldots + 100^4`?
+
+3. Dots pirmskaitlis :math:`p` un vesels skaitlis
+   :math:`k \in [1;p-1]`. Pierādīt, ka
+
+   .. math::
+
+     \binom{p-1}{k} \equiv (-1)^k\ (\mbox{mod}\ p).
+
+   .. (Andreescu2007, p.101)
+
+
+
+4. Dots pirmskaitlis :math:`p`. Pierādīt, ka eksistē
+   bezgalīgi daudzi naturāli :math:`n`, kuriem
+   :math:`p` dala :math:`2^n - n`.
+
+   .. (Andreescu2007, p.102)
+
+
+5. Nogrieznī :math:`[0;77]` atzīmē tos veselos punktus :math:`n`, kas
+   nav savstarpēji pirmskaitļi ar :math:`77`, tādējādi sadalot to īsākos
+   nogriežņos. Atrast visu šo nogriežņu garumu kvadrātu summu.
+
+   Ieteikums:
+     Ja :math:`X = [a;b]` ir nogrieznis ar veseliem galapunktiem, tad
+     tā garuma kvadrātu :math:`(b-a)^2` var aprēķināt arī, saskaitot šādu summu:
+
+     .. math::
+
+       s_1 + 2 \cdot \left( s_2 + s_3 + \ldots + s_{b-a} \right),
+
+     kur :math:`s_i` ir to veselo nogriežņu :math:`[c,d] \subseteq [a,b]` skaits,
+     kuru garums :math:`d-c = i` un kuri pilnībā atrodas :math:`[a,b]` iekšpusē.
+     (Piemēram, :math:`s_1 = b-a`, :math:`s_2 = b - a - 1`,
+     :math:`s_{b-a} = 1`).
+
+     Atliek sākotnējā nogrieznī :math:`[0;77]` atrast, cik ir tādu nogriežņu
+     ar veselu garumu :math:`i`, kuros neatrodas neviens atzīmētais punkts
+     un visu sasummēt, piereizinot atrastos skaitus ar svariem :math:`1` vai :math:`2`.
+
+.. only:: Internal
+
+  **Atbilde:**
+
+    1. Sadalījums reizinātājos ir :math:`(r+1)^2(3r-5) = 0`
+    2. Pēc lemmas par polinoma vērtību summu var atmest pirmos
+       :math:`98` saskaitāmos, jo :math:`98` dalās ar :math:`7`.
+       Paliek pāri :math:`99^4 + 100^4 \equiv 1^4 + 2^4 \equiv 17 \equiv 3\ (\mbox{mod}\ 7)`.
+
+
+  :math:`\square`
 
 
 
@@ -18,15 +126,48 @@ Sacensību uzdevumi
 --------------------
 
 
+**2.1. uzdevums:**
+  Dots naturāls skaitlis :math:`n \geq 2`, kuram definējam kopu :math:`A_n` sekojoši:
 
-.. math::
+  .. math::
 
-  a = \frac{\sqrt{3}}{2}.
+    A_n = \big\{ 2^n - 2^k \mid k \in \mathbb{Z},\ 0 \leq k < n \big\}.
 
-.. only:: Internal
+  Atrast lielāko naturālo skaitli, kuru nevar uzrakstīt kā viena vai vairāku
+  kopas :math:`A_n` elementu summu (vairāki elementi var arī sakrist).
 
-  **Atbilde:**
 
-    Stuff
 
-  :math:`\square`
+
+
+**2.2. uzdevums:**
+  Atrast visus naturālu skaitļu pārus :math:`(x,y)`, kuriem
+
+  .. math::
+
+    \sqrt[3]{7x^2 - 13xy + 7y^2} = |x - y| + 1.
+
+
+
+
+**2.3. uzdevums:**
+  Dots naturāls skaitlis :math:`n > 1`. Definējam virkni :math:`(a_k)_{k \geq 1}` sekojoši:
+
+  .. math::
+
+    a_k = \left\lfloor \frac{n^k}{k} \right\rfloor.
+
+  Pierādīt, ka bezgalīgi daudzi šīs virknes locekļi ir nepāra skaitļi.
+  (Reālam skaitlim :math:`x` ar :math:`\lfloor x \rfloor` apzīmējam
+  lielāko veselo skaitli, kas nepārsniedz :math:`x`.)
+
+
+**2.4. uzdevums:**
+  Doti naturāli skaitļi, no kuriem katri divi ir savstarpēji pirmskaitļi:
+  :math:`a_1 < a_2 < \cdots < a_n`. Pie tam :math:`a_1` ir pirmskaitlis
+  un :math:`a_1 \geq n+2`.
+  Uz reālu skaitļu nogriežņa :math:`I = [0,a_1a_2 \cdots a_n]` atzīmējam
+  visus tos veselos skaitļus, kuri dalās vismaz ar vienu no skaitļiem
+  :math:`a_1,\ldots,a_n`. Šie punkti sadala nogriezni :math:`I` vairākos
+  mazākos nogriežņos.
+  Pierādīt ka visu nogriežņu garumu kvadrātu summa dalās ar :math:`a_1`.

@@ -1,32 +1,203 @@
-IMO Izlase, NMS, 2022-06-06
-=============================
+IMO Izlase, Darba lapa, 2022-06-06
+====================================
 
-Varam atminēties dažas definīcijas un apgalvojumus.
+.. IMO2021SL: NT1, NT3, NT4, NT5
+
+Aritmētiskais un ģeometriskais vidējais:
+  Pozitīviem reāliem :math:`a_1,\ldots,a_n` ir spēkā
+  :math:`{\displaystyle \sqrt[n]{a_1{}\cdots{}a_n} \leq \frac{a_1+\ldots + a_n}{n}}`.
+
+:math:`p`-valuācija:
+  Katram pirmskaitlim :math:`p` par naturāla skaitļa :math:`n` :math:`p`-valuāciju
+  sauc lielāko veselo nenegatīvo pakāpi :math:`k`, kurai :math:`n` dalās ar :math:`p^k`.
+  To apzīmē :math:`k = \nu_p(n)` (grieķu :math:`\nu` (nī)).
+
+Divnieka pakāpes atdalīšana:
+  Naturālu skaitli :math:`n`
+  var tieši vienā veidā izteikt kā reizinājumu :math:`s \cdot 2^k`,
+  kur :math:`s` ir pozitīvs nepāra skaitlis, bet :math:`k \geq 0` ir jebkurš
+  vesels nenegatīvs skaitlis. (:math:`s = 1` t.t.t., ja :math:`n`
+  ir skaitļa :math:`2` pakāpe.)
+
+Ležandra formula:
+  :math:`{\displaystyle \nu_p(n!) =
+  \sum\limits_{k=1}^{\infty} \left\lfloor \frac{n}{p^k} \right\rfloor}`.
+  No šejienes arī :math:`{\displaystyle \nu_p(n!) < \frac{n}{p} + \frac{n}{p^2} + \ldots = \frac{n}{p-1}}`.
+
+Polinoma racionālo sakņu teorēma:
+  Dots vienādojums :math:`a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x + a_0 = 0`
+  ar veseliem koeficientiem, kur :math:`a_0,a_n \neq 0`.
+  Ja :math:`x = p/q` ir kāda šī polinoma racionāla sakne uzrakstīta kā
+  nesaīsināma daļa, tad skaitītājs :math:`p` dala brīvo koeficientu :math:`a_0`,
+  bet saucējs :math:`q` dala vecāko koeficientu :math:`a_n`.
+
+Kāpinātāja pacelšanas lemma 1:
+  Dots nepāra pirmskaitlis :math:`p` un naturāls kāpinātājs :math:`n`.
+  Ja neviens no veseliem skaitļiem :math:`a,b` nedalās ar :math:`p`,
+  bet :math:`a - b` dalās ar :math:`p` tad :math:`\nu_p(a^n - b^n) = \nu_p(a - b) + \nu_p(n)`.
 
 
+Kāpinātāja pacelšanas lemma 2:
+  Dots nepāra pirmskaitlis :math:`p` un naturāls kāpinātājs :math:`n`.
+  Ja neviens no veseliem skaitļiem :math:`a,b` nedalās ar :math:`p`,
+  bet :math:`a + b` dalās ar :math:`p` tad :math:`\nu_p(a^n + b^n) = \nu_p(a + b) + \nu_p(n)`.
 
+
+Stirlinga tuvinājums:
+  :math:`n!\sim {\sqrt {2\pi n}}\left({\frac {n}{e}}\right)^{n}`,
+  kur :math:`f(n) \sim g(n)` ir *asimptotiska ekvivalence*:
+  :math:`\lim_{n \rightarrow \infty} f(n)/g(n) = 1`.
 
 
 Ievaduzdevumi
 ---------------
 
+1. Ar cik nullēm beidzas skaitļa :math:`1000!` decimālpieraksts?
+   (Pietiek atrast aptuvenu atbildi; pieļaujamā kļūda ir :math:`\pm 4`).
 
+2. Atrast tos naturālos skaitļus, kuriem :math:`\nu_2(n!) = n-1`.
 
+3. Apzīmējam
+   :math:`{\displaystyle N = \left( 2^1 - 1 \right)\left(2^2 - 1\right)\cdots\left(2^{120} - 1\right)}`.
+   Kurš skaitlis lielāks:
+   :math:`\nu_5(N)` vai :math:`\nu_7(N)`?
 
+4. Doti naturāli skaitļi :math:`a,b`. Pierādīt, ka izteiksme
+   :math:`(36a + b)(a + 36b)` nevar būt skaitļa :math:`2` pakāpe.
 
-Sacensību uzdevumi
---------------------
+   .. (Andreescu2007, p.96)
 
-
-
-.. math::
-
-  abc = \sqrt{2}.
 
 .. only:: Internal
 
   **Atbilde:**
 
-    Stuff
+    1. Nuļļu skaits vienāds ar :math:`\nu_5(1000!)`, jo 5-valuācija jebkuram faktoriālam
+       nepārsniedz 2-valuāciju. Tuvinot Ležandra formulu kā bezgalīgu ģeometrisku progresiju,
+       iegūstam :math:`\nu_5(n!) \approx \frac{n}{5-1} = 250`.
+       Faktiskā 5-valuācija ir :math:`\nu_5(1000!)=249`. Tas arī ir faktiskais nuļļu skaits
+       skaitlim :math:`1000!`.
+
+    2. Tās ir visas veselās skaitļa divi pakāpes: :math:`n = 2^k`; tad Ležandra formula:
+
+       .. math::
+
+         \nu(2^k) = 2^{k-1} + 2^{k-2} + \ldots + 2 + 1 = 2^k -1.
+
+       Aplūkojot jebkuru citu :math:`n`, daži no dalījumiem Ležandra formulā apaļosies
+       uz leju un rezultāts sanāks mazāks.
+
+    3. Ar 5 dalās :math:`(2^4 -1) = 15`, :math:`(2^8 - 1)`, :math:`\ldots`, :math:`(2^{120}-1)`
+       (pavisam 30 reizinātāji). Starp tiem ir seši tādi, kam kāpinātājs dalās ar :math:`5`
+       un viens tāds, kam kāpinātājs dalās ar :math:`25`.
+       Tāpēc :math:`\nu_5(N)=30 + 6+1 = 37`.
+
+       Ar 7 dalās :math:`(2^3 -1) = 7`, :math:`(2^6 - 1)`, :math:`\ldots`, :math:`(2^{120}-1)`
+       (pavisam 40 reizinātāji). Starp tiem ir arī pieci tādi, kam kāpinātājs dalās ar :math:`7`,
+       bet nav tādu, kam kāpinātājs dalās ar :math:`49`.
+       Tāpēc :math:`\nu_7(N)=40 + 5 = 45`.
+
+       .. code-block:: python
+
+         >>> import math
+         >>> NList = [2**n - 1 for n in range(1,121)]
+         >>> N = math.prod(NList)
+         >>> N % (5**37)
+         0
+         >>> N % (5**38)
+         72759576141834259033203125
+         >>> N % (7**45)
+         0
+         >>> N % (7**46)
+         321020713270794100069068901154813354421
+
+    4. Atrodam 2-valuācijas mainīgajiem :math:`a` un :math:`b` -- apzīmējam
+       tās attiecīgi ar :math:`k` un :math:`\ell`. Tad eksistē nepāra skaitļi
+       :math:`s` un :math:`t`, ka :math:`a = 2^k \cdot s` un :math:`b = 2^{\ell} \cdot t`.
+       Pieņemsim arī, ka :math:`k \leq \ell` (jo burti :math:`a,b` ir simetriski).
+       Mums vajag, lai kaut kāda divnieka pakāpe :math:`2^m` būtu vienāda ar reizinājumu:
+
+       .. math::
+
+         2^m = (36a + b)(a + 36b) = \left( 36 \cdot 2^k \cdot s + 2^{\ell} \cdot t \right)\left( 2^k \cdot s + 36 \cdot 2^{\ell} \cdot t \right) =
+
+         = 2^{2k} \left( 36 \cdot s + 2^{\ell - k} \cdot t \right) \left( s + 36 \cdot 2^{\ell - k} \cdot t \right).
+
+       Pēdējais no reizinātājiem :math:`( s + 36 \cdot 2^{\ell - k} \cdot t)` ir nepāra skaitlis, kas lielāks
+       par :math:`1`, jo arī :math:`s` ir nepāra. Šāda izteiksme nevar būt vienāda ar divnieka pakāpi :math:`2^m`. Pretruna.
+
 
   :math:`\square`
+
+Sacensību uzdevumi
+--------------------
+
+**1.1. uzdevums:**
+  Atrast visus naturālos skaitļus :math:`n`, kuriem
+  var atrast naturālu skaitļu pāri :math:`(a,b)` tādu, ka
+  :math:`a^2 + b + 3` nedalās ne ar viena pirmskaitļa kubu un izpildās vienādība:
+
+  .. math::
+
+    \frac{ab + 3b + 8}{a^2 + b + 3} = n.
+
+
+
+.. **2. uzdevums:**
+..   Dots naturāls skaitlis :math:`n \geq 100`.
+..   Skaitļi :math:`n,n+1,\ldots,2n` ir uzrakstīti uz :math:`n+1`
+..   kartītēm, pa vienam skaitlim uz katras kartītes.
+..   Kartītes sajauca un kaut kā sadalīja divās kaudzēs.
+..   Pierādīt, ka vienā no kaudzēm ir divas kartītes,
+..   uz kurām uzrakstīto skaitļu summa ir pilns kvadrāts.
+
+
+
+**1.2. uzdevums:**
+  Atrast visus naturālos skaitļus :math:`n` ar sekojošu īpašību:
+  skaitlim :math:`n` ir :math:`k` pozitīvi dalītāji, kuriem
+  eksistē tāda permutācija :math:`(d_1,d_2,\ldots,d_k)`, ka
+  jebkuram :math:`i = 1,2,\ldots,k` skaitlis
+  :math:`d_1 + \cdots + d_i` ir pilns kvadrāts.
+
+
+
+**1.3. uzdevums:**
+  Dots racionāls skaitlis :math:`r > 1` un
+  taisne ar diviem punktiem :math:`B \neq R`, kur
+  punktā :math:`R` ir sarkana lodīte, bet punktā :math:`B`
+  ir zila lodīte.
+  Alise izdara virkni gājienu. Katrā gājienā viņa
+  izvēlas veselu skaitli :math:`k` (ne obligāti pozitīvu)
+  un lodīti, kuru pārvietot. Ja izvēlētā lodīte ir punktā
+  :math:`X`, bet otras krāsas lodīte atrodas punktā :math:`Y`,
+  tad Alise izvēlēto lodīti pārvieto uz :math:`X'`,
+  kur :math:`\overrightarrow{YX'} = r^k \overrightarrow{YX}`.
+
+  Alises mērķis ir pārvietot sarkano lodīti uz punktu :math:`B`.
+  Atrast visus racionālos skaitļus :math:`r > 1`, kuriem
+  Alise var sasniegt šo mērķi ne vairāk kā :math:`2021` gājienos.
+
+
+
+**1.4. uzdevums:**
+  Pierādīt, ka eksistē tikai galīgs skaits naturālu skaitļu
+  četrinieku :math:`(a,b,c,n)`, kuriem izpildās vienādība
+
+  .. math::
+
+    n! = a^{n-1} + b^{n-1} + c^{n-1}.
+
+
+.. Secinājumi
+.. ---------------
+..
+.. * Kā mainās 1.uzdevuma atbilde, ja neprasām, lai :math:`a^2 + b + 3` nedalītos
+..   ne ar viena pirmskaitļa kubu?
+.. * Iedomāsimies, ka 3.uzdevumā :math:`R=0` un :math:`B=1`, savukārt
+..   racionālais skaitlis :math:`r>1` ir fiksēts.
+..   Kādos punktos var nonākt sarkanā lodīte?
+..   Kas mainās, ja skaitlis :math:`r > 1` var būt arī iracionāls?
+.. * Vai Jūsu 4.uzdevuma risinājums ļauj atrast visus (galīgi daudzos)
+..   vienādojuma :math:`n! = a^{n-1} + b^{n-1} + c^{n-1}` atrisinājumus
+..   naturālos skaitļos?
