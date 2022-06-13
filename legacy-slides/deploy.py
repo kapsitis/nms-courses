@@ -29,6 +29,6 @@ superDirs = ['../imo-team-trainings']
 
 for super_dir in superDirs:
     for subdir, dirs, files in os.walk(super_dir):
-    for file in files:
-        if file.endswith('.pdf'):
-            shutil.copy2(os.path.join(subdir,file),dest)
+        for file in files:
+            if file.endswith('.pdf'):
+                shutil.copy2(os.path.join(subdir,file),dest)
