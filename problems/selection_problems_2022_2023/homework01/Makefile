@@ -17,15 +17,13 @@ help:
 solutions:
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) -t Internal
 	python replace.py
-	cd _build/latex && pdflatex ntjun01-divisibility
-	mv _build/latex/ntjun01-divisibility.pdf ntjun01-divisibility-solutions.pdf
+	cd _build/latex && pdflatex homework01
+	mv _build/latex/homework01.pdf homework01-solutions.pdf
 
 questions:
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-	cd _build/latex && pdflatex ntjun01-divisibility
-	mv _build/latex/ntjun01-divisibility.pdf .
-
-
+	cd _build/latex && pdflatex homework01
+	mv _build/latex/homework01.pdf .
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
