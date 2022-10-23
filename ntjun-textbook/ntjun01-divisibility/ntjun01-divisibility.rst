@@ -1,8 +1,6 @@
 NMS Skaitļu teorija #1: Pirmskaitļi un dalāmība
 =================================================
 
-Ievads
---------
 
 Veselo skaitļu aritmētikas uzdevumi var saturēt jautājumus, kas ar ko dalās vai nedalās vai jautājumus par pirmskaitļiem
 un saliktiem skaitļiem.
@@ -31,8 +29,12 @@ veselos skaitļos.
 
 
 
-Skaitļu dalāmība
------------------------
+Dalāmība, skaitļa dalītāju struktūra 
+------------------------------------------
+
+
+Jēdzieni
+^^^^^^^^^^^
 
 Veselus skaitļus vienmēr var saskaitīt, atņemt, reizināt kā arī kāpināt veselās pozitīvās pakāpēs.
 Dalīt arī vienmēr var, ja pieļaujam dalīšanu ar atlikumu.
@@ -47,17 +49,68 @@ Skaitli :math:`d`, kuram :math:`d \mid m` sauc par skaitļa :math:`m` *dalītāj
 savukārt :math:`m` sauc par skaitļa :math:`d` *daudzkārtni*.
 
 
+**Definīcija:**
+  *Dalīšana* ir aritmētiska operācija. Dalot divus
+  veselus skaitļus, rezultāts ir vesels vai racionāls.
+
+
+Dalīšana kā aritmētiska operācija un tās rezultāts var parādīties vairākos veidos:
+
+  1. Dalīšana, iegūstot parasto vai jaukto daļskaitli: :math:`17:3 = \frac{17}{3} = 5`
+  2. Dalīšana, iegūstot noapaļotu decimāldaļu: :math:`17:3 = 5.6666667`
+  3. Dalīšana, iegūstot periodisku decimāldaļu: :math:`17:3 = 5.(6)` (lasa "pieci komats periodā seši")
+  4. Dalīšana, iegūstot dalījumu veselos skaitļos un atlikumu:  :math:`17:3 = 5\;\;\mbox{atl.}\;\;2`
+
+
+**Definīcija:**
+  *Dalāmība*  ir loģiska attiecība - tās rezultāts ir
+  patiesuma vērtība (``True`` vai ``False``).
+
+**Piemērs:**
+  Dalīšanas rezultāts :math:`18/6=3`, bet
+  :math:`17/6=2\frac{5}{6}`.
+
+  Savukārt :math:`18 \mid 6` rezultāts ir ``True``.
+  Bet :math:`17 \mid 6` rezultāts ir ``False``.
+
+**Teorēma:**
+  Jebkuriem veseliem skaitļiem :math:`a,b,c` ir spēkā šādas dalāmības īpašības.
+
+  1. Ja :math:`a \mid b` un :math:`a \mid c`, tad :math:`a \mid b+c` un :math:`a \mid b - c`;
+  2. Ja :math:`a \mid b`, tad :math:`a \mid b \cdot k`;
+  3. Ja :math:`a \mid b_1, a \mid b_2, \ldots, a \mid b_n`, tad :math:`a \mid (b_1k_1 + b_2k_2 + \ldots + b_nk_n)`;
+  4. Ja :math:`a \mid b` un :math:`b \mid c`, tad :math:`a \mid c`;
+  5. Ja :math:`a \mid x` un :math:`b \mid y`, tad :math:`ab \mid xy`;
+  6. Ja :math:`a \mid b` un :math:`b \mid a`, tad :math:`a = b`.
 
 
 
-Dalāmības režģis
-^^^^^^^^^^^^^^^^^^
+
+**Definīcija:**
+  Dalīt veselu skaitli :math:`m` ar :math:`d`
+  ar atlikumu nozīmē izteikt :math:`m = q\cdot d + r`, kur
+  dalījuma veselā daļa :math:`q`
+  un atlikums :math:`r` ir veseli skaitļi, turklāt
+  *atlikums* pieņem kādu no vērtībām:
+  :math:`r \in \{ 0, 1, \ldots, n-1 \}`.
+
+  Arī negatīvus skaitļus var dalīt, bet 
+  dalīšanas atlikums nevar būt negatīvs.
+  Piemēram, :math:`-8` dalot ar :math:`7` atlikums ir :math:`6`, jo 
+  :math:`-8 = (-2) \cdot 7 + 6`. 
+
+
+
+
+
+Dalāmības attiecība
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: figs-ntjun01-divisibility/lattice-of-divisors.png
    :width: 1.2in
 
 
-* Ja šajā režģī ir augšupejošs ceļš no virsotnes :math:`a` uz virsotni :math:`b`,
+* Ja šajā režģveida diagrammā ir augšupejošs ceļš no virsotnes :math:`a` uz virsotni :math:`b`,
   tad :math:`b` dalās ar :math:`a`.
 * Dalāmības attiecības "minimālais" elements ir :math:`1`
   (visi skaitļi dalās ar :math:`1`). "Maksimālais" elements
@@ -105,143 +158,16 @@ Sal. *Daļēji sakārtotas kopas* `<https://bit.ly/3nMRRR6>`_.
 
 
 
-Ar dalāmību saistītie operatori
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Definīcija:**
-  *Dalīšana* (*division*) ir aritmētiska operācija. Dalot divus
-  veselus skaitļus, rezultāts ir vesels vai racionāls.
-
-
-Dalīšana kā aritmētiska operācija un tās rezultāts var parādīties vairākos veidos:
-
-  1. Dalīšana, iegūstot parasto vai jaukto daļskaitli: :math:`17:3 = \frac{17}{3} = 5`
-  2. Dalīšana, iegūstot noapaļotu decimāldaļu: :math:`17:3 = 5.6666667`
-  3. Dalīšana, iegūstot periodisku decimāldaļu: :math:`17:3 = 5.(6)` (lasa "pieci komats periodā seši")
-  4. Dalīšana, iegūstot dalījumu veselos skaitļos un atlikumu:  :math:`17:3 = 5\;\;\mbox{atl.}\;\;2`
-
-
-**Definīcija:**
-  *Dalāmība* (*divisibility*) ir loģiska attiecība - tās rezultāts ir
-  patiesuma vērtība (``True`` vai ``False``).
-
-**Piemērs:**
-  Dalīšanas rezultāts :math:`18/6=3`, bet
-  :math:`17/6=2\frac{5}{6}`.
-
-  Savukārt :math:`18 \mid 6` rezultāts ir ``True``.
-  Bet :math:`17 \mid 6` rezultāts ir ``False``.
-
-**Teorēma:**
-  Jebkuriem veseliem skaitļiem :math:`a,b,c` ir spēkā šādas dalāmības īpašības.
-
-  1. Ja :math:`a \mid b` un :math:`a \mid c`, tad :math:`a \mid b+c` un :math:`a \mid b - c`;
-  2. Ja :math:`a \mid b`, tad :math:`a \mid b \cdot k`;
-  3. Ja :math:`a \mid b_1, a \mid b_2, \ldots, a \mid b_n`, tad :math:`a \mid (b_1k_1 + b_2k_2 + \ldots + b_nk_n)`;
-  4. Ja :math:`a \mid b` un :math:`b \mid c`, tad :math:`a \mid c`;
-  5. Ja :math:`a \mid x` un :math:`b \mid y`, tad :math:`ab \mid xy`;
-  6. Ja :math:`a \mid b` un :math:`b \mid a`, tad :math:`a = b`.
-
-
-
-
-**Definīcija:**
-  Dalīt veselu skaitli :math:`m` ar :math:`d`
-  ar atlikumu nozīmē izteikt :math:`m = q\cdot d + r`, kur
-  dalījuma veselā daļa :math:`q`
-  un atlikums :math:`r` ir veseli skaitļi, turklāt
-  **atlikums** (*remainder*) pieņem kādu no vērtībām:
-  :math:`r \in \{ 0, 1, \ldots, n-1 \}`.
-
-**Piemērs:**
-  Dalot ar :math:`3` iespējamie atlikumi
-  ir :math:`\textcolor{red}{\{ 0,1,2 \}}`. Aprēķina paraugs Python.
-
-.. code-block:: python
-
-  >>> 15 % 3
-  0
-  >>> 17 % 3
-  2
-  >>> (-17) % 3
-  1
-  >>> (-17) // 3
-  -6
-
-
-.. math::
-
-  \left\{
-  \begin{array}{l}
-  15 = 5 \cdot 3 + \textcolor{red}{0}\\
-  17 = 5 \cdot 3 + \textcolor{red}{2}\\
-  -17 = (-6) \cdot 3 + \textcolor{red}{1}
-  \end{array}
-  \right.
-
-
-.. note::
-  Arī negatīviem skaitļiem iespējama dalīšana ar atlikumu.
-  Jāņem vērā, ka atlikumi nemēdz būt negatīvi.
-  Dažās programmēšanas valodās
-  *atlikuma operators*, ja to izmanto negatīviem skaitļiem,
-  dod negatīvus atlikumus.
-  Pēc matemātiskās definīcijas, atlikums, dalot ar :math:`n`, vienmēr ir skaitlis
-  starp :math:`0` un :math:`n-1`.
-
-
-Jautājumi par dalāmību
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-**1.jautājums**
-  Rindā novietoti :math:`30` slēdži ar numuriem no :math:`1` līdz :math:`30`.
-  Katrs slēdzis var būt ieslēgts vai izslēgts; sākumā tie visi ir izslēgti.
-  Pirmajā solī pārslēdz pretējā stāvoklī visus slēdžus, kuru
-  numuri dalās ar :math:`1`. Otrajā solī pārslēdz visus tos, kuru
-  numuri dalās ar :math:`2`. Un tā tālāk - līdz 30.solī pārslēdz pretējā
-  stāvoklī slēdžus, kuru numuri dalās ar :math:`30`.
-  Cik daudzi slēdži kļūst ieslēgti pēc visu soļu pabeigšanas?
-
-**Ieteikumi:**
-  Ko nozīmē "pārslēgt pretējā stāvoklī"? Cik daudzi soļi pārslēdz slēdzi ar konkrētu numuru :math:`n`?
-  Vai mūs interesē, cik reizes tika pārslēgts tas vai cits slēdzis (vai arī tikai slēdža
-  beigu stāvoklis)?
-
-
-
-.. only:: Internal
-
-  **Atbilde:**
-
-    **TODO:** Ievietot attēlu, kas parāda dalītāju skaitu dažādiem skaitļiem no :math:`1` līdz :math:`30`.
-    Vizualizācija zīmē ritmu ar skaitļu :math:`1,2,3,4,\ldots` daudzkārtņiem horizontālēs.
-    Dalītāju skaitu var saskaitīt vertikāli.
-    Kuriem no skaitļiem ir nepāru skaits dalītāju?
-
-  :math:`\square`
-
-
-
-
-
-
-
-
-Naturāla skaitļa dalītāju skaits
-------------------------------------
-
-Dalītāju izvietojums, skaits, režģis. Fiksēta
-skaitļa dalītāji veido simetrisku režģveida struktūru.
-Šī režģa analīze ļauj ātri noskaidrot
-dalītāju skaitu un citas to kopīgās īpašības. Režģa struktūra noder arī,
-lai ģeometriski iztēlotos, teiksim, lielāko kopīgo dalītāju diviem skaitļiem.
-
-
-
+.. _subsubDivisorSymmetry:
 
 Dalītāju virknes simetrija
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Fiksēta skaitļa dalītāji veido simetrisku režģveida struktūru.
+Šī režģa analīze ļauj ātri noskaidrot
+dalītāju skaitu 
+
 
 Dalītāji skaitlim :math:`60`:
 
@@ -295,14 +221,13 @@ Hases diagramma skadalītājiem
    Hases diagramma skaitļiem :math:`[1;15]`
 
 
-Veidotājelementi: 2,3,5
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Zemāk dota Hases diagramma skaitļiem līdz :math:`480`, `<https://bit.ly/3qQBntd>`_
 
 .. figure:: figs-ntjun01-divisibility/hasse-larger.png
    :width: 4.2in
    :alt: Hases diagramma skaitļiem līdz :math:`480`
 
-   Hases diagramma skaitļiem līdz :math:`480`, `<https://bit.ly/3qQBntd>`_
+
 
 
 
@@ -374,8 +299,8 @@ Piemēri ar n=60
 
 
 
-Dalītāji skaitlim 60
-^^^^^^^^^^^^^^^^^^^^^^
+Dalītāju skaits, summa, kvadrātu summa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: figs-ntjun01-divisibility/divisors-of-60.png
    :width: 2in
@@ -399,10 +324,8 @@ Dalītāji skaitlim 60
 
 
 
-Dalītāju un to kvadrātu summas
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-:math:`\sigma_1(60)` un :math:`\sigma_2(60)` arī var ātri
+Visu skaitļa dalītāju summu (piemēram, :math:`\sigma_1(60) = 1+2+3+\ldots+30+60`) un 
+visu skaitļa dalītāju kvadrātu summu (piemēram, :math:`\sigma_2(60) = 1^2+2^2+3^2+\ldots+30^2+60^2`) arī var ātri
 aprēķināt, izmantojot algebriskas identitātes:
 
 
@@ -441,116 +364,30 @@ Visu šo var iegūt no sadalījuma pirmreizinātājos:
 
 
 
-Jautājumi dalītāju skaitam un summai
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Uzdevumi par dalītāju struktūru
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**1.jautājums:**
+**1.uzdevums:**
   Atrast mazāko naturālo skaitli :math:`M`, kam ir tieši :math:`16` dalītāji.
 
-.. only:: Internal
-
-  **Atbilde:**
-
-    Skaitlim :math:`M` nevar būt vairāk kā četri pirmreizinātāji.
-    Ja :math:`M = p_1^ap_2^bp_3^cp_4^d`, tam ir
-    :math:`(a+1)(b+1)(c+1)(d+1)` dalītāji.
-    Var iegūt rezultātu :math:`16`, ja :math:`a =b = c = d =1`.
-    Savukārt, ja dažādo :math:`M` pirmreizinātāju
-    ir vairāk kā četri, tad :math:`M` būtu vismaz :math:`2^5 = 32`
-    dalītāji.
-
-    Šķirosim dažādus gadījumus, kā :math:`16` var izteikt
-    ne vairāk kā četru dažādu pirmskaitļu (vai to pakāpju) reizinājumu.
-    Dalītāju skaitu nosaka pirmreizinātāju pakāpes, nevis tas, kā
-    izvēlēti paši pirmreizinātāji. Tāpēc sadalījumus pirmreizinātājos
-    šķirosim pēc pirmreizinātāju pakāpēm, veicot pirmreizinātāju izvēli
-    nedaudz vēlāk.
-
-    .. image:: figs-ntjun01-divisibility/16-divisors-var123.png
-       :width: 4in
-
-    **(A) gadījums:**
-      :math:`16 = (15+1)` jeb :math:`p^{15}`, kur :math:`p` ir pirmskaitlis.
-      Mazākais šāds skaitlis ir :math:`M = 2^{15} = 32768`.
-
-    **(B) gadījums:**
-      :math:`16 = (7+1)(1+1)` jeb
-      :math:`p^7q`, kur :math:`p,q` ir pirmskaitļi.
-      Mazākais šāds skaitlis ir :math:`2^7\cdot{} 3 = 128 \cdot 3 = 384`.
-
-    **(C) gadījums:**
-      :math:`16 = (3+1)(3+1)` jeb
-      :math:`p^3q^3`, kur :math:`p,q` ir pirmskaitļi.
-      Mazākais šāds skaitlis ir :math:`2^3\cdot{} 3^3 = 216`.
 
 
-    .. image:: figs-ntjun01-divisibility/16-divisors-var45.png
-       :width: 3.5in
-
-
-    **(D) gadījums:**
-      :math:`(3+1)(1+1)(1+1)` jeb
-      :math:`p^3qr`, kur :math:`p,q,r` ir pirmskaitļi.
-      Mazākais šāds skaitlis ir :math:`2^3\cdot{} 3 \cdot 5 = 120`.
-
-    **(E) gadījums:**
-      :math:`(1+1)(1+1)(1+1)(1+1)` jeb
-      skaitlis formā :math:`pqrs`, kur :math:`p,q,r,s` ir pirmskaitļi.
-      Mazākais šāds skaitlis ir :math:`2 \cdot 3 \cdot 5 \cdot 7 = 210`.
-
-
-    Mazākais no apskatītajiem pieciem rezultātiem
-    ir :math:`120` ((D) gadījums). Tā kā ikvienā no gadījumiem
-    izvēlējāmies mazākos iespējamos pirmreizinātājus, tātad šo
-    rezultātu nevar uzlabot.
-
-  :math:`\square`
-
-
-
-
-
-**2.jautājums:**
+**2.uzdevums:**
   Naturālam skaitlim :math:`n` ir tieši :math:`125` naturāli
   dalītāji (ieskaitot :math:`1` un pašu :math:`n`).
   Kādu visaugstākās pakāpes sakni noteikti var izvilkt no
   :math:`n`, iegūstot naturālu rezultātu?
 
 
-.. only:: Internal
 
-  **Atbilde:**
-
-    :math:`125` var izteikt kā reizinājumu
-    vairākiem skaitļiem (kas pārsniedz :math:`1`) sekojošos veidos:
-
-    * :math:`125 = 124+1`.
-    * :math:`125 = 25 \cdot 5 = (24 + 1) \cdot (4+1)`.
-    * :math:`125 = 5 \cdot 5 \cdot 5 = (4+1) \cdot (4+1) \cdot (4+1)`.
-
-    Tādēļ skaitli :math:`n` var sadalīt pirmreizinātājos
-    vienā no sekojošiem veidiem:
-
-
-    .. math::
-
-      n = p^{124},\;\;n = p^{24}q^4\;\;\text{vai}\;\;n = p^{4}q^4r^4,
-
-    kur :math:`p,q,r` ir pirmskaitļi. Visos gadījumos var izvilkt 4.pakāpes sakni.
-
-  :math:`\square`
-
-
-
-
-
-
-
-
-
-
-
-
+**3.uzdevums**
+  Rindā novietoti :math:`36` slēdži ar numuriem no :math:`1` līdz :math:`36`.
+  Katrs slēdzis var būt ieslēgts vai izslēgts; sākumā tie visi ir izslēgti.
+  Pirmajā solī pārslēdz pretējā stāvoklī visus slēdžus, kuru
+  numuri dalās ar :math:`1`. Otrajā solī pārslēdz visus tos, kuru
+  numuri dalās ar :math:`2`. Un tā tālāk - līdz 36.solī pārslēdz pretējā
+  stāvoklī slēdžus, kuru numuri dalās ar :math:`36`.
+  Cik daudzi slēdži kļūst ieslēgti pēc visu soļu pabeigšanas?
 
 
 
@@ -582,11 +419,11 @@ Pirmskaitļu jēdziens
 ^^^^^^^^^^^^^^^^^^^^^^
 
 **Definīcija:**
-  Naturālu skaitli :math:`p>1` sauc par **pirmskaitli**
-  (*prime number*), ja vienīgie tā dalītāji ir :math:`1` un :math:`p`.
+  Naturālu skaitli :math:`p>1` sauc par *pirmskaitli*, 
+  ja vienīgie tā dalītāji ir :math:`1` un :math:`p`.
 
 Naturālus skaitļus :math:`n>1`, kas nav pirmskaitļi, sauc par
-**saliktiem skaitļiem** (*composite number*).
+*saliktiem skaitļiem*.
 Skaitlis :math:`1` nav ne pirmskaitlis, ne salikts skaitlis.
 
 
@@ -690,588 +527,13 @@ Eratostena process notiek vairākos soļos.
 
 
 
-Pirmskaitļu ir bezgalīgi daudz
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Teorēma (Eiklīds):**
-  Pirmskaitļu ir bezgalīgi daudz.
 
-**Pierādījums:**
-  No pretējā. Ja pirmskaitļu būtu
-  galīgs skaits, tad eksistētu lielākais pirmskaitlis
-  :math:`p_K`. Sareizinām visus pirmskaitļus, pieskaitām :math:`1`:
 
-  .. math::
 
-    P = p_1 \cdot p_2 \cdot p_3 \cdot \ldots \cdot p_K + 1.
 
-  :math:`P` nedalās ne ar vienu no pirmskaitļiem, kuri ir galīgajā
-  sarakstā: vienmēr atlikums :math:`1`. Vai nu :math:`P` pats ir pirmskaitlis
-  vai kādu (sarakstā neesošu) pirmskaitļu reizinājums. Pretruna.
-  :math:`\blacksquare`
-
-
-
-
-Pilnās pārlases algoritms
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Ir iespējams, pārbaudīt, vai skaitlis :math:`n` ir pirmskaitlis,
-to dalot ar :math:`2,3,\ldots` -- visiem skaitļiem līdz :math:`\sqrt{n}`.
-
-.. code-block:: python
-
-  import math
-  def isPrime(n):
-      result = True
-      ROOT = int(math.sqrt(n))
-      for d in range(2,ROOT+1):
-          if n % d == 0:
-              result = False
-              break
-      return result
-
-  print(isPrime(10000000019))
-
-
-.. note::
-  Pilnā pārlase ir ļoti neefektīva (slikti strādā jau pie :math:`n = 10^{30}`).
-  Tam par iemeslu ir nepieciešamība kriptogrāfijā un citos lietojumos pārbaudīt
-  vai ir pirmskaitlis kāds ļoti liels skaitlis, piemēram :math:`p \approx 10^{100}`
-  (skaitlis ar aptuveni :math:`100` cipariem).
-
-  Tad pilnajai pārlasei jāpārbauda aptuveni :math:`\sqrt{p} \approx 10^{50}` dalīšanās darbības --
-  šis ir jau divreiz īsāks skaitlis, kura pierakstā ir tikai :math:`50` cipari, bet joprojām tik liels,
-  lai visas šīs pārbaudes praksē nevarētu izdarīt.
-  Ja kopš Visuma rašanās (Lielā sprādziena) pagājuši aptuveni 13.8 miljardi gadu,
-  tās ir tikai :math:`4.35 \cdot 10^{23}` mikrosekundes.
-
-
-Ātrāki pirmskaitļu testi
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-  Ir algoritmi, kuri darbojas pietiekami efektīvi arī pie :math:`p \approx 10^{100}`
-  un vēl daudz lielākiem skaitļiem.
-  Pirmais no tiem ir Millera-Rabina tests (ap 1982.g.), kas izmanto nejaušo skaitļu ģeneratoru un
-  var kļūdīties ar kaut kādu varbūtību. Nedaudz palielinot pārbaužu skaitu,
-  šo kļūdīšanās varbūtību var pēc patikas samazināt. Šo algoritmu vēl joprojām visvairāk
-  izmanto praksē.
-  Sk. teoriju `<https://bit.ly/3qOFLsS>`_ un arī
-  algoritma kodu dažās programmēšanas valodās -- `<https://bit.ly/3nNpKBo>`_.
-
-  Cits svarīgs algoritms ir `<https://bit.ly/3FROhLN>`_, AKS algoritms
-  jeb Agrawal-Kayal-Saxena pirmskaitļu tests ap 2002.g.) Tas bija pirmais
-  efektīvais algoritms, kas neizmanto nejaušos skaitļus un arī nepieļauj kļūdīšanās varbūtību.
-
-
-
-**Piemērs:**
-  Vai eksistē :math:`1000` pēc kārtas sekojoši skaitļi, kuri visi ir salikti?
-
-Atstarpēm starp pirmskaitļiem ir tendence pieaugt, ja skaitļi kļūst lielāki;
-pastāv izvērsta teorija par **pirmskaitļu atstarpēm** (*prime gaps*).
-Sk. `<https://bit.ly/3nOnoSG>`_.
-Enciklopēdijas tabulā atrodam, ka pirmā vieta, kur attālums
-starp diviem pirmskaitļiem pārsniedz tūkstoti, sākas ar pirmskaitli :math:`p=1\,693\,182\,318\,746\,371`
-
-.. code-block:: python
-
-  >>> import sympy
-  >>> p1 = 1693182318746371
-  >>> p2 = p1 + 1132
-  >>> set([sympy.isprime(n) for n in range(p1+1, p2)])
-  {False}
-
-No otras puses, ir arī zināms, ka starpība starp diviem pēc kārtas
-sekojošiem pirmskaitļiem bezgalīgi daudzas reizes nepārsniedz :math:`246`.
-(T.i. eksistē cik patīk lieli pirmskaitļi :math:`p_1` un :math:`p_2`,
-kuriem :math:`|p_1 - p_2| \leq 246`.)
-Jautājums, vai eksistē bezgalīgi daudzi dvīņu pirmskaitļi (starp kuriem
-attālums ir :math:`2`), joprojām ir atklāts.
-
-
-**Konstruktīvs pierādījums:**
-  Ja mums nav pieejams dators, Internets vai citi palīglīdzekļi,
-  tad :math:`1000` pēc kārtas sekojošus saliktus skaitļus var
-  uzkonstruēt arī ar vienkāršiem algebriskiem spriedumiem.
-
-  Izvēlamies :math:`N = 1001!+2`, tad iegūstam, ka :math:`1000!+a` dalās ar
-  :math:`a` katram :math:`a \in \{2,\ldots 1001 \}`. :math:`\square`
-
-Ievērojam, ka iegūtais :math:`N = 1001!+2` (vieta, kur sākas saliktie skaitļi) ir krietni lielāks nekā
-vērtība :math:`p_1 = 1693182318746371 + 1`, kas norādīta enciklopēdijā.
-
-
-
-**Uzdevums:**
-  Pierādīt, ka ir bezgalīgi daudz nepāru pirmskaitļu, kas
-  izsakāmi formā :math:`4k+3` (dod atlikumu :math:`3`, dalot ar :math:`4`).
-
-TODO: Pamatot līdzīgi kā pierādījumā par bezgalīgo pirmskaitļu skaitu.
-
-
-
-Dirihlē teorēma par pirmskaitļiem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Dirihlē Teorēma (Dirichlet):**
-  Ja :math:`a` un :math:`d` ir savstarpēji pirmskaitļi,
-  tad bezgalīgā aritmētiskā progresijā
-
-  .. math::
-
-    a, a+d, a+2d, a+3d, \ldots
-
-  ir bezgalīgi daudz pirmskaitļu.
-
-Dažām :math:`a` un :math:`d` vērtībām šo teorēmu var pierādīt ar elementārām
-metodēm (nupat redzējām pie :math:`a=3` un :math:`d=4`). Bet vispārīgajā
-gadījumā ir piemērotākas matemātiskās analīzes metodes,
-kas iziet ārpus mūsu kursa.
-
-
-Ulama spirāle
-^^^^^^^^^^^^^^^^
-
-.. image:: figs-ntjun01-divisibility/ulam-spiral.png
-   :width: 2in
-
-
-Ulama spirāli veido, uz rūtiņu papīra zīmējot
-attinošos spirāli, sākot ar skaitli :math:`1`.
-Pirmskaitļus, atzīmē ar melniem punktiņiem.
-
-Pirmskaitļi neveido viegli
-paredzamas likumsakarības, bet tie sablīvējas
-uz dažām taisnēm.
-
-
-
-
-**Piemērs:**
-  Aplūkojam polinomu :math:`f(x) = x^2 + x + 41`.
-  Visiem argumentiem :math:`x = 0,1,\ldots,39`
-  tas pieņem vērtības, kas ir pirmskaitļi.
-
-Šī polinoma vērtību vidū arī lielākiem :math:`x`
-ir neparasti  daudz pirmskaitļu.
-Ar modulāro aritmētiku iespējams
-pamatot, ka :math:`x^2 + x + 41` (kur :math:`x \in \mathbb{N}`)
-nevar dalīties ne ar vienu pirmskaitli :math:`p < 41`.
-
-
-.. note::
-  Joprojām nepastāv viegli uzrakstāma formula
-  (piemēram, izmantojot elementārās funkcijas,
-  veselās daļas u.c.), kuras vērtību
-  kopa būtu bezgalīga un saturētu tikai pirmskaitļus.
-
-  Protams, nav jēgas meklēt tādas starp polinomiem.
-  Tomēr izrādās, ka daži polinomi
-  starp savām vērtībām satur neparasti daudz pirmskaitļu.
-
-
-**TODO:**
-  Vizualizācija, kur :math:`x^2 + x + 41` vērtības
-  atliktas uz Ulama spirāles.
-
-
-
-Pirmskaitļu skaitīšanas funkcija
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-.. image:: figs-ntjun01-divisibility/pi-counting-function.png
-   :width: 2in
-
-
-**Definīcija:**
-  Ar :math:`\pi(x)` apzīmējam
-  **pirmskaitļu skaitīšanas funkciju**
-  (*prime-counting function*): Katram
-  reālam skaitlim :math:`x \in \mathbb{R}`,
-  :math:`\pi(x)` izsaka pirmskaitļu :math:`p_i` skaitu,
-  kuriem :math:`p_i \leq x`.
-
-  :math:`\pi(x)` definīcijas apgabals ir :math:`\mathbb{R}`,
-  vērtību apgabals ir :math:`\mathbb{Z}_{0+}` -- visi
-  veselie nenegatīvie skaitļi.
-
-**Piemēri:**
-  :math:`\pi(1.99) = 0`, :math:`\pi(2) = 1`,
-  :math:`\pi(3) = \pi(3.14) = \pi(4.99) = 2`,
-  :math:`\pi(100) = 25`.
-
-
-
-
-
-
-
-
-
-Mersena un Fermā skaitļi
---------------------------
-
-
-**Anotācija:**
-  Meklējot pirmskaitļus formā :math:`2^n \pm 1` (vai vispārīgāk - :math:`a^n \pm 1`)
-  saskaramies ar algebriskām likumsakarībām – bieži pastāv identitātes, kas ļauj izteiksmi
-  sadalīt reizinātājos. Toties situācijas, kad tas nav triviāli izdarāms ir pētītas
-  un novedušas pie Fermā un Mersena pirmskaitļu jēdziena.
-  Tās ļauj atrast ļoti lielus pirmskaitļus.
-
-
-
-Algebriskas identitātes
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Pakāpju starpības formula (visiem :math:`n \geq 2`):
-
-  .. math::
-
-    \textcolor{red}{a^n - b^n} =
-    \textcolor{red}{(a-b)}\left( a^{n-1}+a^{n-2}b^1 + \ldots +
-    a^1b^{n-2} + b^{n-1} \right).
-
-* Pakāpju summas formula (visiem :math:`n \geq 1`):
-
-  .. math::
-
-    \textcolor{red}{a^{2n+1} + b^{2n+1}} =
-    \textcolor{red}{(a+b)}\left( a^{2n} - a^{2n-1}b^1 +
-    a^{2n-2}b^2 - \cdots - a^1b^{2n-1} + b^{2n} \right).
-
-Var pierādīt, atverot iekavas. (Iekavās ar daudzpunktiem ir galīgu ģeometrisku
-progresiju summas.)
-
-
-
-Fermā skaitļu jēdziens
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Bijuši vairāki mēģinājumi uzrakstīt
-kompaktu formulu (bez `for` cikliem
-vai citiem programmēšanas paņēmieniem), kuras
-visas vērtības ir pirmskaitļi.
-
-**Definīcija:**
-  Par :math:`n`-to Fermā skaitli
-  (:math:`n \geq 0`) sauc :math:`F_n = 2^{2^n}+1`.
-
-P.Fermā (*Pierre de Fermat*, 1607--1665) izteica hipotēzi,
-ka visi :math:`F_n` ir pirmskaitļi.
-
-
-
-:math:`F_0,F_1,F_2,F_3,F_4` ir vienīgie
-zināmie pirmskaitļi:
-
-* :math:`F_0 = 2^{2^0} + 1 = 2^1 + 1 = 3`,
-* :math:`F_1 = 2^{2^1} + 1 = 2^2 + 1 = 5`,
-* :math:`F_2 = 2^{2^2} + 1 = 2^4 + 1 = 17`,
-* :math:`F_3 = 2^{2^3} + 1 = 2^8 + 1 = 257`,
-* :math:`F_4 = 2^{2^4} + 1 = 2^{16} + 1 = 65537`.
-
-Jau :math:`F_5 = 2^{2^5} + 1 = 2^{32} + 1 =`
-:math:`=4\,294\,967\,297 = 641 \cdot 6\,700\,417` nav pirmskaitlis.
-(Leonards Eilers (Leonhard Euler), 1707-1783).
-
-.. note::
-  Izņemot pirmos 5 Fermā skaitļus
-  (no :math:`F_0` līdz :math:`F_4`), nav zināms neviens cits
-  pirmskaitlis. Ir pilnībā sadalīti pirmreizinātājos
-  pirmie :math:`12` šādi skaitļi – no :math:`F_0` līdz :math:`F_11`.
-  Daudziem citiem ir zināmi daži dalītāji;
-  atklāto/zināmo dalītāju skaits tiek
-  regulāri papildināts.
-
-
-Skaitļi formā :math:`2^N + 1` nevar būt pirmskaitļi,
-ja kāpinātājam :math:`N` ir kāds nepāru dalītājs, kas lielāks par :math:`1`, jo
-šajā gadījumā var dalīt reizinātājos, izmantojot
-algebriskas identitātes :math:`a^3 + 1^3`, :math:`a^5 + 1^5` utml.
-
-Tātad pats kāpinātājs :math:`N` (lai sanāktu kaut kas interesants,
-kas nedalās reizinātājos pavisam triviāli)
-noteikti ir divnieka pakāpe jeb :math:`2^N + 1` ir faktiski
-pierakstāms kā :math:`2^{2^k}+1`.
-Fermā pirmskaitļi :math:`2^n+1` ir iespējami vien tad, ja skaitlim :math:`n` nav nepāru dalītāju
-(pretējā gadījumā tos var sadalīt reizinātājos, izmantojot kubu summu, piekto pakāpju summu vai līdzīgu identitāti).
-Tātad Fermā pirmskaitļi patiesībā izskatās šādi: :math:`2^{2^n}+1`.
-
-
-
-
-
-
-
-Mersenna skaitļi
-^^^^^^^^^^^^^^^^^^
-
-**Definīcija:**
-  Skaitli :math:`M_n` sauc par
-  **Mersenna skaitli** (*Mersenne number*), ja to var izteikt formā :math:`2^n - 1`.
-  Ja turklāt :math:`M_n` ir pirmskaitlis, tad to sauc par
-  **Mersenna pirmskaitli** (*Mersenne prime*).
-
-
-.. note::
-  Kāda īpašība noteikti jāizpilda
-  skaitlim :math:`n`, lai :math:`M_n = 2^n - 1` būtu
-  izredzes būt pirmskaitlim?
-
-  Ja :math:`n` nav pirmskaitlis un to var sadalīt kā :math:`n = ab`, tad :math:`2^n-1`
-  dalās reizinātājos kā divu :math:`a`-to (vai divu :math:`b`-to) pakāpju starpība un tātad nav pirmskaitlis.
-  Tātad vienīgie Mersena pirmskaitļi var būt formā :math:`2^p - 1`, kur :math:`p` ir pirmskaitlis.
-  Šādā formā parasti ir pirmskaitļi-rekordisti
-  (t.i. lielākie starp visiem pirmskaitļiem, kuri ikbrīd zināmi progresīvajai cilvēcei).
-
-
-
-
-**Teorēma:**
-  Lai Mersena skaitlis :math:`M_n = 2^n - 1`
-  būtu pirmskaitlis, ir *nepieciešami*, lai pats
-  :math:`n` būtu pirmskaitlis.
-
-**Pierādījums:**
-  Ja :math:`n = km` ir divu naturālu
-  skaitļu reizinājums (turklāt :math:`k>1` un :math:`m>1`),
-  tad var sadalīt reizinātājos kā :math:`a^m - b^m`:
-
-  .. math::
-
-    M_n = 2^{km} - 1 = \left( 2^k \right)^m - 1^m =
-
-  .. math::
-
-    = (2^k - 1) \left( (2^k)^{m-1} + \ldots + 1 \right).
-
-
-
-Nosacījums, ka :math:`p` ir pirmskaitlis ir
-*nepieciešams*, bet nav
-*pietiekams*, lai :math:`2^p - 1` būtu pirmskaitlis.
-
-**Piemēri:**
-
-  .. math::
-
-    \begin{array}{l}
-    M_{11} = 2^{11} - 1 = 2047 = 23 \cdot 89,\\
-    M_{23} = 2^{23} - 1 = 8388607 = 47 \cdot 178481.\\
-    \end{array}
-
-Šādu piemēru ir tik daudz, ka Mersena skaitļi, kuri
-tiešām ir pirmskaitļi, ir tikai niecīga daļa no
-visiem :math:`2^p - 1` (pašlaik zināms tikai :math:`51` Mersena pirmskaitlis;
-vidēji katru gadu atrod pa vienam jaunam).
-
-
-Mersena pirmskaitļu piemēri:
-
-====================  ==========  ==========  ==========  ===========  =============  ================  ================  ========================
-:math:`n`              :math:`2`   :math:`3`   :math:`5`    :math:`7`     :math:`13`        :math:`17`        :math:`19`                :math:`31`
-:math:`M_n = 2^n-1`    :math:`3`   :math:`7`  :math:`31`  :math:`127`   :math:`8191`  :math:`131\,071`  :math:`524\,287`  :math:`2\,147\,483\,647`
-====================  ==========  ==========  ==========  ===========  =============  ================  ================  ========================
-
-
-Lielākais Mersena pirmskaitlis (un vispār - lielākais
-zināmais pirmskaitlis) ir :math:`2^{82\,589\,933} - 1`.
-Tas atrasts 2018.g. decembrī.
-
-Pavisam zināmi :math:`51` Mersena pirmskaitļi. Kopš
-1996.g. GIMPS (*Great Internet Mersenne Prime Search*)
-projekta ietvaros 23 gadu laikā atrasti jau
-17 pirmskaitļi.
-
-Sk. visu zināmo Mersenna pirmskaitļu sarakstu -- `<https://bit.ly/3nOYhzl>`_.
-
-
-.. note::
-  Šis GIMPS projekts parādījās kā prototips/iedvesma BitCoin un citu līdzīgu kriptovalūtu rēķināšanai.
-  Lielākā zināmā Mersena pirmskaitļa :math:`M_{82,589,933}` decimālpierakstā
-  ir :math:`24,862,048` cipari – pilnībā izdrukāts tas aizņemtu vairākus grāmatplauktus.
-
-
-
-Perfektie skaitļi
-^^^^^^^^^^^^^^^^^^^^
-
-**Definīcija:**
-  Skaitli sauc par **perfektu** (*perfect number*),
-  ja tas vienāds ar visu savu dalītāju summu (izņemot sevi pašu).
-
-**Piemēri:**
-  :math:`6 = 1+2+3`; :math:`28 = 1 + 2 + 4 + 7 + 14`.
-
-**Teorēma (Eiklīds):**
-  Ja :math:`2^p - 1` ir pirmskaitlis, tad
-  :math:`2^{p-1}(2^p - 1)` ir perfekts.
-
-**Teorēma (Eilers):**
-  Visi pāru perfektie skaitļi izsakāmi
-  formā :math:`2^{p-1}(2^p - 1)`.
-
-
-Izteiksim dažus perfektos skaitļus binārajā pierakstā:
-
-=======================  =======================================================
-Pirmskaitlis :math:`p`   :math:`2^{p-1}(2^p - 1)` vērtība
-:math:`p = 2`            :math:`6_{10} = 110_{2}`
-:math:`p = 3`            :math:`28_{10} = 11100_{2}`
-:math:`p = 5`            :math:`496_{10} = 111110000_{2}`
-:math:`p = 7`            :math:`8128_{10} = 1111111000000_{2}`
-:math:`p = 13`           :math:`33550336_{10} = 1111111111111000000000000_{2}`
-=======================  =======================================================
-
-Ar :math:`p=11` Mersenna pirmskaitlis nesanāk, jo :math:`2^{11} - 1 = 2047 = 23 \cdot 89`.
-
-
-
-
-
-Jautājumi par Fermā un Mersena skaitļiem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-**1.jautājums:**
-  Vispārināt Fermā skaitļus, noskaidrojot, kuri no :math:`a^k+1` var būt pirmskaitļi
-  naturālām :math:`a` un :math:`k` vērtībām (ja :math:`a \neq 2`).
-
-
-.. Andreescu2006.1.77
-
-**2.jautāums:**
-  Pierādīt, ka naturāliem skaitļiem :math:`m` un :math:`n`,
-  kam :math:`m > n`, Fermā skaitlis :math:`F_m - 2` noteikti
-  dalās ar :math:`F_n`.
-
-.. only:: Internal
-
-  **Atbilde:**
-
-    Atkārtoti lietojam kvadrātu starpības formulu dalīšanai reizinātājos:
-
-    .. math::
-
-      F_m - 2 = 2^{2^m} + 1 - 2 = 2^{2^m} - 1 =
-
-    .. math::
-
-      =\left( 2^{2^{m-1}} - 1 \right) \left( 2^{2^{m-1}} + 1 \right) =
-      \left( F_{m-1} - 2 \right) F_{m-1}.
-
-    Ja arī :math:`m - 1 > n`, tad līdzīgu spriedumu atkārto vēlreiz,
-    dalot reizinātājos :math:`F_{m-1} - 2` utt. Katrā
-    solī redzam, ka uzrodas reizinātāji :math:`F_{m-1}`, :math:`F_{m-2}` utt.
-    Kāds no šiem reizinātājiem būs tieši :math:`F_n`.
-
-  :math:`\square`
-
-
-
-
-**3.jautājums:**
-  Dažādiem naturāliem :math:`m` un :math:`n`, skaitļi :math:`F_m` un :math:`F_n` ir
-  savstarpēji pirmskaitļi.
-  (Piemēram, :math:`F_5` dalās ar :math:`641`. Tātad neviens cits Fermā
-  skaitlis nevar dalīties ar :math:`641`.)
-
-.. only:: Internal
-
-  **Atbilde:**
-
-    Pieņemsim, ka :math:`m>n`. Tad :math:`F_m - 2` dalās ar :math:`F_n`. Iegūstam:
-
-    .. math::
-
-      \text{LKD}(F_m,F_n) = \text{LKD}((F_m -2) + 2,F_n) = \text{LKD}(2,F_n) = 1.
-
-  :math:`\square`
-
-
-
-
-**4.Jautājums:**
-  Atrast visus pirmskaitļus, kas izsakāmi formā
-  :math:`n^n + 1` un ir mazāki kā :math:`10^{19}`.
-
-.. only:: Internal
-
-  **Atbilde:**
-
-    Ja :math:`n` dalās ar kādu nepāru skaitli :math:`c>1`
-    (t.i. :math:`n = cd`, kur :math:`c = 2k+1 \geq 3`),
-    tad pirmskaitlis nesanāk, jo
-
-    .. math::
-
-      n^n + 1 = \left( n^d \right)^c + 1^c = \left( n^d \right)^{2k+1} + 1^{2k+1},
-
-    kas dalās reizinātājos pēc formulas
-    :math:`a^{2k+1} + b^{2k+1} = (a+b)(a^{2k} - \ldots + b^{2k})`,
-    kur :math:`a = n^d` un :math:`b = 1`.
-
-
-    Ja :math:`n` ir divnieka pakāpe, šķirojam gadījumus:
-
-    * Ja :math:`n = 1`, tad :math:`n^n + 1 = 2` (der)
-    * Ja :math:`n = 2`, tad :math:`n^n + 1 = 5` (der)
-    * Ja :math:`n = 4`, tad :math:`n^n + 1 = 257` (der)
-
-    Ja :math:`n=8`, tad
-
-    .. math::
-
-      8^8 + 1 = \left( 2^8 \right)^3 + 1^3,
-
-    kas dalās reizinātājos pēc formulas
-    :math:`a^3 + b^3 = (a+b)\left( a^2 - ab + b^2 \right)`:
-
-
-    .. math::
-
-      8^8 + 1 = \left( 2^8 + 1 \right)\left( 2^{16} - 2^8 + 1 \right).
-
-
-    Pamatosim, ka pie :math:`n = 16` skaitlis :math:`n^n + 1 > 10^{19}`,
-    t.i. šāds skaitlis neder (neatkarīgi no tā, vai tas
-    ir pirmskaitlis).
-
-
-    .. math::
-
-      16^{16} + 1 = 2^{64} + 1 =
-
-    .. math::
-
-      2^4 \cdot 2^{60} + 1 = 16 \cdot \left( 2^{10} \right)^6 + 1 = 16 \cdot 1024^6 + 1 >
-
-      > 16 \cdot 1000^6 = 16 \cdot 10^{18}  = 1.6 \cdot 10^{19} > 10^{19}.
-
-    .. note::
-      Starp citu, :math:`16^{16} +1 = 2^{64} + 1 = 2^{2^6} + 1 = F_6`
-      ir sestais Fermā skaitlis. Tas nav pirmskaitlis:
-      :math:`F_6 = 18\,446\,744\,073\,709\,551\,617` dalās ar
-      :math:`274177 = 1071 \cdot 2^8 + 1`.
-
-      To pamatoja Tomass Klausens (*Thomas Clausen*, 1855.g.
-      Tartu, tag. Igaunija).
-
-  :math:`\square`
-
-
-
-
-
-
-
-
-
-Aritmētikas pamatteorēma
--------------------------
+Dalīšana pirmreizinātājos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 **Teorēma:**
@@ -1390,7 +652,7 @@ secības, vienmēr sanāk tas pats?  (Par faktorizēšanu sauc dalīšanu reizin
   **Eiklīda algoritma**
   jebkuriem savstarpējiem pirmskaitļiem
   :math:`p,a` var atrast tādus veselus :math:`x` un :math:`y`, ka
-  :math:`px + ay = 1` (**Bezū identitāte**).
+  :math:`px + ay = 1` (*Bezū identitāte*).
 
   Tā kā :math:`pxb` dalās ar :math:`p`
   un :math:`ayb = (ab)y` dalās ar :math:`p`, tad arī summa
@@ -1400,9 +662,11 @@ secības, vienmēr sanāk tas pats?  (Par faktorizēšanu sauc dalīšanu reizin
 
 **Kopsavilkums**
   Kā nupat redzējām:
-  Bezū identitāte :math:`\Rightarrow`
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eiklīda lemma :math:`\Rightarrow`
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aritmētikas pamatteorēma.
+
+  .. math::
+      \text{Bezū identitāte} \;\;\;\;\; \Rightarrow \;\;\;\;\;
+      \text{Eiklīda lemma} \;\;\;\;\; \Rightarrow \;\;\;\;\;
+      \text{Aritmētikas pamatteorēma}.
 
   Aritmētikas pamatteorēma tātad izmanto ne vien pirmskaitļu jēdzienu, bet
   arī iespēju sakārtot veselus pozitīvus skaitļus (atrast starp bezgalīgi
@@ -1455,6 +719,504 @@ salīdzināt ar :math:`<` un :math:`>`, nevar dalīt ar atlikumu, nepastāv arī
 
 
 
+
+
+Pirmskaitļu ir bezgalīgi daudz
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Teorēma (Eiklīds):**
+  Pirmskaitļu ir bezgalīgi daudz.
+
+**Pierādījums:**
+  No pretējā. Ja pirmskaitļu būtu
+  galīgs skaits, tad eksistētu lielākais pirmskaitlis
+  :math:`p_K`. Sareizinām visus pirmskaitļus, pieskaitām :math:`1`:
+
+  .. math::
+
+    P = p_1 \cdot p_2 \cdot p_3 \cdot \ldots \cdot p_K + 1.
+
+  :math:`P` nedalās ne ar vienu no pirmskaitļiem, kuri ir galīgajā
+  sarakstā: vienmēr atlikums :math:`1`. Vai nu :math:`P` pats ir pirmskaitlis
+  vai kādu (sarakstā neesošu) pirmskaitļu reizinājums. Pretruna.
+  :math:`\blacksquare`
+
+
+
+
+
+.. _problemLargePrimeGaps: 
+
+Pirmskaitļu atstarpes
+^^^^^^^^^^^^^^^^^^^^^^^
+
+**Uzdevums:**
+  Vai eksistē :math:`1000` pēc kārtas sekojoši skaitļi, kuri visi ir salikti?
+
+**Pierādījums:**
+  :math:`1000` pēc kārtas sekojošus saliktus skaitļus var
+  uzkonstruēt ar šādu spriedumu:
+  Izvēlamies :math:`N = 1001!+2`, tad iegūstam, ka :math:`1000!+a` dalās ar
+  :math:`a` katram :math:`a \in \{2,\ldots 1001 \}`. :math:`\square`
+
+
+
+
+No otras puses, ir arī zināms, ka starpība starp diviem pēc kārtas
+sekojošiem pirmskaitļiem bezgalīgi daudzas reizes nepārsniedz :math:`246`.
+(T.i. eksistē cik patīk lieli pirmskaitļi :math:`p_1` un :math:`p_2`,
+kuriem :math:`|p_1 - p_2| \leq 246`.) 
+Tas nozīmē, ka dažas atstarpes starp pirmskaitļiem parādās bezgalīgi bieži. 
+(Lieliem pirmskaitļiem bieži novērojama atstarpe ir :math:`6`.)
+Jautājums, vai eksistē bezgalīgi daudzi dvīņu pirmskaitļi (starp kuriem
+atstarpe ir tieši :math:`2`), joprojām ir atklāts.
+
+
+
+
+
+**Uzdevums:**
+  Pierādīt, ka ir bezgalīgi daudz nepāru pirmskaitļu, kas
+  izsakāmi formā :math:`4k+3` (dod atlikumu :math:`3`, dalot ar :math:`4`).
+
+
+
+
+
+Pirmskaitļu izvietojums
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Dirihlē Teorēma (Dirichlet):**
+  Ja :math:`a` un :math:`d` ir savstarpēji pirmskaitļi,
+  tad bezgalīgā aritmētiskā progresijā
+
+  .. math::
+
+    a, a+d, a+2d, a+3d, \ldots
+
+  ir bezgalīgi daudz pirmskaitļu.
+
+Dažām :math:`a` un :math:`d` vērtībām šo teorēmu var pierādīt ar elementārām
+metodēm (nupat redzējām pie :math:`a=3` un :math:`d=4`). Bet vispārīgajā
+gadījumā ir piemērotākas matemātiskās analīzes metodes,
+kas iziet ārpus mūsu kursa.
+
+
+
+.. figure:: figs-ntjun01-divisibility/ulam-spiral.png
+   :width: 2in
+   :alt: Ulama spirāle
+
+   Ulama spirāle
+
+
+
+Ulama spirāli veido, uz rūtiņu papīra zīmējot
+attinošos spirāli, sākot ar skaitli :math:`1`.
+Pirmskaitļus, atzīmē ar melniem punktiņiem.
+
+Pirmskaitļi neveido viegli
+paredzamas likumsakarības, bet tie sablīvējas
+uz dažām taisnēm.
+
+
+
+
+**Piemērs:**
+  Aplūkojam polinomu :math:`f(x) = x^2 + x + 41`.
+  Visiem argumentiem :math:`x = 0,1,\ldots,39`
+  tas pieņem vērtības, kas ir pirmskaitļi.
+
+Šī polinoma vērtību vidū arī lielākiem :math:`x`
+ir neparasti  daudz pirmskaitļu.
+Ar modulāro aritmētiku iespējams
+pamatot, ka :math:`x^2 + x + 41` (kur :math:`x \in \mathbb{N}`)
+nevar dalīties ne ar vienu pirmskaitli :math:`p < 41`.
+
+
+.. note::
+  Joprojām nepastāv viegli uzrakstāma formula
+  (piemēram, izmantojot elementārās funkcijas,
+  veselās daļas u.c.), kuras vērtību
+  kopa būtu bezgalīga un saturētu tikai pirmskaitļus.
+
+  Protams, nav jēgas meklēt tādas starp polinomiem.
+  Tomēr izrādās, ka daži polinomi
+  starp savām vērtībām satur neparasti daudz pirmskaitļu.
+
+
+
+
+
+.. figure:: figs-ntjun01-divisibility/pi-counting-function.png
+   :width: 2in
+   :alt: Pirmskaitļu skaitīšanas funkcija
+
+   Pirmskaitļu skaitīšanas funkcija
+
+
+**Definīcija:**
+  Ar :math:`\pi(x)` apzīmējam
+  *pirmskaitļu skaitīšanas funkciju*: Katram
+  reālam skaitlim :math:`x \in \mathbb{R}`,
+  :math:`\pi(x)` izsaka pirmskaitļu :math:`p_i` skaitu,
+  kuriem :math:`p_i \leq x`.
+
+  :math:`\pi(x)` definīcijas apgabals ir :math:`\mathbb{R}`,
+  vērtību apgabals ir :math:`\mathbb{Z}_{0+}` -- visi
+  veselie nenegatīvie skaitļi.
+
+**Piemēri:**
+  :math:`\pi(1.99) = 0`, :math:`\pi(2) = 1`,
+  :math:`\pi(3) = \pi(3.14) = \pi(4.99) = 2`,
+  :math:`\pi(100) = 25`.
+
+
+
+
+
+
+
+
+
+Īpašā formā izteikti skaitļi
+-------------------------------
+
+
+Meklējot pirmskaitļus formā :math:`2^n \pm 1` (vai vispārīgāk - :math:`a^n \pm 1`)
+saskaramies ar algebriskām likumsakarībām – bieži pastāv identitātes, kas ļauj izteiksmi
+sadalīt reizinātājos. Toties situācijas, kad tas nav triviāli izdarāms ir pētītas
+un novedušas pie Fermā un Mersena pirmskaitļu jēdziena.
+Tās ļauj atrast ļoti lielus pirmskaitļus.
+
+
+
+Polinomu algebra
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Pakāpju starpības formula (visiem :math:`n \geq 2`):
+
+  .. math::
+
+    \textcolor{red}{a^n - b^n} =
+    \textcolor{red}{(a-b)}\left( a^{n-1}+a^{n-2}b^1 + \ldots +
+    a^1b^{n-2} + b^{n-1} \right).
+
+* Pakāpju summas formula (visiem :math:`n \geq 1`):
+
+  .. math::
+
+    \textcolor{red}{a^{2n+1} + b^{2n+1}} =
+    \textcolor{red}{(a+b)}\left( a^{2n} - a^{2n-1}b^1 +
+    a^{2n-2}b^2 - \cdots - a^1b^{2n-1} + b^{2n} \right).
+
+Var pierādīt, atverot iekavas. (Iekavās ar daudzpunktiem ir galīgu ģeometrisku
+progresiju summas.)
+
+
+
+Fermā skaitļu jēdziens
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Bijuši vairāki mēģinājumi uzrakstīt
+kompaktu formulu (bez `for` cikliem
+vai citiem programmēšanas paņēmieniem), kuras
+visas vērtības ir pirmskaitļi.
+
+**Definīcija:**
+  Par :math:`n`-to Fermā skaitli
+  (:math:`n \geq 0`) sauc :math:`F_n = 2^{2^n}+1`.
+
+P.Fermā (*Pierre de Fermat*, 1607--1665) izteica hipotēzi,
+ka visi :math:`F_n` ir pirmskaitļi.
+
+
+
+:math:`F_0,F_1,F_2,F_3,F_4` ir vienīgie
+zināmie pirmskaitļi:
+
+* :math:`F_0 = 2^{2^0} + 1 = 2^1 + 1 = 3`,
+* :math:`F_1 = 2^{2^1} + 1 = 2^2 + 1 = 5`,
+* :math:`F_2 = 2^{2^2} + 1 = 2^4 + 1 = 17`,
+* :math:`F_3 = 2^{2^3} + 1 = 2^8 + 1 = 257`,
+* :math:`F_4 = 2^{2^4} + 1 = 2^{16} + 1 = 65537`.
+
+Jau :math:`F_5 = 2^{2^5} + 1 = 2^{32} + 1 =`
+:math:`=4\,294\,967\,297 = 641 \cdot 6\,700\,417` nav pirmskaitlis.
+(Leonards Eilers (Leonhard Euler), 1707-1783).
+
+.. note::
+  Izņemot pirmos 5 Fermā skaitļus
+  (no :math:`F_0` līdz :math:`F_4`), nav zināms neviens cits
+  pirmskaitlis. Ir pilnībā sadalīti pirmreizinātājos
+  pirmie :math:`12` šādi skaitļi – no :math:`F_0` līdz :math:`F_11`.
+  Daudziem citiem ir zināmi daži dalītāji;
+  atklāto/zināmo dalītāju skaits tiek
+  regulāri papildināts.
+
+
+Skaitļi formā :math:`2^N + 1` nevar būt pirmskaitļi,
+ja kāpinātājam :math:`N` ir kāds nepāru dalītājs, kas lielāks par :math:`1`, jo
+šajā gadījumā var dalīt reizinātājos, izmantojot
+algebriskas identitātes :math:`a^3 + 1^3`, :math:`a^5 + 1^5` utml.
+
+Tātad pats kāpinātājs :math:`N` (lai sanāktu kaut kas interesants,
+kas nedalās reizinātājos pavisam triviāli)
+noteikti ir divnieka pakāpe jeb :math:`2^N + 1` ir faktiski
+pierakstāms kā :math:`2^{2^k}+1`.
+Fermā pirmskaitļi :math:`2^n+1` ir iespējami vien tad, ja skaitlim :math:`n` nav nepāru dalītāju
+(pretējā gadījumā tos var sadalīt reizinātājos, izmantojot kubu summu, piekto pakāpju summu vai līdzīgu identitāti).
+Tātad Fermā pirmskaitļi patiesībā izskatās šādi: :math:`2^{2^n}+1`.
+
+
+
+
+
+
+
+Mersenna skaitļi
+^^^^^^^^^^^^^^^^^^
+
+**Definīcija:**
+  Skaitli :math:`M_n` sauc par
+  *Mersenna skaitli*, ja to var izteikt formā :math:`2^n - 1`.
+  Ja turklāt :math:`M_n` ir pirmskaitlis, tad to sauc par
+  *Mersenna pirmskaitli*.
+
+
+.. note::
+  Kāda īpašība noteikti jāizpilda
+  skaitlim :math:`n`, lai :math:`M_n = 2^n - 1` būtu
+  izredzes būt pirmskaitlim?
+
+  Ja :math:`n` nav pirmskaitlis un to var sadalīt kā :math:`n = ab`, tad :math:`2^n-1`
+  dalās reizinātājos kā divu :math:`a`-to (vai divu :math:`b`-to) pakāpju starpība un tātad nav pirmskaitlis.
+  Tātad vienīgie Mersena pirmskaitļi var būt formā :math:`2^p - 1`, kur :math:`p` ir pirmskaitlis.
+  Šādā formā parasti ir pirmskaitļi-rekordisti
+  (t.i. lielākie starp visiem pirmskaitļiem, kuri ikbrīd zināmi progresīvajai cilvēcei).
+
+
+
+
+**Teorēma:**
+  Lai Mersena skaitlis :math:`M_n = 2^n - 1`
+  būtu pirmskaitlis, ir *nepieciešami*, lai pats
+  :math:`n` būtu pirmskaitlis.
+
+**Pierādījums:**
+  Ja :math:`n = km` ir divu naturālu
+  skaitļu reizinājums (turklāt :math:`k>1` un :math:`m>1`),
+  tad var sadalīt reizinātājos kā :math:`a^m - b^m`:
+
+  .. math::
+
+    M_n = 2^{km} - 1 = \left( 2^k \right)^m - 1^m =
+
+  .. math::
+
+    = (2^k - 1) \left( (2^k)^{m-1} + \ldots + 1 \right).
+
+
+
+Nosacījums, ka :math:`p` ir pirmskaitlis ir
+*nepieciešams*, bet nav
+*pietiekams*, lai :math:`2^p - 1` būtu pirmskaitlis.
+
+**Piemēri:**
+
+  .. math::
+
+    \begin{array}{l}
+    M_{11} = 2^{11} - 1 = 2047 = 23 \cdot 89,\\
+    M_{23} = 2^{23} - 1 = 8388607 = 47 \cdot 178481.\\
+    \end{array}
+
+Šādu piemēru ir tik daudz, ka Mersena skaitļi, kuri
+tiešām ir pirmskaitļi, ir tikai niecīga daļa no
+visiem :math:`2^p - 1` (pašlaik zināms tikai :math:`51` Mersena pirmskaitlis;
+vidēji katru gadu atrod pa vienam jaunam).
+
+
+Mersena pirmskaitļu piemēri:
+
+====================  ==========  ==========  ==========  ===========  =============  ================  ================  ========================
+:math:`n`              :math:`2`   :math:`3`   :math:`5`    :math:`7`     :math:`13`        :math:`17`        :math:`19`                :math:`31`
+:math:`M_n = 2^n-1`    :math:`3`   :math:`7`  :math:`31`  :math:`127`   :math:`8191`  :math:`131\,071`  :math:`524\,287`  :math:`2\,147\,483\,647`
+====================  ==========  ==========  ==========  ===========  =============  ================  ================  ========================
+
+
+Lielākais Mersena pirmskaitlis (un vispār - lielākais
+zināmais pirmskaitlis) ir :math:`2^{82\,589\,933} - 1`.
+Tas atrasts 2018.g. decembrī.
+
+Pavisam zināmi :math:`51` Mersena pirmskaitļi. Kopš
+1996.g. GIMPS (*Great Internet Mersenne Prime Search*)
+projekta ietvaros 23 gadu laikā atrasti jau
+17 pirmskaitļi.
+
+Sk. visu zināmo Mersenna pirmskaitļu sarakstu -- `<https://bit.ly/3nOYhzl>`_.
+
+
+.. note::
+  Šis GIMPS projekts parādījās kā prototips/iedvesma BitCoin un citu līdzīgu kriptovalūtu rēķināšanai.
+  Lielākā zināmā Mersena pirmskaitļa :math:`M_{82,589,933}` decimālpierakstā
+  ir :math:`24,862,048` cipari – pilnībā izdrukāts tas aizņemtu vairākus grāmatplauktus.
+
+
+
+Perfektie skaitļi
+^^^^^^^^^^^^^^^^^^^^
+
+**Definīcija:**
+  Skaitli sauc par *perfektu skaitli*,
+  ja tas vienāds ar visu savu dalītāju summu (izņemot sevi pašu).
+
+**Piemēri:**
+  :math:`6 = 1+2+3`; :math:`28 = 1 + 2 + 4 + 7 + 14`.
+
+**Teorēma (Eiklīds):**
+  Ja :math:`2^p - 1` ir pirmskaitlis, tad
+  :math:`2^{p-1}(2^p - 1)` ir perfekts.
+
+**Teorēma (Eilers):**
+  Visi pāru perfektie skaitļi izsakāmi
+  formā :math:`2^{p-1}(2^p - 1)`.
+
+
+Izteiksim dažus perfektos skaitļus binārajā pierakstā:
+
+=======================  =======================================================
+Pirmskaitlis :math:`p`   :math:`2^{p-1}(2^p - 1)` vērtība
+:math:`p = 2`            :math:`6_{10} = 110_{2}`
+:math:`p = 3`            :math:`28_{10} = 11100_{2}`
+:math:`p = 5`            :math:`496_{10} = 111110000_{2}`
+:math:`p = 7`            :math:`8128_{10} = 1111111000000_{2}`
+:math:`p = 13`           :math:`33550336_{10} = 1111111111111000000000000_{2}`
+=======================  =======================================================
+
+Ar :math:`p=11` Mersenna pirmskaitlis nesanāk, jo :math:`2^{11} - 1 = 2047 = 23 \cdot 89`.
+
+
+
+
+
+Jautājumi par Fermā un Mersena skaitļiem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+**1.jautājums:**
+  Vispārināt Fermā skaitļus, noskaidrojot, kuri no :math:`a^k+1` var būt pirmskaitļi
+  naturālām :math:`a` un :math:`k` vērtībām (ja :math:`a \neq 2`).
+
+
+.. Andreescu2006.1.77
+
+**2.jautāums:**
+  Pierādīt, ka naturāliem skaitļiem :math:`m` un :math:`n`,
+  kam :math:`m > n`, Fermā skaitlis :math:`F_m - 2` noteikti
+  dalās ar :math:`F_n`.
+
+
+
+
+
+
+**3.jautājums:**
+  Dažādiem naturāliem :math:`m` un :math:`n`, skaitļi :math:`F_m` un :math:`F_n` ir
+  savstarpēji pirmskaitļi.
+  (Piemēram, :math:`F_5` dalās ar :math:`641`. Tātad neviens cits Fermā
+  skaitlis nevar dalīties ar :math:`641`.)
+
+.. only:: Internal
+
+  **Atbilde:**
+
+    Pieņemsim, ka :math:`m>n`. Tad :math:`F_m - 2` dalās ar :math:`F_n`. Iegūstam:
+
+    .. math::
+
+      \text{LKD}(F_m,F_n) = \text{LKD}((F_m -2) + 2,F_n) = \text{LKD}(2,F_n) = 1.
+
+  :math:`\square`
+
+
+
+
+**4.Jautājums:**
+  Atrast visus pirmskaitļus, kas izsakāmi formā
+  :math:`n^n + 1` un ir mazāki kā :math:`10^{19}`.
+
+.. only:: Internal
+
+  **Atbilde:**
+
+    Ja :math:`n` dalās ar kādu nepāru skaitli :math:`c>1`
+    (t.i. :math:`n = cd`, kur :math:`c = 2k+1 \geq 3`),
+    tad pirmskaitlis nesanāk, jo
+
+    .. math::
+
+      n^n + 1 = \left( n^d \right)^c + 1^c = \left( n^d \right)^{2k+1} + 1^{2k+1},
+
+    kas dalās reizinātājos pēc formulas
+    :math:`a^{2k+1} + b^{2k+1} = (a+b)(a^{2k} - \ldots + b^{2k})`,
+    kur :math:`a = n^d` un :math:`b = 1`.
+
+
+    Ja :math:`n` ir divnieka pakāpe, šķirojam gadījumus:
+
+    * Ja :math:`n = 1`, tad :math:`n^n + 1 = 2` (der)
+    * Ja :math:`n = 2`, tad :math:`n^n + 1 = 5` (der)
+    * Ja :math:`n = 4`, tad :math:`n^n + 1 = 257` (der)
+
+    Ja :math:`n=8`, tad
+
+    .. math::
+
+      8^8 + 1 = \left( 2^8 \right)^3 + 1^3,
+
+    kas dalās reizinātājos pēc formulas
+    :math:`a^3 + b^3 = (a+b)\left( a^2 - ab + b^2 \right)`:
+
+
+    .. math::
+
+      8^8 + 1 = \left( 2^8 + 1 \right)\left( 2^{16} - 2^8 + 1 \right).
+
+
+    Pamatosim, ka pie :math:`n = 16` skaitlis :math:`n^n + 1 > 10^{19}`,
+    t.i. šāds skaitlis neder (neatkarīgi no tā, vai tas
+    ir pirmskaitlis).
+
+
+    .. math::
+
+      16^{16} + 1 = 2^{64} + 1 =
+
+    .. math::
+
+      2^4 \cdot 2^{60} + 1 = 16 \cdot \left( 2^{10} \right)^6 + 1 = 16 \cdot 1024^6 + 1 >
+
+      > 16 \cdot 1000^6 = 16 \cdot 10^{18}  = 1.6 \cdot 10^{19} > 10^{19}.
+
+    .. note::
+      Starp citu, :math:`16^{16} +1 = 2^{64} + 1 = 2^{2^6} + 1 = F_6`
+      ir sestais Fermā skaitlis. Tas nav pirmskaitlis:
+      :math:`F_6 = 18\,446\,744\,073\,709\,551\,617` dalās ar
+      :math:`274177 = 1071 \cdot 2^8 + 1`.
+
+      To pamatoja Tomass Klausens (*Thomas Clausen*, 1855.g.
+      Tartu, tag. Igaunija).
+
+  :math:`\square`
+
+
+
+
+
+
+
+
 LKD un MKD
 -------------
 
@@ -1474,8 +1236,7 @@ ko var ļoti kompakti aprakstīt, atrodot lielāko kopīgo dalītāju
 **Definīcija:**
   Par veselu skaitļu :math:`m` un :math:`n`
   **lielāko kopīgo dalītāju (LKD)**
-  (*greatest common divisor*, ko reizēm
-  pieraksta arī kā `gcd(m,n)`) sauc
+  (reizēm pieraksta arī kā `gcd(m,n)`) sauc
   lielāko naturālo skaitli, ar kuru dalās gan
   :math:`m`, gan :math:`n`. To apzīmē ar :math:`\text{LKD}(m,n)`.
 
@@ -1502,8 +1263,7 @@ Savstarpēji pirmskaitļi
 
 **Definīcija:**
   Skaitļus :math:`m` un :math:`n` sauc
-  par **savstarpējiem pirmskaitļiem**
-  (*mutual primes*, *co-primes*), ja
+  par *savstarpējiem pirmskaitļiem*, ja
   :math:`\text{LKD}(m,n)=1`.
 
 **Piemēri:**
@@ -1602,12 +1362,11 @@ pirmreizinātājos. Piemēram,
 Eiklīda algoritms
 ^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: python
-
-  def gcd(a, b):
-      while b:
-          a, b = b, a % b
-      return a
+Eiklīda algoritms balstīts uz vienkāršu novērojumu: 
+:math:`\gcd(a,b) = \gcd(a - b, b)`. Faktiski, no viena skaitļa var 
+atņemt otru (mazāko skaitli no lielākā 
+var arī atņemt vairākas reizes - aizstājot skaitli :math:`a`
+ar atlikumu, kas rodas, dalot :math:`a` ar :math:`b`). 
 
 **Pseidokods:**
 
@@ -1644,61 +1403,6 @@ Eiklīda algoritms
 
 
 
-**Uzdevums (BW.TST.2016.16):**
-  Kāda ir izteiksmes
-
-  .. math::
-
-    \text{LKD}\left( n^2 + 3, (n+1)^2 + 3 \right)
-
-  lielākā iespējamā vērtība naturāliem :math:`n`?
-
-
-**Risinājums:**
-  Lietojam Eiklīda algoritmu polinomiem no mainīgā :math:`n`:
-
-  .. math::
-
-    \text{LKD}\left( n^2 + 3, (n+1)^2 + 3 \right) = \text{LKD}\left( n^2 + 3, n^2 + 2n + 4 \right) =
-
-  *no otrā argumenta atņem pirmo:*
-
-  .. math::
-
-    = \text{LKD}\left( n^2 + 3, 2n + 1 \right) =
-
-  *pirmo argumentu var piereizināt ar 2, jo otrais ir nepāru:*
-
-  .. math::
-
-     = \text{LKD}\left( 2n^2 + 6, 2n + 1 \right) =
-
-  *no pirmā argumenta atņem n-kāršotu otro:*
-
-  .. math::
-
-    = \text{LKD}\left( 2n^2 + 6 - n(2n+1), 2n + 1 \right) = \text{LKD}(6-n,2n+1) =
-
-  *otrajam argumentam pieskaita divkāršotu pirmo:*
-
-  .. math::
-
-    =\text{LKD}(6-n,2n+1 + 2(6-n)) = \text{LKD}(n-6,13).
-
-
-  **Secinājums:**
-    :math:`\text{LKD}\left( n^2 + 3, (n+1)^2 + 3 \right) = \text{LKD}(n-6,13)` var būt vai nu :math:`1` vai :math:`13`.
-
-    Vērtību :math:`13` (vai kādu daudzkārtni) tas sasniedz, ja :math:`n-6` dalās ar :math:`13`,
-    piemēram, ja $n-6 = 0$ jeb $n=6$.
-
-  Pārbaude:
-    Ievietojam :math:`n=6`:
-
-    .. math::
-
-      \text{LKD}\left( 6^2 + 3, (6+1)^2 + 3 \right) = \text{LKD}(39,52)=13.
-
 
 
 MKD jēdziens
@@ -1706,8 +1410,8 @@ MKD jēdziens
 
 **Definīcija:**
   Par veselu skaitļu
-  :math:`m` un :math:`n` **mazāko kopīgo dalāmo**
-  (*least common multiple*, ko reizēm
+  :math:`m` un :math:`n` *mazāko kopīgo dalāmo*
+  (reizēm
   pieraksta arī kā `lcm(m,n)`) sauc
   mazāko naturālo skaitli,
   kurš ir daudzkārtnis gan skaitlim :math:`m`, gan
@@ -1728,7 +1432,7 @@ MKD jēdziens
 =======================  =============================  =============================  =============================  =============================
 Pirmreizinātājs          :math:`2`                      :math:`3`                      :math:`5`                      :math:`7`
 :math:`300`              :math:`\textcolor{red}{2^2}`   :math:`\textcolor{blue}{3^1}`  :math:`\textcolor{red}{5^2}`   :math:`\textcolor{blue}{7^0}`
-:math:`300`              :math:`\textcolor{blue}{2^1}`  :math:`\textcolor{red}{3^2}`   :math:`\textcolor{blue}{5^1}`  :math:`\textcolor{red}{7^1}`
+:math:`630`              :math:`\textcolor{blue}{2^1}`  :math:`\textcolor{red}{3^2}`   :math:`\textcolor{blue}{5^1}`  :math:`\textcolor{red}{7^1}`
 =======================  =============================  =============================  =============================  =============================
 
 
@@ -1839,8 +1543,21 @@ To lasa šādi: "Visiem naturā;iem :math:`m,n,a`, :math:`m` dala :math:`a` **UN
 
 
 
-Tipisks piemērs
-------------------
+Analizēti uzdevumi par LKD, MKD
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+**Uzdevums (BW.TST.2016.16):**
+  Kāda ir izteiksmes
+
+  .. math::
+
+    \text{LKD}\left( n^2 + 3, (n+1)^2 + 3 \right)
+
+  lielākā iespējamā vērtība naturāliem :math:`n`?
+
+
+
 
 **Uzdevums (BW.TST.2018.14):**
   Par naturālu skaitļu virkni :math:`a_1,a_2,\ldots` zināms,
@@ -1851,116 +1568,120 @@ Tipisks piemērs
   ne ar :math:`5`, ne ar :math:`11`.
 
 
-Uzdevums ir variācija par Eiklīda pazīstamo
-pierādījumu, ka pirmskaitļu ir bezgalīgi daudz:
-tiek konstruēta bezgalīga pirmskaitļu virkne :math:`a_1,a_2,\ldots`.
+.. only:: Internal
 
-Ievērojam, ka pirmskaitļi šajā virknē neatkārtojas.
-No pretējā: Ja pie :math:`m < n` izpildītos :math:`a_n = a_m`, tad
-:math:`a_n` būtu dalītājs gan skaitlim :math:`A_{n-1} = a_1a_2\cdots{}a_{n-1}`
-(jo šajā garajā reizinājumā ietilpst :math:`a_m = a_n`), gan
-arī skaitlim :math:`A_{n-1}+1`.
-Tā ir pretruna, jo :math:`A_{n-1}` un :math:`A_{n-1} + 1` ir viens otram sekojoši -
-tātad ir savstarpēji pirmskaitļi.
+  **Atbilde:**
 
+  Uzdevums ir variācija par Eiklīda pazīstamo
+  pierādījumu, ka pirmskaitļu ir bezgalīgi daudz:
+  tiek konstruēta bezgalīga pirmskaitļu virkne :math:`a_1,a_2,\ldots`.
 
-Lai gan virknē :math:`a_1,a_2,\ldots` ir bezgalīgi daudz pirmskaitļu
-(kā jau pamatoja Eiklīds), šī virkne tomēr nesatur **visus** pirmskaitļus.
-Piemēram, tā nesatur pirmskaitli :math:`5` (un arī :math:`11`).
-
-Pierakstām ar kvantoriem pierādāmo apgalvojumu par :math:`5`:
-
-.. math::
-
-  (\forall n \in \mathbb{N})(a_n \neq 5).
-
-(Jebkuram naturālam :math:`n`, :math:`a_n \neq 5`.)
-
-Ja gribam pierādīt no pretējā, tad pretējais apgalvojums (kas izrādīsies aplams):
-
-.. math::
-
-  (\exists n \in \mathbb{N})(a_n = 5).
-
-(Eksistē tāds naturāls :math:`n`, ka :math:`a_n = 5`.)
+  Ievērojam, ka pirmskaitļi šajā virknē neatkārtojas.
+  No pretējā: Ja pie :math:`m < n` izpildītos :math:`a_n = a_m`, tad
+  :math:`a_n` būtu dalītājs gan skaitlim :math:`A_{n-1} = a_1a_2\cdots{}a_{n-1}`
+  (jo šajā garajā reizinājumā ietilpst :math:`a_m = a_n`), gan
+  arī skaitlim :math:`A_{n-1}+1`.
+  Tā ir pretruna, jo :math:`A_{n-1}` un :math:`A_{n-1} + 1` ir viens otram sekojoši -
+  tātad ir savstarpēji pirmskaitļi.
 
 
+  Lai gan virknē :math:`a_1,a_2,\ldots` ir bezgalīgi daudz pirmskaitļu
+  (kā jau pamatoja Eiklīds), šī virkne tomēr nesatur **visus** pirmskaitļus.
+  Piemēram, tā nesatur pirmskaitli :math:`5` (un arī :math:`11`).
 
-Mūsu metode ir nepilnā indukcija -- vienkārši izrakstām
-dažus virknes locekļus un meklējam likumsakarības.
+  Pierakstām ar kvantoriem pierādāmo apgalvojumu par :math:`5`:
 
+  .. math::
 
-.. math::
+    (\forall n \in \mathbb{N})(a_n \neq 5).
 
-  a_1 = 2,\; a_2 = 3,\; a_3 = 7,\;a_4 = 43,\;a_5 = 139,\ldots
+  (Jebkuram naturālam :math:`n`, :math:`a_n \neq 5`.)
 
-jo :math:`a_1a_2a_3a_4 + 1 = 1807 = 139 \cdot 13`.
+  Ja gribam pierādīt no pretējā, tad pretējais apgalvojums (kas izrādīsies aplams):
+
+  .. math::
+
+    (\exists n \in \mathbb{N})(a_n = 5).
+
+  (Eksistē tāds naturāls :math:`n`, ka :math:`a_n = 5`.)
 
 
 
-
-Pieņemsim no pretējā, ka eksistē virknes loceklis :math:`a_n`, kurš
-vienāds ar :math:`5`.
-
-Apzīmējam :math:`A_n = a_1\cdot{}a_2\cdot\ldots\cdot{}a_n+1`.
-Tas nedalās ar :math:`2` vai :math:`3` (jo dod atlikumu :math:`1`).
-:math:`A_n` nevar dalīties ar pirmskaitļiem, kas lielāki par :math:`5`,
-jo katrā solī par :math:`a_{n+1}` izvēlamies lielāko :math:`A_n` dalītāju.
-
-Tātad, lai virknē :math:`(a_n)` būtu skaitlis :math:`5`, jāizpildās
-
-.. math::
-
-  A_n = a_1a_2\cdots{}a_n + 1 = 5^m.
+  Mūsu metode ir nepilnā indukcija -- vienkārši izrakstām
+  dažus virknes locekļus un meklējam likumsakarības.
 
 
-**Apgalvojums:**
-  Skaitlis :math:`5^n` katram :math:`n` dod atlikumu :math:`1`,
-  dalot ar :math:`4`.
+  .. math::
 
-**Pierādījums:**
-  Reizinot divus vai vairāk skaitļus,
-  kuri dod atlikumu :math:`1`, dalot ar :math:`5`, rodas rezultāts,
-  kurš arī dod atlikumu :math:`1`, dalot ar :math:`5`. :math:`\blacksquare`
+    a_1 = 2,\; a_2 = 3,\; a_3 = 7,\;a_4 = 43,\;a_5 = 139,\ldots
 
-
-
-Pēc mūsu pieņēmuma, eksistē :math:`A_n = 5^m`. Tas dod atlikumu :math:`1`,
-dalot ar :math:`4` jeb
-
-.. math::
-
-  A_n - 1 = a_1a_2\cdots{}a_n
-
-dalās ar :math:`4`.
-
-Tas nav iespējams, jo :math:`a_1 = 2`, bet visi citi :math:`a_i` ir
-pirmskaitļi (tātad nepāru skaitļi). :math:`\blacksquare`
+  jo :math:`a_1a_2a_3a_4 + 1 = 1807 = 139 \cdot 13`.
 
 
 
 
-**Apgalvojums:**
-  Virknē :math:`a_n` nav locekļa, kas vienāds ar :math:`11`.
+  Pieņemsim no pretējā, ka eksistē virknes loceklis :math:`a_n`, kurš
+  vienāds ar :math:`5`.
 
-**Ieteikums:**
-  Līdzīgi kā iepriekš - var pamatot, ka rodas
-  pretruna no pieņēmuma, ka :math:`A_n = 5^k\cdot{}11^{\ell}`.
+  Apzīmējam :math:`A_n = a_1\cdot{}a_2\cdot\ldots\cdot{}a_n+1`.
+  Tas nedalās ar :math:`2` vai :math:`3` (jo dod atlikumu :math:`1`).
+  :math:`A_n` nevar dalīties ar pirmskaitļiem, kas lielāki par :math:`5`,
+  jo katrā solī par :math:`a_{n+1}` izvēlamies lielāko :math:`A_n` dalītāju.
 
-Vispirms parāda, ka :math:`\ell = 2\ell_1 + 1` ir nepāru skaitlis.
-Tad parāda, ka var izteikt arī :math:`k = 2k_1+1` un arī :math:`k` ir nepāru.
-Visbeidzot var parādīt, ka neviens skaitlis formā
+  Tātad, lai virknē :math:`(a_n)` būtu skaitlis :math:`5`, jāizpildās
 
-.. math::
+  .. math::
 
-  55 \cdot 5^{2k_1} \cdot 11^{2\ell_1} = 55 \cdot 25^{k_1} \cdot 121^{\ell_1}
-
-nevar dot atlikumu :math:`1`, dalot ar :math:`7`.
-
-No otras puses, :math:`A_n = a_1a_2a_3\cdots{}a_n+1` noteikti dod atlikumu
-:math:`1`, dalot ar :math:`7`, jo :math:`a_3 = 7`. Iegūta pretruna.
+    A_n = a_1a_2\cdots{}a_n + 1 = 5^m.
 
 
+  **Apgalvojums:**
+    Skaitlis :math:`5^n` katram :math:`n` dod atlikumu :math:`1`,
+    dalot ar :math:`4`.
+
+  **Pierādījums:**
+    Reizinot divus vai vairāk skaitļus,
+    kuri dod atlikumu :math:`1`, dalot ar :math:`5`, rodas rezultāts,
+    kurš arī dod atlikumu :math:`1`, dalot ar :math:`5`. :math:`\blacksquare`
+
+
+
+  Pēc mūsu pieņēmuma, eksistē :math:`A_n = 5^m`. Tas dod atlikumu :math:`1`,
+  dalot ar :math:`4` jeb
+
+  .. math::
+
+    A_n - 1 = a_1a_2\cdots{}a_n
+
+  dalās ar :math:`4`.
+
+  Tas nav iespējams, jo :math:`a_1 = 2`, bet visi citi :math:`a_i` ir
+  pirmskaitļi (tātad nepāru skaitļi). :math:`\blacksquare`
+
+
+
+
+  **Apgalvojums:**
+    Virknē :math:`a_n` nav locekļa, kas vienāds ar :math:`11`.
+
+  **Ieteikums:**
+    Līdzīgi kā iepriekš - var pamatot, ka rodas
+    pretruna no pieņēmuma, ka :math:`A_n = 5^k\cdot{}11^{\ell}`.
+
+  Vispirms parāda, ka :math:`\ell = 2\ell_1 + 1` ir nepāru skaitlis.
+  Tad parāda, ka var izteikt arī :math:`k = 2k_1+1` un arī :math:`k` ir nepāru.
+  Visbeidzot var parādīt, ka neviens skaitlis formā
+
+  .. math::
+
+    55 \cdot 5^{2k_1} \cdot 11^{2\ell_1} = 55 \cdot 25^{k_1} \cdot 121^{\ell_1}
+
+  nevar dot atlikumu :math:`1`, dalot ar :math:`7`.
+
+  No otras puses, :math:`A_n = a_1a_2a_3\cdots{}a_n+1` noteikti dod atlikumu
+  :math:`1`, dalot ar :math:`7`, jo :math:`a_3 = 7`. Iegūta pretruna.
+
+  :math:`\square`
 
 
 
@@ -2070,12 +1791,200 @@ Sacensību uzdevumi
 
 
 
+Programmēšanas piemēri
+------------------------
+
+Dalīšana ar atlikumu
+^^^^^^^^^^^^^^^^^^^^^
+
+**Piemērs:**
+  Dalot ar :math:`3`, iespējamie atlikumi
+  ir :math:`\textcolor{red}{\{ 0,1,2 \}}`. Aprēķina paraugs valodā Python:
+
+.. code-block:: python
+
+  >>> 15 % 3
+  0
+  >>> 17 % 3
+  2
+  >>> (-17) % 3
+  1
+  >>> (-17) // 3
+  -6
+
+
+.. math::
+
+  \left\{
+  \begin{array}{l}
+  15 = 5 \cdot 3 + \textcolor{red}{0}\\
+  17 = 5 \cdot 3 + \textcolor{red}{2}\\
+  -17 = (-6) \cdot 3 + \textcolor{red}{1}
+  \end{array}
+  \right.
+
+
+.. note::
+  Arī negatīvus skaitļus var dalīt ar atlikumu, bet arī tad atlikumi nemēdz būt negatīvi.
+  Dažās programmēšanas valodās
+  *atlikuma operators*, ja to izmanto negatīviem skaitļiem,
+  dod negatīvus atlikumus.
+  Pēc matemātiskās definīcijas, atlikums, dalot ar :math:`n`, vienmēr ir skaitlis
+  starp :math:`0` un :math:`n-1`.
+
+
+
+
+
+
+
+Pirmskaitļu meklēšana ar pilno pārlasi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ir iespējams, pārbaudīt, vai skaitlis :math:`n` ir pirmskaitlis,
+to dalot ar :math:`2,3,\ldots` -- visiem skaitļiem līdz :math:`\sqrt{n}`.
+Kā zināms no nodaļas :ref:`subsubDivisorSymmetry`, skaitļus virs 
+:math:`\sqrt{n}` pārbaudīt nav nepieciešams, jo katram šādam lielam 
+dalītājam :math:`d > \sqrt{n}` būs pārī cits dalītājs :math:`n/d < \sqrt{n}`,
+kas mazāks par kvadrātsakni.  
+
+
+.. code-block:: python
+
+  import math
+  def isPrime(n):
+      result = True
+      ROOT = int(math.sqrt(n))
+      for d in range(2,ROOT+1):
+          if n % d == 0:
+              result = False
+              break
+      return result
+
+  print(isPrime(10000000019))
+
+
+.. note::
+  Pilnā pārlase ir ļoti neefektīva lieliem skaitļiem 
+  (ārkārtīgi lēni strādā jau pie :math:`n = 10^{30}`).
+  Kriptogrāfijā un citos lietojumos reizēm vajag pārbaudīt
+  lielus skaitļus, piemēram :math:`p \approx 10^{100}`
+  (decimālpieraksts ar aptuveni :math:`100` cipariem).
+
+  Tad pilnajai pārlasei jāpārbauda aptuveni :math:`\sqrt{p} \approx 10^{50}` dalīšanās darbības.
+  Pārbaude tikai līdz kvadrātsaknei ļauj aplūkot tikai tos dalītājus, kuru 
+  pierakstā ir ap :math:`50` cipari (aptuveni divreiz īsākus par doto skaitli), bet tie joprojām 
+  ir tik lieli,
+  lai visas šīs pārbaudes praksē nevarētu izdarīt.
+  Ja kopš Visuma rašanās (Lielā sprādziena) pagājuši aptuveni 13.8 miljardi gadu,
+  tās ir tikai :math:`4.35 \cdot 10^{23}` mikrosekundes.
+
+
+
+
+Millera-Rabina tests
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ir algoritmi, kuri darbojas pietiekami efektīvi arī pie :math:`p \approx 10^{100}`
+un vēl daudz lielākiem skaitļiem.
+Pirmais no tiem ir Millera-Rabina tests (ap 1982.g.), kas izmanto nejaušo skaitļu ģeneratoru un
+var kļūdīties ar kaut kādu varbūtību. Nedaudz palielinot pārbaužu skaitu,
+šo kļūdīšanās varbūtību var pēc patikas samazināt. Šo algoritmu vēl joprojām visvairāk
+izmanto praksē.
+Sk. teoriju `<https://bit.ly/3qOFLsS>`_ un arī
+algoritma kodu dažās programmēšanas valodās -- `<https://bit.ly/3nNpKBo>`_.
+
+
+**Skaitlisks piemērs:**
+  Atrast intervālu, kurā ir :math:`1000` pēc kārtas sekojoši salikti skaitļi. 
+
+:ref:`problemLargePrimeGaps` jau teorētiski atrisināts piemērs, uzbūvējot 
+ļoti lielus skaitļus ar faktoriālu. Izmantojot datoru, var izveidot arī 
+citus piemērus. 
+
+Atstarpēm starp pirmskaitļiem ir tendence pieaugt, ja skaitļi kļūst lielāki;
+pastāv izvērsta teorija par *pirmskaitļu atstarpēm*.
+Sk. `<https://bit.ly/3nOnoSG>`_.
+Enciklopēdijas tabulā atrodam, ka pirmā vieta, kur attālums
+starp diviem pirmskaitļiem pārsniedz tūkstoti, sākas ar pirmskaitli :math:`p=1\,693\,182\,318\,746\,371`
+
+.. code-block:: python
+
+  import sympy
+  p1 = 1693182318746371
+  p2 = p1 + 1132
+  isComposite = [(not sympy.isprime(n)) for n in range(p1+1, p2)])
+  print('Vai visi skaitļi no {} līdz {} ir salikti: ' + any(isComposite))
+
+Ievērojam, ka agrākajā piemērā iegūtais atrisinājums :math:`N = 1001!+2` 
+(vieta, kur sākas saliktie skaitļi) ir krietni lielāks nekā
+vērtība :math:`p_1 = 1693182318746371 + 1`, kuru atradām enciklopēdijā un nupat pārbaudījām ar datoru. 
+
+
+.. note::
+  Cits svarīgs algoritms ir `<https://bit.ly/3FROhLN>`_, AKS algoritms
+  jeb Agrawal-Kayal-Saxena pirmskaitļu tests ap 2002.g.) Tas bija pirmais
+  efektīvais algoritms, kas neizmanto nejaušos skaitļus un nekad nekļūdās (pat ar niecīgu 
+  varbūtību, kā var kļūdīties Rabina-Millera algoritms).
+
+  Praktiski tomēr biežāk lieto Millera-Rabina algoritmu, jo to vieglāk uzprogrammēt un 
+  tas ātrāk strādā. Parasti tas ir uzlabots tā, lai nekļūdītos, meklējot pirmskaitļus 
+  līdz :math:`n < 2^{64}`. Lielākām vērtībām tas reizēm var kļūdīties, bet lietotājs var 
+  padot parametru, kas pasaka, cik niecīgu kļūdīšanās varbūtību šoreiz vajag. 
+
+
+
+Eiklīda algoritms valodā Python
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+  def gcd(a, b):
+      while b:
+          a, b = b, a % b
+      return a
+
+
+Šis algoritms turpina ciklu līdzkamēr lielākais skaitlis :math:`a` bez atlikuma 
+izdalās ar mazāko skaitli :math:`b` (un jaunais mazākais skaitlis ir :math:`0`). 
+
+
+Terminu vārdnīca
+---------------------
+
+===============================================  ================================================
+**Termins**                                      **Tulkojums**
+-----------------------------------------------  ------------------------------------------------
+:math:`a` is divisible by :math:`b`              :math:`a` dalās ar :math:`b`
+composite number                                 salikts skaitlis
+divisibility                                     dalāmība
+division                                         dalīšana
+divisor                                          dalītājs
+greatest common divisor                          lielākais kopīgais dalītājs (LKD)
+least common multiple                            mazākais kopīgais dalāmais (MKD)
+Mersenne number                                  Mersenna skaitlis
+Mersenne prime                                   Mersenna pirmskaitlis
+multiple                                         daudzkārtnis
+mutual primes  (coprimes)                        savstarpēji pirmskaitļi
+partially ordered set                            daļēji sakārtota kopa
+perfect number                                   perfekts skaitlis
+prime-counting function                          pirmskaitļu skaitīšanas funkcija
+prime gap                                        pirmskaitļu atstarpe
+prime number, prime                              pirmskaitlis
+remainder                                        atlikums
+transitive                                       transitīvs
+===============================================  ================================================
+
 
 
 Norādes
 -------------
 
 1. T.Andreescu, D.Andrica, Z.Feng. 104 Number Theory Problems. Birkhäuser.
+
+
+TODO 
+-----
 
 Lai attīstītu intuīciju par dalāmību, var pievienot attēlus vai animācijas par sekojošo:
 
@@ -2086,3 +1995,11 @@ Lai attīstītu intuīciju par dalāmību, var pievienot attēlus vai animācija
   5. Tipiska un vissliktākā Eiklīda algoritma ātrdarbība, rekursīvo izsaukumu skaits šajā algoritmā.
   6. Dalītāju režģis 3 vai 4 dimensijās - kā lielam skaitlim, piemēram, formā :math:`p^aq^br^c`
      pamazām (augošā secībā) atklājas visu tā dalītāju kopums.
+  7. Ievietot attēlu, kas parāda dalītāju skaitu dažādiem skaitļiem no :math:`1` līdz :math:`36`.
+     Vizualizācija zīmē ritmu ar skaitļu :math:`1,2,3,4,\ldots` daudzkārtņiem horizontālēs.
+     Dalītāju skaitu var saskaitīt vertikāli.
+     Kuriem no skaitļiem ir nepāru skaits dalītāju?
+  8. Vizualizācija, kur :math:`x^2 + x + 41` vērtības
+     atliktas uz Ulama spirāles.
+
+    

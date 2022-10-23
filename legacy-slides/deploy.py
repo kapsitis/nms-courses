@@ -25,7 +25,8 @@ for src_dir in src:
             shutil.copy2(os.path.join(src_dir,fname),dest)
 
 # Need to publish all PDF files that are located in the subdirectories of these superdirectories.
-superDirs = ['../imo-team-trainings']
+superDirs = ['../imo-team-trainings',
+        '../problems/selection_problems_2022_2023']
 
 for super_dir in superDirs:
     for subdir, dirs, files in os.walk(super_dir):

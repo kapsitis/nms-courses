@@ -10,6 +10,8 @@ Iesildīšanās
 .. Pirmskaitļu atstarpes (gaps) pamazām palielinās. Parādām Wiki lapu ar pirmskaitļu gaps.
 .. Kas notiek ar skaitļiem, kuri dalās ar ļoti daudziem nelieliem skaitļiem...
 .. N! utml. ir šādi piemēri.
+.. Piemēri, kuros uzrakstīti vienkārši fakti par dalāmību (ar vertikālo svītriņu vai 3 punktiņiem)
+.. Var būt arī vienkārši kvantori uzlikti tam visam. 
 
 **1.uzdevums:**
   **(A)**
@@ -65,6 +67,7 @@ Iesildīšanās
 .. Eratostēna režģa veidošana notiek bezgalīgi daudzos soļos (nav intuitīvi)
 .. Tests: Atrast pirmos divus saliktos skaitļus, kurus "izbrāķē" kā tos, kuri dalās ar 11.
 .. Vai varētu gadīties, ka tikai 4n+1 pirmskaitļu ir bezgalīgi daudz, bet 4n+3 ir galīgs skaits.
+.. Vai 4n+3 skaitlim obligāti ir kāds pirmreizinātājs formā 4n+3
 
 .. Tests: Eratostēna režģis kā vieta, kurā var ieraudzīt Dirihlē teorēmu un arī Eilera funkciju.
 
@@ -83,7 +86,31 @@ Iesildīšanās
 
   **Atbilde:**
 
-    Mēģinām atkārtot Eiklīda pierādījumu.
+    Veidojam Eiklīda pierādījuma variantu. Pieņemsim, ka pirmskaitļu, kuri ir formā :math:`4n+3`
+    ir tikai galīgs skaits. Apzīmējam tos ar :math:`p_1,p_2,\ldots,p_k` kādam galīgam :math:`k`.  
+    
+    (Ja tagad burtiski atkārtotu Eiklīda pierādījumu, tad būtu jāveido visu šo pirmskaitļu reizinājums plus :math:`1`. 
+    Bet tā kā tas ir pāra skaitlis, mums to nebūs ērti aplūkot, jo pāra skaitļi dalās ar pirmskaitli :math:`2`,
+    un varbūt visi citi pirmreizinātāji tiem ir formā :math:`4n+1`). 
+    Tai vietā aplūkojam šādu skaitli: 
+
+    .. math:: 
+
+      N = 2 \cdot p_1 \cdot p_2 \cdot \ldots \cdot p_k + 1. 
+
+    Viegli redzēt, ka tas ir nepāra skaitlis. Turklāt, tā kā visu :math:`p_i` reizinājums arī ir nepāra skaitlis,
+    ko apzīmējam ar :math:`2n^{\ast}+1`. Tad :math:`N=2 \cdot (2n^{\ast}+1) + 1 = 4n^{\ast}+2+1 = 4n^{\ast}+3`. 
+
+    Skaitlis :math:`N` nedalās ne ar vienu pirmskaitli :math:`p_i` no mūsu saraksta (kas pēc pieņēmuma satur visus 
+    pirmskaitļus formā :math:`4n+1`) -- visi dalīšanas atlikumi ar :math:`p_i` vienādi ar :math:`1`. 
+    Ja :math:`N` pats būtu pirmskaitlis, tad tā uzreiz ir pretruna, jo tas arī ir formā :math:`4n^{\ast} + 1`, 
+    bet nav mūsu sarakstā. 
+
+    Atliek iespēja, ka :math:`N` ir salikts skaitlis. Bet arī šādā gadījumā nav iespējams, ka visi tā pirmreizinātāji 
+    ir formā :math:`4n+1` (jo sareizinot divus skaitļus :math:`4n+1` un :math:`4m+1`, iegūtais rezultāts arī 
+    dod atlikumu :math:`1`, dalot ar :math:`4`). Tātad, kāds no skaitļa :math:`N` pirmreizinātājiem ir 
+    pirmskaitlis formā :math:`4n+3`, kas tomēr nav mūsu sarakstā. Arī šī ir pretruna ar pieņēmumu, ka visu
+    šo pirmskaitļu ir tikai galīgs skaits un visus tos var sareizināt. 
 
 
   :math:`\square`
@@ -166,6 +193,19 @@ Klases uzdevumi
   stāvoklī slēdžus, kuru numuri dalās ar :math:`36`.
   Cik daudzi slēdži kļūst ieslēgti pēc visu soļu pabeigšanas?
 
+.. only:: Internal
+
+  **Atbilde:** 
+
+
+  **Ieteikumi:**
+    Ko nozīmē "pārslēgt pretējā stāvoklī"? Cik daudzi soļi pārslēdz slēdzi ar konkrētu numuru :math:`n`?
+    Vai mūs interesē, cik reizes tika pārslēgts tas vai cits slēdzis (vai arī tikai slēdža
+    beigu stāvoklis)?
+
+  :math:`\square`
+
+
 .. vajag pamatojumu, ka tikai pilniem kvadrātiem ir
 .. pamatot, ka 2017 ir pirmskaitlis - pietiek pārbaudīt no 2 līdz 43.
 
@@ -183,6 +223,67 @@ Klases uzdevumi
 
 .. Kombinatoriski pārskaitīt variantus (sadalījumam pirmreizinātājos) tā, lai būtu 16 dalītāji.
 
+.. only:: Internal
+
+  **Atbilde:**
+
+    Skaitlim :math:`M` nevar būt vairāk kā četri pirmreizinātāji.
+    Ja :math:`M = p_1^ap_2^bp_3^cp_4^d`, tam ir
+    :math:`(a+1)(b+1)(c+1)(d+1)` dalītāji.
+    Var iegūt rezultātu :math:`16`, ja :math:`a =b = c = d =1`.
+    Savukārt, ja dažādo :math:`M` pirmreizinātāju
+    ir vairāk kā četri, tad :math:`M` būtu vismaz :math:`2^5 = 32`
+    dalītāji.
+
+    Šķirosim dažādus gadījumus, kā :math:`16` var izteikt
+    ne vairāk kā četru dažādu pirmskaitļu (vai to pakāpju) reizinājumu.
+    Dalītāju skaitu nosaka pirmreizinātāju pakāpes, nevis tas, kā
+    izvēlēti paši pirmreizinātāji. Tāpēc sadalījumus pirmreizinātājos
+    šķirosim pēc pirmreizinātāju pakāpēm, veicot pirmreizinātāju izvēli
+    nedaudz vēlāk.
+
+    .. image:: figs-2022-2023-workskkheet01/16-divisors-var123.png
+       :width: 4in
+
+    **(A) gadījums:**
+      :math:`16 = (15+1)` jeb :math:`p^{15}`, kur :math:`p` ir pirmskaitlis.
+      Mazākais šāds skaitlis ir :math:`M = 2^{15} = 32768`.
+
+    **(B) gadījums:**
+      :math:`16 = (7+1)(1+1)` jeb
+      :math:`p^7q`, kur :math:`p,q` ir pirmskaitļi.
+      Mazākais šāds skaitlis ir :math:`2^7\cdot{} 3 = 128 \cdot 3 = 384`.
+
+    **(C) gadījums:**
+      :math:`16 = (3+1)(3+1)` jeb
+      :math:`p^3q^3`, kur :math:`p,q` ir pirmskaitļi.
+      Mazākais šāds skaitlis ir :math:`2^3\cdot{} 3^3 = 216`.
+
+
+    .. image:: figs-2022-2023-workskkheet01/16-divisors-var45.png
+       :width: 3.5in
+
+
+    **(D) gadījums:**
+      :math:`(3+1)(1+1)(1+1)` jeb
+      :math:`p^3qr`, kur :math:`p,q,r` ir pirmskaitļi.
+      Mazākais šāds skaitlis ir :math:`2^3\cdot{} 3 \cdot 5 = 120`.
+
+    **(E) gadījums:**
+      :math:`(1+1)(1+1)(1+1)(1+1)` jeb
+      skaitlis formā :math:`pqrs`, kur :math:`p,q,r,s` ir pirmskaitļi.
+      Mazākais šāds skaitlis ir :math:`2 \cdot 3 \cdot 5 \cdot 7 = 210`.
+
+
+    Mazākais no apskatītajiem pieciem rezultātiem
+    ir :math:`120` ((D) gadījums). Tā kā ikvienā no gadījumiem
+    izvēlējāmies mazākos iespējamos pirmreizinātājus, tātad šo
+    rezultātu nevar uzlabot.
+
+  :math:`\square`
+
+
+
 **4.uzdevums:**
   Naturālam skaitlim :math:`n` ir tieši :math:`125` pozitīvi
   dalītāji (ieskaitot :math:`1` un pašu :math:`n`).
@@ -191,6 +292,30 @@ Klases uzdevumi
 
 .. Tests: Kaut kāds piemērs, kurā jautāts, kādu sakni var izvilkt no
 .. skaitļa, kas parādīts kā sadalījums pirmreizinātājos.
+
+.. only:: Internal
+
+  **Atbilde:**
+
+    :math:`125` var izteikt kā reizinājumu
+    vairākiem skaitļiem (kas pārsniedz :math:`1`) sekojošos veidos:
+
+    * :math:`125 = 124+1`.
+    * :math:`125 = 25 \cdot 5 = (24 + 1) \cdot (4+1)`.
+    * :math:`125 = 5 \cdot 5 \cdot 5 = (4+1) \cdot (4+1) \cdot (4+1)`.
+
+    Tādēļ skaitli :math:`n` var sadalīt pirmreizinātājos
+    vienā no sekojošiem veidiem:
+
+
+    .. math::
+
+      n = p^{124},\;\;n = p^{24}q^4\;\;\text{vai}\;\;n = p^{4}q^4r^4,
+
+    kur :math:`p,q,r` ir pirmskaitļi. Visos gadījumos var izvilkt 4.pakāpes sakni.
+
+  :math:`\square`
+
 
 
 **Definīcija:**
@@ -210,6 +335,29 @@ Klases uzdevumi
 .. Daudzos soļos veidota kvadrātu starpība...
 
 
+.. only:: Internal
+
+  **Atbilde:**
+
+    Atkārtoti lietojam kvadrātu starpības formulu dalīšanai reizinātājos:
+
+    .. math::
+
+      F_m - 2 = 2^{2^m} + 1 - 2 = 2^{2^m} - 1 =
+
+    .. math::
+
+      =\left( 2^{2^{m-1}} - 1 \right) \left( 2^{2^{m-1}} + 1 \right) =
+      \left( F_{m-1} - 2 \right) F_{m-1}.
+
+    Ja arī :math:`m - 1 > n`, tad līdzīgu spriedumu atkārto vēlreiz,
+    dalot reizinātājos :math:`F_{m-1} - 2` utt. Katrā
+    solī redzam, ka uzrodas reizinātāji :math:`F_{m-1}`, :math:`F_{m-2}` utt.
+    Kāds no šiem reizinātājiem būs tieši :math:`F_n`.
+
+  :math:`\square`
+
+
 
 .. Tests: Piemērs ar kubiska polinoma dalīšanu
 .. Kaut kāds LKD piemērs ar Eiklīda algoritmu.
@@ -222,6 +370,61 @@ Klases uzdevumi
       \text{LKD}\left( n^2 + 3, (n+1)^2 + 3 \right)
 
     lielākā iespējamā vērtība naturāliem :math:`n`?
+
+
+
+.. only:: Internal
+
+  **Atbilde:** 
+  
+  Lietojam Eiklīda algoritmu polinomiem no mainīgā :math:`n`:
+
+  .. math::
+
+    \text{LKD}\left( n^2 + 3, (n+1)^2 + 3 \right) = \text{LKD}\left( n^2 + 3, n^2 + 2n + 4 \right) =
+
+  *no otrā argumenta atņem pirmo:*
+
+  .. math::
+
+    = \text{LKD}\left( n^2 + 3, 2n + 1 \right) =
+
+  *pirmo argumentu var piereizināt ar 2, jo otrais ir nepāru:*
+
+  .. math::
+
+     = \text{LKD}\left( 2n^2 + 6, 2n + 1 \right) =
+
+  *no pirmā argumenta atņem n-kāršotu otro:*
+
+  .. math::
+
+    = \text{LKD}\left( 2n^2 + 6 - n(2n+1), 2n + 1 \right) = \text{LKD}(6-n,2n+1) =
+
+  *otrajam argumentam pieskaita divkāršotu pirmo:*
+
+  .. math::
+
+    =\text{LKD}(6-n,2n+1 + 2(6-n)) = \text{LKD}(n-6,13).
+
+
+  **Secinājums:**
+    :math:`\text{LKD}\left( n^2 + 3, (n+1)^2 + 3 \right) = \text{LKD}(n-6,13)` var būt vai nu :math:`1` vai :math:`13`.
+
+    Vērtību :math:`13` (vai kādu daudzkārtni) tas sasniedz, ja :math:`n-6` dalās ar :math:`13`,
+    piemēram, ja $n-6 = 0$ jeb $n=6$.
+
+  Pārbaude:
+    Ievietojam :math:`n=6`:
+
+    .. math::
+
+      \text{LKD}\left( 6^2 + 3, (6+1)^2 + 3 \right) = \text{LKD}(39,52)=13.
+
+
+  :math:`\square`
+
+
 
 
 
