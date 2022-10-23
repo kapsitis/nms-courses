@@ -1,0 +1,49 @@
+1. Skaitļu teorijas mājasdarbs
+========================================
+
+
+**Iesniegšanas termiņš:**
+  2022.g. 5.novembris.
+
+**Kam iesūtīt:**
+  ``kalvis.apsitis``, domēns ``gmail.com``
+
+**1.uzdevums:**
+  Naturālu skaitli sauksim par *elegantu*, ja tā decimālajā pierakstā nav nevienas nulles un šis skaitlis dalās ar
+  savu ciparu summu. (Eleganti ir visi viencipara skaitļi, kā arī, piemēram, skaitļi :math:`36` un :math:`322`.)
+  Pierādīt, ka ir bezgalīgi daudz elegantu skaitļu!
+
+**2.uzdevums:**
+  Zināms, ka trīsciparu skaitlis :math:`\overline{abc}` ir pirmskaitlis un ka vienādojumam
+  :math:`ax^2 + bx + c = 0` ir divas reālas saknes. Vai var
+  gadīties, ka šīs saknes ir **(A)** veseli skaitļi, **(B)** racionāli skaitļi?
+
+**3.uzdevums:**
+  Divi spēlētāji pamīšus raksta uz tāfeles naturāla skaitļa :math:`N` naturālos dalītājus.
+  Katrā gājienā jāievēro šādi noteikumi:
+
+    * nedrīkst atkārtoti rakstīt jau uzrakstītu dalītāju;
+    * nedrīkst rakstīt dalītāju, kurš ir tieši :math:`2` vai :math:`3` reizes lielāks vai mazāks nekā kāds jau uzrakstītais dalītājs.
+
+  Zaudē tas spēlētājs, kurš nevar izdarīt gājienu. Kurš spēlētājs – pirmais vai
+  otrais – vienmēr var uzvarēt?
+
+  Pamatot atbildi šādām vērtībām: **(A)** :math:`N = 144`, **(B)** :math:`N = 216`.
+
+**4.uzdevums:**
+  Skaitļi :math:`p,q` ir pirmskaitļi un :math:`p>q`. Definējam :math:`t = \gcd(p!-1,q!-1)`.
+  Pierādīt, ka :math:`t \leq p^{\frac{p}{3}}`.
+
+**5.uzdevums:**
+  **(A)**
+    Atrast visus naturālos skaitļus :math:`n`, ka jebkuram nepāra skaitlim :math:`a` izpildās :math:`4 \mid a^n-1`.
+
+  **(B)**
+    Atrast visus naturālos skaitļus :math:`n`, ka jebkuram nepāra skaitlim :math:`a`, izpildās :math:`2^{2017} \mid a^n-1`.
+
+**6.uzdevums:**
+  Atrast visus veselo skaitļu trijniekus :math:`(a, b, c)`, kas apmierina vienādojumu:
+
+  .. math::
+
+    5 a^2 + 9 b^2 = 13 c^2.

@@ -121,11 +121,46 @@ Iesildīšanās
     Pirmos desmit pirmskaitļus :math:`p`, kas dod atlikumu :math:`1`, dalot ar :math:`4`,
     izteikt formā :math:`p = a^2 + b^2`, kur :math:`a,b \in \mathbb{N}`.
     Piemēram, :math:`5 = 2^2 + 1^2`. (Fermā Ziemassvētku teorēma apgalvo, ka visus pirmskaitļus :math:`p=4n+1`
-    var izteikt kā divu kvadrātu summu -- turklāt tieši vienā veidā.
+    var izteikt kā divu kvadrātu summu -- turklāt tieši vienā veidā.)
 
   **(B)**
     Pamatot, ka nevienu pirmskaitli :math:`p`, kas dod atlikumu :math:`3`, dalot ar :math:`4`,
     nevar izteikt kā divu kvadrātu summu.
+
+.. only:: Internal
+
+  **Atbilde:**
+
+  **(A)**
+
+    .. math:: 
+
+      \begin{array}{l}
+      5 = 2^2 + 1^2,\\
+      13 = 3^2 + 2^2,\\
+      17 = 4^2 + 1^2,\\
+      29 = 5^2 + 2^2,\\
+      37 = 6^2 + 1^2,\\
+      41 = 5^2 + 4^2,\\
+      53 = 7^2 + 2^2,\\
+      61 = 6^2 + 5^2,\\
+      73 = 8^2 + 3^2,\\
+      89 = 8^2 + 5^2,\\
+      97 = 9^2 + 4^2.\\
+      \end{array}
+
+  **(B)**
+    Ja nepāra pirmskaitlis ir izsakāms formā :math:`4n+3`, tad tas var būt divu 
+    pilnu kvadrātu summa :math:`a^2 + b^2` tikai tad, ja viens no skaitļiem :math:`a,b`
+    ir pāra skaitlis, bet otrs -- nepāra skaitlis. 
+    Bet pāra skaitļa kvadrāts vienmēr dod atlikumu :math:`0`, dalot ar :math:`4`, 
+    un nepāra skaitļa kvadrāts :math:`b^2 = (2k+1)^2 = 4k^2 + 4k+1` vienmēr dod 
+    atlikumu :math:`1`, dalot ar :math:`1`. 
+
+    Tādēļ abu šo kvadrātu summa vienmēr dos atlikumu :math:`1`, dalot ar :math:`4`; 
+    atlikums nevar būt vienāds ar :math:`3`.
+
+  :math:`\square`
 
 .. ...............
 .. TODO for tests.
@@ -153,6 +188,36 @@ Iesildīšanās
     |(a + bi)(c + di)| = |a + bi| \cdot |c + di|.
 
 
+.. only:: Internal
+
+  **Atbilde:** 
+
+    **(A)** 
+      :math:`|z_1| = |1+i| = \sqrt{1^2 + 1^2} = \sqrt{2}`. Šo skaitli var izteikt kā divu citu komplekso 
+      skaitļu moduļu reizinājumu tikai tad, ja viens no moduļiem arī ir :math:`\sqrt{2}`, bet otrs ir 
+      :math:`1`. (Ievērosim, ka ikviena Gausa skaitļa modulis ir kāda vesela skaitļa kvadrātsakne.)
+      Tā kā viens no reizinātājiem ir ar moduli :math:`1`, tad šis reizinātājs noteikti ir :math:`1`, :math:`-1`,
+      :math:`i` vai :math:`-i`. Tādēļ :math:`z_1 = 1+i` ir Gausa pirmskaitlis.  
+
+    **(B)**
+      :math:`|z_2| = |2+i| = \sqrt{2^2 + 1^2} = \sqrt{5}`. Arī šo skaitli var izteikt kā divu veselu skaitļu 
+      kvadrātsakņu reizinājumu tikai tad, ja viena no kvadrātsaknēm ir vienāda ar :math:`1`. Līdzīgi kā 
+      iepriekš iegūstam, ka :math:`z_2 = 2+i` ir Gausa pirmskaitlis. 
+
+    **(C)** 
+      :math:`z_3 = 3` arī ir Gausa pirmskaitlis. Jo :math:`|z_3| = |3+0i| = \sqrt{3^2 + 0^2} = 3`. 
+      Šo skaitli var izteikt kā divu veselu skaitļu kvadrātsakņu reizinājumu vai nu kā :math:`\sqrt{3} \cdot \sqrt{1}`, 
+      vai nu kā :math:`\sqrt{3} \cdot \sqrt{3}`. 
+      Pirmajā gadījumā viens no reizinātājiem ir :math:`1`, :math:`-1`,
+      :math:`i` vai :math:`-i`. Bet otrais gadījums nav iespējams, jo :math:`a^2 + b^2 \neq 3` nekādiem 
+      veseliem skaitļiem :math:`a,b` (izriet no iepriekšējā uzdevuma, jo skaitlis :math:`3` dod atlikumu :math:`3`, 
+      dalot ar :math:`4`.)
+
+    **(D)** 
+      :math:`z_4 = 5` nav Gausa pirmskaitlis, jo to iespējams izteikt kā reizinājumu: :math:`5 = (2+i)(2-i) = 4 - i^2 = 4 -(-1)`. 
+
+
+  :math:`\square`
 
 **5.uzdevums:**
   **(A)**
@@ -173,12 +238,48 @@ Iesildīšanās
       \textcolor{red}{(a+b)}\left( a^{2n} - a^{2n-1}b^1 +
       a^{2n-2}b^2 - \cdots - a^1b^{2n-1} + b^{2n} \right).
 
+.. only:: Internal
+
+  **Atbilde:** 
+
+    Par minēto algebrisko identitāšu pareizību var pārliecināties, atverot iekavas abās izteiksmēs. 
+    Starp citu, pirmajai no identitātēm ir tiešs sakars ar ģeometriskas progresijas summas formulu: 
+
+    .. math:: 
+
+      1 + q + q^2 + \ldots + q^{n-1} = \frac{q^n - 1}{q-1}
+
+    jeb 
+
+    .. math:: 
+
+      \left( q-1 \right) \left( 1 + q + q^2 + \ldots + q^{n-1}  \right) = q^n - 1
+
+    Tā ir tā pati formula, ja ievieto :math:`a = q` un :math:`b = 1`.  
+
+  :math:`\square`
+
 **6.uzdevums:**
   Pamatot, ka jebkuriem diviem naturāliem :math:`m,n` ir spēkā vienādība:
   :math:`m \cdot n = \gcd(m,n) \cdot \operatorname{lcm}(m,n)`.
 
 
+.. only:: Internal
 
+  **Atbilde:** 
+
+    Šis ir svarīgs teorijas rezultāts -- tas ļauj efektīvi izteikt mazāko kopīgo dalāmo tad, ja 
+    zināms lielākais kopīgais dalītājs (piemēram, atrasts ar Eiklīda algoritmu). Vai arī otrādi -- 
+    lielāko kopīgo dalītāju :math:`\gcd(m,n)` var izteikt, ja zināms 
+    mazākais kopīgais dalāmais :math:`\operatorname{lcm}(m,n)`. 
+    Sk. `<https://math.stackexchange.com/questions/470807/prove-that-gcdm-n-times-mboxlcmm-n-m-times-n>`_.
+
+    Šis pats pierādījums (ar ilustrāciju skaitļiem :math:`m = 300` un :math:`n = 630`) dots 
+    mūsu mācību grāmatā, 16.lpp. 
+    Sk. `<http://www.dudajevagatve.lv/training/numtheory/ntjun01-divisibility.pdf>`_.
+
+
+  :math:`\square`
 
 
 Klases uzdevumi
@@ -197,11 +298,17 @@ Klases uzdevumi
 
   **Atbilde:** 
 
+    Ieslēgti kļūst tie slēdži, kurus pārslēdz nepāra skaitu reižu (t.i. visi tie slēdžu 
+    numuri, kuriem ir nepāra skaits pozitīvu dalītāju). 
+    Jebkura naturāla skaitļa :math:`n` dalītāji ir sagrupējami pa pāriem 
+    (dalītājam :math:`a` atbilst otrs dalītājs :math:`b = n/a`, kuram :math:`a \cdot b = n`). 
+  
+    Vienīgie skaitļi, kuriem ir nepāra  skaits dalītāju ir tie, kuriem kāds no dalītājiem :math:`d`
+    nonāk pārī pats ar sevi, t.i. :math:`d = n/d` jeb :math:`d^2 = n`. 
+    Skaitļi ar nepāra skaitu dalītāju ir tieši visi pilnie kvadrāti. 
 
-  **Ieteikumi:**
-    Ko nozīmē "pārslēgt pretējā stāvoklī"? Cik daudzi soļi pārslēdz slēdzi ar konkrētu numuru :math:`n`?
-    Vai mūs interesē, cik reizes tika pārslēgts tas vai cits slēdzis (vai arī tikai slēdža
-    beigu stāvoklis)?
+    Intervālā :math:`[1;36]` ir pavisam seši pilni kvadrāti: :math:`\{ 1,4,9,16,25,36 \}`. 
+    Tie arī ir tie slēdži, kuri pēc visu soļu pabeigšanas paliek ieslēgti. 
 
   :math:`\square`
 
@@ -216,6 +323,45 @@ Klases uzdevumi
 
 .. Izpratne par to, cik dažādu saskaitāmo rodas, ja atver iekavas izteiksmēs.
 .. Tests: Piemeklēt izteiksmi, kas izsaka skaitļa 60 pozitīvo dalītāju apgriezto lielumu summu.
+
+.. only:: Internal
+
+  **Atbilde:** 
+
+    Sadalām skaitli pirmreizinātājos: 
+
+    .. math:: 
+  
+      420 = 2^2 \cdot 3^1 \cdot 5^1 \cdot 7^1. 
+
+  **(A)**
+    Dalītāju skaits šim skaitlim ir :math:`\sigma_0(420) = (2+1)(1+1)(1+1)(1+1) = 24`. 
+    To var iegūt kombinatoriski (katrs skaitļa :math:`420` dalītājs :math:`d` satur tos pašus pirmreizinātājus: 
+    :math:`d = 2^{k_1} 3^{k_2} 5^{k_3} 7^{k_4}`, kur :math:`k_1,k_2,k_3,k_4` nevar pārsniegt 
+    attiecīgo pirmskaitļu pakāpes skaitlī :math:`420`. Tātad :math:`k_1` var izvēlēties trīs veidos (0,1,2), 
+    bet visus pārējos kāpinātājus :math:`k_i` var izvēlēties tikai divos veidos.)
+
+  **(B)**
+    Dalītāju summa šim skaitlim ir 
+
+    .. math:: 
+
+      \sigma_1(420) = \left(1 + 2 + 2^2 \right) \cdot \left(1 + 3 \right) \cdot \left( 1 + 5 \right) \cdot \left( 1+7 \right) = 1344.
+
+    Atverot iekavas šajā izteiksmē, iegūsim :math:`24` saskaitāmos -- katrs saskaitāmais atbilst citam skaitļa 
+    :math:`420` dalītājam. 
+
+  **(C)**
+    Dalītāju kvadrātu summa šim skaitlim ir
+
+    .. math:: 
+
+      \sigma_2(420) = \left(1 + 2^2 + 2^4 \right) \cdot \left(1 + 3^2 \right) \cdot \left( 1 + 5^2 \right) \cdot \left( 1+7^2 \right) = 273000.
+
+    Arī par šo var pārliecināties, atverot iekavas. 
+
+  :math:`\square`
+
 
 
 **3.uzdevums:**

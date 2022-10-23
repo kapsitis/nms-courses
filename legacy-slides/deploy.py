@@ -26,6 +26,7 @@ for src_dir in src:
 
 # Need to publish all PDF files that are located in the subdirectories of these superdirectories.
 superDirs = ['../imo-team-trainings',
+        '../homeworks', 
         '../problems/selection_problems_2022_2023']
 
 for super_dir in superDirs:
