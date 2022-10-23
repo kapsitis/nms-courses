@@ -1307,7 +1307,7 @@ sadalīti pirmreizinātājos.
 =======================  =============================  =============================  =============================  =============================
 Pirmreizinātājs          :math:`2`                      :math:`3`                      :math:`5`                      :math:`7`
 :math:`300`              :math:`\textcolor{red}{2^2}`   :math:`\textcolor{blue}{3^1}`  :math:`\textcolor{red}{5^2}`   :math:`\textcolor{blue}{7^0}`
-:math:`300`              :math:`\textcolor{blue}{2^1}`  :math:`\textcolor{red}{3^2}`   :math:`\textcolor{blue}{5^1}`  :math:`\textcolor{red}{7^1}`
+:math:`630`              :math:`\textcolor{blue}{2^1}`  :math:`\textcolor{red}{3^2}`   :math:`\textcolor{blue}{5^1}`  :math:`\textcolor{red}{7^1}`
 =======================  =============================  =============================  =============================  =============================
 
 
