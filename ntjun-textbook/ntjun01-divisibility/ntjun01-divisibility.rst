@@ -15,15 +15,14 @@ veselos skaitļos.
   2. Aprēķināt naturāla skaitļa dalītāju skaitu, dalītāju summu.
   3. Aprakstīt skaitļa dalītāju kopas režģveida struktūru.
   4. Veidot Eratostēna režģi intervālā.
-  5. Pierādīt aritmētikas pamatteorēmu, atsaucoties uz Eiklīda lemmu.
-  6. Izmantot skaitļa dalījumu pirmreizinātājos.
-  7. Izmantot lielāko kopīgo dalītāju (LKD) un mazāko kopīgo dalāmo (MKD) īpašības.
-  8. Atrast LKD ar Eiklīda algoritmu.
+  5. Izmantot skaitļa dalījumu pirmreizinātājos.
+  6. Polinomu algebra, Mersenna un Fermā pirmskaitļi.
+  7. Izmantot :math:`\gcd(a,b)` un :math:`\operatorname{lcm}(a,b)` īpašības.
 
 
 **Kāpēc dalāmības attiecība?**
-  Veselie skaitļi veido ritmus, šajā kopā var pamatot likumsakarības,
-  kas ļauj citādi paraudzīties uz visdažādākajiem uzdevumiem?
+  Veselie skaitļi veido ritmus, dalāmība ļauj precīzi aprakstīt likumsakarības,
+  kas palīdz analizēt iespējamo un neiespējamo dažādos uzdevumus.
 
 
 
@@ -1401,12 +1400,9 @@ secības, vienmēr sanāk tas pats?  (Par faktorizēšanu sauc dalīšanu reizin
 
 **Kopsavilkums**
   Kā nupat redzējām:
-
-  .. math::
-
-    \text{Bezū identitāte} \;\;\;\;\; \Rightarrow \;\;\;\;\;
-    \text{Eiklīda lemma} \;\;\;\;\; \Rightarrow \;\;\;\;\;
-    \text{Aritmētikas pamatteorēma}.
+  Bezū identitāte :math:`\Rightarrow`
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eiklīda lemma :math:`\Rightarrow`
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aritmētikas pamatteorēma.
 
   Aritmētikas pamatteorēma tātad izmanto ne vien pirmskaitļu jēdzienu, bet
   arī iespēju sakārtot veselus pozitīvus skaitļus (atrast starp bezgalīgi
@@ -2073,24 +2069,6 @@ Sacensību uzdevumi
   :math:`\square`
 
 
-
-
-
-
-
-
-Terminu vārdnīca
----------------------
-
-===============================================  ================================================
-**Termins**                                      **Tulkojums**
------------------------------------------------  ------------------------------------------------
-:math:`a` is divisible by :math:`b`              :math:`a` dalās ar :math:`b`
-divisor                                          dalītājs
-multiple                                         daudzkārtnis
-partially ordered set                            daļēji sakārtota kopa
-transitive                                       transitīvs
-===============================================  ================================================
 
 
 

@@ -17,13 +17,13 @@ help:
 solutions:
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) -t Internal
 	python replace.py
-	cd _build/latex && pdflatex homework01
-	mv _build/latex/homework01.pdf homework01-solutions.pdf
+	cd _build/latex && pdflatex 2022-2023-worksheet01
+	mv _build/latex/2022-2023-worksheet01.pdf 2022-2023-worksheet01-solutions.pdf
 
 questions:
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-	cd _build/latex && pdflatex homework01
-	mv _build/latex/homework01.pdf .
+	cd _build/latex && pdflatex 2022-2023-worksheet01
+	mv _build/latex/2022-2023-worksheet01.pdf .
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).

@@ -10,7 +10,7 @@ Welcome to Homework06's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   homework01
+   2022-2023-worksheet01
 
 
 .. Indices and tables

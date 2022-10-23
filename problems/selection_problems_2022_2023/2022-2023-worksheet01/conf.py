@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'homework01'
+project = '2022-2023-worksheet01'
 copyright = '2022, NMS'
 author = 'NMS'
 
