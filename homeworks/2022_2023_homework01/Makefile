@@ -17,7 +17,7 @@ help:
 solutions:
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) -t Internal
 	python replace.py
-	cd _build/latex && pdflatex 2022-2023-worksheet01
+	cd _build/latex && pdflatex 2022-2023-homework01
 	mv _build/latex/2022-2023-homework01.pdf 2022-2023-homework01-solutions.pdf
 
 questions:

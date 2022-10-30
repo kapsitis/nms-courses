@@ -11,7 +11,7 @@ Iesildīšanās
 .. Kas notiek ar skaitļiem, kuri dalās ar ļoti daudziem nelieliem skaitļiem...
 .. N! utml. ir šādi piemēri.
 .. Piemēri, kuros uzrakstīti vienkārši fakti par dalāmību (ar vertikālo svītriņu vai 3 punktiņiem)
-.. Var būt arī vienkārši kvantori uzlikti tam visam. 
+.. Var būt arī vienkārši kvantori uzlikti tam visam.
 
 **1.uzdevums:**
   **(A)**
@@ -87,30 +87,30 @@ Iesildīšanās
   **Atbilde:**
 
     Veidojam Eiklīda pierādījuma variantu. Pieņemsim, ka pirmskaitļu, kuri ir formā :math:`4n+3`
-    ir tikai galīgs skaits. Apzīmējam tos ar :math:`p_1,p_2,\ldots,p_k` kādam galīgam :math:`k`.  
-    
-    (Ja tagad burtiski atkārtotu Eiklīda pierādījumu, tad būtu jāveido visu šo pirmskaitļu reizinājums plus :math:`1`. 
+    ir tikai galīgs skaits. Apzīmējam tos ar :math:`p_1,p_2,\ldots,p_k` kādam galīgam :math:`k`.
+
+    (Ja tagad burtiski atkārtotu Eiklīda pierādījumu, tad būtu jāveido visu šo pirmskaitļu reizinājums plus :math:`1`.
     Bet tā kā tas ir pāra skaitlis, mums to nebūs ērti aplūkot, jo pāra skaitļi dalās ar pirmskaitli :math:`2`,
-    un varbūt visi citi pirmreizinātāji tiem ir formā :math:`4n+1`). 
-    Tai vietā aplūkojam šādu skaitli: 
+    un varbūt visi citi pirmreizinātāji tiem ir formā :math:`4n+1`).
+    Tai vietā aplūkojam šādu skaitli:
 
-    .. math:: 
+    .. math::
 
-      N = 2 \cdot p_1 \cdot p_2 \cdot \ldots \cdot p_k + 1. 
+      N = 2 \cdot p_1 \cdot p_2 \cdot \ldots \cdot p_k + 1.
 
     Viegli redzēt, ka tas ir nepāra skaitlis. Turklāt, tā kā visu :math:`p_i` reizinājums arī ir nepāra skaitlis,
-    ko apzīmējam ar :math:`2n^{\ast}+1`. Tad :math:`N=2 \cdot (2n^{\ast}+1) + 1 = 4n^{\ast}+2+1 = 4n^{\ast}+3`. 
+    ko apzīmējam ar :math:`2n^{\ast}+1`. Tad :math:`N=2 \cdot (2n^{\ast}+1) + 1 = 4n^{\ast}+2+1 = 4n^{\ast}+3`.
 
-    Skaitlis :math:`N` nedalās ne ar vienu pirmskaitli :math:`p_i` no mūsu saraksta (kas pēc pieņēmuma satur visus 
-    pirmskaitļus formā :math:`4n+1`) -- visi dalīšanas atlikumi ar :math:`p_i` vienādi ar :math:`1`. 
-    Ja :math:`N` pats būtu pirmskaitlis, tad tā uzreiz ir pretruna, jo tas arī ir formā :math:`4n^{\ast} + 1`, 
-    bet nav mūsu sarakstā. 
+    Skaitlis :math:`N` nedalās ne ar vienu pirmskaitli :math:`p_i` no mūsu saraksta (kas pēc pieņēmuma satur visus
+    pirmskaitļus formā :math:`4n+1`) -- visi dalīšanas atlikumi ar :math:`p_i` vienādi ar :math:`1`.
+    Ja :math:`N` pats būtu pirmskaitlis, tad tā uzreiz ir pretruna, jo tas arī ir formā :math:`4n^{\ast} + 1`,
+    bet nav mūsu sarakstā.
 
-    Atliek iespēja, ka :math:`N` ir salikts skaitlis. Bet arī šādā gadījumā nav iespējams, ka visi tā pirmreizinātāji 
-    ir formā :math:`4n+1` (jo sareizinot divus skaitļus :math:`4n+1` un :math:`4m+1`, iegūtais rezultāts arī 
-    dod atlikumu :math:`1`, dalot ar :math:`4`). Tātad, kāds no skaitļa :math:`N` pirmreizinātājiem ir 
+    Atliek iespēja, ka :math:`N` ir salikts skaitlis. Bet arī šādā gadījumā nav iespējams, ka visi tā pirmreizinātāji
+    ir formā :math:`4n+1` (jo sareizinot divus skaitļus :math:`4n+1` un :math:`4m+1`, iegūtais rezultāts arī
+    dod atlikumu :math:`1`, dalot ar :math:`4`). Tātad, kāds no skaitļa :math:`N` pirmreizinātājiem ir
     pirmskaitlis formā :math:`4n+3`, kas tomēr nav mūsu sarakstā. Arī šī ir pretruna ar pieņēmumu, ka visu
-    šo pirmskaitļu ir tikai galīgs skaits un visus tos var sareizināt. 
+    šo pirmskaitļu ir tikai galīgs skaits un visus tos var sareizināt.
 
 
   :math:`\square`
@@ -133,7 +133,7 @@ Iesildīšanās
 
   **(A)**
 
-    .. math:: 
+    .. math::
 
       \begin{array}{l}
       5 = 2^2 + 1^2,\\
@@ -150,14 +150,14 @@ Iesildīšanās
       \end{array}
 
   **(B)**
-    Ja nepāra pirmskaitlis ir izsakāms formā :math:`4n+3`, tad tas var būt divu 
+    Ja nepāra pirmskaitlis ir izsakāms formā :math:`4n+3`, tad tas var būt divu
     pilnu kvadrātu summa :math:`a^2 + b^2` tikai tad, ja viens no skaitļiem :math:`a,b`
-    ir pāra skaitlis, bet otrs -- nepāra skaitlis. 
-    Bet pāra skaitļa kvadrāts vienmēr dod atlikumu :math:`0`, dalot ar :math:`4`, 
-    un nepāra skaitļa kvadrāts :math:`b^2 = (2k+1)^2 = 4k^2 + 4k+1` vienmēr dod 
-    atlikumu :math:`1`, dalot ar :math:`1`. 
+    ir pāra skaitlis, bet otrs -- nepāra skaitlis.
+    Bet pāra skaitļa kvadrāts vienmēr dod atlikumu :math:`0`, dalot ar :math:`4`,
+    un nepāra skaitļa kvadrāts :math:`b^2 = (2k+1)^2 = 4k^2 + 4k+1` vienmēr dod
+    atlikumu :math:`1`, dalot ar :math:`1`.
 
-    Tādēļ abu šo kvadrātu summa vienmēr dos atlikumu :math:`1`, dalot ar :math:`4`; 
+    Tādēļ abu šo kvadrātu summa vienmēr dos atlikumu :math:`1`, dalot ar :math:`4`;
     atlikums nevar būt vienāds ar :math:`3`.
 
   :math:`\square`
@@ -167,6 +167,9 @@ Iesildīšanās
 .. ...............
 .. Rūtiņu režģī parādās :math:`\sqrt{p}` garumā kaut kāds nogrieznis.
 .. Kāda varētu būt skaitļa :math:`p` vērtība?
+
+.. Sareizināti 5 skaitļi formā (4n+1) un 2 skaitļi formā (4n+3).
+.. atrast viņu reizinājuma atlikumu, dalot ar 4.
 
 
 
@@ -190,31 +193,31 @@ Iesildīšanās
 
 .. only:: Internal
 
-  **Atbilde:** 
+  **Atbilde:**
 
-    **(A)** 
-      :math:`|z_1| = |1+i| = \sqrt{1^2 + 1^2} = \sqrt{2}`. Šo skaitli var izteikt kā divu citu komplekso 
-      skaitļu moduļu reizinājumu tikai tad, ja viens no moduļiem arī ir :math:`\sqrt{2}`, bet otrs ir 
+    **(A)**
+      :math:`|z_1| = |1+i| = \sqrt{1^2 + 1^2} = \sqrt{2}`. Šo skaitli var izteikt kā divu citu komplekso
+      skaitļu moduļu reizinājumu tikai tad, ja viens no moduļiem arī ir :math:`\sqrt{2}`, bet otrs ir
       :math:`1`. (Ievērosim, ka ikviena Gausa skaitļa modulis ir kāda vesela skaitļa kvadrātsakne.)
       Tā kā viens no reizinātājiem ir ar moduli :math:`1`, tad šis reizinātājs noteikti ir :math:`1`, :math:`-1`,
-      :math:`i` vai :math:`-i`. Tādēļ :math:`z_1 = 1+i` ir Gausa pirmskaitlis.  
+      :math:`i` vai :math:`-i`. Tādēļ :math:`z_1 = 1+i` ir Gausa pirmskaitlis.
 
     **(B)**
-      :math:`|z_2| = |2+i| = \sqrt{2^2 + 1^2} = \sqrt{5}`. Arī šo skaitli var izteikt kā divu veselu skaitļu 
-      kvadrātsakņu reizinājumu tikai tad, ja viena no kvadrātsaknēm ir vienāda ar :math:`1`. Līdzīgi kā 
-      iepriekš iegūstam, ka :math:`z_2 = 2+i` ir Gausa pirmskaitlis. 
+      :math:`|z_2| = |2+i| = \sqrt{2^2 + 1^2} = \sqrt{5}`. Arī šo skaitli var izteikt kā divu veselu skaitļu
+      kvadrātsakņu reizinājumu tikai tad, ja viena no kvadrātsaknēm ir vienāda ar :math:`1`. Līdzīgi kā
+      iepriekš iegūstam, ka :math:`z_2 = 2+i` ir Gausa pirmskaitlis.
 
-    **(C)** 
-      :math:`z_3 = 3` arī ir Gausa pirmskaitlis. Jo :math:`|z_3| = |3+0i| = \sqrt{3^2 + 0^2} = 3`. 
-      Šo skaitli var izteikt kā divu veselu skaitļu kvadrātsakņu reizinājumu vai nu kā :math:`\sqrt{3} \cdot \sqrt{1}`, 
-      vai nu kā :math:`\sqrt{3} \cdot \sqrt{3}`. 
+    **(C)**
+      :math:`z_3 = 3` arī ir Gausa pirmskaitlis. Jo :math:`|z_3| = |3+0i| = \sqrt{3^2 + 0^2} = 3`.
+      Šo skaitli var izteikt kā divu veselu skaitļu kvadrātsakņu reizinājumu vai nu kā :math:`\sqrt{3} \cdot \sqrt{1}`,
+      vai nu kā :math:`\sqrt{3} \cdot \sqrt{3}`.
       Pirmajā gadījumā viens no reizinātājiem ir :math:`1`, :math:`-1`,
-      :math:`i` vai :math:`-i`. Bet otrais gadījums nav iespējams, jo :math:`a^2 + b^2 \neq 3` nekādiem 
-      veseliem skaitļiem :math:`a,b` (izriet no iepriekšējā uzdevuma, jo skaitlis :math:`3` dod atlikumu :math:`3`, 
+      :math:`i` vai :math:`-i`. Bet otrais gadījums nav iespējams, jo :math:`a^2 + b^2 \neq 3` nekādiem
+      veseliem skaitļiem :math:`a,b` (izriet no iepriekšējā uzdevuma, jo skaitlis :math:`3` dod atlikumu :math:`3`,
       dalot ar :math:`4`.)
 
-    **(D)** 
-      :math:`z_4 = 5` nav Gausa pirmskaitlis, jo to iespējams izteikt kā reizinājumu: :math:`5 = (2+i)(2-i) = 4 - i^2 = 4 -(-1)`. 
+    **(D)**
+      :math:`z_4 = 5` nav Gausa pirmskaitlis, jo to iespējams izteikt kā reizinājumu: :math:`5 = (2+i)(2-i) = 4 - i^2 = 4 -(-1)`.
 
 
   :math:`\square`
@@ -240,22 +243,22 @@ Iesildīšanās
 
 .. only:: Internal
 
-  **Atbilde:** 
+  **Atbilde:**
 
-    Par minēto algebrisko identitāšu pareizību var pārliecināties, atverot iekavas abās izteiksmēs. 
-    Starp citu, pirmajai no identitātēm ir tiešs sakars ar ģeometriskas progresijas summas formulu: 
+    Par minēto algebrisko identitāšu pareizību var pārliecināties, atverot iekavas abās izteiksmēs.
+    Starp citu, pirmajai no identitātēm ir tiešs sakars ar ģeometriskas progresijas summas formulu:
 
-    .. math:: 
+    .. math::
 
       1 + q + q^2 + \ldots + q^{n-1} = \frac{q^n - 1}{q-1}
 
-    jeb 
+    jeb
 
-    .. math:: 
+    .. math::
 
       \left( q-1 \right) \left( 1 + q + q^2 + \ldots + q^{n-1}  \right) = q^n - 1
 
-    Tā ir tā pati formula, ja ievieto :math:`a = q` un :math:`b = 1`.  
+    Tā ir tā pati formula, ja ievieto :math:`a = q` un :math:`b = 1`.
 
   :math:`\square`
 
@@ -266,16 +269,16 @@ Iesildīšanās
 
 .. only:: Internal
 
-  **Atbilde:** 
+  **Atbilde:**
 
-    Šis ir svarīgs teorijas rezultāts -- tas ļauj efektīvi izteikt mazāko kopīgo dalāmo tad, ja 
-    zināms lielākais kopīgais dalītājs (piemēram, atrasts ar Eiklīda algoritmu). Vai arī otrādi -- 
-    lielāko kopīgo dalītāju :math:`\gcd(m,n)` var izteikt, ja zināms 
-    mazākais kopīgais dalāmais :math:`\operatorname{lcm}(m,n)`. 
+    Šis ir svarīgs teorijas rezultāts -- tas ļauj efektīvi izteikt mazāko kopīgo dalāmo tad, ja
+    zināms lielākais kopīgais dalītājs (piemēram, atrasts ar Eiklīda algoritmu). Vai arī otrādi --
+    lielāko kopīgo dalītāju :math:`\gcd(m,n)` var izteikt, ja zināms
+    mazākais kopīgais dalāmais :math:`\operatorname{lcm}(m,n)`.
     Sk. `<https://math.stackexchange.com/questions/470807/prove-that-gcdm-n-times-mboxlcmm-n-m-times-n>`_.
 
-    Šis pats pierādījums (ar ilustrāciju skaitļiem :math:`m = 300` un :math:`n = 630`) dots 
-    mūsu mācību grāmatā, 16.lpp. 
+    Šis pats pierādījums (ar ilustrāciju skaitļiem :math:`m = 300` un :math:`n = 630`) dots
+    mūsu mācību grāmatā, 16.lpp.
     Sk. `<http://www.dudajevagatve.lv/training/numtheory/ntjun01-divisibility.pdf>`_.
 
 
@@ -296,19 +299,19 @@ Klases uzdevumi
 
 .. only:: Internal
 
-  **Atbilde:** 
+  **Atbilde:**
 
-    Ieslēgti kļūst tie slēdži, kurus pārslēdz nepāra skaitu reižu (t.i. visi tie slēdžu 
-    numuri, kuriem ir nepāra skaits pozitīvu dalītāju). 
-    Jebkura naturāla skaitļa :math:`n` dalītāji ir sagrupējami pa pāriem 
-    (dalītājam :math:`a` atbilst otrs dalītājs :math:`b = n/a`, kuram :math:`a \cdot b = n`). 
-  
+    Ieslēgti kļūst tie slēdži, kurus pārslēdz nepāra skaitu reižu (t.i. visi tie slēdžu
+    numuri, kuriem ir nepāra skaits pozitīvu dalītāju).
+    Jebkura naturāla skaitļa :math:`n` dalītāji ir sagrupējami pa pāriem
+    (dalītājam :math:`a` atbilst otrs dalītājs :math:`b = n/a`, kuram :math:`a \cdot b = n`).
+
     Vienīgie skaitļi, kuriem ir nepāra  skaits dalītāju ir tie, kuriem kāds no dalītājiem :math:`d`
-    nonāk pārī pats ar sevi, t.i. :math:`d = n/d` jeb :math:`d^2 = n`. 
-    Skaitļi ar nepāra skaitu dalītāju ir tieši visi pilnie kvadrāti. 
+    nonāk pārī pats ar sevi, t.i. :math:`d = n/d` jeb :math:`d^2 = n`.
+    Skaitļi ar nepāra skaitu dalītāju ir tieši visi pilnie kvadrāti.
 
-    Intervālā :math:`[1;36]` ir pavisam seši pilni kvadrāti: :math:`\{ 1,4,9,16,25,36 \}`. 
-    Tie arī ir tie slēdži, kuri pēc visu soļu pabeigšanas paliek ieslēgti. 
+    Intervālā :math:`[1;36]` ir pavisam seši pilni kvadrāti: :math:`\{ 1,4,9,16,25,36 \}`.
+    Tie arī ir tie slēdži, kuri pēc visu soļu pabeigšanas paliek ieslēgti.
 
   :math:`\square`
 
@@ -326,39 +329,39 @@ Klases uzdevumi
 
 .. only:: Internal
 
-  **Atbilde:** 
+  **Atbilde:**
 
-    Sadalām skaitli pirmreizinātājos: 
+    Sadalām skaitli pirmreizinātājos:
 
-    .. math:: 
-  
-      420 = 2^2 \cdot 3^1 \cdot 5^1 \cdot 7^1. 
+    .. math::
+
+      420 = 2^2 \cdot 3^1 \cdot 5^1 \cdot 7^1.
 
   **(A)**
-    Dalītāju skaits šim skaitlim ir :math:`\sigma_0(420) = (2+1)(1+1)(1+1)(1+1) = 24`. 
-    To var iegūt kombinatoriski (katrs skaitļa :math:`420` dalītājs :math:`d` satur tos pašus pirmreizinātājus: 
-    :math:`d = 2^{k_1} 3^{k_2} 5^{k_3} 7^{k_4}`, kur :math:`k_1,k_2,k_3,k_4` nevar pārsniegt 
-    attiecīgo pirmskaitļu pakāpes skaitlī :math:`420`. Tātad :math:`k_1` var izvēlēties trīs veidos (0,1,2), 
+    Dalītāju skaits šim skaitlim ir :math:`\sigma_0(420) = (2+1)(1+1)(1+1)(1+1) = 24`.
+    To var iegūt kombinatoriski (katrs skaitļa :math:`420` dalītājs :math:`d` satur tos pašus pirmreizinātājus:
+    :math:`d = 2^{k_1} 3^{k_2} 5^{k_3} 7^{k_4}`, kur :math:`k_1,k_2,k_3,k_4` nevar pārsniegt
+    attiecīgo pirmskaitļu pakāpes skaitlī :math:`420`. Tātad :math:`k_1` var izvēlēties trīs veidos (0,1,2),
     bet visus pārējos kāpinātājus :math:`k_i` var izvēlēties tikai divos veidos.)
 
   **(B)**
-    Dalītāju summa šim skaitlim ir 
+    Dalītāju summa šim skaitlim ir
 
-    .. math:: 
+    .. math::
 
       \sigma_1(420) = \left(1 + 2 + 2^2 \right) \cdot \left(1 + 3 \right) \cdot \left( 1 + 5 \right) \cdot \left( 1+7 \right) = 1344.
 
-    Atverot iekavas šajā izteiksmē, iegūsim :math:`24` saskaitāmos -- katrs saskaitāmais atbilst citam skaitļa 
-    :math:`420` dalītājam. 
+    Atverot iekavas šajā izteiksmē, iegūsim :math:`24` saskaitāmos -- katrs saskaitāmais atbilst citam skaitļa
+    :math:`420` dalītājam.
 
   **(C)**
     Dalītāju kvadrātu summa šim skaitlim ir
 
-    .. math:: 
+    .. math::
 
       \sigma_2(420) = \left(1 + 2^2 + 2^4 \right) \cdot \left(1 + 3^2 \right) \cdot \left( 1 + 5^2 \right) \cdot \left( 1+7^2 \right) = 273000.
 
-    Arī par šo var pārliecināties, atverot iekavas. 
+    Arī par šo var pārliecināties, atverot iekavas.
 
   :math:`\square`
 
@@ -507,6 +510,13 @@ Klases uzdevumi
 
 .. Tests: Piemērs ar kubiska polinoma dalīšanu
 .. Kaut kāds LKD piemērs ar Eiklīda algoritmu.
+.. Tests: Dalām x^4 + 4 ar iekaviņu (x^2 - 2x + 2), lai atrastu otru
+.. reizinātāju Sofijas Žermēnas identitātē.
+
+
+.. Pamatojums, ka x^2 + x + 1 noteiktos gadījumos ir savstarpēji pirmskaitļi dažādiem x?
+.. Pamatojums, ka x^2 + x + 41 nekad nedalās ar ...
+
 
 **6.uzdevums (BW.TST.2016.16):**
     Kāda ir izteiksmes
@@ -521,8 +531,8 @@ Klases uzdevumi
 
 .. only:: Internal
 
-  **Atbilde:** 
-  
+  **Atbilde:**
+
   Lietojam Eiklīda algoritmu polinomiem no mainīgā :math:`n`:
 
   .. math::
@@ -580,7 +590,7 @@ Mājasdarba uzdevumi
 ---------------------
 
 **Iesniegšanas termiņš:**
-  2022.g. 5.novembris.
+  2022.g. 12.novembris.
 
 **Kam iesūtīt:**
   ``kalvis.apsitis``, domēns ``gmail.com``
