@@ -1,0 +1,212 @@
+1. Skaitļu teorijas lapa, 2022-11-12
+========================================
+
+Teoriju šai sadaļai sk. `<http://www.dudajevagatve.lv/training/numtheory/ntjun02-modular-arithmetic.pdf>`_.
+
+Izmantojam apzīmējumu :math:`a \equiv b \pmod {m}` (skaitļi :math:`a,b` ir kongruenti pēc
+moduļa :math:`m`), ja skaitļi :math:`a,b` dod vienādus atlikumus,
+dalot ar :math:`m` (jeb starpība :math:`a - b` dalās ar :math:`m`)
+
+Iesildīšanās
+--------------
+
+.. ...............
+.. TODO for tests.
+.. ...............
+.. Daži aprēķini - tsk. ar pakāpēm
+.. Kongruenču vienādojumi
+.. Pretrunas modulis
+
+.. Eiklīda lemma
+.. Bezū identitāte.
+
+**1.uzdevums:**
+  Dots naturāls skaitlis :math:`m`. Atrisināt kongruenču vienādojumu:
+
+  .. math::
+
+    x^2 \equiv 1 \pmod {m}.
+
+
+**2.uzdevums:**
+  Izvēlēties jebkuru pirmskaitli :math:`p < 41` un
+  pamatot, ka :math:`n^2 + n + 41` noteikti nedalās ar :math:`p`
+  nekādam naturālam :math:`n`.
+
+
+**3.uzdevums:**
+  Skaitli :math:`1234567891011\ldots2022` veido, izrakstot
+  pēc kārtas visu naturālo skaitļu decimālpierakstus no :math:`1`
+  līdz :math:`2022`. Atrast šī skaitļa atlikumu, dalot ar :math:`9`.
+
+**4.uzdevums:**
+  Kādiem naturāliem :math:`a` un :math:`b` vienādojumam
+  :math:`ax \equiv 1 \pmod {b}` eksistē atrisinājums?
+  (Šādu atrisinājumu :math:`x` sauc par skaitļa :math:`a` *inverso* pēc
+  moduļa :math:`b` un apzīmē :math:`x = a^{-1}`.)
+
+  Ieteikums: Izmantot Bezū identitāti (*Bézout's identity*).
+
+
+**5.uzdevums:**
+  Cikliski pārvietojot ciparus bezgalīgas decimāldaļas :math:`1/7 = 0.(142857)`
+  periodā, var iegūt dažādas citas racionālas daļas -- piemēram,
+  :math:`3/7 = 0.(428571)`, :math:`2/7 = 0.(285714)` utt.
+
+  Atrast līdzīgu piecu dažādu ciparu virknīti :math:`0.(abcde)`, kurā cikliski pārvietojot
+  ciparus var iegūt racionālas daļas :math:`\frac{k_1}{n}, \frac{k_2}{n}, \frac{k_3}{n}, \frac{k_4}{n}, \frac{k_5}{n}`,
+  kurām visām ir viens un tas pats saucējs :math:`n<100`.
+
+**6.uzdevums:**
+  Dots kalkulators, kurš māk reizināt divus naturālus skaitļus :math:`a,b < 97`
+  un atrod šī reizinājuma atlikumu :math:`r \in \{ 0,\ldots, 96 \}`, dalot :math:`ab` ar :math:`m = 97`.
+  Cik reizināšanas darbības uz šī kalkulatora noteikti ir pietiekamas, lai atrastu atlikumu
+
+  .. math::
+
+    r \equiv x^y \pmod {97},\;\; \mbox{kur $x,y<97$ ir naturāli skaitļi.}
+
+  Atbildei jābūt iespējami mazai, bet nav jāpamato, ka tā ir optimāla.
+  Saskaitīt nepieciešamās reizināšanas, ja jāatrod atlikums, dalot ar :math:`97`
+  skaitlim :math:`79^{73}`.
+
+
+
+
+
+Klases uzdevumi
+-------------------
+
+**1.uzdevums**
+  Pierādīt, ka sekojošiem vienādojumiem nav atrisinājumu veselos skaitļos:
+
+  **(A)**
+    :math:`y^2 - 5x^2 = 6`.
+
+  **(B)**
+    :math:`15x^2 - 7y^2 = 9`.
+
+  **(C)**
+    :math:`x^2 - 2y^2 + 8z = 19`.
+
+  **(D)**
+    :math:`x^3 + y^3 + z^3 = 1969^2`.
+
+**2.uzdevums:**
+  Kuriem pirmskaitļiem :math:`p` var atrisināt kongruenču vienādojumu
+  :math:`x^2 \equiv -1 \pmod {p}`  veselos skaitļos?
+
+
+**3.uzdevums:**
+  Pirmskaitlis :math:`p` ir dalītājs izteiksmei
+  :math:`M = (N!)^2 + 1`.
+  Pamatot, ka izpildās vienādība:
+
+  .. math::
+
+    1 = (-1)^{\frac{p-1}{2}}.
+
+  Secināt no šejienes, ka eksistē bezgalīgi daudzi pirmskaitļi
+  :math:`p \equiv 1 \pmod {4}`.
+
+
+**4.uzdevums:**
+  **(A)**
+    Fibonači skaitļu virkni definē ar sakarībām: :math:`F_0 =0`,
+    :math:`F_1 = 1` un :math:`F_n = F_{n-1} + F_{n-2}` (ja :math:`n \geq 2`).
+    Pamatot, ka ikvienam naturālam :math:`m` var atrast bezgalīgi daudzus tādus :math:`n`, ka
+    :math:`F_n` dalās ar :math:`m`.
+
+  **(B)**
+    Atrast visus tos :math:`n`, kam :math:`F_n \equiv 0 \pmod {100}`.
+
+
+
+**5.Uzdevums (BW.2018.18):**
+  Dots tāds naturāls skaitlis :math:`n \geq 3`, ka :math:`4n+1` ir pirmskaitlis.
+  Pierādiet, ka :math:`n^{2n}-1` dalās ar :math:`4n+1`.
+
+
+**6.Uzdevums (BW.2016.1):**
+  Atrast visus pirmskaitļu pārus :math:`(p,q)`, kuriem
+
+  .. math::
+
+    p^3 - q^5 = (p+q)^2.
+
+
+
+Mājasdarba uzdevumi
+---------------------
+
+**Iesniegšanas termiņš:**
+  2022.g. 10.decembris.
+
+**Kam iesūtīt:**
+  ``kalvis.apsitis``, domēns ``gmail.com``
+
+
+.. Yu Hong-Bing, p.49
+
+**1.uzdevums:**
+  Regulāra :math:`n`-stūra virsotnes savienotas ar slēgtu lauztu līniju, kurai ir :math:`n` posmi.
+
+  **(A)**
+    Pierādīt, ka jebkuram pāra skaitlim :math:`n \geq 4`, lauztajai līnijai ir vismaz divi
+    paralēli posmi.
+
+  **(B)**
+    Pierādīt, ka jebkuram nepāra skaitlim :math:`n > 3` nav iespējams, ka lauztajai līnijai
+    ir tieši divi paralēli posmi (t.i. divi posmi ir paralēli, bet nekādi citi nav šiem diviem paralēli,
+    vai arī paralēli savā starpā).
+
+
+
+.. Yu Hong-Bing, p.52
+
+**2.uzdevums:**
+  Dots pirmskaitlis :math:`p` un naturāli skaitļi :math:`a \geq 2`, :math:`m \geq 1`.
+  Zināms, ka :math:`a^m \equiv 1 \pmod {p}` un :math:`a^{p-1} \equiv 1 \pmod {p^2}`.
+
+  **(A)**
+    Pierādīt, ka :math:`a^m \equiv 1 \pmod {p^2}`.
+
+  **(B)**
+    Atrast kādu pirmskaitli :math:`p>10` un naturālus skaitļus
+    :math:`a,m`, kam minētie apgalvojumi izpildās.
+
+
+**3.uzdevums:**
+  Vai var atrast piecus tādus pirmskaitļus :math:`p, q, r, s, t`, ka
+  :math:`p^3 + q^3 + r^3 + s^3 = t^3`?
+
+
+**4.uzdevums:**
+  Dots nepāra vesels skaitlis :math:`a`. Pierādīt, ka :math:`{\displaystyle a^{2^n} + 2^{2^n}}`
+  un :math:`{\displaystyle a^{2^m} + 2^{2^m}}` ir savstarpēji pirmskaitļi visiem naturāliem
+  :math:`n` un `m`, kam :math:`n \neq m`.
+
+  **Piezīme:** Pieraksts :math:`a^{b^c}` nozīmē :math:`a^{(b^c)}` nevis :math:`(a^b)^c = a^{b \cdot c}`,
+  t.i.\ darbību locekļus "daudzstāvu" pakāpēs
+  grupē no labās puses uz kreiso, nevis no kreisās uz labo.
+
+
+**5.uzdevums:**
+  Dots pirmskaitlis :math:`p \geq 5`.
+  Atrast, cik dažādi atlikumi pēc moduļa :math:`p` var rasties, ja reizina trīs pēc kārtas
+  sekojošus naturālus skaitļus.
+
+
+**6.uzdevums:**
+  Atrast visus naturālos skaitļus :math:`n` are sekojošu īpašību:
+  Dotajam :math:`n` var izveidot divas netukšas galīgas veselu skaitļu kopas :math:`A` un :math:`B`, kuras
+  jebkuram veselam skaitlim :math:`m` apmierina tieši vienu no sekojošiem 3 apgalvojumiem:
+
+  **(A)**
+    Eksistē :math:`a \in A`, kuram :math:`m \equiv a \pmod n`,
+
+  **(B)**
+    Eksistē :math:`b \in B`, kuram :math:`m \equiv b \pmod n`,
+
+  **(C)**
+    Eksistē :math:`a \in A` un :math:`b \in B`, kuriem :math:`m \equiv a + b \pmod n`.
