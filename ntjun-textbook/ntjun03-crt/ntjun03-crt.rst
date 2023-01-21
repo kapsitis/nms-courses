@@ -546,7 +546,12 @@ Sacensību uzdevumi
     skaitļu virknei atradīsies skaitlis, kas ir savstarpējs pirmskaitlis 
     ar visiem citiem virknes locekļiem. 
 
-
+**Ieteikumi:**
+  Otrajā apgalvojumā ar mēģinājumu/kļūdu metodi atrod, ka atbilde ir :math:`17`: 
+  Var atrast :math:`17` skaitļu intervālu :math:`[n;n+16]`; 
+  kuru var pārklāt ar aritmētiskām progresijām ar diferencēm 
+  :math:`d = 2,3,5,7,11,13` (un no katras progresijas virknē ir vismaz 
+  divi locekļi).
   
   
 **7.Uzdevums:**
@@ -579,22 +584,7 @@ Sacensību uzdevumi
     loceklis ir divu iepriekšējo locekļu summa.)
 
 
-**9.Uzdevums (BW.2016.2)**
-  Pierādīt vai apgāzt sekojošus apgalvojumus:  
+   
 
-  1. Jebkuram :math:`k \geq 2`, un jebkuriem :math:`k` pēc kārtas sekojošiem naturāliem 
-     skaitļiem atradīsies skaitlis, kurš nedalās ne ar vienu pirmskaitli, kas mazāks par :math:`k`.   
 
-  2. Jebkuram :math:`k \geq 2`, un jebkurai :math:`k` 
-     pēc kārtas sekojošu naturālu skaitļu virknei atradīsies skaitlis, 
-     kas ir savstarpējs pirmskaitlis ar visiem citiem virknes locekļiem. 
-     
-     
-
-**Ieteikumi:**
-  Otrajā apgalvojumā ar mēģinājumu/kļūdu metodi atrod, ka atbilde ir :math:`17`: 
-  Var atrast :math:`17` skaitļu intervālu :math:`[n;n+16]`; 
-  kuru var pārklāt ar aritmētiskām progresijām ar diferencēm 
-  :math:`d = 2,3,5,7,11,13` (un no katras progresijas virknē ir vismaz 
-  divi locekļi).
      

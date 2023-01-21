@@ -1,0 +1,217 @@
+3. Skaitļu teorijas lapa, 2022-01-23
+========================================
+
+.. Teoriju šai sadaļai sk. `<http://www.dudajevagatve.lv/training/numtheory/ntjun02-modular-arithmetic.pdf>`_.
+
+.. Izmantojam apzīmējumu :math:`a \equiv b \pmod {m}` (skaitļi :math:`a,b` ir kongruenti pēc
+.. moduļa :math:`m`), ja skaitļi :math:`a,b` dod vienādus atlikumus,
+.. dalot ar :math:`m` (jeb starpība :math:`a - b` dalās ar :math:`m`)
+
+Iesildīšanās
+--------------
+
+.. ...............
+.. TODO for tests.
+.. ...............
+
+**1.uzdevums:** 
+  Ar :math:`\gcd(\ldots)` apzīmējam skaitļu kopīgo dalītāju. 
+  Vai var atrast tādus naturālus :math:`a,b,c`, kuri
+  ir savstarpēji pirmskaitļi: :math:`\gcd(a,b,c) = 1`, bet nekādi divi 
+  no tiem nav *pa pāriem savstarpēji pirmskaitļi*, 
+  t.i. :math:`\gcd(a,b) > 1`, :math:`\gcd(b,c) > 1` un :math:`\gcd(a,c) > 1`.
+   
+   
+**2.uzdevums:**
+  Atrast kādu veselu skaitli :math:`x`, kas apmierina šādas sakarības: 
+   
+  .. math::
+   
+    \left\{ \begin{array}{l} 
+    x \equiv 5 \pmod 6,\\
+    x \equiv 3 \pmod 8.\\
+    \end{array} \right.
+     
+    
+**3.uzdevums:**
+  Naudas lādē glabājas monētas. Ja tās vienādi sadala sešiem draugiem, 
+  paliek pāri četras monētas. Ja tās vienādi sadala pieciem draugiem, 
+  paliek pāri trīs monētas. 
+   
+  Pieņemot, ka naudas lādē ir mazākais monētu skaits, kas atbilst
+  šiem nosacījumiem, atrast, cik monētu paliks pāri, ja tās vienādi 
+  sadalīs septiņiem draugiem.
+
+
+**4.uzdevums:**
+
+  Aplūkojam visas bezgalīgās naturālu skaitļu virknes
+
+  .. math::
+
+    f(1),f(2),f(3),\ldots.
+
+  Formāli runājot, tās ir funkcijas no naturāliem skaitļiem uz naturāliem skaitļiem:
+  Katra virkne ir funkcija :math:`f\,:\,\mathbb{N}\rightarrow\mathbb{N}$, where $\mathbb{N}=\{1,2,3,\ldots\}`.
+  Atrast, kvantoru izteiksmēm atbilstošos vārdiskos aprakstus.
+  (*Tulkošana no predikātu un kvantoru valodas uz cilvēku valodu.*)
+
+
+  **(A)**
+    :math:`\exists a \in \mathbb{N}\ \exists b \in \mathbb{N}\ \forall c \in \mathbb{N}\ (c \geq a\ \rightarrow\ f(c+b)=f(c))`
+
+  **(B)**
+    :math:`\exists a \in \mathbb{N}\ \exists b \in \mathbb{N}\ \forall c \in \mathbb{N}\ \left( f(c+b)=f(c)\ \rightarrow\ c \geq a \right)`
+
+  **(C)**
+    :math:`\forall a \in \mathbb{N}\ \exists b \in \mathbb{N}\ \forall c \in \mathbb{N}\ (c \geq a\ \rightarrow\ f(c+b)=f(c))`.
+
+  **(D)**
+    :math:`\forall c \in \mathbb{N}\ \forall a \in \mathbb{N}\ \exists b \in \mathbb{N}\ (c > a\ \rightarrow f(c+b) = f(c))`.
+
+  **(E)**
+    :math:`\exists a \in \mathbb{N}\ \forall b \in \mathbb{N}\ \forall c \in \mathbb{N}\ \left( b \leq a \rightarrow f(c+b) = f(c) \right)`.
+
+  **(F)**
+    :math:`\forall a \in \mathbb{N}\ \forall c \in \mathbb{N}\ \exists b \in \mathbb{N}\ (c \geq a\ \rightarrow\ f(c+b)=f(c))`.
+
+  **(G)**
+    :math:`{\displaystyle \forall n \in \mathbb{N}\ \exists i \in \mathbb{N}\ \exists j \in \mathbb{N} \Big( a_i = n \wedge a_j = n \wedge i \neq j \bigwedge \forall k \in \mathbb{N} \big(a_k = n \rightarrow (k = i \vee k = j \big) \Big). }`
+
+  **(H)**
+      :math:`{\displaystyle \forall n \in \mathbb{N}\ \forall i \in \mathbb{N}\ \Big( a_i = n \rightarrow \forall M \in \mathbb{N}\ \exists k \in \mathbb{N}\ \big(k > M \wedge a_k = n \big) \Big).}`
+
+  **(I)**
+      :math:`\exists b_0 \in \mathbb{Z}\ \exists d \in \mathbb{N}\ \exists M \in \mathbb{N}\ \forall k \in \mathbb{N} \big( k > M \rightarrow a_k = b_0 + k \cdot d \big).`
+
+
+  **Daži atbilžu varianti:**
+    Atbildes uz iepriekšējiem punktiem var izskatīties, piemēram, šādi (dažreiz virkņu apraksti
+    nav doti; tad tie jāformulē no jauna).
+
+    1. Virknes, kurās katrs naturāls skaitlis ir sastopams vismaz divas reizes.
+    2. Virknes, kurās katrs naturāls skaitlis ir sastopams bezgalīgi daudzas reizes.
+    3. Virknes, kurās katrs naturāls skaitlis ir sastopams tieši divas reizes.
+    4. Virknes, kuras vai nu vispār nesatur attiecīgo naturālo skaitli kā locekli, vai arī
+       satur to bezgalīgi daudzas reizes.
+    5. Virknes, kuras sakrīt ar kādu aritmētisku progresiju (izņemot, varbūt, galīgu skaitu locekļu).
+    6. Virknes, kuras, sākot ar kādu vietu ir periodiskas.
+    7. Visas naturālo skaitļu virknes
+    8. Virknes, kuras ir konstantas.
+    9. Virknes, kuras ir konstantas (izņemot, varbūt, galīgu skaitu locekļu).
+    10. Virknes, kuras ir injektīvas (katrs naturāls skaitlis tajās sastopams ne vairāk kā vienreiz jeb
+        nekādas divas vērtības tajās neatkārtojas).
+    11. Virknes, kuras ir sirjektīvas (katrs naturāls skaitlis tajās sastopams vismaz vienreiz).
+    12. Virknes, kuras ir bijektīvas (katrs naturāls skaitlis tajās sastopams tieši vienreiz).
+    13. Tukša kopa (attiecīgajai definīcijai neatbilst neviena virkne).
+    14. Virknes, kuras ir stingri augošas (katrs nākamais loceklis lielāks par iepriekšējo).
+    15. Virknes, kuras ir neaugošas (katrs nākamais loceklis nepaŗsniedz iepriekšējo).
+    16. Virknes, kurām ir robeža, ja :math:`n` tiecas uz bezgalību.
+    17. Stingri augošas virknes, kurās bezgalīgi bieži var atrast blakusesošus locekļus,
+        kuru starpība ir :math:`2` (kā *dvīņu pirmskaitļu* hipotēzē).
+    18. Virknes, kuras ir neperiodiskas (neeksistē tāds periods, ka virkne no kādas vietas ir periodiska
+        ar šo periodu).
+
+
+
+Klases uzdevumi
+-------------------
+
+**1.Uzdevums (LT.VUMIF.2016.10.3):**
+
+  Atrodiet mazāko naturālo skaitli :math:`n`, kuram skaitļi 
+  :math:`\sqrt[5]{5n}`, :math:`\sqrt[6]{6n}`, :math:`\sqrt[7]{7n}`
+  ir naturāli. 
+
+
+**2.Uzdevums**
+  Pierādīt, ka eksistē :math:`99` pēc kārtas sekojoši naturāli skaitļi
+  :math:`a_1, a_2, \ldots, a_{99}`, kuriem :math:`a_i` dalās ar kāda naturāla
+  skaitļa kubu, kas lielāks par :math:`1`. 
+
+**3.Jautājums:**
+  Kāds ir atlikums, ja skaitli :math:`{\displaystyle 12^{34^{56^{78}}}}`
+  dala ar :math:`90`?
+  
+
+**4.uzdevums:** 
+  Let :math:`n` be a positive integer. Determine, in terms of :math:`n`, the number of
+  :math:`x \in \{1, 2, \ldots , n\}` for which :math:`x^2 \equiv x \pmod {n}`.
+
+
+**5.Uzdevums (USAMO.2008.1):**
+  Pierādīt, ka jebkuram naturālam :math:`n`, eksistē :math:`n+1` 
+  savstarpēji pirmskaitļi :math:`k_0,k_1,\ldots,k_n`, kas visi lielāki par :math:`1`, kuriem 
+  :math:`k_0 \cdot k_1 \cdot \ldots \cdot k_n - 1`
+  ir divu pēc kārtas sekojošu naturālu skaitļu reizinājums.
+
+
+**6.Uzdevums (BW.2016.2):**
+  Pierādīt vai apgāzt sekojošus apgalvojumus:  
+  
+  **(a)** 
+    Jebkuram :math:`k \geq 2`, un jebkuriem :math:`k` pēc kārtas sekojošiem naturāliem 
+    skaitļiem atradīsies skaitlis, kurš nedalās ne ar vienu pirmskaitli, 
+    kas mazāks par :math:`k`.
+
+  **(b)** 
+    Jebkuram :math:`k \geq 2`, un jebkurai :math:`k` pēc kārtas sekojošu naturālu 
+    skaitļu virknei atradīsies skaitlis, kas ir savstarpējs pirmskaitlis 
+    ar visiem citiem virknes locekļiem. 
+
+
+  **Vingrinājumi/Ieteikumi:**
+    
+    1. Pierakstīt abus izteikumus ar kvantoriem. 
+    2. Vai pretpiemērs gadījumam **(a)** ļautu iegūt pretpiemēru gadījumam **(b)** (vai otrādi)?
+       Vai var uzskatāmi pamatot, ka **(a)** :math:`\Rightarrow` **(b)** vai 
+       arī **(b)** :math:`\Rightarrow` **(a)**. 
+    3. Kāds varētu izskatīties pretpiemērs **(b)** gadījumā, ja :math:`k = 7`? Gadījumā, ja :math:`k = 17`?
+       Vai tos var uzzīmēt?
+
+
+
+
+Mājasdarba uzdevumi
+---------------------
+
+**Iesniegšanas termiņš:**
+  2023.g. 11.februāris.
+
+**Kam iesūtīt:**
+  ``kalvis.apsitis``, domēns ``gmail.com``
+
+
+
+**1.uzdevums (US.MPGO.2010.2):**
+  Pierādīt, ka jebkuram naturālam :math:`n`, eksistē veseli skaitļi :math:`a` un :math:`b`, 
+  kuriem :math:`4a^2 + 9b^2 - 1` dalās ar :math:`n`. 
+
+
+**2.uzdevums:**
+  Atrast pēdējos divus nenulles ciparus skaitļa :math:`2023!` decimālpierakstā.
+
+
+.. IMO 2009/1
+
+**3.uzdevums:**
+  Ar :math:`n` apzīmēts naturāls skaitlis un :math:`a_1,a_2,a_3,\ldots,a_k` (kur :math:`k \geq 2`)
+  ir dažādi naturāli skaitļi no kopas :math:`\{ 1,2,\ldots,n\}` ar šādu īpašību: :math:`n` dala visus
+  :math:`a_i\left(a_{i+1} - 1\right)`, kur :math:`i = 1,2,\ldots,k-1`. Pierādīt, ka :math:`n`
+  nedala skaitli :math:`a_k (a_1 - 1)`. 
+  
+
+.. APMO 2009/4
+
+**4.uzdevums:** 
+  Pierādīt, ka jebkuram naturālam :math:`k` eksistē aritmētiska progresija 
+  
+  .. math:: 
+  
+    \frac{a_1}{b_1},\;\frac{a_2}{b_2},\;\ldots,\;\frac{a_k}{b_k}
+	
+  ar racionāliem skaitļiem, kur visas daļas :math:`\frac{a_i}{b_i}` ir nesaīsināmas un 
+  visi skaitļi :math:`a_1,\ldots,a_k,b_1,\ldots,b_k` ir dažādi. 
+
+
+

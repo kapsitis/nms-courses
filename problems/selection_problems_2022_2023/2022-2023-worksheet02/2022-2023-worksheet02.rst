@@ -1,4 +1,4 @@
-1. Skaitļu teorijas lapa, 2022-11-12
+2. Skaitļu teorijas lapa, 2022-11-12
 ========================================
 
 Teoriju šai sadaļai sk. `<http://www.dudajevagatve.lv/training/numtheory/ntjun02-modular-arithmetic.pdf>`_.
