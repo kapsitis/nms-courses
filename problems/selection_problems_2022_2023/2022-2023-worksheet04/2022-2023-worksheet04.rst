@@ -1,0 +1,253 @@
+4. Skaitļu teorijas lapa, 2022-02-04
+========================================
+
+
+**Definīcija:** 
+  Ar :math:`n` apzīmējam jebkuru naturālu skaitli un ar :math:`p` -- kādu pirmskaitli. 
+  Par skaitļa :math:`n` :math:`p`-valuāciju sauc tādu skaitli :math:`k`, ka 
+  :math:`n` dalās ar :math:`p^k`, bet nedalās ar :math:`p^{k+1}`. 
+  Šo faktu pieraksta, izmantojot grieķu burtu "nī": 
+  
+  .. math:: 
+  
+    \nu_p(n) = k. 
+
+
+**Piemēri:**
+  Ja pirmskaitlis :math:`p = 3`, tad 
+  
+  .. math::
+    
+    \left\{
+    \begin{array}{l}
+    \nu_3(1) = \nu_3(2) = \nu_3(4) = \nu_3(5) = \ldots = 0\\
+    \nu_3(3) = \nu_3(6) = \nu_3(12) = \nu_3(15) = \ldots = 1\\
+    \nu_3(9) = \nu_3(18) = \nu_3(36) = \nu_3(45) = \ldots = 2\\
+    \nu_3(27) = \nu_3(54) = \ldots = 3\\
+    \nu_3{81} = \ldots = 4\\
+    \ldots
+    \end{array}
+    \right.
+
+
+
+**Teorēma (Adrien-Marie Legendre):**
+  Katram pirmskaitlim :math:`p` un katram naturālam :math:`n` :math:`p`-valuācija ir aprēķināma pēc formulas
+
+  .. math:: 
+  
+    \nu_p(n!) = \sum_{i=1}^{\infty} \left\lfloor \frac{n}{p^i} \right\rfloor, 
+    
+  kur :math:`\lfloor x \rfloor` apzīmē apakšējo veselo daļu. 
+  (Izskatās, ka šajā vienādībā ir bezgalīga summa, bet jebkurām :math:`n` un :math:`p` vērtībām 
+  šajā summā ir tikai galīgs skaits nenulles saskaitāmo.)
+
+
+
+
+**Apgalvojums:** 
+  Lielākā :math:`2` pakāpe, ar ko dalās :math:`n!` ir 
+  :math:`n - S_2(n)`, kur ar :math:`S_2(n)` apzīmēta :math:`n` ciparu summa divnieku pierakstā. 
+  
+
+
+
+**Teorēma (Ernst Kummer)**
+  Doti skaitļi :math:`n` un :math:`m`, kas apmierina nevienādības :math:`n \geq m \geq 0` un 
+  arī pirmskaitlis :math:`p`. Tad binomiālajam koeficientam :math:`C_n^m` :math:`p`-valuācija 
+  sakrīt ar pārnesumu skaitu, ja :math:`m` saskaita ar :math:`n-m` skaitīšanas sistēmā ar bāzi :math:`p`. 
+  
+Šo teorēmu var pierādīt, izsakot binomiālo koeficientu: 
+
+.. math::
+
+  C_n^m = \frac{n!}{m! (n-m)!}
+  
+un izmantojot Ležandra teorēmu. 
+
+
+
+**Teorēma (Lucas):** 
+  Visiem nenegatīviem :math:`m` un :math:`n`, un jebkuram pirmskaitlim :math:`p`, ir spēkā šāda sakarība:
+
+  .. math::
+  
+    \binom{m}{n} \equiv \prod_{i = 0}^k \binom{m_i}{n_i} \pmod {p},
+    
+  kur :math:`n = n_k p^k + n_{k-1} p^{k-1} + \ldots + n_1 p + n_0`, 
+  bet  :math:`m = m_k p^k + m_{k-1} p^{k-1} + \ldots + m_1 p + m_0`.
+
+
+
+**Lemma 1 (Lifting the Exponent, LTE):** 
+  Doti divi veseli skaitļi :math:`x` un :math:`y` un arī naturāls 
+  skaitlis :math:`n \in \mathbb{N}`. 
+  Dots arī **nepāra** pirmskaitlis :math:`p`. 
+  Izpildās šādi nosacījumi: 
+  
+  * :math:`x,y` nedalās ar :math:`p`. 
+  * :math:`x - y` dalās ar :math:`p`. 
+  
+  Tad izpildās vienādība: 
+  
+  .. math::
+   
+    \nu_p(x^n - y^n) = \nu_p(x - y) + \nu_p(n). 
+
+
+
+Iesildīšanās
+--------------
+
+.. ...............
+.. TODO for tests.
+.. ...............
+
+
+**1.uzdevums:**
+  Ar cik nullēm beidzas skaitlis :math:`2022!` (:math:`2022` faktoriāls, t.i. visu skaitļu no :math:`1` līdz :math:`2022` reizinājums)?
+  
+**2.uzdevums:**  
+  Ar kādu lielāko skaitļa :math:`2` pakāpi dalās kombinācija :math:`C^{415}_{2022}`? 
+
+**3.uzdevums:** 
+  Atrast mazāko :math:`k` vērtību, kurai :math:`11^{k} - 1` beidzas ar :math:`4` nullēm. 
+  
+**4.uzdevums:**
+  Atrast :math:`5`-valuāciju reizinājumam
+  
+  .. math::
+  
+     (2-1) \cdot (2^2-1) \cdot (2^3 - 1) \cdot \ldots \cdot (2^{1000} - 1).
+     
+**5.uzdevums:**
+  Atrast :math:`7`-valuāciju reizinājumam
+  
+  .. math::
+  
+     (2-1) \cdot (2^2-1) \cdot (2^3 - 1) \cdot \ldots \cdot (2^{1000} - 1).
+
+
+**6.uzdevums (UKMO2013):**
+  Skaitlis pierakstīts decimālās sistēmas bāzē satur :math:`3^{2013}` ciparus :math:`3`; 
+  citu ciparu skaitļa pierakstā nav. Atrast augstāko skaitļa :math:`3` pakāpi, kas dala šo skaitli.     
+
+.. **6.uzdevums:** 
+..   Neizmantojot Kummera teorēmu (bet izmantojot interpretāciju) 
+..  pamatot, ka :math:`C_{2012}^{17}`: dalās ar :math:`2012`. 
+
+
+
+
+
+Klases uzdevumi
+-------------------
+
+**1.uzdevums:**
+  Pamatot, ka harmoniskas rindas pirmo :math:`n` locekļu summa: 
+  
+  .. math:: 
+  
+    1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \ldots + \frac{1}{n}
+    
+  nevar būt vesels skaitlis, ja :math:`n > 1`. 
+  
+
+.. **2.Uzdevums (CGMO2012.8)**
+
+**2.uzdevums:**
+  Cik kopā :math:`\{0,1,2,\ldots,2012\}` ir elementu :math:`k`, kam :math:`C_{2012}^k`: dalās ar :math:`2012`?
+  Ar :math:`C_n^k` apzīmējam kombinācijas no :math:`n` pa :math:`k` jeb
+  
+  .. math:: 
+  
+    C_n^k = \frac{n!}{k!(n-k)!}
+    
+    
+.. **3.Uzdevums (IMO2019.P4)**
+
+**3.uzdevums:**
+  Atrast visus naturālo skaitļu :math:`(k,n)` pārus, kuriem izpildās
+  
+  .. math::
+  
+    k! = (2^n - 1)(2^n - 2)(2^n - 4)\cdots(2^n - 2^{n-1}).
+
+
+.. **4.uzdevums (IMO2000.5):**
+    
+**4.uzdevums (IMO2000.5):**
+  Vai eksistē naturāls :math:`n`, ka skaitlim :math:`n` ir tieši :math:`2000` dalītāji, kuri ir pirmskaitļi, un 
+  :math:`2^n+1` dalās ar :math:`n`. (Skaitlis :math:`n` drīkst dalīties arī ar pirmskaitļu pakāpēm.)
+
+
+.. **5.uzdevums (APMO1997.2):**
+
+**5.uzdevums:**
+  Atrast veselu skaitli :math:`n`, kam :math:`100 \leq n \leq 1997`, ka :math:`n` dala :math:`2^n + 2`. 
+
+
+.. **6.uzdevums (Valsts4Posms-1992.12.1):**
+
+**6.uzdevums (LV.TST.1992.12.1):**
+  Pierādīt, ka eksistē bezgalīgi daudz naturālu skaitļu kvadrātu, 
+  kurus var iegūt, divas reizes pēc kārtas uzrakstot kādu naturālu skaitli.
+
+
+
+
+
+
+Mājasdarba uzdevumi
+---------------------
+
+**Iesniegšanas termiņš:**
+  2023.g. 25.februāris.
+
+**Kam iesūtīt:**
+  ``kalvis.apsitis``, domēns ``gmail.com``
+
+
+**1.uzdevums (BW.2015.16):** 
+  Ar :math:`P(n)` apzīmējam lielāko pirmskaitli, ar ko dalās $n$. Atrast visus
+  naturālos skaitļus :math:`n \geq 2`, kam
+  
+  .. math:: 
+  
+     P(n) + \lfloor \sqrt{n} \rfloor = P(n+1) + \lfloor \sqrt{n+1} \rfloor. 
+
+  *Piezīme:* :math:`\lfloor x \rfloor` apzīmē lielāko veselo skaitli, kas nepārsniedz :math:`x`.
+
+
+**2.uzdevums (BW.2015.17):**
+  Atrast visus naturālos skaitļus :math:`n`, kuriem :math:`n^{n-1} - 1` dalās ar :math:`2^{2015}`,
+  bet nedalās ar :math:`2^{2016}`.
+
+
+
+**3.uzdevums (BW.2016.5):**
+  Dots pirmskaitlis :math:`p > 3`, kuram :math:`p \equiv 3\;(\operatorname{mod}\,4)`.
+  Dotam naturālam skaitlim :math:`a_0` virkni
+  :math:`a_0, a_1, \ldots` definē kā :math:`a_n = a^{2^n}_{n-1}` visiem
+  :math:`n = 1, 2, \ldots`. Pierādīt, ka :math:`a_0` var izvēlēties tā, ka
+  apakšvirkne :math:`a_N, a_{N+1}, a_{N+2}, \ldots`
+  nav konstanta pēc moduļa :math:`p` nevienam naturālam :math:`N`.
+
+
+**4.uzdevums (BW.TST.2015.15):**
+  Ar :math:`\omega(n)` apzīmēsim dažādo pirmskaitļu skaitu, ar ko dalās :math:`n`. Pierādīt, ka ir bezgalīgi
+  daudz tādu naturālu skaitļu :math:`n`, kuriem :math:`\omega(n) < \omega(n+1) < \omega(n+2)`.
+
+
+**5.uzdevums (BW.2015.17):**
+  Pirmskaitlim :math:`p` un naturālam skaitlim :math:`n` apzīmējam 
+  ar :math:`f(p, n)` lielāko veselo skaitli :math:`k`, kuram :math:`p^k \mid n!`. 
+  Dots fiksēts pirmskaitlis :math:`p`, bet :math:`m` un :math:`c` ir jebkādi naturāli skaitļi. 
+  Pierādīt, ka eksistē bezgalīgi daudzi tādi naturāli skaitļi :math:`n`, kuriem 
+  :math:`f(p, n) \equiv c \pmod m`.
+
+
+.. 9.40. 
+
+**6.uzdevums:**
+  Pierādiet, ka eksistē bezgalīgi daudz naturālu skaitļu $n$, kuriem skaitlis $2^n+2$  dalās ar $n$.
