@@ -96,6 +96,43 @@ un izmantojot Ležandra teorēmu.
 
 
 
+
+**Lemma 2 (Lifting the Exponent, LTE):** 
+  Doti divi veseli skaitļi :math:`x` un :math:`y` un arī naturāls 
+  skaitlis :math:`n \in \mathbb{N}`. 
+  Dots arī **nepāra** pirmskaitlis :math:`p`. 
+  Izpildās šādi nosacījumi: 
+  
+  * :math:`n` ir nepāra skaitlis.
+  * :math:`x,y` nedalās ar :math:`p`. 
+  * :math:`x + y` dalās ar :math:`p`. 
+  
+  Tad izpildās vienādība: 
+  
+  .. math::
+   
+    \nu_p(x^n + y^n) = \nu_p(x + y) + \nu_p(n). 
+
+
+
+**Lemma 3 (Lifting the Exponent, LTE):** 
+  Skaitļi :math:`x` un :math:`y` ir divi veseli nepāra skaitļi 
+  un :math:`n` ir pozitīvs **pāra** skaitlis. Tad 
+  
+  .. math::
+  
+    \nu_2 (x^n - y^n) = \nu_2(x - y) + \nu(x+y) + \nu_2(n) - 1.
+
+
+  Ja savukārt :math:`n` ir pozitīvs **nepāra** skaitlis, tad 
+  
+  .. math::
+
+    \nu_2 (x^n - y^n) = \nu_2(x - y).
+
+
+
+
 Iesildīšanās
 --------------
 
@@ -110,31 +147,42 @@ Iesildīšanās
 **2.uzdevums:**  
   Ar kādu lielāko skaitļa :math:`2` pakāpi dalās kombinācija :math:`C^{415}_{2022}`? 
 
-**3.uzdevums:** 
+
+**3.uzdevums:**
+  Attēlā dots Paskāla trijstūris (:math:`k`-tais elements šī trijstūra :math:`n`-tajā rindiņā
+  attēlo, cik dažādos veidos var izvēlēties :math:`k` elementus no :math:`n` elementu kopas). 
+  Šis Paskāla trijstūris
+  izkrāsots :math:`3` krāsās (aplītis ir sarkans, ja tajā vietā ierakstītais skaitlis dalās ar :math:`3`; 
+  aplītis ir melns, ja dod atlikumu :math:`1`, dalot ar :math:`3`, aplītis ir zaļš, 
+  ja dod atlikumu :math:`2`, dalot ar :math:`3`).
+  Atrast, kurš ir otrs melnais aplītis šī Paskāla trijstūra :math:`1000` rindiņā: Kuram mazākajam 
+  :math:`k > 0` ir spēkā sakarība :math:`C^k_{1000} \equiv 1 \pmod {3}`? 
+
+
+.. image:: figs-2022-2023-worksheet04/pascal-triangle.png
+   :width: 2in
+  
+
+
+**4.uzdevums:** 
   Atrast mazāko :math:`k` vērtību, kurai :math:`11^{k} - 1` beidzas ar :math:`4` nullēm. 
   
-**4.uzdevums:**
-  Atrast :math:`5`-valuāciju reizinājumam
-  
-  .. math::
-  
-     (2-1) \cdot (2^2-1) \cdot (2^3 - 1) \cdot \ldots \cdot (2^{1000} - 1).
-     
 **5.uzdevums:**
-  Atrast :math:`7`-valuāciju reizinājumam
+  Atrast valuācijas pirmskaitļu vērtībām :math:`p=5` un :math:`p=7`: 
   
   .. math::
   
-     (2-1) \cdot (2^2-1) \cdot (2^3 - 1) \cdot \ldots \cdot (2^{1000} - 1).
-
+    \left\{ \begin{array}{ll}
+    \nu_5 \left( (2-1) \cdot (2^2-1) \cdot (2^3 - 1) \cdot \ldots \cdot (2^{1000} - 1) \right), 
+    \nu_7 \left( (2-1) \cdot (2^2-1) \cdot (2^3 - 1) \cdot \ldots \cdot (2^{1000} - 1) \right).
+    \end{array} \right.
 
 **6.uzdevums (UKMO2013):**
   Skaitlis pierakstīts decimālās sistēmas bāzē satur :math:`3^{2013}` ciparus :math:`3`; 
   citu ciparu skaitļa pierakstā nav. Atrast augstāko skaitļa :math:`3` pakāpi, kas dala šo skaitli.     
 
-.. **6.uzdevums:** 
-..   Neizmantojot Kummera teorēmu (bet izmantojot interpretāciju) 
-..  pamatot, ka :math:`C_{2012}^{17}`: dalās ar :math:`2012`. 
+
+
 
 
 
@@ -250,4 +298,5 @@ Mājasdarba uzdevumi
 .. 9.40. 
 
 **6.uzdevums:**
-  Pierādiet, ka eksistē bezgalīgi daudz naturālu skaitļu $n$, kuriem skaitlis $2^n+2$  dalās ar $n$.
+  Pierādiet, ka eksistē bezgalīgi daudz naturālu skaitļu :math:`n`, 
+  kuriem skaitlis :math:`2^n+2`  dalās ar :math:`n`.
