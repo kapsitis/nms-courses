@@ -131,7 +131,7 @@ dod atlikumu :math:`1`, dalot ar :math:`7`. (Vienīgais izņēmums ir atlikums :
 
   * Kuram :math:`n` skaitlis :math:`2^n - 1` noteikti dalīsies ar :math:`9`?
   * :math:`\varphi(10) = 4`, tādēļ katram no skaitļiem :math:`1,3,7,9` ir spēkā sakarība :math:`a^4 \equiv 1 \pmod {10}`.
-    Teiksim, skaitļa $3$ pakāpes ir :math:`1, 3, 9, 27, 81,\ldots`.
+    Teiksim, skaitļa :math:`3` pakāpes ir :math:`1, 3, 9, 27, 81,\ldots`.
     Iegūstam, ka :math:`3^4` beidzas ar to pašu ciparu, ar ko :math:`3^0 = 1`.
 
   .. note::

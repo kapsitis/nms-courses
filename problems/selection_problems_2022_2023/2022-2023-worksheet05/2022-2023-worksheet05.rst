@@ -1,0 +1,168 @@
+5. Skaitļu teorijas lapa, 2022-02-11
+========================================
+
+**Definīcija:** 
+  Apzīmēsim ar :math:`\lfloor x \rfloor` skaitļa :math:`x` apakšējo veselo daļu -- lielāko
+  veselo skaitli, kas nepārsniedz :math:`x`.
+
+
+
+Iesildīšanās
+--------------
+
+.. ...............
+.. TODO for tests.
+.. ...............
+
+**1.uzdevums:** 
+  Pierādīt, ka jebkuram reālam :math:`x \in \mathbb{R}` un jebkuram naturālam :math:`n \in \mathbb{N}` ir spēkā vienādība
+
+  .. math::
+
+    \left\lfloor \frac{ \lfloor x \rfloor }{n} \right\rfloor = \left\lfloor \frac{x}{n} \right\rfloor.
+
+**2.uzdevums:** 
+  Pierādīt, ka jebkuram reālam :math:`x \in \mathbb{R}` ir spēkā vienādības:
+
+  .. math::
+
+    \left\{
+    \begin{array}{l}
+    \lfloor 2x \rfloor = \lfloor x \rfloor + \lfloor x + \frac{1}{2} \rfloor. \\
+    \lfloor 3x \rfloor = \lfloor x \rfloor + \lfloor x + \frac{1}{3} \rfloor + \lfloor x + \frac{2}{3} \rfloor.
+    \end{array}
+    \right.
+
+
+**3.Jautājums**
+  Atrast tādu bezgalīgi augošu aritmētisku progresiju no naturāliem skaitļiem,
+  ka neviens no tās locekļiem nav divu pilnu kubu summa.
+
+
+**4.Jautājums**
+
+  **(A)**
+    Izrakstīja visu naturālo skaitļu kvadrātus :math:`1^2, 2^2, 3^2, 4^2,\ldots` un katram no tiem
+    atrada pēdējos divus ciparus (atlikumu, dalot ar :math:`100`). Cik dažādas pēdējo divu ciparu kombinācijas 
+    ieguva?
+
+  **(B)**
+    Izrakstīja visu naturālo skaitļu divdesmitās pakāpes :math:`1^{20}, 2^{20}, 3^{20}, 4^{20},\ldots` un katram no tiem
+    atrada pēdējos divus ciparus. Cik dažādas pēdējo divu ciparu kombinācijas 
+    ieguva?
+   
+  Ar cik dažādām divu pēdējo ciparu kombinācijām  pēdējiem diviem cipariem var beigties naturāla skaitļa :math:`n` pakāpe :math:`n^{20}`?
+
+**5.Jautājums**
+  Aplūkojam naturālu skaitli :math:`n = 561`. Tas nav pirmskaitlis, jo :math:`n = 561 = 3 \cdot 11 \cdot 17`.
+  Pierādīt, ka jebkuram naturālam :math:`a` skaitlis :math:`a^{n} - a` dalās ar :math:`n`.
+
+  .. note::
+    Šī pati īpašība piemīt arī visiem pirmskaitļiem -- tiešas sekas no Fermā teorēmas.
+    Nepirmskaitļus, kam arī tā izpildās, sauc par Kārmaikla (*Carmichael*) skaitļiem. :math:`n = 561` ir mazākais no
+    Kārmaikla skaitļiem.
+
+
+
+
+
+
+
+
+Klases uzdevumi
+-------------------
+
+**1.Jautājums**
+  Aplūkojam virkni :math:`a_n = 2^n + 3^n + 6^n - 1`, kur :math:`n = 1,2,\ldots`.
+  Pierādīt, ka jebkuram pirmskaitlim :math:`p` atradīsies tāds :math:`a_n`,
+  ka :math:`a_n` dalās ar :math:`p`.
+
+
+
+**2.Jautājums**
+  Naturālam skaitlim :math:`n` atrodam visus tos naturālos skaitļus :math:`a_i \in [1;n]`,
+  kuri ir savstarpēji pirmskaitļi ar :math:`n`. Pamatot, ka visu šo :math:`a_i` summa
+
+  .. math::
+
+    a_1 + \ldots + a_k = \frac{n \cdot \varphi(n)}{2}.
+
+
+**3.Jautājums**
+  Katram naturālam skaitlim :math:`n` pierādīt vienādību:
+
+  .. math::
+
+    \sum\limits_{d\mid{}n} \varphi(d) = n.
+
+
+**4.jautājums:**
+  Pierādīt, ka neeksistē tāds :math:`n`, kuram Eilera funkcijas vērtība :math:`\varphi(n) = 14`.
+
+**5.jautājums:**
+  Atrisināt vienādojumu naturālos skaitļos:
+
+  .. math::
+
+    \varphi(2x) = \varphi(3x).
+
+**6.jautājums:**
+  Zināms, ka naturālam skaitlim :math:`A` ir tieši :math:`62` naturāli
+  dalītāji. Pierādīt, ka :math:`A` nedalās ar :math:`36`.
+
+
+**7.jautājums:**
+  Atrast tādu :math:`n`, kuram
+
+  .. math::
+
+    \mu(n) + \mu(n+1) + \mu(n+2) = 3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mājasdarba uzdevumi
+---------------------
+
+**Iesniegšanas termiņš:**
+  2023.g. 4.marts.
+
+**Kam iesūtīt:**
+  ``kalvis.apsitis``, domēns ``gmail.com``
+
+
+
+
+**1.Uzdevums:**
+  Parādīt, ka
+
+  .. math::
+
+    d(1) + d(2) + \ldots + d(n) = \left\lfloor \frac{n}{1} \right\rfloor +
+    \left\lfloor \frac{n}{2} \right\rfloor + \ldots + \left\lfloor \frac{n}{n} \right\rfloor.
+
+
+**2.Uzdevums:**
+  Parādīt, ka
+
+  .. math::
+
+    \sigma(1) + \sigma(2) + \ldots + \sigma(n) = 1\cdot \left\lfloor \frac{n}{1} \right\rfloor +
+    2 \cdot \left\lfloor \frac{n}{2} \right\rfloor + \ldots + n \cdot \left\lfloor \frac{n}{n} \right\rfloor.
+
+
+**3.Uzdevums:**
+  Dots naturāls skaitlis :math:`n`. Noteikt atkarībā no :math:`n`, 
+  cik ir skaitļu :math:`x \in \{ 1, 2, \ldots, n\}`, kuriem :math:`x^2 \equiv x \pmod {n}`. 
+
+
+
