@@ -1,9 +1,195 @@
 5. Skaitļu teorijas lapa, 2022-02-11
 ========================================
 
+Šajā nodarbībā aplūkojamas dažādas funkcijas, kam argumenti vai vērtības ir veseli skaitļi. 
+
 **Definīcija:** 
   Apzīmēsim ar :math:`\lfloor x \rfloor` skaitļa :math:`x` apakšējo veselo daļu -- lielāko
   veselo skaitli, kas nepārsniedz :math:`x`.
+  
+  
+**Definīcija:** 
+  Par skaitļa :math:`x \in \mathbb{R}` *daļveida daļu* (*fractional part*) sauc 
+  vērtību, par kuru skaitlis :math:`x` pārsniedz savu veselo daļu:
+
+  .. math:: 
+    \{x\} = x - \lfloor x \rfloor. 
+    
+**Definīcija:** 
+  Par skaitļa *augšējo veselo daļu* (*ceiling function*) sauc mazāko veselo skaitli, 
+  kas nav mazāks par :math:`x`. To apzīmē ar :math:`\lceil x \rceil`. 
+  
+
+  
+  
+
+**Apakšējās/augšējās veselās daļas īpašības:** 
+  Patvaļīgam reālam skaitlim :math:`x \in \mathbb{R}` un veselam skaitlim 
+  :math:`n \in \mathbb{Z}` ir spēkā šādi apgalvojumi: 
+    
+  1. :math:`\lfloor -x \rfloor = - \lceil x \rceil` un 
+     :math:`\lceil -x \rceil = - \lfloor x \rfloor`. 
+     
+  2. Ja :math:`a = qb+r` ir veselu skaitļu :math:`a` un :math:`b` dalījums ar 
+     atlikumu un :math:`b > 0`, tad šo skaitļu dalījums
+     :math:`{\displaystyle q = \left\lfloor \frac{a}{b} \right\rfloor}` un atlikums
+     :math:`{\displaystyle r = \left\{ \frac{a}{b} \right\} \cdot b}`. 
+
+  3. Funkcija :math:`{\displaystyle f(x) = \left\lfloor x + \frac{1}{2} \right\rfloor}` 
+     izsaka reāla skaitļa :math:`x \in \mathbb{R}` noapaļošanu pēc skolas 
+     algoritma -- noapaļo līdz tuvākajam veselajam skaitlim (un tad, ja 
+     daļveida daļa ir precīzi puse, tad apaļo uz augšu). 
+  
+  4. :math:`\lfloor x \rfloor + \lfloor y \rfloor \leq \lfloor x + y \rfloor \leq 
+     \lfloor x \rfloor + \lfloor y \rfloor + 1`.
+
+  5. Skaitļa :math:`n` pozitīvo daudzkārtņu skaits, kas nepārsniedz :math:`x`, 
+     ir :math:`{\displaystyle \left\lfloor \frac{x}{n} \right\rfloor{}}`. 
+
+  6. :math:`{\displaystyle \left\lfloor \frac{\lfloor x \rfloor}{n} \right\rfloor = 
+     \left\lfloor \frac{x}{n} \right\rfloor}`. 
+	 
+  7. Naturālā skaitļa :math:`n` decimālpierakstā ciparu 
+     skaits ir tieši :math:`\lfloor \log_{10} n \rfloor + 1`. 
+  
+
+
+**Ermita identitāte (Charles Hermite identity):**
+  Visiem reāliem :math:`x` un visiem naturāliem :math:`n` ir spēkā vienādība:
+  
+  .. math:: 
+  
+    \sum_{k=0}^{n-1}\left\lfloor x+\frac{k}{n}\right\rfloor=\lfloor nx\rfloor .
+
+
+
+**Definīcija:**
+  Ar :math:`\varphi(n)` apzīmējam *Eilera funkciju* -- to veselo skaitļu
+  skaitu intervālā :math:`[1;n]`, kas ir savstarpēji pirmskaitļi ar :math:`n`.
+
+**Piemēri:**
+
+  * Ja :math:`p` ir pirmskaitlis, tad :math:`\varphi(p) = p-1`.
+  * Ja :math:`p^k` ir pirmskaitļa pakāpe, tad :math:`\varphi(p^k) = p^k - p^{k-1} = p^k \cdot \left(1 = \frac{1}{p} \right)`.
+
+
+**Eilera teorēma:**
+  Ja :math:`a` un :math:`n` ir savstarpēji pirmskaitļi, tad
+
+  .. math::
+
+    a^{\varphi(n)} \equiv 1 \pmod n.
+
+
+**Definīcija**
+  Funkciju :math:`f\,:\,\mathbb{N} \rightarrow \mathbb{R}` sauc par multiplikatīvu,
+  ja katriem diviem naturāliem :math:`a,b \in \mathbb{N}`, kuri ir savstarpēji pirmskaitļi,
+  ir spēkā sakarība:
+
+  .. math::
+
+    f(ab) = f(a) \cdot f(b).
+
+
+**Īpašības:**
+
+  * Multiplikatīvām funkcijām jābūt spēkā: :math:`f(1) = 1`.
+  * Multiplikatīvai funkcijai pietiek zināt vērtības :math:`f(p^k)`
+    pirmskaitļu pakāpēm. Citas vērtības var iegūt ar reizināšanu.
+
+
+
+
+**Piemēri:**
+
+* :math:`\mbox{gcd}(n,k)`: divu skaitļu lielākais kopīgais dalītājs,
+  kur :math:`n` ir arguments, bet :math:`k` ir konstante.
+* :math:`\varphi(n)`: Eilera funkcija –- cik ir naturālu
+  :math:`k \in [0;n]`, kas ir savstarpēji pirmskaitļi ar :math:`n`.
+* :math:`\sigma_0(n) = d(n)` -- skaitļa :math:`n` dalītāju skaits.
+* :math:`\sigma_1(n) = \sigma(n)` - skaitļa :math:`n` dalītāju summa.
+
+
+
+**Definīcija:**
+  Mēbiusa (Möbius) funkciju definē šādi:
+
+  * :math:`-1`, ja :math:`n` ir nepāra skaita pirmskaitļu reizinājums,
+  * :math:`+1`, ja :math:`n` ir pāra skaita pirmskaitļu reizinājums,
+  * :math:`0`, ja :math:`n` sadalījums pirmreizinātājos satur
+    kāda pirmskaitļa pakāpi, kas augstāka par pirmo.
+
+
+.. image:: figs-2022-2023-worksheet05/mobius-function.png
+   :width: 4in
+
+
+
+**Teorēma:**
+  Mēbiusa funkcija ir multiplikatīva.
+
+**Apgalvojums:**
+  Katram naturālam :math:`n` ir spēkā sekojoša formula:
+
+  .. math::
+
+    \sum\limits_{d\mid{}n} \mu(d) = \left\{
+    \begin{array}{l}
+    1,\;\mbox{ja n=1}\\
+    0,\;\mbox{ja n>1}\\
+    \end{array}
+    \right.
+
+
+**Ieteikums:**
+  Ja :math:`n > 1`, to izsaka kā pirmskaitļu reizinājumu (daži no pirmskaitļiem var arī sakrist):
+
+  .. math::
+
+    n = p_1p_2\cdots{}p_k.
+
+  Jāpamato, ka šī izteiksme vienāda ar :math:`0`:
+
+  .. math::
+
+    \begin{array}{rl}
+      & \mu(1) + \\
+    + & \left( \mu(p_1) + \mu(p_2) + \ldots + \mu(p_k) \right) + \\
+    + & \left(\mu(p_1p_2) + \ldots + \mu(p_{k-1}p_k) \right) + \\
+    + & \ldots + \\
+    + & \mu(p_1 p_2 \cdots p_k).\\
+    \end{array}
+
+
+
+**Apgalvojums:**
+  Ir spēkā izteiksme 
+
+  .. math::
+
+    \varphi(n) = \sum\limits_{d\mid{}n} \mu(d)\frac{n}{d}.
+
+
+
+**Mēbiusa inversijas formula:**
+
+  Dotas divas funkcijas :math:`f(n),g(n)`, kas definētas naturāliem skaitļiem un pieņem reālas vērtības. 
+  Ja katram naturālam :math:`n` izpildās vienādība: 
+  
+  .. math::
+  
+    g(n) = \sum\limits_{d\mid{}n} f(d), 
+	
+  tad izpildās arī vienādība:
+  
+  .. math:: 
+  
+    f(n) = \sum\limits_{d\mid{}n} \mu\left( \frac{n}{d} \right) g(d), 
+    
+ 
+
+
+
 
 
 
@@ -39,21 +225,21 @@ Iesildīšanās
   ka neviens no tās locekļiem nav divu pilnu kubu summa.
 
 
-**4.Jautājums**
-
-  **(A)**
-    Izrakstīja visu naturālo skaitļu kvadrātus :math:`1^2, 2^2, 3^2, 4^2,\ldots` un katram no tiem
-    atrada pēdējos divus ciparus (atlikumu, dalot ar :math:`100`). Cik dažādas pēdējo divu ciparu kombinācijas 
-    ieguva?
-
-  **(B)**
-    Izrakstīja visu naturālo skaitļu divdesmitās pakāpes :math:`1^{20}, 2^{20}, 3^{20}, 4^{20},\ldots` un katram no tiem
-    atrada pēdējos divus ciparus. Cik dažādas pēdējo divu ciparu kombinācijas 
-    ieguva?
+.. **4.Jautājums**
+..
+..  **(A)**
+..    Izrakstīja visu naturālo skaitļu kvadrātus :math:`1^2, 2^2, 3^2, 4^2,\ldots` un katram no tiem
+..    atrada pēdējos divus ciparus (atlikumu, dalot ar :math:`100`). Cik dažādas pēdējo divu ciparu kombinācijas 
+..    ieguva?
+..
+..  **(B)**
+..    Izrakstīja visu naturālo skaitļu divdesmitās pakāpes :math:`1^{20}, 2^{20}, 3^{20}, 4^{20},\ldots` un katram no tiem
+..    atrada pēdējos divus ciparus. Cik dažādas pēdējo divu ciparu kombinācijas 
+..    ieguva?
    
   Ar cik dažādām divu pēdējo ciparu kombinācijām  pēdējiem diviem cipariem var beigties naturāla skaitļa :math:`n` pakāpe :math:`n^{20}`?
 
-**5.Jautājums**
+**4.Jautājums**
   Aplūkojam naturālu skaitli :math:`n = 561`. Tas nav pirmskaitlis, jo :math:`n = 561 = 3 \cdot 11 \cdot 17`.
   Pierādīt, ka jebkuram naturālam :math:`a` skaitlis :math:`a^{n} - a` dalās ar :math:`n`.
 
@@ -62,8 +248,13 @@ Iesildīšanās
     Nepirmskaitļus, kam arī tā izpildās, sauc par Kārmaikla (*Carmichael*) skaitļiem. :math:`n = 561` ir mazākais no
     Kārmaikla skaitļiem.
 
+**5.uzdevums:**
+  Pierādīt, ka neeksistē tāds :math:`n`, kuram Eilera funkcijas vērtība :math:`\varphi(n) = 14`.
 
 
+**6.uzdevums:**
+  Zināms, ka naturālam skaitlim :math:`A` ir tieši :math:`62` naturāli
+  dalītāji. Pierādīt, ka :math:`A` nedalās ar :math:`36`.
 
 
 
@@ -72,14 +263,14 @@ Iesildīšanās
 Klases uzdevumi
 -------------------
 
-**1.Jautājums**
+**1.uzdevums**
   Aplūkojam virkni :math:`a_n = 2^n + 3^n + 6^n - 1`, kur :math:`n = 1,2,\ldots`.
   Pierādīt, ka jebkuram pirmskaitlim :math:`p` atradīsies tāds :math:`a_n`,
   ka :math:`a_n` dalās ar :math:`p`.
 
 
 
-**2.Jautājums**
+**2.uzdevums**
   Naturālam skaitlim :math:`n` atrodam visus tos naturālos skaitļus :math:`a_i \in [1;n]`,
   kuri ir savstarpēji pirmskaitļi ar :math:`n`. Pamatot, ka visu šo :math:`a_i` summa
 
@@ -88,7 +279,7 @@ Klases uzdevumi
     a_1 + \ldots + a_k = \frac{n \cdot \varphi(n)}{2}.
 
 
-**3.Jautājums**
+**3.uzdevums**
   Katram naturālam skaitlim :math:`n` pierādīt vienādību:
 
   .. math::
@@ -96,28 +287,31 @@ Klases uzdevumi
     \sum\limits_{d\mid{}n} \varphi(d) = n.
 
 
-**4.jautājums:**
-  Pierādīt, ka neeksistē tāds :math:`n`, kuram Eilera funkcijas vērtība :math:`\varphi(n) = 14`.
 
-**5.jautājums:**
+**4.uzdevums:**
   Atrisināt vienādojumu naturālos skaitļos:
 
   .. math::
 
     \varphi(2x) = \varphi(3x).
 
-**6.jautājums:**
-  Zināms, ka naturālam skaitlim :math:`A` ir tieši :math:`62` naturāli
-  dalītāji. Pierādīt, ka :math:`A` nedalās ar :math:`36`.
 
 
-**7.jautājums:**
+**5.uzdevums:**
   Atrast tādu :math:`n`, kuram
 
   .. math::
 
     \mu(n) + \mu(n+1) + \mu(n+2) = 3.
 
+    
+**6.uzdevums:** 
+  Divi naturāli skaitļi :math:`p` un :math:`q` ir savstarpēji pirmskaitļi. Pierādīt sekojošu sakarību: 
+  
+  .. math:: 
+  
+    \left\lfloor \frac{p}{q} \right\rfloor + \left\lfloor \frac{2p}{q} \right\rfloor + \ldots 
+    + \left\lfloor \frac{(q-1)p}{q} \right\rfloor  = \frac{(p-1)(q-1)}{2}. 
 
 
 
@@ -142,7 +336,7 @@ Mājasdarba uzdevumi
 
 
 
-**1.Uzdevums:**
+**1.uzdevums:**
   Parādīt, ka
 
   .. math::
@@ -151,7 +345,7 @@ Mājasdarba uzdevumi
     \left\lfloor \frac{n}{2} \right\rfloor + \ldots + \left\lfloor \frac{n}{n} \right\rfloor.
 
 
-**2.Uzdevums:**
+**2.uzdevums:**
   Parādīt, ka
 
   .. math::
@@ -160,9 +354,35 @@ Mājasdarba uzdevumi
     2 \cdot \left\lfloor \frac{n}{2} \right\rfloor + \ldots + n \cdot \left\lfloor \frac{n}{n} \right\rfloor.
 
 
-**3.Uzdevums:**
+**3.uzdevums:**
   Dots naturāls skaitlis :math:`n`. Noteikt atkarībā no :math:`n`, 
   cik ir skaitļu :math:`x \in \{ 1, 2, \ldots, n\}`, kuriem :math:`x^2 \equiv x \pmod {n}`. 
+
+
+**4.uzdevums:**
+  
+  **(A)**
+    Izmantojot matemātiskus spriedumus (nevis datorprogrammu), atrast cik 
+    dažādu primitīvo sakņu ir pirmskaitlim :math:`p = 41`? (Viena no tām ir :math:`a = 6`, bet ir arī citas.)
+  
+  **(B)**
+    Pamatot, ka patvaļīgam nepāra pirmskaitlim :math:`p`, primitīvo sakņu skaits ir :math:`\varphi(p-1)`, kas ir Eilera funkcijas vērtība.
+
+
+.. Baltic Way atlase, 2019.g.\ septembris.
+
+**5.uzdevums:**
+  Dots naturāls skaitlis :math:`m` un pirmskaitlis :math:`p`, kas ir skaitļa :math:`m^2 - 2` dalītājs. 
+  Zināms, ka eksistē tāds naturāls skaitlis :math:`a`, ka :math:`a^2 + m - 2` dalās ar :math:`p`. 
+  Pierādīt, ka eksistē tāds naturāls skaitlis :math:`b`, ka :math:`b^2 - m - 2` 
+  dalās ar :math:`p`. 
+  
+.. {\bf Pierādījums.} Zināms, ka ${\displaystyle \dlegendre{2-m}{p} = 1}$; pieņemsim no pretējā, ka ${\displaystyle \dlegendre{2+m}{p} = -1}$
+.. (t.i. kongruenci $b^2 - m - 2 \equiv 0$  nevar atrisināt). Iegūstam: \newline
+.. ${\displaystyle 1 \cdot (-1) = \dlegendre{2-m}{p} \cdot \dlegendre{2+m}{p} = \dlegendre{4 - m^2}{p} = \dlegendre{(4 - m^2) + (m^2 - 2)}{p} = 
+.. \dlegendre{2}{p}}$.\newline
+.. Esam ieguvuši, ka $\dlegendre{2}{p} = -1$, bet tas nav iespējams, jo $m^2 - 2$ dalās ar $p$, t.i. kongruenci 
+.. $m^2 \equiv 2$ var atrisināt un $2$ ir kvadrātiskais atlikums pēc $p$ moduļa. Pretruna. $\blacksquare$
 
 
 

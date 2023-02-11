@@ -41,7 +41,7 @@ Ievaduzdevumi
 
    .. math::
 
-     \lfloor x \rfloor + \lfloor x \rfloor \;\leq\; \lfloor x + y \rfloor \;\leq\; \lfloor x \rfloor + \lfloor x \rfloor + 1
+     \lfloor x \rfloor + \lfloor y \rfloor \;\leq\; \lfloor x + y \rfloor \;\leq\; \lfloor x \rfloor + \lfloor y \rfloor + 1
 
 
 5. Pierādīt, ka jebkuram reālam :math:`x \in \mathbb{R}` un jebkuram naturālam :math:`n \in \mathbb{N}` ir spēkā vienādība
