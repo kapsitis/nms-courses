@@ -337,41 +337,31 @@ Mājasdarba uzdevumi
 
 
 **1.uzdevums:**
-  Parādīt, ka
+  Ar :math:`d(n)` apzīmējam naturāla skaitļa :math:`n` pozitīvo dalītāju skaitu, ieskaitot :math:`1` un pašu :math:`n`. 
+  Ar :math:`\sigma(n)` apzīmējam naturāla skaitļa :math:`n` visu pozitīvo dalītāju summu. 
+  
+  Pierādīt, ka jebkuram naturālam :math:`n` ir spēkā vienādības:
 
-  .. math::
+  **(A)**
+    :math:`{\displaystyle d(1) + d(2) + \ldots + d(n) = \left\lfloor \frac{n}{1} \right\rfloor + \left\lfloor \frac{n}{2} \right\rfloor + \ldots + \left\lfloor \frac{n}{n} \right\rfloor }`. 
 
-    d(1) + d(2) + \ldots + d(n) = \left\lfloor \frac{n}{1} \right\rfloor +
-    \left\lfloor \frac{n}{2} \right\rfloor + \ldots + \left\lfloor \frac{n}{n} \right\rfloor.
+  **(B)**
+    :math:`{\displaystyle \sigma(1) + \sigma(2) + \ldots + \sigma(n) = 1\cdot \left\lfloor \frac{n}{1} \right\rfloor + 2 \cdot \left\lfloor \frac{n}{2} \right\rfloor + \ldots + n \cdot \left\lfloor \frac{n}{n} \right\rfloor }`.
 
 
 **2.uzdevums:**
-  Parādīt, ka
-
-  .. math::
-
-    \sigma(1) + \sigma(2) + \ldots + \sigma(n) = 1\cdot \left\lfloor \frac{n}{1} \right\rfloor +
-    2 \cdot \left\lfloor \frac{n}{2} \right\rfloor + \ldots + n \cdot \left\lfloor \frac{n}{n} \right\rfloor.
-
-
-**3.uzdevums:**
-  Dots naturāls skaitlis :math:`n`. Noteikt atkarībā no :math:`n`, 
-  cik ir skaitļu :math:`x \in \{ 1, 2, \ldots, n\}`, kuriem :math:`x^2 \equiv x \pmod {n}`. 
-
-
-**4.uzdevums:**
   
   **(A)**
-    Izmantojot matemātiskus spriedumus (nevis datorprogrammu), atrast cik 
-    dažādu primitīvo sakņu ir pirmskaitlim :math:`p = 41`? (Viena no tām ir :math:`a = 6`, bet ir arī citas.)
+    Neizmantojot datoru, atrast 
+    pirmskaitļa :math:`p = 41` primitīvās saknes. (Viena no tām ir :math:`a = 6`.)
   
   **(B)**
-    Pamatot, ka patvaļīgam nepāra pirmskaitlim :math:`p`, primitīvo sakņu skaits ir :math:`\varphi(p-1)`, kas ir Eilera funkcijas vērtība.
+    Pamatot, ka patvaļīgam nepāra pirmskaitlim :math:`p`, primitīvo sakņu skaits ir :math:`\varphi(p-1)`, kur :math:`\varphi(n)` apzīmē Eilera funkciju.
 
 
 .. Baltic Way atlase, 2019.g.\ septembris.
 
-**5.uzdevums:**
+**3.uzdevums:**
   Dots naturāls skaitlis :math:`m` un pirmskaitlis :math:`p`, kas ir skaitļa :math:`m^2 - 2` dalītājs. 
   Zināms, ka eksistē tāds naturāls skaitlis :math:`a`, ka :math:`a^2 + m - 2` dalās ar :math:`p`. 
   Pierādīt, ka eksistē tāds naturāls skaitlis :math:`b`, ka :math:`b^2 - m - 2` 
