@@ -418,32 +418,31 @@ Pirmskaitļu izvietojums
 Pirmskaitļu jēdziens
 ^^^^^^^^^^^^^^^^^^^^^^
 
-**Definīcija:**
-  Naturālu skaitli :math:`p>1` sauc par *pirmskaitli*, 
-  ja vienīgie tā dalītāji ir :math:`1` un :math:`p`.
+.. **Definīcija:**
+..   Naturālu skaitli :math:`p>1` sauc par *pirmskaitli*, 
+..   ja vienīgie tā dalītāji ir :math:`1` un :math:`p`.
 
-Naturālus skaitļus :math:`n>1`, kas nav pirmskaitļi, sauc par
-*saliktiem skaitļiem*.
-Skaitlis :math:`1` nav ne pirmskaitlis, ne salikts skaitlis.
-
-
-
-Intervālā :math:`[1;100]` ir :math:`25` pirmskaitļi:
-
-===  ===  ===  ===  ===
-  2    3    5    7   11
- 13   17   19   23   29
- 31   37   41   43   47
- 53   59   61   67   71
- 73   79   83   89   97
-===  ===  ===  ===  ===
+.. Naturālus skaitļus :math:`n>1`, kas nav pirmskaitļi, sauc par
+.. *saliktiem skaitļiem*.
+.. Skaitlis :math:`1` nav ne pirmskaitlis, ne salikts skaitlis.
 
 
 
-.. note::
-  Skaitlis :math:`1` nav ne pirmskaitlis, ne arī salikts skaitlis.
-  Tas ir *vienības elements* naturālu skaitļu reizināšanā.
-  (Veselo skaitļu pasaulē :math:`-1` ir otrs vienības elements.)
+.. Intervālā :math:`[1;100]` ir :math:`25` pirmskaitļi:
+
+.. ===  ===  ===  ===  ===
+..   2    3    5    7   11
+..  13   17   19   23   29
+..  31   37   41   43   47
+..  53   59   61   67   71
+..  73   79   83   89   97
+.. ===  ===  ===  ===  ===
+
+
+
+..   Skaitlis :math:`1` nav ne pirmskaitlis, ne arī salikts skaitlis.
+..   Tas ir *vienības elements* naturālu skaitļu reizināšanā.
+..   (Veselo skaitļu pasaulē :math:`-1` ir otrs vienības elements.)
 
 
 
@@ -724,22 +723,22 @@ salīdzināt ar :math:`<` un :math:`>`, nevar dalīt ar atlikumu, nepastāv arī
 Pirmskaitļu ir bezgalīgi daudz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Teorēma (Eiklīds):**
-  Pirmskaitļu ir bezgalīgi daudz.
+.. **Teorēma (Eiklīds):**
+..   Pirmskaitļu ir bezgalīgi daudz.
 
-**Pierādījums:**
-  No pretējā. Ja pirmskaitļu būtu
-  galīgs skaits, tad eksistētu lielākais pirmskaitlis
-  :math:`p_K`. Sareizinām visus pirmskaitļus, pieskaitām :math:`1`:
+.. **Pierādījums:**
+..   No pretējā. Ja pirmskaitļu būtu
+..   galīgs skaits, tad eksistētu lielākais pirmskaitlis
+..   :math:`p_K`. Sareizinām visus pirmskaitļus, pieskaitām :math:`1`:
 
-  .. math::
+..   .. math::
 
-    P = p_1 \cdot p_2 \cdot p_3 \cdot \ldots \cdot p_K + 1.
+..     P = p_1 \cdot p_2 \cdot p_3 \cdot \ldots \cdot p_K + 1.
 
-  :math:`P` nedalās ne ar vienu no pirmskaitļiem, kuri ir galīgajā
-  sarakstā: vienmēr atlikums :math:`1`. Vai nu :math:`P` pats ir pirmskaitlis
-  vai kādu (sarakstā neesošu) pirmskaitļu reizinājums. Pretruna.
-  :math:`\blacksquare`
+..   :math:`P` nedalās ne ar vienu no pirmskaitļiem, kuri ir galīgajā
+..   sarakstā: vienmēr atlikums :math:`1`. Vai nu :math:`P` pats ir pirmskaitlis
+..   vai kādu (sarakstā neesošu) pirmskaitļu reizinājums. Pretruna.
+..   :math:`\blacksquare`
 
 
 
@@ -750,14 +749,14 @@ Pirmskaitļu ir bezgalīgi daudz
 Pirmskaitļu atstarpes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-**Uzdevums:**
-  Vai eksistē :math:`1000` pēc kārtas sekojoši skaitļi, kuri visi ir salikti?
+.. **Uzdevums:**
+..   Vai eksistē :math:`1000` pēc kārtas sekojoši skaitļi, kuri visi ir salikti?
 
-**Pierādījums:**
-  :math:`1000` pēc kārtas sekojošus saliktus skaitļus var
-  uzkonstruēt ar šādu spriedumu:
-  Izvēlamies :math:`N = 1001!+2`, tad iegūstam, ka :math:`1000!+a` dalās ar
-  :math:`a` katram :math:`a \in \{2,\ldots 1001 \}`. :math:`\square`
+.. **Pierādījums:**
+..   :math:`1000` pēc kārtas sekojošus saliktus skaitļus var
+..   uzkonstruēt ar šādu spriedumu:
+..   Izvēlamies :math:`N = 1001!+2`, tad iegūstam, ka :math:`1000!+a` dalās ar
+..   :math:`a` katram :math:`a \in \{2,\ldots 1001 \}`. :math:`\square`
 
 
 
@@ -998,23 +997,23 @@ Mersenna skaitļi
 
 
 
-**Teorēma:**
-  Lai Mersena skaitlis :math:`M_n = 2^n - 1`
-  būtu pirmskaitlis, ir *nepieciešami*, lai pats
-  :math:`n` būtu pirmskaitlis.
+.. **Teorēma:**
+..   Lai Mersena skaitlis :math:`M_n = 2^n - 1`
+..   būtu pirmskaitlis, ir *nepieciešami*, lai pats
+..   :math:`n` būtu pirmskaitlis.
 
-**Pierādījums:**
-  Ja :math:`n = km` ir divu naturālu
-  skaitļu reizinājums (turklāt :math:`k>1` un :math:`m>1`),
-  tad var sadalīt reizinātājos kā :math:`a^m - b^m`:
+.. **Pierādījums:**
+..   Ja :math:`n = km` ir divu naturālu
+..   skaitļu reizinājums (turklāt :math:`k>1` un :math:`m>1`),
+..   tad var sadalīt reizinātājos kā :math:`a^m - b^m`:
 
-  .. math::
+..   .. math::
 
-    M_n = 2^{km} - 1 = \left( 2^k \right)^m - 1^m =
+..     M_n = 2^{km} - 1 = \left( 2^k \right)^m - 1^m =
 
-  .. math::
+..   .. math::
 
-    = (2^k - 1) \left( (2^k)^{m-1} + \ldots + 1 \right).
+..     = (2^k - 1) \left( (2^k)^{m-1} + \ldots + 1 \right).
 
 
 
