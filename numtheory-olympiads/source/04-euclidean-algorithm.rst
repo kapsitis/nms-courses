@@ -128,12 +128,17 @@ Uzdevumi
   izmēriem :math:`AB = 20`, :math:`BC = 12`. 
   Taisnstūris sadalīts ar režģa līnijām :math:`20 \times 12` vienības kvadrātos. 
   Atļauti sekojoši gājieni - var pārvietoties no viena kvadrāta uz citu tikai tad, 
-  ja šo kvadrātu centru attālums ir sqrt{r}. Uzdevums ir atrast gājienu virkni, 
+  ja šo kvadrātu centru attālums ir :math:`sqrt{r}`. Uzdevums ir atrast gājienu virkni, 
   kas aizved no kvadrāta, kas satur virsotni "A" uz kvadrātu, kas satur virsotni "B".
 	
-  a. Pierādīt, ka uzdevums nav izpildāms, ja :math:`r` dalās ar :math:`2` vai ar :math:`3`. 
-  b. Pierādīt, ka uzdevums ir izpildāms, ja :math:`r=73`. 
-  c. Vai uzdevums ir izpildāms, ja :math:`r=97`?
+  **(A)**
+    Pierādīt, ka uzdevums nav izpildāms, ja :math:`r` dalās ar :math:`2` vai ar :math:`3`. 
+
+  **(B)**
+    Pierādīt, ka uzdevums ir izpildāms, ja :math:`r=73`. 
+  
+  **(C)**
+    Vai uzdevums ir izpildāms, ja :math:`r=97`?
 
 **4.6. Uzdevums:** 
   Aplūkojam naturālu skaitļu kopu:
@@ -153,9 +158,12 @@ Uzdevumi
 
 **4.8. Uzdevums (IMO1981.4):** 
 
-  a. Kuriem :math:`n>2` eksistē :math:`n` pēc kārtas sekojoši naturāli skaitļi, 
-	 kuriem lielākais skaitlis ir dalītājs mazākajam kopīgajam dalāmajam no pārējiem :math:`n-1` skaitļiem? 
-  b. Kurai :math:`n>2` vērtībai ir tieši viena kopa ar šo īpašību?
+  **(A)** 
+    Kuriem :math:`n>2` eksistē :math:`n` pēc kārtas sekojoši naturāli skaitļi, 
+	kuriem lielākais skaitlis ir dalītājs mazākajam kopīgajam dalāmajam no pārējiem :math:`n-1` skaitļiem? 
+
+  **(B)** 
+    Kurai :math:`n>2` vērtībai ir tieši viena kopa ar šo īpašību?
 
 **4.9. Uzdevums (IMO1991.4):**
   Pieņemsim, ka :math:`G` ir sakarīgs grafs ar :math:`k` šķautnēm. Pierādīt, 
