@@ -141,3 +141,4 @@ _build
 ntjun-textbook-single/*
 !ntjun-textbook-single/*.pdf
 source-material/*
+avg-pulcins-2025/temp/*

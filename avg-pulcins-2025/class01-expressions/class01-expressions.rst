@@ -5,6 +5,8 @@ Dots apraksts, atrast izteiksmi:
   Trīs rūķi dienā apēd :math:`p` kilogramu piparkūku. Cik kilogramus piparkūku apēd septiņi
   rūķi :math:`d` dienās?
 
+
+
 Dota izteiksme, atrast aprakstu:
   Parka platība ir :math:`5000` kvadrātmetri. Norlands vienā stundā var nogrābt
   :math:`N` kvadrātmetrus, Rolands var nogrābt :math:`R` kvadrātmetrus.
@@ -62,6 +64,33 @@ Invariants:
   sagriež vienādā skaitā gabalu). Vai, atkārtoti izpildot šādas darbības, 
   Karlsons var iegūt tieši :math:`2000` tortes gabalus?
 
+.. only:: Internal
+
+  **Ieteikums:**
+
+    * Par cik pieaug tortes gabalu skaits pēc katra 
+      Karlsona gājiena? 
+    * Izveidot invariantu (neizmaināmu īpašību), kas 
+      izpildās skaitlim :math:`30`, bet neizpildās skaitlim :math:`2000`.
+
+  :math:`\square`
+
+.. only:: Internal
+
+  **Atbilde:**
+    
+    Ja visus trīs gabalus griež katru :math:`3` mazākos gabalos, tad gabalu skaits 
+    pieaug par :math:`3 \cdot 3 - 3 = 6` (rodas :math:`9` jauni gabali, bet :math:`3`
+    sagrieztie gabali pazūd). 
+
+    Ja visus trīs gabalus griež katru :math:`5` mazākos gabalos, tad gabalu 
+    skaits pieaug par :math:`3 \cdot 5 - 2 = 12` (rodas :math:`15` jauni gabali, 
+    bet :math:`3` sagrieztie gabali pazūd). 
+
+    Visos šajos gājienos tortes gabalu skaits palielinās skaitli, kas dalās ar :math:`4`. 
+
+  :math:`\square`
+
 
 **2.uzdevums:** 
   Kādā dienā Karlsons uzlika uz galda :math:`44` kūciņas.  
@@ -71,6 +100,37 @@ Invariants:
   uzreiz uz galda uzlika :math:`2` kūciņas. Vai iespējams, ka uz galda kādā brīdī
   bija tieši :math:`2022` kūciņas?
 
+
+
+.. only:: Internal
+
+  **Ieteikums:**
+
+    * Par cik pieaug kūciņu skaits pēc katra gājiena?
+    * Izveidot invariantu (neizmaināmu īpašību), kas 
+      izpildās skaitlim :math:`44`, bet neizpildās skaitlim :math:`2022`.
+
+  :math:`\square`
+
+
+
+.. only:: Internal
+
+  **Atbilde:**
+
+    * Ja apēd :math:`5` kūciņas, tad vietā rodas :math:`9` jaunas kūciņas
+      (pieaugums par :math:`4`). 
+    * Ja apēd :math:`10` kūciņas, tad vietā rodas :math:`2` jaunas kūciņas 
+      (pieaugums par :math:`-8`). 
+    
+    Katrā gājienā kūciņu skaita atlikums, dalot ar :math:`4` nemainās 
+    (kūciņu skaita atlikums, dalot ar :math:`4` ir invariants).
+
+    Ja sākumā bija :math:`44` kūciņas (atlikums, dalot ar :math:`4` ir :math:`0`), 
+    tad beigās nevar rasties :math:`2022` (atlikums, dalot ar :math:`4` ir :math:`2`).  
+
+
+  :math:`\square`
 
 
 **3.uzdevums:** 
@@ -89,12 +149,84 @@ Invariants:
   piektdiena -- :math:`57`, sestdiena -- :math:`58`, svētdiena -- :math:`59`. 
   Cik ciema iedzīvotāji visu laiku melo?
 
+.. only:: Internal
+
+  **Ieteikums:**
+
+    * Vienkāršojam uzdevumu. Pieņemam, ka visi saka patiesību. 
+    * Uzzināt, kāds ir invariants (algebriska izteiksme, kuras vērtība nemainās,
+      lai kā arī nebūtu sadalījušās iedzīvotāju mīļākās nedēļas dienas). 
+    * Saprast, kā invariants mainās 
+
+  :math:`\square`
+
+
+.. only:: Internal 
+
+  **Atbilde:**
+
+    Ciemā ir :math:`24` meļi.
+
+    Ievērojam, ka atbilžu "Jā" kopskaits nemainās pie dota meļu skaita.  
+    Invariants ir visu 7 "jā" skaitļu summa: 
+    :math:`S = j_1 + j_2 + j_3 + j_4 + j_5 + j_6 + j_7`.
+
+    Mūsu situācijā kopā ir :math:`53 + 54 + 55 + 56 + 57 + 58 + 59 = 392` 
+    atbildes "jā". Ievērosim, ka katrs ciema iedzīvotājs, kas saka patiesību, 
+    atbildēja "jā" tieši vienu reizi (savai mīļākajai dienai), bet katrs
+    melis -- tieši sešas reizes (visām dienām, kas nav viņa mīļākā diena). 
+    Tātad, ja mēs vienu iedzīvotāju, kurš saka patiesību, pārvērstu par meli, 
+    tad papildus mēs iegūstu piecas "liekas" atbildes jā.
+
+    Iesākumā pieņemsim, ka visi ciema iedzīvotāji saka patiesību, 
+    tādā gadījumā mums kopā būtu tieši :math:`272` atbildes "jā". 
+    Tā kā mums ir :math:`394` atbildes "jā", tad mums "liekas" ir 
+    :math:`392 - 272 = 120` atbildes "jā".
+    Tātad par meļiem mums jāpārvērš :math:`120:5=24` ciema iedzīvotāji.
+
+
+
+  :math:`\square`
+
 
 **4.uzdevums:**
   Elektroniskais pulkstenis rāda stundu skaitu (vesels skaitlis robežās no :math:`0` 
   līdz :math:`23`) un minūšu skaitu (vesels skaitlis robežās no 
   :math:`0` līdz :math:`59`). Noteikt, cik reižu diennaktī stundu skaita 
   un minūšu skaita starpība dalās ar :math:`7`.
+
+.. only:: Internal 
+
+  **Atbilde:** 
+
+    Apkopojam tabuliņā tās starpības, kas dalās ar 7 (atkarībā no izvēlētās stundas): 
+
+    .. figure:: class01-expressions-figs/hour-minute-differences.png
+       :width: 5in
+
+    Ir pavisam :math:`15` dažādas stundas (virknītes :math:`0,7,14,21`, 
+    un :math:`1,8,15,22`, un :math:`2,9,16,23` kā arī :math:`3,10,17`), 
+    kurām atbilst 9 dažādas minūšu vērtības ar starpībām, kas dalās ar :math:`7`. 
+
+    Un ir arī :math:`9` dažādas stundas (virknītes :math:`4,11,18`, un 
+    :math:`5,12,19`, un :math:`6,13,20`), kurām atbilst 8 dažādas minūšu vērtības. 
+
+    Izteiksme, kas saskaita visas šīs iespējas ir :math:`15 \cdot 9 + 9 \cdot 8 = 207`. 
+
+    .. raw:: latex
+
+       \clearpage
+
+    Tabulā iekrāsotas visas rūtiņas, kurām stundu un minūšu starpība
+    dalās ar 7: 
+
+    .. plot:: class01-expressions-figs/hours.py
+       :include-source: false
+       :width: 8in
+       :align: center
+
+  :math:`\square`
+
 
 
 **5.uzdevums:**
@@ -120,3 +252,32 @@ Invariants:
 **7.uzdevums:** 
   Vai var atrast **(A)** :math:`5`; **(B)** :math:`15` naturālus skaitļus 
   (ne obligāti dažādus), kuru summa ir vienāda ar to reizinājumu?
+
+Pieslēgšanās vietnei `<https://www.socrative.com/>`_ (īso atbilžu tests par šo tēmu):
+
+.. |socrative01| image:: class01-expressions-figs/socrative01.png
+   :width: 200px
+   :align: middle
+
+.. |socrative02| image:: class01-expressions-figs/socrative02.png
+   :width: 200px
+   :align: middle
+
+.. |socrative03| image:: class01-expressions-figs/socrative03.png
+   :width: 200px
+   :align: middle
+
+.. |socrative04| image:: class01-expressions-figs/socrative04.png
+   :width: 200px
+   :align: middle
+
+.. list-table:: 
+   :widths: 25 25 25 25
+   :align: center
+   :header-rows: 0
+
+   * - |socrative01|
+     - |socrative02|
+     - |socrative03|
+     - |socrative04|
+

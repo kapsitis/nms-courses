@@ -1,6 +1,6 @@
 import re
 
-with open ('_build/latex/class01-expressions.tex', 'r', encoding='utf-8') as f:
+with open ('_build/latex/class02-angles.tex', 'r', encoding='utf-8') as f:
     content = f.read()
     content = re.sub(r'\\sphinxAtStartPar[\s\n]*\\sphinxstylestrong\{Atbilde:\}',
         r'\\sphinxAtStartPar\n{\\color{blue}\n\\sphinxstylestrong{Atbilde:}', content, flags = re.M)
@@ -12,6 +12,6 @@ with open ('_build/latex/class01-expressions.tex', 'r', encoding='utf-8') as f:
         r'}% end blue\n', content, flags = re.M)
 
 
-with open ('_build/latex/class01-expressions.tex', 'w', encoding='utf-8') as fout:
+with open ('_build/latex/class02-angles.tex', 'w', encoding='utf-8') as fout:
     fout.write(content)
     fout.close
