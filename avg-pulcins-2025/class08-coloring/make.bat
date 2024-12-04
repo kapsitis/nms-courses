@@ -48,9 +48,9 @@ if [%2] == [] (
         %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O% -t Internal
         python replace.py
 	    cd _build\latex
-	    pdflatex class07-olympiad-shortanswers
-        ren class07-olympiad-shortanswers.pdf class07-olympiad-shortanswers-solutions.pdf
-        xcopy class07-olympiad-shortanswers-solutions.pdf ..\.. /Y
+	    pdflatex class08-coloring
+        ren class08-coloring.pdf class08-coloring-solutions.pdf
+        xcopy class08-coloring-solutions.pdf ..\.. /Y
 		cd ..\..
     ) else (
         echo.Building questions
@@ -58,7 +58,7 @@ if [%2] == [] (
 	    cd _build\latex
         REM ren ntjun-textbook-single.pdf ntjun-textbook-single-questions.pdf
         REM xcopy ntjun-textbook-single-questions.pdf ..\.. /Y
-        xcopy class07-olympiad-shortanswers.pdf ..\.. /Y
+        xcopy class08-coloring.pdf ..\.. /Y
 		cd ..\..		
 	)
 )

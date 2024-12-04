@@ -7,6 +7,39 @@
 
   :math:`\rule{2in}{0.4pt}`
 
+
+
+.. only:: Internal 
+
+  **Atbilde:**
+
+
+    1.jautājums: 72 sekundes
+
+    2.jautājums: 4 metri sekundē
+
+    3.jautājums: 10 veidi aizpildīt kastīti
+
+    4.jautājums: Summa var būt 5+5, 5+6 vai 6+6 (10, 11, 12)
+
+    5.jautājums: Konfektes var pavairoties 4 naktis: 16 à 24 à 36 à 54 à 81
+
+    6.jautājums: Policists no A uz B var aiziet 3 vai 5 gājienos
+
+    7.jautājums: Var nedalīties ar 4, ja figūriņa ir kvadrāts (var vienu kvadrātu nolikt centrā)
+
+    8.jautājums: Kaste (to apripinot apkārt šķērslim) pagriežas ar kājām gaisā.
+
+    9.jautājums: alpha + beta + gamma = 90 grādi
+
+    10.jautājums:
+
+    (A) 4; 10; 7
+
+    (B) 20/3 = 6.6666
+
+  :math:`\square`
+
 **2.jautājums:** 
   Izabella ar airu laivu pārvietojas no :math:`A` uz :math:`B` (peldot pa straumei)
   ar ātrumu :math:`6~\mathrm{km/h}`, bet atpakaļ no :math:`B` uz :math:`A` (pret straumi) 
