@@ -130,7 +130,7 @@ Komplektu veidošana:
   var atrast trīs tādus skaitļus, kuru ciparu summas ir vienādas.
 
 
-**6.uzdevums:** 
+**LV.SOL.1993.7.3:** 
   Kādu mazāko skaitu rūtiņu jāiekrāso kvadrātā ar izmēru 
   :math:`6 \times 6` rūtiņas, lai neiekrāsotajā daļā 
   nevarētu ievietot tādu "stūrīti" (varbūt citādi pagrieztu), 

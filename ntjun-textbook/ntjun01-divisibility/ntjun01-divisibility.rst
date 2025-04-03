@@ -1234,10 +1234,10 @@ ko var ļoti kompakti aprakstīt, atrodot lielāko kopīgo dalītāju
 
 **Definīcija:**
   Par veselu skaitļu :math:`m` un :math:`n`
-  **lielāko kopīgo dalītāju (LKD)**
-  (reizēm pieraksta arī kā `gcd(m,n)`) sauc
+  *lielāko kopīgo dalītāju (LKD)* sauc
   lielāko naturālo skaitli, ar kuru dalās gan
   :math:`m`, gan :math:`n`. To apzīmē ar :math:`\text{LKD}(m,n)`.
+  (Reizēm to apzīmē ar angļu saīsinājumu :math:`\gcd(m,n)` -- *greatest common divisor*.) 
 
 *Piezīme:*
   LKD var definēt arī vairāk nekā diviem

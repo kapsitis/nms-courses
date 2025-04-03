@@ -1,0 +1,120 @@
+Ģeometrija Novada olimpiādēs
+================================
+
+
+
+
+**LV.NOL.2021.10.3:** 
+  Kvadrāta :math:`ABCD`, kura malas garums ir :math:`1`, malas :math:`AB` viduspunkts 
+  ir :math:`E` un malas :math:`BC` viduspunkts ir :math:`F`.
+  Nogrieznis :math:`AF` krusto :math:`ED` un :math:`EC` attiecīgi punktos :math:`G` un 
+  :math:`H`, bet :math:`FD` un :math:`EC` krustojas punktā :math:`I`. Aprēķināt
+  četrstūra :math:`DGHI` laukumu.
+
+**LV.NOL.2021.11.3:** 
+  Divi vienādi vienādsānu trijstūri :math:`ABC` un :math:`DEF` 
+  (:math:`AB=AC=DE=DF` un :math:`BC=EF`) 
+  krustojoties veido četrstūri :math:`PQRS` (skat. 5. att.), 
+  kuram var apvilkt riņka līniju. Pierādīt, ka divi no četrstūra :math:`PQRS` 
+  leņķiem ir taisni.
+
+  .. figure:: figs/LV.NOL.2021.11.3.png
+     :width: 1.5in
+
+**LV.NOL.2021.12.3**
+  Taisnstūris salikts no četriem vienības kvadrātiem. Aprēķināt iekrāsotā 
+  četrstūra (skat. 6. att.) laukumu un leņķus.
+
+  .. figure:: figs/LV.NOL.2021.12.3.png
+     :width: 2in
+
+
+**LV.NOL.2022.10.3**
+  Divas rinķa līnijas :math:`\omega_{1}` un :math:`\omega_{2}` 
+  krustojas punktos :math:`X` un :math:`Y`.
+  Caur punktu :math:`X` novilkta taisne :math:`t`, kas vēlreiz krusto rinķa līnijas
+  :math:`\omega_{1}` un :math:`\omega_{2}` attiecīgi punktos 
+  :math:`A` un :math:`B`, caur punktu :math:`Y`
+  paralēli :math:`t` novilkta taisne, kas vēlreiz krusto riņka līnijas
+  :math:`\omega_{1}` un :math:`\omega_{2}` attiecīgi punktos :math:`D` un :math:`C`. 
+  Pierādīt, ka :math:`ABCD`
+  ir paralelograms.
+
+
+
+**LV.NOL.2022.11.3**
+  Trapeces :math:`ABCD` pamati ir :math:`AB` un :math:`CD`. 
+  Diagonāles :math:`AC` un :math:`BD` krustojas
+  punktā :math:`E`. Pierādīt, ka :math:`S_{ABE} \cdot S_{ABCD}=S_{ABC}^{2}`!
+
+
+
+**LV.NOL.2022.12.3**
+  Dots izliekts četrstūris :math:`ABCD`, kuram :math:`AB=BC=CD`. Četrstūra diagonāles
+  krustojas punktā :math:`E`. Pierādīt, ka leņķu :math:`BAD` un :math:`ADC` bisektrišu
+  krustpunkts atrodas uz trijstūrim :math:`ADE` apvilktās riņķa līnijas.
+
+
+
+**LV.NOL.2023.10.3**
+  Šaurleņķu trijstūra :math:`ABC` augstumi krustojas punktā :math:`H`. 
+  Aprēķināt četrstūra :math:`ABHC` laukumu, ja :math:`AH = BC = 8`.
+
+
+**LV.NOL.2023.11.3**
+  Dots vienādsānu trijstūris :math:`ABC`, kuram :math:`AB = AC` un 
+  :math:`\sphericalangle BAC<60^{\circ}`. Riņka līnija, kuras centrs ir punktā 
+  :math:`B` un rādiuss :math:`BC`, krusto trijstūra malas :math:`AC` un :math:`AB` 
+  attiecīgi punktos :math:`D` un :math:`E`. Aprēķināt :math:`\frac{AD}{DC}`, 
+  ja :math:`\frac{AE}{EB}=\frac{2}{5}`.
+
+
+**LV.NOL.2023.12.3**
+  Dots vienādsānu trijstūris :math:`ABC`, kuram :math:`AB=AC` un 
+  :math:`\sphericalangle BAC < 60^{\circ}`. 
+  Rinķa līnija, kuras centrs ir punktā :math:`B` un rādiuss :math:`BC`, 
+  krusto trijstūra malas :math:`AC` un :math:`AB` attiecīgi punktos :math:`D` 
+  (kas nesakrīt ar :math:`C`) un :math:`E`. Pierādīt, ka :math:`AD < 2AE`.
+
+
+
+**LV.NOL.2024.10.1**
+  Dotas divas riṇka līnijas :math:`\omega_{1}` un :math:`\omega_{2}`, kas krustojas punktos 
+  :math:`X` un :math:`Y`. Taisne :math:`t_{1}`, kas vilkta caur :math:`X`, 
+  krusto :math:`\omega_{1}` un :math:`\omega_{2}` 
+  attiecīgi punktos :math:`A` un :math:`B` (punkts :math:`X` atrodas starp :math:`A` un :math:`B` ), 
+  savukārt taisne :math:`t_{2}`, kas vilkta caur :math:`Y`, krusto :math:`\omega_{1}` un :math:`\omega_{2}` 
+  attiecīgi punktos :math:`C` un :math:`D` (punkts :math:`Y` atrodas starp :math:`C` un :math:`D` ). 
+  Pierādīt, ka :math:`AC` ir paralēla ar :math:`BD`!
+
+
+**LV.NOL.2024.10.3**
+  Šaurleņķu trijstūra :math:`ABC` malu garumi ir :math:`AB=7 \mathrm{~cm}`, 
+  :math:`AC=12 \mathrm{~cm}` 
+  un :math:`BC=13 \mathrm{~cm}`. Pierādīt, ka uz malas :math:`AC` var atrast tādus divus 
+  iekšējus punktus :math:`P` un :math:`Q`, ka nogriežnu :math:`AP, AQ, BP` un :math:`BQ` 
+  garumi ir izsakāmi veselā skaitā centimetru! 
+
+
+**LV.NOL.2024.11.1**
+  No punkta :math:`A`, kas atrodas ārpus riṇķa līnijas ar centru :math:`O`, novilktas divas pieskares, 
+  kas pieskaras riṇka līnijai punktos :math:`D` un :math:`E`. 
+  Uz taisnēm :math:`AD` un :math:`AE` atlikti attiecīgi 
+  punkti :math:`B` un :math:`C` tā, ka punkts :math:`D` atrodas starp 
+  :math:`A` un :math:`B`, punkts :math:`C` atrodas starp 
+  :math:`A` un :math:`E` un :math:`OB = OC`. Pierādīt, ka punkti 
+  :math:`O`, :math:`A`, :math:`B` un :math:`C` atrodas uz vienas rinķa līnijas!
+
+
+**LV.NOL.2024.11.3**
+  Taisnleņķa trijstūrī :math:`ABC\left(\sphericalangle ABC=90^{\circ}\right)` uz malas 
+  :math:`BC` atlikti punkti :math:`D` un :math:`E` tā, ka 
+  :math:`\sphericalangle BAD=\sphericalangle DAE, \sphericalangle EAC=2 \sphericalangle BAD`, 
+  :math:`BD=3`, :math:`DE=4`. 
+  Aprēķināt :math:`EC` garumu!
+
+
+**LV.NOL.2024.12.1**
+  Šaurleņķu trijstūrī :math:`ABC` novilkti augstumi :math:`AD, BE` un :math:`CF`, 
+  kas krustojas punktā :math:`H`. 
+  Pierādīt, ka :math:`DH` ir leṇka :math:`EDF` bisektrise!

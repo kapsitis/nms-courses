@@ -56,7 +56,7 @@ Invariants:
        :width: 1.3in
 
 
-**1.uzdevums:** 
+**LV.AMO.2022.7.2:**
   Karlsonam ir :math:`30` milzīgi tortes gabali. Viņš izvēlas trīs gabalus un sagriež 
   katru no tiem vai nu :math:`3`, vai :math:`5` mazākos gabalos (visus izvēlētos gabalus sagriež 
   vienādā skaitā mazāku gabalu). Tad viņš atkal izvēlas kādus :math:`3` gabalus un
@@ -92,7 +92,7 @@ Invariants:
   :math:`\square`
 
 
-**2.uzdevums:** 
+**LV.AMO.2022.8.2:**
   Kādā dienā Karlsons uzlika uz galda :math:`44` kūciņas.  
   Karlsons izdomāja, ka vienā piegājienā viņš apēdīs vai nu :math:`5` kūciņas, 
   vai arī :math:`10` kūciņas. Ja Karlsons apēda :math:`5` kūciņas, tad Brālītis uzreiz 
@@ -133,7 +133,25 @@ Invariants:
   :math:`\square`
 
 
-**3.uzdevums:** 
+
+
+**LV.NOL.2011.7.5:** 
+  Pilsētā, kurā dzīvo godīgie iedzīvotāji (kas vienmēr runā tikai 
+  taisnību) un blēži (kas vienmēr melo), notika domes vēlēšanas, 
+  kurās piedalījās visi pilsētas iedzīvotāji. Balsot varēja par kādu 
+  no četrām partijām :math:`A`, :math:`B`, :math:`C` un :math:`D`, un katrs
+  iedzīvotājs nobalsoja tieši par vienu partiju. Pirms rezultātu apkopošanas
+  žurnālisti veica visu iedzīvotāju aptauju. Uz jautājumu "Vai jūs balsojāt par
+  partiju :math:`A`?" ar "Jā" atbildēja :math:`22\%` pilsētas iedzīvotāju. 
+  Uz līdzīgu jautājumu par partiju :math:`B` ar "Jā" atbildēja :math:`33\%`, 
+  par partiju :math:`C` -- :math:`44\%`, bet par partiju :math:`D` --
+  :math:`55\%` iedzīvotāju. Cik procenti pilsētas iedzīvotāju ir 
+  godīgie iedzīvotāji un cik -- blēži? 
+
+
+
+
+**LV.AMO.2023.7.5:** 
   Daži no :math:`272` ciema iedzīvotājiem visu laiku saka patiesību, 
   pārējie visu laiku melo. Katram no ciema iedzīvotājiem
   ir tieši viena mīļākā nedēļas diena. Aptaujājot iedzīvotājus, 
@@ -188,8 +206,7 @@ Invariants:
 
   :math:`\square`
 
-
-**4.uzdevums:**
+**LV.AMO.2022.7.4:**
   Elektroniskais pulkstenis rāda stundu skaitu (vesels skaitlis robežās no :math:`0` 
   līdz :math:`23`) un minūšu skaitu (vesels skaitlis robežās no 
   :math:`0` līdz :math:`59`). Noteikt, cik reižu diennaktī stundu skaita 
@@ -229,7 +246,7 @@ Invariants:
 
 
 
-**5.uzdevums:**
+**LV.AMO.2023.8.4:**
   Četru bērnu -- Almas, Bruno, Cēzara un Dorotejas -- tēvs mēdz bērniem iedot 
   sīknaudu. Tā reiz tēvs saviem bērniem iedeva sīknaudu šādi:
 
@@ -241,7 +258,7 @@ Invariants:
   Kāda ir **(A)** lielākā, **(B)** mazākā iespējamā starpība starp Dorotejai 
   un Almai iedotajām naudas summām?
 
-**6.uzdevums:** 
+**LV.AMO.2022.8.4:** 
   Māris iedomājās naturālu skaitli :math:`n`. Pēc tam viņš izvēlējās vienu 
   skaitļa :math:`n` dalītāju, pareizināja to ar :math:`4` un iegūto
   reizinājumu atņēma no dotā skaitļa :math:`n`, iegūstot vērtību :math:`11`. 
@@ -249,7 +266,7 @@ Invariants:
   pamato, ka citu nav!
 
 
-**7.uzdevums:** 
+**LV.AMO.2022A.7.2** 
   Vai var atrast **(A)** :math:`5`; **(B)** :math:`15` naturālus skaitļus 
   (ne obligāti dažādus), kuru summa ir vienāda ar to reizinājumu?
 

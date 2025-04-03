@@ -129,9 +129,8 @@ Vienādojums veselos skaitļos:
 
 
 
-.. LV.AMO.2022A.8.5; 
 
-**3.uzdevums:** 
+**LV.AMO.2022A.8.5:** 
   Mārtiņš augošā secībā pēc kārtas sāka rakstīt skaitļus, kuru pirmie četri cipari ir "3321":
 
   .. math:: 
@@ -140,26 +139,24 @@ Vienādojums veselos skaitļos:
 
   Kāds ir 3321. skaitlis šajā virknē?
 
-.. LV.AMO.2022B.7.1; 
 
-**4.uzdevums:** 
+**LV.AMO.2022B.7.1:** 
   Uz tāfeles bija uzrakstīts šāds teksts: :math:`A869B`. 
   Katrs no burtiem :math:`A` un :math:`B` jāaizstāj ar vienu ciparu (tie var būt arī
   vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar :math:`15`. 
   Cik dažādos veidos to var izdarīt?
 
-.. LV.AMO.2022B.8.1;
 
-**5.uzdevums:** 
+
+**LV.AMO.2022B.8.1:** 
   Uz tāfeles bija uzrakstīts šāds teksts: :math:`N597M`. Katrs no burtiem 
   :math:`N` un :math:`M` jāaizstāj ar vienu ciparu (tie var būt arī
   vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar :math:`12`. 
   Cik dažādos veidos to var izdarīt?
 
 
-.. LV.AMO.2023.7.2; 
 
-**6.uzdevums:** 
+**LV.AMO.2023.7.2:** 
   Kāds ir lielākais iespējamais septiņciparu skaitlis, kuram vienlaicīgi 
   izpildās šādi nosacījumi:
 
@@ -168,9 +165,8 @@ Vienādojums veselos skaitļos:
   * skaitļa 2., 4. un 6. cipars ir vienādi un tie ir divas reizes lielāki nekā pirmais cipars;
   * skaitļa trešais cipars ir tāds pats kā piektais cipars?
 
-.. LV.AMO.2023.8.2
 
-**7.uzdevums:** 
+**LV.AMO.2023.8.2:** 
   Trīsciparu skaitļa :math:`x` ciparu summa ir :math:`12`. 
   Ja šim skaitlim nodzēš pēdējo ciparu, tad atlikušais divciparu skaitlis
   dalās ar :math:`9`. Zināms, ka skaitlis :math:`x` ir par :math:`99` lielāks 
