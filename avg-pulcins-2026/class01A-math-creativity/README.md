@@ -1,0 +1,49 @@
+Below is a systematic list of broadly useful, author‑neutral creative strategies for solving non‑standard math problems. They are intended as heuristics: things to try when you don’t see a direct method. Each item gives a short description and how it differs from nearby strategies.
+
+Exploration and foothold
+- Try small cases (**Vienkāršots variants**). Work out the problem for the smallest or simplest values (n=1,2,3; triangles before polygons; 2×2 before n×n). This aims to reveal patterns or obstructions with minimal overhead. It differs from “edge cases,” which target boundary parameter values rather than minimal ones.
+- Pattern hunt through computation (**Paraugu un musturu ieraudzīšana**). Generate data (by hand or computer) and look for regularities, recurrences, or numerical coincidences that suggest a conjecture. Unlike “small cases,” the emphasis is on accumulating enough data to guess structure rather than just warming up.
+- Draw a diagram (**Pārveido par attēlu**). Make a picture, graph, table, or schematic that encodes relationships visually. Diagrams can expose hidden constraints, symmetries, and invariants. This differs from “change the representation” in that it focuses on an immediate visual/structural sketch rather than a formal recoding.
+- Extreme and edge cases (**Galējie un robežgadījumi:**). Probe boundary conditions (very large/small parameters, degenerate configurations, equality cases) to see what must or cannot happen. This often suggests necessary conditions or tight bounds. It differs from “small cases” in targeting extremes rather than minimal sizes.
+- Specialize to a simpler variant (**Vienkāršots variants**). Fix parameters, add convenient assumptions, or restrict to a friendly subclass to solve first, then try to lift insights back. Unlike “toy model,” you keep the problem’s rules intact but tune them to be easier.
+- Build and break examples. Construct explicit examples that satisfy parts of the conditions; also try to find counterexamples to tentative claims. This is more adversarial than “pattern hunt,” aiming to test and refine conjectures by locating sharp failures.
+- Toy model first. Strip away complicating features to a pared‑down analogue that preserves the core mechanism. It differs from “specialize” by altering the rules or setting (not just the parameters) to isolate ideas.
+- Guess‑and‑verify loop. Form a concrete conjecture (formula, structure, bound), test it on computed cases, and iterate until stable. This is more hypothesis‑driven than “build and break,” which prioritizes falsification.
+
+Reframing and representation
+- Rephrase givens and goal (**Pārformulē zināmo un mērķi**). Restate the problem in your own words, list assumptions, and express the exact target in symbolic form. This clarifies what must be shown and often suggests missing definitions. It differs from “work backwards,” which starts from the target and reasons inward.
+- Work backwards. Assume you have the desired conclusion and derive what would suffice to prove it, chaining back to the givens. Unlike “rephrase,” this is a directional planning tool that proposes intermediate lemmas.
+- Change the representation. Translate between algebraic, geometric, combinatorial, probabilistic, or analytic views of the same object. This is broader than “draw a diagram,” emphasizing formal equivalence between domains, not just a helpful picture.
+- Introduce strategic notation. Define symbols or names that factor repeated patterns, clarify roles, or isolate key quantities. This differs from “auxiliary element” because you compress and organize existing structure rather than add new mathematical objects.
+- Add an auxiliary element. Create a new point, line, variable, function, graph, or lemma that wasn’t present but makes structure visible. Unlike “notation,” an auxiliary object enriches the problem’s substance to unlock a route.
+- Generalize to simplify. Enlarge the statement (more variables, parameters, dimension) to expose symmetry or to admit stronger tools; prove the broader claim and specialize back. This is the opposite of “specialize,” and differs from “relax then tighten” in aiming at structural clarity rather than softer constraints.
+- Relax then tighten. Temporarily weaken constraints (continuous instead of discrete, inequality instead of equality, convex hull instead of set) to make progress; then refine to meet the original goal. Unlike “generalize,” relaxation prioritizes tractability over structural elegance.
+- Contrapositive or equivalent form (**Pieņem pretējo:**). Replace the target with a logically equivalent formulation (contrapositive, negation, or decomposition into necessary/sufficient parts). This differs from “work backwards,” which seeks sufficient conditions without necessarily changing logical form.
+- Bijection/equivalence mapping. Exhibit an exact correspondence to a known problem or structure so that known results transfer directly. Unlike “analogy,” this is not suggestive but exact: solving one is solving the other.
+- Discretize or continuize. Move between discrete and continuous versions of the problem (e.g., integrals vs. sums, lattice vs. plane) to leverage tools on one side. This is a specific kind of representation change targeted at the discrete/continuous divide.
+
+Structure and control
+- Divide and conquer. Decompose the problem into smaller independent subproblems or cases, then combine the answers. This differs from “local‑to‑global,” which is about deducing global truth from local properties rather than splitting the workload.
+- Recursive/inductive build‑up. Look for a way to construct larger instances from smaller ones, or identify a natural progression of cases. Unlike formal induction (a method), the heuristic is to search for incremental structure that could admit induction or recursion.
+- Look for invariants or monovariants. Identify a quantity that stays the same (invariant) or changes monotonically (monovariant) under allowed operations to constrain behavior. This differs from “symmetry,” which concerns invariance under transformations of viewpoint, not process.
+- Exploit symmetry. Use permutations, reflections, rotations, or label symmetries to reduce distinct cases or normalize configurations. Unlike “invariants,” symmetry is about equivalence between configurations via group actions or relabelings.
+- Homogeneity and scaling. Check degrees, units, or scaling behavior to guess forms of solutions, normalizations, or substitutions. This differs from general “bounding” by focusing on structural proportionality, not estimates.
+- Bounding and squeezing. Establish upper and lower bounds and tighten them until they meet or imply the claim (sandwich, comparison, dominance). Unlike “equality conditions,” the goal here is to corral the value, not to characterize when bounds are tight.
+- Extremal element focus. Consider minimal or maximal objects satisfying constraints and analyze their forced properties. This is a heuristic lens rather than the full “extremal principle” method; it often reveals contradictions or structure quickly.
+- Symmetrization/averaging. Replace variables or configurations by more symmetric or averaged ones that do not worsen (and often improve) the quantity of interest. This differs from “exploit symmetry,” which uses existing symmetry; here you actively create symmetry.
+
+Connection and analogy
+- Analogy to a known result. Recognize a similar pattern in a familiar theorem or proof and imitate the strategy. Unlike “bijection,” analogy guides thinking without guaranteeing equivalence.
+- Reduce to a known problem. Show that solving your problem would follow from, or is a special case of, a standard theorem or classical problem type. This is stronger than analogy: it sets a concrete target tool to invoke.
+- Local‑to‑global thinking. Prove a property for local pieces (e.g., edges, intervals, neighborhoods) and then aggregate to the whole via overlap, covering, or consistency. Unlike “divide and conquer,” the subproblems are not independent tasks but coherent local truths that must mesh.
+- Algorithmic viewpoint. Design a procedure that would construct the solution or decide truth; the steps suggest invariants, termination metrics, or a proof skeleton. This differs from “divide and conquer” by emphasizing an operational process over static decomposition.
+
+Validation and meta‑strategies
+- Sanity checks and limit behavior. Test dimensions/units, asymptotics, special limits, and invariance under obvious rescalings to catch errors or refine conjectures. Unlike “homogeneity,” this is a diagnostic step rather than a structuring tool.
+- Equality/optimality conditions. In inequalities or optimization, analyze when equality can hold; these structural conditions often reveal the right substitutions or configurations. This differs from “bounding,” which may prove the inequality without explaining sharpness.
+- Two‑track proofs. Seek an independent second argument (geometric vs. algebraic, combinatorial vs. analytic) to confirm and often simplify the first. This goes beyond “analogy” by actually executing multiple routes for cross‑validation.
+- Time‑box and switch gears. When stuck, impose a short time limit on a line of attack, then deliberately switch strategy, representation, or granularity. This metacognitive tactic differs from all others by managing the problem‑solving process rather than the mathematics itself.
+
+Notes
+- Many items interact: for example, “generalize to simplify” often pairs with “homogeneity/scaling,” and “toy model first” with “algorithmic viewpoint.”
+- The list intentionally avoids naming specific methods (like induction or the pigeonhole principle) and instead emphasizes the heuristics for deciding what to try next.
