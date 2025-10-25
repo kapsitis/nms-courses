@@ -1,0 +1,76 @@
+---
+title: "Bw-number-theory-omnivore01"
+output:
+  word_document: default
+  html_document: default
+---
+
+## Tests par nepāru skaitļiem
+
+**nt.omni01.01:** Kopmītnes gaitenī ar skaitļiem $1,2,\ldots,1000$ sanumurēti $1000$ gaismas slēdži. Katrs slēdzis var atrasties $2$ stāvokļos - ieslēgts vai izslēgts, sākumā visi ir izslēgti. Cauri gaitenim dodas $500$ studenti - pirmais students pārslēdz pretējā stāvoklī visus slēdžus, otrais students pārslēdz pretējā stāvoklī slēdžus ar numuriem $3,6,9,\ldots$ (visus, kas dalās ar $3$), trešais students pārslēdz slēdžus ar numuriem $5,10,15,\ldots$ (dalās ar $5$), utt. 
+Visbeidzot, piecsimtais students pārslēdz slēdzi ar numuru $999$. ($k$-tais students pārslēdz $2k-1$ daudzkārtņus.)  
+Cik daudzi no $1000$ slēdžiem būs ieslēgti beigās?  
+*Ierakstīt veselu nenegatīvu skaitli.*
+
+**nt.omni01.02:** Cik ir tādu skaitļu no 
+$1$ līdz $100$ (abus galapunktus ieskaitot), ko var izteikt kā četru pēc 
+kārtas ņemtu nepāra skaitļu summu?  
+*Ierakstīt veselu nenegatīvu skaitli.*
+
+**nt.omni01.03:** Izteikt skaitli $3$ kā vairāku nesaīsināmu daļu summu, kam saucējos ir dažādi nepāru skaitļi.  
+*Ierakstīt vai nu izteiksmi formā `a/b+c/d+...` utml., vai arī atzīmēt atbildi "nevar".*
+
+**nt.omni01.04:** Izteikt skaitli $4$ kā vairāku nesaīsināmu daļu summu, kam saucējos ir dažādi nepāru skaitļi.    
+*Ierakstīt vai nu izteiksmi formā `a/b+c/d+...` utml., vai arī atzīmēt atbildi "nevar".*
+
+**nt.omni01.05:** Matemātiķis Zaķis
+izvēlējās astoņus skaitļus no šiem desmit
+skaitļiem $\{ 1,3,5,7,9,11,13,15,17,19 \}$ un pateica
+to reizinājumu matemātiķim Lācim. 
+Bet Lācis tik un tā nevarēja pateikt, 
+vai Zaķa izvēlēto skaitļu summa dalās ar $3$. 
+Kādu reizinājumu Zaķis viņam pateica?  
+*Ierakstīt veselu nenegatīvu skaitli.*
+
+**nt.omni01.06:** Uz tāfeles rakstīja garu skaitli:
+$$123456789101112\ldots20172018,$$
+kur bez atstarpēm izrakstīti visu pirmo $2018$ naturālo 
+skaitļu cipari. 
+Kādu atlikumu dod šis skaitlis, dalot ar $9$?  
+*Ierakstīt veselu nenegatīvu skaitli.*
+
+**nt.omni01.07:** Kādu atlikumu dod $3^{3^{2018}}$, dalot ar $13$?  
+*Ierakstīt veselu nenegatīvu skaitli.*
+
+**nt.omni01.08:** Vai eksistē tāds naturāls $n$, kuram 
+visi skaitļi $2n - 107$, $5n-121$ un $8n-103$ ir 
+pirmskaitļu kvadrāti?  
+*Ierakstīt skaitli $n$. Ja ir vairākas atbildes, tās jāieraksta, atdalot tās ar komatiem. Ja atbilžu nav, jāatzīmē attiecīgā iespēja.*
+
+**nt.omni01.09:** Ar $p,q,r$ apzīmēti dažādi
+pirmskaitļi, un vienādojumam $x^2 - rx + pq$ ir 
+divas dažādas naturālas saknes $x_1$ un $x_2$, kuru starpība 
+$s=|x_1 - x_2|$ arī ir
+pirmskaitlis (nav zināms, vai $s$ 
+sakrīt ar kādu $p,q,r$ vai nē). Atrast $p,q,r$.  
+*Ierakstīt naturālu skaitļu trijnieku $(p,q,r)$, to liekot iekavās un atdalot skaitļus ar komatiem.*
+
+**nt.omni01.10:** Ieviešam "dubultā faktoriāla" apzīmējumu: 
+$(n)!! = n(n-2)(n-4)\cdots$, kur reizinājums beidzas ar $1$, ja
+$n$ ir nepāru skaitlis, bet ar $2$, ja $n$ ir pāru skaitlis. 
+Piemēram, 
+$$1!! = 1,\;2!!=2,\;3!!=3,\;4!!=8,\;5!!=15,\ldots$$
+Izmantojot četras aritmētisko darbību zīmes un dubultā faktoriāla
+apzīmējumu, pierakstīt izteiksmi iespējami mazam skaitlim $N$, kurš pats 
+nav pirmskaitlis, un arī neviens no skaitļiem
+$N+1$, $N+2$, utt., $N+100$ nav pirmskaitlis.  
+*Ierakstīt aritmētisku izteiksmi, izmantojot četras darbības. Reizināšanu apzīmēt ar zvaigznīti, bet dalīšanu ar parasto daļsvītru (/). Dubultā faktoriāla argumentu likt iekavās.*
+
+
+**nt.omni01.11:** Naturālam skaitlim $n$ ir tieši $42$ naturāli dalītāji 
+(ieskaitot $1$ un pašu $n$). Ir zināms, ka naturālam skaitlim 
+$m$ logaritms $\log_m(n)$ arī ir naturāls skaitlis. Kāds var būt $m$?
+
+
+
+

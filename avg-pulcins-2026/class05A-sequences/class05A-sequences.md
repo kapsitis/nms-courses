@@ -58,8 +58,9 @@ dažādi skolēnu izvietojumi iespējami pēc pārsēšanās?
 pāra skaits nuļļu. Piemēram, "11" vai "0407869" ir labas virknītes, 
 bet "0" vai "120987045608" nav labas.  
 Ar $a_n$ apzīmējam, cik ir "labu" virkņu ar tieši $n$ cipariem.  
-**(A)** Atrast rekurentu sakarību virknei $a_n$.  
-**(B)** Izveidot tabulu ar virknes vērtībām $a_1, a_2, a_3, a_4, a_5, a_6$. 
+**(A)** Uzrakstīt $a_2$, $a_3$, $a_4$, $a_5$, $a_6$ ar reizināšanas likumu.
+**(B)** Atrast rekurentu sakarību virknei $a_n$.  
+
 
 **8.uzdevums:** Dota josla, kuras izmērs ir $2 \times n$ rūtiņas. 
 Ar $a_n$ apzīmē, cik veidos to var pārklāt ar flīzēm, kuru 
@@ -71,6 +72,39 @@ var pārklāt ar šīm flīzēm.
 **(C)** Pārbaudīt, ka ir spēkā formula $a_n = \frac{2^n - (-1)^n}{3}$.
 (Parasti izmantot formulu ir ērtāk, jo katru $a_n$ var izrēķināt tieši, 
 neveidojot tabulu.)
+
+**Atrisinājums:**  
+**(A)** Ievērosim, ka $a_1 = 1$ (joslu $2 \times 1$ var noklāt ar 1 domino kauliņu un 
+nekā citādi). Un $a_2 = 3$ (joslu $2 \times $ var noklāt ar 2 domino kauliņiem 
+vertikāli, vai diviem kauliņiem horizontāli vai arī ar vienu kvadrātu). 
+
+Apskatām joslu $2 \times n$, ja $n > 2$. Tad eksistē 3 veidi, kā šajā joslā noklāt, 
+piemēram, abas rūtiņas kreisajā joslas galā: 
+
+* Tās var nosegt ar vertikālu domino kauliņu. Tad 
+  paliek vēl josla $2 \times (n-1)$, ko var noklāt $a_{n-1}$ dažādos veidos.
+* Kreiso apakšējo rūtiņu var nosegt ar horizontālu domino kauliņu, bet tad 
+  tai virsū jāliek otrs horizontāls kauliņš. Tad paliek josla $2 \times (n-2)$, 
+  ko var noklāt $a_{n-2}$ dažādos veidos. 
+* Visbeidzot kreisajā galā esošās rūtiņas var nosegt ar vienu kvadrātiņu. Arī tad
+  paliek josla $2 \times (n-2)$, ko var noklāt $a_{n-2}$ dažādos veidos. 
+
+Visus šos variantus saskaitot, iegūstam, ka $a_n = a_{n-1} + a_{n-2} + a_{n-2} = a_{n-1} + 2 \cot a_{n-2}$.  
+
+**(B)** Var izveidot tabuliņu ar $a_n$ vērtībām pie $n \leq 8$: 
+
+| $n$     | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    |   
+| ------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| $a_n$   | 1    | 3    | 5    | 11   | 21   | 43   | 85   | 171  |
+
+**(C)** Var ievietot dažas vērtības un pārbaudīt, ka $a_n = \frac{2^{n+1} + (-1)^{n+1}}{3}$, 
+ja $n=1,2,3$ (*Indukcijas bāze*).  
+Lielākiem $n$ apskata divus gadījumus. Ja $n$ ir pāra skaitlis, tad 
+jāpārbauda, ka $a_n = \frac{2^{n+1} + 1}$. Ievieto šajā formulā $a_{n-1}$ un $a_{n-2}$
+(izdara *induktīvo pieņēmumu, ka šiem locekļiem formula jau izpildās), un tad 
+pārbauda ka līdzīga izteiksme ir spēkā arī priekš $a_n$. 
+Ja $n$ ir nepāra, tad šo gadījumu apskata līdzīgi.
+
 
 **9.uzdevums:** Ir uzrakstīta izteiksme ar $n+1$ skaitļiem vai burtiem un 
 operāciju $\circ$ (aplītis), kuru raksta starp diviem skaitļiem 

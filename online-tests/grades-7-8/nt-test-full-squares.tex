@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\usepackage{lipsum}
+
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\textwidth 6.27in
+\headheight 1.0in
+\topmargin 0.0in
+\headheight 0.0in
+\headsep 0.0in
+%\textheight 9.69in
+\textheight 9.00in
+
+\setlength\parindent{0pt}
+
+\newenvironment{myenv}{\begin{adjustwidth}{0.4in}{0.4in}}{\end{adjustwidth}}
+\renewcommand{\abstractname}{Anotācija}
+\renewcommand\refname{Atsauces}
+
+\newenvironment{uzdevums}[1][\unskip]{%
+\vspace{3mm}
+\noindent
+\textbf{#1:}
+\noindent}
+{}
+
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
+
+
+
+\newcounter{alphnum}
+\newenvironment{alphlist}{\begin{list}{(\Alph{alphnum})}{\usecounter{alphnum}\setlength{\leftmargin}{2.5em}} \rm}{\end{list}}
+
+
+\makeatletter
+\let\saved@bibitem\@bibitem
+\makeatother
+
+\usepackage{bibentry}
+%\usepackage{hyperref}
+
+%\title{}
+%\author{\vspace{-10ex}\mbox{aa}}
+%\date{2016-09-19}
+
+\author{\mbox{}\hspace{1ex}\vspace{-4ex}% Toggle commenting out the command
+}
+\date{2019-04-11}
+\title{}
+
+
+
+\begin{document}
+
+\maketitle
+
+\section{Pilni kvadrāti: Pazīme ar dalīšanu pirmreizinātājos}
+
+\begin{uzdevums}
+Atrast, kuri no šiem skaitļiem ir pilni kvadrāti: 
+\begin{enumerate}[(a)]
+\item $7^6$
+\item $7^7$
+\item $9^6$
+\item $9^7$
+\item $2^4\cdot{}3^2\cdot{}7^1$
+\item $\left( 5^2 \right)^7$
+\item $\left( 6^7 \right)^4$
+\item $6^{(7^4)}$
+\item $\left( \left( 2^3 \right)^5 \right)^7$
+\item $12^{2019}$
+\item $6^3\cdot{}24^7$
+\item $6^9\cdot{}10^{49}$
+\item $6^5\cdot{}10^9\cdot{}15^{13}$
+\end{enumerate}
+\end{uzdevums}
+
+
+
+\begin{uzdevums}
+Vai eksistē naturāla $n$ vērtība, kurai izteiksme ir pilns kvadrāts?
+\begin{enumerate}[(a)]
+\item $n^2+n$
+\item $2^n+20$
+\item $2^n+24$
+\item $n^2+n+1$
+\item $n^2+4n+1$
+\item $4n^2+4n+1$
+\item $5n$
+\item $5n+1$
+\item $5n+2$
+\item $5n+3$
+\item $5n+4$
+\item $8n+a$ dažādām konstantēm $a$.
+\end{enumerate}
+\end{uzdevums}
+
+\end{document}

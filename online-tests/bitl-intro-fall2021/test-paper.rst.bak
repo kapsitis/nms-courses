@@ -1,0 +1,374 @@
+FYS Pre-assessment Test
+=================================================
+
+Welcome to the RBS Intro Week! 
+This test is a preliminary activity and could help to reveal the 
+progress you will make during the study year.
+It does not entail any obligations
+and will not affect your grades in any way.
+Please, do not use Internet or calculators and and do not communicate with 
+other people during this test!
+
+For each question enter a short answer. 
+It is highly recommended that you also provide a brief explanation, 
+how did you arive to that answer.
+The topics covered by this test include logic and algorithmic processes,
+integer arithmetic, combinatorics, probabilities and statistics. 
+
+
+
+**Question 1**
+
+  .. image:: figs/function-graphs.png
+     :width: 200 px
+
+  Graphs of functions :math:`f(x)=x^2 - 7x + 10` and :math:`g(x) = x - 4` are shown. 
+  Define function :math:`h(x)`:
+  
+  .. math::
+  
+     h(x) = \sqrt{\left( x^2 - 7x + 10 \right) \left( x - 4 \right)}.
+
+  Find the domain of :math:`h(x)`.
+  (The *domain* of a function is the set of all those :math:`x` for which the function is defined.)
+  Write your answer as a set - number intervals or their unions.
+      
+
+  **Answer (the domain of h(x)):** ________________
+  
+  **Notes:** ________________________________________________________________________________
+  
+
+
+
+
+**Question 2**
+
+  We are given the following facts:
+  
+  1. Some theropod dinosaurs make gurgling sounds.
+  2. All theropod dinosaurs are creatures. 
+  3. No gurgling creatures relieve stress. 
+  
+  
+  Mark all the statements that are necessarily true as they logically follow from the given facts.
+  
+  **Answer A:**
+    Some theropod dinosaurs do not make gurgling sounds. 
+	
+  **Answer B:**
+    Some gurgling creatures do not relieve stress.
+	
+  **Answer C:**
+    Some theropod dinosaurs do not relieve stress.
+	
+  **Answer D:** 
+    Some creatures that relieve stress are theropod dinosaurs.
+	
+  **Answer E:**
+    Some creatures that relieve stress are not theropod dinosaurs.
+
+  **Answer (list all that apply):** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+
+
+**Question 3**
+
+  In some country there are 1 million porcupines. 
+  A new virus is infecting them: 
+  Initially just one porcupine is infected; after one day the 
+  number of infected porcupines is two. 
+  In one more day the number of infected porcupines doubles again 
+  and so on. 
+  
+  Assume that after :math:`N` days all 1 million porcupines are infected. 
+  How many porcupines were infected :math:`10` days prior to that?
+  You can give an estimate, if precise number is hard to compute.
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+
+
+
+
+
+
+
+**Question 4**
+  Initially Jane stands in the point :math:`O(0,0)` of a coordinate plane. 
+  After that she does all stages :math:`1` through :math:`10`:
+  
+  **Stage 1:** 
+    She walks :math:`1` meter to the north and reaches point :math:`A_1(1,0)`. 
+    Then she turns :math:`90^{\circ}` to the right and walks one more meter to the east reaching point :math:`B_1(1,1)`
+
+  **Stage 2:**
+    She turns left, walks :math:`2` meters, and reaches :math:`A_2`. Then she turns left again and walks 2 more meters
+    reaching  :math:`B_2`.
+
+  **Stage 3:**
+    She turns right and walks :math:`3` meters, then turns right again and walks 3 more meters.	
+
+  **(and so on)**
+    . . .
+
+  **Stage 10:**
+    She turns left and walks 10 meters, then turns left again and walks 10 more meters. 
+
+  At every stage she increases both distances by 1 meter; 
+  on even stages she turns :math:`90^{\circ}` to the left twice; on odd 
+  stages she turns :math:`90^{\circ}` to the right twice.
+  
+  What are the coordinates :math:`(x;y)` of the final point  :math:`B_{10}` where she arrives after all ten stages?
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+**Question 5**
+
+  How many among the numbers :math:`1,2,3,\ldots,30` can be expressed 
+  as a sum of three different numbers taken from the set :math:`\{ 1,2,3,\ldots,10\}`. 
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+
+ 
+**Question 6**
+
+  .. image:: figs/square-rectangles.png
+     :width: 140 px
+
+  A square was divided into four smaller squares; 
+  each square is further divided into several equal rectangles
+  as shown in the figure. 
+  Find the smallest length of the side of the original square 
+  :math:`a` such that all the rectangles in the figure
+  have integer sizes in centimeters (*integer size* means 
+  that the side has whole number of centimeters rather than 
+  a fraction). 
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+
+
+**Question 7**
+  In a hospital there is a row of :math:`100` empty paper cups with numbers :math:`\#1,\#2,\ldots,\#100`.
+  Alex passes this row one hundred times from the left to the right. 
+  During the first pass he adds one pill in every cup. During 
+  the 2nd pass he adds one pill in every other cup (cups with numbers :math:`\#2,\#4,\ldots`). During the 
+  third pass he adds one pill in every 3rd cup, and so on. During the 100th pass he adds one pill to 
+  every 100th cup (it is the cup :math:`\#100`).
+  
+  
+  .. image:: figs/cups.png     
+     :width: 300 px
+	 
+  How many pills were added to the cup :math:`\#60`?
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+  
+  
+  
+  
+
+  
+**Question 8**
+
+  As you may know, the number of days in a year can be divided by :math:`7` with a remainder. 
+  In particular, 
+  
+  .. math::
+  
+     \left\{ \begin{array}{l}
+	 365 = 52 \cdot 7 + 1,\\
+	 366 = 52 \cdot 7 + 2.\\
+	 \end{array} \right.
+	   
+  In year 2021 the date September 1 was on Wednesday. What is the nearest year in the future when 
+  September 1 will also be on Wednesday?
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+
+
+
+
+
+
+
+**Question 9**
+
+  Three vertices :math:`K,L,M` of a rhomboid have the following coordinates: 
+  :math:`K(1,3)`, :math:`L(4,0)` and :math:`M(5,4)`. 
+  Let :math:`N` be the fourth vertex of that rhomboid. 
+  
+  Write the coordinates :math:`(x,y)` of the vertex :math:`N`. 
+  If there are multiple answers, list all the possibilities.
+  
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+  
+  
+ 
+ 
+**Question 10**
+
+  .. image:: figs/grid-2x5.png     
+     :width: 100 px
+	 
+  Integer numbers from :math:`1` to :math:`10` are filled into grid as shown in the figure. 
+  How many rectangles on this grid contain exactly one even number?
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+
+  
+
+
+**Question 11**
+
+  How many different 3-letter "words" can be formed from the letters of a 4-letter word "FALL"?
+  (By a "word" we mean any sequence of letters, it does not need to have a meaning.)
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+
+
+
+**Question 12**
+
+  There are 6 students. In how many ways can they be assigned into 3 teams, two students per team? 
+  Two assigments differ if some student is paired with somebody else (the order of students 
+  in a given team or the order of the teams themselves is irrelevant). 
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+
+
+
+
+
+
+
+**Question 13**
+
+  Assume that there is a :math:`12.5\%` excise tax on coffee. 
+  At some point the tax rate was raised to :math:`15.0\%`. 
+  At the same time the consumption of coffee decreased by :math:`10\%`. 
+  What is the change in the revenue (the money collected by the government
+  from this tax) after both these events? Express the change as percentage.
+
+  **Answer:** ________________ %
+  
+  **Notes:** ________________________________________________________________________________
+
+  
+
+
+
+  
+**Question 14**
+
+  There are two archers :math:`A` and :math:`B`. Archer :math:`A` hits some target
+  with probability :math:`p=0.9`, but another one hits that target with 
+  probability :math:`p=0.5`. What is the probability that exactly one of the archers
+  will hit the target?
+
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+  
+
+
+
+
+**Question 15**
+
+  .. image:: figs/histogram-for-age.png    
+     :width: 200 px
+	 
+
+  The histogram shows the distribution of people in some company by age groups. 
+  Each age group is a half-open interval :math:`[20;30)`, :math:`[30;40)`, and so on.
+  Specifically, the leftmost bar in the histogram means that there are exactly two people of ages 
+  from the interval :math:`[20;30)`. 
+  
+  Some employee Joe is such that 70% of the employees have ages not exceeding Joe's age.
+  
+  What is the smallest possible age of Joe?
+  
+  **Answer:** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+    
+
+
+**Question 16**
+
+  There were six people in some room.
+  The following numbers denote their annual income in USD:
+  
+  .. math::
+  
+    40000, 50000, 60000, 70000, 80000, 3000000.
+  
+  The person with annual income of 3 million USD walked away leaving just five people in the room.
+  
+  1. By how much did the average income in this room decrease? (*Average* is the arithmetic mean.)
+  2. By how much did the median income in this room decrease?
+  
+  
+  **Answer (the decrease of average income):** ________________
+
+  **Answer (the decrease of median income):** ________________
+  
+  **Notes:** ________________________________________________________________________________
+
+    
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+  

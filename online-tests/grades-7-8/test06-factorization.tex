@@ -1,0 +1,125 @@
+\documentclass[11pt]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\usepackage{lipsum}
+
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\textwidth 6.27in
+\headheight 1.0in
+\topmargin 0.0in
+\headheight 0.0in
+\headsep 0.0in
+%\textheight 9.69in
+\textheight 9.00in
+
+\setlength\parindent{0pt}
+
+\newenvironment{myenv}{\begin{adjustwidth}{0.4in}{0.4in}}{\end{adjustwidth}}
+\renewcommand{\abstractname}{Anotācija}
+\renewcommand\refname{Atsauces}
+
+\newenvironment{uzdevums}[1][\unskip]{%
+\vspace{3mm}
+\noindent
+\textbf{#1:}
+\noindent}
+{}
+
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
+
+
+
+\newcounter{alphnum}
+\newenvironment{alphlist}{\begin{list}{(\Alph{alphnum})}{\usecounter{alphnum}\setlength{\leftmargin}{2.5em}} \rm}{\end{list}}
+
+
+\makeatletter
+\let\saved@bibitem\@bibitem
+\makeatother
+
+\usepackage{bibentry}
+%\usepackage{hyperref}
+
+
+\begin{document}
+
+\begin{center}
+{\LARGE \bf Skaitļu teorija}
+\end{center}
+
+\begin{center}
+{\large Jautājumu lapa \#006 (Dalīšana pirmreizinātājos)}
+\end{center}
+
+
+\begin{uzdevums}[1]
+Sadalīt pirmreizinātājos skaitļus 99, 999 un 99999. T.i. izteikt tos kā pirmskaitļu pakāpju
+reizinājumus: $p_1^{a_1} \cdot p_2^{a_2} \cdot \ldots \cdot p_n^{a_n}$, kur
+$p_1 < p_2 < \ldots < p_n$ ir pirmskaitļi augošā secībā.
+\end{uzdevums}
+
+
+\begin{uzdevums}[2]
+Atrast mazākos kopīgos dalāmos (jeb kopsaucējus): $\operatorname{lcm}(6,8,14)$ un 
+$\operatorname{lcm}(9,12,16)$. (Šeit ar $\operatorname{lcm}(\ldots)$ apzīmē 
+mazāko kopīgo dalāmo jeb {\em least common multiple}.)
+\end{uzdevums}
+
+\begin{uzdevums}[3]
+Kurš ir mazākais četrciparu skaitlis, kurš dalās ar 
+$2$, $3$, $4$, $5$, $6$ un $7$?
+\end{uzdevums}
+
+\begin{uzdevums}[4]
+Zināms, ka $108 = 2^2 \cdot 3^3$ un $360 = 2^3 \cdot 3^2 \cdot 5^1$. 
+Atrast 108 un 360 mazāko kopīgo dalāmo un lielāko kopīgo dalītāju. 
+Izteikt tos kā pirmskaitļu pakāpju reizinājumus. 
+\end{uzdevums}
+
+\begin{uzdevums}[5]
+Atrast $\gcd(42, 700)$, $\frac{42}{\gcd(42, 700)}$ un $\frac{700}{\gcd(42, 700)}$. 
+(Šeit ar $\operatorname{gcd}(\ldots)$ apzīmē 
+lielāko kopīgo dalītāju jeb {\em greatest common divisor}.)
+\end{uzdevums}
+
+\begin{uzdevums}[6]
+Atrast piecus mazākos pilnos kvadrātus, kas dalās ar $6$.
+\end{uzdevums}
+
+\begin{uzdevums}[7]
+Kamerons uzrakstīja mazāko skaitļa 20 daudzkārtni, kas ir pilns kvadrāts (t.i. $n^2$), 
+mazāko skaitļa 20 daudzkārtni, kas ir pilns kubs (t.i. $n^3$) un vēl arī 
+visus skaitļa 20 daudzkārtņus, kuri atrodas starp šiem abiem skaitļiem. 
+Cik skaitļus Kamerons uzrakstīja? 
+\end{uzdevums}
+
+\begin{uzdevums}[8]
+Pieņemsim, ka $n$ ir naturāls, skaitlis, kuram $\gcd(n, 70) = 10$ un $\mathrm{lcm}(n, 70) = 210$. 
+Atrast $n$. (Šeit $\gcd(\ldots)$ un $\operatorname{lcm}(\ldots)$
+apzīmē attiecīgi lielāko kopīgo dalītāju un mazāko kopīgo dalāmo.)
+\end{uzdevums}
+
+\begin{uzdevums}[9]
+Sk. $n$ no iepriekšējā uzdevuma. Kurš skaitlis ir lielāks: $n \cdot 70$ vai arī
+$\gcd(n, 70) \cdot \operatorname{lcm}(n,70)$.  
+\end{uzdevums}
+
+\begin{uzdevums}[10]
+Saīsināt šo daļu:
+$\dfrac{770}{100100}$.
+\end{uzdevums}
+
+
+\end{document}

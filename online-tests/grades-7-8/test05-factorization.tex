@@ -1,0 +1,121 @@
+\documentclass[11pt]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\usepackage{lipsum}
+
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\textwidth 6.27in
+\headheight 1.0in
+\topmargin 0.0in
+\headheight 0.0in
+\headsep 0.0in
+%\textheight 9.69in
+\textheight 9.00in
+
+\setlength\parindent{0pt}
+
+\newenvironment{myenv}{\begin{adjustwidth}{0.4in}{0.4in}}{\end{adjustwidth}}
+\renewcommand{\abstractname}{Anotācija}
+\renewcommand\refname{Atsauces}
+
+\newenvironment{uzdevums}[1][\unskip]{%
+\vspace{3mm}
+\noindent
+\textbf{#1:}
+\noindent}
+{}
+
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
+
+
+
+\newcounter{alphnum}
+\newenvironment{alphlist}{\begin{list}{(\Alph{alphnum})}{\usecounter{alphnum}\setlength{\leftmargin}{2.5em}} \rm}{\end{list}}
+
+
+\makeatletter
+\let\saved@bibitem\@bibitem
+\makeatother
+
+\usepackage{bibentry}
+%\usepackage{hyperref}
+
+
+\begin{document}
+
+\begin{center}
+{\LARGE \bf Skaitļu teorija}
+\end{center}
+
+\begin{center}
+{\large Jautājumu lapa \#005 (Dalīšana pirmreizinātājos)}
+\end{center}
+
+
+\begin{uzdevums}[AOPS.INT.4.1]
+Kurš ir lielākais pirmskaitlis $6! + 8!$. (Ja $n$ ir naturāls skaitlis, tad $n!$ ir reizinājums 
+$1\cdot 2\cdot 3\cdot \cdots \cdot (n-1)\cdot n$.)
+\end{uzdevums}
+
+
+\begin{uzdevums}[AOPS.INT.4.2]
+Cik daudzus daļskaitļus $\frac{n}{99}$, kur $0<n<99$, nevar saīsināt? 
+\end{uzdevums}
+
+
+\begin{uzdevums}[AOPS.INT.4.3]
+Kurš ir mazākais pilnais kvadrāts, kas dalās ar 3 dažādiem pirmskaitļiem? (Skaitli sauc par {\em pilnu kvadrātu}, ja tas ir $n^2$ kādam naturālam $n$.)
+\end{uzdevums}
+
+
+\begin{uzdevums}[AOPS.INT.4.4]
+Skolas orķestris noskaidroja, ka viņi var sarindoties 6, 7 vai 8 vienādās rindās tā, lai neviens nepaliek pāri. 
+Kāds ir mazākais skolēnu skaits šajā orķestrī?
+\end{uzdevums}
+
+
+\begin{uzdevums}[AOPS.INT.4.5]
+Kāds ir mazākais veselais skaitlis, kurš dalās ar 7, bet dod atlikumu 1, ja to dala ar jebkuru skaitli no 2 līdz 6? 
+\end{uzdevums}
+
+
+\begin{uzdevums}[AOPS.INT.4.6]
+Divi velosipēdisti sāk braukt no kopīgas starta līnijas 12:15. Vienam velosipēdistam vajag $12$ minūtes, lai apbrauktu apli, 
+kamēr otrs velosipēdists apbrauc apli katras $16$ minūtes. Pieņemot, ka viņu ātrumi ir nemainīgi, kad būs nākamais brīdis, kad 
+viņi abi reizē šķērsos šo starta līniju? Atbildi izsakiet formā $hh:mm$. 
+\end{uzdevums}
+
+\begin{uzdevums}[AOPS.INT.4.7]
+Atrast mazāko četrciparu skaitli, kas dalās ar katru no četriem mazākajiem pirmskaitļiem. 
+\end{uzdevums}
+
+\begin{uzdevums}[AOPS.INT.4.8]
+Divus skaitļus sauc par ``relatīviem pirmskaitļiem'', ja to lielākais kopīgais dalītājs ir $1$. Cik daudzi veselie skaitļi no 1 līdz 28 ir 
+relatīvi pirmskaitļi ar 28? 
+\end{uzdevums}
+
+
+\begin{uzdevums}[AOPS.INT.4-6.16]
+Sadalīt pirmreizinātājos katru no skaitļiem $14^2$, $15^2$, $16^2$, $17^2$, un $18^2$.
+\end{uzdevums}
+
+
+\begin{uzdevums}[AOPS.INT.4-6.18]
+Atrast piecus mazākos skaitļa 8 daudzkārtņus, kuri ir pilni kvadrāti. 
+\end{uzdevums}
+
+
+
+\end{document}

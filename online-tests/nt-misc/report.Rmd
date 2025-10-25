@@ -1,0 +1,20 @@
+---
+title: Pārskats
+date: "December 15, 2017"
+output: pdf_document
+---
+
+```{r, fig.width=5.4, fig.height=3, echo=FALSE}
+par(mar = rep(2, 4))
+pie(rep(1,times=24), col=rainbow(24))
+```
+
+```{r child = 'nt-R4.Rmd'}
+```
+
+```{r child = 'nt-R5.Rmd'}
+```
+
+```{r child = 'nt-R6.Rmd'}
+```
+

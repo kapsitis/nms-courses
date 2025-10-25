@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{amsthm}
+\usepackage{thmtools}
+
+
+\usepackage{fontspec} % loaded by polyglossia, but included here for transparency 
+\usepackage{polyglossia}
+
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\setmainlanguage{russian} 
+\setotherlanguage{english}
+
+\newfontfamily\cyrillicfont[Script=Cyrillic]{Times New Roman}
+\newfontfamily\cyrillicfontsf[Script=Cyrillic]{Arial}
+\newfontfamily\cyrillicfonttt[Script=Cyrillic]{Courier New}
+
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\textwidth 6.27in
+\headheight 1.0in
+\topmargin 0.0in
+\headheight 0.0in
+\headsep 0.0in
+%\textheight 9.69in
+\textheight 9.00in
+ 
+\setlength\parindent{0pt}
+
+\newenvironment{myenv}{\begin{adjustwidth}{0.4in}{0.4in}}{\end{adjustwidth}}
+\renewcommand{\abstractname}{Anotācija}
+\renewcommand\refname{Atsauces}
+
+%\newenvironment{uzdevums}[1][\unskip]{%
+%\vspace{3mm}
+%\noindent
+%\textbf{#1:}
+%\noindent}
+%{}
+
+
+% http://tex.stackexchange.com/questions/196961/thmtools-declaration-for-theorem-and-proof
+\declaretheoremstyle[headfont=\normalfont\bfseries,notefont=\mdseries\bfseries,bodyfont = \normalfont,headpunct={:}]{normalhead}
+\declaretheorem[name={Uzdevums}, style=normalhead,numberwithin=section]{problem}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
+
+
+
+\newcounter{alphnum}
+\newenvironment{alphlist}{\begin{list}{(\Alph{alphnum})}{\usecounter{alphnum}\setlength{\leftmargin}{2.5em}} \rm}{\end{list}}
+
+\newenvironment{zhtext}{\fontfamily{MS PGothic}\selectfont}{\par}
+
+
+\makeatletter
+\let\saved@bibitem\@bibitem
+\makeatother
+
+\usepackage{bibentry}
+%\usepackage{hyperref}
+
+\newenvironment{tulkojums}[1][\unskip]{%
+\begin{changemargin}{8mm}{8mm}
+\fontsize{9}{11}
+\selectfont
+\textbf{#1:}
+}
+{ 
+\fontsize{12}{14}
+\selectfont
+\end{changemargin}
+}
+
+\setcounter{section}{4}
+
+\begin{document}
+
+\section{Tests no imomath.com}
+
+
+
+\begin{problem}[ImoMathCom.NT.1]
+Pieņemsim, ka $m$ un $n$ ir naturāli skaitļi ($m>1$) tādi ka 
+funkcijas $f(x) = \arcsin(\log_m(nx))$ ir slēgts intervāls garumā $\frac{1}{2013}$. 
+Ar $S$ apzīmēsim $m+n$ mazāko iespējamo vērtību. 
+Atrast atlikumu $S$ dalot ar $1000$. 
+\end{problem}
+
+
+\begin{problem}[ImoMathCom.NT.2]
+Atrast mazāko naturālo $n$ tādu, ka, nodzēšot šī skaitļa pirmo ciparu (t.i. ciparu kreisajā pusē), 
+iegūstam jaunu naturālu skaitli, kas vienāds ar $n/29$. 
+\end{problem}
+
+
+\begin{problem}[ImoMathCom.NT.3]
+Ar $a,b,c,d$ apzīmēti reāli pozitīvi skaitļi, kam $a^2 + b^2 - c^2 - d^2 = 0$ un 
+$a^2 - b^2 - c^2 + d^2 = \frac{56}{53}(bc+ad)$. Ar $M$ apzīmēsim 
+lielāko iespējamo vērtību izteiksmei $\frac{ab+cd}{bc+ad}$. 
+Ja $M$ izteikts kā nesaīsināma daļa $\frac{m}{n}$, atrast $100m+n$. 
+\end{problem}
+
+\begin{problem}[ImoMathCom.NT.4]
+Ar $\tau(n)$ apzīmējam naturāla skaitļa $n$ dalītāju skaitu, ieskaitot $1$ un $n$. 
+Apzīmējam $S(n) = \tau(1) + \tau(2) + \ldots + \tau(n)$. 
+Ar $a$ apzīmējam naturālo skaitļu ($n \leq 2008$) skaitu, kam $S(n)$ ir nepāru, un ar $b$ apzīmējam 
+naturālo skaitļu ($n \leq 2008$) skaitu, kam $S(n)$ ir pāru. Atrast $|a-b|$. 
+\end{problem}
+
+\begin{problem}[ImoMathCom.NT.5]
+Cik ir tādu veselu skaitļu pāru $(x,y)$, kam $x^2−y^2=2400^2$? 
+\end{problem}
+
+\end{document}
+
+

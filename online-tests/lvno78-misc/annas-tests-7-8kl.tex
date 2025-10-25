@@ -1,0 +1,192 @@
+\documentclass[11pt]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{amsthm}
+\usepackage{thmtools}
+
+
+\usepackage{fontspec} % loaded by polyglossia, but included here for transparency 
+\usepackage{polyglossia}
+
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\setmainlanguage{russian} 
+\setotherlanguage{english}
+
+\newfontfamily\cyrillicfont[Script=Cyrillic]{Times New Roman}
+\newfontfamily\cyrillicfontsf[Script=Cyrillic]{Arial}
+\newfontfamily\cyrillicfonttt[Script=Cyrillic]{Courier New}
+
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\textwidth 6.27in
+\headheight 1.0in
+\topmargin 0.0in
+\headheight 0.0in
+\headsep 0.0in
+%\textheight 9.69in
+\textheight 9.00in
+ 
+\setlength\parindent{0pt}
+
+\newenvironment{myenv}{\begin{adjustwidth}{0.4in}{0.4in}}{\end{adjustwidth}}
+\renewcommand{\abstractname}{Anotācija}
+\renewcommand\refname{Atsauces}
+
+%\newenvironment{uzdevums}[1][\unskip]{%
+%\vspace{3mm}
+%\noindent
+%\textbf{#1:}
+%\noindent}
+%{}
+
+
+% http://tex.stackexchange.com/questions/196961/thmtools-declaration-for-theorem-and-proof
+\declaretheoremstyle[headfont=\normalfont\bfseries,notefont=\mdseries\bfseries,bodyfont = \normalfont,headpunct={:}]{normalhead}
+\declaretheorem[name={Uzdevums}, style=normalhead,numberwithin=section]{problem}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
+
+
+
+\newcounter{alphnum}
+\newenvironment{alphlist}{\begin{list}{(\Alph{alphnum})}{\usecounter{alphnum}\setlength{\leftmargin}{2.5em}} \rm}{\end{list}}
+
+\newenvironment{zhtext}{\fontfamily{MS PGothic}\selectfont}{\par}
+
+
+\makeatletter
+\let\saved@bibitem\@bibitem
+\makeatother
+
+\usepackage{bibentry}
+%\usepackage{hyperref}
+
+\newenvironment{tulkojums}[1][\unskip]{%
+\begin{changemargin}{8mm}{8mm}
+\fontsize{9}{11}
+\selectfont
+\textbf{#1:}
+}
+{ 
+\fontsize{12}{14}
+\selectfont
+\end{changemargin}
+}
+
+\setcounter{section}{0}
+
+\begin{document}
+
+\section{Annas tests \#1}
+
+
+%% "IMO1994.P3" "IMO1994.P4" "IMO1995.P6" 
+%% "IMO1999.P4" "IMO2002.P3" "IMO2003.P2" 
+%% "IMO2007.P5" "IMO2011.P5" "IMO2012.P4" 
+%% "IMO2013.P1" "IMO2015.P2" "IMO2016.P4"
+
+\begin{problem}
+\[
+\left\{
+\begin{array}{lcl}
+a + b & = & 80 \\
+a - b & = & 30 \\
+\end{array}
+\right.
+\]
+{\bf Atrisinājums:} $a = \rule{10ex}{.4pt}$; $b = \rule{10ex}{.4pt}$.
+\end{problem}
+
+\begin{problem}
+\[
+\left\{
+\begin{array}{lcl}
+(a+b)(a - b) & = & 1400 \\
+a + b & = & 100 \\
+\end{array}
+\right.
+\]
+{\bf Atrisinājums:} $a - b = \rule{10ex}{.4pt}$; $a = \rule{10ex}{.4pt}$; $b = \rule{10ex}{.4pt}$.
+\end{problem}
+
+\begin{problem}
+\[
+\left\{
+\begin{array}{lcl}
+a^2 - b^2 & = & 19 \\
+a + b & = & 19 \\
+\end{array}
+\right.
+\]
+{\bf Atrisinājums:} $a - b = \rule{10ex}{.4pt}$; $a = \rule{10ex}{.4pt}$; $b = \rule{10ex}{.4pt}$.
+\end{problem}
+
+\begin{problem}
+\[
+\left\{
+\begin{array}{lcl}
+a + b & = & 60 \\
+a^2 + b^2 & = & 2000 \\
+\end{array}
+\right.
+\]
+{\bf Atrisinājums:} $(a + b)^2 = \rule{10ex}{.4pt}$; $2ab = \rule{10ex}{.4pt}$; $ab = \rule{10ex}{.4pt}$\\[5mm]
+$a^2 - 2ab + b^2 = \rule{10ex}{.4pt}$; $a - b = \rule{10ex}{.4pt}$; $a = \rule{10ex}{.4pt}$;
+$b = \rule{10ex}{.4pt}$.
+\end{problem}
+
+
+\begin{problem}
+Taisnstūrim laukums ir $1600\operatorname{cm}^2$, bet perimetrs $200\operatorname{cm}$.\\[5mm]
+{\bf Atrisinājums:} Viena mala ir $\rule{10ex}{.4pt}$; otra mala ir $\rule{10ex}{.4pt}$
+\end{problem}
+
+\begin{problem}
+\[
+\left\{
+\begin{array}{lcl}
+a + b & = & 5 \\
+ab & = & 6 \\
+\end{array}
+\right.
+\]
+{\bf Atrisinājums:} $(a + b)^2 = \rule{10ex}{.4pt}$; $2ab = \rule{10ex}{.4pt}$; \\[5mm]
+$a^2 - 2ab + b^2 = \rule{10ex}{.4pt}$; $a - b = \rule{10ex}{.4pt}$; $a = \rule{10ex}{.4pt}$;
+$b = \rule{10ex}{.4pt}$.
+\end{problem}
+
+\begin{problem}
+Izteikt zīmējumā redzamās figūras laukumu (to veido divi kvadrāti un divi taisnleņķa trijstūri) ar $a$ un $b$.
+\begin{center}
+\includegraphics[width=1.5in]{shape1.png}
+\end{center}
+{\bf Atrisinājums:} Laukums ir $\rule{10ex}{.4pt}$;
+\end{problem}
+
+\begin{problem}
+Ja $a = b$, tad izteiksmes $a^2 + b^2$ un $2ab$ ir vienādas. Bet kura izteiksme ir lielāka, ja $a \neq b$?  \\[5mm]
+{\bf Atrisinājums:}  $a^2 + b^2$ ir (lielāka/mazāka) par $2ab$, jo $\rule{10ex}{.4pt}$
+\end{problem}
+ 
+
+
+\end{document}
+
+

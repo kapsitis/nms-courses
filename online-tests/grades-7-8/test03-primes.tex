@@ -1,0 +1,118 @@
+\documentclass[11pt]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\usepackage{lipsum}
+
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\textwidth 6.27in
+\headheight 1.0in
+\topmargin 0.0in
+\headheight 0.0in
+\headsep 0.0in
+%\textheight 9.69in
+\textheight 9.00in
+
+\setlength\parindent{0pt}
+
+\newenvironment{myenv}{\begin{adjustwidth}{0.4in}{0.4in}}{\end{adjustwidth}}
+\renewcommand{\abstractname}{Anotācija}
+\renewcommand\refname{Atsauces}
+
+\newenvironment{uzdevums}[1][\unskip]{%
+\vspace{3mm}
+\noindent
+\textbf{#1:}
+\noindent}
+{}
+
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
+
+
+
+\newcounter{alphnum}
+\newenvironment{alphlist}{\begin{list}{(\Alph{alphnum})}{\usecounter{alphnum}\setlength{\leftmargin}{2.5em}} \rm}{\end{list}}
+
+
+\makeatletter
+\let\saved@bibitem\@bibitem
+\makeatother
+
+\usepackage{bibentry}
+%\usepackage{hyperref}
+
+
+\begin{document}
+
+\begin{center}
+{\LARGE \bf Skaitļu teorija}
+\end{center}
+
+\begin{center}
+{\large Jautājumu lapa \#003 (Pirmskaitļi)}
+\end{center}
+
+
+\begin{uzdevums}[AOPS.INT.2.1]
+Četriem veseliem skaitļiem $\{2,4,10,x\}$ piemīt īpašība, ka ikvienu trīs locekļu summa, ja tai pieskaita vēl 1, ir pirmskaitlis. 
+Kāda ir mazākā iespējamā $x$ vērtība, ja zināms, ka $x > 10$?  
+\end{uzdevums}
+
+
+
+
+
+\begin{uzdevums}[AOPS.INT.2.2]
+Skaitlis $m$ ir trīsciparu naturāls skaitlis un tas ir trīs atšķirīgu pirmskaitļu reizinājums - $x$, $y$ un $10x+y$, 
+kur $x$ un $y$ ir mazāki par 10. Kāda ir lielākā iespējamā $m$ vērtība?
+\end{uzdevums}
+
+
+
+\begin{uzdevums}[AOPS.INT.2C.1]
+Atrast atlikumu, ja sešu mazāko pirmskaitļu summu dala ar septīto pirmskaitli. 
+\end{uzdevums}
+
+\begin{uzdevums}[AOPS.INT.2C.2]
+Skaitlis 13 ir pirmskaitlis. Ja tā ciparus pieraksta pretējā secībā, arī iegūst pirmskaitli, 31. Kāds ir lielākais pirmskaitļu 
+pāris, kas iegūstami viens no otra, apmainot ciparus, ja viņu summa ir 110? 
+\end{uzdevums}
+
+\begin{uzdevums}[AOPS.INT.2C.3]
+Kāds ir mazākais pirmskaitlis, ar kuru dalās $5^{23} + 7^{17}$?
+\end{uzdevums}
+
+\begin{uzdevums}[AOPS.INT.2C.4]
+25 vienādu monētu kolekcija salikta trīs kaudzītēs tā, ka ikvienā kaudzītē monētu skaits ir cits pirmskaitlis. Kāds monētu 
+skaits ir iespējams lielākajā no kaudzītēm? 
+\end{uzdevums}
+
+\begin{uzdevums}[AOPS.INT.2C.5]
+Ir pavisam 25 pirmskaitļi no 1 līdz 100. Kādai daļai no šiem pirmskaitļiem ciparu summa dalās ar 9?
+\end{uzdevums}
+
+\begin{uzdevums}[AOPS.INT.2C.6]
+Vai 9409 pirmskaitlis?
+\end{uzdevums}
+
+\begin{uzdevums}[AOPS.INT.2C.7]
+Kāds ir lielākais divciparu pirmskaitlis, kura katrs cipars arī ir pirmskaitlis?
+\end{uzdevums}
+
+\begin{uzdevums}[AOPS.INT.2C.8]
+Kāds gads ir pirmais gadskaitlis 21.gadsimtā, kurš ir pirmskaitlis? 
+\end{uzdevums}
+
+
+\end{document}
