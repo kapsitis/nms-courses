@@ -4,9 +4,9 @@ title: Sākumlapa
 ---
 # Šīsnedēļas testi (no 27.oktobra līdz 1.novembrim)
 
-* AVGROOM1 -- Dalāmības pazīmes (arī 7. un 8.klases tēma)
-* AVGROOM2 -- Rekurentas virknes (arī 9.klases tēma)
-* AVGROOM3 -- Algebra (9.klasei, var derēt arī citiem)
+* AVGROOM1 -- Dalāmība-1 (visiem)
+* AVGROOM2 -- Decimālpieraksts un dalāmības pazīmes (7. un 8.klases tēma, der arī citiem)
+* AVGROOM3 -- Rekurentas virknes (9.klases tēma, der arī citiem)
 * AVGROOM4 -- Invariantu metode (visiem)
 
 Priecīgu matemātikas olimpiādi visiem RĀVĢ dalībniekiem

@@ -6,6 +6,7 @@ fontsize: 11pt
 geometry: "margin=1in"
 header-left: "Dirihlē princips - 1"
 ---
+# Dirihlē princips - 1 {-}
 
 ## 1.uzdevums {-}
 
