@@ -14,9 +14,7 @@ Linkus uz esošajiem testiem sk. [sākumlapā]({{ '/' | relative_url }}).
 | 2025-10-13 | [Dirihlē princips - 1]({{ 'archive/2025-10-13-pigeonhole-principle-part1.pdf' | relative_url }}) |
 | 2025-10-13 | [Dirihlē princips - 2]({{ 'archive/2025-10-13-pigeonhole-principle-part2.pdf' | relative_url }}) |
 | 2025-10-27 | Skaitļu teorija: Dalāmība - 1 |
-| 2025-10-27 | Skaitļu teorija: Decimālpieraksts un dalāmības pazīmes |
 | 2025-10-27 | Skaitļu teorija: Virknes |
-| 2025-10-27 | Skaitļu teorija: Invariantu metode |
 
 
 
