@@ -2,7 +2,7 @@
 layout: default
 title: Sākumlapa
 ---
-# Matemātikas fakultatīvs. 
+# Matemātikas fakultatīvs
 
 <p style="color:darkred;font-size:110%">Priecīgu Atklāto Olimpiādi visiem RĀVĢ dalībniekiem 2.novembrī!</p> 
 
@@ -12,7 +12,7 @@ Matemātikas pulciņš 8.-9.klasei - sk. [Interešu grafiku](https://avg.lv/inte
 * Pirmdienās 1. un 2.stundas laikā (8:00 - 9:25), parasti 113.telpā.
 * Ceturtdienās 8.-10.stundas laikā (13:30 - 15:40), parasti 112.telpā.
 
-## Šīsnedēļas testi (no 27.oktobra līdz 1.novembrim)
+## Šīsnedēļas testi (pieejami līdz svētdienai, 2025-11-02)
 
 * [Kārtot testu AVGROOM1](https://api.socrative.com/rc/UAYbNH?method=qr) -- Dalāmība-1 (visiem)
 * AVGROOM2 -- Decimālpieraksts un dalāmības pazīmes (7. un 8.klases tēma, der arī citiem)

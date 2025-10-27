@@ -4,8 +4,15 @@
   url: /worksheets/
 - title: Testu rezultāti
   url: /results/
-- title: Testu arhīvs
-  url: /archive/
+- title: Testēšanas vide
+  children:
+    - title: Socrative instrukcija
+      url: /socrative_instruction/
+    - title: Socrative arhīvs
+      url: /socrative_archive/
+
+
+
 
 
 
