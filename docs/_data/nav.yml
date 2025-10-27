@@ -1,7 +1,9 @@
 - title: Sākums
   url: /
-- title: Rezultāti
+- title: Testu rezultāti
   url: /results/
-- title: Testu Arhīvs
+- title: Darba lapas 
+  url: /worksheets/
+- title: Arhīvs
   url: /archive/
 
