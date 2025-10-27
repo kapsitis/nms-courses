@@ -4,11 +4,7 @@ title: Arhīvs
 ---
 # Darba lapas fakultatīvam
 
-Matemātikas pulciņš 8.-9.klasei - sk. [Interešu grafiks](https://avg.lv/interesu-izglitibas-grafiks/). 
-
-2025.gada rudens semestrī 
-nodarbības notiek pirmdienās 1. un 2.stundas laikā (8:00 - 9:25) 
-un ceturtdienās 8.-10.stundas laikā (13:30 - 15:40). 
+Darba lapas ar uzdevumiem un teorijas ievadu; citi izdales materiāli.
 
 | Nedēļa     | Tēma un darba lapas               |
 | ---------- | --------------------------------- |
