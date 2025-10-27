@@ -21,5 +21,7 @@ Sk. [Pieslēgšanās instrukciju]({{ '/socrative_instruction/' | relative_url }}
 
 ## Norādes
 
+* [2024./2025.mācību gada pulciņa materiāli](https://www.dudajevagatve.lv/courses/aPulcins/index)
+* [Arduino materiāli (2025.g. pavasaris)](https://kapsitis.github.io/avg-arduino/)
 * [NMS Materiāli pirms Atklātās olimpiādes](https://www.nms.lu.lv/olimpiades/atklata-olimpiade/)
 * [7.-9.kl. atklātās olimpiādes uzdevumi sakārtoti pēc tēmām](https://www.dudajevagatve.lv/eliozo/curriculum?olympiad=LV.AMO&minyear=2014&maxyear=2024&mingrade=7&maxgrade=10)
