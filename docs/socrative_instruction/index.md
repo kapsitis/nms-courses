@@ -1,3 +1,7 @@
+---
+layout: default
+title: Socrative pieslēgšanās instrukcija
+---
 # Socrative pieslēgšanās instrukcija 
 
 Katru nedēļu publicējam vienu vai dažus testus par olimpiāžu matemātiku. 
@@ -13,7 +17,7 @@ Kā tam pieslēgties?
    Testu labo dators - tāpēc vēlams nerakstīt klāt mērvienības vai citus vārdus, 
    ja vien jautājumā tas nav īpaši uzsvērts.
 
-![Socrative sākumlapa]({{ '/archive_socrative/socrative-home.png' | relative_url }}){: width="150" }
+![Socrative sākumlapa]({{ '/socrative_instruction/socrative-home.png' | relative_url }}){: width="150" }
 
 Ko rakstīt vārda lodziņā ("Enter your name")?
 Rakstiet šādi: `Vārds Uzvārds / Segvārds#Kods`

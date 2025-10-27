@@ -14,11 +14,12 @@ Matemātikas pulciņš 8.-9.klasei - sk. [Interešu grafiku](https://avg.lv/inte
 
 ## Šīsnedēļas testi (pieejami līdz svētdienai, 2025-11-02)
 
-* [Kārtot testu AVGROOM1](https://api.socrative.com/rc/UAYbNH?method=qr) -- Dalāmība-1 (visiem)
-* AVGROOM2 -- Decimālpieraksts un dalāmības pazīmes (7. un 8.klases tēma, der arī citiem)
-* AVGROOM3 -- Rekurentas virknes (9.klases tēma, der arī citiem)
-* AVGROOM4 -- Invariantu metode (visiem)
+* [Kārtot testu AVGROOM1](https://api.socrative.com/rc/UAYbNH?method=qr) -- Dalāmība-1 (7. un 8.klases tēma, der visiem)
+* [Kārtot testu AVGROOM2](https://api.socrative.com/rc/4ZxD36?method=qr) -- Rekurentas virknes (9.klases tēma, der visiem)
+
+Sk. [Pieslēgšanās instrukciju]({{ '/socrative_instruction/' | relative_url }})
 
 ## Norādes
 
+* [NMS Materiāli pirms Atklātās olimpiādes](https://www.nms.lu.lv/olimpiades/atklata-olimpiade/)
 * [7.-9.kl. atklātās olimpiādes uzdevumi sakārtoti pēc tēmām](https://www.dudajevagatve.lv/eliozo/curriculum?olympiad=LV.AMO&minyear=2014&maxyear=2024&mingrade=7&maxgrade=10)
