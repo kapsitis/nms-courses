@@ -1,10 +1,18 @@
 ---
-title: "Dirihlē princips - 1"
+title: "Skaitļu teorija: Dalāmība - 1"
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
 geometry: "margin=1in"
-header-left: "Dirihlē princips - 1"
+header-left: "Skaitļu teorija: Dalāmība - 1"
+header-includes:
+  - |
+    \makeatletter
+    \RedeclareSectionCommand[
+      beforeskip=1.2ex plus 0.4ex minus 0.2ex,
+      afterskip=0.4ex plus 0.2ex minus 0.2ex
+    ]{subsection}
+    \makeatother
 ---
 # Skaitļu teorija: Dalāmība - 1 {}
 
@@ -128,7 +136,7 @@ Ja $b$ dalās ar $a$, tad kāda var būt skaitļa $b$ mazākā iespējamā vērt
 AOPS.INT.1.6
 -->
 
-**Atrisinājums:** 
+**Atrisinājums:**  
 Ja skaitlim $a$ ir $3$ dažādi dalītāji, tad tas ir kāda pirmskaitļa kvadrāts $p^2$
 (dalītāji ir $1, p, p^2$). Mazākais šāds skaitlis ir $2^2 = 4$.  
 Tālāk jāatrod skaitlis, kuram ir tieši $4$ dažādi dalītāji un kurš dalās ar $4$. 
@@ -169,7 +177,7 @@ Ja skaitlis dalās ar $2$ un ar $3$, tad tas dalās ar $6$.
 
 ## 8.uzdevums {-}
 
-Naturāli skaitļi $A$, $B$ $A-B$ un $A+B$ visi ir pirmskaitļi. 
+Naturāli skaitļi $A$, $B$, $A-B$ un $A+B$ visi ir pirmskaitļi. 
 Atrast šo četru pirmskaitļu summu. 
 
 **Atbilde:** `17`
@@ -226,8 +234,7 @@ Cik rindu ir "Taisnstūrī $A$"?
 Sal. [AOPS.INT.1.10](AOPS.INT.1.10)
 -->
 
-**Atrisinājums:** 
-
+**Atrisinājums:**  
 Sadalām $105$ pirmreizinātājos: $105 = 3 \cdot 5 \cdot 7$. 
 No skaitļiem $3$, $5$ un $7$ (un to savstarpējiem reizinājumiem) var iegūt visus 
 $105$ dalītājus. Izrakstīsim visus šos dalītājus:

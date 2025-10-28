@@ -1,10 +1,18 @@
 ---
-title: "Dirihlē princips - 1"
+title: "Algebra: Rekurentas virknes"
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
 geometry: "margin=1in"
-header-left: "Dirihlē princips - 1"
+header-left: "Algebra: Rekurentas virknes"
+header-includes:
+  - |
+    \makeatletter
+    \RedeclareSectionCommand[
+      beforeskip=1.2ex plus 0.4ex minus 0.2ex,
+      afterskip=0.4ex plus 0.2ex minus 0.2ex
+    ]{subsection}
+    \makeatother
 ---
 # Algebra: Rekurentas virknes
 
@@ -21,13 +29,13 @@ tāpēc tie sāks atkārtoties. Daži pirmie atlikumu virknes locekļi ir
 $0,1,1,2,3,0,3,3,1,4,\ldots$. 
 Kāds ir šīs atlikumu virknes periods?
 
-![](problem1.png){ width=300px }
+![](problem1.png){ width=250px }
 
 **Atbilde:** `20`
 
 **Atrisinājums:**   
 Ievērojam, ka $F_{20} = 6765$ (atlikums, dalot ar $5$ ir $0$),  
-$F_{21}=$10946$ (atlikums $1$),  
+$F_{21}=10946$ (atlikums $1$),  
 $F_{22}=17711$ (atlikums $1$),  
 $F_{23} = 28657$ (atlikums $2$).  
 Kā redzam, sākot no $F_{20}$ Fibonači virknes atlikumi (pēc $5$ moduļa) sāk uzvesties tāpat kā atlikumi, sākot no $F_{0}$. 
@@ -48,7 +56,7 @@ viņš definēja rekurentu virkni: $a_1 = 1$, $a_2 = 2$, $a_n = 2 \cdot a_{n-1}$
 Cik rīsu graudiņu nepieciešami, lai noklātu pirmos $8$ lauciņus šajā virknē?
 
 
-![](problem2.png){ width=300px }
+![](problem2.png){ width=150px }
 
 **Atbilde:** `255`
 
@@ -127,7 +135,7 @@ redzami zīmējumā.
 Cik veidos ar šīm flīzēm var aizpildīt taisnstūri $1 \times 7$ 
 (zilo un zaļo flīžu skaits un secība ir svarīgi).
 
-![](problem2.png){ width=300px }
+![](problem5.png){ width=300px }
 
 **Atbilde:** `21`
 
@@ -153,7 +161,7 @@ $a_1 = 1,\;a_2=2,\;a_3=4;\;a_4=8$.
 
 Atrast $a_6$ vērtību. 
 
-![](problem6.png){ width: 200px }
+![](problem6.png){ width=200px }
 
 **Atbilde:** `31`
 
