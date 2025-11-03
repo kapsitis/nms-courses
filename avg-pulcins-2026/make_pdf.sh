@@ -22,7 +22,8 @@ fi
 # If output is a directory, write inside it with input’s basename
 if [[ -d "$out" ]]; then
 #  out="$out/$(basename "${in%.*}").pdf"
-  truncated="${out:11}"
+  # truncated="${out:11}"
+  truncated="${out}"
   out="${out}/${truncated}.pdf"
 fi
 
