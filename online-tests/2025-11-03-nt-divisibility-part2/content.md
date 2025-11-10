@@ -1,12 +1,12 @@
 ---
-title: "Decimālpieraksts un dalāmības pazīmes"
+title: "Skaitļu teorija: Dalāmība - 2"
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
 geometry: "margin=1in"
-header-left: "Decimālpieraksts un dalāmības pazīmes"
+header-left: "Skaitļu teorija: Dalāmība - 2"
 ---
-# Decimālpieraksts un dalāmības pazīmes
+# Skaitļu teorija: Dalāmība - 2 {}
 
 ## 1.uzdevums {-}
 
