@@ -1,0 +1,547 @@
+\documentclass[a4paper]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{fancyvrb}
+
+
+%% COLORED TABLES
+\usepackage{colortbl}% http://ctan.org/pkg/colortbl
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{booktabs}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\colorlet{tableheadcolor}{gray!25} % Table header colour = 25% gray
+\newcommand{\headcol}{\rowcolor{tableheadcolor}} %
+\colorlet{tablerowcolor}{gray!10} % Table row separator colour = 10% gray
+\newcommand{\rowcol}{\rowcolor{tablerowcolor}} %
+\usepackage{multirow}
+
+
+\usepackage{fontspec} % loaded by polyglossia, but included here for transparency
+\usepackage{polyglossia}
+
+
+
+
+\makeatletter
+\def\legendre@dash#1#2{\hb@xt@#1{%
+  \kern-#2\p@
+  \cleaders\hbox{\kern.5\p@
+    \vrule\@height.2\p@\@depth.2\p@\@width\p@
+    \kern.5\p@}\hfil
+  \kern-#2\p@
+  }}
+\def\@legendre#1#2#3#4#5{\mathopen{}\left(
+  \sbox\z@{$\genfrac{}{}{0pt}{#1}{#3#4}{#3#5}$}%
+  \dimen@=\wd\z@
+  \kern-\p@\vcenter{\box0}\kern-\dimen@\vcenter{\legendre@dash\dimen@{#2}}\kern-\p@
+  \right)\mathclose{}}
+\newcommand\legendre[2]{\mathchoice
+  {\@legendre{0}{1}{}{#1}{#2}}
+  {\@legendre{1}{.5}{\vphantom{1}}{#1}{#2}}
+  {\@legendre{2}{0}{\vphantom{1}}{#1}{#2}}
+  {\@legendre{3}{0}{\vphantom{1}}{#1}{#2}}
+}
+\def\dlegendre{\@legendre{0}{1}{}}
+\def\tlegendre{\@legendre{1}{0.5}{\vphantom{1}}}
+\makeatother
+
+
+
+%\usepackage{xeCJK}
+%\setCJKmainfont{SimSun}
+%\setmainlanguage{russian}
+%\setotherlanguage{english}
+
+%\newfontfamily\cyrillicfont[Script=Cyrillic]{Times New Roman}
+%\newfontfamily\cyrillicfontsf[Script=Cyrillic]{Arial}
+%\newfontfamily\cyrillicfonttt[Script=Cyrillic]{Courier New}
+
+\oddsidemargin -1.27cm
+\evensidemargin -1.27cm
+%\textwidth 6.27in
+\textwidth 18.46cm
+\topmargin -1.27cm
+\headheight 0.0cm
+\headsep 0.0cm
+\textheight 27.16cm
+
+\setlength\parindent{0pt}
+
+
+
+
+% http://tex.stackexchange.com/questions/196961/thmtools-declaration-for-theorem-and-proof
+\declaretheoremstyle[headfont=\normalfont\bfseries,notefont=\mdseries\bfseries,bodyfont = \normalfont,headpunct={:}]{normalhead}
+\declaretheorem[name={Uzdevums}, style=normalhead,numberwithin=section]{problem}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+
+
+\newcommand{\subf}[2]{%
+  {\small\begin{tabular}[t]{@{}c@{}}
+  #1\\#2
+  \end{tabular}}%
+}
+
+
+
+\newcounter{alphnum}
+\newenvironment{alphlist}{\begin{list}{(\Alph{alphnum})}{\usecounter{alphnum}\setlength{\leftmargin}{2.5em}} \rm}{\end{list}}
+
+\newenvironment{zhtext}{\fontfamily{MS PGothic}\selectfont}{\par}
+
+
+\makeatletter
+\let\saved@bibitem\@bibitem
+\makeatother
+
+\usepackage{bibentry}
+\usepackage{hyperref}
+
+\pagenumbering{gobble} 
+
+
+%% Mathematical Olympiads treasures 
+%% An Algebraic identity
+%%
+
+
+\begin{document}
+
+
+
+
+\arrayrulecolor[HTML]{DB5800}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[ht!]\centering
+{\footnotesize
+%\begin{tabular*}{18.46cm}{@{}|p{8.787cm}|p{2cm}p{6.35cm}|@{}} \hline    
+\begin{tabular*}{18.46cm}{@{}|p{2cm}p{6.35cm}|p{2cm}p{6.35cm}|@{}} \hline    
+\headcol \multicolumn{4}{|c|}{\bf \normalsize Skaitļu teorijas formulu lapa (NMS)} \\ \hline 
+\rowcol\multicolumn{4}{|p{18.01cm}|}{\textbf{Algebriski pārveidojumi. }  } \\ \hline 
+
+
+$(a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4$. &
+\cellcolor[HTML]{FFFFEE}
+\textbf{Binomiālie koeficienti:} $(a+b)^n = a^n + \binom{n}{1}a^{n-1}b + \cdots + \binom{n}{n-1}ab^{n-1}+b^n$, 
+kur $\binom{n}{k} = C_n^k = \frac{n!}{k!(n-k)!}$. 
+& $(a+b+c+d)^4 = \ldots + 12a^2bc + \ldots$, jo 
+$\frac{4!}{2!1!1!}=12$. &  \cellcolor[HTML]{FFFFEE} 
+\textbf{Polinomiālie koeficienti:} $(a_1+a_2+\cdots{}+a_m)^n$ izvirzījums satur $a_1^{k_1}a_2^{k_2}\cdots{}a_m^{k_m}$ ar 
+koeficientu $\frac{n!}{k_1!k_2!\cdots{}k_m!}$, ja $k_1+k_2+\cdots+k_m=n$. \\ \hline  
+$a^3 + b^3 = (a+b)(a^2 - ab + b^2)$. &
+\cellcolor[HTML]{FFFFEE}
+\textbf{Nepāru pakāpju summa:} $a^{2n+1} + b^{2n+1} = (a+b)(a^{2n}-a^{2n-1}b+\cdots-ab^{2n-1}+b^{2n})$. 
+& $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$. &  \cellcolor[HTML]{FFFFEE} 
+\textbf{Pakāpju starpība:} $a^{n} - b^{n} =$ \newline 
+$=(a-b)(a^{n-1}+a^{n-2}b+\cdots+ab^{n-2}+b^{n-1})$. \\ \hline 
+$ax^2+bx+c=0$ ir $3$ saknes $\Rightarrow$ $a=b=c=0$ &
+\cellcolor[HTML]{FFFFEE}
+\textbf{Identiski polinomi:} Ja $P(x)$ un $Q(x)$ ir $n$-tās pakāpes polinomi un to vērtības sakrīt $n+1$ dažādiem 
+$x_i$, tad $P(x)=Q(x)$. 
+& $P(x)=4x^3-3x^2-25x-6$ dalās ar $(x-3)$. &  \cellcolor[HTML]{FFFFEE}
+Polinoms $P(x)$ dalās ar $(x-a)$ tad un tikai tad, ja $a$ ir $P(x)$ sakne. \\  \hline
+$x^4 + 4 = $ \newline $=(x^2 - 2x + 2) \cdot$ \newline $\cdot (x^2 + 2x + 2)$
+& 
+\cellcolor[HTML]{FFFFEE}
+{\bf Sofijas-Žermēnas identitāte:}\newline ${\displaystyle a^4 + 4b^4 = \left( (a+b)^2 + b^2 \right)  \cdot \left( (a-b)^2 + b^2 \right)}$ 
+& 
+\multicolumn{2}{p{8.787cm}|}{
+\cellcolor[HTML]{FFFFEE}
+\textbf{3 kubu identitāte:} \newline
+${\displaystyle a^3 + b^3 + c^3 - 3abc = (a + b + c) \left( a^2 + b^2 + c^2 - ab - bc - ca \right).}$ \newline
+\textbf{Sekas:} $(x-y)^3 + (y-z)^3 + (z-x)^3 = 3(x-y)(y-z)(z-x)$.
+} \\ \hline \hline
+
+
+\rowcol\multicolumn{4}{|p{18.01cm}|}{
+\textbf{Dalāmība un pirmskaitļi:} 
+Veseliem $a$ un $d$ ($d \neq 0$) rakstām $d\,\mid a$, ja $a$ dalās ar $d$. Atlikums, $a$ dalot ar $b$: 
+$(a\;\operatorname{mod}\;b)$. 
+}\\ \hline 
+\multicolumn{2}{|p{8.787cm}|}{
+\cellcolor[HTML]{DAF0FF}
+Pirmskaitļu $2,3,5,\ldots$ ir bezgalīgi daudz. (No pretējā: ja būtu galīgs skaits, tad $p_1p_2\cdots{}p_k+1$ 
+nedalītos ne ar vienu no tiem.) 
+}
+& 
+\multicolumn{2}{p{8.787cm}|}{
+\cellcolor[HTML]{DAF0FF}
+Eksistē cik patīk garas $\mathbb{N}$ apakšvirknes bez pirmskaitļiem. 
+(Piemēram, $m!+2, m!+3, m!+m$ satur $m-1$ saliktu skaitli.)
+} \\ \hline
+$2016 = 2^53^27$. $2017 = 2017^1$. $2018=2\cdot1009$. &
+\cellcolor[HTML]{E1FFE1}
+\textbf{Aritmētikas pamatteorēma:} Katru $n \in \mathbb{N}$ var tieši vienā veidā izteikt kā pirmskaitļu 
+pakāpju reizinājumu: $n=p_1^{a_1}p_2^{a_2}\cdots{}p_k^{a_k}$. 
+& $60=2^2\cdot{}3^1\cdot{}5^1$ ir $3\cdot2\cdot2 = 12$ dalītāji. 
+& \cellcolor[HTML]{E1FFE1}
+\textbf{Dalītāju skaits:} Katram $n=p_1^{a_1}p_2^{a_2}\cdots{}p_k^{a_k}$ pozitīvo dalītāju skaits, 
+ieskaitot $1$ un $n$, ir $d(n)=(a_1+1)\cdots(a_k+1)$. \\ \hline
+$d(100) = 9$; \newline $d(1000) = 16$. 
+& \cellcolor[HTML]{E1FFE1}
+\textbf{Dalītāju skaita teorēma:} $n \in \mathbb{N}$ ir pilns kvadrāts t.t.t., ja tam ir nepāru skaits 
+pozitīvu dalītāju (visi pirmreizinātāji ir pāru pakāpēs).
+& $n=12$: $(1,12)$, $(2,6)$ un $(3,4)$. 
+& \cellcolor[HTML]{E1FFE1}
+{\bf Dalītāju pāri:} Visus $n$ dalītājus (izņemot $\sqrt{n}$) var grupēt pāros: $d_1 < \sqrt{n} < d_2$, kur $d_2 = n/d_1$. 
+\\ \hline
+$\operatorname{gcd}(192,78) = \operatorname{gcd}(78, 36) = \operatorname{gcd}(36,6) = \operatorname{gcd}(6,0) = 6$.
+& \cellcolor[HTML]{E1FFE1}
+\textbf{Eiklīda algoritms:}\newline
+\texttt{function gcd(a, b)}\newline
+\null\quad\quad\texttt{if (b == 0) \{ return a; \}}\newline
+\null\quad\quad\texttt{else \{ return gcd(b, a mod b); \}}
+& 
+\multicolumn{2}{p{8.787cm}|}{
+\cellcolor[HTML]{E1FFE1}
+\textbf{Piemērs polinomiem:}\newline
+$\operatorname{gcd} \left( n^2 + 3, n^2 + 2n + 4 \right) = 
+\operatorname{gcd} \left( n^2 + 3, 2n+1 \right) =$ \newline
+$=\operatorname{gcd}\left( 2n^2 + 6, 2n+1 \right) = 
+\operatorname{gcd} \left( -n + 6, 2n+1 \right) = \operatorname{gcd} \left(n-6, 13 \right)$. 
+} \\ \hline
+$a=8,b=13$ $\Rightarrow$ $5a - 3b = 1$.
+& \cellcolor[HTML]{E1FFE1}
+{\bf Bezū lemma:} Ja $a, b \in \mathbb{N}$ un $d = \operatorname{gcd}(a,b)$, tad eksistē $x,y \in \mathbb{Z}$, kam 
+$ax + by = d$. \newline
+{\bf Eiklīda lemma:} Dots pirmskaitlis $p$ un $a,b \in \mathbb{Z}$. Ja $p\,\mid\,ab$, tad $p\,\mid\,a$ vai $p\,\mid\,b$. 
+& $(n_1,n_2,n_3)=(2,3,5)$, $(x_1,x_2,x_3)=(1,2,3)$ $\Rightarrow$ $x \equiv 23\;(\operatorname{mod}\,30)$. 
+& \cellcolor[HTML]{E1FFE1}
+{\bf Ķīniešu atlikumu teorēma:} Ja $n_1,\ldots,n_k$ ir naturāli skaitļi, $\operatorname{gcd}(n_i,n_j)=1$ 
+visiem $i \neq j$, tad visiem naturāliem $x_1,\ldots,x_k$ eksistē tieši viena 
+kongruenču klase $x$ pēc moduļa $n=n_1\cdots{}n_k$, kam $x \equiv x_i\;(\operatorname{mod}\,n_i)$ visiem $i$.
+\\ \hline \hline
+
+
+\rowcol\multicolumn{4}{|p{18.01cm}|}{\textbf{Kongruences:} 
+Veseliem $a,b,m$ rakstām $a \equiv b\;(\operatorname{mod}\,m)$, ja $a-b$ dalās ar $m$.
+} \\ \hline
+
+\multicolumn{2}{|p{8.787cm}|}{
+\cellcolor[HTML]{DAF0FF}
+{\bf Intuīcija:}
+Ja skaitli $a$, kas nedalās ar $p$, pietiekami ilgi reizina pašu ar sevi, iegūst atlikumu $1\,(\text{mod}\;p)$. 
+}
+& 
+\multicolumn{2}{p{8.787cm}|}{
+\cellcolor[HTML]{DAF0FF}
+{\bf Intuīcija:}
+Skaitli $a$, kam nav kopīgu dalītāju ar nepirmskaitli $n$, reizinot pašu ar sevi, arī kaut kad iegūst atlikumu $1 \pmod {n}$.
+} \\ \hline
+
+$1^6 \equiv 2^6 \equiv 3^6 \equiv 4^6 \equiv 5^6 \equiv 6^6 \equiv 1\;(\operatorname{mod}\,7)$. 
+& \cellcolor[HTML]{E1FFE1}
+{\bf Mazā Fermā teorēma:} Ja $p$ ir pirmskaitlis un $\operatorname{gcd}(a,p)=1$, tad 
+$a^{p-1} \equiv 1\;(\operatorname{mod}\,p)$. 
+& $1^4 \equiv 3^4 \equiv$ \newline 
+$7^4 \equiv 9^4 \equiv 1 \pmod{10}$ 
+& \cellcolor[HTML]{E1FFE1}
+{\bf Eilera teorēma:} Katram naturālam $n$ un katram $a$, kam $\gcd(a,n) = 1$
+izpildās $a^{\varphi(n)} \equiv 1 \pmod {n}$.  \\ \hline \hline
+
+
+
+
+\rowcol\multicolumn{4}{|p{18.01cm}|}{\textbf{Valuācijas un pakāpes pacelšanas lemmas:}  } \\ \hline 
+
+\multicolumn{2}{|p{8.787cm}|}{
+\cellcolor[HTML]{DAF0FF}
+{\bf Intuīcija:}
+$x^n \pm y^n$ dalāmība ar nepāra pirmskaitļu pakāpēm ir precīzi atrodama (ar indukciju).
+}
+& 
+\multicolumn{2}{p{8.787cm}|}{
+\cellcolor[HTML]{DAF0FF}
+{\bf Intuīcija:}
+$x^n \pm y^n$ dalāmība ar divnieka pakāpēm ir precīzi atrodama, bet citāda.
+} \\ \hline
+
+
+$\nu_3(999999999) = \nu_3(10^9 - 1^9) =$ \newline 
+$= \nu_3(10-1) +  \nu_3(9) = 2+2=4$.
+&
+{\bf Lemma 1:} Ja $x$ un $y$ ir veseli skaitļi (ne obligāti pozitīvi),
+$n$ ir naturāls skaitlis un $p$ ir nepāru pirmskaitlis. 
+Zināms, ka $x \not\equiv 0 \pmod {p}$, $y \not\equiv 0 \pmod {p}$, 
+bet $x - y \equiv 0 \pmod {p}$. 
+Tad $\nu_p\left( x^n - y^n \right) = \nu_p(x - y) + \nu_p(n)$. \newline
+Der arī negatīvi $x$ vai $y$. Piemēram,  \newline
+$\nu_{11}(10^{121}+1) = \nu_{11}(10+1) + \nu_{11}(121) = 3$. 
+&
+$\nu_2(5^{128} - 1) = \nu_2(5-1) + \nu_2(5+1) + \nu_2(128) - 1 = 9$. 
+&
+{\bf Lemma 2:} Ja $x$ un $y$ ir divi nepāru veseli skaitļi
+un $n$ ir pāru naturāls skaitlis. Tādā gadījumā:
+$\nu_2(x^n - y^n) = \nu_2(x-y) + \nu_2(x+y) + \nu_2(n) - 1$. \\ \hline
+
+
+
+\rowcol\multicolumn{4}{|p{18.01cm}|}{\textbf{Skaitļi ar neparastām īpašībām:} 
+Fermā skaitļi, Mersena skaitļi, Viferiha skaitļi, Karmaikla skaitļi. }\\ \hline
+$F_{0,\ldots,4}=3, 5, 17, 257,$ $65537$. &
+\cellcolor[HTML]{E1FFE1}
+Ja $2^n + 1$ ir pirmskaitlis, tad $n$ jābūt $2^k$. Skaitļus $F_n = 2^{2^k}+1$ sauc 
+par Fermā ({\em Fermat}) skaitļiem; pirmie pieci no tiem ir pirmskaitļi (nav zināms, vai ir vēl kāds 
+pirmskaitlis $F_k$, $k > 4$). &
+$W_1=1093$,\newline 
+$W_2=3511$.&
+\cellcolor[HTML]{E1FFE1}
+Par Viferiha ({\em Wieferich}) pirmskaitļiem sauc pirmskaitļus $p$, kam $2^{p-1}$ dalās ne vien ar 
+$p$ (Mazā Fermā teorēma), bet uzreiz ar $p^2$. Šobrīd zināmi tikai divi Viferiha pirmskaitļi. \\ \hline
+$M_{2,3,5,7,13}=3,7,31,127,8191$ &
+\cellcolor[HTML]{E1FFE1}
+Ja $M_p = 2^p - 1$ ir pirmskaitlis, tad $p$ jābūt pirmskaitlim. Pirmskaitļus šajā formā 
+sauc par Mersena pirmskaitļiem. Bet $2^{11} = 2047 =23 \cdot 89$, t.i.\ visi $M_p$ nav
+pirmskaitļi. &
+$561 = 3 \cdot 11 \cdot 17$ &
+\cellcolor[HTML]{E1FFE1}
+Par Karmaikla ({\em Carmichael}) skaitļiem sauc saliktus skaitļus $n$, 
+kas apmierina Fermā teorēmai līdzīgu apgalvojumu: 
+Visiem $b$, kam nav kopīgu dalītāju ar $n$: 
+$b^{n-1} \equiv 1\,(\text{mod}\;n)$. $561$ der, jo 
+$(3-1)\,\mid\,560$, $(10-1)\,\mid\,560$, and $16\,\mid\,560$ (Kor\-sel\-ta kri\-tē\-rijs). \\ \hline
+
+
+
+\rowcol\multicolumn{4}{|p{18.01cm}|}{\textbf{Multiplikatīvā kārta un primitīvās saknes:} 
+Var viennozīmīgi pateikt, kuriem kāpinātājiem $k$ izpildās $a^k \equiv 1 \pmod {p}$.  
+} \\ \hline
+
+\multicolumn{2}{|p{8.787cm}|}{
+\cellcolor[HTML]{DAF0FF}
+{\bf Intuīcija:}
+Katram atlikumam $a$ (ja $a \not\equiv 0\,(\text{mod}\;p)$) var atrast vismazāko kāpinātāju, 
+kuram $a^k$ "ieciklojas" un atgriežas pie vērtības $1\,(\text{mod}\;p)$.
+}
+& 
+\multicolumn{2}{p{8.787cm}|}{
+\cellcolor[HTML]{DAF0FF}
+{\bf Intuīcija:}
+Eksistē skaitļi $a$, kuri izstaigā visas kongruenču klases (izņemot $0\,(\text{mod}\;p)$), pirms atgriežas pie $1\,(\text{mod}\;p)$.
+} \\ \hline
+
+$\text{ord}_7(1) = 1$,\newline
+$\text{ord}_7(3) =$ \newline $= \text{ord}_7(5) = 6$,\newline
+$\text{ord}_7(2) =$ \newline $= \text{ord}_7(4) = 3$,\newline
+$\text{ord}_7(6) = 2$.
+& \cellcolor[HTML]{E1FFE1}
+{\bf Definīcija:} Par skaitļa $a$ multiplikatīvo kārtu ({\em multiplicative order}) 
+pēc $p$ moduļa sauc mazāko kāpinātāju $k$, kuram $a^k \equiv 1\,(\text{mod}\,p)$.\newline
+Multiplikatīvo kārtu apzīmē $\text{ord}_p(a)$.
+& $3^k \equiv$ $3$, $2$, $6$, $4$, $5$, $1\;(\operatorname{mod}\,7)$ ja $k=1,\ldots,6$. \newline 
+Arī $5$ ir pri\-mi\-tī\-vā sakne $(\mbox{mod}\;7)$.
+& \cellcolor[HTML]{E1FFE1}
+{\bf Primitīvā sakne:} Katram pirmskaitlim $p$ eksistē tāds 
+$a$, kuram kongruenču klases $a^1,a^2,\ldots,a^{p-1}$ pieņem visas
+vērtības $1,2,\ldots,p-1$  (sajauktā secībā). \\ \hline
+
+\end{tabular*}
+}
+\end{table}
+
+
+
+
+
+
+%\arrayrulecolor[HTML]{999999}
+%\renewcommand{\arraystretch}{1.2}
+%\begin{table}[ht!]\centering
+%{\small
+%\begin{tabular*}{18.46cm}{@{}|p{10.35cm}|p{7.25cm}|@{}} \hline
+%\multicolumn{2}{|p{18.05cm}|}{
+%\cellcolor[HTML]{E1FFE1}
+%Intuīcija: Ja skaitli $a$, kas nedalās ar $p$, pietiekami ilgi reizina pašu ar sevi, iegūst atlikumu $1\,(\text{mod}\;p)$.
+%} \\ \hline
+%{\bf Mazā Fermā teorēma:} Ja $p$ ir pirmskaitlis un $\operatorname{gcd}(a,p)=1$, tad\newline 
+%$a^{p-1} \equiv 1\;(\operatorname{mod}\,p)$. &
+%$1^6 \equiv 2^6 \equiv 3^6 \equiv 4^6 \equiv 5^6 \equiv 6^6 \equiv 1\;(\operatorname{mod}\,7)$. \\ \hline
+%\end{tabular*}
+%}
+%\end{table}
+
+
+%\vspace{-10pt}
+%\arrayrulecolor[HTML]{999999}
+%\renewcommand{\arraystretch}{1.2}
+%\begin{table}[ht!]\centering
+%{\small
+%\begin{tabular*}{18.46cm}{@{}|p{10.35cm}|p{7.25cm}|@{}} \hline
+%\multicolumn{2}{|p{18.05cm}|}{
+%\cellcolor[HTML]{E1FFE1}
+%Intuīcija: Ir tādi skaitļi $a$, kuri izstaigā visas kongruenču klases (izņemot $0\,(\text{mod}\;p)$), pirms atgriežas pie $1\,(\text{mod}\;p)$.
+%} \\ \hline
+%{\bf Teorēma par primitīvo sakni:} Katram pirmskaitlim $p$ eksistē tāds 
+%$a$, kuram kongruenču klases $a^1,a^2,\ldots,a^{p-1}$ pieņem visas
+%vērtības $1,2,\ldots,p-1$ (sajauktā secībā).\newline
+%{\em Piezīme} Primitīvās saknes ir definējamas arī dažiem saliktiem skaitļiem, piemēram, 
+%pirmskaitļu pakāpēm $p^k$; to pakāpes izstaigā kongruenču klases, kuras 
+%nedalās ar $p$.\newline 
+%Primitīvo sakņu tabulu sk. \url{https://bit.ly/2NqEzuB}.
+% &
+%Ja $p=7$, tad $3^k$ pieņem visus iespējamos atlikumus, dalot ar $7$ (izņemot pašu $7$):\newline
+%$3^k \equiv$ $3$, $2$, $6$, $4$, $5$, $1\;(\operatorname{mod}\,7)$ ja $k=1,\ldots,6$.\newline
+%Arī $5$ ir primitīvā sakne (mod $7$). Citu primitīvo sakņu pirmskaitlim $p=7$ nav. \\ \hline
+%\end{tabular*}
+%}
+%\end{table}
+
+
+%\vspace{-10pt}
+%\arrayrulecolor[HTML]{999999}
+%\renewcommand{\arraystretch}{1.2}
+%\begin{table}[ht!]\centering
+%{\small
+%\begin{tabular*}{18.46cm}{@{}|p{10.35cm}|p{7.25cm}|@{}} \hline
+%\multicolumn{2}{|p{18.05cm}|}{
+%\cellcolor[HTML]{E1FFE1}
+%Intuīcija: Katram atlikumam $a$ (ja $a \not\equiv 0\,(\text{mod}\;p)$) var atrast vismazāko kāpinātāju, 
+%kuram $a^k$ atgriežas pie vērtības $1\,(\text{mod}\;p)$.
+%} \\ \hline
+%{\bf Definīcija:} Par skaitļa $a$ multiplikatīvo kārtu ({\em multiplicative order}) 
+%pēc $p$ moduļa sauc mazāko kāpinātāju $k$, kuram $a^k \equiv 1\,(\text{mod}\,p)$.\newline
+%Multiplikatīvo kārtu apzīmē $\text{ord}_p(a)$.\newline
+%{\bf Apgalvojums \#1:} Ja $\text{ord}_p(a) = p-1$, tad $a$ ir primitīvā sakne $(\text{mod}\;p)$.\newline
+%{\bf Apgalvojums \#2:} $\text{ord}_p(a)$ vienmēr ir $p-1$ dalītājs.\newline
+%{\bf Apgalvojums \#3:} Jebkuram skaitlim $k$, ar kuru dalās $p-1$, atradīsies tāds $a$, kuram $\text{ord}_p(a) = k$.\newline
+%Definīciju sk. \url{https://bit.ly/35ZlK7V}.
+% &
+%$\text{ord}_7(1) = 1$,\newline
+%$\text{ord}_7(3) = \text{ord}_7(5) = 6$,\newline
+%$\text{ord}_7(2) = \text{ord}_7(4) = 3$,\newline
+%$\text{ord}_7(6) = 2$.
+%\\ \hline
+%\end{tabular*}
+%}
+%\end{table}
+
+
+
+
+\vspace{-10pt}
+\arrayrulecolor[HTML]{999999}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[ht!]\centering
+{\small
+\begin{tabular*}{18.46cm}{@{}|p{10.35cm}|p{7.25cm}|@{}} \hline
+\multicolumn{2}{|p{18.05cm}|}{
+\cellcolor[HTML]{E1FFE1}
+Intuīcija: Dažām $a\not\equiv 0$ vērtībām vienādojumu $x^2 \equiv a\,(\text{mod}\;p)$ var 
+atrisināt (un tad tam ir tieši divas saknes $x_1, x_2$, kam $x_2 \equiv - x_2$); citām $a$ vērtībām
+šim ``kongruenču kvadrātvienādojumam'' nav nevienas saknes.\newline 
+(Ja $a \equiv 0$, tad ir tieši viena sakne $x \equiv 0$.)
+} \\ \hline
+{\bf Definīcija:} Skaitli $a\not\equiv 0$ sauc par kvadrātisko atlikumu ({\em quadratic residue}), ja 
+kongruenču vienādojumu $x^2 \equiv a\,(\text{mod}\;p)$ var atrisināt.\newline
+Definīciju sk. \url{https://bit.ly/3sFNqsh}
+ &
+Pirmskaitlim $p=7$ skaitļi $a=1,2,4$ ir kvadrātiskie atlikumi, 
+bet $a = 3,5,6$ nav kvadrātiskie atlikumi.  \\ \hline
+\end{tabular*}
+}
+\end{table}
+
+
+
+\vspace{-10pt}
+\arrayrulecolor[HTML]{999999}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[ht!]\centering
+{\small
+\begin{tabular*}{18.46cm}{@{}|p{10.35cm}|p{7.25cm}|@{}} \hline
+\multicolumn{2}{|p{18.05cm}|}{
+\cellcolor[HTML]{E1FFE1}
+Intuīcija: No visiem atlikumiem (izņemot atlikumu $0$) būs tieši puse tādu, kuri atgriežas
+pie $1\,(\text{mod}\;p)$ jau divreiz ātrāk nekā pēc $p-1$ soļiem.
+} \\ \hline
+{\bf Definīcija:} Par skaitļa $a$ Ležandra simbolu ({\em Legendre symbol}) 
+pēc $p$ mo\-du\-ļa sauc lielumu 
+$\dlegendre{a}{p} = a^{\frac{p-1}{2}}$.
+{\bf Teorēma (Eilera kritērijs):} Skaitlis $a$ ir kvadrātisks atlikums tad un tikai tad, ja
+${\displaystyle a^{\tfrac{p-1}{2}} \equiv 1\;(\text{mod}\;p)}$.\newline
+{\bf Secinājums:} Ja $\dlegendre{a}{p} = 1$, tad vienādojumu $x^2 \equiv a\,(\text{mod}\;p)$
+var atrisināt, bet ja $\dlegendre{a}{p} = -1$, tad nevar atrisināt.
+\newline
+Definīciju un vērtību tabulu sk. \url{https://bit.ly/3qFKH0m}.
+ &
+\vspace{1pt}
+$\dlegendre{0}{7} = 0$.\newline
+
+\vspace{6pt}
+$\dlegendre{1}{7} = \dlegendre{2}{7} = \dlegendre{4}{7} = 1$.\newline
+
+\vspace{6pt}
+$\dlegendre{3}{7} = \dlegendre{5}{7} = \dlegendre{6}{7} = -1$.\newline
+\\ \hline
+\end{tabular*}
+}
+\end{table}
+
+
+%{\bf Piemērs.} Visu atlikumu (kongruenču klašu) $a = 1,\ldots,6$ pakāpes pēc $p = 7$ moduļa.
+
+\vspace{10pt}
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+$a$                    & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
+$a^2\,(\text{mod}\;7)$ & 1 & 4 & 2 & 2 & 4 & 1 \\ \hline
+$a^3\,(\text{mod}\;7)$ & \textcolor{red}{1} & \textcolor{red}{1} & \textcolor{red}{6} & \textcolor{red}{1} & \textcolor{red}{6} & \textcolor{red}{6} \\ \hline
+$a^4\,(\text{mod}\;7)$ & 1 & 2 & 4 & 4 & 2 & 1 \\ \hline
+$a^5\,(\text{mod}\;7)$ & 1 & 4 & 5 & 2 & 3 & 6 \\ \hline
+$a^6\,(\text{mod}\;7)$ & \textcolor{blue}{1} & \textcolor{blue}{1} & \textcolor{blue}{1} & \textcolor{blue}{1} & \textcolor{blue}{1} & \textcolor{blue}{1} \\ \hline\hline
+$\text{ord}_7(a)$      & 1 & 3 & 6 & 3 & 6 & 2 \\ \hline
+$\dlegendre{a}{7}$ & $1$ & $1$ & $-1$ & $1$ & $-1$ & $-1$ \\ \hline
+\end{tabular}
+
+\vspace{4pt}
+\begin{itemize}
+\item Ležandra simbols $\dlegendre{a}{7}$ ir atkarīgs no šīs pakāpju tabulas vidējās jeb 3.rindas (sarkana), kas atbilst kāpinātājam $\frac{p-1}{2} = 3$. 
+\item Pēdējā, 6.rindā visas pakāpes $a^6$ atgriežas pie vērtības $1$ (Mazā Fermā teorēma (zila).
+\item Katrā vertikālē var noskaidrot mazāko $k$, kuram $a^k$ ir kongruents $1$ (tā ir multiplikatīvā kārta).
+\item Pirmskaitļa $p = 7$ primitīvās saknes $a = 3$ un $a = 5$ nevar būt kvadrātiskie atlikumi. Arī $a = 6$ nevar 
+būt kvadrātiskais atlikums, jo šī skaitļa pakāpes veic nepāra skaitu ciklu (tieši trīs ciklus) līdzkamēr tiek līdz $a^6$. 
+Bet kvadrātiskajam atlikumam (piemēram $a=1$,$a=2$, vai $a=4$) savā stabiņā jāveic pāra skaits ciklu: $(p-1)/\text{ord}_p(a)$ jābūt pāru skaitlim.
+\end{itemize}
+
+
+
+\arrayrulecolor[HTML]{999999}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[ht!]\centering
+{\small
+\begin{tabular*}{18.46cm}{@{}|p{10.35cm}|p{7.25cm}|@{}} \hline
+\multicolumn{2}{|p{18.05cm}|}{
+\cellcolor[HTML]{E1FFE1}
+Intuīcija: No Ležandra simbola definīcijas (tā ir skaitļa $a$ pakāpe)
+seko vairākas vienkāršas īpašības:
+} \\ \hline
+{\bf Apgalvojums \#3:} Ja $a \equiv b\,(\text{mod}\;p)$, tad $\dlegendre{a}{p} = \dlegendre{b}{p}$, jeb 
+Ležandra simbols ir periodisks ar periodu $p$ (vienāds kongruentiem $a,b$).\newline
+{\bf Apgalvojums \#4:} $\dlegendre{-1}{p} = 1$ tad un tikai tad, ja $p = 4k+1$.\newline
+{\bf Apgalvojums \#5:} $\dlegendre{2}{p} = 1$ tad un tikai tad, ja $p = 8k+1$ vai $p = 8k+7$.\newline
+{\bf Apgalvojums \#6:} $\dlegendre{a \cdot b}{p} = \dlegendre{a}{p} \cdot \dlegendre{b}{p}$.
+&
+Kongruenci $x^2 + 1 \equiv 0\,(\text{mod}\;p)$ var atrisināt pirmskaitļiem $p = 5,13,17,29,\ldots$, 
+bet nevar at\-ri\-si\-nāt pirmskaitļiem $p = 3, 7, 11, 19, 23,\ldots$, jo tiem $\dlegendre{-1}{p} = -1$. \\ \hline
+\end{tabular*}
+}
+\end{table}
+
+
+
+
+
+\end{document}
+
+

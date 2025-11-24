@@ -35,9 +35,11 @@ fi
 
 indir="$(cd "$(dirname "$in")" && pwd)"
 
+## --from markdown+tex_math_dollars+pipe_tables \
+
 pandoc "$in" -o "$out" \
   --resource-path="$indir" \
-  --from markdown+tex_math_dollars+pipe_tables \
+  --from markdown+tex_math_dollars+grid_tables \
   --pdf-engine=lualatex \
   --template eisvogel \
   -V colorlinks=true
