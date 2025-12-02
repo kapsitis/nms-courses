@@ -40,7 +40,7 @@ puse no hipotenūzas.
 trijstūrim $FGH$ piezīmējam klāt otru tādu pašu simetriski pret centru $I$, 
 iegūstam taisnstūri. Taisnstūrī abas diagonāles ir vienāda garuma, 
 tās krustpunktā dalās uz pusēm. Tāpēc $HI$ ir puse no 
-taisnstūra diagonāles un $HI = (1/2)HG = 5$.
+taisnstūra diagonāles un $HI = HG/2 = 5$.
 
 Kvadrāta $HIJK$ laukums ir $5 \cdot 5 = 25$. No tā jāatņem $\triangle HIL$ 
 laukums. Ievērojam, ka $\triangle FGH \sim \triangle LHI$ 
@@ -84,9 +84,9 @@ Kāda ir trijstūra $RST$ laukuma un taisnstūra $PQRS$ laukuma attiecība?
 diagonāle $PR = \sqrt{1^2 + 2^2} = \sqrt{5}$. 
 Tā ir hipotenūza taisnleņķa trijstūrim $\triangle PQR$. 
 Trijstūris $\triangle RST$ ir līdzīgs $\triangle PRQ$ un tam hipotenūza 
-ir $1$. Tādēļ līdzības koeficients $\triangle RST$ attiecībā 
-pret $\triangle PRQ$ ir $\frac{1}{\sqrt{5}}$, jeb  
-$\triangle RST$ visi malu garumi un augstumi ir apmēram $2.236$ reizes mazāki par 
+ir $1$. Tādēļ $\triangle RST$ līdzības koeficients attiecībā 
+pret $\triangle PRQ$ ir $\frac{1}{\sqrt{5}}$ -- trijstūra 
+$\triangle RST$ elementi (malas, augstumi) ir apmēram $2.236$ reizes īsāki par 
 atbilstošajiem elementiem trijstūrī $PRQ$.
 
 Laukumu attiecība abiem trijstūriem:   
@@ -130,6 +130,10 @@ $$S' = \frac{1}{2} \left(\frac{3}{4} a \right) \left( \frac{1}{4}h \right) = \fr
 
 Atņemot divus šādus trijstūrus, iegūstam $S - \frac{3}{16}S - \frac{3}{16}S = \frac{5}{8}S$, 
 kas ir atbilde **(D)**.
+
+*Piezīme:* Ja izmanto trijstūra laukuma formulu $S = \frac{1}{2}ab \sin \gamma$, tad 
+balto trijstūrīšu laukumus var izteikt uzreiz (pamatot, ka tie ir $3/16$ no sākotnējā trijstūra laukuma), 
+neizmantojot spriedumus par līdzīgiem trijstūriem.
 :::
 
 <!--
@@ -144,10 +148,25 @@ What fraction of the area of the triangle is shaded?
 
 ## 4.uzdevums {-}
 
-Trijstūrī $FGH$ var novilkt taisni, kas ir paralēla tā pamatnei $FG$, caur punktu $X$ vai $Y$. Ieēnoto daļu laukumi ir vienādi. Dotā attiecība ir $HX : XF = 4 : 1$. Kāda ir attiecība $HY : YF$?  
+Trijstūrī $FGH$ var novilkt taisni, kas ir paralēla tā pamatnei $FG$, caur punktu $X$ vai $Y$. Ieēnoto daļu laukumi ir vienādi. 
+Dotā attiecība ir $HX : XF = 4 : 1$. Kāda ir attiecība $HY : YF$?  
 **(A)** $1 : 1$, **(B)** $2 : 1$, **(C)** $3 : 1$, **(D)** $3 : 2$, **(E)** $4 : 3$
 
 ![](problem4.png){ width=180pt }
+
+
+::: solution
+**Atbilde:** `D`
+
+**Atrisinājums:**  
+Apzīmējam trijstūra pamata malu ar $a$ un augstumu ar $h$. 
+Tad kreisā attēla trapecei apakšējais pamats ir $a$, bet augšējais pamats ir $\frac{4}{5} a$; trapeces augstums ir $\frac{1}{5}h$. Tad trapeces laukums:  
+$$S = \frac{a + \frac{4}{5}a}{2} \cdot \left( \frac{1}{5} h \right) = \left( 1 + \frac{4}{5} \right) \cdot \frac{1}{5} \cdot \frac{ah}{2} = \frac{9}{25} \cdot \frac{ah}{2}.$$
+
+Iekrāsotās trapeces laukums ir $\frac{9}{25}$ no trijstūra laukuma. Lai labajā pusē iekrāsotajam trijstūrim arī būtu tāds laukums, vajag, 
+lai līdzības koeficients būtu $\frac{3}{5}$. Tad $\frac{HY}{YF}=\frac{3}{5}$, kas ir atbilde **(D)**. 
+:::
+
 
 <!--
 EU.PinkKangaroo.2015.20
@@ -162,8 +181,7 @@ A $1 : 1$   B $2 : 1$   C $3 : 1$   D $3 : 2$   E $4 : 3$
 ## 5.uzdevums {-}
 
 Zīmējumā dots kvadrāts ar diagonāli un nogriezni, kas savieno 
-virsotni ar malas viduspunktu.
-Kāda ir $P$ un $Q$ laukumu attiecība?
+virsotni ar malas viduspunktu. Kāda ir $P$ un $Q$ laukumu attiecība?
 **(A)** $1 : \sqrt{2}$,
 **(B)** $2 : 3$,
 **(C)** $1 : 2$,
