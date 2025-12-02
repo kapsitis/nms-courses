@@ -36,6 +36,7 @@ fi
 indir="$(cd "$(dirname "$in")" && pwd)"
 
 pandoc "$in" -o "$out" \
+  --lua-filter=solutions.lua \
   --resource-path="$indir" \
   --from markdown+tex_math_dollars+pipe_tables \
   --pdf-engine=lualatex \
@@ -43,4 +44,6 @@ pandoc "$in" -o "$out" \
   -V colorlinks=true
 
 echo "Wrote $out"
+
+
 
