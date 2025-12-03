@@ -1,6 +1,6 @@
 ---
 title: "Ģeometrija: Līdzīgi trijstūri"
-show-solutions: true
+show-solutions: false
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
