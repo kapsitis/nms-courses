@@ -1,6 +1,6 @@
 ---
 title: "Ģeometrija: Līdzīgi trijstūri"
-show-solutions: false
+show-solutions: true
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
@@ -188,6 +188,54 @@ virsotni ar malas viduspunktu. Kāda ir $P$ un $Q$ laukumu attiecība?
 **(D)** $2 : 5$,
 **(E)** $1 : 3$.
 
+![](problem5.png){ width=72pt }
+
+::: solution
+**Atbilde:** `D`
+
+**Atrisinājums-1:**  
+Apzīmējam kvadrāta malu ar $1$.
+Novelkam $GE$ -- trijstūra $ABC$ viduslīniju; tās garums ir $1/2$. 
+Trapeces $ABEG$ laukums ir viduslīnijas un augstuma reizinājums: 
+
+$$S_{ABEG} = \frac{1 + 1/2}{2} \cdot \frac{1}{2} = \frac{3}{8}.$$
+
+Trijstūri $CDF$ un $GEF$ ir līdzīgi, jo tiem visi leņķi ir pa pāriem vienādi. 
+Līdzības koeficients ir $2$, jo $CD$ ir divreiz garāks nogrieznis nekā $GE$. 
+Abu šo trijstūru vertikālajiem augstumiem jābūt $1/3$ un $1/6$
+(vienīgie skaitļi, kuru summa ir $1/2$ un pirmais ir divreiz lielāks kā otrais). 
+Trijstūra $FDC$ laukums -- puse no pamata un augstuma reizinājuma:
+
+$$S_{CDF} = \frac{DC \cdot \frac{1}{3}}{2} = \frac{1}{6}.$$
+
+Savukārt $S_{GEF} = \frac{1}{24}$, jo tas ir četras reizes mazāks. 
+Meklējamā laukumu attiecība: 
+
+$$\frac{P}{Q} = \frac{S_{CDF}}{S_{ABEG} + S_{GEF}} = \frac{\frac{1}{6}}{\frac{3}{8} + \frac{1}{24}} = \frac{\frac{1}{6}}{\frac{10}{24}} = \frac{24}{60} = \frac{2}{5}.$$
+
+Tā ir atbilde **(D)**
+
+
+![](problem5A.png){ width=90pt }
+
+**Atrisinājums-2:**  
+Apzīmējam trijstūra $CEF$ laukumu ar $S$. Ievērojam, ka $\sphericalangle AFD = \sphericalangle CFE$ (krustleņķi) un 
+$\sphericalangle DAF = \sphericalangle ECF$ (iekšējie šķērsleņķi), tādēļ trijstūri $ADF$ un $CEF$ ir līdzīgi.
+Līdzības koeficients $k=2$, jo mala $AD$ ir divreiz garāka par attiecīgo malu $CE$. Tātad:
+
+i. trijstūrim $ADF$ ir laukums $k^2 \cdot S = 4S$,
+ii. mala $AF$ ir divreiz garāka nekā attiecīgā mala $CF$.
+
+Apskatām $AF$ un $CF$ kā trijstūru $ADF$ un $CDF$ pamatus (tiem ir vienāds augstums). Saskaņā ar (ii), 
+trijstūrim $ADF$ ir divreiz lielāks laukums nekā trijstūrim $CDF$ (laukums $P$), tātad tas ir $2S$.
+
+Trijstūra $ACD$ laukums ir $6S$; tātad arī trijstūra $ABC$ laukums ir $6S$, bet $Q$ ir $6S-S = 5S$. 
+Tātad meklētā attiecība ir $2 : 5$, 
+kas ir atbilde **(D)**.
+
+![](problem5B.png){ width=90pt }
+:::
+
 <!--
 UK.IMC.2011.25
 
@@ -196,7 +244,7 @@ to the midpoint of a side. What is the ratio of area to area ? P Q
 A B 2 : 3 C 1 : 2 D 2 : 5 E 1 : 3 
 -->
 
-![](problem5.png){ width=72pt }
+
 
 
 
@@ -227,7 +275,50 @@ of length $12~\mathrm{cm}$?
 
 **(A)** $8/3$, **(B)** $10/3$, **(C)** $11/3$, **(D)** $4$,
 **(E)** $13/3$.
+
+
+Let $H$, $I$, $J$ be the vertices of the triangle, $C$ the centre of the circle, and $K$ the point where the semicircle touches the edge $HI$ as shown. The angle $\sphericalangle CKH$ is a right angle because $HI$ is tangent to the circle and so perpendicular to the radius $CK$. The two triangles $HKC$ and $HJI$ are similar since they each have a right angle and they share the angle at $H$. Let $r$ be the radius of the semicircle, then $CK = r$ and $CH = 12 - r$. Then by similar triangles we have
+$\dfrac{12 - r}{r} = \dfrac{13}{5}$.
+
+So $5(12 - r) = 13r$.
+
+Then $60 - 5r = 13r$.
+
+So $18r = 60$ hence $r = \dfrac{10}{3}$.
 -->
+
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums-1:**  
+Apzīmējam trijstūra virsotnes ar $H$, $I$, $J$, ar $C$ – riņķa centru un $K$ ir punkts, kur pusriņķis 
+pieskaras malai $HI$, kā redzams zīmējumā. Leņķis $\sphericalangle CKH$ ir taisns, 
+jo nogrieznis $HI$ pieskaras riņķim un tādēļ ir perpendikulārs rādiusam $CK$. 
+Trijstūri $HKC$ un $HJI$ ir līdzīgi, jo tiem ir katram taisns leņķis un arī kopīgs leņķis virsotnē $H$. 
+Apzīmējam pusriņķa rādiusu ar $r$; tad $CK = r$ un $CH = 12 - r$. No trijstūru līdzības iegūstam
+$\dfrac{12 - r}{r} = \dfrac{13}{5}$.
+
+![](problem6A.png)
+
+Tātad $5(12 - r) = 13r$ un $60 - 5r = 13r$.
+No šejienes $18r = 60$, tātad $r = \dfrac{10}{3}$, kas ir atbilde **(B)**.
+
+**Atrisinājums-2:**  
+Simetriski pret kateti garumā $12$ uzzīmējam otru taisnleņķa trijstūri. 
+Esam ieguvuši jaunu vienādsānu trijstūri $HIJ$, kurā ievilkta riņķa līnija. 
+Šī trijstūra laukums ir divkāršots $\frac{1}{2} \cdot 5 \cdot 12 = 30$, 
+tātad $60$. 
+
+No otras puses, trijstūra laukumu var izteikt ar formulu $S = pr$, kur 
+$p$ ir pusperimetrs un $r$ - ievilktā riņķa līnija. 
+Trijstūra $HIJ$ pusperimetrs ir $(13 + 13 + 10)/2 = 18$. Tāpēc pielīdzinām:
+$$S = pr,\;\;60 = 18r,\;\;r = 60/18 = 10/3.$$
+
+Tā ir atbilde **(B)**.
+
+![](problem6B.png)
+:::
+
 
 
 
