@@ -40,7 +40,7 @@ puse no hipotenūzas.
 trijstūrim $FGH$ piezīmējam klāt otru tādu pašu simetriski pret centru $I$, 
 iegūstam taisnstūri. Taisnstūrī abas diagonāles ir vienāda garuma, 
 tās krustpunktā dalās uz pusēm. Tāpēc $HI$ ir puse no 
-taisnstūra diagonāles un $HI = (1/2)HG = 5$.
+taisnstūra diagonāles un $HI = HG/2 = 5$.
 
 Kvadrāta $HIJK$ laukums ir $5 \cdot 5 = 25$. No tā jāatņem $\triangle HIL$ 
 laukums. Ievērojam, ka $\triangle FGH \sim \triangle LHI$ 
@@ -84,9 +84,9 @@ Kāda ir trijstūra $RST$ laukuma un taisnstūra $PQRS$ laukuma attiecība?
 diagonāle $PR = \sqrt{1^2 + 2^2} = \sqrt{5}$. 
 Tā ir hipotenūza taisnleņķa trijstūrim $\triangle PQR$. 
 Trijstūris $\triangle RST$ ir līdzīgs $\triangle PRQ$ un tam hipotenūza 
-ir $1$. Tādēļ līdzības koeficients $\triangle RST$ attiecībā 
-pret $\triangle PRQ$ ir $\frac{1}{\sqrt{5}}$, jeb  
-$\triangle RST$ visi malu garumi un augstumi ir apmēram $2.236$ reizes mazāki par 
+ir $1$. Tādēļ $\triangle RST$ līdzības koeficients attiecībā 
+pret $\triangle PRQ$ ir $\frac{1}{\sqrt{5}}$ -- trijstūra 
+$\triangle RST$ elementi (malas, augstumi) ir apmēram $2.236$ reizes īsāki par 
 atbilstošajiem elementiem trijstūrī $PRQ$.
 
 Laukumu attiecība abiem trijstūriem:   
@@ -130,6 +130,10 @@ $$S' = \frac{1}{2} \left(\frac{3}{4} a \right) \left( \frac{1}{4}h \right) = \fr
 
 Atņemot divus šādus trijstūrus, iegūstam $S - \frac{3}{16}S - \frac{3}{16}S = \frac{5}{8}S$, 
 kas ir atbilde **(D)**.
+
+*Piezīme:* Ja izmanto trijstūra laukuma formulu $S = \frac{1}{2}ab \sin \gamma$, tad 
+balto trijstūrīšu laukumus var izteikt uzreiz (pamatot, ka tie ir $3/16$ no sākotnējā trijstūra laukuma), 
+neizmantojot spriedumus par līdzīgiem trijstūriem.
 :::
 
 <!--
@@ -144,10 +148,25 @@ What fraction of the area of the triangle is shaded?
 
 ## 4.uzdevums {-}
 
-Trijstūrī $FGH$ var novilkt taisni, kas ir paralēla tā pamatnei $FG$, caur punktu $X$ vai $Y$. Ieēnoto daļu laukumi ir vienādi. Dotā attiecība ir $HX : XF = 4 : 1$. Kāda ir attiecība $HY : YF$?  
+Trijstūrī $FGH$ var novilkt taisni, kas ir paralēla tā pamatnei $FG$, caur punktu $X$ vai $Y$. Ieēnoto daļu laukumi ir vienādi. 
+Dotā attiecība ir $HX : XF = 4 : 1$. Kāda ir attiecība $HY : YF$?  
 **(A)** $1 : 1$, **(B)** $2 : 1$, **(C)** $3 : 1$, **(D)** $3 : 2$, **(E)** $4 : 3$
 
 ![](problem4.png){ width=180pt }
+
+
+::: solution
+**Atbilde:** `D`
+
+**Atrisinājums:**  
+Apzīmējam trijstūra pamata malu ar $a$ un augstumu ar $h$. 
+Tad kreisā attēla trapecei apakšējais pamats ir $a$, bet augšējais pamats ir $\frac{4}{5} a$; trapeces augstums ir $\frac{1}{5}h$. Tad trapeces laukums:  
+$$S = \frac{a + \frac{4}{5}a}{2} \cdot \left( \frac{1}{5} h \right) = \left( 1 + \frac{4}{5} \right) \cdot \frac{1}{5} \cdot \frac{ah}{2} = \frac{9}{25} \cdot \frac{ah}{2}.$$
+
+Iekrāsotās trapeces laukums ir $\frac{9}{25}$ no trijstūra laukuma. Lai labajā pusē iekrāsotajam trijstūrim arī būtu tāds laukums, vajag, 
+lai līdzības koeficients būtu $\frac{3}{5}$. Tad $\frac{HY}{YF}=\frac{3}{5}$, kas ir atbilde **(D)**. 
+:::
+
 
 <!--
 EU.PinkKangaroo.2015.20
@@ -162,13 +181,60 @@ A $1 : 1$   B $2 : 1$   C $3 : 1$   D $3 : 2$   E $4 : 3$
 ## 5.uzdevums {-}
 
 Zīmējumā dots kvadrāts ar diagonāli un nogriezni, kas savieno 
-virsotni ar malas viduspunktu.
-Kāda ir $P$ un $Q$ laukumu attiecība?
+virsotni ar malas viduspunktu. Kāda ir $P$ un $Q$ laukumu attiecība?
 **(A)** $1 : \sqrt{2}$,
 **(B)** $2 : 3$,
 **(C)** $1 : 2$,
 **(D)** $2 : 5$,
 **(E)** $1 : 3$.
+
+![](problem5.png){ width=72pt }
+
+::: solution
+**Atbilde:** `D`
+
+**Atrisinājums-1:**  
+Apzīmējam kvadrāta malu ar $1$.
+Novelkam $GE$ -- trijstūra $ABC$ viduslīniju; tās garums ir $1/2$. 
+Trapeces $ABEG$ laukums ir viduslīnijas un augstuma reizinājums: 
+
+$$S_{ABEG} = \frac{1 + 1/2}{2} \cdot \frac{1}{2} = \frac{3}{8}.$$
+
+Trijstūri $CDF$ un $GEF$ ir līdzīgi, jo tiem visi leņķi ir pa pāriem vienādi. 
+Līdzības koeficients ir $2$, jo $CD$ ir divreiz garāks nogrieznis nekā $GE$. 
+Abu šo trijstūru vertikālajiem augstumiem jābūt $1/3$ un $1/6$
+(vienīgie skaitļi, kuru summa ir $1/2$ un pirmais ir divreiz lielāks kā otrais). 
+Trijstūra $FDC$ laukums -- puse no pamata un augstuma reizinājuma:
+
+$$S_{CDF} = \frac{DC \cdot \frac{1}{3}}{2} = \frac{1}{6}.$$
+
+Savukārt $S_{GEF} = \frac{1}{24}$, jo tas ir četras reizes mazāks. 
+Meklējamā laukumu attiecība: 
+
+$$\frac{P}{Q} = \frac{S_{CDF}}{S_{ABEG} + S_{GEF}} = \frac{\frac{1}{6}}{\frac{3}{8} + \frac{1}{24}} = \frac{\frac{1}{6}}{\frac{10}{24}} = \frac{24}{60} = \frac{2}{5}.$$
+
+Tā ir atbilde **(D)**
+
+
+![](problem5A.png){ width=90pt }
+
+**Atrisinājums-2:**  
+Apzīmējam trijstūra $CEF$ laukumu ar $S$. Ievērojam, ka $\sphericalangle AFD = \sphericalangle CFE$ (krustleņķi) un 
+$\sphericalangle DAF = \sphericalangle ECF$ (iekšējie šķērsleņķi), tādēļ trijstūri $ADF$ un $CEF$ ir līdzīgi.
+Līdzības koeficients $k=2$, jo mala $AD$ ir divreiz garāka par attiecīgo malu $CE$. Tātad:
+
+i. trijstūrim $ADF$ ir laukums $k^2 \cdot S = 4S$,
+ii. mala $AF$ ir divreiz garāka nekā attiecīgā mala $CF$.
+
+Apskatām $AF$ un $CF$ kā trijstūru $ADF$ un $CDF$ pamatus (tiem ir vienāds augstums). Saskaņā ar (ii), 
+trijstūrim $ADF$ ir divreiz lielāks laukums nekā trijstūrim $CDF$ (laukums $P$), tātad tas ir $2S$.
+
+Trijstūra $ACD$ laukums ir $6S$; tātad arī trijstūra $ABC$ laukums ir $6S$, bet $Q$ ir $6S-S = 5S$. 
+Tātad meklētā attiecība ir $2 : 5$, 
+kas ir atbilde **(D)**.
+
+![](problem5B.png){ width=90pt }
+:::
 
 <!--
 UK.IMC.2011.25
@@ -178,7 +244,7 @@ to the midpoint of a side. What is the ratio of area to area ? P Q
 A B 2 : 3 C 1 : 2 D 2 : 5 E 1 : 3 
 -->
 
-![](problem5.png){ width=72pt }
+
 
 
 
@@ -209,7 +275,50 @@ of length $12~\mathrm{cm}$?
 
 **(A)** $8/3$, **(B)** $10/3$, **(C)** $11/3$, **(D)** $4$,
 **(E)** $13/3$.
+
+
+Let $H$, $I$, $J$ be the vertices of the triangle, $C$ the centre of the circle, and $K$ the point where the semicircle touches the edge $HI$ as shown. The angle $\sphericalangle CKH$ is a right angle because $HI$ is tangent to the circle and so perpendicular to the radius $CK$. The two triangles $HKC$ and $HJI$ are similar since they each have a right angle and they share the angle at $H$. Let $r$ be the radius of the semicircle, then $CK = r$ and $CH = 12 - r$. Then by similar triangles we have
+$\dfrac{12 - r}{r} = \dfrac{13}{5}$.
+
+So $5(12 - r) = 13r$.
+
+Then $60 - 5r = 13r$.
+
+So $18r = 60$ hence $r = \dfrac{10}{3}$.
 -->
+
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums-1:**  
+Apzīmējam trijstūra virsotnes ar $H$, $I$, $J$, ar $C$ – riņķa centru un $K$ ir punkts, kur pusriņķis 
+pieskaras malai $HI$, kā redzams zīmējumā. Leņķis $\sphericalangle CKH$ ir taisns, 
+jo nogrieznis $HI$ pieskaras riņķim un tādēļ ir perpendikulārs rādiusam $CK$. 
+Trijstūri $HKC$ un $HJI$ ir līdzīgi, jo tiem ir katram taisns leņķis un arī kopīgs leņķis virsotnē $H$. 
+Apzīmējam pusriņķa rādiusu ar $r$; tad $CK = r$ un $CH = 12 - r$. No trijstūru līdzības iegūstam
+$\dfrac{12 - r}{r} = \dfrac{13}{5}$.
+
+![](problem6A.png)
+
+Tātad $5(12 - r) = 13r$ un $60 - 5r = 13r$.
+No šejienes $18r = 60$, tātad $r = \dfrac{10}{3}$, kas ir atbilde **(B)**.
+
+**Atrisinājums-2:**  
+Simetriski pret kateti garumā $12$ uzzīmējam otru taisnleņķa trijstūri. 
+Esam ieguvuši jaunu vienādsānu trijstūri $HIJ$, kurā ievilkta riņķa līnija. 
+Šī trijstūra laukums ir divkāršots $\frac{1}{2} \cdot 5 \cdot 12 = 30$, 
+tātad $60$. 
+
+No otras puses, trijstūra laukumu var izteikt ar formulu $S = pr$, kur 
+$p$ ir pusperimetrs un $r$ - ievilktā riņķa līnija. 
+Trijstūra $HIJ$ pusperimetrs ir $(13 + 13 + 10)/2 = 18$. Tāpēc pielīdzinām:
+$$S = pr,\;\;60 = 18r,\;\;r = 60/18 = 10/3.$$
+
+Tā ir atbilde **(B)**.
+
+![](problem6B.png)
+:::
+
 
 
 

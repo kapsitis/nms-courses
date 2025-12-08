@@ -4,6 +4,8 @@
   url: /worksheets/
 - title: Testu rezultāti
   url: /results/
+- title: RIIMC kursi
+  url: /courses_25_26/
 - title: Socrative vide
   children:
     - title: Socrative instrukcija
