@@ -19,3 +19,13 @@ pandoc input.md -o output.pdf --from markdown+tex_math_dollars+pipe_tables+link_
 
 sudo tlmgr install footnotebackref
 ```
+
+
+## How to convert screenshots
+
+Rewrite the screenshot as Markdown quoted between three backquotes (```); 
+enclose math formulas in $ (inline) or $$ (displaystyle).
+Use the ![](picture.png) notation for images. 
+
+Also add the translation in Latvian; use the same Markdown and formulas; 
+quote it as another text block between three backquotes.

@@ -50,11 +50,11 @@ $\triangle LHI$ un $\triangle FGH$ līdzības koeficients ir $k = 5/8$,
 jo $LHI$ garākā katete $HI = 5$, bet $FGH$ garākā katete $GH=8$.
 
 Izsakām abu trijstūru laukumus, izmantojot līdzības koeficientu:
-$S(FGH) = \frac{1}{2} \cdot 6 \cdot 8 = 24$ un  
-$S(LHI) = 24 \cdot k^2 = 24 \cdot \frac{25}{64} = \frac{75}{8}$. 
+$S_{FGH} = \frac{1}{2} \cdot 6 \cdot 8 = 24$ un  
+$S_{LHI} = 24 \cdot k^2 = 24 \cdot \frac{25}{64} = \frac{75}{8}$. 
 
 Visbeidzot iekrāsotās figūras laukums:  
-$S(HKJL) = 25 - \frac{75}{8} = \frac{200 - 75}{8} = \frac{125}{8}$, 
+$S_{HKJL} = 25 - \frac{75}{8} = \frac{200 - 75}{8} = \frac{125}{8}$, 
 kas ir atbilde **(B)**.
 :::
 
@@ -90,10 +90,10 @@ $\triangle RST$ elementi (malas, augstumi) ir apmēram $2.236$ reizes īsāki pa
 atbilstošajiem elementiem trijstūrī $PRQ$.
 
 Laukumu attiecība abiem trijstūriem:   
-$$\frac{S(\triangle RST)}{S(\triangle PRQ)} = \left( \frac{1}{\sqrt{5}} \right)^2 = \frac{1}{5}.$$
+$$\frac{S_{RST}}{S_{PRQ}} = \left( \frac{1}{\sqrt{5}} \right)^2 = \frac{1}{5}.$$
 
-Tā kā taisnstūra laukums $S(PQRS)$ ir divreiz lielāks nekā 
-trijstūra laukums $S(PRQ)$, tad $\triangle RST$ laukuma attiecība pret taisnstūra 
+Tā kā taisnstūra laukums $S_{PQRS}$ ir divreiz lielāks nekā 
+trijstūra laukums $S_{PRQ}$, tad $\triangle RST$ laukuma attiecība pret taisnstūra 
 laukumu ir puse no $1/5$ jeb $\frac{1}{10}$, kas ir atbilde **(D)**. 
 :::
 
@@ -298,7 +298,7 @@ Trijstūri $HKC$ un $HJI$ ir līdzīgi, jo tiem ir katram taisns leņķis un ar�
 Apzīmējam pusriņķa rādiusu ar $r$; tad $CK = r$ un $CH = 12 - r$. No trijstūru līdzības iegūstam
 $\dfrac{12 - r}{r} = \dfrac{13}{5}$.
 
-![](problem6A.png)
+![](problem6A.png){ width=162pt }
 
 Tātad $5(12 - r) = 13r$ un $60 - 5r = 13r$.
 No šejienes $18r = 60$, tātad $r = \dfrac{10}{3}$, kas ir atbilde **(B)**.
@@ -316,7 +316,7 @@ $$S = pr,\;\;60 = 18r,\;\;r = 60/18 = 10/3.$$
 
 Tā ir atbilde **(B)**.
 
-![](problem6B.png)
+![](problem6B.png){ width=180pt }
 :::
 
 
@@ -340,10 +340,66 @@ the biggest circles is $16$ times the radius of the smallest
 circle. What is the size of $\sphericalangle PQR$?  
 **(A)** $45^{\circ}$, **(B)** $60^{\circ}$, **(C)** $75^{\circ}$,
 **(D)** $90^{\circ}$, **(E)** $135^{\circ}$.
+
+
+24. **B** Let the radii of the circles from smallest to largest be $r_1$, $r_2$ and $r_3$ respectively. Hence
+$$
+16r_1=r_3+2r_2+r_1,\ \text{thus } r_3=15r_1-2r_2\ldots\ (1).
+$$
+Let $r_1+x$ be the distance from $Q$ to the centre of the smallest circle. By similar triangles,
+$$
+\frac{r_1}{r_1+x}=\frac{r_2}{x+2r_1+r_2}=\frac{r_3}{16r_1+r_1+x}\ldots\ (2).
+$$
+
+Thus $r_1(x+2r_1+r_2)=r_2(r_1+x)$. Hence
+$$
+r_2=\frac{r_1x+2r_1^2}{r_1}\ldots\ (3).
+$$
+From (1) and (2)
+$$
+\frac{r_1x}{r_1+x}=\frac{(15r_1-2r_2)x}{17r_1+x}
+\ \text{hence}\
+\frac{r_1x}{r_1+x}=\frac{15r_1x-2(r_1x+2r_1^2)}{17r_1+x}.
+$$
+Dividing throughout by $r_1$ and simplifying gives $12x^2-8r_1x-4r_1^2=0$. Hence $(3x+r_1)(x-r_1)=0$ so, as $r_1>0$, $x=r_1$. Thus
+$$
+\sin\frac{\sphericalangle PQR}{2}=\frac{r_1}{r_1+x}=\frac{r_1}{2r_1}=\frac12.
+$$
+Hence $\frac12\sphericalangle PQR=30^\circ$ so $\sphericalangle PQR=60^\circ$.
 -->
 
 ![](problem7.png){ width=128pt }
 
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**  
+Apļu rādiusus no mazākā līdz lielākajam apzīmējam attiecīgi ar 
+$r_1$, $r_2$ un $r_3$. Tātad
+
+$$16r_1=r_3+2r_2+r_1,\ \text{tāpēc } r_3=15r_1-2r_2\ldots\ (1).$$
+
+Ar $r_1+x$ apzīmē attālumu no $Q$ līdz mazākā apļa centram. Trijstūru līdzības dēļ
+
+$$\frac{r_1}{r_1+x}=\frac{r_2}{x+2r_1+r_2}=\frac{r_3}{16r_1+r_1+x}\ldots\ (2).$$
+
+Tad $r_1(x+2r_1+r_2)=r_2(r_1+x)$. Tāpēc
+
+$$r_2=\frac{r_1x+2r_1^2}{r_1}\ldots\ (3).$$
+
+No (1) un (2)
+
+$$\frac{r_1x}{r_1+x}=\frac{(15r_1-2r_2)x}{17r_1+x}
+\ \text{tātad}\
+\frac{r_1x}{r_1+x}=\frac{15r_1x-2(r_1x+2r_1^2)}{17r_1+x}.$$
+
+Izdalot visur ar $r_1$ un vienkāršojot, iegūst $12x^2-8r_1x-4r_1^2=0$. 
+Tātad $(3x+r_1)(x-r_1)=0$, un, tā kā $r_1>0$, $x=r_1$. Tāpēc
+
+$$\sin\frac{\sphericalangle PQR}{2}=\frac{r_1}{r_1+x}=\frac{r_1}{2r_1}=\frac12.$$
+
+Tātad $\frac12\sphericalangle PQR=30^\circ$, līdz ar to $\sphericalangle PQR=60^\circ$.
+:::
 
 
 
@@ -363,12 +419,35 @@ UK.SeniorKangaroo.2011.4
 The diagram below includes two squares: one has sides
 of length 20 and the other has sides of length 10.
 What is the area of the shaded region?
+
+
+**100** Using the labelling shown, we see that 
+$\triangle ACE$ and $\triangle BCD$ are similar and have lengths 
+in the ratio $2:1$. Because the height of $\triangle ACE$ is 
+$10$ + the height of $\triangle BCD$, the height of 
+$\triangle ACE$ is $20$ and its area is 
+$\frac12 \times 20 \times 20 = 200$. The area of the smaller 
+square is $100$ so the shaded area is $200 - 100 = 100$.
 -->
 
 
+::: solution
+**Atbilde:** `100`
+
+**Atrisinājums:**  
+Izmantojot parādīto apzīmējumu, redzam, 
+ka $\triangle ACE$ un $\triangle BCD$ ir līdzīgi un to 
+garumu attiecība ir $2:1$. Tā kā $\triangle ACE$ augstums ir 
+$10$ + $\triangle BCD$ augstums, $\triangle ACE$ augstums ir 
+$20$, un tā laukums ir $\frac12 \times 20 \times 20 = 200$. 
+Mazākā kvadrāta laukums ir $100$, tāpēc iekrāsotās daļas 
+laukums ir $200 - 100 = 100$.
+
+![](problem8A.png){ width=126pt }
+:::
+
 
 ## 9.uzdevums {-}
-
 
 Attēlā redzams taisnstūris $ABCD$, kam $AB=16$ un
 $BC=12$.  $\sphericalangle ACE$ ir taisns leņķis un 
@@ -384,10 +463,40 @@ The diagram shows a rectangle $ABCD$ with $AB=16$ and
 $BC=12$. Angle $ACE$ is a right angle and $CE=15$. The
 line segments $AE$ and $CD$ meet at $F$.
 What is the area of triangle ACF?
+
+
+
+**75** 
+
+
+Using Pythagoras' theorem firstly in $\triangle ABC$ and then in $\triangle ACE$ we get $AC=20$ and $AE=25$. It follows that $\triangle ABC$ is similar to $\triangle ACE$ as the corresponding sides are in the same ratio. Therefore, $\sphericalangle BAC=\sphericalangle CAE$. Also $\sphericalangle BAC=\sphericalangle ACF$, using alternate angles, so $\sphericalangle CAF=\sphericalangle ACF$ and $\triangle AFC$ is isosceles. Let $M$ be the mid-point of $AC$ and join $M$ to $F$. This gives two more right-angled triangles, $\triangle AMF$ and $\triangle CMF$, also similar to $\triangle ABC$. Thus
+$$
+\frac{MF}{MA}=\frac{BC}{BA}
+$$
+which gives $MF=\frac{15}{2}$. Therefore the area of $\triangle ACF$ is $\frac12\times\frac{15}{2}\times 20=75$.
 -->
 
-![](problem9.png){ width=72pt }
+![](problem9.png){ width=90pt }
 
+
+::: solution
+**Atbilde:** `75`
+
+**Atrisinājums:**  
+Izmantojot Pitagora teorēmu vispirms $\triangle ABC$ un pēc tam 
+$\triangle ACE$, iegūstam $AC=20$ un $AE=25$. No tā izriet, ka $\triangle ABC$ 
+ir līdzīgs $\triangle ACE$, jo atbilstošās malas ir vienādā attiecībā. 
+Tāpēc $\sphericalangle BAC=\sphericalangle CAE$. Arī $\sphericalangle BAC=\sphericalangle ACF$, izmantojot 
+iekšējos šķērsleņķus, tātad $\sphericalangle CAF=\sphericalangle ACF$ un $\triangle AFC$ ir vienādsānu. 
+Lai $M$ ir nogriežņa $AC$ viduspunkts un savienojam $M$ ar $F$. 
+Tas dod vēl divus taisnleņķa trijstūrus, $\triangle AMF$ un $\triangle CMF$, 
+kas arī ir līdzīgi $\triangle ABC$. Tātad
+
+$$\frac{MF}{MA}=\frac{BC}{BA}$$
+
+no kurienes $MF=\frac{15}{2}$. Tāpēc $\triangle ACF$ laukums ir 
+$\frac12\times\frac{15}{2}\times 20=75$.
+:::
 
 
 ## 10.uzdevums {-}
@@ -404,10 +513,110 @@ UK.Maclaurin.2010.4
 The diameter $AD$ of a circle has length $4$. The points
 $B$ and $C$ lie on the circle, as shown, so that $AB=BC=1$.
 Find the length of $CD$.
+
+
+Let $O$ be the centre of the circle, so that $OA=OB=OC=2$, and let chord $AC$ and radius $OB$ meet at $X$.
+
+![](problem10A.png)
+
+Triangle $OAC$ is isosceles and $OB$ bisects angle $AOC$ (because the chords $AB$ and $BC$ are equal and so subtend equal angles at the centre). Hence $OB$ is the perpendicular bisector of the base $AC$ of the isosceles triangle $AOC$. In other words, $AX=XC$ and $\sphericalangle AXO=90^\circ$, as shown in the diagram above.
+
+Since angle $ACD$ is $90^\circ$ (angle in a semicircle) triangle $ACD$ is a right-angled triangle with $CD$, whose length we have to find, as one side. We know $AD=4$, so can find $CD$, using Pythagoras' theorem, from
+$$
+CD^2=AD^2-AC^2,\qquad (4.1)
+$$
+provided we can find the length of $AC$. We shall do this by using areas, but there are other methods.
+
+Now consider isosceles triangle $OAB$ and let $N$ be the midpoint of $AB$, so that triangle $ANO$ is right-angled.
+
+![](problem10B.png)
+
+Then, from Pythagoras' theorem,
+$$
+NO^2=2^2-\left(\frac12\right)^2=\frac{15}{4},
+$$
+so that $NO=\frac{\sqrt{15}}{2}$. Hence the area of triangle $AOB$ is
+$$
+\frac12\times AB\times NO=\frac{\sqrt{15}}{4}.
+$$
+But the area of triangle $OAB$ is also $\frac12\times OB\times AX$. Therefore $AX=\frac{\sqrt{15}}{4}$ and so
+$$
+AC=2AX=\frac{\sqrt{15}}{2}.
+$$
+Using this value in equation (4.1). we get
+$$
+CD^2=AD^2-AC^2=4^2-\frac{15}{4}=\frac{49}{4}
+$$
+and hence $CD=\frac{7}{2}$.
+
+
+**Solution-2**
+Let $P$ be the intersection of $AB$ produced and $DC$ produced.
+
+![](problem10C.png)
+
+Now angles $ADB$ and $BDC$ are both angles at the circumference subtended by chords of length $1$. These angles are therefore equal. Also, $\sphericalangle ABD=90^\circ$ (angle in a semicircle). Therefore triangles $ABD$ and $PBD$ are congruent (ASA). Hence $BP=1$ and $PD=4$.
+
+Further, in triangles $BCP$ and $DAP$, angle $P$ is common and $\sphericalangle BCP=\sphericalangle DAP$ (exterior angle of cyclic quadrilateral). These triangles are therefore similar and hence $PC:1=2:4$. So $PC=\frac12$ and $CD=PD-PC=4-\frac12=3\frac12$.
 -->
 
 ![](problem10.png){ width=126pt }
 
+::: solution
+**Atbilde:** `7/2`
+
+**Atrisinājums-1:**  
+Lai $O$ ir apļa centrs, tā ka $OA=OB=OC=2$, un lai horda $AC$ un rādiuss $OB$ krustojas punktā $X$.
+
+![](problem10A.png){ width=162pt }
+
+Trijstūris $OAC$ ir vienādsānu, un $OB$ pārgriež leņķi $AOC$ uz pusēm (jo hordas $AB$ un $BC$ ir vienādas un tāpēc apļa centrā nogriež vienādus leņķus). Tātad $OB$ ir vienādsānu trijstūra $AOC$ pamata $AC$ perpendikulārais dalītājs. Citiem vārdiem, $AX=XC$ un $\sphericalangle AXO=90^\circ$, kā parādīts iepriekšējā zīmējumā.
+
+Tā kā leņķis $ACD$ ir $90^\circ$ (leņķis pusaplī), trijstūris $ACD$ ir taisnleņķa 
+trijstūris, kurā viena mala ir $CD$, un tās garums mums jāatrod. Zinām, 
+ka $AD=4$, tāpēc $CD$ var atrast, izmantojot Pitagora teorēmu:
+$$CD^2=AD^2-AC^2,\qquad (4.1)$$
+ja vien varam noteikt nogriežņa $AC$ garumu. To darīsim, izmantojot laukumus, bet pastāv arī citas metodes.
+
+Tagad aplūkosim vienādsānu trijstūri $OAB$ un lai $N$ ir nogriežņa $AB$ viduspunkts, tā ka trijstūris $ANO$ ir taisnleņķa.
+
+![](problem10B.png){ width=90pt }
+
+Tad pēc Pitagora teorēmas
+
+$$NO^2=2^2-\left(\frac12\right)^2=\frac{15}{4},$$
+
+tāpēc $NO=\frac{\sqrt{15}}{2}$. Tātad trijstūra $AOB$ laukums ir
+
+$$\frac12\times AB\times NO=\frac{\sqrt{15}}{4}.$$
+
+Bet trijstūra $OAB$ laukums ir arī $\frac12\times OB\times AX$. Tāpēc $AX=\frac{\sqrt{15}}{4}$ un tādēļ
+
+$$AC=2AX=\frac{\sqrt{15}}{2}.$$
+
+Ievietojot šo vērtību vienādojumā (4.1)., iegūstam
+
+$$CD^2=AD^2-AC^2=4^2-\frac{15}{4}=\frac{49}{4}$$
+
+un līdz ar to $CD=\frac{7}{2}$.
+
+
+**Atrisinājums-2:**  
+Lai $P$ ir pagarināto taisņu $AB$ un $DC$ krustpunkts.
+
+![](problem10C.png){ width=162pt }
+
+Leņķi $ADB$ un $BDC$ abi ir riņķī ievilkti leņķi, ko balsta hordas 
+ar garumu $1$. Tāpēc šie leņķi ir vienādi. Cits ievilkts leņķis 
+$\sphericalangle ABD=90^\circ$, jo balstās uz diametru. 
+Tāpēc trijstūri $ABD$ un $PBD$ ir kongruenti (pazīme $\ell m \ell$). 
+Tātad $BP=1$ un $PD=4$.
+
+Turklāt trijstūros $BCP$ un $DAP$ leņķis pie $P$ ir kopīgs un 
+$\sphericalangle BCP=\sphericalangle DAP$ (ievilkta četrstūra ārējais leņķis). 
+Tāpēc šie trijstūri ir līdzīgi, un no tā seko $PC:1=2:4$. 
+Tātad $PC=\frac12$ un $CD=PD-PC=4-\frac12=3\frac12$.
+:::
 
 
 ## 11.uzdevums {-}
@@ -421,13 +630,47 @@ ir iekrāsota?
 **(D)** $\frac{5}{12}$, **(E)** $\frac{1}{2}$.
 
 <!--
+UK.IMC.2013.13
+
 Four congruent isosceles trapeziums are placed so that their longer
 parallel sides form the diagonals of a square $PQRS$, as shown. The point $X$
 divides $PQ$
 in the ratio $3:1$. What fraction of the square is shaded?
+
+
+**B** The diagram shows the top-right-hand portion of the square. The shaded trapezium is labelled $QXYZ$ and $W$ is the point at which $ZY$ produced meets $PQ$.
+
+As $QXYZ$ is an isosceles trapezium, $\sphericalangle QZY=\sphericalangle ZQX=45^\circ$. Also, as $YX$ is parallel to $ZQ$, $\sphericalangle XYW=\sphericalangle WXY=45^\circ$. So $WYX$ and $WZQ$ are both isosceles right-angled triangles. As $\sphericalangle ZWQ=90^\circ$ and $Z$ is at the centre of square $PQRS$, we deduce that $W$ is the midpoint of $PQ$. Hence $WX=XQ=\frac14 PQ$. So the ratio of the side-lengths of similar triangles $WYX$ and $WZQ$ is $1:2$ and hence the ratio of their areas is $1:4$.
+
+Therefore the area of trapezium $QXYZ=\frac34\times\text{area of triangle }ZWQ=\frac{3}{32}\times\text{area }PQRS$ since triangle $ZWQ$ is one-eighth of $PQRS$. So the fraction of the square which is shaded is $4\times\frac{3}{32}=\frac38$.
+
+![](picture.png)
 -->
 
 ![](problem11.png){ width=108pt }
+
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**  
+Zīmējumā parādīta kvadrāta labā augšējā ceturtdaļa. 
+Iekrāsotais trapecveida četrstūris ir apzīmēts ar $QXYZ$, 
+un $W$ ir punkts, kurā pagarinājums $ZY$ krustojas ar $PQ$.
+
+![](problem11A.png){ width=108pt }
+
+Tā kā $QXYZ$ ir vienādsānu trapece, $\sphericalangle QZY=\sphericalangle ZQX=45^\circ$. 
+Taisnes $YX$ un $ZQ$ ir paralēlas, un $\sphericalangle XYW=\sphericalangle WXY=45^\circ$.
+Tātad $WYX$ un $WZQ$ abi ir vienādsānu taisnleņķa trijstūri. 
+Tā kā $\sphericalangle ZWQ=90^\circ$ un $Z$ atrodas kvadrāta $PQRS$ centrā, 
+secinām, ka $W$ ir nogriežņa $PQ$ viduspunkts. Tāpēc $WX=XQ=\frac14 PQ$. 
+Tātad līdzīgo trijstūru $WYX$ un $WZQ$ malu garumu attiecība ir $1:2$, 
+un līdz ar to šo trijstūru laukumu attiecība ir $1:4$.
+
+Tāpēc trapeces laukums $S_{QXYZ} = \frac34 \cdot S_{ZWQ} = \frac{3}{32} \cdot S_{PQRS}$, 
+jo trijstūris $ZWQ$ ir viena astotā daļa no $PQRS$. 
+Tātad iekrāsotā daļa no kvadrāta ir $4\times\frac{3}{32}=\frac38$.
+:::
 
 
 
@@ -445,11 +688,54 @@ vesels skaitlis. Kādi ir divi mazākie trapeces leņķi?
 
 
 <!--
+EU.GrayKangaroo.2013.9
+
 The perimeter of a trapezium is 5 units and the length of each of its sides is an integer number
 of units. What are the two smallest angles of the trapezium?
-A and B and C and D and E and 
+**(A)** $30^{\circ}$ and $30^{\circ}$,
+**(B)** $60^{\circ}$ and $60^{\circ}$,
+**(C)** $45^{\circ}$ and $45^{\circ}$,
+**(D)** $30^{\circ}$ and $60^{\circ}$,
+**(E)** $45^{\circ}$ and $90^{\circ}$.
+
+
+**B** 
+
+The situation as described must refer to an isosceles trapezium with three sides of length one unit and one side of length two units. Extend the two non-parallel sides of the trapezium to form a triangle as shown. Lines $PT$ and $QS$ are parallel. Hence, using corresponding angles, we know that $\sphericalangle TPR=\sphericalangle SQR$ and also that $\sphericalangle PTR=\sphericalangle QSR$. This shows that the two triangles $PRT$ and $QRS$ have equal angles and so are similar. Therefore
+$$
+\frac{x}{x+1}=\frac12
+$$
+which has solution $x=1$ and
+$$
+\frac{y}{y+1}=\frac12
+$$
+which has solution $y=1$. Hence triangle $QRS$ is equilateral and so its angles are all $60^\circ$. This means that the base angles of the trapezium are also both $60^\circ$.
+
+![](picture.png)
 -->
 
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**  
+Aprakstītā situācija atbilst vienādsānu trapecei ar trim malām, 
+kuru garums ir viena vienība, un vienu malu, kuras garums ir 
+divas vienības. 
+Pagarinām abas trapeces sānu malas, lai izveidotu trijstūri, 
+kā parādīts zīmējumā.
+
+![](problem12A.png){ width=126pt }
+
+Taisnes $PT$ un $QS$ ir paralēlas. 
+Tāpēc, izmantojot atbilstošos leņķus, zinām, ka $\sphericalangle TPR=\sphericalangle SQR$ 
+un $\sphericalangle PTR=\sphericalangle QSR$. Tas parāda, ka trijstūriem $PRT$ un $QRS$ 
+ir vienādi leņķi, tātad tie ir līdzīgi. 
+Tāpēc $$\frac{x}{x+1}=\frac12$$
+no kā iegūst $x=1$, un
+$$\frac{y}{y+1}=\frac12$$
+no kā iegūst $y=1$. Tātad trijstūris $QRS$ ir vienādmalu, un tā visi leņķi 
+ir $60^\circ$. Tas nozīmē, ka arī leņķi pie trapeces pamata ir $60^\circ$.
+:::
 
 
 ## 13.uzdevums {-}
@@ -469,6 +755,7 @@ Kurš no nogriežņiem ir garākais?
 
 
 <!--
+EU.PinkKangaroo.2013.15
 
 In quadrilateral $PQRS$, $\sphericalangle PQR = 59^{\circ}$, 
 $\sphericalangle RPQ = 60^{\circ}$, 
@@ -481,7 +768,25 @@ Which of the following line segments is the longest?
 **(C)** $PS$, 
 **(D)** $QR$, 
 **(E)** $RS$.
+
+
+**A** 
+
+The triangles are similar because they both contain angles of $59^\circ$, $60^\circ$, $61^\circ$. The smallest side of a triangle is always opposite the smallest angle, so line segment $PR$ is the smallest edge of triangle $PQR$, though it is not the smallest edge of triangle $PRS$; hence triangle $PQR$ is larger than triangle $PRS$ and must contain the longest line segment. The longest side in a triangle is opposite the largest angle, so side $PQ$ is the longest (opposite to $\sphericalangle PRQ$ which is $61^\circ$).
 -->
+
+::: solution
+**Atbilde:** `A`
+
+**Atrisinājums:**  
+Trijstūri ir līdzīgi, jo abos ir leņķi $59^\circ$, $60^\circ$, $61^\circ$. 
+Trijstūrī īsākā mala vienmēr atrodas pretī mazākajam leņķim, 
+tāpēc nogrieznis $PR$ ir īsākā mala trijstūrī $PQR$, lai gan tas 
+nav īsākā mala trijstūrī $PRS$; tātad trijstūris $PQR$ ir lielāks 
+nekā trijstūris $PRS$ un tam jāietver garākais nogrieznis. 
+Trijstūrī garākā mala atrodas pretī lielākajam leņķim, tāpēc mala 
+$PQ$ ir garākā (pretī $\sphericalangle PRQ$, kas ir $61^\circ$).
+:::
 
 
 ## 14.uzdevums {-}
@@ -496,16 +801,40 @@ Kāds ir $AP$ garums?
 **(D)** $\frac{13}{14}$, **(E)** $\frac{14}{15}$.
 
 <!--
+UK.SMC.2015.21
+
 The diagram shows a triangle $XYZ$. The sides
 $XY$, $YZ$ and $XZ$ have lengths $2$, $3$ and $4$
 respectively. The lines $AMB$, $PMQ$ and $SMT$ 
 are drawn parallel to the sides of triangle
 $XYZ$ so that $AP$, $QS$ and $BT$ are of equal length.
 What is the length of $AP$?
+
+**(A)** $\frac{10}{11}$, **(B)** $\frac{11}{12}$, **(C)** $\frac{12}{13}$,
+**(D)** $\frac{13}{14}$, **(E)** $\frac{14}{15}$.
+
+
+
+All of the triangles in the diagram are similar as they contain the same angles. The sides of each triangle are therefore in the ratio $2:3:4$. First consider triangle $APM$. Let $AP=x$, so that $AM=2x$. Now considering triangle $TBM$, as $BT=x$, $BM=\frac{4x}{3}$. The quadrilateral $AMSX$ is a parallelogram as $AM$ is parallel to $XS$ and $MS$ is parallel to $AX$. So $AM=XS=2x$. Similarly $QZ=BM=\frac{4x}{3}$. Considering the base of triangle $XYZ$, $XS+SQ+QZ=4$. So $2x+x+\frac{4x}{3}=4$ and therefore $x=\frac{12}{13}$.
+
+![](picture.png)
 -->
 
 
 ![](problem14.png){ width=180pt }
+
+::: solution
+**Atbilde:** `C`
+
+**Atrisinājums:**  
+Visi diagrammā redzamie trijstūri ir līdzīgi, jo tiem ir vienādi leņķi. 
+Tāpēc katra trijstūra malu attiecība ir $2:3:4$. Vispirms aplūkosim 
+trijstūri $APM$. Apzīmējam $AP=x$, tad $AM=2x$. Aplūkojot trijstūri $TBM$, 
+no $BT=x$ seko $BM=\frac{4x}{3}$. Četrstūris $AMSX$ ir paralelograms, 
+jo $AM$ ir paralēls $XS$ un $MS$ ir paralēls $AX$. Tātad $AM=XS=2x$. 
+Līdzīgi $QZ=BM=\frac{4x}{3}$. Aplūkojot trijstūra $XYZ$ pamatu, 
+$XS+SQ+QZ=4$. Tātad $2x+x+\frac{4x}{3}=4$ un līdz ar to $x=\frac{12}{13}$.
+:::
 
 
 
@@ -519,7 +848,7 @@ Kāds ir sešstūra $PQRSTU$ laukums kvadrātcentimetros?
 
 *Ierakstīt atbildē veselu skaitli vai parastu daļu P/Q.*
 
-![](problem15.png){ width=126pt }
+![](problem15.png){ width=144pt }
 
 <!--
 UK.SeniorKangaroo.2015.7
@@ -531,13 +860,23 @@ and $U$ as shown so that $PA = AB = BS$, $QA = AC = CT$ and $RB = BC = CU$.
 What is the area (in $\text{cm}^2$) of hexagon $PQRSTU$?
 
 *Answer:* `156`
+
+
+Consider triangles $ABC$ and $AST$. Angles $CAB$ and $TAS$ are equal because they are the same angle, $SA = 2BA$ and $TA = 2CA$. Hence triangles $ABC$ and $AST$ are similar. The ratio of their sides is $1:2$ and hence the ratio of their areas is $1:2^2 = 1:4$. Therefore the area of triangle $AST$ is $4 \times 12\ \mathrm{cm}^2 = 48\ \mathrm{cm}^2$ and hence the area of $BSTC$ is $(48 - 12)\ \mathrm{cm}^2 = 36\ \mathrm{cm}^2$. In a similar way, it can be shown that each of the areas of $CUPA$ and $AQRB$ is also $36\ \mathrm{cm}^2$. Next consider triangles $ABC$ and $APQ$. Angles $BAC$ and $PAQ$ are equal using vertically opposite angles, $AB = AP$ and $AC = AQ$. Hence triangles $ABC$ and $APQ$ are congruent (SAS) and so the area of triangle $APQ$ is $12\ \mathrm{cm}^2$. In a similar way, it can be shown that the each of areas of triangles $BRS$ and $CTU$ is also $12\ \mathrm{cm}^2$. Hence the total area of hexagon $PQRSTU$ in $\mathrm{cm}^2$ is $(3 \times 36 + 4 \times 12) = 156$.
 -->
 
+::: solution
+**Atbilde:** `156`
+
+**Atrisinājums:**  
+
+
+:::
 
 
 ## 16.uzdevums {-}
 
-Taisnstūrī $JKLM$ leņķa $\angle KJM$ bisektrise krusto diagonāli 
+Taisnstūrī $JKLM$ leņķa $\sphericalangle KJM$ bisektrise krusto diagonāli 
 $KM$ punktā $N$, kā parādīts. Attālumi no $N$ līdz malām $LM$ un 
 $KL$ ir attiecīgi $8~\mathrm{cm}$ un $1~\mathrm{cm}$. Malas $KL$ garums 
 ir $(a + \sqrt{b})~\mathrm{cm}$. Kāda ir $a + b$ vērtība?
@@ -549,19 +888,39 @@ ir $(a + \sqrt{b})~\mathrm{cm}$. Kāda ir $a + b$ vērtība?
 <!--
 UK.SeniorKangaroo.2015.17
 
-In rectangle $JKLM$, the bisector of angle $\angle KJM$ cuts the 
+In rectangle $JKLM$, the bisector of angle $\sphericalangle KJM$ cuts the 
 diagonal $KM$ at point $N$ as shown. The distances between $N$ and 
 sides $LM$ and $KL$ are $8\text{ cm}$ and $1\text{ cm}$ respectively. 
 The length of $KL$ is $(a + \sqrt{b})\text{ cm}$. What is the value of $a + b$?
 -->
 
 
+::: solution
+**Atbilde:** `156`
+
+**Atrisinājums:**  
+Apskatīsim trijstūrus $ABC$ un $AST$. Leņķi $CAB$ un $TAS$ ir vienādi, 
+jo tie ir viens un tas pats leņķis; $SA = 2BA$ un $TA = 2CA$. 
+Tātad trijstūri $ABC$ un $AST$ ir līdzīgi. To malu attiecība ir $1:2$, 
+un tāpēc to laukumu attiecība ir $1:2^2 = 1:4$. Tāpēc trijstūra $AST$ 
+laukums ir $4 \times 12\ \mathrm{cm}^2 = 48\ \mathrm{cm}^2$, 
+un līdz ar to $BSTC$ laukums ir $(48 - 12)\ \mathrm{cm}^2 = 36\ \mathrm{cm}^2$. 
+Līdzīgā veidā var parādīt, ka gan $CUPA$, gan $AQRB$ laukums arī ir 
+$36\ \mathrm{cm}^2$. Tālāk apskatīsim trijstūrus $ABC$ un $APQ$. 
+Leņķi $BAC$ un $PAQ$ ir vienādi kā vertikālie leņķi, $AB = AP$ 
+un $AC = AQ$. Tātad trijstūri $ABC$ un $APQ$ ir kongruenti (SAS), 
+un līdz ar to trijstūra $APQ$ laukums ir $12\ \mathrm{cm}^2$. 
+Līdzīgā veidā var parādīt, ka trijstūru $BRS$ un $CTU$ laukumi 
+arī ir $12\ \mathrm{cm}^2$. Tādēļ sešstūra $PQRSTU$ kopējais laukums 
+$\mathrm{cm}^2$ ir $(3 \times 36 + 4 \times 12) = 156$.
+:::
+
 
 ## 17.uzdevums {-}
 
 Attēlā dots četrstūris $PQRS$, kas veidots no diviem līdzīgiem 
 taisnleņķa trīsstūriem $PQR$ un $PRS$. Malas $PQ$ garums ir $3$, 
-malas $QR$ garums ir $4$, un $\angle PRQ = \angle PSR$. 
+malas $QR$ garums ir $4$, un $\sphericalangle PRQ = \sphericalangle PSR$. 
 Kāds ir četrstūra $PQRS$ perimetrs?
 **(A)** $22$, **(B)** $22\frac{5}{6}$, **(C)** $27$, 
 **(D)** $32$, **(E)** $45\frac{1}{3}$.
@@ -571,37 +930,102 @@ Kāds ir četrstūra $PQRS$ perimetrs?
 <!--
 UK.IMC.2017.13
 
-The diagram shows a quadrilateral $PQRS$ made from two similar right-angled triangles, $PQR$ and $PRS$. The length of $PQ$ is $3$, the length of $QR$ is $4$ and $\angle PRQ = \angle PSR$. What is the perimeter of $PQRS$?
+The diagram shows a quadrilateral $PQRS$ made from two similar right-angled triangles, $PQR$ and $PRS$. The length of $PQ$ is $3$, the length of $QR$ is $4$ and $\sphericalangle PRQ = \sphericalangle PSR$. What is the perimeter of $PQRS$?
 
-A $22$  \quad B $22\frac{5}{6}$  \quad C $27$  \quad D $32$  \quad E $45\frac{1}{3}$
+**(A)** $22$, **(B)** $22\frac{5}{6}$, **(C)** $27$, 
+**(D)** $32$, **(E)** $45\frac{1}{3}$.
+
+**A**
+
+Pythagoras' Theorem shows that $PR = \sqrt{3^2 + 4^2} = 5$. So the perimeter of triangle $PQR$ is $12$. Since the triangles are similar and $PR:PQ = 5:3$ we see that the perimeter of triangle $PRS$ is $20$. Hence the perimeter of $PQRS$ is $12 + 20 - 2 \times PR = 32 - 10 = 22$.
 -->
+
+::: solution
+**Atbilde:** `A`
+
+**Atrisinājums:**  
+Pitagora teorēma rāda, ka $PR = \sqrt{3^2 + 4^2} = 5$. Tātad trijstūra 
+$PQR$ perimetrs ir $12$. Tā kā trijstūri ir līdzīgi un $PR:PQ = 5:3$, 
+redzam, ka trijstūra $PRS$ perimetrs ir $20$. Tādēļ $PQRS$ perimetrs 
+ir $12 + 20 - 2 \times PR = 32 - 10 = 22$.
+:::
 
 
 ## 18.uzdevums {-}
 
-Attēlā dots trīsstūris $FHI$, un punkts $G$ atrodas uz nogriežņa $FH$ tā, ka $GH = FI$. Punkti $M$ un $N$ ir attiecīgi nogriežņu $FG$ un $HI$ viduspunkts. Leņķis $NMH = \alpha^\circ$. Kurš no sekojošajiem dod izteiksmi leņķim $\angle IFH$?  
-**(A)** $2\alpha^\circ$, **(B)** $(90 - \alpha)^\circ$, **(C)** $(45 + \alpha)^\circ$,
-**(D)** $\left(90 - \tfrac12\alpha\right)^\circ$, **(E)** $60^\circ$.
+Attēlā dots trīsstūris $FHI$, un punkts $G$ atrodas uz nogriežņa $FH$ tā, ka $GH = FI$. Punkti $M$ un $N$ ir attiecīgi nogriežņu $FG$ un $HI$ viduspunkts. Leņķis $NMH = \alpha$. Kurš no sekojošajiem dod izteiksmi leņķim $\sphericalangle IFH$?  
+**(A)** $2\alpha$, **(B)** $90^{^\circ} - \alpha$, **(C)** $45^{^\circ} + \alpha$,
+**(D)** $90^{^\circ} - \tfrac12\alpha$, **(E)** $60^\circ$.
 
 ![](problem18.png){ width=144pt }
 
 <!--
 UK.PinkKangaroo.2017.25
 
-The diagram shows a triangle $FHI$, and a point $G$ on $FH$ such that $GH = FI$. The points $M$ and $N$ are the midpoints of $FG$ and $HI$ respectively. Angle $NMH = \alpha^\circ$. Which of the following gives an expression for $\angle IFH$?
+The diagram shows a triangle $FHI$, and a point $G$ on $FH$ such that $GH = FI$. 
+The points $M$ and $N$ are the midpoints of $FG$ and $HI$ respectively. 
+Angle $NMH = \alpha$. Which of the following gives an expression for $\sphericalangle IFH$?
 
-A $2\alpha^\circ$
-B $(90 - \alpha)^\circ$
-C $(45 + \alpha)^\circ$
-D $\left(90 - \tfrac12\alpha\right)^\circ$
-E $60^\circ$
+**(A)** $2\alpha$, **(B)** $90^{^\circ} - \alpha$, **(C)** $45^{^\circ} + \alpha$,
+**(D)** $90^{^\circ} - \tfrac12\alpha$, **(E)** $60^\circ$.
+
+
+**A** 
+
+We start by drawing the line segment $IG$. Let $P$ be the point on $IG$ such that $PN$ is parallel to $FH$.
+
+![](problem18A.png)
+
+The angle $PNM$ is alternate to $NMH$ so $\sphericalangle PNM = \alpha$. Also, the triangle $PNI$ is similar to the triangle $GHI$ (the angles of each triangle are clearly the same); moreover since $N$ is the midpoint of $HI$, $PN=\tfrac12 GH$. Also $IP=\tfrac12 IG$, so $PG=\tfrac12 IG$. Since $MG=\tfrac12 FG$, the triangle $PMG$ is similar to $IFG$, and in particular, $PM=\tfrac12 IF$. However, we know $IF$ is equal in length to $GH$ so we have
+$PN=\tfrac12 GH=\tfrac12 IF=PM$,
+so triangle $MNP$ is isosceles and $\sphericalangle PMN=\sphericalangle PNM=\alpha$. Since triangles $PMG$ and $IFG$ are similar, we have
+$\sphericalangle IFG=\sphericalangle PMG=\alpha+\alpha=2\alpha$.
+
+*Alternative:*
+
+![](problem18B.png)
+
+Extend the line $HF$ to the point $E$ so that $EF=GH$. Then, because $FM=MG$, $M$ is the midpoint of $EH$. Therefore, since $N$ is the midpoint of $IH$, the triangles $IHE$ and $NHM$ are similar. Hence $\sphericalangle IEH=\sphericalangle NMH=a^\circ$. Because $EF=GH=FI$, the triangle $EFI$ is isosceles. Therefore, $\sphericalangle FIE=\sphericalangle IEF=a^\circ$. Therefore, by the external angle theorem,
+$\sphericalangle IFG=\sphericalangle IEF+\sphericalangle FIE=a^\circ+a^\circ=2a^\circ$.
 -->
+
+::: solution
+**Atbilde:** `A`
+
+**Atrisinājums-1:**  
+Novelkam nogriezni $IG$. Ar $P$ apzīmējam tādu punktu uz $IG$, ka $PN$ ir paralēls $FH$.
+Leņķi $PNM$ un $NMH$ ir iekšējie šķērsleņķi, tāpēc $\sphericalangle PNM=\alpha$. 
+Turklāt trijstūris $PNI$ ir līdzīgs trijstūrim $GHI$ 
+(abu trijstūru leņķi ir vienādi); tā kā $N$ ir nogriežņa $HI$ 
+viduspunkts, tad $PN=\tfrac12 GH$. Arī $IP=\tfrac12 IG$, 
+tātad $PG=\tfrac12 IG$. Tā kā $MG=\tfrac12 FG$, trijstūris $PMG$ 
+ir līdzīgs $IFG$, un jo īpaši $PM=\tfrac12 IF$. Tā kā $IF = GH$, tāpēc
+$PN=\tfrac12 GH=\tfrac12 IF=PM$,
+tātad trijstūris $MNP$ ir vienādsānu un 
+$\sphericalangle PMN=\sphericalangle PNM=\alpha$. 
+Tā kā trijstūri $PMG$ un $IFG$ ir līdzīgi, iegūstam
+$\sphericalangle IFG=\sphericalangle PMG=\alpha+\alpha=2\alpha$.
+
+![](problem18A.png){ width=162pt }
+
+**Atrisinājums-2:**  
+Pagarinām taisni $HF$ līdz punktam $E$ tā, lai $EF=GH$. 
+Zināms, ka $FM=MG$, tāpēc punkts $M$ ir nogriežņa $EH$ viduspunkts. 
+Tā kā $N$ ir nogriežņa $IH$ viduspunkts, trijstūri $IHE$ un $NHM$ ir 
+līdzīgi. Tātad $\sphericalangle IEH=\sphericalangle NMH=a^\circ$. Tā kā $EF=GH=FI$, 
+trijstūris $EFI$ ir vienādsānu. Tāpēc $\sphericalangle FIE=\sphericalangle IEF=a^\circ$. 
+Tādēļ pēc ārējā leņķa teorēmas
+$\sphericalangle IFG=\sphericalangle IEF+\sphericalangle FIE=a^\circ+a^\circ=2a^\circ$.
+
+![](problem18B.png){ width=180pt }
+:::
 
 
 
 ## 19.uzdevums {-}
 
-Attēlā dots kvadrāts $PQRS$ ar malu garumu $2$. Punkts $T$ ir malas $RS$ viduspunkts, un punkts $U$ atrodas uz nogriežņa $QR$ tā, ka $\angle SPT = \angle TPU$.
+Attēlā dots kvadrāts $PQRS$ ar malu garumu $2$. Punkts $T$ ir malas $RS$ 
+viduspunkts, un punkts $U$ atrodas uz nogriežņa $QR$ tā, ka $\sphericalangle SPT = \sphericalangle TPU$.
 Kāds ir nogriežņa $UR$ garums?
 
 *Ierakstīt atbildē veselu skaitli vai parastu daļu P/Q.*
@@ -613,9 +1037,51 @@ UK.Maklaurin.2017.4
 
 The diagram shows a square $PQRS$ with sides of length $2$. The point 
 $T$ is the midpoint of $RS$, and $U$ lies on $QR$ so that 
-$\angle SPT = \angle TPU$.
+$\sphericalangle SPT = \sphericalangle TPU$.
 What is the length of $UR$?
+
+
+
+## Solution
+
+Let $F$ be the point on $PU$ so that $\sphericalangle TFP = 90^\circ$ and join $T$ to $F$ and $U$, as shown.
+
+Then triangles $PTS$ and $PTF$ are congruent (AAS), so that $TF = 1$.
+
+Hence triangles $TUR$ and $TUF$ are congruent (RHS), so that $\sphericalangle RTU = \sphericalangle UTF$.
+
+Now the four angles at $T$ are angles on the straight line $RTS$, so they add up to $180^\circ$. It follows that $\sphericalangle RTU = \sphericalangle SPT$.
+
+Therefore triangles $RTU$ and $SPT$ are similar (AA), so that
+$$
+\frac{UR}{RT}=\frac{TS}{SP}=\frac{1}{2}.
+$$
+
+Thus $UR=\frac{1}{2}$.
+
+![](problem19A.png)
 -->
+
+::: solution
+**Atbilde:** `1/2`
+
+**Atrisinājums:**  
+Ar $F$ apzīmējam punktu uz $PU$, kuram $\sphericalangle TFP = 90^\circ$, 
+un savieno $T$ ar $F$ un $U$, kā parādīts zīmējumā.
+
+![](problem19A.png){ width=108pt }
+
+Tad trijstūri $PTS$ un $PTF$ ir kongruenti (pazīme $\ell{}m\ell$), tātad $TF = 1$.
+Tāpēc trijstūri $TUR$ un $TUF$ ir kongruenti (kā taisnleņķa trijstūri 
+ar vienādu hipotenūzu un kateti), tātad $\sphericalangle RTU = \sphericalangle UTF$.
+Četri leņķi pie $T$ ir leņķi uz taisnes $RTS$, tāpēc to summa ir $180^\circ$. 
+No šejienes seko, ka $\sphericalangle RTU = \sphericalangle SPT$.
+Tādēļ trijstūri $RTU$ un $SPT$ ir līdzīgi (pazīme $\ell\ell$), un
+
+$$\frac{UR}{RT}=\frac{TS}{SP}=\frac{1}{2}.$$
+
+Tātad $UR=\frac{1}{2}$.
+:::
 
 
 
@@ -634,8 +1100,53 @@ UK.SMC.2017.6
 
 The diagram shows a square $ABCD$ and a right-angled triangle $ABE$. The length of $BC$ is $3$. The length of $BE$ is $4$. What is the area of the shaded region?
 
-A $5\frac{1}{4}$ \quad B $5\frac{3}{8}$ \quad C $5\frac{1}{2}$ \quad D $5\frac{5}{8}$ \quad E $5\frac{3}{4}$
+**(A)** $5\frac{1}{4}$, **(A)** $5\frac{3}{8}$, **(C)** $5\frac{1}{2}$,
+**(D)** $5\frac{5}{8}$, **(E)** $5\frac{3}{4}$.
+
+
+**D** 
+
+
+Let $F$ be the point of intersection of the lines $AE$ and $CD$. Let the length of $CF$ be $h$. Then, using similar triangles,
+$$
+\frac{CF}{CE}=\frac{BA}{BE},
+$$
+so
+$$
+\frac{h}{1}=\frac{3}{4}
+$$
+giving $h=\frac{3}{4}$.
+
+The shaded region $ABCF$ is a trapezium, so has area
+$$
+\frac{1}{2}\left(3+\frac{3}{4}\right)\times 3=\frac{45}{8}
+$$
+which is $5\frac{5}{8}$.
+
+![](picture.png)
 -->
 
+::: solution
+**Atbilde:** `D`
 
+**Atrisinājums:**  
+Lai $F$ ir līniju $AE$ un $CD$ krustpunkts. Lai nogriežņa $CF$ garums ir $h$. 
+Tad, izmantojot līdzīgus trijstūrus,
+
+$$\frac{CF}{CE}=\frac{BA}{BE},$$
+
+tātad
+
+$$\frac{h}{1}=\frac{3}{4},$$
+
+no kā iegūst $h=\frac{3}{4}$.
+
+Iekrāsotais apgabals $ABCF$ ir trapece, tāpēc tā laukums ir
+
+$$\frac{1}{2}\left(3+\frac{3}{4}\right)\times 3=\frac{45}{8},$$
+
+kas ir $5\frac{5}{8}$.
+
+![](problem20A.png){ width=126pt }
+:::
 
