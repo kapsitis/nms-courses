@@ -377,15 +377,15 @@ Hence $\frac12\sphericalangle PQR=30^\circ$ so $\sphericalangle PQR=60^\circ$.
 Apļu rādiusus no mazākā līdz lielākajam apzīmējam attiecīgi ar 
 $r_1$, $r_2$ un $r_3$. Tātad
 
-$$16r_1=r_3+2r_2+r_1,\ \text{tāpēc } r_3=15r_1-2r_2\ldots\ (1).$$
+$$16r_1=r_3+2r_2+r_1,\ \text{tāpēc } r_3=15r_1-2r_2 \quad\quad (1).$$
 
 Ar $r_1+x$ apzīmē attālumu no $Q$ līdz mazākā apļa centram. Trijstūru līdzības dēļ
 
-$$\frac{r_1}{r_1+x}=\frac{r_2}{x+2r_1+r_2}=\frac{r_3}{16r_1+r_1+x}\ldots\ (2).$$
+$$\frac{r_1}{r_1+x}=\frac{r_2}{x+2r_1+r_2}=\frac{r_3}{16r_1+r_1+x}\quad\quad (2).$$
 
 Tad $r_1(x+2r_1+r_2)=r_2(r_1+x)$. Tāpēc
 
-$$r_2=\frac{r_1x+2r_1^2}{r_1}\ldots\ (3).$$
+$$r_2=\frac{r_1x+2r_1^2}{r_1}\quad\quad (3).$$
 
 No (1) un (2)
 
@@ -435,7 +435,7 @@ square is $100$ so the shaded area is $200 - 100 = 100$.
 **Atbilde:** `100`
 
 **Atrisinājums:**  
-Izmantojot parādīto apzīmējumu, redzam, 
+Ieviešot burtu apzīmējumus, redzam, 
 ka $\triangle ACE$ un $\triangle BCD$ ir līdzīgi un to 
 garumu attiecība ir $2:1$. Tā kā $\triangle ACE$ augstums ir 
 $10$ + $\triangle BCD$ augstums, $\triangle ACE$ augstums ir 
@@ -485,7 +485,7 @@ which gives $MF=\frac{15}{2}$. Therefore the area of $\triangle ACF$ is $\frac12
 **Atrisinājums:**  
 Izmantojot Pitagora teorēmu vispirms $\triangle ABC$ un pēc tam 
 $\triangle ACE$, iegūstam $AC=20$ un $AE=25$. No tā izriet, ka $\triangle ABC$ 
-ir līdzīgs $\triangle ACE$, jo atbilstošās malas ir vienādā attiecībā. 
+ir līdzīgs $\triangle ACE$, jo atbilstošo malu attiecība abos trijstūros ir $3:4:5$ (pazīme $mmm$). 
 Tāpēc $\sphericalangle BAC=\sphericalangle CAE$. Arī $\sphericalangle BAC=\sphericalangle ACF$, izmantojot 
 iekšējos šķērsleņķus, tātad $\sphericalangle CAF=\sphericalangle ACF$ un $\triangle AFC$ ir vienādsānu. 
 Lai $M$ ir nogriežņa $AC$ viduspunkts un savienojam $M$ ar $F$. 
@@ -494,8 +494,7 @@ kas arī ir līdzīgi $\triangle ABC$. Tātad
 
 $$\frac{MF}{MA}=\frac{BC}{BA}$$
 
-no kurienes $MF=\frac{15}{2}$. Tāpēc $\triangle ACF$ laukums ir 
-$\frac12\times\frac{15}{2}\times 20=75$.
+no kurienes $MF=\frac{MA \cdot BC}{BA} = \frac{10 \cdot 12}{16} = \frac{15}{2}$. Tāpēc $S_{ACF} = \frac12\cdot\frac{15}{2}\cdot 20=75$.
 :::
 
 
