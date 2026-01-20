@@ -16,7 +16,7 @@ Organizatoru informācija par Novada un Valsts olimpiādi (Valsts olimpiādes 2.
 | 2025-12-01 | [Lejuplādējama prezentācija (PDF)]({{ 'courses_25_26/lidzigi_trijsturi.pdf' | relative_url }}) un [Links uz Google Docs](https://docs.google.com/presentation/d/1WFoLfJyR6cKoq_TvmIbn1sC2a3veUthAorIuJl8iph4/edit?usp=sharing) |
 | 2025-12-01 | [Papildu uzdevumu lapa (12 uzdevumi)]({{ 'courses_25_26/worksheet-similar-triangles.pdf' | relative_url }}) |
 | 2025-12-01 | [Izvēļu un īso atbilžu tests (20 jautājumi)]({{ 'courses_25_26/2025-12-01-similar-triangles.pdf' | relative_url }}) |
-| **2025-12-19** | [Izvēļu un īso atbilžu testa atrisinājumi]({{ 'courses_25_26/2025-12-01-similar-triangles-solutions.pdf' | relative_url }})
+| **2025-12-31** | [Izvēļu un īso atbilžu testa atrisinājumi]({{ 'courses_25_26/2025-12-01-similar-triangles-solutions.pdf' | relative_url }})
 
 
 **RIIMC nodarbība #2:**
