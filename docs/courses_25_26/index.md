@@ -24,5 +24,5 @@ Organizatoru informācija par Novada un Valsts olimpiādi (Valsts olimpiādes 2.
 | ---------- | --------------------------------- |
 | 2026-01-19 | [Lejuplādējama prezentācija (PDF)]({{ 'courses_25_26/figuru_sagriesana.pdf' | relative_url }}) un [Links uz Google Docs](https://docs.google.com/presentation/d/1mj-Sb0NDfnM_YAzBUIyP8FLRoi-U5CIwFoQTev94loc/edit?usp=sharing) |
 | 2026-01-19 | [Papildu uzdevumi par sagriešanu (3.16.1. Sagriešana rūtiņu figūrās)](https://www.dudajevagatve.lv/eliozo/genres) |
-| 2026-01-19 | [2025.g. rudens diagnostiskā olimpiāde ĀVĢ (7.klases 4.uzdevums)]({{ 'courses_25_26/7klase_solutions.pdf' | relative_url }}) |
+| 2026-01-19 | [2025.g. rudens vietējā ĀVĢ olimpiāde (7.klases 3.uzdevums)]({{ 'courses_25_26/7klase_solutions.pdf' | relative_url }}) |
 
