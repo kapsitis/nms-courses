@@ -6,8 +6,7 @@ title: RIIMC kursi
 
 Organizatoru informācija par Novada un Valsts olimpiādi (Valsts olimpiādes 2. un 3.posmu) - 
 [https://www.nms.lu.lv/olimpiades/valsts-olimpiade/](https://www.nms.lu.lv/olimpiades/valsts-olimpiade/).  
-Šajā linkā varēs atrast arī NMS oficiālos teorijas materiālus novada olimpiādei -- 
-par 
+Šajā linkā varēs atrast arī NMS oficiālos teorijas materiālus novada olimpiādei. 
 
 
 **RIIMC nodarbība #1:**
