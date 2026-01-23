@@ -30,6 +30,18 @@ $x$, kam izteiksmes nav definētas), kompozīcija identiski vienāda ar $x$.
 **(D)** $f(f(f(f(f(x))))) = x$,  
 **(E)** Neviena no minētajām kompozīcijām nav $x$.
 
+::: solution
+**Atbilde:** `A`
+
+**Atrisinājums:**   
+Ievietojam $f(f(x))$, lai izrēķinātu funkciju kompozīciju:  
+$$f(f(x)) = \frac{k - f(x)}{1 + f(x)} = \frac{k - \frac{k-x}{1+x}}{1 + \frac{k-x}{1+x}}.$$
+
+Pareizinām skaitītāju un saucēju ar $1+x$:  
+$$\frac{k - \frac{k-x}{1+x}}{1 + \frac{k-x}{1+x}} = \frac{k+kx - k + x}{1+x+k-x} = \frac{(k+1)x}{k+1} = x.$$  
+Tātad jau $f(f(x))$ ir identiski vienāds ar $x$, kas ir atbilde **(A)**. 
+:::
+
 
 ## 2.uzdevums {-} 
 
@@ -43,6 +55,20 @@ $x$, kam izteiksmes nav definētas), kompozīcija identiski vienāda ar $x$.
 **(C)** $f(f(f(f(x)))) = x$,  
 **(D)** $f(f(f(f(f(x))))) = x$,  
 **(E)** Neviena no minētajām kompozīcijām nav $x$.
+
+
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**  
+Vispirms ievietojam $f(f(x))$. Iegūstam  
+$$f(f(x)) = \frac{1}{1 - f(x)} = \frac{1}{1 - \frac{1}{1-x}} = \frac{1 - x}{1-x-1} = \frac{x-1}{x}.$$   
+Tālāk, ievietojam šo $f(f(x))$ izteiksmi funkcijā $f$:  
+$$f(f(f(x))) = \frac{1}{1 - \frac{x-1}{x}} = \frac{x}{x-x+1} = \frac{x}{1} = x.$$
+
+Esam ieguvuši, ka $f(f(f(x)))$ ir identiski vienāds ar $x$ (atskaitot punktus $x=0$, $x=1$, 
+kur izteiksmes $f(x)$ vai $f(f(x))$ nav definētas). Tā ir atbilde **(B)**.
+:::
 
 
 ## 3.uzdevums {-}
@@ -63,6 +89,19 @@ $p + q= r + s = t + u$. What is the value of $p + q$?
 **(A)** $16$, **(B)** $18$, **(C)** $20$, **(D)** $22$, **(E)** $24$. 
 -->
 
+::: solution
+**Atbilde:** `24`
+
+**Atrisinājums:**  
+Pirmskaitli $2$ nevar izmantot, jo tad viena no summām būtu nepāra 
+skaitlis, bet citas būtu pāra skaitļi (pretruna). 
+
+Nepāra pirmskaitļu ir pavisam $7$: $\{ 3,5,7,11,13,17,19 \}$. 
+Ja atmet arī pirmskaitli $3$ un saliek pāros atlikušos - 
+vismazāko ar vislielāko utt., tad iegūst
+$5+19 = 7+17 = 11+13 = 24$.
+:::
+
 
 
 ## 4.uzdevums {-}
@@ -76,6 +115,15 @@ UK.IMC.2010.14
 Given that $4x−y=5$, $4y− z = 7$ and $4z− x = 18$, what is the value of $x + y + z$?  
 **(A)** $8$, **(B)** $9$, **(C)** $10$, **(D)** $11$, **(E)** $12$.
 -->
+
+::: solution
+**Atbilde:** `10`
+
+**Atrisinājums:**  
+Saskaitām visas vienādības:  
+$(4x - y) + (4y-z) + (4z - x) = 5+7+18,$ jeb $3(x+y+z) = 30$. 
+Iegūstam, ka $x+y+z = 10$.
+:::
 
 
 
@@ -94,6 +142,16 @@ and $x^2 + y^2 = 49$. What is the value of $y$?
 
 **(A)** $1$, **(B)** $2$, **(C)** $3$, **(D)** $4$, **(E)** more information is needed.
 -->
+
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**  
+Sadalām reizinātājos $x^4 - y^4 = (x^2 + y^2)(x^2 - y^2)$. 
+Tā kā $2009 = 49 \cdot 41$, tad $x^2 - y^2 = 41$, kas kopā ar 
+vienādību $x^2 + y^2 = 49$ ļauj secināt, ka $y^2 = (49 - 41)/2 = 4$. 
+Tādēļ $y = \pm 2$, bet $y$ var būt tikai pozitīvs, tāpēc $y=2$. 
+:::
 
 
 
@@ -118,6 +176,21 @@ The numbers $x$ and $y$ are both greater than $1$. Which of the following fracti
 **(E)** $\dfrac{3x}{3y+1}$
 -->
 
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**  
+Ja divām daļām ir vienādi skaitītāji, tad lielākā ir tā, kurai mazāks saucējs. 
+Tāpēc $\frac{x}{y-1} > \frac{x}{y+1}$ un $\frac{2x}{2y-1} > \frac{2x}{2y+1}$. 
+Secinām, ka lielākā daļa ir viena no $\frac{x}{y-1}, \frac{2x}{2y-1}$. 
+(Daļa $\dfrac{3x}{3y+1}$ nevar būt lielākā, jo tā ir mazāka par $\frac{3x}{3y} = \frac{x}{y}$.)
+
+Pamatojam, ka $\frac{x}{y-1} > \frac{2x}{2y-1}$. Sareizinot daļas krustiski 
+un noīsinot, iegūstam, ka jāpābauda, vai $-x > -2x$. Tas tiešām izpildās pozitīviem $x$. 
+Tātad $\frac{x}{y-1}$ ir lielākā no visām uzrakstītajām daļām, kas 
+ir atbilde **(B)**. 
+:::
+
 
 ## 7.uzdevums {-}
 
@@ -139,6 +212,13 @@ Which of the following is equivalent to $(x+y+z)(x-y-z)$?
 **(D)** $x^2-(y+z)^2$  
 **(E)** $x^2-(y-z)^2$
 -->
+
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**  
+Pārveidojam $(x+y+z)(x-y-z) = (x + (y+z))(x - (y+z)) = x^2 - (y+z)^2$, 
+kas ir atbilde **(D)**. 
 
 
 
@@ -165,6 +245,16 @@ $\frac{1}{x}+\frac{1}{y}=\frac{1}{2}$. What is the value of $x^2y+xy^2$?
 **(E)** $800$
 -->
 
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**  
+Saskaitām daļas: $\frac{1}{x} + \frac{1}{y} = \frac{x+y}{xy}$.  
+Ja $x+y = 20$, tad $xy = 40$. No šejienes var izteikt:  
+$$x^2y+xy^2 = xy(x+y) = 40 \cdot 20 = 800,$$  
+kas ir atbilde **(E)**. 
+:::
+
 
 ## 9.uzdevums {-}
 
@@ -175,6 +265,13 @@ Kāda ir $N$ vērtība?
 UK.SeniorKangaroo.2011.19
 Given that $\left(a+\frac{1}{a}\right)^2=6$ and $a^3+\frac{1}{a^3}=N\sqrt{6}$ and $a>0$, what is the value of $N$?
 -->
+
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**  
+
+:::
 
 
 ## 10.uzdevums {-}
@@ -381,7 +478,7 @@ Divu pozitīvu skaitļu $x,y$ aritmētisko vidējo $A$
 definē ar formulu $A = \frac{1}{2}(x + y)$, un ģeometrisko vidējo $G$
 definē ar formulu $G = \sqrt{xy}$. Kaut kādiem diviem skaitļiem $x$ un $y$, 
 kur $x > y$, izrādījās, ka attiecība $A : G = 5 : 4$. 
-Šīm $x$ un $y$ vērtībām atrast, kāda var būt attiecība $x : y$?
+Kāda var būt dalījuma $x : y$ vērtība?
 
 **(A)** $5 : 4$
 **(B)** $2 : 1$

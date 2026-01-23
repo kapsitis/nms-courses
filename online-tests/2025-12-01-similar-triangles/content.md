@@ -43,7 +43,7 @@ tās krustpunktā dalās uz pusēm. Tāpēc $HI$ ir puse no
 taisnstūra diagonāles un $HI = HG/2 = 5$.
 
 Kvadrāta $HIJK$ laukums ir $5 \cdot 5 = 25$. No tā jāatņem $\triangle HIL$ 
-laukums. Ievērojam, ka $\triangle FGH \sim \triangle LHI$ 
+laukums. Ievērojam, ka šie trijstūri ir līdzīgi: $\triangle FGH \sim \triangle LHI$ 
 (abi ir taisnleņķa trijstūri un šaurie leņķi $\sphericalangle IHL = \sphericalangle HGF$, 
 jo trijstūris $HGI$ ir vienādsānu).
 $\triangle LHI$ un $\triangle FGH$ līdzības koeficients ir $k = 5/8$, 
@@ -86,7 +86,7 @@ Tā ir hipotenūza taisnleņķa trijstūrim $\triangle PQR$.
 Trijstūris $\triangle RST$ ir līdzīgs $\triangle PRQ$ un tam hipotenūza 
 ir $1$. Tādēļ $\triangle RST$ līdzības koeficients attiecībā 
 pret $\triangle PRQ$ ir $\frac{1}{\sqrt{5}}$ -- trijstūra 
-$\triangle RST$ elementi (malas, augstumi) ir apmēram $2.236$ reizes īsāki par 
+$\triangle RST$ elementi (malas, augstumi) ir $\sqrt{5} \approx 2.236$ reizes īsāki par 
 atbilstošajiem elementiem trijstūrī $PRQ$.
 
 Laukumu attiecība abiem trijstūriem:   
@@ -148,8 +148,9 @@ What fraction of the area of the triangle is shaded?
 
 ## 4.uzdevums {-}
 
-Trijstūrī $FGH$ var novilkt taisni, kas ir paralēla tā pamatnei $FG$, caur punktu $X$ vai $Y$. Ieēnoto daļu laukumi ir vienādi. 
-Dotā attiecība ir $HX : XF = 4 : 1$. Kāda ir attiecība $HY : YF$?  
+Trijstūrī $FGH$ var novilkt taisni, kas ir paralēla tā pamatam 
+$FG$, gan caur punktu $X$, gan caur $Y$. Ieēnoto daļu laukumi abos gadījumos ir vienādi. 
+Zināms, ka attiecība $HX : XF = 4 : 1$. Kāda ir attiecība $HY : YF$?  
 **(A)** $1 : 1$, **(B)** $2 : 1$, **(C)** $3 : 1$, **(D)** $3 : 2$, **(E)** $4 : 3$
 
 ![](problem4.png){ width=180pt }
@@ -163,17 +164,27 @@ Apzīmējam trijstūra pamata malu ar $a$ un augstumu ar $h$.
 Tad kreisā attēla trapecei apakšējais pamats ir $a$, bet augšējais pamats ir $\frac{4}{5} a$; trapeces augstums ir $\frac{1}{5}h$. Tad trapeces laukums:  
 $$S = \frac{a + \frac{4}{5}a}{2} \cdot \left( \frac{1}{5} h \right) = \left( 1 + \frac{4}{5} \right) \cdot \frac{1}{5} \cdot \frac{ah}{2} = \frac{9}{25} \cdot \frac{ah}{2}.$$
 
-Iekrāsotās trapeces laukums ir $\frac{9}{25}$ no trijstūra laukuma. Lai labajā pusē iekrāsotajam trijstūrim arī būtu tāds laukums, vajag, 
-lai līdzības koeficients būtu $\frac{3}{5}$. Tad $\frac{HY}{YF}=\frac{3}{5}$, kas ir atbilde **(D)**. 
+Iekrāsotās trapeces laukums ir $\frac{9}{25}$ no trijstūra laukuma. 
+Lai labajā pusē iekrāsotajam trijstūrim arī būtu tāds laukums, vajag, 
+lai līdzības koeficients būtu $\frac{3}{5}$. Tad $\frac{HY}{HF}=\frac{3}{5}$, 
+un līdz ar to $\frac{HY}{YF} = \frac{3}{2}$, kas ir atbilde **(D)**. 
 :::
+
+
+
 
 
 <!--
 EU.PinkKangaroo.2015.20
 
-In the triangle $FGH$, we can draw a line parallel to its base $FG$, through point $X$ or $Y$. The areas of the shaded regions are the same. The ratio $HX : XF = 4 : 1$. What is the ratio $HY : YF$?
+In the triangle $FGH$, we can draw a line parallel to its base $FG$, 
+through point $X$ or $Y$. The areas of the shaded regions are the same. 
+The ratio $HX : XF = 4 : 1$. What is the ratio $HY : YF$?
 
 A $1 : 1$   B $2 : 1$   C $3 : 1$   D $3 : 2$   E $4 : 3$
+
+
+In the triangle on the left, the unshaded triangle is similar to triangle $FGH$, and is obtained from it by a scale factor of $\frac{4}{5}$. Hence its area is $\left(\frac{4}{5}\right)^2 = \frac{16}{25}$ of the area of $FGH$. The shaded area is therefore $\frac{9}{25}$ of the area of $FGH$. Hence $HY : HF = 3 : 5$ and so $HY : YF = 3 : 2$.
 -->
 
 
@@ -181,7 +192,7 @@ A $1 : 1$   B $2 : 1$   C $3 : 1$   D $3 : 2$   E $4 : 3$
 ## 5.uzdevums {-}
 
 Zīmējumā dots kvadrāts ar diagonāli un nogriezni, kas savieno 
-virsotni ar malas viduspunktu. Kāda ir $P$ un $Q$ laukumu attiecība?
+virsotni ar malas viduspunktu. Kāda ir figūru $P$ un $Q$ laukumu attiecība?
 **(A)** $1 : \sqrt{2}$,
 **(B)** $2 : 3$,
 **(C)** $1 : 2$,
@@ -221,7 +232,7 @@ Tā ir atbilde **(D)**
 **Atrisinājums-2:**  
 Apzīmējam trijstūra $CEF$ laukumu ar $S$. Ievērojam, ka $\sphericalangle AFD = \sphericalangle CFE$ (krustleņķi) un 
 $\sphericalangle DAF = \sphericalangle ECF$ (iekšējie šķērsleņķi), tādēļ trijstūri $ADF$ un $CEF$ ir līdzīgi.
-Līdzības koeficients $k=2$, jo mala $AD$ ir divreiz garāka par attiecīgo malu $CE$. Tātad:
+Līdzības koeficients $k=2$, jo mala $AD$ ir divreiz garāka par atbilstošo malu $CE$. Tātad:
 
 i. trijstūrim $ADF$ ir laukums $k^2 \cdot S = 4S$,
 ii. mala $AF$ ir divreiz garāka nekā attiecīgā mala $CF$.
@@ -261,8 +272,9 @@ diametrs atrodas uz malas ar garumu $12~\mathrm{cm}$?
 ![](problem6.png){ width=162pt }
 
 
-*Ieteikums:* Ja neesat pazīstami ar formulu $S=pr$ ievilktā 
-riņķa rādiusa atrašanai, var savienot riņķa centru ar pieskaršanās
+*Ieteikums:* Ja neesat pazīstami ar formulu $S=pr$ (laukums 
+ir pusperimetrs reiz ievilktā riņķa rādiuss), 
+var savienot riņķa centru ar pieskaršanās
 punktu uz hipotenūzas un aplūkot līdzīgus trijstūrus.
 
 <!--
@@ -398,7 +410,8 @@ Tātad $(3x+r_1)(x-r_1)=0$, un, tā kā $r_1>0$, $x=r_1$. Tāpēc
 
 $$\sin\frac{\sphericalangle PQR}{2}=\frac{r_1}{r_1+x}=\frac{r_1}{2r_1}=\frac12.$$
 
-Tātad $\frac12\sphericalangle PQR=30^\circ$, līdz ar to $\sphericalangle PQR=60^\circ$.
+Tātad $\frac12\sphericalangle PQR=30^\circ$, līdz ar to $\sphericalangle PQR=60^\circ$, 
+kas ir atbilde **(B)**.
 :::
 
 
@@ -409,7 +422,7 @@ Zīmējumā attēloti divi kvadrāti: Vienam malas
 garums ir $20$, un otram malas garums ir $10$. 
 Kāds ir ieēnotā apgabala laukums?
 
-*Ierakstīt atbildē veselu skaitli vai parastu daļu P/Q.*
+*Ierakstīt atbildē veselu skaitli vai parastu noīsinātu daļu P/Q.*
 
 ![](problem8.png){ width=108pt }
 
@@ -438,8 +451,8 @@ square is $100$ so the shaded area is $200 - 100 = 100$.
 Ieviešot burtu apzīmējumus, redzam, 
 ka $\triangle ACE$ un $\triangle BCD$ ir līdzīgi un to 
 garumu attiecība ir $2:1$. Tā kā $\triangle ACE$ augstums ir 
-$10$ + $\triangle BCD$ augstums, $\triangle ACE$ augstums ir 
-$20$, un tā laukums ir $\frac12 \times 20 \times 20 = 200$. 
+$10$ plus trijstūra $BCD$ augstums, $\triangle ACE$ augstums ir 
+$20$, un tā laukums ir $\frac12 \cdot 20 \cdot 20 = 200$. 
 Mazākā kvadrāta laukums ir $100$, tāpēc iekrāsotās daļas 
 laukums ir $200 - 100 = 100$.
 
@@ -454,7 +467,7 @@ $BC=12$.  $\sphericalangle ACE$ ir taisns leņķis un
 $CE=15$. Nogriežņi $AE$ un $CD$ krustojas punktā $F$.
 Kāds ir $\triangle ACF$ laukums?
 
-*Ierakstīt atbildē veselu skaitli vai parastu daļu P/Q.*
+*Ierakstīt atbildē veselu skaitli vai parastu noīsinātu daļu P/Q.*
 
 <!--
 UK.SeniorKangaroo.2011.14
@@ -504,7 +517,7 @@ Riņķa diametra $AD$ garums ir $4$. Punkti
 $B$ un $C$ atrodas uz riņķa, kā attēlots zīmējumā, un $AB=BC=1$.
 Atrast $CD$ garumu.
 
-*Ierakstīt atbildē veselu skaitli vai parastu daļu P/Q.*
+*Ierakstīt atbildē veselu skaitli vai parastu noīsinātu daļu P/Q.*
 
 <!--
 UK.Maclaurin.2010.4
@@ -614,7 +627,7 @@ Tātad $BP=1$ un $PD=4$.
 Turklāt trijstūros $BCP$ un $DAP$ leņķis pie $P$ ir kopīgs un 
 $\sphericalangle BCP=\sphericalangle DAP$ (ievilkta četrstūra ārējais leņķis). 
 Tāpēc šie trijstūri ir līdzīgi, un no tā seko $PC:1=2:4$. 
-Tātad $PC=\frac12$ un $CD=PD-PC=4-\frac12=3\frac12$.
+Tātad $PC=\frac12$ un $CD=PD-PC=4-\frac12=3\frac{1}{2} = \frac{7}{2}$.
 :::
 
 
@@ -668,7 +681,8 @@ un līdz ar to šo trijstūru laukumu attiecība ir $1:4$.
 
 Tāpēc trapeces laukums $S_{QXYZ} = \frac34 \cdot S_{ZWQ} = \frac{3}{32} \cdot S_{PQRS}$, 
 jo trijstūris $ZWQ$ ir viena astotā daļa no $PQRS$. 
-Tātad iekrāsotā daļa no kvadrāta ir $4\times\frac{3}{32}=\frac38$.
+Tātad iekrāsotā daļa no kvadrāta ir $4\times\frac{3}{32}=\frac{3}{8}$, 
+kas ir atbilde **(B)**.
 :::
 
 
@@ -868,8 +882,23 @@ Consider triangles $ABC$ and $AST$. Angles $CAB$ and $TAS$ are equal because the
 **Atbilde:** `156`
 
 **Atrisinājums:**  
+Aplūkosim trijstūrus $ABC$ un $AST$. Leņķi $CAB$ un $TAS$ ir vienādi, 
+jo tas ir tas pats leņķis, $SA = 2BA$ un $TA = 2CA$. 
+Tādēļ trijstūri $ABC$ un $AST$ ir līdzīgi. To malu attiecība ir $1:2$, 
+un to laukumu attiecība ir $1:2^2 = 1:4$. Tāpēc trijstūra $AST$ 
+laukums ir $4 \times 12\ \mathrm{cm}^2 = 48\ \mathrm{cm}^2$, 
+un tādēļ $BSTC$ laukums ir 
+$(48 - 12)\ \mathrm{cm}^2 = 36\ \mathrm{cm}^2$. 
 
-
+Līdzīgi var parādīt, ka katrs no laukumiem $CUPA$ un $AQRB$ 
+arī ir $36\ \mathrm{cm}^2$. Aplūkosim trijstūrus $ABC$ un $APQ$. 
+Leņķi $BAC$ un $PAQ$ ir vienādi kā krustleņķi, 
+$AB = AP$ un $AC = AQ$. Tādēļ trijstūri $ABC$ un $APQ$ 
+ir vienādi (pazīme $m\ell{}m$), un tāpēc trijstūra $APQ$ laukums ir 
+$12\ \mathrm{cm}^2$. Līdzīgi var parādīt, ka 
+$S_{BRS} = S_{CTU} = 12\ \mathrm{cm}^2$. 
+Tādēļ sešstūra $PQRSTU$ laukums $\mathrm{cm}^2$ ir 
+$(3 \times 36 + 4 \times 12) = 156$.
 :::
 
 
@@ -880,7 +909,7 @@ $KM$ punktā $N$, kā parādīts. Attālumi no $N$ līdz malām $LM$ un
 $KL$ ir attiecīgi $8~\mathrm{cm}$ un $1~\mathrm{cm}$. Malas $KL$ garums 
 ir $(a + \sqrt{b})~\mathrm{cm}$. Kāda ir $a + b$ vērtība?
 
-*Ierakstīt atbildē veselu skaitli vai parastu daļu P/Q.*
+*Ierakstīt atbildē veselu skaitli vai parastu noīsinātu daļu P/Q.*
 
 ![](problem16.png){ width=162pt }
 
@@ -891,27 +920,34 @@ In rectangle $JKLM$, the bisector of angle $\sphericalangle KJM$ cuts the
 diagonal $KM$ at point $N$ as shown. The distances between $N$ and 
 sides $LM$ and $KL$ are $8\text{ cm}$ and $1\text{ cm}$ respectively. 
 The length of $KL$ is $(a + \sqrt{b})\text{ cm}$. What is the value of $a + b$?
+
+
+16
+
+Let points $P$ and $Q$ be the points where the perpendiculars from $N$ to $ML$ and $KL$ meet the lines, and extend line $PN$ so it meets $JK$ at $R$, as shown in the diagram. Since $JN$ is the bisector of angle $\sphericalangle MJK$, angle $\sphericalangle NJR = 45^\circ$. Since angle $\sphericalangle JRN$ is $90^\circ$, triangle $\triangle JRN$ is isosceles and $JR = RN$. Let the length of $RN$ be $b$ cm. Hence the lengths of $JR$ and $PM$ are also $x$ cm. Observe that triangles $\triangle NKQ$ and $\triangle MNP$ are similar since they have the same angles. Therefore $\frac{1}{x} = \frac{x}{8}$ and so $x = \sqrt{8}$ since $x$ is positive. The length of $KL$ is equal to the sum of the lengths of $NP$ and $NR$. Therefore, the length of $KL$ is $(8 + \sqrt{8})$ cm. Hence, the value of $a + b$ is $16$.
 -->
 
 
 ::: solution
-**Atbilde:** `156`
+**Atbilde:** `16`
 
 **Atrisinājums:**  
-Apskatīsim trijstūrus $ABC$ un $AST$. Leņķi $CAB$ un $TAS$ ir vienādi, 
-jo tie ir viens un tas pats leņķis; $SA = 2BA$ un $TA = 2CA$. 
-Tātad trijstūri $ABC$ un $AST$ ir līdzīgi. To malu attiecība ir $1:2$, 
-un tāpēc to laukumu attiecība ir $1:2^2 = 1:4$. Tāpēc trijstūra $AST$ 
-laukums ir $4 \times 12\ \mathrm{cm}^2 = 48\ \mathrm{cm}^2$, 
-un līdz ar to $BSTC$ laukums ir $(48 - 12)\ \mathrm{cm}^2 = 36\ \mathrm{cm}^2$. 
-Līdzīgā veidā var parādīt, ka gan $CUPA$, gan $AQRB$ laukums arī ir 
-$36\ \mathrm{cm}^2$. Tālāk apskatīsim trijstūrus $ABC$ un $APQ$. 
-Leņķi $BAC$ un $PAQ$ ir vienādi kā vertikālie leņķi, $AB = AP$ 
-un $AC = AQ$. Tātad trijstūri $ABC$ un $APQ$ ir kongruenti (SAS), 
-un līdz ar to trijstūra $APQ$ laukums ir $12\ \mathrm{cm}^2$. 
-Līdzīgā veidā var parādīt, ka trijstūru $BRS$ un $CTU$ laukumi 
-arī ir $12\ \mathrm{cm}^2$. Tādēļ sešstūra $PQRSTU$ kopējais laukums 
-$\mathrm{cm}^2$ ir $(3 \times 36 + 4 \times 12) = 156$.
+Ar $P$ un $Q$ apzīmējam punktus, kuros no $N$ novilktie perpendikuli 
+pret taisnēm $ML$ un $KL$ krustojas ar šīm taisnēm, un pagarināsim 
+taisni $PN$, lai tā krustotos ar $JK$ punktā $R$, kā parādīts attēlā. 
+
+![](problem16A.png)
+
+Tā kā $JN$ ir leņķa $\sphericalangle MJK$ bisektrise, tad 
+$\sphericalangle NJR = 45^\circ$. 
+Tā kā leņķis $\sphericalangle JRN$ ir $90^\circ$, trijstūris $\triangle JRN$ 
+ir vienādsānu un $JR = RN$. Apzīmējam nogriežņa $RN$ garumu centimetros ar $x$. 
+Tad nogriežņu $JR$ un $PM$ garumi arī ir $x$ cm. Ievērojiet, 
+ka trijstūri $NKQ$ un $MNP$ ir līdzīgi, jo tiem ir vienādi leņķi. 
+Tāpēc $\frac{1}{x} = \frac{x}{8}$, un tādēļ $x = \sqrt{8}$, 
+jo $x$ ir pozitīvs. Nogriezņa $KL$ garums ir vienāds ar nogriežņu 
+$NP$ un $NR$ garumu summu. Tāpēc nogriežņa $KL$ garums ir 
+$(8 + \sqrt{8})$ cm. Tātad $a + b$ vērtība ir $16$.
 :::
 
 
@@ -936,7 +972,7 @@ The diagram shows a quadrilateral $PQRS$ made from two similar right-angled tria
 
 **A**
 
-Pythagoras' Theorem shows that $PR = \sqrt{3^2 + 4^2} = 5$. So the perimeter of triangle $PQR$ is $12$. Since the triangles are similar and $PR:PQ = 5:3$ we see that the perimeter of triangle $PRS$ is $20$. Hence the perimeter of $PQRS$ is $12 + 20 - 2 \times PR = 32 - 10 = 22$.
+Pythagoras' Theorem shows that $PR = \sqrt{3^2 + 4^2} = 5$. So the perimeter of triangle $PQR$ is $12$. Since the triangles are similar and $PR:PQ = 5:3$ we see that the perimeter of triangle $PRS$ is $20$. Hence the perimeter of $PQRS$ is $12 + 20 - 2 \cdot PR = 32 - 10 = 22$.
 -->
 
 ::: solution
@@ -946,7 +982,7 @@ Pythagoras' Theorem shows that $PR = \sqrt{3^2 + 4^2} = 5$. So the perimeter of 
 Pitagora teorēma rāda, ka $PR = \sqrt{3^2 + 4^2} = 5$. Tātad trijstūra 
 $PQR$ perimetrs ir $12$. Tā kā trijstūri ir līdzīgi un $PR:PQ = 5:3$, 
 redzam, ka trijstūra $PRS$ perimetrs ir $20$. Tādēļ $PQRS$ perimetrs 
-ir $12 + 20 - 2 \times PR = 32 - 10 = 22$.
+ir $12 + 20 - 2 \cdot PR = 32 - 10 = 22$.
 :::
 
 
@@ -1129,21 +1165,15 @@ which is $5\frac{5}{8}$.
 **Atbilde:** `D`
 
 **Atrisinājums:**  
-Lai $F$ ir līniju $AE$ un $CD$ krustpunkts. Lai nogriežņa $CF$ garums ir $h$. 
+Lai $F$ ir taišņu $AE$ un $CD$ krustpunkts. Lai nogriežņa $CF$ garums ir $h$. 
 Tad, izmantojot līdzīgus trijstūrus,
-
-$$\frac{CF}{CE}=\frac{BA}{BE},$$
-
-tātad
-
+$$\frac{CF}{CE}=\frac{BA}{BE},$$  
+tātad  
 $$\frac{h}{1}=\frac{3}{4},$$
-
 no kā iegūst $h=\frac{3}{4}$.
 
-Iekrāsotais apgabals $ABCF$ ir trapece, tāpēc tā laukums ir
-
-$$\frac{1}{2}\left(3+\frac{3}{4}\right)\times 3=\frac{45}{8},$$
-
+Iekrāsotais apgabals $ABCF$ ir trapece, tāpēc tā laukums ir  
+$$\frac{1}{2}\left(3+\frac{3}{4}\right)\times 3=\frac{45}{8},$$  
 kas ir $5\frac{5}{8}$.
 
 ![](problem20A.png){ width=126pt }

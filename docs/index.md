@@ -4,18 +4,14 @@ title: Sākumlapa
 ---
 # Matemātikas fakultatīvs
 
-<p style="color:darkred;font-size:110%">Priecīgu Atklāto Olimpiādi visiem RĀVĢ dalībniekiem 2.novembrī!</p> 
-
 Matemātikas pulciņš 8.-9.klasei - sk. [Interešu grafiku](https://avg.lv/interesu-izglitibas-grafiks/)
-2025.gada rudens semestrī: 
+2026.gada pavasara semestrī:
 
 * Pirmdienās 1. un 2.stundas laikā (8:00 - 9:25), parasti 113.telpā.
-* Ceturtdienās 8.-10.stundas laikā (13:30 - 15:40), parasti 112.telpā.
+* Ceturtdienās 8.-10.stundas laikā (13:30 - 15:40), parasti 3302.telpā.
 
-## Šīsnedēļas testi (pieejami līdz svētdienai, 2025-11-02)
-
-* [Kārtot testu AVGROOM1](https://api.socrative.com/rc/UAYbNH?method=qr) -- Dalāmība-1 (7. un 8.klases tēma, der visiem)
-* [Kārtot testu AVGROOM2](https://api.socrative.com/rc/4ZxD36?method=qr) -- Rekurentas virknes (9.klases tēma, der visiem)
+* [Kārtot testu AVGROOM1](https://api.socrative.com/rc/UAYbNH?method=qr) -- Trijstūru līdzība - 1 (publicēts **2026-01-23**)
+* [Kārtot testu AVGROOM2](https://api.socrative.com/rc/4ZxD36?method=qr) -- Trijstūru līdzība - 2 (publicēts **2026-01-23**)
 
 Sk. [Pieslēgšanās instrukciju]({{ '/socrative_instruction/' | relative_url }})
 
