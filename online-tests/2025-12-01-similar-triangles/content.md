@@ -911,7 +911,7 @@ ir $(a + \sqrt{b})~\mathrm{cm}$. Kāda ir $a + b$ vērtība?
 
 *Ierakstīt atbildē veselu skaitli vai parastu noīsinātu daļu P/Q.*
 
-![](problem16.png){ width=162pt }
+![](problem16.png){ width=180pt }
 
 <!--
 UK.SeniorKangaroo.2015.17
@@ -936,7 +936,7 @@ Ar $P$ un $Q$ apzīmējam punktus, kuros no $N$ novilktie perpendikuli
 pret taisnēm $ML$ un $KL$ krustojas ar šīm taisnēm, un pagarināsim 
 taisni $PN$, lai tā krustotos ar $JK$ punktā $R$, kā parādīts attēlā. 
 
-![](problem16A.png)
+![](problem16A.png){ width=180pt }
 
 Tā kā $JN$ ir leņķa $\sphericalangle MJK$ bisektrise, tad 
 $\sphericalangle NJR = 45^\circ$. 
