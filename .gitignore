@@ -143,3 +143,5 @@ ntjun-textbook-single/*
 source-material/*
 avg-pulcins-2025/temp/*
 sources/*
+!sources/warmup_exercises.md
+

@@ -36,6 +36,8 @@ fi
 indir="$(cd "$(dirname "$in")" && pwd)"
 
 ## --from markdown+tex_math_dollars+pipe_tables \
+# To skip solutions in livani-2026-01-24.md, add the following to the pandoc command:
+# --lua-filter <(echo "function Div(el) if el.classes:includes('solution') then return {} end end") \
 
 pandoc "$in" -o "$out" \
   --resource-path="$indir" \
@@ -43,6 +45,8 @@ pandoc "$in" -o "$out" \
   --pdf-engine=lualatex \
   --template eisvogel \
   -V colorlinks=true
+  # --lua-filter <(echo "function Div(el) if el.classes:includes('solution') then return {} end end") \
+  
 
 echo "Wrote $out"
 
