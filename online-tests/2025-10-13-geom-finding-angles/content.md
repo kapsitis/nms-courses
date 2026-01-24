@@ -1,10 +1,19 @@
 ---
 title: "Ģeometrija: Trijstūri un leņķi"
+show-solutions: true
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
 geometry: "margin=1in"
 header-left: "Ģeometrija: Trijstūri un leņķi"
+header-includes:
+  - |
+    \makeatletter
+    \RedeclareSectionCommand[
+      beforeskip=1.2ex plus 0.4ex minus 0.2ex,
+      afterskip=0.4ex plus 0.2ex minus 0.2ex
+    ]{subsection}
+    \makeatother
 ---
 # Ģeometrija: Trijstūri un leņķi {-}
 
@@ -19,6 +28,7 @@ Atrast $\sphericalangle BAC$, ja $\sphericalangle CED = 25^{\circ}$.
 *Ierakstīt veselu skaitli - leņķa $BAC$ lielumu grādos.*
 
 
+::: solution
 **Atbilde:** `80`
 
 <!--
@@ -38,6 +48,7 @@ Blakusleņķis $\sphericalangle DCA = 180^{\circ} - 130^{\circ} = 50^{\circ}$.
 Atkārtojam līdzīgu spriedumu vienādsānu trijstūrim $ABC$, kam viens leņķis pie 
 pamata ir $50^{\circ}$. Arī otrs leņķis pie pamata $\sphericalangle ABC = 50^{\circ}$
 un leņķis pie virsotnes: $\sphericalangle BAC = 180^{\circ} - 50^{\circ} - 50^{\circ} = 80^{\circ}$. 
+:::
 
 
 
@@ -51,6 +62,7 @@ Aprēķināt to leņķu lielumu summu, kas apzīmēti ar lociņiem.
 
 *Ierakstīt veselu skaitli - leņķu summu grādos.*
 
+::: solution
 **Atbilde:** `360`
 
 <!--
@@ -64,6 +76,7 @@ Pie virsotnes ar lociņu apzīmētais leņķis ir $360^{\circ} - (90^{\circ} + 9
 
 Tāpēc visu trīs leņķu summa:    
 $(180^{\circ} - \alpha) + (180^{\circ} - \alpha) + 2\alpha = 360^{\circ}$. 
+:::
 
 
 
@@ -78,6 +91,7 @@ Aprēķināt leņķi $x$.
 
 *Ierakstīt veselu skaitli - leņķa $x$ lielumu grādos.*
 
+::: solution
 **Atbilde:** `45`
 
 <!--
@@ -93,6 +107,7 @@ Var vispirms izteikt leņķus abās pusēs leņķim $x$.
 Leņķi pie vienādsānu trijstūru pamata ir attiecīgi $(180^{\circ} - 40^{\circ})/2 = 70^{\circ}$ un 
 $(180^{\circ} - 50^{\circ})/2 = 65^{\circ}$.  
 Iegūstam, ka $x = 180^{\circ} - (70^{\circ} + 65^{\circ}) = 45^{\circ}$. 
+:::
 
 
 
@@ -105,6 +120,7 @@ Aprēķināt leņķu lielumu summu, kas zīmējumā apzīmēti ar $x$ un $y$.
 
 *Ierakstīt veselu skaitli - leņķu summu grādos.*
 
+::: solution
 **Atbilde:** `150`
 
 <!--
@@ -119,6 +135,7 @@ iekšējo leņķu summa ir $180^{\circ} \cdot (5-2) = 540^{\circ}$, tad iegūsta
 vienādojumu:  
 $x + y + 40^{\circ} + 300^{\circ} + 50^{\circ} = 540^{\circ}$.  
 $x + y = 540^{\circ} - (40^{\circ} + 300^{\circ} + 50^{\circ}) = 150^{\circ}$. 
+:::
 
 
 
@@ -133,6 +150,7 @@ taisnstūra malu.
 
 *Ierakstīt veselu skaitli - leņķa $\alpha$ lielumu grādos.*
 
+::: solution
 **Atbilde:** `120`
 
 <!--
@@ -151,6 +169,7 @@ iekšējo vienpusleņķu summa $60^{\circ} + \alpha = 180^{\circ}$.
 Iegūstam, ka $\alpha = 120^{\circ}$. 
 
 ![](EE.PK.2012TEST.7.8A.png){ width=200px }
+:::
 
 
 
@@ -165,6 +184,7 @@ $CD$ ir šī trijstūra iekšējo leņķu bisektrises, un $\sphericalangle BDC$ 
 *Ierakstīt veselu skaitli - leņķa $\alpha$ lielumu grādos.*
 
 
+::: solution
 **Atbilde:** `20`
 
 <!--
@@ -179,6 +199,7 @@ bet $\sphericalangle ACB + \sphericalangle ABC$ summa ir divreiz lielāka - tāt
 $\sphericalangle ACB + \sphericalangle ABC = 180^{\circ} - \alpha$ 
 (trijstūra $ABC$ iekšējo leņķu summa). 
 Tāpēc $360^{\circ} - 10\alpha = 180^{\circ} - \alpha$ un $\alpha = 20^{\circ}$. 
+:::
 
 
 
@@ -195,6 +216,7 @@ Atrast leņķa $BDE$ lielumu.
 *Ierakstīt veselu skaitli - leņķa lielumu grādos.*
 
 
+::: solution
 **Atbilde:** `20`
 
 <!--
@@ -211,6 +233,7 @@ $\sphericalangle DEC = 45^{\circ}$, jo tas ir leņķis vienādsānu taisnleņķa
 $EDC$. Tāpēc tā blakusleņķis $\sphericalangle BED = 180^{\circ} - 45^{\circ} = 135^{\circ}$.  
 Trijstūrī $BDE$ divi leņķi jau ir zināmi (attiecīgi $25^{\circ}$ un $135^{\circ}$). 
 Tādēļ trešais leņķis ir $180^{\circ} - 25^{\circ} - 135^{\circ} = 20^{\circ}$. 
+:::
 
 
 
@@ -224,6 +247,7 @@ $AB = CD$. Atrast leņķa $\sphericalangle ABC$ lielumu.
 
 *Ierakstīt veselu skaitli - leņķa $ABC$ lielumu grādos.*
 
+::: solution
 **Atbilde:** `65`
 
 <!--
@@ -239,6 +263,7 @@ Zināms arī, ka $CD = AB$.
 
 Tādēļ $AB = AC$ un arī trijstūris $ABC$ ir vienādsānu. 
 Tāpēc $\sphericalangle ABC = \sphericalangle ACB = (180^{\circ} - 50^{\circ})/2 = 65^{\circ}$. 
+:::
 
 
 
@@ -252,6 +277,7 @@ malas $AC$ garumu.
 
 *Ierakstīt veselu skaitli - malas $AC$ garumu centimetros.*
 
+::: solution
 **Atbilde:** `30`
 
 </small>
@@ -276,6 +302,7 @@ Tādēļ $KBC$ ir vienādsānu trijstūris un $KB = KC$.
 $\sphericalangle ABK = 90^{\circ} - 40^{\circ} = 50^{\circ}$. 
 Tādēļ arī trijstūris $AKB$ ir vienādsānu un $KB = KA$. 
 Iegūstam, ka $AC = AK + KC = 2KB = 2 \cdot 15 = 30$ centimetri.  
+:::
 
 
 ## 10.uzdevums {-}
@@ -289,6 +316,7 @@ $BC$ būtu vienādi. Aprēķināt ar $x$ apzīmēto leņķi.
 
 *Ierakstīt veselu skaitli - leņķa $x$ lielumu grādos.*
 
+::: solution
 **Atbilde:** `30`
 
 <!--
@@ -305,4 +333,5 @@ Trijstūra $ABC$ iekšējo leņķu summa (zaļie lociņi zīmējumā)
 $x + 40^{\circ} + 70^{\circ} + 40^{\circ} = 180^{\circ}$ un $x = 30^{\circ}$. 
 
 ![](EE.PK.2015TEST.7.6A.png){ width=200px }
+:::
 

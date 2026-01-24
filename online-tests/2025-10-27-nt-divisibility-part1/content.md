@@ -1,5 +1,6 @@
 ---
 title: "Skaitļu teorija: Dalāmība - 1"
+show-solutions: true
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
@@ -20,6 +21,7 @@ header-includes:
 
 Cik daudzi pozitīvi trīsciparu skaitļi dalās gan ar 11, gan ar 5? 
 
+::: solution
 **Atbilde:** `17`
 
 <!--
@@ -33,6 +35,7 @@ Mazākais trīsciparu skaitlis, kas dalās ar $55$ ir $2 \cdot 55 = 110$,
 bet lielākais šāds skaitlis ir $18 \cdot 55 = 990$.  
 Tātad $55$ var reizināt ar jebko intervālā $[2;18]$, lai iegūtu trīsciparu 
 skaitli. Šādu reizinājumu būs $18 -2 + 1=17$. 
+:::
 
 
 ## 2.uzdevums {-}
@@ -41,6 +44,7 @@ Kurš ir mazākais pozitīvais skaitļa 25 daudzkārtnis, kura ciparu reizināju
 arī ir pozitīvs skaitļa 25 daudzkārtnis?  
 (*Piezīme:* Par skaitļa $25$ *daudzkārtni* sauc skaitli, kas dalās ar $25$.)
 
+::: solution
 **Atbilde:** `525`
 
 <!--
@@ -56,6 +60,7 @@ Ja skaitlis beidzas ar cipariem "25", tad tam vajag vēl vismaz
 vienu ciparu, kas dalās ar $5$, lai reizinājums dalītos ar $5 \cdot 5= 25$. 
 Tāds ir skaitlis $525$.  
 (Līdzīgi der arī $575$, bet $525$ ir mazākais.)
+:::
 
 
 ## 3.uzdevums {-}
@@ -63,6 +68,7 @@ Tāds ir skaitlis $525$.
 Atrast mazāko naturālo skaitli, kas ir skaitļa $120$ dalītājs, 
 bet nav skaitļa $300$ dalītājs. 
 
+::: solution
 **Atbilde:** `8`
 
 **Atrisinājums:**  
@@ -73,6 +79,7 @@ divnieka pakāpi (jo $120$ dalās ar $2^3 = 8$, bet $300$ dalās tikai
 ar $2^2 = 4$). 
 
 Iegūstam, ka mazākais skaitlis, kas dala $120$, bet ne $300$ ir $8$.
+:::
 
 
 
@@ -82,6 +89,7 @@ Visi skaitļa $175$ pozitīvie dalītāji, izņemot $1$, ir izrakstīti pa apli 
 ka jebkuriem diviem skaitļiem blakus uz apļa ir kopīgs reizinātājs, 
 kas lielāks par $1$. Kāda ir summa abiem skaitļiem, kuri uzrakstīti blakus skaitlim $7$?
 
+::: solution
 **Atbilde:** `210`
 
 <!--
@@ -97,6 +105,7 @@ Ar $7$ dalās vēl vienīgi $7 \cdot 5 = 35$ un $7 \cdot 25 = 175$,
 jo skaitlim $175 = 5^2 \cdot 7$ ir pavisam seši dalītāji ($1,5,7,35,35,175$)
 un tikai trīs no tiem satur pirmreizinātāju $7$.  
 Iegūstam, ka skaitlim $7$ blakus uzrakstīto skaitļu summa ir $175+35 = 210$. 
+:::
 
 
 
@@ -107,6 +116,7 @@ Viņiem jāsoļo rindās -- ar vienādu skolēnu skaitu katrā rindā.
 Vienā rindā jābūt no $5$  līdz $20$ skolēniem. 
 Cik dažādus rindu garumus orķestra dalībnieki var izveidot?
 
+::: solution
 **Atbilde:** `5`
 
 <!--
@@ -122,6 +132,7 @@ Atlikušie seši ir "lielie" dalītāji (ko iegūst $72$ izdalot ar kādu no "ma
 
 Starp visiem šiem dalītājiem ir tikai $6,8,9,12,18$ ir tādi, kas atrodas intervālā $[5;20]$. 
 Tāpēc var izveidot piecus dažādus rindu garumus.
+:::
 
 
 ## 6.uzdevums {-}
@@ -130,6 +141,7 @@ Pieņemsim, ka $a$ un $b$ ir veseli pozitīvi skaitļi, kur skaitlim $a$
 ir 3 pozitīvi dalītāji, bet skaitlim $b$ ir $a$ pozitīvi dalītāji. 
 Ja $b$ dalās ar $a$, tad kāda var būt skaitļa $b$ mazākā iespējamā vērtība? 
 
+::: solution
 **Atbilde:** `8`
 
 <!--
@@ -145,6 +157,7 @@ Tas nevar būt $2$ reizinājums ar kādu citu pirmskaitli (piemēram $2 \cdot 3 
 jo tādam ir četri dalītāji, bet tas nedalās ar $4$. 
 Vienīgā iespēja ir izvēlēties $b$ kā divnieka pakāpi: $b = 2^3 = 8$. 
 Šim skaitlim ir četri dalītāji ($1,2,4,8$) un tas dalās ar $4$. 
+:::
 
 
 
@@ -154,6 +167,7 @@ Vienīgā iespēja ir izvēlēties $b$ kā divnieka pakāpi: $b = 2^3 = 8$.
 Kāds ir lielākais veselais skaitlis, ar kuru dalās jebkuru trīs 
 pēc kārtas sekojošu naturālu skaitļu reizinājums?
 
+::: solution
 **Atbilde:** `6`
 
 <!--
@@ -172,6 +186,7 @@ Un arī starp skaitļiem $n,n+1,n+2$, kuri seko pēc kārtas, tieši viens dalā
 Tāpēc reizinājums dalās arī $3$. 
 
 Ja skaitlis dalās ar $2$ un ar $3$, tad tas dalās ar $6$. 
+:::
 
 
 
@@ -180,6 +195,7 @@ Ja skaitlis dalās ar $2$ un ar $3$, tad tas dalās ar $6$.
 Naturāli skaitļi $A$, $B$, $A-B$ un $A+B$ visi ir pirmskaitļi. 
 Atrast šo četru pirmskaitļu summu. 
 
+::: solution
 **Atbilde:** `17`
 
 <!--
@@ -198,6 +214,7 @@ progresijā dalās ar $3$ -- un vienīgais pirmskaitlis, kurš var dalīties ar 
 ir pats $3$.) Esam ieguvuši, ka progresijas vidējais loceklis ir $A=5$. 
 
 Esam ieguvuši, ka $A=5$, $B=2$, $A-B=3$, $A+B=7$. To summa ir $17$. 
+:::
 
 
 
@@ -208,6 +225,7 @@ daudzkārtni starp visiem trīsciparu skaitļiem.
 Kāda ir $m + n$ vērtība?  
 (*Piezīme:* Par skaitļa $7$ *daudzkārtni* sauc skaitli, kas dalās ar $7$.)
 
+::: solution
 **Atbilde:** `1099`
 
 <!--
@@ -218,6 +236,7 @@ Sal. [AOPS.INT.1.9](AOPS.INT.1.9)
 Mazākais trīsciparu daudzkārtnis skaitlim $7$ ir $105 = 15 \cdot 7$, bet
 lielākais trīsciparu daudzkārtnis ir $994 = 142 \cdot 7$. 
 To summa ir $105 + 994 = 1099$.  
+:::
 
 
 ## 10.uzdevums {-}
@@ -228,6 +247,7 @@ Pēc tam viņi pārkārtojās "Taisnstūrī $B$", kam rindu ir par $6$ vairāk,
 bet katrā no rindām ir par diviem dalībniekiem mazāk. 
 Cik rindu ir "Taisnstūrī $A$"? 
 
+::: solution
 **Atbilde:** `15`
 
 <!--
@@ -244,4 +264,5 @@ $$1,\; 3,\; 5,\; 7,\; 15,\; 21,\; 35,\; 105.$$
 Vienīgie divi dalītāji, kuri atšķiras par $6$ ir $15$ un $21$. 
 Tāpēc taisnstūrī $A$ bija $15$ rindas (pa $7$ dalībniekiem katrā), 
 bet taisnstūrī $B$ bija $21$ rindas (pa $5$ dalībniekiem katrā).
+:::
 

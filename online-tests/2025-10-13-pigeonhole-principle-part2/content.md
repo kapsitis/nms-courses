@@ -1,10 +1,19 @@
 ---
 title: "Dirihlē princips - 2"
+show-solutions: true
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
 geometry: "margin=1in"
 header-left: "Dirihlē princips - 2"
+header-includes:
+  - |
+    \makeatletter
+    \RedeclareSectionCommand[
+      beforeskip=1.2ex plus 0.4ex minus 0.2ex,
+      afterskip=0.4ex plus 0.2ex minus 0.2ex
+    ]{subsection}
+    \makeatother
 ---
 # Dirihlē princips - 2 {-}
 
@@ -15,6 +24,7 @@ turklāt katriem diviem skolēniem vismaz viens vectētiņš ir kopīgs.
 (Zināms arī, ka neeksistē visiem skolēniem kopīgs vectētiņš.) 
 Kāds ir lielākais iespējamais šīs klases skolēnu vectētiņu skaits?
 
+::: solution
 **Atbilde:** `3`
 
 **Atrisinājums:**  
@@ -29,6 +39,7 @@ Bet ceturto vectētiņu pievienot vairs nav iespējams, jo tad,
 ja parādās vēl kāds bērns, tad viņam nevar piešķirt jaunu vectētiņu 
 $D$, jo tad viņam var būt ne vairāk kā viens vectētiņš no saraksta 
 $(A,B,C)$ -- un tātad ar kādu no bērniem viņam nebūs kopīga vectētiņa.
+:::
 
 
 
@@ -39,6 +50,7 @@ nokrāsots vai nu melns vai balts.  Kāds mazākais punktu skaits
 jānokrāso melni, lai noteikti atrastos horizontāla vai vertikāla 
 taisne, uz kuras ir vismaz 4 melni punkti?
 
+::: solution
 **Atbilde:** `19`
 
 **Atrisinājums:**  
@@ -50,6 +62,7 @@ $6 \times 6$ varēs iekrāsot pārmaiņus līdzīgi šaha galdiņa krāsojumam.
 Uz katras horizontālas vai vertikālas taisnes nonāks tikai $3$ melni punkti.
 
 ![](problem2A.png){ width=96pt }
+:::
 
 
 ## 3.uzdevums {-}
@@ -59,6 +72,7 @@ nosūta katram no viņiem Jaungada apsveikumu. Kādam mazākajam $n$ var apgalvo
 ka noteikti atradīsies divi tādi klasesbiedri, kas nosūtījuši 
 apsveikumus viens otram?
 
+::: solution
 **Atbilde:** `6`
 
 **Atrisinājums:**  
@@ -81,6 +95,7 @@ apļa neatradīsies divi skolēni, kurus savieno bultiņas
 abos virzienos vienlaikus.
 
 ![](problem3A.png){ width=96pt }
+:::
 
 
 ## 4.uzdevums {-}
@@ -92,6 +107,7 @@ $X$ starp šiem $10$ cilvēkiem.
 Kāds ir lielākais skaits cilvēku, kas vai nu visi 
 pazīst $X$, vai arī visi nepazīst $X$?
 
+::: solution
 **Atbilde:** `5`
 
 **Atrisinājums:**  
@@ -100,6 +116,7 @@ tiem var pazīt vai nepazīt. Vismaz $5$ no šiem cilvēkiem
 būs attiecībā "pazīst" vai arī attiecībā "nepazīst". $9$ 
 cilvēkus dala divu veidu "būrīšos" - un vismaz pieciem 
 jābūt savstarpēji vienādiem.
+:::
 
 
 
@@ -112,6 +129,7 @@ pa šīm trepēm, cik reižu viņa bijusi uz tā pakāpiena, uz
 kura viņa bijusi visbiežāk  
 (neskaitot pašu apakšējo - $0$-to un pašu augšējo - $49$-to)?
 
+::: solution
 **Atbilde:** `4`
 
 **Atrisinājums:**  
@@ -126,6 +144,7 @@ $\lceil 145/48 \rceil = \lceil 3.02 \rceil =4$ objekti. (Noapaļo uz augšu.)
 *Piezīme:* Spēja kāpt tieši pa 1, 2 vai 3 pakāpieniem nav būtiska - 
 varētu atļaut kāpt arī lielāku skaitu pakāpienu, saglabājot tieši 30 soļus
 augšup. Atbilde no tā nemainītos.
+:::
 
 
 # 6.uzdevums {-}
@@ -137,6 +156,7 @@ lauciņiem. Ir arī laidņi, kas pārvietojas pa baltajiem lauciņiem.
 
 ![](problem6.png){ width=100pt }
 
+::: solution
 **Atbilde:** `4`
 
 **Atrisinājums:**  
@@ -153,6 +173,7 @@ Viens piemērs, kā novietot tieši $10$ laidņus tā, lai tie viens otru
 neapdraud, attēlots zīmējumā.
 
 ![](problem6A.png){ width=100pt }
+:::
 
 
 # 7.uzdevums {-}
@@ -167,6 +188,7 @@ bet viņam tas neizdodas.
 Kāda ir vismazākā iespējamā skaitļu summa "maksimālajā rindā" 
 (t.i. rindā, par kuru nav lielāka neviena cita rinda)?
 
+::: solution
 **Atbilde:** `22`
 
 **Atrisinājums:**  
@@ -184,6 +206,7 @@ $9+3+1+1+1+1=16$;
 $9+3+1+1+1+1=16$;  
 $9+3+1+1+1+1=16$;  
 $9+3+1+1+1+1=16$.
+:::
 
 
 # 8.uzdevums {-}
@@ -195,6 +218,7 @@ Cik skaitļu no $1$ līdz $100$ ir jāuzraksta uz tāfeles, lai
 starp tiem noteikti atrastos divi skaitļi, kuru kubu 
 starpība dalās ar $7$?
 
+::: solution
 **Atbilde:** `4`
 
 **Atrisinājums:**  
@@ -209,6 +233,7 @@ $1$ līdz $100$ vai pat vēl lielākus), tad vismaz diviem no tiem kubi
 dos vienādus atlikumus, dalot ar 7. Jo iespējamie kubu atlikumi, 
 dalot ar 7 ir tikai trīs: 0, 1 vai 6 (un pēc Dirihlē principa vismaz 
 viens no šiem atlikumiem atkārtosies).
+:::
 
 
 # 9.uzdevums {-}
@@ -219,6 +244,7 @@ būt arī vienādi, piemēram, "A.A." vai "Ž.Ž"). Kāds var būt vismazākais
 skolēnu skaits skolā, lai noteikti atrastos divi skolēni ar vienādiem 
 iniciāļiem, kurus viņi raksta tieši tanī pašā secībā?
 
+::: solution
 **Atbilde:** `1090`
 
 **Atrisinājums:**  
@@ -228,6 +254,7 @@ no viņiem būs jānonāk vienā "būrītī", t.i. jāizmanto tie paši
 iniciāļi tanī pašā secībā.
 
 Ja skolēnu ir $1089$ vai mazāk, tad katram var būt cits iniciāļu pāris.
+:::
 
 
 
@@ -242,6 +269,7 @@ arī ir punkts ar veselām koordinātēm?
 
 ![](problem10.png){ width=150pt }
 
+::: solution
 **Atbilde:** `1090`
 
 **Atrisinājums:**  
@@ -260,3 +288,4 @@ būs punkts ar abām veselām koordinātēm.
 Ar $4$ punktiem nepietiek: Ja, piemēram, tos izvēlas kā 
 viena mazā kvadrātiņa virsotnes $((0,0), (1,0), (1,1), (0,1))$, 
 tad visi to viduspunkti saturēs vismaz vienu skaitli, kas nav vesels.
+:::

@@ -219,6 +219,7 @@ Which of the following is equivalent to $(x+y+z)(x-y-z)$?
 **Atrisinājums:**  
 Pārveidojam $(x+y+z)(x-y-z) = (x + (y+z))(x - (y+z)) = x^2 - (y+z)^2$, 
 kas ir atbilde **(D)**. 
+:::
 
 
 
@@ -296,6 +297,17 @@ UK.SMC.2012.7
 **(E)** $2$
 -->
 
+::: solution
+**Atbilde:** `D`
+
+**Atrisinājums:**  
+No pirmās un otrās vienādības $y = -1/2$. No otrās un trešās vienādības $z = -1/2$. 
+No pirmās un otrās vienādības $x = 2$. 
+Tātad $xyz = 2 \cdot (-1/2) \cdot (-1/2) = 1/2$, kas ir atbilde **(D)**. 
+:::
+
+
+
 
 
 ## 11.uzdevums {-}
@@ -303,10 +315,30 @@ UK.SMC.2012.7
 Zināms, ka $a + b = 5$ un $ab = 3$. Kāda ir izteiksmes 
 $a^4 + b^4$ vērtība?
 
+**(A)** $129$
+**(B)** $145$
+**(C)** $150$
+**(D)** $155$
+**(E)** $160$
+
 <!--
 UK.SeniorKangaroo.2012.16
 16. Given that $a + b = 5$ and $ab = 3$, what is the value of $a^4 + b^4$?
+
+**(A)** $129$
+**(B)** $145$
+**(C)** $150$
+**(D)** $155$
+**(E)** $160$
 -->
+
+::: solution
+**Atbilde:** `B`
+
+**Atrisinājums:**    
+No $a + b = 5$ un $ab = 3$ var izteikt $a^2 + b^2 = (a+b)^2 - 2ab = 25 - 6 = 19$. 
+Tātad $a^4 + b^4 = (a^2 + b^2)^2 - 2a^2b^2 = 19^2 - 2 \cdot 3^2 = 361 - 18 = 343$, kas ir atbilde **(B)**. 
+:::
 
 
 ## 12.uzdevums {-}
@@ -470,6 +502,30 @@ the equation $(x^2 - 9)^2 + (y^2 - 4)^2 + (z^2 - 1)^2 = 0$.
 How many different possible values are there for $x + y + z$?
 -->
 
+::: solution
+**Atbilde:** `7`
+
+**Atrisinājums:**  
+Ja vairāku skaitļu kvadrātu summa ir $0$, tad katrs atsevišķais skaitlis iekavās ir $0$. 
+Tātad $x^2 = 9$, $y^2 = 4$ un $z^2 = 1$.
+
+$x$, $y$ un $z$ iespējamās vērtības: $x = \pm 3$, $y = \pm 2$ un $z = \pm 1$.
+
+Izveidojam $x + y + z$ izteiksmes iespējamās vērtības -- to ir pavisam $7$ (jo divas sakrīt):
+
+$$
+\begin{aligned}
+x + y + z &= 3 + 2 + 1 = 6,\\
+x + y + z &= 3 + 2 - 1 = 4,\\
+x + y + z &= 3 - 2 + 1 = 2,\\
+x + y + z &= 3 - 2 - 1 = 0,\\
+x + y + z &= -3 + 2 + 1 = 0,\\
+x + y + z &= -3 + 2 - 1 = -2,\\
+x + y + z &= -3 - 2 + 1 = -4,\\
+x + y + z &= -3 - 2 - 1 = -6.
+\end{aligned}
+$$
+:::
 
 
 ## 20.uzdevums {-}
@@ -496,4 +552,24 @@ UK.SMC.2017.18
 **(D)** $7 : 2$
 **(E)** $4 : 1$
 -->
+
+::: solution
+**Atbilde:** `E`
+
+**Atrisinājums:**    
+Ievērojam, ka dažādiem $x,y$, vienmēr $A \geq G$ (vidējais aritmētiskais ir lielāks par 
+vidējo ģeometrisko; vai arī tie ir vienādi, ja $x = y$). 
+
+Ja $A : G = 5 : 4$, tad $A = \frac{1}{2}(x + y) = 5k$ un $G = \sqrt{xy} = 4k$
+jeb $x + y = 10k$ un $xy = 16k^2$.
+No $x + y = 10k$ un $xy = 16k^2$, iegūstam, ka $x$ un $y$ ir 
+saknes vienādojumam $z^2 - 10kz + 16k^2 = 0$.
+Izsakām abas saknes (zinot no dotajām attiecībām, ka $x > y$):
+
+$$x,y = \frac{10k \pm \sqrt{100k^2 - 64k^2}}{2} = \frac{10k \pm 6k}{2} = 5k \pm 3k$$
+
+Tātad $x = 5k + 3k = 8k$ un $y = 5k - 3k = 2k$. To attiecība $x:y$ ir $8:2 = 4:1$, 
+kas ir atbilde **(E)**.
+:::
+
 

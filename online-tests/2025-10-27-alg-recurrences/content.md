@@ -1,5 +1,6 @@
 ---
 title: "Algebra: Rekurentas virknes"
+show-solutions: true
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
@@ -31,6 +32,7 @@ Kāds ir šīs atlikumu virknes periods?
 
 ![](problem1.png){ width=250px }
 
+::: solution
 **Atbilde:** `20`
 
 **Atrisinājums:**   
@@ -43,6 +45,7 @@ Tātad visi atlikumi, dalot ar $5$, atkārtojas ik pēc $20$ Fibonači virknes s
 
 *Piezīme:*
 Ievērojam, ka katrs piektais Fibonači skaitlis dalās ar 5 (atlikums ir 0), bet ar to vēl nepietiek, lai būtu periods, jo, teiksim, virkne 5,8,13,21,34... dod atlikumus 0,3,3,1,4,... kas atšķiras no tiem atlikumiem, kuri ir virknes pašā sākumā (0,1,1,2,3,...).
+:::
 
 ## 2.uzdevums {-}
 
@@ -58,6 +61,7 @@ Cik rīsu graudiņu nepieciešami, lai noklātu pirmos $8$ lauciņus šajā virk
 
 ![](problem2.png){ width=150px }
 
+::: solution
 **Atbilde:** `255`
 
 **Atrisinājums:**  
@@ -68,6 +72,7 @@ $1 + 2 + 4 + 8 + 16 + 32 + 64 + 128$. Šī summa ir $255$.
 Var ievērot arī, ka ģeometriskas progresijas summa $2^0 + \ldots +2^{k-1} = 2^{k}-1$
 (t.i. rīsu graudu skaits uz pirmajiem $k$ kvadrātiņiem ir par vienu mazāks 
 nekā jāliek uz nākamā kvadrātiņa). Pie $k=8$ iegūstam $2^8 - 1 = 256 - 1 = 255$. 
+:::
 
 
 
@@ -83,6 +88,7 @@ nolido $5$ metrus uz leju, otrajā sekundē $15$ metrus, trešajā sekundē $25$
 pret planētas virsmu. Cik metru augsts bija debesskrāpis? 
 (*Ierakstīt tikai skaitli bez mērvienības.*)
 
+::: solution
 **Atbilde:** `500`
 
 **Atrisinājums:**  
@@ -92,6 +98,7 @@ Tāpēc pēdējais (desmitais) loceklis būs $5 + 9 \cdot 10 = 95$.
 Visu pirmo desmit locekļu summa $a_1 + a_2 + \ldots + a_{10}$ ir pirmā un pēdējā locekļa
 aritmētiskais vidējais ($(5 + 95)/2 = 50$) reizināts ar locekļu skaitu $10$. 
 Tāpēc debesskrāpis tur bija $50 \cdot 10 = 500$ metrus augsts.
+:::
 
 
 ## 4.uzdevums {-}
@@ -102,6 +109,7 @@ Cik dažādos veidos var uzkāpt līdz dzīvoklim no ieejas?
 (Veidus uzskata par atšķirīgiem, ja atšķiras izdarīto soļu secība: $2 + 3$ 
 ir cita secība nekā $3+2$.)
 
+::: solution
 **Atbilde:** `7`
 
 **Atrisinājums:**  
@@ -121,6 +129,7 @@ $a_1 = 0$, $a_2 = 1$, $a_3 = 1$, $a_4 = a_2 + a_1 = 1+0 =1$, $a_5 = 1+1 = 2$.
 
 Tālākie locekļi:  
 $a_6 = 1+1 = 2$, $a_7 = 2+1=3$, $a_8 =2+2= 4$, $a_9 = 3+2= 5$, $a_{10} = 4+3 = 7$. 
+:::
 
 
 
@@ -137,6 +146,7 @@ Cik veidos ar šīm flīzēm var aizpildīt taisnstūri $1 \times 7$
 
 ![](problem5.png){ width=300px }
 
+::: solution
 **Atbilde:** `21`
 
 **Atrisinājums:**  
@@ -148,6 +158,7 @@ vai arī ieliekot vienu zilo flīzi un atlikušo $1 \times (n-2)$ gabalu
 aizpildot $a_{n-2}$ veidos). 
 
 Iegūstam, ka $a_6 = 8+5 = 13$ un $a_7 = 13 + 8 = 21$. 
+:::
 
 ## 6.uzdevums {-}
 
@@ -163,6 +174,7 @@ Atrast $a_6$ vērtību.
 
 ![](problem6.png){ width=200px }
 
+::: solution
 **Atbilde:** `31`
 
 **Atrisinājums:**  
@@ -176,6 +188,7 @@ saskaitot, cik daudzus gabalus sadala jaunizveidotās diagonāles.
 Tas ievērojams ar to, ka pirmās dažas vērtības veido 
 ģeometrisku progresiju $1,2,4,8,16$, bet tālākie virknes locekļi 
 vairs neseko šādai likumsakarībai.
+:::
 
 
 ## 7.uzdevums {-}
@@ -184,6 +197,7 @@ Ar $a_n$ (kur $n \geq 0$) apzīmējam atlikumu,
 kuru dod $3^n$, dalot ar $7$. 
 Atrast virknes $a_n$ periodu. 
 
+::: solution
 **Atbilde:** `6`
 
 **Atrisinājums:**  
@@ -194,6 +208,7 @@ Tā kā katru nākamo atlikumu viennozīmīgi nosaka iepriekšējais atlikums (k
 šī virkne kļūst periodiska tiklīdz kā tajā parādās divi vienādi locekļi. 
 Mūsu gadījumā periods ir $6$, jo $3^0=1$ un $3^6=729$ dod vienādus atlikumus, 
 dalot ar $7$.
+:::
 
 
 ## 8.uzdevums {-}
@@ -202,6 +217,7 @@ Ar $b_n$ (kur $n \geq 0$) apzīmējam atlikumu,
 kuru dod $12n$, dalot ar $27$. 
 Atrast virknes $b_n$ periodu. 
 
+::: solution
 **Atbilde:** `9`
 
 **Atrisinājums:**  
@@ -209,6 +225,7 @@ Pirmie virknes locekļi ir $0, 12, 24, 9, 21, 6, 18, 3, 15, 0, 12, 24,\ldots$.
 Kā redzam, tie sāk atkārtoties ik pēc $9$ (jo $12 \cdot 9$ dalās ar $27$). 
 Tā kā katru nākamo atlikumu viennozīmīgi nosaka iepriekšējais atlikums (kuram 
 jāpieskaita $12$), tad virkne ir periodiska. 
+:::
 
 
 
@@ -218,6 +235,7 @@ Ar $c_n$ (kur $n \geq 0$) apzīmējam atlikumu,
 kuru dod $12n$, dalot ar $29$. 
 Atrast virknes $c_n$ periodu. 
 
+::: solution
 **Atbilde:** `17`
 
 **Atrisinājums:**  
@@ -230,6 +248,7 @@ pirms iestāsies periods.
 
 Tā kā katru nākamo atlikumu viennozīmīgi nosaka iepriekšējais atlikums (kuram 
 jāpieskaita $12$), tad virkne ir periodiska. 
+:::
 
 ## 10.uzdevums {-}
 
@@ -240,10 +259,12 @@ $a_1 = 2a_0 + 3$ un $a_2 = 2a_1 + 3 = 2(2a_0 + 3) + 3 = 4a_0 + 9$.
 
 Ja mēs izsakām $a_4$ ar $a_0$ šādi: $a_4= 16a_0 + C$, tad cik ir $C$?
 
+::: solution
 **Atbilde:** `45`
 
 **Atrisinājums:**  
 Izsakām $a_3$ un $a_4$:  
 $a_3 = 2a_2 + 3 = 2(4a_0+9) + 3 = 8a_0 + 18+3 = 8a_0+21$.  
 $a_4 = 2a_3 + 3 = 2(8a_0+21) + 3 = 16a_0 + 42+3 = 16a_0+45$.  
+:::
 

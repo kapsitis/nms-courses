@@ -1,10 +1,19 @@
 ---
 title: "Kombinatorika: Reizināšanas likums"
+show-solutions: true
 numbersections: true
 mainfont: "TeX Gyre Pagella"
 fontsize: 11pt
 geometry: "margin=1in"
 header-left: "Kombinatorika: Reizināšanas likums"
+header-includes:
+  - |
+    \makeatletter
+    \RedeclareSectionCommand[
+      beforeskip=1.2ex plus 0.4ex minus 0.2ex,
+      afterskip=0.4ex plus 0.2ex minus 0.2ex
+    ]{subsection}
+    \makeatother
 ---
 # Kombinatorika: Reizināšanas likums {-}
 
@@ -14,6 +23,7 @@ Tipisks telefona numurs Latvijā izskatās šādi: `+371 DDDD DDDD`
 (valsts kods, kam seko kaut kādi 8 cipari).  
 Kāds ir lielākais telefona numuru skaits, ko var šādi pierakstīt?
 
+::: solution
 **Atbilde:** `100000000`
 
 **Atrisinājums:**  
@@ -23,12 +33,14 @@ $10$ veidos - tāpēc telefona numuru skaits ir $10^8=100000000$
 Latvijas iedzīvotāju skaits $1.8$ miljoni).  
 Valsts kods šo skaitu neiespaido, jo pirmie cipari vienmēr ir 
 "371" (noteiktā secībā), tāpēc tos var izvēlēties tieši $1$ veidā.
+:::
 
 ## 2.uzdevums {-}
 
 Cik daudzos veidos četri cilvēki $A,B,C,D$ var iesēsties divos 
 auto (zilajā un sarkanajā) tā, lai katrā auto būtu vismaz viens cilvēks? 
 
+::: solution
 **Atbilde:** `14`
 
 **Atrisinājums:**  
@@ -37,6 +49,7 @@ tad katram no četriem cilvēkiem ir divas izvēles - pavisam būtu
 $2^4=16$ veidi kā sasēsties. Bet starp šiem veidiem ir divi "slikti" 
 veidi (ja visi sasēžas zilajā vai visi sasēžas sarkanajā). 
 Tāpēc tie jāatņem. Iegūstam, ka derīgo veidu ir $16-2=14$.
+:::
 
 ## 3.uzdevums {-}
 
@@ -51,6 +64,7 @@ skaitlis. Katrs piektais loceklis dalās ar $5$.
 Atrast mazāko $n>0$, kuram $F_n$ beidzas ar ciparu $0$.  
 Ierakstīt atbildē locekļa kārtas numuru $n$.
 
+::: solution
 **Atbilde:** `15`
 
 **Atrisinājums:**  
@@ -61,6 +75,7 @@ Mazākais kārtas numurs $n$, kuram vienlaikus $n=3k$ un $n=5m$
 Tādēļ katrs piecpadsmitais Fibonači virknes loceklis dalīsies gan ar $2$, 
 gan ar $5$ jeb ar $2 \cdot 5=10$. 
 Mazākais šāds loceklis ir $F_{15}=610$. 
+:::
 
 ## 4.uzdevums {-}
 
@@ -70,6 +85,7 @@ svarīga (piemēram, $1+1+1+1+2$ un $1+1+1+2+1$ ir divi atšķirīgi
 veidi). Atrast, cik veidos var nokāpt pa šiem pakāpieniem 
 (Ir zināms, ka tas ir Fibonači skaitlis.)
 
+::: solution
 **Atbilde:** `13`
 
 **Atrisinājums:**  
@@ -92,6 +108,7 @@ Starp citu, virkne $a_n$ ir līdzīga Fibonači skaitļu virknei,
 vienīgi $a_n=F_{n+1}$, jo Fibonači virknē $F_0=0$, $F_1=1$, 
 $F_2=1$, bet tālāk - tāpat katru nākamo locekli iegūst, 
 saskaitot divus iepriekšējos.
+:::
 
 
 ## 5.uzdevums {-}
@@ -110,11 +127,13 @@ Cik daudzi no šiem gājieniem tiek izdarīti ar pašu augšējo disku
 Detalizētāku Hanojas torņa spēles aprakstu sk. 
 [Vikipēdijā](https://en.wikipedia.org/wiki/Tower_of_Hanoi).
 
+::: solution
 **Atbilde:** `8`
 
 **Atrisinājums:**  
 Augšējais disks pārvietojas 8 reizes, nākamais disks - 4 reizes, 
 nākamais disks - 2 reizes, bet disks pašā apakšā tikai 1 reizi.
+:::
 
 ## 6.uzdevums {-}
 
@@ -125,6 +144,7 @@ arī virknītes ar abiem nosacījumiem - kas gan sākas ar "A", gan beidzas ar "
 
 Ierakstīt atbildē derīgo virknīšu skaitu.
 
+::: solution
 **Atbilde:** `24`
 
 **Atrisinājums:**  
@@ -141,6 +161,7 @@ citus burtus divos veidos).
 
 Tā kā šīs virknītes tika pieskaitītas divreiz, tad tās ir vienreiz jāatņem.
 Iegūstam $16+16−8=24$. 
+:::
 
 ## 7.uzdevums {-}
 
@@ -149,6 +170,7 @@ Cik daudzos veidos var uz gredzena malas izkārtot četrus burtus
 pagriešanu (jeb burtu ciklisku pārkārtošanu) ir uzskatāmi 
 par vienādiem: `AELZ`=`ELZA`=`LZAE`=`ZAEL`.
 
+::: solution
 **Atbilde:** `6`
 
 **Atrisinājums:**  
@@ -160,6 +182,7 @@ Varam, teiksim, pieņemt, ka gredzens tiek vienmēr pagriezts tā,
 lai lasīšana sāktos ar burtu "E". Tad atšķirīgie veidi (kas vairs 
 nav iegūstami cits no cita ar pagriešanu) ir šādi:  
 EALZ, EAZL, ELAZ, ELZA, EZAL, EZLA.
+:::
 
 
 ## 8.uzdevums {-}
@@ -169,6 +192,7 @@ uz kuriem rakstītie burti K, A, N, S, A, S.
 Abi klucīši ar burtu "A" un arī abi klucīši ar burtu "S" ir neatšķirami: 
 ja tos samaina, tad vārds nemainās.
 
+::: solution
 **Atbilde:** `30`
 
 **Atrisinājums:**  
@@ -182,6 +206,7 @@ Piemēram, visi šie vārdi ir vienādi (tāpēc "KANSAS" tika pieskaitīts
 izteiksmē 5!=120 tieši 4 reizes):
 
 $$KA_1NS_1A_2S_2,\;\;KA_1NS_2A_2S_1,\;\;KA_2NS_1A_1S_2,\;\;KA_2NS_2A_1S_1.$$
+:::
 
 
 ## 9.uzdevums {-}
@@ -191,6 +216,7 @@ $a_1=1$, $a_2=1$, bet katrs nākamais loceklis ir divu iepriekšējo
 virknes locekļu kvadrātu summas pēdējo ciparu.  
 Atrast $a_{1000}$ - virknes 1000.locekli. 
 
+::: solution
 **Atbilde:** `5`
 
 **Atrisinājums:**  
@@ -208,6 +234,7 @@ Skaitli $1000$ dala ar $12$ un iegūst atlikumu $4$, tāpēc
 $a_4 = a_{16} = a_{28} = a_{40} = a_{1000}$.  
 Virknes ceturtais loceklis ir "5" (un periods šajā virknes vietā jau 
 ir sācies), tāpēc arī 1000.loceklis $a_{1000}=5$. 
+:::
 
 
 ## 10.uzdevums {-}
@@ -221,6 +248,7 @@ Atrast, kāda daļa no visiem skolēniem ir tādi, kuri apgūst vismaz
 vienu no šiem priekšmetiem (vācu valodu vai kori).
 Ierakstīt Jūsu atbildi kā saīsinātu parastu daļskaitli `K/N`. 
 
+::: solution
 **Atbilde:** `3/4`
 
 **Atrisinājums:**  
@@ -237,4 +265,5 @@ Izteiksmē atņēmām $\frac{1}{12} \cdot N$, jo tie, kuri piedalās abās aktiv
 tika pieskaitīti divreiz.
 Tādēļ to skolēnu daļa, kuri apgūst vismaz vienu no priekšmetiem ir 
 $\frac{9}{12} = \frac{3}{4}$. 
+:::
 
