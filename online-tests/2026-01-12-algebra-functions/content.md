@@ -302,7 +302,7 @@ UK.SMC.2012.7
 
 **Atrisinājums:**  
 No pirmās un otrās vienādības $y = -1/2$. No otrās un trešās vienādības $z = -1/2$. 
-No pirmās un otrās vienādības $x = 2$. 
+Ievietojot tos pirmajā vienādībā, iegūstam $x = 2$. 
 Tātad $xyz = 2 \cdot (-1/2) \cdot (-1/2) = 1/2$, kas ir atbilde **(D)**. 
 :::
 
@@ -488,6 +488,19 @@ How many of the graphs pass through exactly two of the vertices of the square?
 **(D)** $4$
 **(E)** $5$
 -->
+
+::: solution
+**Atbilde:** `A`
+
+**Atrisinājums:**  
+Cauri divām kvadrāta virsotnēm iet funkcijas $y = x$ grafiks; tātad tieši viens grafiks.
+
+* $x^2 + y^2 = 1$ iet caur $(1;0)$. 
+* $y = x + 1$ iet caur $(0;1)$.
+* $y = -x^2 + 1$ iet caur $(0;1)$.
+* $y = x$ iet caur $(0;0)$ un $(1;1)$.
+* $y = \frac{1}{x}$ iet caur $(1;1)$.
+:::
 
 ## 19.uzdevums {-}
 
