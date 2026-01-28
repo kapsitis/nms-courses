@@ -22,6 +22,8 @@ Darba lapas ar uzdevumiem un teorijas ievadu; citi izdales materiāli.
 | 2025-12-08 | [Rūtiņu uzdevumi]({{ 'worksheets/class11-square-grids.pdf' | relative_url }}) |
 | 2026-01-12 | [Polinomi un racionālas izteiksmes]({{ 'worksheets/class12-polynomials.pdf' | relative_url }}) |
 | 2026-01-19 | [Skaitīšana un invarianti]({{ 'worksheets/class13-counting-invariants.pdf' | relative_url }}) |
-| 2026-01-26 | [Atlikumi un invarianti]({{ 'worksheets/class14-integer-arithmetic.pdf' | relative_url }}) |
-| 2026-01-29 | [Rūtiņas, grafi, vienādojumi]({{ 'worksheets/class15-overview.pdf' | relative_url }}) |
+| 2026-01-26 | [**Atlikumi un invarianti**]({{ 'worksheets/class14-integer-arithmetic.pdf' | relative_url }}) |
+| 2026-01-29 | [**Rūtiņas, grafi, vienādojumi**]({{ 'worksheets/class15-overview.pdf' | relative_url }}) |
 
+Sk. arī līdzīgo trijstūru testus Socrative (AVGROOM1, AVGROOM2) - linki [Sākumlapā]({{ '/' | relative_url }}); 
+un arī šo [testu drukājamu/PDF versiju]({{ 'courses_25_26/2025-12-01-similar-triangles.pdf' | relative_url }})
