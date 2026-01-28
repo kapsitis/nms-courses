@@ -23,7 +23,8 @@ header-includes:
 ## 1.uzdevums {-}
 
 Izkrāsot $8 \times 8$ rūtiņu laukuma katru rūtiņu vienā no 3 krāsām tā, lai 
-katrā Z-tetramino (sk. zīmējumu) būtu visu trīs krāsu rūtiņas. 
+katrā Z-tetramino (sk. zīmējumu), kuru novieto šajā laukumā pa rūtiņu līnijām, būtu visu trīs krāsu rūtiņas.
+Z-tetramino var būt pagriezti vai apmesti otrādi.
 
 ![](z-tetromino.png){ width=60pt }
 
