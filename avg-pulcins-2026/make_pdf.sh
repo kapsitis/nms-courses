@@ -2,51 +2,56 @@
 set -euo pipefail
 
 usage() {
-  echo "Usage: $(basename "$0") input.md [output.pdf]"
+  echo "Usage: $(basename "$0") <input> <output> <questions|solutions>"
   exit 1
 }
 
-# Require 1 or 2 args
-(( $# < 1 || $# > 2 )) && usage
+# Require exactly 3 args
+(( $# != 3 )) && usage
 
 in="$1"
 [[ -f "$in" ]] || { echo "Input not found: $in" >&2; exit 2; }
 
-# Derive output if not provided
-if (( $# == 2 )); then
-  out="$2"
-else
-  out="${in%.*}.pdf"
+out="$2"
+mode="$3"
+
+if [[ "$mode" != "questions" && "$mode" != "solutions" ]]; then
+  echo "Error: Third argument must be 'questions' or 'solutions'" >&2
+  usage
 fi
 
 # If output is a directory, write inside it with input’s basename
 if [[ -d "$out" ]]; then
-#  out="$out/$(basename "${in%.*}").pdf"
   # truncated="${out:11}"
-  truncated="${out}"
-  out="${out}/${truncated}.pdf"
+  truncated="${#out}"
+  # Wait, the logic regarding truncation in original file seemed specific or commented out.
+  # The original had:
+  # truncated="${out}"
+  # out="${out}/${truncated}.pdf"
+  # This looks like it tries to use the directory name as the filename? Or maybe there was a variable missing.
+  # Let's stick to a safe default: use input filename base.
+  base=$(basename "$in")
+  out="${out}/${base%.*}.pdf"
 fi
-
-# # Ensure .pdf extension
-# case "$out" in
-#   *.pdf) ;;
-#   *) out="${out}.pdf" ;;
-# esac
 
 indir="$(cd "$(dirname "$in")" && pwd)"
 
-## --from markdown+tex_math_dollars+pipe_tables \
-# To skip solutions in livani-2026-01-24.md, add the following to the pandoc command:
-# --lua-filter <(echo "function Div(el) if el.classes:includes('solution') then return {} end end") \
-
-pandoc "$in" -o "$out" \
-  --resource-path="$indir" \
-  --from markdown+tex_math_dollars+grid_tables \
-  --pdf-engine=lualatex \
-  --template eisvogel \
+common_args=(
+  "$in"
+  -o "$out"
+  --resource-path="$indir"
+  --from "markdown+tex_math_dollars+grid_tables"
+  --pdf-engine=lualatex
+  --template eisvogel
   -V colorlinks=true
-  # --lua-filter <(echo "function Div(el) if el.classes:includes('solution') then return {} end end") \
-  
+)
+
+echo "Generating PDF for $mode..."
+
+if [[ "$mode" == "questions" ]]; then
+  pandoc "${common_args[@]}" --lua-filter <(echo "function Div(el) if el.classes:includes('solution') then return {} end end")
+else
+  pandoc "${common_args[@]}"
+fi
 
 echo "Wrote $out"
-
