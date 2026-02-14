@@ -28,6 +28,27 @@ Praktisks ieteikums (4R: Read, Restate, Represent, Roadmap):
 
 
 
+**Trijstūru kongruences un līdzības pazīmes:** 
+
+* $mmm$ -- ja trīs malas ir vienādas (vai proporcionālas), 
+* $m \ell m$ -- ja divas malas ir vienādas (vai proporcionālas) un leņķis starp tām ir vienāds, 
+* $\ell m \ell$ -- ja divi leņķi ir vienādi un viena mala sakrīt (līdzīgiem trijstūriem 
+  pietiek ar to, ka sakrīt divi leņķi, pazīme $\ell \ell$).
+
+
+**Taisnleņķa trijstūri:**
+
+* Pitagora teorēma: $a^2 + b^2 = c^2$. 
+* Taisnleņķa trijstūrī ar $30^\circ$ leņķi, 
+  leņķim $30^\circ$ pretējā katete ir puse no hipotenūzas jeb $\sin 30^\circ = \frac{1}{2}$.
+* Tallesa teorēma: Ievilkts leņķis, kas balstās uz riņķa diametru, vienmēr ir taisns. 
+
+Praktisks ieteikums 4R (Read, Restate, Represent, Roadmap):  
+(1) **Izlasīt** uzdevumu un atrast visus nosacījumus;  
+(2) **Pārformulēt** īsāk un saviem vārdiem;  
+(3) **Attēlot** situāciju zīmējumā, tabulā utt.  
+(4) **Izplānot** sagaidāmās risinājuma darbības.
+
 
 Jautājumi par lasīšanu un uzdevuma modeli: 
 
@@ -62,6 +83,54 @@ Kāda var būt leņķu summa $\sphericalangle ABC + \sphericalangle CDA$?
 Plaknē atzīmēti punkti $A(5;2)$, $B(m;5)$ un $C(3;m)$. 
 Kādām reālām $m$ vērtībām trijstūris $ABC$ ir taisnleṇka trijstūris?
 
+
+::: solution
+**Atrisinājums:**
+
+Apskatām taisnleṇka trijstūri $ADB$, kur $D(m;2)$, $AD=|5-m|$ un 
+$BD=|5-2|=3$ (skat. 1.att.). Izmantojot Pitagora teorēmu $\triangle ADB$, 
+aprēķinām nogriežṇa $AB$ garuma kvadrātu:
+
+$$AB^{2} = AD^{2}+BD^{2}=(5-m)^{2}+(2-5)^{2}=m^{2}-10m+34$$
+
+![](LV.VOL.2023.9.4A.png){ width=150px }
+
+Līdzīgi, katram nogrieznim konstruējot taisnleṇka trijstūri, iegūstam, ka
+
+$$\begin{gathered}
+AC^{2} = (5-3)^{2} + (2-m)^{2} = m^{2}-4m+8 \\
+BC^{2} = (m-3)^{2} + (5-m)^{2} = 2m^{2}-16m+34
+\end{gathered}$$
+
+Lai trijstūris $ABC$ būtu taisnlenka, divu malu garumu kvadrātu summai 
+jābūt vienādai ar trešās malas garuma kvadrātu. Aplūkojam trīs iespējamos gadījumus.
+
+1. Ja $AB^{2}+AC^{2}=BC^{2}$, tad
+
+   $$\begin{gathered}
+   m^{2}-10 m+34+m^{2}-4 m+8=2 m^{2}-16 m+34 \\
+   2m+8=0 \\
+   m=-4
+   \end{gathered}$$
+
+2. Ja $AC^{2}+BC^{2}=AB^{2}$, tad
+
+   $$\begin{gathered}
+   m^{2}-4 m+8+2 m^{2}-16 m+34=m^{2}-10 m+34 \\
+   m^{2}-5 m+4=0 \\
+   m_{1}=1, \quad m_{2}=4
+   \end{gathered}$$
+
+3. Ja $A B^{2}+B C^{2}=A C^{2}$, tad
+
+   $$\begin{gathered}
+   m^{2}-10 m+34+2 m^{2}-16 m+34=m^{2}-4 m+8 \\
+   m^{2}-11 m+30=0 \\
+   m_{1}=5, \quad m_{2}=6
+   \end{gathered}$$
+
+Esam ieguvuši, ka trijstūris $ABC$ ir taisnleṇka ja $m$ ir $-4;1;4;5;6$.
+::: 
 
 ## 2.uzdevums (LV.VOL.2013.9.2) {-}
 
@@ -114,7 +183,6 @@ rūtiņas centru.
 
 Uzzīmēt plaknē sešus punktus tā, lai no katra uzzīmētā punkta tieši trīs citi 
 uzzīmētie punkti atrastos tieši $1~\mathrm{cm}$ attālumā.
-
 
 
 
