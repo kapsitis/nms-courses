@@ -27,34 +27,13 @@ Praktisks ieteikums (4R: Read, Restate, Represent, Roadmap):
 (4) **Izplānot** sagaidāmās risinājuma darbības.
 
 
-
-**Trijstūru kongruences un līdzības pazīmes:** 
-
-* $mmm$ -- ja trīs malas ir vienādas (vai proporcionālas), 
-* $m \ell m$ -- ja divas malas ir vienādas (vai proporcionālas) un leņķis starp tām ir vienāds, 
-* $\ell m \ell$ -- ja divi leņķi ir vienādi un viena mala sakrīt (līdzīgiem trijstūriem 
-  pietiek ar to, ka sakrīt divi leņķi, pazīme $\ell \ell$).
-
-
-**Taisnleņķa trijstūri:**
-
-* Pitagora teorēma: $a^2 + b^2 = c^2$. 
-* Taisnleņķa trijstūrī ar $30^\circ$ leņķi, 
-  leņķim $30^\circ$ pretējā katete ir puse no hipotenūzas jeb $\sin 30^\circ = \frac{1}{2}$.
-* Tallesa teorēma: Ievilkts leņķis, kas balstās uz riņķa diametru, vienmēr ir taisns. 
-
-Praktisks ieteikums 4R (Read, Restate, Represent, Roadmap):  
-(1) **Izlasīt** uzdevumu un atrast visus nosacījumus;  
-(2) **Pārformulēt** īsāk un saviem vārdiem;  
-(3) **Attēlot** situāciju zīmējumā, tabulā utt.  
-(4) **Izplānot** sagaidāmās risinājuma darbības.
-
-
 Jautājumi par lasīšanu un uzdevuma modeli: 
 
-* Cik veidos trijstūris var būt vienādsānu vai taisnleņķa?
-* Kādos atšķirīgos veidos var uzzīmēt uzdevumā aprakstīto situāciju?
-* Vai uzdevumu var reducēt uz vienādojumu? Cik vienādojumu jāatrisina? 
+* Cik un kādos veidos var uzzīmēt uzdevumā aprakstīto situāciju?
+* Ja uzdevumā minēts, ka trijstūris ir vienādsānu vai taisnleņķa, kādi veidi ir jāapskata?
+* Vai nav ieviesti papildu pieņēmumi, kuru uzdevuma nosacījumos nav 
+  (piemēram, punkts atrodas daudzstūra iekšpusē, aplūkojamais daudzstūris 
+  ir izliekts, utml.)
 
 
 ## 1.piemērs {-}
