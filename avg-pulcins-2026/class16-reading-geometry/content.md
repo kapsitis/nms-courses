@@ -18,7 +18,7 @@ header-includes:
     \usepackage{etoolbox}
     \AtBeginEnvironment{footnotesize}{\footnotesize}
 ---
-# Ģeometrijas uzdevumu lasīšana (2026-02-09) {-}
+# Citu (neģeometrisku) uzdevumu lasīšana (2026-02-16) {-}
 
 Praktisks ieteikums (4R: Read, Restate, Represent, Roadmap):  
 (1) **Izlasīt** uzdevumu un atrast visus nosacījumus;  
@@ -54,6 +54,17 @@ Vai trijstūrim var būt malu garumi $a=4$, $b=7$ un mediāna, kas vilkta pret m
 Plaknē atzīmēti punkti $A,B,C,D$ un nekādi trīs no tiem neatrodas uz vienas taisnes. 
 Zināms, ka leņķi $\sphericalangle DAB = 70^{\circ}$ un $\sphericalangle BCD=110^{\circ}$. 
 Kāda var būt leņķu summa $\sphericalangle ABC + \sphericalangle CDA$?
+
+
+
+
+
+LV.VOL.2015.9.3
+
+LV.VOL.2016.9.5
+
+LV.VOL.2014.9.4
+
 
 
 
