@@ -56,18 +56,6 @@ Zināms, ka leņķi $\sphericalangle DAB = 70^{\circ}$ un $\sphericalangle BCD=1
 Kāda var būt leņķu summa $\sphericalangle ABC + \sphericalangle CDA$?
 
 
-
-
-
-LV.VOL.2015.9.3
-
-LV.VOL.2016.9.5
-
-LV.VOL.2014.9.4
-
-
-
-
 ## 1.uzdevums (LV.VOL.2023.9.4) {-}
 
 Plaknē atzīmēti punkti $A(5;2)$, $B(m;5)$ un $C(3;m)$. 
