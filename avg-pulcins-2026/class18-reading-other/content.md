@@ -27,10 +27,19 @@ Praktisks ieteikums (4R: Read, Restate, Represent, Roadmap):
 (4) **Izplānot** sagaidāmās risinājuma darbības.
 
 
-Jautājumi par lasīšanu un uzdevuma modeli: 
+## Iesildīšanās jautājumi  {-}
 
-TBD
-
+* Dalot $1$ ar $7$ "stabiņā" iegūstam atlikumu virkni $a_1 = 3$, $a_2 = 2$, $a_3 = 6$, 
+  $a_4 = 4$, $a_5 = 5$, $a_6 = 1$, $\ldots$. Izteikt $a_{n+1}$ bez dalīšanas - tikai 
+  ar reizināšanu un atlikuma operāciju "mod". 
+* Pamatot, ka $ax \equiv b \pmod {13}$ var atrisināt visiem veseliem $a,b$, 
+  ja vien $a \not\equiv 0 \pmod {13}$. (*Bijekcija skaitļa 13 atlikumiem.*)
+* Sienāzis sāk kustību punktā ar koordināti $x=0$. Ar vienu lēcienu viņš vai nu dubulto 
+  šo koordināti, vai pieskaita tai $1$. 
+  Pēc $9$ lēcieniem viņš nonāk punktā $x = 100$. Kāds bija viņa pēdējais lēciens? (*Konstrukcija no beigām.*)
+* Atrast naturālus $x,y$, kam izpildās $xy + 2x + 3y = 95$. (*Faktorizācijas triks.*)
+* Pa rūtiņu līnijām uzzīmēts taisnstūris $a \times b$. Kādiem jābūt tā izmēriem, 
+  lai taisnstūra laukums (rūtiņu vienībās) būtu vienāds ar tā perimetru? (*Vienādojums un faktorizācijas triks.*)
 
 
 
