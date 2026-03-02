@@ -142,47 +142,82 @@ $n$-stūra iekšējo leņķu summa ir $(n-2) \cdot 180^\circ$. &
 & 
 \cellcolor[HTML]{FFFFEE}
 \textbf{Vienādsānu trijstūris:} Leņķi pie pamata ir vienādi tad un tikai tad, 
-ja divas sānu malas ir vienādas. \\ \hline 
+ja divas sānu malas ir vienādas. Vienādsānu trijstūrī mediāna, bisektrise un augstums, kas vilkti 
+no virsotnes, sakrīt (un ir simetrijas ass).\\ \hline 
 
 \rowcol\multicolumn{4}{|p{18.01cm}|}{\textbf{2. Laukums un metriskās sakarības.} } \\ \hline 
 
 &
 \cellcolor[HTML]{FFFFEE}
 \textbf{Trijstūra laukums}:\newline
-$S_\Delta = \frac{1}{2}ah_a = pr = \frac{abc}{4R} = \frac{1}{2}ab \sin \gamma$ \newline 
-{\bf Hērona formula}: $S_\Delta = \sqrt{p(p-a)(p-b)(p-c)}$, \newline
+$S_\Delta = \frac{1}{2}ah_a = pr = \frac{abc}{4R} = \frac{1}{2}ab \sin \gamma$, \newline 
+{\bf Hērona formula}:\newline 
+$S_\Delta = \sqrt{p(p-a)(p-b)(p-c)}$, \newline
 kur $a, b, c$ -- trijstūra malas, $\gamma$ -- leņķis starp $a$ un $b$, 
 $h_a$ -- augstums, kas vilkts pret malu $a$, 
 $p$ -- trijstūra pusperimetrs, 
 $r$ -- ievilktās riņķa līnijas rādiuss, 
 $R$ -- apvilktās riņķa līnijas rādiuss.
 &
-\multicolumn{2}{p{8.787cm}|}{
+&
 \cellcolor[HTML]{FFFFEE}
-\textbf{Regulārs trijstūris:} Ja regulāra trijstūra malas garums ir $a$, tad tā laukums $S_\Delta = \frac{a^2\sqrt{3}}{4}$, augstums $h = \frac{a\sqrt{3}}{2}$, ievilktās riņķa līnijas rādiuss $r = \frac{1}{3}h = \frac{a\sqrt{3}}{6}$, apvilktās riņķa līnijas rādiuss $R = \frac{2}{3}h = \frac{a\sqrt{3}}{3}$.
-} \\ \hline
+\textbf{Regulārs trijstūris:} Ja regulāra trijstūra malas garums ir $a$, tad tā laukums 
+$S_\Delta = \frac{a^2\sqrt{3}}{4}$, augstums $h = \frac{a\sqrt{3}}{2}$, 
+ievilktās riņķa līnijas rādiuss $r = \frac{1}{3}h = \frac{a\sqrt{3}}{6}$, 
+apvilktās riņķa līnijas rādiuss $R = \frac{2}{3}h = \frac{a\sqrt{3}}{3}$.
+\\ \hline
 
 & 
 \cellcolor[HTML]{FFFFEE}
-\textbf{Laukumu attiecība (Ratio Lemma):} Trijstūrī $ABC$, ja punkts $D$ atrodas uz malas $BC$, tad dalot pamatu attiecībā $BD:CD$, arī laukumu attiecība ir $\frac{S(ABD)}{S(ACD)} = \frac{BD}{CD}$. Trijstūriem ar vienādu augstumu laukumi attiecas kā to pamatu garumi.
+\textbf{Laukumu attiecība:} Trijstūrī $ABC$, ja punkts $D$ atrodas uz malas $BC$, tad dalot pamatu attiecībā $BD:CD$, arī laukumu attiecība ir $\frac{S(ABD)}{S(ACD)} = \frac{BD}{CD}$. Trijstūriem ar vienādu augstumu laukumi attiecas kā to pamatu garumi.
 & 
 & 
 \cellcolor[HTML]{FFFFEE}
-\textbf{Pitagora teorēma:} Taisnleņķa trijstūrim $a^2 + b^2 = c^2$. Trijstūra lielākais leņķis pret garāko malu $c$ ir šaurs, ja $a^2 + b^2 > c^2$, un plats, ja $a^2 + b^2 < c^2$. 
+\textbf{Pitagora teorēma:} Taisnleņķa trijstūrim $a^2 + b^2 = c^2$. 
+Trijstūra leņķis $\gamma$ pretī malai $c$ ir šaurs, ja $a^2 + b^2 > c^2$, un plats, ja $a^2 + b^2 < c^2$. 
+\\ \hline
+
+\vspace{0pt} \includegraphics[width=1.9cm]{fig3-sine-rule.png} &
+\cellcolor[HTML]{FFFFEE}
+\textbf{Sinusu teorēma:} Trijstūra malas ir proporcionālas pretējo leņķu sinusiem:
+$\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R$. 
+&
+
+\vspace{0pt} \includegraphics[width=1.9cm]{fig-cosine-rule.png}
+&
+\cellcolor[HTML]{FFFFEE}
+\textbf{Kosinusu teorēma:} Trijstūra jebkuras malas kvadrāts ir vienāds ar abu pārējo malu kvadrātu summu, no kuras atņemts divkāršots šo malu reizinājums ar ietvertā leņķa kosinusu: 
+$a^2 = b^2 + c^2 - 2bc \cos \alpha$.
+\\ \hline
+\vspace{0pt} \includegraphics[width=1.9cm]{fig2-right-triangle_and_altitude.png}
+&
+\cellcolor[HTML]{FFFFEE}
+\textbf{Eiklīda teorēma:}
+Taisnleņķa trijstūra augstums, kas novilkts no taisnā leņķa virsotnes, ir vidējais proporcionālais starp katešu projekcijām uz hipotenūzas: $h_c^2 = a_c \cdot b_c$. \newline
+Katete ir vidējais proporcionālais starp hipotenūzu un šīs katetes projekciju uz hipotenūzas:
+$a^2 = a_c \cdot c$, \quad $b^2 = b_c \cdot c$, \quad $\frac{a^2}{b^2} = \frac{a_c}{b_c}$.
+&
+\vspace{0pt} \includegraphics[width=1.9cm]{fig4-median-intersection.png} &
+\cellcolor[HTML]{FFFFEE}
+\textbf{Trijstūra mediānu īpašība:} Trijstūra mediānas krustojas vienā punktā, un krustpunkts katru mediānu dala attiecībā $2:1$, skaitot no trijstūra virsotnes, tas ir, 
+$\frac{AM}{MD} = \frac{BM}{ME} = \frac{CM}{MF} = \frac{2}{1}$, kur $M$ ir mediānu krustpunkts. \newline
+Mediānas garums: $m_b = \frac{1}{2}\sqrt{2a^2 + 2c^2 - b^2}$ izsakāms no 
+paralelograma diagonāļu un malu \newline sakarības $d_1^2 + d_2^2 = 2(a^2 + b^2)$.
 \\ \hline
 
 \rowcol\multicolumn{4}{|p{18.01cm}|}{\textbf{3. Trijstūru vienādība un līdzība.} } \\ \hline 
 
 & 
 \cellcolor[HTML]{FFFFEE}
-\textbf{Trijstūru vienādības pazīmes:} Divi trijstūri ir vienādi (sakrīt visi elementi), ja tiem sakrīt:
-1) divas malas un leņķis starp tām (MML);
-2) mala un divi pieguļošie leņķi (LML);
-3) visas trīs malas (MMM).
+\textbf{Trijstūru vienādības pazīmes:} Divi trijstūri ir vienādi (sakrīt visi elementi), ja sakrīt: \newline
+(1) divas malas un leņķis starp tām (pazīme $m \ell m$); \newline
+(2) mala un divi pieguļošie leņķi (pazīme $\ell m \ell$); \newline
+(3) visas trīs malas (pazīme $mmm$).
 & 
-\vspace{0pt} \includegraphics[width=1.9cm]{fig2-right-triangle_and_altitude.png} &
+\vspace{0pt} \includegraphics[width=1.9cm]{fig5-angle-bisector-property.png} &
 \cellcolor[HTML]{FFFFEE} 
-No taisnleņķa trijstūra taisnā leņķa novilktais {\em augstums} $h_c$ sadala trijstūri divos taisnleņķa trijstūros, kas līdzīgi sākotnējam. 
+\textbf{Trijstūra bisektrises īpašība:} Trijstūra leņķa bisektrise sadala pretējo malu nogriežņos, kuru attiecība ir vienāda ar šim leņķim atbilstošo piemalu attiecību: $\frac{BD}{DC} = \frac{AB}{AC}$ (5. att.). \newline
+\textbf{Bisektrises garuma aprēķināšana:} Bisektrises kvadrāts ir vienāds ar divu malu garumu reizinājumu, no kura atņemts to trešās malas nogriežņu reizinājums: $AD^2 = AB \cdot AC - BD \cdot DC$.
 \\ \hline
 
 & 
@@ -204,9 +239,11 @@ Laukumu attiecība ir $k^2$.
 \cellcolor[HTML]{FFFFEE}
 \textbf{Centra un ievilktais leņķis:} Ievilktā leņķa lielums (virsotne atrodas uz riņķa līnijas) ir precīzi divas reizes mazāks par atbilstošā centra leņķa lielumu, kas balstās uz to pašu loku. 
 & 
+\vspace{0pt} \includegraphics[width=1.9cm]{fig10-inscribed-angles.png}
 & 
 \cellcolor[HTML]{FFFFEE}
-\textbf{Taurenīša teorēma:} Visi ievilktie leņķi, kas balstās uz viena un tā paša loka, ir savā starpā vienādi. Regulējoša īpašība: ievilktais leņķis, kas balstās uz \textbf{diametru}, vienmēr ir $90^\circ$.
+\textbf{Taurenīša teorēma:} Ievilktie leņķi, kas balstās tā paša loka, ir vienādi. 
+Ievilkts leņķis, kas balstās uz \textbf{diametru}, vienmēr ir $90^\circ$.
 \\ \hline
 \vspace{0pt} \includegraphics[width=1.9cm]{fig15-inscribed-quadrilateral.png}
 & 
@@ -230,13 +267,15 @@ malu garumu summas ir vienādas ($a + c = b + d$). \newline
 \textbf{Pārnese un simetrija:} 
 Paralēlā pārnese pārbīda visus plaknes punktus par noteiktu vektoru $\vec{v}$. 
 Centrālā simetrija ir pagrieziens par $180^\circ$ ap simetrijas centru. 
-Aksiālā simetrija pārveido punktu pret simetrijas taisni kā pret spoguli.
+Aksiālā simetrija attēlo punktu pret simetrijas asi par spoguļattēlu.
 & 
 & 
 \cellcolor[HTML]{FFFFEE}
 \textbf{Pagrieziens un homotētija:} 
 Pagrieziens orientētā leņķī $\alpha$ ap centru $O$. 
-Homotētija izmaina attālumus no dotā centra $O$ precīzi $k$ reizes. Tā vienmēr veido \textbf{līdzīgas} figūras (ja koeficients ir $k$, laukumi mainās $k^2$ reizes).
+Homotētija izmaina attālumus no dotā centra $O$ precīzi $k$ reizes. 
+Tā vienmēr veido \textbf{līdzīgas} figūras (ja līdzības koeficients ir $k$, 
+laukumu attiecība ir $k^2$).
 \\ \hline
 
 \end{tabular*}
