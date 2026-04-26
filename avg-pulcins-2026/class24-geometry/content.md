@@ -61,7 +61,7 @@ Trapeces $ABCD$ pamatu $AD$ un $BC$ viduspunkti ir atbilstoši $M$ un $N$. Uz ta
 $MN$ ņemts punkts $S$, kas neatrodas ne uz vienas sānu malas pagarinājuma. Pierādīt, ka
 trijstūru $ABS$ un $CDS$ laukumi ir vienādi. 
 
-![](LV.VOL.1999.9.4.png){ width=144pt }
+![](LV.VOL.1999.9.4.png){ width=180pt }
 
 
 ## 6. uzdevums (LV.VOL.2000.9.3) {-}
@@ -70,5 +70,5 @@ No trijstūra $ABC$ virsotnes $B$ novilkti perpendikuli pret
 trijstūra leņķu $A$ un $C$ bisektrisēm; šo perpendikulu pamati ir
 attiecīgi $A_1$ un $C_1$. Pierādīt, ka $2 \cdot A_1C_1 = AB + BC - AC$. 
 
-![](LV.VOL.2000.9.3.png){ width=144pt }
+![](LV.VOL.2000.9.3.png){ width=180pt }
 
