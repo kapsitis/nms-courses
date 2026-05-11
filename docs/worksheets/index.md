@@ -28,4 +28,4 @@ Darba lapas ar uzdevumiem un teorijas ievadu; citi izdales materiāli.
 | 2026-02-09 | [Ģeometrijas uzdevumu lasīšana/modeļi]({{ 'worksheets/class17-reading-geometry.pdf' | relative_url }})
 | 2026-02-16 | [Virkņu uzdevumu lasīšana/modeļi]({{ 'worksheets/class18-reading-other.pdf' | relative_url }})
 | 2026-03-30 | [Laukumi un citas metriskās sakarības]({{ 'worksheets/class23-geometry-areas.pdf' | relative_url }})
-
+| 2026-04-27 | [Daudzstūri un nogriežņi]({{ 'worksheets/class24-geometry.pdf' | relative_url }})
