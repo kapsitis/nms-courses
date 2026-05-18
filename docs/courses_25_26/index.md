@@ -58,8 +58,8 @@ Sal. [Strategy stealing argument](https://en.wikipedia.org/wiki/Strategy-stealin
 
 **Tālākās ieceres:** 
 
-Minētie resursi vēl nav sakārtoti, bet līdz jaunajai "olimpiāžu sezonai" 
-2026.g. rudenī būtu pabeidzami.
+Turpmāk minētie resursi vēl nav sakārtoti, bet līdz jaunajai "olimpiāžu sezonai" 
+2026.g. rudenī būtu publicējami:
 
 * Atsaucoties 18.maija semināra ierosinājumam, vēlami apkopot spilgtākos 
   piemērus (vispārizglītojoši piemēri, raksturīgās kļūdas) 
