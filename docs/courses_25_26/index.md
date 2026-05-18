@@ -30,14 +30,15 @@ Organizatoru informācija par Novada un Valsts olimpiādi (Valsts olimpiādes 2.
 
 | Datums | Dokuments |
 | ---------- | --------------------------------- |
-| 2026-05-11 | [Lasītprasmes vingrinājumi, AMO, 5.-6.klases]({{ 'courses_25_26/handout56.pdf' | relative_url }})
-| 2026-05-11 | [Lasītprasmes vingrinājumi, AMO, 7.-8.klases]({{ 'courses_25_26/handout78.pdf' | relative_url }})
-| 2026-05-11 | [Lasītprasmes vingrinājumi, AMO, 9.klase]({{ 'courses_25_26/handout9.pdf' | relative_url }})
-| 2026-05-18 | [Lasītprasmes vingrinājumi, NOL, 5.-9.klases]({{ 'courses_25_26/handout59.pdf' | relative_url }})
-| 2026-05-18 | [Kļūdas kombinatorikas uzdevumos, AMO un NOL pamatskolā]({{ 'courses_25_26/handout-Comb.pdf' | relative_url }})
-| 2026-05-18 | [Kļūdas skaitļu teorijas uzdevumos, AMO un NOL pamatskolā]({{ 'courses_25_26/handout-NT.pdf' | relative_url }})
-| 2026-05-18 | [Kļūdas algebras uzdevumos, AMO un NOL pamatskolā]({{ 'courses_25_26/handout-Alg.pdf' | relative_url }})
-| 2026-05-18 | [Kļūdas ģeometrijas uzdevumos, AMO un NOL pamatskolā]({{ 'courses_25_26/handout-Geom.pdf' | relative_url }})
+| 2026-05-11,18 | [Lejuplādējama prezentācija (PDF)]({{ 'courses_25_26/uzdevumu_lasitprasme.pdf' | relative_url }}) un [Links uz Google Docs](https://docs.google.com/presentation/d/1nc7PQOtj10j0rKVuqWmRmMTEp_kolhRSQnjNZZ_lNp4/edit?usp=sharing) |
+| 2026-05-11 | [Lasītprasmes vingrinājumi, AMO, 5.-6.klases]({{ 'courses_25_26/handout56.pdf' | relative_url }}) |
+| 2026-05-11 | [Lasītprasmes vingrinājumi, AMO, 7.-8.klases]({{ 'courses_25_26/handout78.pdf' | relative_url }}) |
+| 2026-05-11 | [Lasītprasmes vingrinājumi, AMO, 9.klase]({{ 'courses_25_26/handout9.pdf' | relative_url }}) |
+| 2026-05-18 | [Lasītprasmes vingrinājumi, NOL, 5.-9.klases]({{ 'courses_25_26/handout59.pdf' | relative_url }}) |
+| 2026-05-18 | [Kļūdas kombinatorikas uzdevumos, AMO un NOL pamatskolā]({{ 'courses_25_26/handout-Comb.pdf' | relative_url }}) |
+| 2026-05-18 | [Kļūdas skaitļu teorijas uzdevumos, AMO un NOL pamatskolā]({{ 'courses_25_26/handout-NT.pdf' | relative_url }}) |
+| 2026-05-18 | [Kļūdas algebras uzdevumos, AMO un NOL pamatskolā]({{ 'courses_25_26/handout-Alg.pdf' | relative_url }}) |
+| 2026-05-18 | [Kļūdas ģeometrijas uzdevumos, AMO un NOL pamatskolā]({{ 'courses_25_26/handout-Geom.pdf' | relative_url }}) |
 
 **LV.AMO.2003.7.3:**  
 Divi spēlētāji pamīšus raksta uz tāfeles pa vienam naturālam 
