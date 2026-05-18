@@ -1,4 +1,25 @@
-# Klasē analizējamie skaitļu teorijas uzdevumi
+---
+title: "Klasē analizējamie skaitļu teorijas  uzdevumi"
+numbersections: true
+mainfont: "TeX Gyre Pagella"
+fontsize: 11pt
+geometry: "margin=1in"
+header-left: "Klasē analizējamie skaitļu teorijas  uzdevumi"
+header-includes:
+  - |
+    \makeatletter
+    \RedeclareSectionCommand[
+      beforeskip=1.2ex plus 0.4ex minus 0.2ex,
+      afterskip=0.4ex plus 0.2ex minus 0.2ex
+    ]{subsection}
+    \makeatother
+  - \setcounter{section}{0}
+  - |
+    \usepackage{etoolbox}
+    \AtBeginEnvironment{footnotesize}{\footnotesize}
+---
+
+# Klasē analizējamie skaitļu teorijas uzdevumi {-}
 
 Tipiskas kļūdas:
 
@@ -17,17 +38,6 @@ Tipiskas kļūdas:
 4. Sajauktas definīcijas (no 5.kl.)
 5. Pārprasta aplūkojamā skaitļu kopa (no 9.kl.)
 
-**Izvērsts kļūdu saraksts (izdales materiālam):** 
-
-1. Aplami lietotas dalāmības pazīmes.  
-   Dalāmībai ar 7 pārbauda, vai ciparu summa dalās ar 7 utml.
-2. Dalāmību ar reizinājumu pārbauda atsevišķi katram reizinātājam, ja tie nav savstarpēji pirmskaitļi.  
-   18 dalās ar 6, un arī ar 2, bet 18 nedalās ar 6*2 = 12.
-3. Nav pamatots novērtējums vai piemērs. 
-   Ja “jāatrod lielākais”, tad ir apakšējais novērtējums (vērtību N var), un augšējais novērtējums (lielāku par N nevar).
-4. Sajauktas definīcijas.  
-   Vai 1 ir pirmskaitlis? Vai pirmskaitlis var būt pāra skaitlis? Vai skaitlis 6 ir skaitļa 18 dalāmais vai dalītājs, vai daudzkārtnis?
-5. Pārprasta aplūkojamā skaitļu kopa. Cik atrisinājumu ir vienādojumam (x−2)(y−2)=4? Reālos skaitļos? Veselos skaitļos? Naturālos skaitļos?
 
 
 

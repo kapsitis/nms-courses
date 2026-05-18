@@ -1,4 +1,24 @@
-# Klasē analizējamie ģeometrijas uzdevumi
+---
+title: "Klasē analizējamie ģeometrijas uzdevumi"
+numbersections: true
+mainfont: "TeX Gyre Pagella"
+fontsize: 11pt
+geometry: "margin=1in"
+header-left: "Klasē analizējamie ģeometrijas uzdevumi"
+header-includes:
+  - |
+    \makeatletter
+    \RedeclareSectionCommand[
+      beforeskip=1.2ex plus 0.4ex minus 0.2ex,
+      afterskip=0.4ex plus 0.2ex minus 0.2ex
+    ]{subsection}
+    \makeatother
+  - \setcounter{section}{0}
+  - |
+    \usepackage{etoolbox}
+    \AtBeginEnvironment{footnotesize}{\footnotesize}
+---
+# Klasē analizējamie ģeometrijas uzdevumi {-}
 
 Tipiskas kļūdas:
 

@@ -1,4 +1,25 @@
-# Klasē analizējamie algebras uzdevumi
+---
+title: "Klasē analizējamie algebras uzdevumi"
+numbersections: true
+mainfont: "TeX Gyre Pagella"
+fontsize: 11pt
+geometry: "margin=1in"
+header-left: "Klasē analizējamie algebras uzdevumi"
+header-includes:
+  - |
+    \makeatletter
+    \RedeclareSectionCommand[
+      beforeskip=1.2ex plus 0.4ex minus 0.2ex,
+      afterskip=0.4ex plus 0.2ex minus 0.2ex
+    ]{subsection}
+    \makeatother
+  - \setcounter{section}{0}
+  - |
+    \usepackage{etoolbox}
+    \AtBeginEnvironment{footnotesize}{\footnotesize}
+---
+
+# Klasē analizējamie algebras uzdevumi {-}
 
 Tipiskas kļūdas:
 
@@ -15,20 +36,6 @@ Tipiskas kļūdas:
 3. Sakņu pazaudēšana, dalot vienādojuma puses ar izteiksmi, kas var būt nulle (no 7.kl.)
 4. Nepilnīga gadījumu šķirošana (piem., zīmes vai paritātes gadījumi) (no 5.kl.)
 5. Atrasto vērtību nepārbaudīšana sākotnējā uzdevumā (no 7.kl.)
-
-**Izvērsts kļūdu saraksts (izdales materiālam):**
-
-1. Nepareizi sastādīts vienādojums teksta uzdevumam.
-   "Par tik vairāk" sajauc ar "tik reižu vairāk"; "$a$ par 6 vairāk nekā $b$" pieraksta kā $a = 6b$, nevis $a = b + 6$; procenti "par 20% palielinās" tiek pārtulkoti kā "20% no sākotnējā".
-2. Nepamatota daļu vai darbību "vienkāršošana" pēc analoģijas.
-   $(a+b)^2 = a^2 + b^2$ (aizmirsts $2ab$); $\sqrt{a+b} = \sqrt{a} + \sqrt{b}$; $\frac{a+b}{a+c}$ "saīsina" $a$ — bet $a$ nav reizinātājs, bet saskaitāmais.
-3. Sakņu pazaudēšana, dalot ar izteiksmi, kas var būt nulle.
-   No $x^2 = 3x$ dala abas puses ar $x$ un raksta $x = 3$, aizmirstot, ka $x = 0$ arī ir sakne. Pareizi: $x(x-3) = 0$.
-4. Nepilnīga gadījumu šķirošana.
-   Salīdzinot $2a$ un $4a$, aizmirst gadījumu $a = 0$; vienādojumā ar moduļiem $|x-2| + |x+1| = 5$ neuzšķir visus trīs intervālus uz skaitļu ass.
-5. Atrasto vērtību nepārbaudīšana:
-   Teksta uzdevumā atrod $x = -0{,}8$ stundas darba laiku un pieraksta atbildē; pēc kvadrātēšanas $\sqrt{x+4} = x-2$ saknei $x = 0$ neder, jo $\sqrt{4} = 2 \neq -2$.
-
 
 
 <!-- IncorrectTranslationOfWordProblem -->
