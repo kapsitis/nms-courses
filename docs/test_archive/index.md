@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Arhīvs
+permalink: /test_archive/index/
 ---
-# Arhīvs
+# Testu arhīvs
 
 Socrative testu arhīvs - agrāk uzdotie testu jautājumi, atbildes un atrisinājumi.  
 Linkus uz esošajiem testiem sk. [sākumlapā]({{ '/' | relative_url }}).

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Socrative pieslēgšanās instrukcija
+permalink: /reference/socrative_instruction/
 ---
 # Socrative pieslēgšanās instrukcija 
 

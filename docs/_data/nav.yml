@@ -2,22 +2,30 @@
   url: /
 - title: Nodarbības 2026./2027.
   children:
-    - title: Klase Nr.1
+    - title: Nodarbību plāns
+      url: /courses_26_27/curriculum/
+    - title: (1-A) Uzdevumu lasīšana
       url: /courses_26_27/class01/
-    - title: Klase Nr.2
+    - title: (1-B) Uzdevumu lasīšana
       url: /courses_26_27/class02/
-- title: Darba lapas 
-  url: /worksheets/
+    - title: Socrative arhīvs
+      url: /socrative_archive/
 - title: Testu rezultāti
-  url: /results/
+  url: /test_results/index/
 - title: RIIMC kursi
-  url: /courses_25_26/
+  url: /riimc/index/
 - title: Socrative vide
   children:
     - title: Socrative instrukcija
       url: /socrative_instruction/
     - title: Socrative arhīvs
       url: /socrative_archive/
+- title: Norādes
+  children:
+    - title: Socrative instrukcija
+      url: /reference/socrative_instruction/
+    - title: 2025./2026.m.g. materiāli
+      url: /courses_25_26/index/
 
 
 

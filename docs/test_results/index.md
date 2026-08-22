@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Arhīvs
+title: Testu rezultāti
+permalink: /test_results/index/
 ---
-# ĀVĢ rezultātu tabula
+# Testu rezultāti
 
 | Segvārds | <a href="{{ 'socrative_archive/2025-10-13-comb-rule-of-product.pdf' | relative_url }}" title="Kombinatorika: Reizināšanas likums">T1.1</a> | <a href="{{ 'socrative_archive/2025-10-13-geom-finding-angles.pdf' | relative_url }}" title="Ģeometrija: Leņķu atrašana">T1.2</a> | <a href="{{ 'socrative_archive/2025-10-13-pigeonhole-principle-part1.pdf' | relative_url }}" title="Dirihlē princips-1">T1.3</a> | <a href="{{ 'socrative_archive/2025-10-13-pigeonhole-principle-part2.pdf' | relative_url }}" title="Dirihlē princips-2">T1.4</a> | <a href="{{ 'socrative_archive/2025-10-27-nt-divisibility-part1.pdf' | relative_url }}" title="Skaitļu teorija: Dalāmība-1">T2.1</a> | <a href="{{ 'socrative_archive/2025-10-27-alg-recurrences.pdf' | relative_url }}" title="Algebra: Rekurentas virknes">T2.2</a> |
 | ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | 
