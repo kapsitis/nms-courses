@@ -8,18 +8,12 @@
       url: /courses_26_27/class01/
     - title: (1-B) Uzdevumu lasīšana
       url: /courses_26_27/class02/
-    - title: Socrative arhīvs
-      url: /socrative_archive/
+- title: Testu arhīvs
+  url: /test_archive/index/
 - title: Testu rezultāti
   url: /test_results/index/
 - title: RIIMC kursi
   url: /riimc/index/
-- title: Socrative vide
-  children:
-    - title: Socrative instrukcija
-      url: /socrative_instruction/
-    - title: Socrative arhīvs
-      url: /socrative_archive/
 - title: Norādes
   children:
     - title: Socrative instrukcija
