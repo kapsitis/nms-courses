@@ -1,5 +1,11 @@
 - title: Sākums
   url: /
+- title: Nodarbības 2026./2027.
+  children:
+    - title: Klase Nr.1
+      url: /courses_26_27/class01/
+    - title: Klase Nr.2
+      url: /courses_26_27/class02/
 - title: Darba lapas 
   url: /worksheets/
 - title: Testu rezultāti
@@ -12,7 +18,6 @@
       url: /socrative_instruction/
     - title: Socrative arhīvs
       url: /socrative_archive/
-
 
 
 
