@@ -20,10 +20,10 @@ veic mērījumus un prezentē.
 
 | **Datums** | **Temats** |
 | --- | --- |
-| 2026-09-01 | Entropija un Hafmana (Huffman) koki | 
-| 2026-09-08 | Aritmētiskā saspiešana un ANS (Asymmetric Numbering Systems) | 
-| 2026-09-15 | Lempela-Ziva (Lempel Ziv) algorithms Z77 un Gzip |
-| 2026-09-15 | Berouza-Vīlera (Burrows-Wheeler) transformācija un BZip2 |
+| 2026-09-01 | [Entropija un Hafmana (Huffman) koki]({{ '/applied_algorithms/lossless_entropy_and_huffman/' | relative_url }}) | 
+| 2026-09-08 | [Aritmētiskā saspiešana un ANS (Asymmetric Numbering Systems)]({{ '/applied_algorithms/lossless_arithmetic_and_ans/' | relative_url }}) | 
+| 2026-09-15 | [Lempela-Ziva (Lempel Ziv) algorithms Z77 un Gzip]({{ '/applied_algorithms/lossless_lempel_ziv/' | relative_url }}) |
+| 2026-09-15 | [Berouza-Vīlera (Burrows-Wheeler) transformācija un BZip2]({{ '/applied_algorithms/lossless_burrows_wheeler/' | relative_url }}) |
 | 2026-09-22 | Kopsavilkums, citi priekšnesumi par saspiešanu |
 
 

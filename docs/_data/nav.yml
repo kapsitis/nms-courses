@@ -8,6 +8,18 @@
       url: /courses_26_27/class01/
     - title: (1-B) Uzdevumu lasīšana
       url: /courses_26_27/class02/
+- title: Lietišķie algoritmi
+  children:
+    - title: Kursa apraksts
+      url: /applied_algorithms/
+    - title: Entropija un Hafmana koki
+      url: /applied_algorithms/lossless_entropy_and_huffman/
+    - title: Aritmētiskā saspiešana un ANS
+      url: /applied_algorithms/lossless_arithmetic_and_ans/
+    - title: Lempela-Ziva algoritmi
+      url: /applied_algorithms/lossless_lempel_ziv/
+    - title: Berouza-Vīlera transformācija
+      url: /applied_algorithms/lossless_burrows_wheeler/
 - title: Testu arhīvs
   url: /test_archive/index/
 - title: Testu rezultāti

@@ -28,6 +28,11 @@ h2 {
     color: #4472C4;      
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 table {
     border-left: 1px solid black;
     border-top: 1px solid black; 
