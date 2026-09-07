@@ -1,13 +1,17 @@
 - title: Sākums
   url: /
-- title: Nodarbības 2026./2027.
+- title: Āvģ fakultatīvs - 7.,8.kl.
   children:
     - title: Nodarbību plāns
-      url: /courses_26_27/curriculum/
-    - title: (1-A) Uzdevumu lasīšana
-      url: /courses_26_27/class01/
-    - title: (1-B) Uzdevumu lasīšana
-      url: /courses_26_27/class02/
+      url: /courses_26_27/curriculum_7_8/
+    - title: Informācija vecākiem
+      url: /courses_26_27/for_parents_7_8/
+- title: Āvģ fakultatīvs - 9.,10.kl.
+  children:
+    - title: Nodarbību plāns
+      url: /courses_26_27/curriculum_9_10/
+    - title: Informācija vecākiem
+      url: /courses_26_27/for_parents_9_10/
 - title: Lietišķie algoritmi
   children:
     - title: Kursa apraksts
@@ -20,20 +24,3 @@
       url: /applied_algorithms/lossless_lempel_ziv/
     - title: Berouza-Vīlera transformācija
       url: /applied_algorithms/lossless_burrows_wheeler/
-- title: Testu arhīvs
-  url: /test_archive/index/
-- title: Testu rezultāti
-  url: /test_results/index/
-- title: RIIMC kursi
-  url: /riimc/index/
-- title: Norādes
-  children:
-    - title: Socrative instrukcija
-      url: /reference/socrative_instruction/
-    - title: 2025./2026.m.g. materiāli
-      url: /courses_25_26/index/
-
-
-
-
-
