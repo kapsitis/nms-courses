@@ -5,38 +5,220 @@ permalink: /courses_26_27/curriculum_7_8/
 ---
 # Mācību programma 7.-8.klasei
 
+## Rīgas Āgenskalna Valsts ģimnāzija
 
-| Nedēļas | Saturs |
-|---|---|
-| 2026-09-09(?) | 1. temats. Atrisinājumu struktūra: Jautājumi olimpiādēs, atrisinājumu struktūra, uzdevuma lasīšana un analīze |
-| 2026-09-16(?) | 1. temats. Atrisinājumu struktūra: Jautājumi olimpiādēs, atrisinājumu struktūra, uzdevuma lasīšana un analīze |
-| 2026-09-23(?) | 2. temats. Invarianti un krāsojumi |
-| 2026-09-30(?) | 2. temats. Invarianti un krāsojumi |
-| 2026-10-07(?) | 3. temats. Dirihlē princips un ekstremālais elements |
-| 2026-10-14(?) | 3. temats. Dirihlē princips un ekstremālais elements |
-| - | *Rudens brīvdienas 19.-23. oktobris* |
-| 2026-10-28 | 4. temats. Dalāmība un atlikumu klases |
-| 2026-11-04(?) | 4. temats. Dalāmība un atlikumu klases |
-| 2026-11-11(?) | **AMO gatavošanās**, atklātajai olimpiādei līdzīgi uzdevumi |
-| 2026-11-18 | *brīvdiena* vai nodarbība, ja 20.11 |
-| - | *AMO, 22.novembrī* |
-| 2026-11-25(?) | **AMO analīze** |
-| 2026-12-11(?) | Kopsavilkums, vairāki temati no 1.-4., individuāli pildāms tests |
-| - | *Ziemas brīvdienas* |
-| 1.ned. | 5. temats. Spēles: simetrija un analīze no beigām |
-| 2.ned. | 5. temats. Spēles: simetrija un analīze no beigām |
-| 3.ned. | 6. temats. Divkāršā skaitīšana un grafu modeļi |
-| 4.ned. | 6. temats. Divkāršā skaitīšana un grafu modeļi |
-| 5.ned. | 7. temats. Attālumi, punktu/taišņu sistēmas |
-| 6.ned. | 7. temats. Attālumi, punktu/taišņu sistēmas |
-| 7.ned. | **NOL gatavošanās**, novada olimpiādei līdzīgi uzdevumi |
-| 8.ned. | **NOL gatavošanās**, novada olimpiādei līdzīgi uzdevumi |
-| 9.ned. | **NOL analīze** |
-| 10.ned. | 8. temats. Leņķi un vienādi trijstūri |
-| 11.ned. | 8. temats. Leņķi un vienādi trijstūri |
-| 12.ned. | **Ķengura gatavošanās** un citi īso atbilžu testi |
-| 13.ned. | 9. temats. Loģikas uzdevumi |
-| 14.ned. | 9. temats. Loģikas uzdevumi |
-| 15.ned. | 10. temats. Vienādojumi veselos skaitļos un skaitļu konstrukcijas |
-| 16.ned. | 10. temats. Vienādojumi veselos skaitļos un skaitļu konstrukcijas |
-| 17.ned. | Kopsavilkums: 5-10 tematu atkārtojums, "mini-olimpiāde" vai grupās pildāms tests. |
+* Matemātikas pulciņš 7.-8.klasēm
+* Interešu izglītības programmas joma un apakšprogrammas nosaukums:
+  Fakultatīvās nodarbības “padziļināta mācību priekšmeta apguve” (10.sadaļa, kods 1001).
+  (saskaņā ar Valsts izglītības informācijas sistēmas klasifikatoru: 2019. gada 10. decembra
+  Ministru kabineta noteikumi Nr. 599 “Noteikumi par oficiālās statistikas veidlapu paraugiem
+  izglītības jomā”)
+
+Programmas autors: Kalvis Apsītis.  
+Programma izstrādāta 2026.g. 7.septembrī.  
+Programma tiks aktualizēta reizi 2 gados.
+
+
+## Ievads
+
+Programmas “Matemātikas pulciņš 7.-8. klasēm” nepieciešamību nosaka skolēnu vēlēšanās
+attīstīt izziņas un komunikācijas prasmes matemātikā un eksaktajās zinātnēs, loģiski secināt,
+saprotami izklāstīt savas domas, pārstāvēt skolu mācību priekšmetu olimpiādēs.
+
+
+### Programmas mērķis
+
+Programmas darbības laikā sasniedzami šādi rezultāti:
+
+1. Atbilstoši sākumskolas tematiem apgūti jēdzieni, ieskaitot veselo 
+   skaitļu aritmētiku, variantu skaitīšanu un kombinatoriku, loģisku secināšanu. 
+2. Apgūti matemātisku spriedumu paraugi un pamatošanas metodes.
+3. Vingrinājumos veicināta intuīcija, uzmanība detaļām, paškontroles spēja, 
+   neizdarot pārsteidzīgus secinājumus.
+4. Apgūtas prasmes rakstiski pamatot savas domas un uzstāties pie tāfeles. 
+
+Atbilstoši 7.-8.klases priekšzināšanām apgūts NMS tematu saraksts - 
+sk. [Matemātikas olimpiāžu programma](https://www.nms.lu.lv/fileadmin/user_upload/lu_portal/projekti/nms.lu.lv/Dazadi/_matematikas_olimpiazu_programma_2022.pdf) - sk. arī norādi 
+[NMS: Valsts olimpiādes](https://www.nms.lu.lv/olimpiades/valsts-olimpiade/)
+Lai precizētu 7.-8.kl. mācīto materiālu tiks izmantoti VIAA mājas lapā publicētie 
+matemātikas programmu paraugi (gan Skola2023, gan jaunākā 2026.g. programma) - 
+sal. [https://mape.gov.lv/page/programms](https://mape.gov.lv/page/programms).
+
+
+### Programmas struktūra
+
+* Fakultatīva mērķis un uzdevumi;
+* Mācību saturs;
+* Mācību sasniegumu mērīšana un vērtēšana;
+* Mācību darba organizācija un satura apguves norise;
+* Izmantotā literatūra un mācību līdzekļi.
+
+
+Sekmīgai šīs programmas uzsākšanai svarīgi, lai skolēniem jau sākumskolā būtu bijusi iespēja:
+* izprast matemātiskus procesus un citus formalizētus modeļus - pildīt darbības pēc dotā 
+  apraksta pa soļiem, apgūt un stāstīt citiem spēļu noteikumus, vispārināt un secināt. 
+* izmantot dažādus paņēmienus, risinot vienādojumus un nevienādības, un izvēlēties sev
+piemērotāko;
+• veidot izpratni un apgūt sakarības, kas saista taisnleņķa trijstūra elementus;
+• izmantot dažādus paņēmienus, lai spriežot noteiktu figūras laukumu (sadalīšana pazīstamās figūrās,
+papildināšana līdz pazīstamai figūrai, figūras sadalīšana daļās un tās savietošana citādi);
+• formulēt sakarības starp lielumiem dažādos kontekstos (darbības ar skaitļiem, plaknes figūras u. c.);
+• veikt algebriskus pārveidojumus un atrisināt lineārus vienādojumus, kvadrātvienādojumus, lineāras
+nevienādības un kvadrātnevienādības;
+• apgūt ar funkciju saistītos pamatjēdzienus, nolasīt informāciju no funkcijas grafika un uzzīmēt
+funkciju grafikus.
+
+## Fakultatīva mērķis un uzdevumi
+
+Fakultatīva mērķis ir izkopt pamatošanas pratību (*proof literacy*) - 
+spēju lasīt, saprast, analizēt un arī pašiem veidot loģiski derīgus spriedumus un 
+matemātiskus pierādījumus. Šī mērķa sasniegšanai fakultatīvā 
+veicina lasītprasmi, atbildot testu jautājumiem vai analizējot uzdevumu
+tekstus, risina uzdevumus, cenšas precīzi izklāstīt to risinājumus pie tāfeles.
+
+Visu kursa tematu apguvei būtiskas šādi caurviju zināšanas: 
+
+1. Matemātikas jēdzienu izmantošana atbilstoši to definīcijām. 
+2. Katra apgūstamā temata saistība ar vienu vai vair modeli
+3. Apgūtas izplatītās matemātisko pamatojumu struktūras (*patterns*)
+   jeb pierādīšanas metodes - matemātiskās indukcijas metode, 
+   vidējās vērtības metode un Dirihlē princips, ekstremālais elements, 
+   invarianta metode, pierādījumi no pretējā, uzdevuma
+   interpretācija (pārrakstīšana citos jēdzienos), papildkonstrukcijas 
+   ģeometrijā vai kombinatorikā. 
+4. Izteikumu loģiskā struktūra - saikļi “un”, “vai”, "bet"; loģisks secinājums 
+   vienā virzienā vai abos virzienos, universāli un eksistences apgalvojumi, 
+   apgalvojumu noliegšana un De Morgana likumi. 
+5. Matemātiskā radošuma paņēmieni (ko darīt tad, ja metode nav zināma) - 
+   (Polya, 1957), (Zeitz, 2006).
+
+
+## Mācību saturs
+
+### 1. temats. Atrisinājumu struktūras
+
+Ievieš jautājumu tipus un atbilstošās atrisinājumu struktūras, 
+ko izmanto turpmākajos tematos.
+
+* SR: Atšķir olimpiāžu jautājumu pamattipus — "atrast visus", "vai var?", 
+  "lielākā/mazākā vērtība", "pierādīt", "konstruēt piemēru" (arī "aprakstīt procedūru/spēles stratēģiju"). 
+  Zina katram atbilstošo pilnas atbildes struktūru (piem., "atrast visus" = atrast + pamatot, ka citu nav).
+* SR: Apgalvojumu "var / eksistē" pamato ar konkrētu piemēru, bet "nevar / vienmēr" — ar vispārīgu spriedumu; 
+  optimizācijas uzdevumā uzraksta abas daļas: optimālu piemēru (konkrēts piemērs) un šī piemēra 
+  uzlabošanas neiespējamību (vispārīgs spriedums). 
+* SR: Sistemātiski izmanto mazos gadījumus un sakārtotu pilno pārlasi; pieraksta gadījumus tā, lai 
+  lasītājam viegli pārliecināties, ka neviens gadījums nav izlaists.
+* SR: Risināšanas secība: Saprast (tekstu), izzināt (uzdevuma modeli), lauzt (šķēršļus), 
+  pārskatīt (risinājumu). (*En: Understand → Explore → Attack → Review.*)
+* SR: Atbildes rakstiska noformēšana: Uzdevumi ar apakšgadījumiem, atrisinājumi vairākās daļās, 
+  skaidrība, cik tālu uzrakstīts risinājums.
+
+**Piemēri:** [LV.NOL.2024.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.2) 
+(atrast lielāko: piemērs + uzlabošanas neiespējamība), 
+[LV.AMO.2023.7.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.7.1) (Pamatot/apgāzt ar A,B daļām), 
+[LV.NOL.2024.7.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.3) (Atrast visus ar abu robežu pārbaudi).
+
+
+
+### 2. temats. Invarianti: Kas saglabājas, veicot atļautos gājienus
+
+Turpina pērnā gada invariantu līniju ar jaunu slāni: krāsojumi kā invarianta speciālgadījums un monovariants.
+
+* SR: Procesam (gājienu virknei, pārveidojumu spēlei) formulē paritātes vai atlikuma invariantu un korekti uzraksta neiespējamības pamatojumu ("invarianta vērtība sākumā atšķiras no vērtības mērķa stāvoklī").
+* SR: Izvēlas piemērotu krāsojumu (šaha, joslu, trīs krāsu) pārklāšanas, sagriešanas vai apstaigāšanas neiespējamības pamatošanai un saprot, ka krāsojums ir invarianta konstruēšanas paņēmiens.
+* SR: Pazīst monovariantu — lielumu, kas katrā gājienā tikai aug vai tikai dilst, — un lieto to procesa apstāšanās vai galīguma pamatošanai.
+
+**Piemēri:** [LV.AMO.2022A.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022A.7.2) un [LV.AMO.2022A.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022A.8.2) (gabalu skaita paritāte), 
+[LV.AMO.2024.7.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2024.7.3) (virknes veidošana ar reizināšanu un dalīšanu), 
+[LV.NOL.2023.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2023.7.5) (lodīšu krāsu maiņa — atlikuma invariants).
+
+
+### 3. temats. Dirihlē princips: Kad (trušu) sadursmes ir neizbēgamas
+
+Dirihlē princips kopā ar novērtējuma pierādījumu, izmantojot vidējās vērtības vai 
+ekstremālā elementa metodi. 
+
+* SR: Lieto vienkāršo un vispārināto Dirihlē principu, patstāvīgi izvēloties "kastes" (atlikumu klases, krāsas, rindas/kolonnas, ģeometriskus apgabalus).
+* SR: Sāk spriedumu no ekstremālā elementa ("aplūkojam lētāko / lielāko / malējo...") un iegūst novērtējumus, sakārtojot elementus augošā secībā.
+* SR: Uzraksta pilnu optimizācijas uzdevuma atrisinājumu abās daļās — konstruē piemēru un pierāda, ka labāks nav iespējams — un saprot, kura daļa dod kurus punktus olimpiādes vērtējumā.
+
+
+**Piemēri:** [LV.NOL.2024.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.5) un [LV.NOL.2024.8.4](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.8.4) (toršu pirkšana — ekstremālais elements + novērtējums), [LV.NOL.2024.8.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.8.3) (punkti režģī — Dirihlē pa rindām).
+
+### 4. temats. Dalāmība un atlikumi: Darbības ar dažādu krāsu skaitļiem
+
+Turpina pērnā gada decimālpieraksta un virkņu tematus: no dalāmības pazīmēm pie skaitīšanas ar atlikumiem.
+
+* SR: Aprēķina lielu pakāpju un rekurentu virkņu atlikumus, izmantojot pēdējo ciparu / atlikumu periodiskumu.
+* SR: Sadala naturālos skaitļus atlikumu klasēs pēc dotā moduļa un lieto šo sadalījumu gan skaitīšanas, gan neiespējamības uzdevumos (piem., kvadrāta atlikums dalot ar 4 ir tikai 0 vai 1).
+* SR: Kombinē dalāmības pazīmes ar sadalīšanu pirmreizinātājos; lieto savstarpēju pirmskaitļu īpašību (ja skaitlis dalās ar $m$ un $n$, kas savstarpēji pirmskaitļi, tad tas dalās ar $mn$) un atšķir to no nepareiziem vispārinājumiem.
+
+**Piemēri:** [LV.NOL.2024.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.2) (dalāmība ar 18), [LV.NOL.2022.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2022.7.2) (ko garantē ciparu summas dalāmība ar 27), [LV.AMO.2023.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.7.2) (septiņciparu skaitlis ar nosacījumiem).
+
+
+### 5. temats. Spēles: simetrijas un pārošanas stratēģijas
+
+Stratēģijas bez pozīciju pārlases.
+
+* SR: Definē uzvarošu stratēģiju ("uzvarēt neatkarīgi no pretinieka gājieniem"), atšķir stratēģiju no vienas izspēles piemēra.
+* SR: Konstruē simetrijas stratēģiju un pamato tās korektumu; kāpēc atbildes gājiens vienmēr iespējams.
+* SR: Konstruē stratēģiju, sadalot pozīcijas pāros, un pamato, ka to vienmēr var.
+
+**Piemēri:** [LV.AMO.2019.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2019.7.2) (spēle riņķī ar 15 daļām), [LV.AMO.2019.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2019.8.2) (kauliņu izvietošana $6 \times 6$ tabulā), [LV.NOL.2021.7.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2021.7.3).
+
+### 6. temats. Kā un kāpēc to pašu saskaitīt divos veidos
+
+Pērnā gada grafu temata turpinājums ar skaitīšanas rakursu — vieglāk pieejams arī tiem, kas grafu tematu nav dzirdējuši.
+
+* SR: Attēlo attiecību situācijas ("draudzējas", "savienots ar vadu", "spēlēja pret") ar grafu un lieto rokasspiedienu lemmu: nepāra pakāpes virsotņu skaits ir pāra skaitlis.
+* SR: Saskaita vienu lielumu divos veidos (pa rindām un kolonnām; pa dalībniekiem un pa pāriem) un no iegūtās vienādības vai nevienādības izdara secinājumu.
+* SR: Pamato konfigurācijas neiespējamību ar kopsummas paritātes vai dalāmības argumentu.
+
+**Piemēri:** [LV.NOL.2023.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2023.7.2) (90 lampiņas ar tieši 5 vadiem katrai), [LV.NOL.2023.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2023.8.2), [LV.AMO.2024.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2024.7.5), [LV.AMO.2024.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2024.8.2).
+
+### 7. temats. Trijstūra nevienādība un garumu novērtējumi
+
+Garumu salīdzināšanas uzdevumi plaknē.
+
+* SR: Lieto trijstūra nevienādību (abos virzienos, ar summu vai starpību), pārbauda gadījumu kur visi uz 1 taisnes.
+* SR: Novērtē lauztu līniju, perimetru un nogriežņu summu garumus.
+* SR: Lieto sakarību "lielākajam leņķim pretī atrodas lielākā mala".
+
+**Piemēri:** [LV.NOL.2024.7.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.3) (AC garuma iespējamās vērtības četru punktu konfigurācijā), [LV.NOL.2022.8.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2022.8.3) (pierādīt 3AC > AB vienādsānu trijstūrī).
+
+### 8. temats. Taisnes, koordinātas un laukumi
+
+Tieša sasaiste ar 8. klases standartkursa lineāro funkciju — parāda, kā skolas viela kļūst par olimpiādes instrumentu; 7. klases skolēniem lineārās funkcijas pamatus dod nodarbības A bloka paraugpiemērs.
+
+* SR: Atrod taišņu krustpunktus un attēlo uzdevuma konfigurāciju koordinātu plaknē.
+* SR: Aprēķina daudzstūra laukumu koordinātu plaknē, sadalot figūru taisnstūros un trijstūros vai izmantojot aptverošo taisnstūri.
+* SR: Lieto laukumu attiecības caur kopīgu pamatu vai augstumu un pazīst vienlielas (bet ne vienādas) figūras.
+
+Piemēri: [LV.NOL.2022.7.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2022.7.1) (četrstūra laukums starp taisnēm), [LV.AMO.2022A.8.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022A.8.1) (trijstūris starp taišņu krustpunktiem un asīm).
+
+### 9. temats. Loģikas uzdevumi: Vienmēr runāt patiesību un vienmēr melot
+
+Jauns temats — loģiska gadījumu analīze, kas trenē to pašu pamatojuma disciplīnu bez tehniskām priekšzināšanām (labi noder arī nodarbībām ar jauktu sastāvu).
+
+* SR: Veic gadījumu analīzi pēc pieņēmuma ("pieņemsim, ka X saka patiesību...") un katru zaru noved vai nu līdz pretrunai, vai konsekventam scenārijam.
+* SR: Pamato, ka atrasti visi iespējamie scenāriji, t. i., apvieno gadījumu analīzi ar pilnās pārlases pierakstu.
+* SR: Sistematizē informāciju tabulā un pazīst pašreferences apgalvojumu ("es esmu melis") īpatnības.
+
+Piemēri: [LV.AMO.2022B.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022B.7.5), [LV.AMO.2022B.8.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022B.8.5), [LV.AMO.2023.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.7.5) un [LV.AMO.2023.8.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.8.5)
+
+### 10. temats. Vienādojumi veselos skaitļos un skaitļu konstrukcijas
+
+Algebriskie pārveidojumi un ciparu pieraksts ar skaitļu teoriju.
+
+* SR: Risina vienādojumus veselos skaitļos, sadalot reizinātājos un veicot sakārtotu dalītāju pārlasi (ievērojot arī negatīvos dalītājus un simetriju).
+* SR: Ierobežo atrisinājumu meklēšanas apgabalu ar novērtējumiem (augšanas ātruma salīdzināšana, atlikumu analīze) un tikai tad pārlasa atlikušos gadījumus.
+* SR: Konstruē skaitļus ar prasītām ciparu un dalāmības īpašībām un pamato konstrukcijas optimalitāti vai vienīgumu.
+
+**Piemēri:** [LV.NOL.2019.7.4](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2019.7.4) (risināt $ab(a+5b)=150015$ veselos skaitļos), [LV.AMO.2022B.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022B.8.2) (punktu kopsummas iespējamās vērtības), [LV.AMO.2023.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.8.2) (atrast skaitli atbilstoši nosacījumiem).
+
+
+
+
+
+
+

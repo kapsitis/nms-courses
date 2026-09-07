@@ -39,7 +39,7 @@ Katra temata materiāli pēc tā beigām atgriežas nākamo nodarbību atsaukša
 
 ## Rudens semestris
 
-### 1. temats. Olimpiādes uzdevuma "gramatika": atbilde un pamatojums
+### 1. temats. Atrisinājumu struktūra: Uzdotajam jautājumam atbilstoša atbilde
 
 Caurviju temats, ko atkārto katru gadu (jaunajiem septītklasniekiem tas ir jauns, pērnajiem — padziļinājums ar citiem uzdevumiem). Ievieš jautājumu tipu valodu, ko pēc tam lieto visos pārējos tematos.
 
@@ -50,7 +50,7 @@ Caurviju temats, ko atkārto katru gadu (jaunajiem septītklasniekiem tas ir jau
 Birkas: questionTypes (FindAll, ProveDisprove, FindOptimal, FindExample, Prove); MTH_ExhaustiveAlgorithms; ExhaustiveCaseEnumeration; hintLabels fāzes (Understand → Explore → Attack → Review) kā risināšanas rituāls.
 Piemēri: LV.NOL.2024.7.2 (FindOptimal — piemērs + novērtējums), LV.AMO.2023.7.1 (ProveDisprove ar A/B daļām), LV.NOL.2024.7.3 (FindAll ar abu robežu pārbaudi).
 
-### 2. temats. Krāsojumi un invarianti procesos
+### 2. temats. Invarianti: Kas saglabājas, veicot atļautos gājienus
 
 Turpina pērnā gada invariantu līniju ar jaunu slāni: krāsojumi kā invarianta speciālgadījums un monovariants.
 
@@ -61,9 +61,10 @@ Turpina pērnā gada invariantu līniju ar jaunu slāni: krāsojumi kā invarian
 Birkas: ParityInvariant, ColoringInvariant, ModularInvariant, MonovariantArgument, TilingByDominoesAndColoring; MTH_FixedInvariant, MTH_AuxiliaryColoring.
 Piemēri: LV.AMO.2022A.7.2 un LV.AMO.2022A.8.2 (gabalu skaita paritāte procesā), LV.AMO.2024.7.3 (virkne ar ×2, ×3, :2, :3), LV.NOL.2023.7.5 (lodīšu krāsu maiņa — atlikuma invariants).
 
-### 3. temats. Dirihlē princips un ekstremālais elements
+### 3. temats. Dirihlē princips: Kad (trušu) sadursmes ir neizbēgamas
 
-Dirihlē princips atgriežas no pērnā gada, bet uzsvars ir uz pāreju no principa uz pilnu novērtējuma pierādījumu, sapārojot to ar ekstremālā elementa metodi (abas metodes korpusā bieži sastopamas vienā uzdevumā).
+Dirihlē princips kopā ar novērtējuma pierādījumu, izmantojot vidējās vērtības vai 
+ekstremālā elementa metodi. 
 
 * a. SR: Lieto vienkāršo un vispārināto Dirihlē principu, patstāvīgi izvēloties "kastes" (atlikumu klases, krāsas, rindas/kolonnas, ģeometriskus apgabalus).
 * b. SR: Sāk spriedumu no ekstremālā elementa ("aplūkojam lētāko / lielāko / malējo...") un iegūst novērtējumus, sakārtojot elementus augošā secībā.
@@ -72,7 +73,7 @@ Dirihlē princips atgriežas no pērnā gada, bet uzsvars ir uz pāreju no princ
 Birkas: PigeonholeBasic, PigeonholeGeneralized, ExtremalPrincipleArgument; MTH_PigeonholePrincipleBasic, MTH_PigeonholePrincipleGeneralized, MTH_ExtremeElements, MTH_OrderingElements.
 Piemēri: LV.NOL.2024.7.5 un LV.NOL.2024.8.4 (toršu pirkšana — ekstremālais elements + novērtējums), LV.NOL.2024.8.3 (punkti režģī — Dirihlē pa rindām).
 
-### 4. temats. Dalāmība un atlikumu klases
+### 4. temats. Dalāmība un atlikumu klases: Darbības ar dažādu krāsu skaitļiem
 
 Turpina pērnā gada decimālpieraksta un virkņu tematus: no dalāmības pazīmēm pie skaitīšanas ar atlikumiem.
 
