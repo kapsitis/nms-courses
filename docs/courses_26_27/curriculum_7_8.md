@@ -47,10 +47,10 @@ sal. [https://mape.gov.lv/page/programms](https://mape.gov.lv/page/programms).
 
 ### Programmas struktūra
 
-* Fakultatīva mērķis un uzdevumi;
-* Mācību saturs;
-* Mācību sasniegumu mērīšana un vērtēšana;
-* Mācību darba organizācija un satura apguves norise;
+* Fakultatīva mērķis un uzdevumi,
+* Mācību saturs,
+* Sasniegumu mērīšana un vērtēšana,
+* Mācību darba organizācija,
 * Izmantotā literatūra un mācību līdzekļi.
 
 
@@ -103,12 +103,11 @@ ko izmanto turpmākajos tematos.
 * SR: Atšķir olimpiāžu jautājumu pamattipus — "atrast visus", "vai var?", 
   "lielākā/mazākā vērtība", "pierādīt", "konstruēt piemēru" (arī "aprakstīt procedūru/spēles stratēģiju"). 
   Zina katram atbilstošo pilnas atbildes struktūru (piem., "atrast visus" = atrast + pamatot, ka citu nav).
-* SR: Apgalvojumu "var / eksistē" pamato ar konkrētu piemēru, bet "nevar / vienmēr" — ar vispārīgu spriedumu; 
-  optimizācijas uzdevumā uzraksta abas daļas: optimālu piemēru (konkrēts piemērs) un šī piemēra 
-  uzlabošanas neiespējamību (vispārīgs spriedums). 
+* SR: Apgalvojumu "var/eksistē" pamato ar konkrētu piemēru, bet "nevar/vienmēr" — ar vispārīgu spriedumu; 
+  optimizācijas uzdevumā uzraksta (konkrētu) optimālo piemēru un (vispārīgu) neiespējamību to uzlabot.
 * SR: Sistemātiski izmanto mazos gadījumus un sakārtotu pilno pārlasi; pieraksta gadījumus tā, lai 
-  lasītājam viegli pārliecināties, ka neviens gadījums nav izlaists.
-* SR: Risināšanas secība: Saprast (tekstu), izzināt (uzdevuma modeli), lauzt (šķēršļus), 
+  lasītājam viegli pārliecināties, ka nekas nav izlaists.
+* SR: Izmanto secību: Saprast (tekstu), izzināt (uzdevuma modeli), lauzt (šķēršļus), 
   pārskatīt (risinājumu). (*En: Understand → Explore → Attack → Review.*)
 * SR: Atbildes rakstiska noformēšana: Uzdevumi ar apakšgadījumiem, atrisinājumi vairākās daļās, 
   skaidrība, cik tālu uzrakstīts risinājums.
@@ -122,11 +121,11 @@ ko izmanto turpmākajos tematos.
 
 ### 2. temats. Invarianti: Kas saglabājas, veicot atļautos gājienus
 
-Turpina pērnā gada invariantu līniju ar jaunu slāni: krāsojumi kā invarianta speciālgadījums un monovariants.
+Invariantus (nemainīgus lielumus) ilustrē ar rūtiņu/krāsošanas uzdevumiem; izmanto "monvariantus".
 
-* SR: Procesam (gājienu virknei, pārveidojumu spēlei) formulē paritātes vai atlikuma invariantu un korekti uzraksta neiespējamības pamatojumu ("invarianta vērtība sākumā atšķiras no vērtības mērķa stāvoklī").
-* SR: Izvēlas piemērotu krāsojumu (šaha, joslu, trīs krāsu) pārklāšanas, sagriešanas vai apstaigāšanas neiespējamības pamatošanai un saprot, ka krāsojums ir invarianta konstruēšanas paņēmiens.
-* SR: Pazīst monovariantu — lielumu, kas katrā gājienā tikai aug vai tikai dilst, — un lieto to procesa apstāšanās vai galīguma pamatošanai.
+* SR: Procesam (gājienu virknei, pārveidojumu spēlei) formulē atlikuma invariantu un uzraksta neiespējamības pamatojumu ("invarianta vērtība sākumā nevar atšķirties no vērtības beigās").
+* SR: Izvēlas piemērotu krāsojumu (šaha, joslu, trīs krāsu) pārklāšanas, sagriešanas vai apstaigāšanas neiespējamības pamatošanai; formulē invariantu arī krāsošanas uzdevumos.
+* SR: Pazīst monovariantu — lielumu, kas katrā gājienā tikai aug vai tikai dilst, lai pamatotu, ka process apstājas vai tā beigās izpildās kāda nevienādība.
 
 **Piemēri:** [LV.AMO.2022A.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022A.7.2) un [LV.AMO.2022A.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022A.8.2) (gabalu skaita paritāte), 
 [LV.AMO.2024.7.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2024.7.3) (virknes veidošana ar reizināšanu un dalīšanu), 
@@ -138,16 +137,16 @@ Turpina pērnā gada invariantu līniju ar jaunu slāni: krāsojumi kā invarian
 Dirihlē princips kopā ar novērtējuma pierādījumu, izmantojot vidējās vērtības vai 
 ekstremālā elementa metodi. 
 
-* SR: Lieto vienkāršo un vispārināto Dirihlē principu, patstāvīgi izvēloties "kastes" (atlikumu klases, krāsas, rindas/kolonnas, ģeometriskus apgabalus).
-* SR: Sāk spriedumu no ekstremālā elementa ("aplūkojam lētāko / lielāko / malējo...") un iegūst novērtējumus, sakārtojot elementus augošā secībā.
-* SR: Uzraksta pilnu optimizācijas uzdevuma atrisinājumu abās daļās — konstruē piemēru un pierāda, ka labāks nav iespējams — un saprot, kura daļa dod kurus punktus olimpiādes vērtējumā.
+* SR: Lieto vienkāršo un vispārināto Dirihlē principu, patstāvīgi izvēloties "trušus" un "kastes" (atlikumu klases, krāsas, plaknes apgabalus, u.c.).
+* SR: Sāk spriedumu no ekstremālā elementa ("aplūkojam lētāko / lielāko / malējo..."), lai iegūtu novērtējumu.
+* SR: Optimizācijas uzdevumos ("atrast lielāko ...") — konstruē piemēru un ar Dirihlē principu pierāda, ka to nevar uzlabot.
 
 
 **Piemēri:** [LV.NOL.2024.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.5) un [LV.NOL.2024.8.4](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.8.4) (toršu pirkšana — ekstremālais elements + novērtējums), [LV.NOL.2024.8.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.8.3) (punkti režģī — Dirihlē pa rindām).
 
 ### 4. temats. Dalāmība un atlikumi: Darbības ar dažādu krāsu skaitļiem
 
-Turpina pērnā gada decimālpieraksta un virkņu tematus: no dalāmības pazīmēm pie skaitīšanas ar atlikumiem.
+Decimālpieraksta un virkņu temati: dalāmības pazīmes, gadījumu šķirošana veselo skaitļu aritmētikā.
 
 * SR: Aprēķina lielu pakāpju un rekurentu virkņu atlikumus, izmantojot pēdējo ciparu / atlikumu periodiskumu.
 * SR: Sadala naturālos skaitļus atlikumu klasēs pēc dotā moduļa un lieto šo sadalījumu gan skaitīšanas, gan neiespējamības uzdevumos (piem., kvadrāta atlikums dalot ar 4 ir tikai 0 vai 1).
@@ -168,7 +167,7 @@ Stratēģijas bez pozīciju pārlases.
 
 ### 6. temats. Kā un kāpēc to pašu saskaitīt divos veidos
 
-Pērnā gada grafu temata turpinājums ar skaitīšanas rakursu — vieglāk pieejams arī tiem, kas grafu tematu nav dzirdējuši.
+Grafu temata variants ar skaitīšanu.
 
 * SR: Attēlo attiecību situācijas ("draudzējas", "savienots ar vadu", "spēlēja pret") ar grafu un lieto rokasspiedienu lemmu: nepāra pakāpes virsotņu skaits ir pāra skaitlis.
 * SR: Saskaita vienu lielumu divos veidos (pa rindām un kolonnām; pa dalībniekiem un pa pāriem) un no iegūtās vienādības vai nevienādības izdara secinājumu.
@@ -184,41 +183,44 @@ Garumu salīdzināšanas uzdevumi plaknē.
 * SR: Novērtē lauztu līniju, perimetru un nogriežņu summu garumus.
 * SR: Lieto sakarību "lielākajam leņķim pretī atrodas lielākā mala".
 
-**Piemēri:** [LV.NOL.2024.7.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.3) (AC garuma iespējamās vērtības četru punktu konfigurācijā), [LV.NOL.2022.8.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2022.8.3) (pierādīt 3AC > AB vienādsānu trijstūrī).
+**Piemēri:** [LV.NOL.2024.7.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.3) ($AC$ garuma iespējamās vērtības četru punktu konfigurācijā), [LV.NOL.2022.8.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2022.8.3) (pierādīt $3AC > AB$ vienādsānu trijstūrī).
 
 ### 8. temats. Taisnes, koordinātas un laukumi
 
-Tieša sasaiste ar 8. klases standartkursa lineāro funkciju — parāda, kā skolas viela kļūst par olimpiādes instrumentu; 7. klases skolēniem lineārās funkcijas pamatus dod nodarbības A bloka paraugpiemērs.
+Sasaiste ar lineāro funkciju (tiem, kam tā bijusi). 7. klasē lineāro funkciju saprot no konkrētiem piemēriem.
 
 * SR: Atrod taišņu krustpunktus un attēlo uzdevuma konfigurāciju koordinātu plaknē.
 * SR: Aprēķina daudzstūra laukumu koordinātu plaknē, sadalot figūru taisnstūros un trijstūros vai izmantojot aptverošo taisnstūri.
-* SR: Lieto laukumu attiecības caur kopīgu pamatu vai augstumu un pazīst vienlielas (bet ne vienādas) figūras.
+* SR: Lieto laukumu attiecības caur kopīgu pamatu vai augstumu, pazīst vienlielas (bet ne vienādas) figūras.
+* SR: Lieto Pīka formulu figūru laukumiem rūtiņu plaknē.
 
 Piemēri: [LV.NOL.2022.7.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2022.7.1) (četrstūra laukums starp taisnēm), [LV.AMO.2022A.8.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022A.8.1) (trijstūris starp taišņu krustpunktiem un asīm).
 
-### 9. temats. Loģikas uzdevumi: Vienmēr runāt patiesību un vienmēr melot
+### 9. temats. Loģikas uzdevumi: Ko nozīmē vienmēr melot
 
-Jauns temats — loģiska gadījumu analīze, kas trenē to pašu pamatojuma disciplīnu bez tehniskām priekšzināšanām (labi noder arī nodarbībām ar jauktu sastāvu).
+Loģiska gadījumu analīze; tsk. uzdevumi par tiem, kuri vienmēr saka patiesību un tiem, kuri vienmēr melo.
 
-* SR: Veic gadījumu analīzi pēc pieņēmuma ("pieņemsim, ka X saka patiesību...") un katru zaru noved vai nu līdz pretrunai, vai konsekventam scenārijam.
-* SR: Pamato, ka atrasti visi iespējamie scenāriji, t. i., apvieno gadījumu analīzi ar pilnās pārlases pierakstu.
-* SR: Sistematizē informāciju tabulā un pazīst pašreferences apgalvojumu ("es esmu melis") īpatnības.
+* SR: Veic gadījumu analīzi ("pieņemsim, ka $X$ saka patiesību..."; "pieņemsim, ka izpildās apgalvojums $A$")
+  un katru zaru noved līdz pretrunai vai iespējamam scenārijam.
+* SR: Pamato, ka atrasti visi iespējamie scenāriji, saprotami pieraksta pilno pārlasi.
+* SR: Izmanto patiesuma tabulas; tiek galā ar apgalvojumiem kā "es vienmēr meloju", 
+  "ja šodien ir trešdiena, tad rīt ir sestdiena", u.c.
 
 Piemēri: [LV.AMO.2022B.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022B.7.5), [LV.AMO.2022B.8.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022B.8.5), [LV.AMO.2023.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.7.5) un [LV.AMO.2023.8.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.8.5)
 
-### 10. temats. Vienādojumi veselos skaitļos un skaitļu konstrukcijas
+### 10. temats. Vienādojumi veselos skaitļos: Kā konstruēt skaitli atbilstoši prasībām
 
-Algebriskie pārveidojumi un ciparu pieraksts ar skaitļu teoriju.
+Algebriskie pārveidojumi un ciparu pieraksts kopā ar skaitļu teoriju.
 
-* SR: Risina vienādojumus veselos skaitļos, sadalot reizinātājos un veicot sakārtotu dalītāju pārlasi (ievērojot arī negatīvos dalītājus un simetriju).
-* SR: Ierobežo atrisinājumu meklēšanas apgabalu ar novērtējumiem (augšanas ātruma salīdzināšana, atlikumu analīze) un tikai tad pārlasa atlikušos gadījumus.
-* SR: Konstruē skaitļus ar prasītām ciparu un dalāmības īpašībām un pamato konstrukcijas optimalitāti vai vienīgumu.
+* SR: Risina vienādojumus veselos skaitļos, dalot reizinātājos un ar dalītāju pārlasi. Ja vajag, izmanto negatīvos dalītājus un dalītāju simetriju (ja $N = ab$, tad skaitļa $N$ dalītājam $a$ ir simetriskā pārī dalītājs $b$).
+* SR: Ierobežo atrisinājumu apgabalu (ar nevienādībām, atlikumiem) un tikai tad pārlasa atlikušos gadījumus.
+* SR: Izveido skaitļus ar prasītām ciparu un dalāmības īpašībām; pamato kāpēc konstrukcija ir vienīgā vai optimālā.
 
 **Piemēri:** [LV.NOL.2019.7.4](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2019.7.4) (risināt $ab(a+5b)=150015$ veselos skaitļos), [LV.AMO.2022B.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022B.8.2) (punktu kopsummas iespējamās vērtības), [LV.AMO.2023.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.8.2) (atrast skaitli atbilstoši nosacījumiem).
 
 
 
-
+## Sasniegumu mērīšana un vērtēšana
 
 
 
