@@ -95,7 +95,7 @@ Visu kursa tematu apguvei būtiskas šādi caurviju zināšanas:
 
 ## Mācību saturs
 
-### 1. temats. Atrisinājumu struktūras
+### 1. temats. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde
 
 Ievieš jautājumu tipus un atbilstošās atrisinājumu struktūras, 
 ko izmanto turpmākajos tematos.
@@ -155,7 +155,7 @@ Decimālpieraksta un virkņu temati: dalāmības pazīmes, gadījumu šķirošan
 **Piemēri:** [LV.NOL.2024.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.2) (dalāmība ar 18), [LV.NOL.2022.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2022.7.2) (ko garantē ciparu summas dalāmība ar 27), [LV.AMO.2023.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.7.2) (septiņciparu skaitlis ar nosacījumiem).
 
 
-### 5. temats. Spēles: simetrijas un pārošanas stratēģijas
+### 5. temats. Spēles: Stratēģijas ar simetriju vai pāra atrašanu
 
 Stratēģijas bez pozīciju pārlases.
 
@@ -175,7 +175,7 @@ Grafu temata variants ar skaitīšanu.
 
 **Piemēri:** [LV.NOL.2023.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2023.7.2) (90 lampiņas ar tieši 5 vadiem katrai), [LV.NOL.2023.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2023.8.2), [LV.AMO.2024.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2024.7.5), [LV.AMO.2024.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2024.8.2).
 
-### 7. temats. Trijstūra nevienādība un garumu novērtējumi
+### 7. temats. Attālumi, punktu un taišņu sistēmas
 
 Garumu salīdzināšanas uzdevumi plaknē.
 
@@ -222,5 +222,99 @@ Algebriskie pārveidojumi un ciparu pieraksts kopā ar skaitļu teoriju.
 
 ## Sasniegumu mērīšana un vērtēšana
 
+TBD
 
 
+## Plānoto rezultātu apraksts
+
+Vēlamie galaiznākumi atbilstoši kursa mērķim.
+
+1. Matemātikas jēdzieni un piemēri:
+a.
+Teorijas kopsavilkumi: Dalībnieki prot lietot darba lapās definētos jēdzienus (vai
+nu izmantojot teorijas špikeri vai arī no galvas). Pārbaudām nevis spēju noskaitīt
+definīciju, bet korekti saprast jēdzienu, ja tas parādās uzdevumā vai citā tekstā,
+ieskaitot neparastākus robežgadījumus.
+b. Tipiskie piemēri: Katram jēdzienam (piemēram, periodiska virkne, funkcija,
+vienādsānu trijstūris) dalībnieki prot atrast dažus raksturīgus piemērus – uzzīmēt
+vai īsi paskaidrot.
+2. Matemātiskās izziņas metodes:
+a.
+Matemātiskais radošums: Katrs no dalībniekiem vai nu klasē vai mājās sagatavo
+risinājumu kādam uzdevumam, kura metode (risināšanas procedūra) nav iepriekš
+zināma. Risinājumu izstāsta pie tāfeles.
+b. Matemātisko pamatojumu struktūras: Par katru struktūru mācību gada laikā
+atrisināti uzdevumi – pie tam dažādās nedēļās, lai nodrošinātu labāku atcerēšanos
+(struktūras ir – matemātiskās indukcijas metode, vidējās vērtības metode un
+Dirihlē princips, ekstremālā elementa metode, invarianta metode, pierādījumi no
+pretējā, uzdevuma interpretācija citos jēdzienos, papildkonstrukcijas ģeometrijā
+vai kombinatorikā, pārveidojumi).
+c.
+Iepazītas loģikas metodes: Dalībnieki prot pazīt dažas vienkāršas spriedumu
+kļūdas.
+3. Intuīcija, iztēle, uzmanība:
+a.
+Skaitliskā intuīcija un uzmanība: Dalībnieki klātienē vai mājās izpilda
+Socrative testiņu par apgūtajām tēmām, nepielaiž daudz neuzmanības kļūdu.
+b. Ģeometriskā iztēle: Dalībnieki māk zīmēt uz nesagrafētas tāfeles dažādas figūras
+– daudzstūrus (ar jebkuru malu skaitu no 3 līdz 20), regulārus un neregulārus
+daudzstūrus, lauztas līnijas (slēgtas vai vaļējas, ar vai bez posmu krustojumiem),
+apļus un dažādas figūru konfigurācijas.
+4. Komunikācija par matemātiku:
+a.
+Lasītprasme: Dalībnieki spēj izlasīt uzdevuma sākotnējo tekstu, to pareizi
+interpretē, pievieno zīmējumus un atbild uz jautājumiem. Viņi to dara, balstoties
+uz doto tekstu, nevis skolotāja paskaidrojumiem.
+b. Spēja stāstīt pie tāfeles: Katrs dalībnieks pulciņā 1 gada laikā kaut ko stāsta pie
+tāfeles.
+5. Izziņas ieradumi un vērtības:
+a.
+Savstarpējā cieņa un patiesības mīlestība: Dalībnieki klausās savus kolēģus –
+runātājus pie tāfeles, pieklājīgi uzdod jautājumus vai ceļ iebildumus.
+b. Dalība olimpiādēs: Mācību gada laikā katrs pulciņa dalībnieks piedalās kādā
+olimpiādē vai konkursā (vai arī citādi sagatavojas kādam nelielam ar matemātiku
+saistītam projektiņam pēc savas izvēles).
+c.
+Darbs grupās: Dalībnieki māk risināt uzdevumus (vai komplektus) grupās, dala
+pienākumus, noformē risinājumus. To dara vai nu konkursos kā “Atvērtā kopa”
+vai arī kaut ko risina grupās nodarbību laikā.
+
+
+
+
+# Mācību darba organizācija
+
+Nodarbības “Matemātikas pulciņā 7. un 8.klasēm” nodarbības apvieno teoriju, ko parasti izklāsta
+pirmajās 10 minūtēs un praktisku uzdevumu risināšanu vai piemēru demonstrēšanu un
+apspriešanu (pārējais laiks – aptuveni 80 minūtes) – parasti uzdevumu rēķināšana melnrakstā,
+stāstīšana pie tāfeles un jautājumi. Ģeometrijā ir iespējams arī kaut kas līdzīgs laboratorijas
+darbiem, piemēram, vingrinoties zīmēt ģeometriskus attēlus ar brīvu roku.
+Papildus iknedēļas nodarbībām ir arī olimpiādes (Atklātā olimpiāde un Valsts olimpiādes
+2.posms)
+
+
+## Programmas materiālais un finansiālais nodrošinājums
+
+Āvģ skolas dibinātājs ir Rīgas pilsētas pašvaldība. Neko atšķirīgu
+no parastas skolas infrastruktūras (tāfele, lupata, projektors vai interaktīvā tāfele) 
+fakultatīvam nevajag.
+Nodarbībās izmantojam arī darba lapas; varētu būt arī uzskates līdzekļi, 
+kurus uz nodarbību atnes skolotājs.
+
+## Programmas īstenošanai nepieciešamā personāla saraksts
+
+Programmas visu darbību īstenošanai (mācību materiālu izveidei, nodarbību vadīšanai un
+administratīvajiem pienākumiem) vajadzīgs viens cilvēks ar augstāko izglītību matemātikā, citā
+saistītā jomā vai pedagoģijā. Nodarbības var papildināt ar vieslektoriem.
+
+
+## Izmantotā literatūra un mācību līdzekļi
+
+* [Einberga, 2023](https://www.nms.lu.lv/fileadmin/user_upload/lu_portal/projekti/nms.lu.lv/Gramatas/Tematiskie/GRAMATA_atjaunots_matem_olimp_uzd_macibu_procesa_5-9kl.pdf) Einberga G.B., Avotiņa, M., Zīlīte, A. Matemātikas olimpiāžu
+uzdevumu iekļaušana mācību procesā un fakultatīvajās nodarbībās 5.-9. klasei. Latvijas
+universitāte, 2023.
+* [LU NMS, 2026](https://www.nms.lu.lv/arhivs-un-materali/materiali/teorijas-materiali/) Novada un Atklāto matemātikas olimpiāžu tēmas.
+* [Polya, 1957](https://math.hawaii.edu/home/pdf/putnam/PolyaHowToSolveIt.pdf) Polya, G.. How to solve it: A new aspect of mathematical method (2nd ed.).
+Princeton University Press, 1957.
+* [Rīgas IIMC, 2024](https://www.intereses.lv/ieteikumi-interesu-izglitibas-macibu-programmas-izveidei/). Rīgas Interešu izglītības metodiskais centrs. Ieteikumi interešu izglītības programmas izstrādei un prasības programmas noformēšanai.
+* [Zeitz, 2006](https://kheavan.wordpress.com/wp-content/uploads/2010/06/paul-zeitz-author-the-art-and-craft-of-problem-solving-2edwiley20060471789011.pdf) Zeitz, P. The art and craft of problem solving (2nd ed.). John Wiley & Sons Inc. 2006.
