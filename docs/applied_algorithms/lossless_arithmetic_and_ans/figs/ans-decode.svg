@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 664 396" width="664" height="396" role="img" aria-label="rANS: atkodesana">
-<title>rANS: atkodesana</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 664 396" width="664" height="396" role="img" aria-label="rANS: atkodēšana">
+<title>rANS: atkodēšana</title>
 <rect x="0" y="0" width="664" height="396" fill="#ffffff"/>
 <defs>
   <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -48,6 +48,6 @@
 <rect x="286" y="274" width="34" height="22" rx="3" fill="#e8e2dc" stroke="#9C755F" stroke-width="1.2"/>
 <text x="303" y="292" font-family="DejaVu Sans Mono, Consolas, Menlo, monospace" font-size="15" fill="#4a382c" text-anchor="middle" font-weight="bold">$</text>
 <text x="366" y="292" font-family="DejaVu Sans Mono, Consolas, Menlo, monospace" font-size="13.5" fill="#333" text-anchor="start" font-weight="normal" xml:space="preserve">1·0 + 9 − 9  =  0</text>
-<text x="20" y="326" font-family="DejaVu Sans, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#B22222" text-anchor="start" font-weight="normal">x = 0  →  bija beigu marķieris $, atkodēšanu beidzam.</text>
+<text x="20" y="326" font-family="DejaVu Sans, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#B22222" text-anchor="start" font-weight="normal">x = 0  →  viss ziņojums atkodēts, stāvoklis atgriezies sākumā.</text>
 <text x="20" y="352" font-family="DejaVu Sans, Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" fill="#16324f" text-anchor="start" font-weight="bold">Atkodētais ziņojums:  G A C G U $</text>
 </svg>

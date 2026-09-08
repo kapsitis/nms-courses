@@ -185,83 +185,60 @@ $$
 f(i) = c(1) + \ldots + c(i-1),\;\; \mbox{katram $i \in [1;m]$}
 $$
 
-Visu skaitu summa $T = c(1) + \ldots + c(m)$.
+Visu skaitu summa $T = c(1) + \ldots + c(m)$, un $R = 2^k$ ir reģistra izmērs (praksē $k = 16$ vai $32$).
 
-$\textsf{IntArithmeticCode}(\text{file}, k, n)$
-1. $R = 2^k$
-2. $l = 0$
-3. $u = R - 1$
-4. $m = 0$
-5. **for** $i = 1$ **to** $n$:
-6. $\quad s = u - l + 1$
-7. $\quad u = l + \left\lfloor \left(s \cdot f_i(v_i + 1) \right)/T \right\rfloor - 1$
-8. $\quad l = l + \left\lfloor \left(s \cdot f_i(v_i) \right)/T \right\rfloor$
-9. $\quad$ **while** $\textsf{True}$:
-10. $\quad\quad$ **if** $(l \geq \frac{R}{2})$ $\quad$ *// intervāls augšējā pusē*
-11. $\quad\quad\quad \textsf{WriteBit}(1)$
-12. $\quad\quad\quad u = 2u - R + 1 \quad l = 2l - R$
-13. $\quad\quad\quad$ **for** $j = 1$ **to** $m$: $\textsf{WriteBit}(0)$
-14. $\quad\quad\quad m = 0$
-15. $\quad\quad$ **else if** $(u < \frac{R}{2})$ $\quad$ *// intervāls apakšējā pusē*
-16. $\quad\quad\quad \textsf{WriteBit}(0)$
-17. $\quad\quad\quad u = 2u + 1 \quad l = 2l$
-18. $\quad\quad\quad$ **for** $j = 1$ **to** $m$: $\textsf{WriteBit}(1)$
-19. $\quad\quad\quad m = 0$
-20. $\quad\quad$ **else if** $(l \geq \frac{R}{4} \;\;\text{and}\;\; u < \frac{3R}{4})$ $\quad$ *// intervāls pa vidu*
-21. $\quad\quad\quad u = 2u - \frac{R}{2} + 1 \quad l = 2l - \frac{R}{2}$
-22. $\quad\quad\quad m = m + 1$
-23. $\quad\quad$ **else** **continue**
-24. $\quad$ **end while**
-25. **end for**
-26. **if** $(l \geq \frac{R}{4})$ $\quad$ *// izvada pēdējos bitus*
-27. $\quad \textsf{WriteBit}(1)$
-28. $\quad$ **for** $j = 1$ **to** $m$: $\textsf{WriteBit}(0)$
-29. $\quad \textsf{WriteBit}(0)$
-30. **else**
-31. $\quad \textsf{WriteBit}(0)$
-32. $\quad$ **for** $j = 1$ **to** $m$: $\textsf{WriteBit}(1)$
-33. $\quad \textsf{WriteBit}(1)$
+**Trīs mērogošanas gadījumi**
+
+Visa algoritma sarežģītība slēpjas vienā vietā: intervāls $[l;u]$ nedrīkst kļūt tik šaurs, ka veselo skaitļu aritmētikā tas "saplok". Tāpēc pēc katra simbola intervālu mērogo divkārši, kamēr tas vairs neietilpst nevienā no trim gadījumiem:
+
+* $u < R/2$ -- intervāls ir apakšējā pusē, tātad rezultāta nākamais bits noteikti ir $0$;
+* $l \geq R/2$ -- intervāls ir augšējā pusē, nākamais bits noteikti ir $1$;
+* $R/4 \leq l$ un $u < 3R/4$ -- intervāls ir pa vidu; **vēl nezinām**, kāds bits būs nākamais, bet zinām, ka pēc tā sekos pretējais bits. Tādus "atliktos" bitus saskaitām mainīgajā $m$ un izvadām vēlāk.
+
+$\textsf{Emit}(b, m)$ $\quad$ *// izvada bitu $b$ un tam sekojošus $m$ pretējos bitus*
+1. $\textsf{WriteBit}(b)$
+2. **for** $j = 1$ **to** $m$: $\textsf{WriteBit}(1 - b)$
+
+$\textsf{Arithmetic-Encode}(x_1 x_2 \ldots x_n, f, T, k)$
+1. $l = 0$; $\;\;u = R - 1$; $\;\;m = 0$
+2. **for** $i = 1$ **to** $n$
+3. $\quad s = u - l + 1$
+4. $\quad u = l + \left\lfloor s \cdot f(x_i + 1)/T \right\rfloor - 1$
+5. $\quad l = l + \left\lfloor s \cdot f(x_i)/T \right\rfloor$
+6. $\quad$ **while** $\textsf{True}$
+7. $\quad\quad$ **if** $u < R/2$ **then** $\textsf{Emit}(0, m)$; $\;m = 0$
+8. $\quad\quad$ **elseif** $l \geq R/2$ **then** $\textsf{Emit}(1, m)$; $\;m = 0$; $\;l = l - R/2$; $\;u = u - R/2$
+9. $\quad\quad$ **elseif** $l \geq R/4$ **and** $u < 3R/4$ **then** $m = m + 1$; $\;l = l - R/4$; $\;u = u - R/4$
+10. $\quad\quad$ **else** **break**
+11. $\quad\quad l = 2l$; $\;\;u = 2u + 1$
+12. **if** $l \geq R/4$ **then** $\textsf{Emit}(1, m+1)$ **else** $\textsf{Emit}(0, m+1)$ $\quad$ *// noslēgums*
+
+Visos trijos gadījumos vispirms atņem attiecīgo nobīdi ($0$, $R/2$ vai $R/4$), un tikai pēc tam 11.rindiņā notiek pati divkāršošana -- tāpēc trīs gadījumi izskatās gandrīz vienādi.
 
 ### Atspiešanas algoritms
 
-$\textsf{IntArithmeticDecode}(\text{file}, k, n)$
-1. $R = 2^k$
-2. $l = 0 \quad \text{// sequence interval}$
-3. $u = R - 1 \quad \text{// sequence interval}$
-4. $l_b = 0 \quad \text{// code interval}$
-5. $u_b = R - 1 \quad \text{// code interval}$
-6. $j = 1 \quad \text{// message number}$
-7. **while** $j \leq n$ **do**:
-8. $\quad s = u - l + 1$
-9. $\quad i = 0$
-10. $\quad \text{do} \quad \text{// find if the code interval is within one of the message intervals}$
-11. $\quad \quad i = i + 1$
-12. $\quad \quad u' = l + \left\lfloor \left( s \cdot f_j(i + 1) \right) / T_j \right\rfloor - 1$
-13. $\quad \quad l' = l + \left\lfloor \left( s \cdot f_j(i) \right) / T_j \right\rfloor$
-14. $\quad \text{while} \ i \leq m_j \ \text{and not} \left( (l_b \geq l') \ \text{and} \ (u_b \leq u') \right):$
-15. $\quad \quad i = i + 1$
-16. $\quad \text{if} \ i \gt m_j\ \text{then}\ \quad \text{// halve the size of the code interval by reading a bit}$
-17. $\quad \quad b = \textsf{ReadBit}(\text{file})$
-18. $\quad \quad s_b = u_b - l_b + 1$
-19. $\quad \quad l_b = l_b + b \frac{s_b}{2}$
-20. $\quad \quad u_b = l_b + s_b / 2 - 1$
-21. $\quad \text{else}:$
-22. $\quad \quad \textsf{Output}(i) \quad \text{// output the message in which the code interval fits}$
-23. $\quad \quad u = u' \ \quad l = l' \quad \text{// adjust the sequence interval}$
-24. $\quad \quad j = j + 1$
-25. $\quad \text{while true}:$
-26. $\quad \quad \text{if} \ (l \geq \frac{R}{2}): \quad \text{// sequence interval in top half}$
-27. $\quad \quad \quad u = 2u - R + 1 \quad l = 2l - R$
-28. $\quad \quad \quad u_b = 2u_b - R + 1 \ \quad l_b = 2l_b - R$
-29. $\quad \quad \text{else if} \ (u < \frac{R}{2}): \quad \text{// sequence interval in bottom half}$
-30. $\quad \quad \quad u = 2u + 1 \quad l = 2l$
-31. $\quad \quad \quad u_b = 2u_b + 1 \quad l_b = 2l_b$
-32. $\quad \quad \text{else if} \ (l \geq \frac{R}{4} \ \text{and} \ u < \frac{3R}{4}): \quad \text{// sequence interval in middle half}$
-33. $\quad \quad \quad u = 2u - R / 2 + 1 \quad l = 2l - R / 2$
-34. $\quad \quad \quad u_b = 2u_b - R / 2 + 1 \quad l_b = 2l_b - R / 2$
-35. $\quad \quad \text{else continue} \quad \text{// exit inner while loop}$
-36. $\quad \text{end if}$
-37. $\text{end while}$
+Atkodētājs atkārto tieši to pašu intervālu dalīšanu un mērogošanu, tikai papildus glabā *nolasīto* $k$ bitu logu $t$. Zinot $t$ novietojumu intervālā $[l;u]$, var pateikt, kurā apakšintervālā tas iekrīt, tātad kurš simbols bija nosūtīts.
+
+$\textsf{Arithmetic-Decode}(f, T, k, n)$
+1. $l = 0$; $\;\;u = R - 1$
+2. $t = \textsf{ReadBits}(k)$ $\quad$ *// pirmie $k$ biti kā vesels skaitlis*
+3. **for** $i = 1$ **to** $n$
+4. $\quad s = u - l + 1$
+5. $\quad v = \left\lfloor \left( (t - l + 1) \cdot T - 1 \right)/s \right\rfloor$ $\quad$ *// $t$ novietojums skalā $[0;T)$*
+6. $\quad j = \textsf{Find-Symbol}(v)$ $\quad$ *// vienīgais $j$, kuram $f(j) \leq v < f(j+1)$*
+7. $\quad \textsf{Output}(j)$
+8. $\quad u = l + \left\lfloor s \cdot f(j+1)/T \right\rfloor - 1$
+9. $\quad l = l + \left\lfloor s \cdot f(j)/T \right\rfloor$
+10. $\quad$ **while** $\textsf{True}$
+11. $\quad\quad$ **if** $u < R/2$ **then** *(nekas nav jāatņem)*
+12. $\quad\quad$ **elseif** $l \geq R/2$ **then** $l = l - R/2$; $\;u = u - R/2$; $\;t = t - R/2$
+13. $\quad\quad$ **elseif** $l \geq R/4$ **and** $u < 3R/4$ **then** $l = l - R/4$; $\;u = u - R/4$; $\;t = t - R/4$
+14. $\quad\quad$ **else** **break**
+15. $\quad\quad l = 2l$; $\;\;u = 2u + 1$; $\;\;t = 2t + \textsf{ReadBit}()$
+
+Rindiņas 10-15 ir *burtiski* tās pašas, kas kodētāja 6-11, tikai bitu izvadīšanas vietā tiek pārbīdīts $t$. Tāpēc abus algoritmus var pierakstīt ar vienu kopīgu palīgprocedūru, un tieši šī simetrija garantē, ka noapaļošanas kļūdas kodētājā un atkodētājā notiek vienādi.
+
+> *Piezīme:* Ar $k = 16$, skaitiem $c = (3,1,3,2,1)$ un $T = 10$ šis algoritms ziņojumam `GACGU$` izvada tieši bitus $011011101101100$, t.i., to pašu skaitli $\beta = 0.011011101101100_2$, ko iepriekš atradām ar reālo skaitļu aritmētiku.
 
 ### Beigu marķieris
 
@@ -310,7 +287,9 @@ Varbūt iespējamas saspiešanas/atspiešanas instrukcijas uz garākiem vektorie
 
 Aritmētiskais kods glabā *intervālu* $[l;\,l+s)$ -- divus skaitļus, kurus turklāt visu laiku jāreizina un jādala. Asimetriskā skaitīšanas sistēma (*asymmetric numeral systems*, ANS; Jaroslavs Duda, 2009-2014) glabā tikai **vienu naturālu skaitli** $x$, ko sauc par *stāvokli*. Šajā skaitlī ir iekodēta visa līdz šim apstrādātā informācija, un tajā ir aptuveni $\log_2 x$ bitu.
 
-Ideja ir parastās pozicionālās skaitīšanas sistēmas vispārinājums. Ja alfabētā ir $b$ vienādi ticami simboli, tad "pierakstīt vēl vienu ciparu $s$ skaitļa $x$ galā" nozīmē
+Ideja ir parastās pozicionālās skaitīšanas sistēmas vispārinājums. 
+Ja alfabētā ir $b$ simboli ar vienādām varbūtībām, tad 
+"pierakstīt vēl vienu ciparu $s$ skaitļa $x$ galā" nozīmē
 
 $$
 x \;\longmapsto\; b \cdot x + s, \qquad\text{bet cipara izņemšana ir}\qquad
@@ -323,7 +302,8 @@ ANS dara to pašu, tikai **asimetriski**: simbolam ar varbūtību $p(s)$ jāpali
 
 **Frekvenču kvantēšana**
 
-Tāpat kā aritmētiskajam kodam veselos skaitļos, arī šeit varbūtības aizstāj ar veseliem *skaitiem* $f(s)$, kuru summa ir $M$ (praksē $M = 2^k$). Definējam kumulatīvās summas $c(s)$ tāpat kā iepriekš:
+Tāpat kā aritmētiskajam kodam veselos skaitļos, arī šeit varbūtības aizstāj ar veseliem *skaitiem* $f(s)$, kuru summa ir $M$ (parasti izvēlas $M = 2^k$). 
+Definējam kumulatīvās summas $c(s)$ tāpat kā iepriekš:
 
 $$
 M = \sum\limits_{s} f(s), \qquad c(s) = \sum\limits_{t < s} f(t), \qquad p(s) \approx \frac{f(s)}{M}.
@@ -632,6 +612,78 @@ $$
 $$
 b_1 + b_1q + b_1q^2 + b_2q^3 + \ldots = \frac{b_1}{1 - q}.
 $$
+
+$\square$
+
+**2.2. uzdevums (ANS ar rokām):** Alfabētā ir divi simboli $\lbrace \mathtt{A}, \mathtt{B} \rbrace$ ar kvantētajām frekvencēm $f(\mathtt{A}) = 3$, $f(\mathtt{B}) = 1$; tātad $M = 4$, $c(\mathtt{A}) = 0$, $c(\mathtt{B}) = 3$.
+
+* **(a)** Kuri dabiskie skaitļi pieder `A` un kuri -- `B`?
+* **(b)** Uzrakstiet $C(\mathtt{A},x)$, $C(\mathtt{B},x)$ un $D(x)$ iespējami vienkāršā veidā.
+* **(c)** Iekodējiet ziņojumu `ABAA`, sākot ar $x_0 = 4$, un pēc tam atkodējiet iegūto skaitli atpakaļ.
+* **(d)** Cik bitu "maksāja" katrs no četriem simboliem? Salīdziniet ar $\log_2 \frac{1}{p(s)}$.
+
+**Atbilde:**
+
+**(a)** Simbolam `B` pieder tie skaitļi, kuriem $y \equiv 3 \pmod 4$, t.i., $3, 7, 11, 15, \ldots$; visi pārējie ($0,1,2,4,5,6,8,\ldots$) pieder `A`.
+
+**(b)** Tā kā $f(\mathtt{A}) = 3$ un $c(\mathtt{A}) = 0$, bet $f(\mathtt{B}) = 1$ un $c(\mathtt{B}) = 3$:
+
+$$
+C(\mathtt{A},x) = 4\left\lfloor \frac{x}{3} \right\rfloor + (x \bmod 3),
+\qquad C(\mathtt{B},x) = 4x + 3 .
+$$
+
+Atkodēšanai apskata $r = x \bmod 4$: ja $r \leq 2$, tad simbols ir `A` un $x' = 3\lfloor x/4 \rfloor + r$; ja $r = 3$, tad simbols ir `B` un $x' = \lfloor x/4 \rfloor$.
+
+**(c)** ANS ir LIFO, tāpēc simbolus apstrādā secībā `A`, `A`, `B`, `A`:
+
+$$
+4 \;\xrightarrow{\;\mathtt{A}\;}\; 5 \;\xrightarrow{\;\mathtt{A}\;}\; 6
+\;\xrightarrow{\;\mathtt{B}\;}\; 27 \;\xrightarrow{\;\mathtt{A}\;}\; 36 .
+$$
+
+(Piemēram, $C(\mathtt{B}, 6) = 4 \cdot 6 + 3 = 27$ un $C(\mathtt{A}, 27) = 4 \lfloor 27/3 \rfloor + 0 = 36$.) Atkodējot: $36 \bmod 4 = 0 \Rightarrow$ `A`, $x' = 3 \cdot 9 = 27$; tālāk $27 \bmod 4 = 3 \Rightarrow$ `B`, $x' = 6$; pēc tam $6 \bmod 4 = 2 \Rightarrow$ `A`, $x' = 5$; visbeidzot $5 \bmod 4 = 1 \Rightarrow$ `A`, $x' = 4$. Iznāk `ABAA`, un stāvoklis atgriezies sākuma vērtībā $4$.
+
+**(d)** Attiecīgi $\log_2 \frac{5}{4} = 0.32$, $\log_2 \frac{6}{5} = 0.26$, $\log_2 \frac{27}{6} = 2.17$ un $\log_2 \frac{36}{27} = 0.415$ biti; kopā $\log_2 \frac{36}{4} = \log_2 9 = 3.17$ biti. Ideālās cenas ir $\log_2 \frac{4}{3} = 0.415$ bita simbolam `A` un $\log_2 4 = 2$ biti simbolam `B`, kopā $3.245$ biti. Redzams, ka pie maziem $x$ atsevišķa soļa cena var stipri atšķirties no ideālās, bet, stāvoklim augot, tā tuvojas ideālajai (pēdējais solis $27 \to 36$ jau ir precīzi $0.415$).
+
+$\square$
+
+**2.3. uzdevums (netaisnīga monēta):** Alise met monētu, kas uzkrīt ar `A` ("cipars") varbūtību $3/4$ un ar `B` ("ģerbonis") varbūtību $1/4$, un grib nosūtīt Bobam $100$ metienu rezultātus.
+
+* **(a)** Cik bitu prasa entropija?
+* **(b)** Cik bitu iztērētu Hafmana kods? Kāpēc tas šeit nepalīdz?
+* **(c)** Alise lieto ANS ar tām pašām tabulām, kas 2.2. uzdevumā. Pieņemsim, ka uzkrita tieši $75$ reizes `A` un $25$ reizes `B`. Cik reižu pieaugs stāvoklis $x$, un cik bitu tas ir?
+* **(d)** *(Taustāmais modelis.)* Nokrāsosim skaitļus $3, 7, 11, 15, \ldots$ sarkanus, bet visus pārējos dabiskos skaitļus -- zaļus. Katrā krāsā atsevišķi pārnumurēsim skaitļus, sākot no nulles: zaļie $0,1,2,4,5,6,8,\ldots$ saņem numurus $0,1,2,3,4,5,6,\ldots$, bet sarkanie $3,7,11,15,\ldots$ saņem numurus $0,1,2,3,\ldots$. Pierādiet, ka pāris (krāsa, jaunais numurs) viennozīmīgi nosaka sākotnējo skaitli un otrādi.
+
+**Atbilde:**
+
+**(a)** Viena metiena entropija ir
+
+$$
+H = -\frac{3}{4}\log_2 \frac{3}{4} - \frac{1}{4}\log_2 \frac{1}{4}
+= \frac{3}{4} \cdot 0.415 + \frac{1}{4} \cdot 2 = 0.8113 \;\text{bita},
+$$
+
+tātad $100$ metieniem vajag vidēji $81.13$ bitus.
+
+**(b)** Divu simbolu alfabētam jebkurš prefiksu kods katram metienam piešķir vismaz vienu bitu, tāpēc Hafmana kods iztērē tieši $100$ bitus -- par $19\%$ vairāk nekā entropija. Prefiksu kods principiāli nevar iztērēt $0.415$ bita: veseli biti nedalās.
+
+**(c)** Katrs `A` palielina stāvokli aptuveni $4/3$ reizes, katrs `B` -- aptuveni $4$ reizes, tāpēc
+
+$$
+\frac{x_{\text{beigās}}}{x_0} \approx \left( \frac{4}{3} \right)^{75} \cdot 4^{25},
+$$
+
+$$
+\log_2 \frac{x_{\text{beigās}}}{x_0} \approx 75 \log_2 \frac{4}{3} + 25 \log_2 4
+= 31.13 + 50 = 81.13 \;\text{biti}.
+$$
+
+Tas ir *tieši* tas pats skaitlis, ko deva entropija (a) punktā -- ne nejauši: šeit kvantētās frekvences $3/4$ un $1/4$ sakrīt ar īstajām varbūtībām, tāpēc kvantēšanas zudumu nav vispār. Vienīgie zaudētie biti ir pēdējie 1-2, kad $x$ jāieraksta veselā bitu skaitā.
+
+**(d)** Katram dabiskam skaitlim $y$ apskatām atlikumu $r = y \bmod 4$ un veselo daļu $q = \lfloor y/4 \rfloor$. Ja $r = 3$, tad $y$ ir sarkans un tā jaunais numurs ir $q$; ja $r \in \lbrace 0,1,2 \rbrace$, tad $y$ ir zaļš un tā jaunais numurs ir $3q + r$. Pretējā virzienā: sarkanajam numuram $x$ atbilst $y = 4x + 3$; zaļajam numuram $x$ atbilst $q = \lfloor x/3 \rfloor$, $r = x \bmod 3$ un $y = 4q + r$. Abas formulas viena otru atceļ (dalīšana ar atlikumu ir viennozīmīga), tātad tā ir bijekcija starp $\mathbb{N}$ un kopu $\lbrace \text{sarkans}, \text{zaļš} \rbrace \times \mathbb{N}$.
+
+Šī bijekcija arī **ir** ANS: "zaļš" nozīmē `A`, "sarkans" nozīmē `B`, jaunais numurs ir iepriekšējais stāvoklis, bet pats skaitlis $y$ -- jaunais stāvoklis. Nekāda saspiešana šajā uzdevumā nav vajadzīga -- pietiek ar dalīšanu ar atlikumu.
 
 $\square$
 
