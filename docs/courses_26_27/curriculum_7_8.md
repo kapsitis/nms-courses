@@ -101,16 +101,21 @@ Ievieš jautājumu tipus un atbilstošās atrisinājumu struktūras,
 ko izmanto turpmākajos tematos.
 
 * SR: Atšķir olimpiāžu jautājumu pamattipus — "atrast visus", "vai var?", 
-  "lielākā/mazākā vērtība", "pierādīt", "konstruēt piemēru" (arī "aprakstīt procedūru/spēles stratēģiju"). 
-  Zina katram atbilstošo pilnas atbildes struktūru (piem., "atrast visus" = atrast + pamatot, ka citu nav).
-* SR: Apgalvojumu "var/eksistē" pamato ar konkrētu piemēru, bet "nevar/vienmēr" — ar vispārīgu spriedumu; 
-  optimizācijas uzdevumā uzraksta (konkrētu) optimālo piemēru un (vispārīgu) neiespējamību to uzlabot.
-* SR: Sistemātiski izmanto mazos gadījumus un sakārtotu pilno pārlasi; pieraksta gadījumus tā, lai 
-  lasītājam viegli pārliecināties, ka nekas nav izlaists.
-* SR: Izmanto secību: Saprast (tekstu), izzināt (uzdevuma modeli), lauzt (šķēršļus), 
-  pārskatīt (risinājumu). (*En: Understand → Explore → Attack → Review.*)
+  "lielākā/mazākā vērtība", "pierādīt", "konstruēt piemēru" (arī "aprakstīt 
+  procedūru/spēles stratēģiju"). Zina katram atbilstošo pilnas atbildes struktūru 
+  (piem., "atrast visus" = atrast + pamatot, ka citu nav).
+* SR: Apgalvojumu "var/eksistē" pamato ar konkrētu piemēru, bet "nevar/vienmēr" — 
+  ar vispārīgu spriedumu;  optimizācijas uzdevumā uzraksta (konkrētu) optimālo 
+  piemēru un (vispārīgu) neiespējamību to uzlabot.
+* SR: Sistemātiski izmanto mazos gadījumus un sakārtotu pilno pārlasi; pieraksta 
+  gadījumus tā, lai lasītājam viegli pārliecināties, ka nekas nav izlaists.
+* SR: Izmanto secību: Saprast (tekstu), izpētīt (uzdevuma modeli), īstenot (risināšanas plānu), 
+  atskatīties (uz risinājumu). (*En: Understand → Explore → Attack → Review.*). 
+  Ar lietvārdiem: *Saprašana → Izpēte → Pārformulēšana → Risināšana → Atskats*.
 * SR: Atbildes rakstiska noformēšana: Uzdevumi ar apakšgadījumiem, atrisinājumi vairākās daļās, 
   skaidrība, cik tālu uzrakstīts risinājums.
+
+
 
 **Piemēri:** [LV.NOL.2024.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.2) 
 (atrast lielāko: piemērs + uzlabošanas neiespējamība), 

@@ -8,6 +8,17 @@ permalink: /
 Matemātikas pulciņi 7.-8.klasei un 9.-10.klasei - laiki un telpas
 būs [Interešu grafikā](https://avg.lv/interesu-izglitibas-grafiks/). 
 
+* [7-8.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_7_8/' | relative_url }})
+
+
+## O
+
+* [Matemātikas olimpiāžu programma]({{ '/courses_26_27/common_olympiad_program/' | relative_url }}) - visu zināšanu uzskaitījums, NMS dokumenta kopija. 
+* [Olimpiāžu temati pa klašu grupām (2022.g. izkārtojums)]
+* [Olimpiāžu temati pa klašu grupām (jaunais izkārtojums pēc Marutas programmas parauga)]
+
+
+
 ## 7.-8.kl. nodarbību plāns 
 
 | Nedēļa | Temats: Apraksts |
