@@ -202,10 +202,16 @@ Tipisks gada karkass (R - rudens, P - pavasara semestra nedēļa):
 
 *Par A gadu uzskatām, teiksim, 2027./2028. mācību gadu. Tie atkārtojas ar 2 gadu ciklu.*
 
+Aiz katra temata apraksta norādītas [Olimpiāžu satura standarta]({{ '/common_olympiad_program/olimpiazu_standarts/' | relative_url }})
+tematiskās līnijas (A - algebra, Ģ - ģeometrija, K - kombinatorika,
+S - skaitļu teorija, M - vispārīgās metodes), ko attiecīgais temats īsteno.
+Abu gadu kopējo pārklājumu sk. [pārklājuma tabulā]({{ '/common_olympiad_program/parklajuma_tabula/' | relative_url }}).
+
 ### 1. temats. Atrisinājumu struktūras: Pamatojumi nosedz visus gadījumus
 
 Šo atkārto katru gadu ar citiem uzdevumiem (sal. B gada
 1. tematu): jautājumu tipi un tiem atbilstošās atrisinājumu struktūras.
+*Standarta līnijas: M1, M2, M3, M6, M8.*
 
 * SR: Atšķir olimpiāžu jautājumu pamattipus - "atrast visus", "vai var?",
   "lielākā/mazākā vērtība", "pierādīt", "konstruēt piemēru" - un zina katram
@@ -214,6 +220,11 @@ Tipisks gada karkass (R - rudens, P - pavasara semestra nedēļa):
   ar vispārīgu spriedumu.
 * SR: Sadala risināmo situāciju gadījumos pēc skaidra kritērija un pieraksta
   pārlasi tā, lai lasītājam viegli pārliecināties, ka nekas nav izlaists.
+* SR: Atrastu piemēru vispārina uz patvaļīgu $n$ - apraksta konstrukciju, kas
+  der visiem gadījumiem, nevis tikai izrēķinātajam; parāda, kā no $n$ gadījuma
+  uzbūvēt $n+1$ gadījumu (induktīva konstrukcija bez formāla pieraksta).
+* SR: Ja uzdevums šķiet par grūtu, pāriet uz mazāku vai vienkāršāku gadījumu
+  ($n=2, 3, 4$), no tā izvirza hipotēzi un tikai tad atgriežas pie sākotnējā.
 * SR: Izmanto secību *Saprašana → Izpēte → Pārformulēšana → Risināšana →
   Atskats* un spēj pateikt, kurā solī šobrīd atrodas.
 
@@ -227,11 +238,15 @@ scenāriju pārlase).
 
 Lielumu apraksts ar algebriskām izteiksmēm un paritātes spriedumi procesos.
 (*Līdzīgs B gada 2. temats - krāsojumi, monovarianti.*)
+*Standarta līnijas: A1, A3, K3, S4, M4.*
 
 * SR: Procesā mainīgos lielumus apraksta ar izteiksmēm (gabalu skaits pēc
   griešanas, summa pēc gājiena) un aprēķina, kā lielums mainās vienā solī.
 * SR: Lieto paritātes spriedumus: summas un starpības paritāte, pāra un nepāra
   skaitļu skaits, "paritāte nemainās" kā neiespējamības pamatojums.
+* SR: Pārveido burtu izteiksmes un lieto saīsinātās reizināšanas formulas abos
+  virzienos; zina, ka $a^2 \geq 0$ ar jebkuru $a$, un ar to novērtē izteiksmes
+  vērtību, neaprēķinot to.
 * SR: Atšķir apgalvojumus "tā notiek vienmēr" un "tā var notikt" un izvēlas
   atbilstošo pamatošanas veidu (vispārīgs spriedums vai piemērs).
 
@@ -245,6 +260,7 @@ pārveidojumi - kas saglabājas).
 Vienkāršais un vispārinātais Dirihlē princips kopā ar vidējās vērtības
 spriedumu. (*B gada 3. tematā šo līniju turpina ekstremālā elementa
 metode.*)
+*Standarta līnijas: K2, M5, M7.*
 
 * SR: Lieto vienkāršo Dirihlē principu ($n+1$ truši $n$ būros), patstāvīgi
   izvēloties "trušus" un "būrus" (atlikumu klases, krāsas, plaknes apgabalus).
@@ -262,6 +278,7 @@ komplekta).
 
 Ciparu pieraksts, dalāmības pazīmes un summu izteikšana ar monētām vai
 atsvariem. (*B gada 4. temats turpina ar atlikumu klasēm un pakāpju atlikumiem.*)
+*Standarta līnijas: S1, S2, S3, M5.*
 
 * SR: Pieraksta skaitli izvērstā formā (cipari un desmita pakāpes) un lieto to
   dalāmības pazīmju pamatošanai (ar $3$, $9$, $11$ u.c.).
@@ -280,6 +297,7 @@ monētu nomināli).
 
 Variantu skaitīšanas pamatlikumi un korekti organizēta pārlase.
 (*B gada 6. temats šo domu turpina ar divkāršo skaitīšanu.)
+*Standarta līnijas: K1, M2.*
 
 * SR: Lieto reizināšanas likumu secīgām izvēlēm un saskaitīšanas likumu
   nesavienojamiem gadījumiem; abus likumus apvieno vienā uzdevumā.
@@ -297,6 +315,7 @@ skaitļiem $n^2$ un $n^3$ ir vienāds ciparu skaits), [LV.NOL.2025.7.5](https://
 
 Grafu valoda un vienkāršākās īpašības. 
 (*B gada 6. tematā grafi ar skaitīšanu - rokasspiedienu lemma, divkāršā skaitīšana.*)
+*Standarta līnijas: K4.*
 
 * SR: Pāriet no teksta situācijas ("draudzējas", "savieno taciņas") uz grafa
   zīmējumu un atpakaļ; lieto jēdzienus virsotne, šķautne, virsotnes pakāpe,
@@ -315,6 +334,7 @@ iesildei, no 6. klases komplekta).
 
 Leņķu sakarības un trijstūru vienādība pierādījumu uzdevumos.
 (*B gada ģeometrijas temati (7. un 8.) turpina ar garumu novērtējumiem, koordinātām un laukumiem.*)
+*Standarta līnijas: Ģ1, Ģ2.*
 
 * SR: Lieto blakusleņķu, krustleņķu, paralēlu taišņu un trijstūra/daudzstūra
   leņķu summas sakarības nezināmu leņķu izteikšanai - arī ar
@@ -331,9 +351,13 @@ $AE=AD$).
 ### 8. temats. Rūtiņu plakne: Griešana, salikšana un pārklāšana
 
 Konstruktīvi uzdevumi rūtiņu plaknē. (*Neiespējamību ar krāsojumiem māca B gada 2. tematā, laukumus ar Pīka formulu - B gada 8. tematā.*)
+*Standarta līnijas: Ģ7, Ģ6, Ģ5, M5.*
 
 * SR: Sagriež figūras vienādās daļās un saliek figūras no dotiem gabaliem;
   korekti lieto figūru vienādības jēdzienu (ar pagriešanu un apmešanu otrādi).
+* SR: Lieto ass un centrālo simetriju, paralēlo pārnesi un pagriezienu par
+  $90^\circ$ vai $180^\circ$ kā pierādījuma soli: parāda, ka pēc pārveidojuma
+  viena figūras daļa pārklāj otru.
 * SR: Pirms konstrukcijas meklēšanas pārbauda laukuma un rūtiņu skaita bilanci
   (dalāmības nosacījumus) un lieto to arī neiespējamības pamatošanai.
 * SR: Optimizācijas uzdevumos rūtiņu plaknē uzrāda konstrukciju un pamato
@@ -347,6 +371,7 @@ kvadrātā $10 \times 10$).
 ### 9. temats. Svēršanas un algoritmi: Kā uzzināt vairāk ar mazāk jautājumiem
 
 Lēmumu koki un procedūru apraksti. (*B gada 9. tematā tematu turpina loģikas uzdevumi.*)
+*Standarta līnijas: K6, M2.*
 
 * SR: Apraksta svēršanas vai minēšanas procedūru pa soļiem, ietverot visus
   iespējamos iznākumus (lēmumu koks), nevis tikai "veiksmīgo" scenāriju.
@@ -363,6 +388,7 @@ Lēmumu koki un procedūru apraksti. (*B gada 9. tematā tematu turpina loģikas
 
 Spēļu analīze no beigām. 
 (*B gada 5. tematā spēles turpinās ar simetrijas un pārošanas stratēģijām.*)
+*Standarta līnijas: K5, M2.*
 
 * SR: Analizē spēli no beigu pozīcijām, marķē pozīcijas kā uzvarošas un
   zaudējošas un atrod likumsakarību (parasti pēc atlikumiem).
@@ -380,10 +406,15 @@ $2022$), [LV.NOL.2025.8.4](https://eliozo.dudajevagatve.lv/problem?problemid=LV.
 
 (*Par B gadu uzskatām 2026./2027. mācību gadu. Tie atkārtojas ar 2 gadu ciklu.*)
 
+Aiz katra temata apraksta norādītas [Olimpiāžu satura standarta]({{ '/common_olympiad_program/olimpiazu_standarts/' | relative_url }})
+tematiskās līnijas, ko attiecīgais temats īsteno; kopējo pārklājumu sk.
+[pārklājuma tabulā]({{ '/common_olympiad_program/parklajuma_tabula/' | relative_url }}).
+
 ### 1. temats. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde
 
 Ievieš jautājumu tipus un atbilstošās atrisinājumu struktūras, 
 ko izmanto turpmākajos tematos.
+*Standarta līnijas: M1, M2, M3, M5, M8.*
 
 * SR: Atšķir olimpiāžu jautājumu pamattipus — "atrast visus", "vai var?", 
   "lielākā/mazākā vērtība", "pierādīt", "konstruēt piemēru" (arī "aprakstīt 
@@ -410,6 +441,7 @@ ko izmanto turpmākajos tematos.
 ### 2. temats. Invarianti: Kas saglabājas, veicot atļautos gājienus
 
 Invariantus (nemainīgus lielumus) ilustrē ar rūtiņu/krāsošanas uzdevumiem; izmanto "monovariantus".
+*Standarta līnijas: K3, Ģ7, S4, M4.*
 
 * SR: Procesam (gājienu virknei, pārveidojumu spēlei) formulē atlikuma invariantu un uzraksta neiespējamības pamatojumu ("invarianta vērtība sākumā nevar atšķirties no vērtības beigās").
 * SR: Izvēlas piemērotu krāsojumu (šaha, joslu, trīs krāsu) pārklāšanas, sagriešanas vai apstaigāšanas neiespējamības pamatošanai; formulē invariantu arī krāsošanas uzdevumos.
@@ -424,6 +456,7 @@ Invariantus (nemainīgus lielumus) ilustrē ar rūtiņu/krāsošanas uzdevumiem;
 
 Dirihlē princips kopā ar novērtējuma pierādījumu, izmantojot vidējās vērtības vai 
 ekstremālā elementa metodi. 
+*Standarta līnijas: K2, M5, M7.*
 
 * SR: Lieto vienkāršo un vispārināto Dirihlē principu, patstāvīgi izvēloties "trušus" un "kastes" (atlikumu klases, krāsas, plaknes apgabalus, u.c.).
 * SR: Sāk spriedumu no ekstremālā elementa ("aplūkojam lētāko / lielāko / malējo..."), lai iegūtu novērtējumu.
@@ -435,6 +468,7 @@ ekstremālā elementa metodi.
 ### 4. temats. Dalāmība un atlikumi: Darbības ar dažādu krāsu skaitļiem
 
 Decimālpieraksta un virkņu temati: dalāmības pazīmes, gadījumu šķirošana veselo skaitļu aritmētikā.
+*Standarta līnijas: S1, S2, S3, S4, S6, A5.*
 
 * SR: Aprēķina lielu pakāpju un rekurentu virkņu atlikumus, izmantojot pēdējo ciparu / atlikumu periodiskumu.
 * SR: Sadala naturālos skaitļus atlikumu klasēs pēc dotā moduļa un lieto šo sadalījumu gan skaitīšanas, gan neiespējamības uzdevumos (piem., kvadrāta atlikums dalot ar 4 ir tikai 0 vai 1).
@@ -446,6 +480,7 @@ Decimālpieraksta un virkņu temati: dalāmības pazīmes, gadījumu šķirošan
 ### 5. temats. Spēles: Stratēģijas ar simetriju vai pāra atrašanu
 
 Stratēģijas bez pozīciju pārlases.
+*Standarta līnijas: K5, Ģ6, M3.*
 
 * SR: Definē uzvarošu stratēģiju ("uzvarēt neatkarīgi no pretinieka gājieniem"), atšķir stratēģiju no vienas izspēles piemēra.
 * SR: Konstruē simetrijas stratēģiju un pamato tās korektumu; kāpēc atbildes gājiens vienmēr iespējams.
@@ -456,6 +491,7 @@ Stratēģijas bez pozīciju pārlases.
 ### 6. temats. Divkāršā skaitīšana: Kā un kāpēc to pašu saskaitīt divos veidos
 
 Grafu temata variants ar skaitīšanu.
+*Standarta līnijas: K1, K4, M5.*
 
 * SR: Attēlo attiecību situācijas ("draudzējas", "savienots ar vadu", "spēlēja pret") ar grafu un lieto rokasspiedienu lemmu: nepāra pakāpes virsotņu skaits ir pāra skaitlis.
 * SR: Saskaita vienu lielumu divos veidos (pa rindām un kolonnām; pa dalībniekiem un pa pāriem) un no iegūtās vienādības vai nevienādības izdara secinājumu.
@@ -466,6 +502,7 @@ Grafu temata variants ar skaitīšanu.
 ### 7. temats. Attālumi, punktu un taišņu sistēmas
 
 Garumu salīdzināšanas uzdevumi plaknē.
+*Standarta līnijas: Ģ1, Ģ2.*
 
 * SR: Lieto trijstūra nevienādību (abos virzienos, ar summu vai starpību), pārbauda gadījumu kur visi uz 1 taisnes.
 * SR: Novērtē lauztu līniju, perimetru un nogriežņu summu garumus.
@@ -476,6 +513,7 @@ Garumu salīdzināšanas uzdevumi plaknē.
 ### 8. temats. Taisnes, koordinātas un laukumi
 
 Sasaiste ar lineāro funkciju (tiem, kam tā bijusi). 7. klasē lineāro funkciju saprot no konkrētiem piemēriem.
+*Standarta līnijas: A4, Ģ5, Ģ7.*
 
 * SR: Atrod taišņu krustpunktus un attēlo uzdevuma konfigurāciju koordinātu plaknē.
 * SR: Aprēķina daudzstūra laukumu koordinātu plaknē, sadalot figūru taisnstūros un trijstūros vai izmantojot aptverošo taisnstūri.
@@ -487,6 +525,7 @@ Piemēri: [LV.NOL.2022.7.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV
 ### 9. temats. Loģikas uzdevumi: Ko nozīmē vienmēr melot
 
 Loģiska gadījumu analīze; tsk. uzdevumi par tiem, kuri vienmēr saka patiesību un tiem, kuri vienmēr melo.
+*Standarta līnijas: K7, M2, M4.*
 
 * SR: Veic gadījumu analīzi ("pieņemsim, ka $X$ saka patiesību..."; "pieņemsim, ka izpildās apgalvojums $A$")
   un katru zaru noved līdz pretrunai vai iespējamam scenārijam.
@@ -499,6 +538,7 @@ Piemēri: [LV.AMO.2022B.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=L
 ### 10. temats. Vienādojumi veselos skaitļos: Skaitļi atbilstoši prasībām (visticamāk, nepagūstam)
 
 Algebriskie pārveidojumi un ciparu pieraksts kopā ar skaitļu teoriju.
+*Standarta līnijas: S5, S3, A6, M2.*
 
 * SR: Risina vienādojumus veselos skaitļos, dalot reizinātājos un ar dalītāju pārlasi. Ja vajag, izmanto negatīvos dalītājus un dalītāju simetriju (ja $N = ab$, tad skaitļa $N$ dalītājam $a$ ir simetriskā pārī dalītājs $b$).
 * SR: Ierobežo atrisinājumu apgabalu (ar nevienādībām, atlikumiem) un tikai tad pārlasa atlikušos gadījumus.

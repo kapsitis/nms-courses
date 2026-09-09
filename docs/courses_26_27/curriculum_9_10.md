@@ -255,11 +255,17 @@ olimpiādes tos izrunāt ir vērtīgāk nekā pirms tās trenēties "tukšā".
 pēdējo aptuveni desmit gadu olimpiāžu komplektiem; katram tematam sagatavotajā
 uzdevumu kāpnē to ir vairāk (10-15).*
 
+Aiz katra temata apraksta norādītas [Olimpiāžu satura standarta]({{ '/common_olympiad_program/olimpiazu_standarts/' | relative_url }})
+tematiskās līnijas (A - algebra, Ģ - ģeometrija, K - kombinatorika,
+S - skaitļu teorija, M - vispārīgās metodes), ko attiecīgais temats īsteno.
+Pilnu pārklājumu sk. [pārklājuma tabulā]({{ '/common_olympiad_program/parklajuma_tabula/' | relative_url }}).
+
 ### 1. temats. Atrisinājumu struktūras: Kas ir pilns pierādījums
 
 Jautājumu tipi un tiem atbilstošās atrisinājumu struktūras. Šo tematu māca
 katra gada sākumā, jo dalībnieki katru gadu ir jauni; tas ievieš valodu, ko
 lieto visos pārējos tematos.
+*Standarta līnijas: M1, M2, M3, M4, M5, M6, M8, K7.*
 
 * SR: Atšķir olimpiāžu jautājumu pamattipus - "atrast visus", "vai var?",
   "lielākā/mazākā vērtība", "pierādīt", "konstruēt piemēru", "aprakstīt
@@ -273,6 +279,13 @@ lieto visos pārējos tematos.
 * SR: Sadala risināmo situāciju gadījumos pēc skaidra kritērija un pieraksta
   pārlasi tā, lai lasītājam viegli pārliecināties, ka nekas nav izlaists;
   pārlases apjomu vispirms samazina ar novērtējumu.
+* SR: Raksta pierādījumu no pretējā: formulē pieņēmuma noliegumu, iegūst
+  pretrunu ar novērtējumu vai dalāmību; pazīst minimālā pretpiemēra shēmu
+  ("aplūkosim mazāko skaitli, kuram apgalvojums nav spēkā").
+* SR: Konstrukciju apraksta kā bezgalīgu sēriju - dod formulu vai procedūru,
+  kas der visiem $n$, nevis vienu izrēķinātu piemēru.
+* SR: Pieraksta matemātiskās indukcijas pierādījumu ar soli $1$: bāze,
+  induktīvais pieņēmums, pāreja - un saprot, kāpēc bez bāzes pierādījuma nav.
 * SR: Izmanto secību *Saprašana → Izpēte → Pārformulēšana → Risināšana →
   Atskats* (*En: Understand → Explore → Attack → Review*) un spēj pateikt,
   kurā solī šobrīd atrodas.
@@ -288,6 +301,7 @@ pamatojuma tipu), [LV.AMO.2022B.10.2](https://eliozo.dudajevagatve.lv/problem?pr
 
 Algebriskie pārveidojumi kā pierādīšanas instruments, nevis kā rēķināšana.
 Nevienādību pierādīšana bez matemātiskās analīzes.
+*Standarta līnijas: A1, A3.*
 
 * SR: Lieto saīsinātās reizināšanas formulas abos virzienos, arī identitātes
   $a^3 \pm b^3 = (a \pm b)(a^2 \mp ab + b^2)$ un
@@ -318,6 +332,7 @@ Nevienādību pierādīšana bez matemātiskās analīzes.
 Pāreja no dalāmības pazīmēm uz kongruenču valodu $a \equiv b \pmod m$.
 Neiespējamības pierādīšana pēc moduļa ir viena no biežākajām metodēm
 9.-10. klases komplektos.
+*Standarta līnijas: S1, S4, S6, A5, M4.*
 
 * SR: Sadala veselos skaitļus atlikumu klasēs pēc dotā moduļa, rēķina ar
   atlikumiem (saskaita, reizina, kāpina) un saprot, kāpēc dalīšana ar atlikumu
@@ -350,6 +365,7 @@ Neiespējamības pierādīšana pēc moduļa ir viena no biežākajām metodēm
 Ģeometrijas darbarīks, kas 9.-10. klasē aizstāj lielu daļu no 7.-8. klases
 "vienādības pazīmju" spriedumiem. Papildkonstrukcija kā veids, kā līdzību
 ieraudzīt.
+*Standarta līnijas: Ģ2, Ģ6, Ģ1.*
 
 * SR: Pazīst līdzīgus trijstūrus tipiskajās konfigurācijās (paralēla taisne
   nogriež trijstūri; augstums pret hipotenūzu; kopīgs leņķis) un korekti
@@ -361,6 +377,9 @@ ieraudzīt.
   ievieš mainīgo nezināmam garumam un iegūst vienādojumu.
 * SR: Izvēlas papildkonstrukciju (paralēla taisne, malas pagarinājums,
   viduspunktu savienojums, simetrisks punkts) un pamato, kāpēc tā ir iespējama.
+* SR: Lieto simetriju pret taisni īsākā ceļa uzdevumos ("atspoguļo punktu un
+  savieno taisni") un homotētiju - līdzību ar centru - kā veidu, kā vienu
+  konfigurāciju pārvērst par otru.
 
 **Piemēri:** [LV.NOL.2023.9.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2023.9.3)
 (četrstūris ar $CD \parallel BX$ - atrast $AD$),
@@ -379,6 +398,7 @@ ieraudzīt.
 
 Procesi ar atļautajiem gājieniem: neiespējamības pamatošana ar invariantu,
 procesa beigšanās pamatošana ar monovariantu, spēļu stratēģijas.
+*Standarta līnijas: K3, K5, M8.*
 
 * SR: Procesam formulē invariantu (paritāte, summa vai reizinājums pēc moduļa,
   krāsojums) un uzraksta neiespējamības pamatojumu: invarianta vērtība sākumā
@@ -412,6 +432,7 @@ procesa beigšanās pamatošana ar monovariantu, spēļu stratēģijas.
 
 Metodes, ar kurām pamato "tik daudz noteikti ir" vai "vairāk nevar". Šeit
 ietilpst arī divkāršā skaitīšana un grafs kā uzdevuma modelis.
+*Standarta līnijas: K2, K4, K6, K1, M5, M7.*
 
 * SR: Lieto vienkāršo un vispārināto Dirihlē principu, patstāvīgi izvēloties
   "trušus" un "kastes" (atlikumu klases, summu vērtības, plaknes apgabalus);
@@ -426,6 +447,9 @@ ietilpst arī divkāršā skaitīšana un grafs kā uzdevuma modelis.
 * SR: Pāriet no teksta situācijas uz grafa modeli un atpakaļ; lieto jēdzienus
   virsotne, šķautne, pakāpe, sakarīgums, cikls, koks, un zina, ka kokā ar $n$
   virsotnēm ir $n-1$ šķautne.
+* SR: Novērtē, cik informācijas dod viens jautājums vai viena svēršana (divi vai
+  trīs iznākumi), un ar to pamato apakšējo robežu darbību skaitam - kāpēc ar
+  mazāku svēršanu skaitu nepietiek.
 
 **Piemēri:** [LV.AMO.2024.9.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2024.9.2)
 ($28$ skolēnu atzīmes - vispārinātais Dirihlē princips),
@@ -446,6 +470,7 @@ ietilpst arī divkāršā skaitīšana un grafs kā uzdevuma modelis.
 
 Riņķa līnija kā leņķu ķēdes "pastiprinātājs". Temats, bez kura daudzus
 9.-10. klases ģeometrijas uzdevumus nemaz nevar sākt risināt.
+*Standarta līnijas: Ģ4, Ģ1, Ģ3.*
 
 * SR: Lieto ievilktā leņķa teorēmu un tās sekas (leņķi pret vienu hordu; leņķis
   pret diametru ir taisns; centra leņķis ir divreiz lielāks) un korekti tiek
@@ -476,6 +501,7 @@ Riņķa līnija kā leņķu ķēdes "pastiprinātājs". Temats, bez kura daudzus
 
 Skaitļa multiplikatīvā uzbūve: sadalījums pirmreizinātājos, dalītāju skaits un
 vienādojumu risināšana veselos skaitļos.
+*Standarta līnijas: S2, S5, S3, S1, M2.*
 
 * SR: Lieto sadalījuma pirmreizinātājos viennozīmību; no sadalījuma
   $n = p_1^{a_1} \cdots p_k^{a_k}$ aprēķina dalītāju skaitu un atrod mazāko
@@ -508,6 +534,7 @@ vienādojumu risināšana veselos skaitļos.
 
 Laukums kā spriešanas instruments: vienlielas figūras, attiecības caur kopīgu
 augstumu, laukuma bilance sagriešanas un noklāšanas uzdevumos.
+*Standarta līnijas: Ģ5, Ģ7, Ģ3.*
 
 * SR: Lieto laukumu attiecības trijstūriem ar kopīgu augstumu vai kopīgu pamatu;
   no attiecībām uz malām iegūst attiecības starp laukumiem un otrādi.
@@ -537,6 +564,7 @@ un [LV.VOL.2019.9.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.VOL.20
 
 Algebrisku objektu ar parametriem izpēte. Tematu māca mācību gada beigās, kad
 9. klases dalībnieki kvadrātvienādojumu jau ir apguvuši skolas kursā.
+*Standarta līnijas: A2, A4, A6.*
 
 * SR: Pēta kvadrātvienādojumu ar parametru: diskriminants, sakņu skaits,
   gadījums $a=0$ (kad vienādojums vairs nav kvadrātvienādojums) - un neaizmirst
