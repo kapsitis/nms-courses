@@ -45,7 +45,7 @@ parauga) izkārtojumu pa tematiem.
 | 2026-11-27 | **AMO analīze** |
 | 2026-12-04 | Kopsavilkums tematiem 1.-4., individuāls tests |
 | 2026-12-11 | **AMO analīze** |
-| 2026-12-11 | *Aizdomas, ka pēdējo pirmssvētku piektdienu ar kaut ko aizplānos* |
+| 2026-12-18 | *Aizdomas, ka pēdējo pirmssvētku piektdienu ar kaut ko aizplānos* |
 | - | *Ziemas brīvdienas* |
 | 1.ned. | 5. temats. Spēles: Stratēģijas ar simetriju vai pāra atrašanu |
 | 2.ned. | 5. temats. Spēles: Stratēģijas ar simetriju vai pāra atrašanu |
