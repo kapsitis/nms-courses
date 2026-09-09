@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Matemātikas olimpiāžu programma (2022)"
-permalink: /courses_26_27/common_olympiad_program/
+permalink: /common_olympiad_program/index/
 ---
 # Matemātikas olimpiāžu programma (2022)
 

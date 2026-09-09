@@ -54,18 +54,16 @@ Tajā apgūst prasmes rakstiski pamatot savas domas un uzstāties pie tāfeles.
 
 
 Sekmīgai šīs programmas uzsākšanai svarīgi, lai skolēniem jau sākumskolā būtu bijusi iespēja:
-* izprast matemātiskus procesus un citus formalizētus modeļus - pildīt darbības pēc dotā 
-  apraksta pa soļiem, apgūt un stāstīt citiem spēļu noteikumus, vispārināt un secināt. 
-* izmantot dažādus paņēmienus, risinot vienādojumus un nevienādības, un izvēlēties sev
-piemērotāko;
-• veidot izpratni un apgūt sakarības, kas saista taisnleņķa trijstūra elementus;
-• izmantot dažādus paņēmienus, lai spriežot noteiktu figūras laukumu (sadalīšana pazīstamās figūrās,
-papildināšana līdz pazīstamai figūrai, figūras sadalīšana daļās un tās savietošana citādi);
-• formulēt sakarības starp lielumiem dažādos kontekstos (darbības ar skaitļiem, plaknes figūras u. c.);
-• veikt algebriskus pārveidojumus un atrisināt lineārus vienādojumus, kvadrātvienādojumus, lineāras
-nevienādības un kvadrātnevienādības;
-• apgūt ar funkciju saistītos pamatjēdzienus, nolasīt informāciju no funkcijas grafika un uzzīmēt
-funkciju grafikus.
+
+* izprast matemātiskus procesus, pildīt darbības pēc apraksta pa soļiem, 
+  apgūt un stāstīt citiem spēļu noteikumus, vispārināt un secināt.
+* risināt teksta uzdevumus, izmantojot modeļus (ceļš, ātrums, laiks utml.);
+* dažādos veidos noteikt figūras laukumu (sadalīt pazīstamās figūrās, papildināt 
+  līdz pazīstamai figūrai, sadalīt figūru daļās un daļas savienot citādi);
+* formulēt sakarības starp kvalitatīviem un kvantitatīviem lielumiem 
+  dažādos kontekstos - skaitļi, mērvienības, plaknes figūru īpašības; 
+* apgūt ar funkciju saistītos pamatjēdzienus, veidot kombinatoriskas 
+  atbilstības starp objektiem, zīmēt un izmantot grafus kā modeļus.
 
 ### Vispārīgs prasmju un ieradumu saraksts
 
@@ -267,7 +265,7 @@ piedaloties olimpiādēs (skolas, atklātajā, novada, u.c.) un arī
 izmantojot fakultatīva zināšanas citos mācību priekšmetos vai dzīvē, 
 piemēram, loģiski izklāstot savas domas. 
 
-![](calendar.png)
+![](calendar.png){ width=180pt }
 
 
 

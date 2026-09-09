@@ -18,10 +18,10 @@ Laiki un telpas pēc brīža tiks publicēti arī
 
 ## Plānošanas dokumenti
 
-* [Matemātikas olimpiāžu programma]({{ '/common_olympiad_program/olimpiazu_standarts/' | relative_url }}) - visu zināšanu uzskaitījums, NMS dokumenta kopija. 
+* [Matemātikas olimpiāžu programma]({{ '/common_olympiad_program/index/' | relative_url }}) - visu zināšanu uzskaitījums, [NMS olimpiāžu programmas](https://www.nms.lu.lv/fileadmin/user_upload/lu_portal/projekti/nms.lu.lv/Dazadi/_matematikas_olimpiazu_programma_2022.pdf) dokuments Markdown formā.
 * [Pamatskolas standarts]({{ '/common_olympiad_program/pamatskolas_standarts/' | relative_url }}) - MK noteikumi Nr. 747 Markdown tabulas veidā.
 * [Vidusskolas standarts]({{ '/common_olympiad_program/vidusskolas_standarts/' | relative_url }}) - MK noteikumi Nr. 416 Markdown tabulas veidā.
-* [Olimpiāžu temati pa klašu grupām]({{ '/courses_26_27/olimpiazu_standarts/' | relative_url }}) - standarta veida dokuments: 5.-6., 7.-8., 9.-10. un 11.-12. klases grupa, tēmas sakārtotas spirālē pa nozarēm. Izmanto Skola2030 (īstenībā 2022./2023.g. publicētās programmas 
+* [Olimpiāžu temati pa klašu grupām]({{ '/common_olympiad_program/olimpiazu_standarts/' | relative_url }}) - standarta veida dokuments: 5.-6., 7.-8., 9.-10. un 11.-12. klases grupa, tēmas sakārtotas spirālē pa nozarēm. Izmanto Skola2030 (īstenībā 2022./2023.g. publicētās programmas 
 parauga) izkārtojumu pa tematiem.
 
 
