@@ -16,6 +16,8 @@ Laiki un telpas pēc brīža tiks publicēti arī
 * [9.-10.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_9_10/' | relative_url }})
 * [Informācija vecākiem 9.-10.kl.]({{ '/courses_26_27/for_parents_9_10/' | relative_url }})
 
+*Piezīme.* 9.-10.klašu programmai ir tikai 1 variants; nav atšķirību A un B gados.
+
 ## Plānošanas dokumenti
 
 * [Matemātikas olimpiāžu programma]({{ '/common_olympiad_program/index/' | relative_url }}) - visu zināšanu uzskaitījums, [NMS olimpiāžu programmas](https://www.nms.lu.lv/fileadmin/user_upload/lu_portal/projekti/nms.lu.lv/Dazadi/_matematikas_olimpiazu_programma_2022.pdf) dokuments Markdown formā.
@@ -73,7 +75,6 @@ Vēlams, lai viņiem temati burtiski nepārklātos.
 | 17.ned. | Kopsavilkums: 5-10 tematu atkārtojums, "mini-olimpiāde" vai grupās pildāms tests. |
 
 
-## 7.-8.kl. nodarbību plāns 2027./2028.m.g. (A gads)
 
 ## 9.-10.kl. nodarbību plāns (vienots visiem mācību gadiem)
 
