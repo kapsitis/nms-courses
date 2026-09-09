@@ -227,21 +227,27 @@ sacensības un ar tām saistītie sprinti. Tipisks gada karkass
 | R1-R2 | 1. temats |
 | R3 | Skolas olimpiāde |
 | R4-R9 | 2.-4. temats |
-| R10-R11 | AMO gatavošanās |
-| R12 | AMO analīze |
+| R10 | AMO gatavošanās |
+| R11-R12 | AMO analīze |
 | R13 | Rudens kopsavilkums |
-| P1-P4 | 5.-6. temats |
-| P5-P6 | NOL sprints (2. kārta 9.-12. klasēm ir jau februārī) |
-| P7 | NOL analīze |
-| P8-P13 | 7.-9. temats |
-| P14 | Valsts olimpiādes iesildīšanās; pārējiem "Latvijas kauss" un "Ķengurs" |
-| P15 | Valsts olimpiādes analīze |
-| P16-P17 | 10. temats; pavasara kopsavilkums |
+| P1-P2 | 5. temats |
+| P3-P4 | NOL sprints (2. kārta 9.-12. klasēm ir jau februārī) |
+| P5 | NOL analīze |
+| P6-P11 | 6.-8. temats |
+| P12 | Valsts olimpiādes iesildīšanās; pārējiem "Latvijas kauss" un "Ķengurs" |
+| P13 | Valsts olimpiādes analīze |
+| P14-P17 | 9.-10. temats; pavasara kopsavilkums |
+
+Konkrētas nodarbību nedēļas sk. [sākumlapas]({{ '/' | relative_url }}) sadaļā
+"9.-10.kl. nodarbību plāns".
 
 Salīdzinājumā ar 7.-8. klašu plānu pavasara puse ir sablīvēta agrāk: novada
 olimpiādes 2. kārta 9.-12. klasēm notiek februārī, nevis martā, tāpēc pirms tās
-paspējam apgūt tikai divus jaunus tematus. Turpretī aprīlis 9.-10. klasēs ir
-saturīgāks nekā jaunākajās klasēs, jo notiek valsts olimpiādes 3. kārta.
+paspējam apgūt tikai vienu jaunu tematu, un NOL sprints iekrīt tūlīt pēc ziemas
+brīvdienām. Turpretī aprīlis 9.-10. klasēs ir saturīgāks nekā jaunākajās klasēs,
+jo notiek valsts olimpiādes 3. kārta. AMO gatavošanai atvēlēta viena nedēļa, bet
+analīzei divas: 9. un 10. klases komplektos kopā ir desmit uzdevumi, un pēc
+olimpiādes tos izrunāt ir vērtīgāk nekā pirms tās trenēties "tukšā".
 
 ## Mācību saturs
 

@@ -78,7 +78,47 @@ Vēlams, lai viņiem temati burtiski nepārklātos.
 
 ## 9.-10.kl. nodarbību plāns (vienots visiem mācību gadiem)
 
-TBD
+*Piezīme:* 9.-10.kl. pulciņam nav A un B gadu - tematu saraksts katru gadu ir
+viens un tas pats, mainās tikai uzdevumi. Novada olimpiādes 2. kārta
+9.-12. klasēm notiek aptuveni mēnesi agrāk nekā 7.-8. klasēm, tāpēc
+"NOL gatavošanās" un "NOL analīze" ir pavasara semestra sākumā.
+
+| Nedēļa | Temats |
+|---|---|
+| 2026-09-11 | 1. Atrisinājumu struktūras: kas ir pilns pierādījums |
+| 2026-09-18 | 1. Atrisinājumu struktūras: kas ir pilns pierādījums |
+| 2026-09-25 | 2. Izteiksmes un nevienādības: pilnā kvadrāta metode |
+| 2026-10-02 | 2. Izteiksmes un nevienādības: pilnā kvadrāta metode |
+| 2026-10-09 | 3. Dalāmība, atlikumi un kongruences |
+| 2026-10-16 | 3. Dalāmība, atlikumi un kongruences |
+| - | *Rudens brīvdienas 19.-23. oktobris* |
+| 2026-10-30 | 4. Trijstūru līdzība un Pitagora teorēma |
+| 2026-11-06 | 4. Trijstūru līdzība un Pitagora teorēma |
+| 2026-11-13 | **AMO gatavošanās**. Atklātajai olimpiādei līdzīgi uzdevumi |
+| 2026-11-20 | **AMO gatavošanās**. Atklātajai olimpiādei līdzīgi uzdevumi |
+| - | *AMO, 22.novembrī* |
+| 2026-11-27 | **AMO analīze** |
+| 2026-12-04 | **AMO analīze** (9. un 10. klases komplekti) |
+| 2026-12-11 | Kopsavilkums tematiem 1.-4., individuāls tests |
+| 2026-12-18 | *Aizdomas, ka pēdējo pirmssvētku piektdienu ar kaut ko aizplānos* |
+| - | *Ziemas brīvdienas* |
+| 1.ned. | 5. Invarianti, monovarianti un spēles |
+| 2.ned. | 5. Invarianti, monovarianti un spēles |
+| 3.ned. | **NOL gatavošanās**, novada olimpiādei līdzīgi uzdevumi |
+| 4.ned. | **NOL gatavošanās**, novada olimpiādei līdzīgi uzdevumi |
+| 5.ned. | **NOL analīze** |
+| 6.ned. | 6. Dirihlē princips un ekstremālais elements |
+| 7.ned. | 6. Dirihlē princips un ekstremālais elements |
+| 8.ned. | 7. Riņķa līnija un ievilktie leņķi |
+| 9.ned. | 7. Riņķa līnija un ievilktie leņķi |
+| 10.ned. | 8. Pirmskaitļi, dalītāji, vienādojumi veselos skaitļos |
+| 11.ned. | 8. Pirmskaitļi, dalītāji, vienādojumi veselos skaitļos |
+| 12.ned. | **Valsts olimpiādes iesildīšanās**; pārējiem "Latvijas kauss" un "Ķengurs" |
+| 13.ned. | **Valsts olimpiādes analīze** |
+| 14.ned. | 9. Laukumi un laukumu attiecības |
+| 15.ned. | 9. Laukumi un laukumu attiecības |
+| 16.ned. | 10. Kvadrāttrinoms, progresijas un indukcija |
+| 17.ned. | 10. Kvadrāttrinoms, progresijas un indukcija; pavasara kopsavilkums |
 
 
 ## Īso atbilžu testi
