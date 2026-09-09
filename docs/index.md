@@ -14,19 +14,26 @@ Laiki un telpas pēc brīža tiks publicēti arī
 * [7.-8.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_7_8/' | relative_url }})
 * [Informācija vecākiem 7.-8.kl.]({{ '/courses_26_27/for_parents_7_8/' | relative_url }})
 * [9.-10.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_9_10/' | relative_url }})
-* [Informācija vecākiem 9.-10.kl.]({{ '/courses_26_27/for_parents_7_8/' | relative_url }})
+* [Informācija vecākiem 9.-10.kl.]({{ '/courses_26_27/for_parents_9_10/' | relative_url }})
 
 ## Plānošanas dokumenti
 
 * [Matemātikas olimpiāžu programma]({{ '/common_olympiad_program/index/' | relative_url }}) - visu zināšanu uzskaitījums, [NMS olimpiāžu programmas](https://www.nms.lu.lv/fileadmin/user_upload/lu_portal/projekti/nms.lu.lv/Dazadi/_matematikas_olimpiazu_programma_2022.pdf) dokuments Markdown formā.
 * [Pamatskolas standarts]({{ '/common_olympiad_program/pamatskolas_standarts/' | relative_url }}) - MK noteikumi Nr. 747 Markdown tabulas veidā.
 * [Vidusskolas standarts]({{ '/common_olympiad_program/vidusskolas_standarts/' | relative_url }}) - MK noteikumi Nr. 416 Markdown tabulas veidā.
-* [Olimpiāžu temati pa klašu grupām]({{ '/common_olympiad_program/olimpiazu_standarts/' | relative_url }}) - standarta veida dokuments: 5.-6., 7.-8., 9.-10. un 11.-12. klases grupa, tēmas sakārtotas spirālē pa nozarēm. Izmanto Skola2030 (īstenībā 2022./2023.g. publicētās programmas 
-parauga) izkārtojumu pa tematiem.
+* [Olimpiāžu temati pa klašu grupām]({{ '/common_olympiad_program/olimpiazu_standarts/' | relative_url }}) - atsevišķi 5.-6., 7.-8., 9.-10. un 11.-12. klašu grupās apgūstamās lietas, izklāsts spirālveidīgi atgriežas pie agrākajiem tematiem. Izmanto Skola2030 (īstenībā [2023.g. publicētās programmas 
+parauga](https://mape.gov.lv/catalog/materials/AAAB8194-FF4F-4A89-835F-2DCBC1611D24/view)) izkārtojumu pa tematiem un [NMS arhīvu](https://www.nms.lu.lv/arhivs-un-materali/uzdevumu-arhivs/olimpiazu-uzdevumu-arhivs/).
+* [Olimpiāžu standarta 7.-10.kl.: pārklājuma tabula]({{ '/common_olympiad_program/parklajuma_tabula/' | relative_url }})
+* **Nav vēl izdarīts:** Olimpiāžu temati pa klašu grupām tā, lai atbilstu 
+[2026.g. publicētās programmas parauga](https://mape.gov.lv/catalog/materials/21A3C087-BE0A-4B66-9E47-AE98A0F56EC9/view) izkārtojumu pa tematiem.
 
 
 
-## 7.-8.kl. nodarbību plāns 
+## 7.-8.kl. nodarbību plāns 2026./2027.m.g. (B gads)
+
+*Piezīme:* Nepāru gados sākto 7.-8.kl. pulciņa plānus saucam par "A gadu". 
+Var gadīties, ka ir dalībnieki, kuri apmeklē fakultatīvu gan septītajā, gan astotajā klasē. 
+Vēlams, lai viņiem temati burtiski nepārklātos.
 
 | Nedēļa | Temats: Apraksts |
 |---|---|
@@ -66,7 +73,9 @@ parauga) izkārtojumu pa tematiem.
 | 17.ned. | Kopsavilkums: 5-10 tematu atkārtojums, "mini-olimpiāde" vai grupās pildāms tests. |
 
 
-## 9.-10.kl. nodarbību plāns 
+## 7.-8.kl. nodarbību plāns 2027./2028.m.g. (A gads)
+
+## 9.-10.kl. nodarbību plāns (vienots visiem mācību gadiem)
 
 TBD
 
