@@ -145,3 +145,6 @@ avg-pulcins-2025/temp/*
 sources/*
 !sources/warmup_exercises.md
 
+docs/LV.AMO/*
+docs/LV.NOL/*
+docs/LV.VOL/*

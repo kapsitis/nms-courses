@@ -11,11 +11,11 @@ būs [Interešu grafikā](https://avg.lv/interesu-izglitibas-grafiks/).
 * [7-8.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_7_8/' | relative_url }})
 
 
-## O
+## Dažādi citi dokumenti
 
 * [Matemātikas olimpiāžu programma]({{ '/courses_26_27/common_olympiad_program/' | relative_url }}) - visu zināšanu uzskaitījums, NMS dokumenta kopija. 
-* [Olimpiāžu temati pa klašu grupām (2022.g. izkārtojums)]
-* [Olimpiāžu temati pa klašu grupām (jaunais izkārtojums pēc Marutas programmas parauga)]
+* [Olimpiāžu temati pa klašu grupām (2022.g. izkārtojums)]({{ '/courses_26_27/olimpiazu_standarts/' | relative_url }}) - standarta veida dokuments: 5.-6., 7.-8., 9.-10. un 11.-12. klases grupa, tēmas sakārtotas spirālē pa nozarēm.
+* TBD: Olimpiāžu temati pa klašu grupām (jaunais izkārtojums pēc Marutas programmas parauga)
 
 
 
