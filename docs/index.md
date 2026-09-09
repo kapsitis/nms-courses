@@ -6,7 +6,7 @@ permalink: /
 # Matemātikas fakultatīvs
 
 * 7.-8.klases pulciņš: **Piektdienās, 13:20, 111.telpā**;
-* 9.-10.klases pulciņš: **Piektdienās, 13:20, 111.telpā**.
+* 9.-10.klases pulciņš: **Piektdienās, 14:50, 111.telpā**.
 
 Laiki un telpas pēc brīža tiks publicēti arī
 [Interešu grafikā](https://avg.lv/interesu-izglitibas-grafiks/). 

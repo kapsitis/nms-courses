@@ -227,7 +227,21 @@ Algebriskie pārveidojumi un ciparu pieraksts kopā ar skaitļu teoriju.
 
 ## Sasniegumu mērīšana un vērtēšana
 
-TBD
+Minimālais nosacījums pulciņa apmeklētībai - izdarīt kaut ko derīgu par 
+attiecīgās nodarbības tematu. Piemēram, iesniegt iesildīšanās testus
+no izdales lapiņas, izrēķināt kādu olimpiādes uzdevumu vai kaut ko 
+pastāstīt pie tāfeles.
+
+Obligātu eksāmenu un mājasdarbu fakultatīvā nav, bet dalībniekus 
+var aicināt nodarbības laikā pildīt testus vai rakstīt uzdevumu 
+pamatojumus. To mēģināsim darīt nodarbībās īsi pirms olimpiādēm 
+un arī kopsavilkuma nodarbībās katra semestra beigās. 
+
+Tomēr svarīgāko atgriezenisko saiti fakultatīva dalībnieki iegūst
+piedaloties olimpiādēs (skolas, atklātajā, novada, u.c.) un arī 
+izmantojot fakultatīva zināšanas citos mācību priekšmetos vai dzīvē, 
+piemēram, loģiski izklāstot savas domas. 
+
 
 
 ## Plānoto rezultātu apraksts
@@ -289,13 +303,45 @@ vai arī kaut ko risina grupās nodarbību laikā.
 
 # Mācību darba organizācija
 
-Nodarbības “Matemātikas pulciņā 7. un 8.klasēm” nodarbības apvieno teoriju, ko parasti izklāsta
-pirmajās 10 minūtēs un praktisku uzdevumu risināšanu vai piemēru demonstrēšanu un
-apspriešanu (pārējais laiks – aptuveni 80 minūtes) – parasti uzdevumu rēķināšana melnrakstā,
-stāstīšana pie tāfeles un jautājumi. Ģeometrijā ir iespējams arī kaut kas līdzīgs laboratorijas
-darbiem, piemēram, vingrinoties zīmēt ģeometriskus attēlus ar brīvu roku.
-Papildus iknedēļas nodarbībām ir arī olimpiādes (Atklātā olimpiāde un Valsts olimpiādes
-2.posms)
+Katra nodarbība paredz īsu teorijas 
+stāstiņu (teoriju nekad nestāsta ilgāk par 10 minūtēm), 1-2 paraugpiemēru analīzi
+pie tāfeles (vēl 10 minūtes), iesildīšanās uzdevumus pašiem dalībniekiem (20 minūtes
+vai drusku ilgāk), atlikušās 40 minūtes ir uzdevumu kāpnes no tematam 
+paredzētās darba lapas. Skolēni risina un stāsta skolotājam, blakussēdētājam 
+(un, ja vēlas, arī pie tāfeles). 
+
+Atkarībā no temata specifikas var būt arī kādas praktiskas 
+nodarbes - ģeometrisku attēlu zīmēšana ar brīvu roku vai GeoGebra, spēļu spēlēšana, 
+aritmētiski piemēri skaitļu teorijā, Desmos vai WolframAlpha algebrā.
+
+Olim (Atklātā olimpiāde un Valsts olimpiādes
+2.posms). 
+
+
+Katram tematam, visticamāk, būs sagatavoti sekojoši mācību materiāli:
+
+
+* **Temata kartiņa:** 1-2 teikumos temata mērķi, ko atlasīt no uzdevumu krātuves 
+  (atbilstoši `models`, `topics`, `methods`, `questionTypes`); 
+  saraksts ar 10-15 pagātnes olimpiāžu uzdevumiem (ar linkiem, ID) par tematu. 
+  Priekšzināšanas no standartkursa un arī tas, ko 8.klase jau zin, bet 7.klase 
+  vēl nē (7. klasē vēl nav negatīvo pakāpju, utml.). Uz to links mūsu mājaslapā.
+* **Divi vai trīs paraugpiemēri:** - ar pilnu risinājumu un ieteikumiem 
+  vairākos soļos. Tie domāti skolotājam (var nebūt izdales materiālos); 
+  vienā nodarbībā izstāsta 1-2 paraugpiemērus.
+* **Divas uzdevumu kāpnes - aptuveni 16 uzdevumi augošā grūtībā:**: Katrai no temata 
+  abām nodarbībām ir aptuveni 2 iesildīšanās uzdevumi, aptuveni 4 uzdevumi 
+  ar temata tiešu lietojumu, aptuveni 2 uzdevumi ar "maskētu" metodi vai 
+  metožu kombināciju. Katram kāpņu uzdevumam ir arī uzvednes un avota ID. 
+  No kāpnēm iegūstamas abu nodarbību darba lapas.
+* **Izdales materiāli:** (A) Atgādne: Teorijas kopsavilkums plus 2 iesildīšanās uzdevumi 
+  (ap 1 lpp. - katrā nodarbībā cita). (B) Darba lapa: Uzdevumi no 
+  uzdevumu kāpnēm, kaut kādi citi ieteikumi (ap 2 lpp. - tā pati abās temata nodarbībās).
+* **Atkārtojuma jautājumi:** 5–8 īso atbilžu testu jautājumi utml., ko izmanto semestra beigu 
+  kopsavilkumu nodarbībās, pirms-olimpiāžu iesildīšanās utml.
+* **Mājas komplekts:** 5–6 ne-grūti uzdevumi (ar pieejamām atbildēm) saistīti ar 
+  tematu. Nevienam neliek to mājās pildīt, bet var noderēt, ja kāds kaut ko nokavējis 
+  vai aktīvi gatavojas pirms olimpiādes.
 
 
 ## Programmas materiālais un finansiālais nodrošinājums
