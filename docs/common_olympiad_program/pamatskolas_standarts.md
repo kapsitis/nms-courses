@@ -2,7 +2,7 @@
 layout: default
 lang: lv
 title: Pamatskolas standarts (MK Nr. 747)
-permalink: /pamatskolas_standarts/
+permalink: /common_olympiad_program/pamatskolas_standarts/
 ---
 # Pamatskolas standarts
 

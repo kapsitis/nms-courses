@@ -2,7 +2,7 @@
 layout: default
 lang: lv
 title: "Matemātikas olimpiāžu satura standarts (5.-12. klase)"
-permalink: /courses_26_27/olimpiazu_standarts/
+permalink: /common_olympiad_program/olimpiazu_standarts/
 ---
 
 # Matemātikas olimpiāžu satura standarts

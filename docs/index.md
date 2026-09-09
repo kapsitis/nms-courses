@@ -5,17 +5,24 @@ permalink: /
 ---
 # Matemātikas fakultatīvs
 
-Matemātikas pulciņi 7.-8.klasei un 9.-10.klasei - laiki un telpas
-būs [Interešu grafikā](https://avg.lv/interesu-izglitibas-grafiks/). 
+* 7.-8.klases pulciņš: **Piektdienās, 13:20, 111.telpā**;
+* 9.-10.klases pulciņš: **Piektdienās, 13:20, 111.telpā**.
 
-* [7-8.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_7_8/' | relative_url }})
+Laiki un telpas pēc brīža tiks publicēti arī
+[Interešu grafikā](https://avg.lv/interesu-izglitibas-grafiks/). 
 
+* [7.-8.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_7_8/' | relative_url }})
+* [Informācija vecākiem 7.-8.kl.]({{ '/courses_26_27/for_parents_7_8/' | relative_url }})
+* [9.-10.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_9_10/' | relative_url }})
+* [Informācija vecākiem 9.-10.kl.]({{ '/courses_26_27/for_parents_7_8/' | relative_url }})
 
-## Dažādi citi dokumenti
+## Plānošanas dokumenti
 
-* [Matemātikas olimpiāžu programma]({{ '/courses_26_27/common_olympiad_program/' | relative_url }}) - visu zināšanu uzskaitījums, NMS dokumenta kopija. 
-* [Olimpiāžu temati pa klašu grupām (2022.g. izkārtojums)]({{ '/courses_26_27/olimpiazu_standarts/' | relative_url }}) - standarta veida dokuments: 5.-6., 7.-8., 9.-10. un 11.-12. klases grupa, tēmas sakārtotas spirālē pa nozarēm.
-* TBD: Olimpiāžu temati pa klašu grupām (jaunais izkārtojums pēc Marutas programmas parauga)
+* [Matemātikas olimpiāžu programma]({{ '/common_olympiad_program/olimpiazu_standarts/' | relative_url }}) - visu zināšanu uzskaitījums, NMS dokumenta kopija. 
+* [Pamatskolas standarts]({{ '/common_olympiad_program/pamatskolas_standarts/' | relative_url }}) - MK noteikumi Nr. 747 Markdown tabulas veidā.
+* [Vidusskolas standarts]({{ '/common_olympiad_program/vidusskolas_standarts/' | relative_url }}) - MK noteikumi Nr. 416 Markdown tabulas veidā.
+* [Olimpiāžu temati pa klašu grupām]({{ '/courses_26_27/olimpiazu_standarts/' | relative_url }}) - standarta veida dokuments: 5.-6., 7.-8., 9.-10. un 11.-12. klases grupa, tēmas sakārtotas spirālē pa nozarēm. Izmanto Skola2030 (īstenībā 2022./2023.g. publicētās programmas 
+parauga) izkārtojumu pa tematiem.
 
 
 

@@ -3,7 +3,7 @@ layout: default
 title: "Informācija vecākiem"
 permalink: /courses_26_27/for_parents_7_8/
 ---
-# Informācija vecākiem
+# Informācija vecākiem 7.-8.kl.
 
 **Mērķis:** 
 Fakultatīva uzdevums ir mācīties analizēt un risināt 

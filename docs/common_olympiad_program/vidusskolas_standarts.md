@@ -2,7 +2,7 @@
 layout: default
 lang: lv
 title: Vidusskolas standarts (MK Nr. 416)
-permalink: /vidusskolas_standarts/
+permalink: /common_olympiad_program/vidusskolas_standarts/
 ---
 # Vidusskolas standarts
 
