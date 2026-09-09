@@ -21,28 +21,27 @@ Programma tiks aktualizēta reizi 2 gados.
 
 ## Ievads
 
-Programmas “Matemātikas pulciņš 7.-8. klasēm” nepieciešamību nosaka skolēnu vēlēšanās
-attīstīt izziņas un komunikācijas prasmes matemātikā un eksaktajās zinātnēs, loģiski secināt,
-saprotami izklāstīt savas domas, pārstāvēt skolu mācību priekšmetu olimpiādēs.
-
-
-### Programmas mērķis
-
-Programmas darbības laikā sasniedzami šādi rezultāti:
-
-1. Atbilstoši sākumskolas tematiem apgūti jēdzieni, ieskaitot veselo 
-   skaitļu aritmētiku, variantu skaitīšanu un kombinatoriku, loģisku secināšanu. 
-2. Apgūti matemātisku spriedumu paraugi un pamatošanas metodes.
-3. Vingrinājumos veicināta intuīcija, uzmanība detaļām, paškontroles spēja, 
-   neizdarot pārsteidzīgus secinājumus.
-4. Apgūtas prasmes rakstiski pamatot savas domas un uzstāties pie tāfeles. 
-
-Atbilstoši 7.-8.klases priekšzināšanām apgūts NMS tematu saraksts - 
-sk. [Matemātikas olimpiāžu programma](https://www.nms.lu.lv/fileadmin/user_upload/lu_portal/projekti/nms.lu.lv/Dazadi/_matematikas_olimpiazu_programma_2022.pdf) - sk. arī norādi 
+Lai ĀVĢ audzēkņi varētu jēgpilni piedalīties matemātikas olimpiādēs, 
+ir jāapgūst dažādas skolas pamatkursā neiekļautas zināšanas. 
+Sk.  [Matemātikas olimpiāžu programma](https://www.nms.lu.lv/fileadmin/user_upload/lu_portal/projekti/nms.lu.lv/Dazadi/_matematikas_olimpiazu_programma_2022.pdf) - sk. arī norādi 
 [NMS: Valsts olimpiādes](https://www.nms.lu.lv/olimpiades/valsts-olimpiade/)
 Lai precizētu 7.-8.kl. mācīto materiālu tiks izmantoti VIAA mājas lapā publicētie 
 matemātikas programmu paraugi (gan Skola2023, gan jaunākā 2026.g. programma) - 
 sal. [https://mape.gov.lv/page/programms](https://mape.gov.lv/page/programms).
+
+Fakultatīva 
+
+### Programmas mērķis
+
+Fakultatīva mērķis ir izkopt pamatošanas pratību (*proof literacy*) - 
+spēju lasīt, saprast, analizēt un arī pašiem veidot loģiski derīgus spriedumus un 
+matemātiskus pierādījumus. Šī mērķa sasniegšanai fakultatīvā 
+veicina lasītprasmi, atbildot testu jautājumiem vai analizējot uzdevumu
+tekstus, risina uzdevumus, cenšas precīzi izklāstīt to risinājumus pie tāfeles, 
+veicina intuīciju, uzmanību detaļām, paškontroles spēju,  
+neizdarot pārsteidzīgus secinājumus.
+Tajā apgūst prasmes rakstiski pamatot savas domas un uzstāties pie tāfeles. 
+
 
 
 ### Programmas struktūra
@@ -68,30 +67,56 @@ nevienādības un kvadrātnevienādības;
 • apgūt ar funkciju saistītos pamatjēdzienus, nolasīt informāciju no funkcijas grafika un uzzīmēt
 funkciju grafikus.
 
-## Fakultatīva mērķis un uzdevumi
+### Vispārīgs prasmju un ieradumu saraksts
 
-Fakultatīva mērķis ir izkopt pamatošanas pratību (*proof literacy*) - 
-spēju lasīt, saprast, analizēt un arī pašiem veidot loģiski derīgus spriedumus un 
-matemātiskus pierādījumus. Šī mērķa sasniegšanai fakultatīvā 
-veicina lasītprasmi, atbildot testu jautājumiem vai analizējot uzdevumu
-tekstus, risina uzdevumus, cenšas precīzi izklāstīt to risinājumus pie tāfeles.
+Visu kursa tematu apguvei būtiskas šādas caurviju prasmes:
 
-Visu kursa tematu apguvei būtiskas šādi caurviju zināšanas: 
-
-1. Matemātikas jēdzienu izmantošana atbilstoši to definīcijām. 
-2. Katra apgūstamā temata saistība ar vienu vai vair modeli
-3. Apgūtas izplatītās matemātisko pamatojumu struktūras (*patterns*)
-   jeb pierādīšanas metodes - matemātiskās indukcijas metode, 
-   vidējās vērtības metode un Dirihlē princips, ekstremālais elements, 
-   invarianta metode, pierādījumi no pretējā, uzdevuma
-   interpretācija (pārrakstīšana citos jēdzienos), papildkonstrukcijas 
-   ģeometrijā vai kombinatorikā. 
-4. Izteikumu loģiskā struktūra - saikļi “un”, “vai”, "bet"; loģisks secinājums 
-   vienā virzienā vai abos virzienos, universāli un eksistences apgalvojumi, 
-   apgalvojumu noliegšana un De Morgana likumi. 
-5. Matemātiskā radošuma paņēmieni (ko darīt tad, ja metode nav zināma) - 
+1. Izmanto matemātikas jēdzienus un citus vārdus konsekventi un 
+   atbilstoši to nozīmei vai definīcijām. 
+2. Raksta pamatojumus atbilstoši jautājuma tipam (nezaudē punktus
+   optimizācijas uzdevumos, rakstot piemēru bez novērtējuma vai 
+   novērtējumu bez piemēra, utml.).
+3. Labprāt komunicē par matemātiku. Saprot uzdevumu pamattekstu 
+   (arī bez skolotāja skaidrojumiem). Var stāstīt savus risinājumus pie tāfeles 
+   un var atrast nepilnības arī citu stāstītajos (izlaisti gadījumi, 
+   nepamatoti soļi).
+4. Aiz katra apgūtā matemātikas temata saredz tā "nesošo modeli"
+   un tipiskos piemērus; cenšas biežāk saprast un retāk iekalt.
+5. Apgūst izplatītās matemātisko pamatojumu struktūras (*patterns*)
+   jeb pierādīšanas metodes - 
+   vidējās vērtības metodi un Dirihlē principu, ekstremālo elementu, 
+   invarianta metodi, pierādījumus no pretējā, uzdevumu
+   interpretācijas (pārrakstīšanu citos jēdzienos), papildkonstrukcijas 
+   ģeometrijā vai kombinatorikā.
+6. Olimpiādē racionāli sadala laiku starp uzdevumiem; sāk ar pieejamākajiem un 
+   pagūst atrisināto korekti pierakstīt.
+7. Precīzi izmanto loģiskās struktūras - saikļus “un”, “vai”, "bet"; 
+   veic loģisks secinājums vienā virzienā vai abos virzienos, pamato 
+   vispārīgus apgalvojumus un arī eksistences apgalvojumus, 
+   pareizi lieto negācijas un De Morgana likumus. 
+8. Izmanto matemātisko radošumu un patstāvīgi izraudzītus soļus - prot 
+   risināt uzdevumus, kuru atrisināšanas algoritms nav zināms - 
    (Polya, 1957), (Zeitz, 2006).
+9. Mērķtiecīgi izvēlas risināšanas soļus. (Piemēram: 
+   noskaidro doto un prasīto; izpēte - mazie gadījumi / zīmējums; 
+   metodes vai "nesošā modeļa" izvēle; pieraksts ; 
+   atskats / pārbaude, vai tml.) Spēj pateikt, kāds ir plāns un 
+   kuru no soļiem šobrīd skatās.
+10. Izkopj savu intuīciju, iztēli, uzmanību.
+   Pulciņa dalībniekiem ieteicams klātienē vai mājās pildīt testiņus 
+   par apgūstamo tematu. Dalībnieki attīsta spēju nepadoties pārsteidzīgiem 
+   secinājumiem vai vienkāršojumiem, neiekrīt "lamatās". 
+   Dalībnieki māk uz nesagrafētas tāfeles ar brīvu roku zīmēt dažādas figūras - 
+   gan planimetrijā, gan risinot citu nozaru uzdevumus.
 
+
+**Matemātiskās izziņas ieradumi:**  
+Sekmīga matemātikas apguve neaprobežojas ar tehniskām prasmēm.
+Ļoti palīdz cilvēcīgās īpašības, piemēram, savstarpēja cieņa un 
+patiesības mīlestība. Dalībnieki klausās savus kolēģus –
+runātājus pie tāfeles, pieklājīgi uzdod jautājumus vai ceļ iebildumus.
+Pulciņa dalībnieki cenšas izbrīvēt laiku, lai varētu piedalīties olimpiādēs
+vai citos brīvprātīgos STEM pasākumos.
 
 ## Mācību saturs
 
@@ -242,61 +267,7 @@ piedaloties olimpiādēs (skolas, atklātajā, novada, u.c.) un arī
 izmantojot fakultatīva zināšanas citos mācību priekšmetos vai dzīvē, 
 piemēram, loģiski izklāstot savas domas. 
 
-
-
-## Plānoto rezultātu apraksts
-
-Vēlamie galaiznākumi atbilstoši kursa mērķim.
-
-1. Matemātikas jēdzieni un piemēri:
-a.
-Teorijas kopsavilkumi: Dalībnieki prot lietot darba lapās definētos jēdzienus (vai
-nu izmantojot teorijas špikeri vai arī no galvas). Pārbaudām nevis spēju noskaitīt
-definīciju, bet korekti saprast jēdzienu, ja tas parādās uzdevumā vai citā tekstā,
-ieskaitot neparastākus robežgadījumus.
-b. Tipiskie piemēri: Katram jēdzienam (piemēram, periodiska virkne, funkcija,
-vienādsānu trijstūris) dalībnieki prot atrast dažus raksturīgus piemērus – uzzīmēt
-vai īsi paskaidrot.
-2. Matemātiskās izziņas metodes:
-a.
-Matemātiskais radošums: Katrs no dalībniekiem vai nu klasē vai mājās sagatavo
-risinājumu kādam uzdevumam, kura metode (risināšanas procedūra) nav iepriekš
-zināma. Risinājumu izstāsta pie tāfeles.
-b. Matemātisko pamatojumu struktūras: Par katru struktūru mācību gada laikā
-atrisināti uzdevumi – pie tam dažādās nedēļās, lai nodrošinātu labāku atcerēšanos
-(struktūras ir – matemātiskās indukcijas metode, vidējās vērtības metode un
-Dirihlē princips, ekstremālā elementa metode, invarianta metode, pierādījumi no
-pretējā, uzdevuma interpretācija citos jēdzienos, papildkonstrukcijas ģeometrijā
-vai kombinatorikā, pārveidojumi).
-c.
-Iepazītas loģikas metodes: Dalībnieki prot pazīt dažas vienkāršas spriedumu
-kļūdas.
-3. Intuīcija, iztēle, uzmanība:
-a.
-Skaitliskā intuīcija un uzmanība: Dalībnieki klātienē vai mājās izpilda
-Socrative testiņu par apgūtajām tēmām, nepielaiž daudz neuzmanības kļūdu.
-b. Ģeometriskā iztēle: Dalībnieki māk zīmēt uz nesagrafētas tāfeles dažādas figūras
-– daudzstūrus (ar jebkuru malu skaitu no 3 līdz 20), regulārus un neregulārus
-daudzstūrus, lauztas līnijas (slēgtas vai vaļējas, ar vai bez posmu krustojumiem),
-apļus un dažādas figūru konfigurācijas.
-4. Komunikācija par matemātiku:
-a.
-Lasītprasme: Dalībnieki spēj izlasīt uzdevuma sākotnējo tekstu, to pareizi
-interpretē, pievieno zīmējumus un atbild uz jautājumiem. Viņi to dara, balstoties
-uz doto tekstu, nevis skolotāja paskaidrojumiem.
-b. Spēja stāstīt pie tāfeles: Katrs dalībnieks pulciņā 1 gada laikā kaut ko stāsta pie
-tāfeles.
-5. Izziņas ieradumi un vērtības:
-a.
-Savstarpējā cieņa un patiesības mīlestība: Dalībnieki klausās savus kolēģus –
-runātājus pie tāfeles, pieklājīgi uzdod jautājumus vai ceļ iebildumus.
-b. Dalība olimpiādēs: Mācību gada laikā katrs pulciņa dalībnieks piedalās kādā
-olimpiādē vai konkursā (vai arī citādi sagatavojas kādam nelielam ar matemātiku
-saistītam projektiņam pēc savas izvēles).
-c.
-Darbs grupās: Dalībnieki māk risināt uzdevumus (vai komplektus) grupās, dala
-pienākumus, noformē risinājumus. To dara vai nu konkursos kā “Atvērtā kopa”
-vai arī kaut ko risina grupās nodarbību laikā.
+![](calendar.png)
 
 
 
@@ -309,17 +280,11 @@ pie tāfeles (vēl 10 minūtes), iesildīšanās uzdevumus pašiem dalībniekiem
 vai drusku ilgāk), atlikušās 40 minūtes ir uzdevumu kāpnes no tematam 
 paredzētās darba lapas. Skolēni risina un stāsta skolotājam, blakussēdētājam 
 (un, ja vēlas, arī pie tāfeles). 
-
 Atkarībā no temata specifikas var būt arī kādas praktiskas 
 nodarbes - ģeometrisku attēlu zīmēšana ar brīvu roku vai GeoGebra, spēļu spēlēšana, 
 aritmētiski piemēri skaitļu teorijā, Desmos vai WolframAlpha algebrā.
 
-Olim (Atklātā olimpiāde un Valsts olimpiādes
-2.posms). 
-
-
 Katram tematam, visticamāk, būs sagatavoti sekojoši mācību materiāli:
-
 
 * **Temata kartiņa:** 1-2 teikumos temata mērķi, ko atlasīt no uzdevumu krātuves 
   (atbilstoši `models`, `topics`, `methods`, `questionTypes`); 
