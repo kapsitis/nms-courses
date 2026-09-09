@@ -533,7 +533,7 @@ un [LV.VOL.2019.9.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.VOL.20
 [LV.AMO.2025.9.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2025.9.3)
 ($p \times p$ kvadrāta sagriešana mazākos kvadrātos).
 
-### 10. temats. Kvadrāttrinoms, progresijas un indukcija: Kad formula jāpierāda
+### 10. temats. Kvadrāttrinoms (visticamāk, nepagūstam)
 
 Algebrisku objektu ar parametriem izpēte. Tematu māca mācību gada beigās, kad
 9. klases dalībnieki kvadrātvienādojumu jau ir apguvuši skolas kursā.
@@ -547,10 +547,6 @@ Algebrisku objektu ar parametriem izpēte. Tematu māca mācību gada beigās, k
 * SR: Sadala kvadrāttrinomu reizinātājos un saista trinoma zīmi ar parabolas
   novietojumu; grafisku spriedumu lieto kā hipotēzes avotu, bet pamato
   algebriski.
-* SR: Lieto aritmētiskās un ģeometriskās progresijas formulas; pazīst
-  teleskopisku summu un pierāda tās vērtību.
-* SR: Pieraksta matemātiskās indukcijas pierādījumu ar soli $1$: bāze,
-  induktīvais pieņēmums, pāreja - un saprot, kāpēc bez bāzes pierādījuma nav.
 
 **Piemēri:** [LV.AMO.2018.9.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2018.9.1)
 (kādām $a$ vērtībām $(a-3)x^2+5x-2=0$ ir viena vai divas saknes),
@@ -559,14 +555,7 @@ Algebrisku objektu ar parametriem izpēte. Tematu māca mācību gada beigās, k
 [LV.VOL.2017.10.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV.VOL.2017.10.1)
 ($x_1^2+x_2^2+2017$ un $x_1^3+x_2^3$ ir naturāli skaitļi),
 [LV.NOL.2021.9.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2021.9.2)
-(vai attēlā var būt divu doto kvadrātfunkciju grafiki),
-[LV.AMO.2022A.9.4](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022A.9.4)
-(no aritmētiskās progresijas iegūta jauna aritmētiskā progresija),
-[LV.VOL.2021.10.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.VOL.2021.10.2)
-(ģeometriskā progresija un nevienādība $x_5+x_6 \geq 12$),
-[LV.AMO.2019.10.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2019.10.1)
-un [LV.NOL.2020.9.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2020.9.2)
-(summas formula ar indukciju; teleskopiska summa).
+(vai attēlā var būt divu doto kvadrātfunkciju grafiki).
 
 ## Sasniegumu mērīšana un vērtēšana
 

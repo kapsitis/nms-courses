@@ -359,7 +359,7 @@ Lēmumu koki un procedūru apraksti. (*B gada 9. tematā tematu turpina loģikas
 [LV.NOL.2019.8.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2019.8.2) (viltotā monēta starp 26 ar trim svēršanām),
 [LV.AMO.2022A.7.1](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022A.7.1) (testu atbildēšanas laika plānošana).
 
-### 10. temats. Spēles: Uzvarošās un zaudējošās pozīcijas
+### 10. temats. Spēles: Uzvarošās un zaudējošās pozīcijas (visticamāk, nepagūstam)
 
 Spēļu analīze no beigām. 
 (*B gada 5. tematā spēles turpinās ar simetrijas un pārošanas stratēģijām.*)
@@ -496,7 +496,7 @@ Loģiska gadījumu analīze; tsk. uzdevumi par tiem, kuri vienmēr saka patiesī
 
 Piemēri: [LV.AMO.2022B.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022B.7.5), [LV.AMO.2022B.8.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2022B.8.5), [LV.AMO.2023.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.7.5) un [LV.AMO.2023.8.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2023.8.5)
 
-### 10. temats. Vienādojumi veselos skaitļos: Kā konstruēt skaitli atbilstoši prasībām
+### 10. temats. Vienādojumi veselos skaitļos: Skaitļi atbilstoši prasībām (visticamāk, nepagūstam)
 
 Algebriskie pārveidojumi un ciparu pieraksts kopā ar skaitļu teoriju.
 
