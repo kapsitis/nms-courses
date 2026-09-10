@@ -11,7 +11,7 @@ permalink: /common_olympiad_program/olimpiazu_standarts/
 
 ## Ievads
 
-Dokuments [Matemātikas olimpiāžu programma (2022)](https://kapsitis.github.io/nms-courses/courses_26_27/common_olympiad_program/) uzskaita tēmas un metodes,
+Dokuments [Matemātikas olimpiāžu programma (2022)]({{ '/common_olympiad_program/index/' | relative_url }}) uzskaita tēmas un metodes,
 kas tiek izmantotas Latvijas matemātikas olimpiāžu uzdevumos, taču nenorāda, **kurā
 vecumposmā** katra tēma ir jāapgūst. Šis dokuments to precizē: tas sadala olimpiāžu
 saturu četrās vecumposmu grupās un katrai grupai nosaka sasniedzamos rezultātus.
