@@ -27,4 +27,18 @@ No jautājuma atkarīgs, kas jāraksta, lai atrisinājums būtu pilnīgs.
 * Vai vispārīga pamatojuma vietā nav tikai piemēri? Spēlēs jāapskata **visi** pretinieka gājieni.
 * Vai tur kur vajag ("Atrast lielāko vai mazāko", "Atrast visus") ir **abas** risinājuma daļas?
 
+---
+
+## 1.uzdevums
+
+Vai var uzzīmēt 5 taisnes, kurām ir tieši 11 krustpunkti?
+
+
+## 2.uzdevums
+
+Kāds mazākais skaits punktu jānodzēš, lai nekādi 3 no atlikušajiem 
+punktiem neatrastos uz vienas taisnes?
+
+![](grid_3x3.png)
+
 
