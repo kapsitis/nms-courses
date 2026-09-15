@@ -13,7 +13,7 @@ Kursā aplūkosim LZ77 un LZW (kas ir uzlabots LZ78 variants).
 
 Saspiešana ar vārdnīcu (LZ77 vai LZW) var sasniegt lielāku saspiešanas attiecību nekā entropijas kodi (Hafmana vai aritmētiskais), jo izmanto to, ka ievades datos nākošie simboli ir atkarīgi no iepriekšējiem.
 
-> **TODO:** Entropijas kodi ir optimāli neatkarīgiem, vienādi sadalītiem ziņojumiem ar zināmu sadalījumu. Kādēļ ar to nepietiek reāliem datiem (atkārtoti vārdi un koda fragmenti; varbūtību modelis nav zināms iepriekš un tas būtu jānosūta). Kāds varbūtisks modelis ievaddatiem atbilst LZ algoritmiem -- sk. sadaļu "Matemātiskais pamatojums".
+Hafmana un aritmētiskais kods ir optimāli tad, ja ziņojumi ir neatkarīgi un to varbūtības ir zināmas. Reālos failos tā nav: tekstā, pirmkodā, HTML lapās un žurnālfailos atkārtojas veseli vārdi, identifikatori un rindiņas, bet Hafmana kods katru burtu kodē ar vienu un to pašu kodavārdu, pat ja viss vārds jau ir redzēts iepriekš. Turklāt entropijas kodam varbūtību modelis ir jāzina iepriekš vai jānosūta kopā ar datiem. Vārdnīcas metodes šīs problēmas apiet: atkārtotu fragmentu aizstāj ar atsauci uz tā iepriekšējo parādīšanos, modeli neviens neveido un nesūta, datus apstrādā vienā caurlaidē, un atspiešana ir vienkārša kopēšana, tāpēc ļoti ātra. Laikā, kad disku vieta un modemu pārraides ātrums bija dārgi, tas padarīja LZ algoritmus par pamatu lielākajai daļai vispārīgas nozīmes arhivatoru (izņēmums ir, piemēram, bzip2, sk. nodaļu par Berouza-Vīlera transformāciju). Teorētiski LZ algoritmi ir *universāli*: jebkuram stacionāram un ergodiskam avotam tie asimptotiski sasniedz tā vidējo entropiju, pat nezinot avota statistiku (sk. "Matemātiskais pamatojums").
 
 ## Vēsture
 
@@ -27,7 +27,7 @@ LZW lietojumi ir GIF un UNIX "compress" programma,
 bet licencēšanas ierobežojumu un arī citu iemeslu dēļ GIF šobrīd ir 
 pamatos aizstāts ar PNG. 
 
-> **TODO:** Kur un kā algoritmi izgudroti (publikācijas 1977., 1978. un 1984.g.). Pirmie nozīmīgie produkti (compress, GIF, PKZIP, gzip, PNG). LZW patenti un to ietekme uz GIF un "compress" lietošanu (sk. literatūras sarakstu).
+A.Lempels un J.Zivs strādāja Tehnionā (Izraēlas Tehnoloģiju institūtā Haifā), un viņu mērķis sākotnēji bija teorētisks -- atrast *universālu* saspiešanas metodi, kurai nav jāzina avota varbūtības. Rezultāti publicēti žurnālā *IEEE Transactions on Information Theory* 1977.gadā (LZ77) un 1978.gadā (LZ78). T.Velčs, strādājot Sperry pētniecības centrā, 1984.gadā žurnālā *IEEE Computer* aprakstīja LZW -- LZ78 variantu, ko viegli realizēt ātri gan programmās, gan aparatūrā. LZW drīz izmantoja UNIX programma `compress`, bet 1987.gadā -- CompuServe izveidotais GIF attēlu formāts. LZW patents piederēja Sperry pēctecim Unisys, tāpēc brīvās programmatūras autori meklēja algoritmus bez patentu riska: 1992.gadā izveidotā programma `gzip` aizstāja `compress`, un tā lieto DEFLATE -- LZ77 kopā ar Hafmana kodu, ko F.Kacs (*Phil Katz*) 1993.gadā ieviesa arhivatorā PKZIP 2. Kad 1994.gada beigās Unisys un CompuServe paziņoja par licences maksu GIF programmatūrai, kā GIF aizstājējs tika izstrādāts PNG formāts (standartizēts 1996.gadā), kas arī lieto DEFLATE. LZW patenti beidzās 2003.-2004.gadā, taču tad DEFLATE jau bija kļuvis par standartu ZIP arhīvos, HTTP saspiešanā un PNG attēlos.
 
 ## Algoritmi
 
@@ -79,17 +79,51 @@ Atkodētājs neko nemeklē, tikai kopē, tāpēc tas ir daudz ātrāks par kodē
 
 ![LZ77 piemērs](figs/lz77-example.png)
 
+Attēlā kodē virkni `aacaacabcabaaac` ar loga garumu $W = 6$ un priekšskata bufera garumu $L = 4$ (ar šiem parametriem $\textsf{LZ77-Encode}$ izvada tieši attēlā redzamos trijniekus). Rāmītī ir kursora simbols $T[i]$, treknrakstā -- logs (līdz $6$ simboliem pirms kursora), bet pasvītroti ir pārējie priekšskata bufera simboli.
+
+1. Kursors $i = 1$: logs ir tukšs, tāpēc sakritību nav kur meklēt. Burtu izvada kā $(0, 0, \mathtt{a})$, un kursors pārvietojas par $1$.
+2. Kursors $i = 2$: logā ir `a`, kas sakrīt ar kursora burtu `a`. Nākamie burti (`a` 2.pozīcijā un `c` 3.pozīcijā) vairs nesakrīt, tāpēc $d = 1$, $\ell = 1$, un aiz sakritības ir `c`. Izvada $(1, 1, \mathtt{c})$, kursors pārvietojas par $\ell + 1 = 2$.
+3. Kursors $i = 4$: logā ir `aac`. Garākā sakritība sākas 1.pozīcijā ($d = 3$): pozīcijās $1 \ldots 4$ ir `aaca`, tieši tāpat kā pozīcijās $4 \ldots 7$. Avota apgabals pārklājas ar kodējamo daļu, jo tā pēdējais burts ir pati kursora pozīcija $4$. Aiz sakritības ir `b`: izvada $(3, 4, \mathtt{b})$, kursors pārvietojas par $5$.
+4. Kursors $i = 9$: logā ir `caacab` (pozīcijas $3 \ldots 8$). Burts `c` logā ir divās vietās: no 3.pozīcijas sakrīt tikai `ca` ($\ell = 2$), bet no 6.pozīcijas -- `cab` ($\ell = 3$). Izvēlas garāko sakritību $d = 9 - 6 = 3$, $\ell = 3$, aiz kuras ir `a`: izvada $(3, 3, \mathtt{a})$, kursors pārvietojas par $4$.
+5. Kursors $i = 13$: logā ir `abcaba` (pozīcijas $7 \ldots 12$), neiekodēti palikuši burti `aac`. Garākā sakritība `aa` sākas tūlīt pirms kursora ($d = 1$) un pārklājas ar kodējamo daļu -- atkodētājs to iegūs, divreiz nokopējot iepriekšējo burtu. Aiz tās paliek pēdējais burts `c`: izvada $(1, 2, \mathtt{c})$, un kodēšana beidzas.
+
+Atkodētājs ar $\textsf{LZ77-Decode}$ katram trijniekam nokopē $\ell$ burtus un pieraksta $x$: `a` + `ac` + `aacab` + `caba` + `aac` = `aacaacabcabaaac`. Tātad $15$ burtu vietā ir $5$ trijnieki -- bet katrs trijnieks aizņem vairāk vietas nekā viens burts, tāpēc praksē tos kodē vēl tālāk (sk. "No trijniekiem līdz saspiestam failam").
+
 #### Uzlabojumi gzip implementācijā
 
 Dažas LZ77 izmaiņas, ko lieto "gzip".
 
 **Divi izvades formāti:** Algoritms vai nu cenšas atrast prefiksu vismaz garumā trīs (un tad to izvada kā LZ77 trijnieku), vai arī izvada burtus pa vienam. (Izmanto vienu papildus bitu, lai atšķirtu abus izvades formātus). Šāda izmaiņa ļauj ietaupīt daudz vietas tādiem failiem, kurus nevar labi saspiest, jo tad nav jāizvada pilnvērtīgs trijnieks (ar pozīcijas un garuma laukiem).
 
-**Hafmana kodi:** `gzip` izmanto atsevišķi uzbūvētus Hafmana kokus, lai kodētu nobīdes, garumu un simbolu.
+**Hafmana kodi:** `gzip` burtus un sakritību garumus kodē ar vienu Hafmana koku, bet nobīdes -- ar otru (sk. nākamo apakšsadaļu).
 
 **Nerijīgais variants:** LZ77 algoritms ir rijīgs -- tas vienmēr mēģina atrast garāko prefiksu, sākot ar priekšskata bufera pirmo simbolu. (Neatkarīgi no tā, kā tas iespaidos tālākos prefiksus.) Dažreiz ir izdevīgi izvadīt vienu simbolu pašreizējā pozīcijā, cerot atrast garāku prefiksu vēlāk.
 
 **Heštabulas ar prefiksiem:** `gzip` būvē heštabulu, kurā salikti visi sastaptie stringi garumā 3 kā atslēgas. (Ja tiem ir vairāki turpinājumi, tos saliek heštabulas spainītī atpakaļejošā secībā). Ja ir vairāki prefiksi, tad LZ77 ir izdevīgāk izvēlēties pašu nesenāko (ar vismazāko nobīdi jeb *offset*), jo tas rada visnevienmērīgāko sadalījumu, ko labi saspiest ar Hafmana kodu.
+
+#### No trijniekiem līdz saspiestam failam
+
+LZ77 trijnieki paši par sevi vēl nav saspiests fails: ja katru $(d, \ell, x)$ glabātu $4$ baitos, iepriekšējā piemēra $15$ baitu virkne kļūtu par $20$ baitiem. Praktiskos formātos izvadi apstrādā tālāk. Visizplatītākais ir DEFLATE (ZIP, gzip, PNG, HTTP saspiešana):
+
+1. **Divu veidu marķieri.** Trijnieka vietā izvada vai nu burtu (baitu), vai pāri (garums, nobīde), kur $3 \leq \ell \leq 258$ un $1 \leq d \leq 32\,768$ -- tāpat kā 3.1. uzdevuma *gzip* formātā.
+2. **Kopīgs alfabēts burtiem un garumiem.** Burti ir simboli $0 \ldots 255$, bloka beigas -- simbols $256$, bet garumi -- simboli $257 \ldots 285$. Lielākiem garumiem viens simbols apzīmē intervālu, un precīzo vērtību norāda papildu biti: piemēram, $257$ nozīmē $\ell = 3$, $260$ nozīmē $\ell = 6$, bet $265$ ar vienu papildu bitu nozīmē $\ell \in \lbrace 11, 12 \rbrace$. Nobīdēm ir atsevišķs alfabēts $0 \ldots 29$ ar tādiem pašiem papildu bitiem: $0$ nozīmē $d = 1$, $2$ nozīmē $d = 3$, bet $29$ ar $13$ papildu bitiem nozīmē $d \in [24\,577; 32\,768]$.
+3. **Hafmana kodi.** Datus sadala blokos. Katram blokam saskaita simbolu biežumus un uzbūvē divus Hafmana kokus -- vienu burtu un garumu alfabētam, otru nobīžu alfabētam; papildu bitus raksta nekodētus. Bieži burti, tipiski garumi un tuvas nobīdes iegūst īsus kodavārdus.
+4. **Bloku veidi.** Bloka galvenes $3$ biti norāda, vai bloks ir pēdējais, un bloka veidu: *stored* (nesaspiesti dati -- tiem, kurus nevar saspiest), *fixed* (standartā noteikti Hafmana koki, kas nav jāsūta -- izdevīgi īsiem blokiem) vai *dynamic* (koki tiek nosūtīti kā kanoniska Hafmana koda garumi, sk. nodaļu par Hafmana kodu; paši garumi vēlreiz saspiesti ar atkārtojumu kodiem un Hafmana kodu).
+5. **Konteiners.** DEFLATE plūsmu ietin faila formātā: *gzip* pievieno galveni (faila vārds, laiks) un beigās CRC-32 kontrolsummu un oriģinālo garumu, *zlib* (PNG, HTTP) -- $2$ baitu galveni un Adler-32 kontrolsummu, bet ZIP -- arī failu katalogu arhīva beigās.
+
+**Piemērs:** 3.1. uzdevuma *gzip* formāta marķieri kā DEFLATE simboli *fixed* blokā:
+
+| Marķieris | DEFLATE simboli | Biti |
+| --- | --- | --- |
+| `(1,a)`, `(1,b)`, `(1,c)` | $97$, $98$, $99$ | $3 \cdot 8$ |
+| `(0,3,6)` | garums $260$, nobīde $2$ | $7 + 5$ |
+| `(1,d)` | $100$ | $8$ |
+| `(0,4,3)` | garums $257$, nobīde $3$ | $7 + 5$ |
+| bloka beigas | $256$ | $7$ |
+
+Kopā ar bloka galveni tie ir $3 + 24 + 12 + 8 + 12 + 7 = 66$ biti jeb $9$ baiti ($13$ baitu vietā). Reāli kompresori sakritības meklē ar heštabulām un heiristikām, tāpēc ne vienmēr atrod garāko sakritību: Python 3.14 `zlib` (zlib-ng 2.2.4) šo virkni sadala kā `a`, `b`, `c`, `a`, (garums $5$, nobīde $3$), `d`, `a`, `b`, `c` un izvada $86$ bitus jeb $11$ baitus. Ar *zlib* galveni tie ir $17$ baiti, *gzip* failā -- $29$ baiti, tātad tik īsai virknei galvenes aizņem vairāk nekā ietaupīts. Garākiem datiem tas atmaksājas: teksts `to be or not to be, that is the question. `, atkārtots $200$ reizes ($8\,400$ baiti), *gzip* failā aizņem $98$ baitus.
+
+Jaunāki formāti (zstd, LZMA/7z) izmanto to pašu LZ77 ideju, bet marķierus kodē efektīvāk -- ar ANS (zstd) vai aritmētisko kodu (LZMA) Hafmana koda vietā (sk. nodaļu par aritmētisko kodu un ANS).
 
 ### LZ78 algoritms
 
