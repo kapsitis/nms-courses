@@ -48,17 +48,32 @@ Logs ir kā atmiņas buferis, kurā var atrast nesen iekodētas virknes un izman
 
 #### Pseidokods
 
-$\textsf{LZ77Encode}(\textit{input})$
-1. $\quad \textit{input}$ burtus ielādē logā.
-2. $\quad$ **while** (kursors nav sasniedzis $\textit{input}$ beigas) **do**
-3. $\quad\quad$ Atrod $p$ -- garāko ievades gabalu jau iekodētajā daļā
-4. $\quad\quad i$ ir $p$ relatīvā pozīcija pret kursoru
-5. $\quad\quad j = |p|$
-6. $\quad\quad X$ ir pirmais simbols, kas ir logā pēc $p$
-7. $\quad\quad \textsf{output}(i, j, X)$
-8. $\quad\quad$ Pabīda logu uz priekšu par $j+1$ simboliem.
+Kodētājs izvada trijniekus $(d, \ell, x)$: sakritība sākas $d$ pozīcijas pirms kursora, tās garums ir $\ell$, un $x$ ir simbols, kas seko aiz sakritības. Ja sakritības nav, izvada $(0, 0, x)$. Sakritība drīkst sākties logā, bet turpināties priekšskata buferī (pārklāties ar kodējamo daļu) -- tā ar vienu trijnieku iekodē garas atkārtojumu virknes.
 
-> **TODO:** LZ77 atspiešanas pseidokods.
+$\textsf{LZ77-Encode}(T, n, W, L)$ $\quad$ *// $T[1:n]$ -- ievade; $W$ -- loga garums; $L$ -- priekšskata bufera garums*
+1. $i = 1$ $\quad$ *// kursora pozīcija*
+2. **while** $i \leq n$
+3. $\quad d = 0$; $\;\;\ell = 0$ $\quad$ *// garākā līdz šim atrastā sakritība*
+4. $\quad$ **for** $s = i - 1$ **downto** $\max(1, i - W)$ $\quad$ *// iespējamie sakritības sākumi logā, sākot ar tuvāko*
+5. $\quad\quad k = 0$
+6. $\quad\quad$ **while** $k < \min(L, n - i)$ **and** $T[s + k] == T[i + k]$
+7. $\quad\quad\quad k = k + 1$
+8. $\quad\quad$ **if** $k > \ell$ **then** $d = i - s$; $\;\ell = k$
+9. $\quad \textsf{Output}(d, \ell, T[i + \ell])$
+10. $\quad i = i + \ell + 1$
+
+Rindiņā 6 nosacījums $k < n - i$ garantē, ka aiz sakritības paliek vismaz viens simbols $T[i + \ell]$, ko izvadīt 9.rindiņā. Rindiņās 4-8 ir naiva meklēšana -- katram trijniekam sliktākajā gadījumā $O(W \cdot L)$ simbolu salīdzināšanu. Tā kā $s$ iet no tuvākās pozīcijas uz tālāko un sakritību aizstāj tikai ar stingri garāku, vienāda garuma sakritībām tiek izvēlēta mazākā nobīde $d$.
+
+$\textsf{LZ77-Decode}(C)$ $\quad$ *// $C$ -- trijnieku $(d, \ell, x)$ virkne*
+1. $m = 0$ $\quad$ *// līdz šim atkodēto simbolu skaits masīvā $T$*
+2. **for each** $(d, \ell, x) \in C$
+3. $\quad$ **for** $k = 1$ **to** $\ell$
+4. $\quad\quad T[m + k] = T[m + k - d]$ $\quad$ *// kopē pa vienam simbolam*
+5. $\quad m = m + \ell + 1$
+6. $\quad T[m] = x$
+7. **return** $T[1:m]$
+
+Atkodētājs neko nemeklē, tikai kopē, tāpēc tas ir daudz ātrāks par kodētāju. 4.rindiņā simbolus kopē pa vienam, jo avota apgabals var pārklāties ar tikko ierakstītajiem simboliem (ja $d < \ell$).
 
 #### Piemērs
 
@@ -84,43 +99,41 @@ Dažas LZ77 izmaiņas, ko lieto "gzip".
 
 #### Pseidokods
 
-**LZ78 saspiešanas algoritms**
+Kodētājs lasa ievadi pa burtam un pagarina tekošo frāzi $w$, kamēr tā ir vārdnīcā. Ar $wk$ apzīmējam frāzi $w$, kurai galā pierakstīts burts $k$. Vārdnīcā $D$ sākumā ir visi alfabēta $S$ burti (burta kods ir pats burts), bet garākas frāzes saņem numurus $1, 2, 3, \ldots$
 
-**Ievade:** $F$ -- plūsma simbolu nolasīšanai.
-**Izvade:** Simboli un cipari (adreses vārdnīcā).
+$\textsf{LZ78-Encode}(T, n)$ $\quad$ *// $T[1:n]$ -- ievade alfabētā $S$; $D[w]$ -- frāzes $w$ kods*
+1. $D = \textsf{New-Dictionary}(S)$ $\quad$ *// $D[x] = x$ katram burtam $x \in S$*
+2. $m = 0$ $\quad$ *// pēdējais piešķirtais frāzes numurs*
+3. $w = T[1]$
+4. **for** $i = 2$ **to** $n$
+5. $\quad k = T[i]$
+6. $\quad$ **if** $wk \in D$
+7. $\quad\quad w = wk$ $\quad$ *// frāzi var pagarināt*
+8. $\quad$ **else**
+9. $\quad\quad \textsf{Output}(D[w])$
+10. $\quad\quad m = m + 1$
+11. $\quad\quad D[wk] = m$ $\quad$ *// jauna frāze ar nākamo numuru*
+12. $\quad\quad w = k$
+13. $\textsf{Output}(D[w])$ $\quad$ *// pēdējā frāze*
 
-$\textsf{LZ78encode}(F)$:
-1. $\quad D = \textsf{Dictionary}(S) \quad\quad \textcolor{teal}{\textit{saliek vārdnīcā visus burtus}}$
-2. $\quad w = \varepsilon \quad\quad\quad\quad\quad\quad \textcolor{teal}{\textit{tukšais strings}}$
-3. $\quad k = \textsf{readSymbol}(F)$
-4. $\quad$ **while** $k \neq \textsf{eof}$
-5. $\quad\quad$ **if** $wk \in D.\textsf{keys}()$:
-6. $\quad\quad\quad w = wk$
-7. $\quad\quad$ **else:**
-8. $\quad\quad\quad \textsf{output}(D[w])$
-9. $\quad\quad\quad \textsf{insert}(D,w) \quad\quad \textcolor{teal}{\textit{pievieno vārdnīcai ar jaunu kārtas numuru}}$
-10. $\quad\quad\quad w=k$
-11. $\quad\quad\quad k = \textsf{readSymbol}(F)$
-12. $\quad\quad\quad \textsf{output}(D[w])$
+Kodētājs vienmēr izvada garāko vārdnīcā atrodamo frāzi $w$ (9. un 13.rindiņa) un vārdnīcai pievieno šo frāzi, pagarinātu par nākamo burtu (11.rindiņa).
 
-**LZ78 atspiešanas algoritms**
+$\textsf{LZ78-Decode}(c_1 c_2 \ldots c_r)$ $\quad$ *// $c_j$ -- burts vai frāzes numurs; $D[c]$ -- frāze ar kodu $c$*
+1. $D = \textsf{New-Dictionary}(S)$ $\quad$ *// $D[x] = x$ katram burtam $x \in S$*
+2. $m = 0$
+3. $w = D[c_1]$
+4. $\textsf{Output}(w)$
+5. **for** $j = 2$ **to** $r$
+6. $\quad$ **if** $c_j \in D$
+7. $\quad\quad v = D[c_j]$
+8. $\quad$ **else** $\quad$ *// $c_j = m + 1$: šī frāze vēl nav vārdnīcā*
+9. $\quad\quad v = w\,w[1]$
+10. $\quad \textsf{Output}(v)$
+11. $\quad m = m + 1$
+12. $\quad D[m] = w\,v[1]$ $\quad$ *// iepriekšējā frāze ar tekošās frāzes pirmo burtu*
+13. $\quad w = v$
 
-**Ievade:** $F$ -- saspiesto datu plūsma
-**Izvade:** Atspiestais teksts
-
-$\textsf{LZ78decode}(F)$:
-1. $\quad w = \textsf{lookup}(\textsf{readCode}())$
-2. $\quad \textsf{output}(w)$
-3. $\quad c = \textsf{readCode}()$
-4. $\quad$ **while** $c \neq \textsf{eof}$:
-5. $\quad\quad$ **if** $c \in D$: $\quad\quad \textcolor{teal}{\textit{if c is in the dictionary}}$
-6. $\quad\quad\quad wn = \textsf{lookup}(c)$
-7. $\quad\quad$ **else**:
-8. $\quad\quad\quad wn = \textsf{stringcat}(w, w[0])$
-9. $\quad\quad\quad \textsf{output}(wn)$
-10. $\quad\quad\quad k = wn[0]$
-11. $\quad\quad\quad D.\textsf{add}(wk) \quad\quad \textcolor{teal}{\textit{add wk to dictionary}}$
-12. $\quad\quad\quad w = wn$
+Atkodētājs uzzina katru jauno frāzi vienu soli vēlāk nekā kodētājs, jo 12.rindiņā tam jāzina tekošās frāzes $v$ pirmais burts. Tāpēc kods $c_j$ var norādīt uz frāzi $m + 1$, kuras vārdnīcā vēl nav. Šī frāze ir $w$ ar pievienotu savu pirmo burtu, kas sakrīt ar $w[1]$, tātad $v = w\,w[1]$ (8.-9.rindiņa; sk. 3.4. uzdevumu).
 
 #### Piemērs
 
@@ -133,7 +146,7 @@ Dota virkne `abcabcabcdabcaba`, kura jānokodē, izmantojot LZ78 algoritmu.
 | 3. | c | a | c | ca |
 | 4. | ab | c | ab | abc |
 | 5. | ca | b | ca | cab |
-| 6. | bc | d | bc | dbc |
+| 6. | bc | d | bc | bcd |
 | 7. | d | a | d | da |
 | 8. | abc | a | abc | abca |
 | 9. | ab | a | ab | aba |
@@ -143,44 +156,12 @@ Parasti kodē burtus par burtiem, bet garākas virknes aizstāj ar tā soļa num
 
 ### LZW algoritms
 
-Pie šī algoritma kurss neatgriežas, tas ievietots tikai salīdzināšanai.
+LZW atsevišķi nevingrinām: tas ir LZ78 variants, un augstāk aprakstītais "LZ78" algoritms jau izmanto LZW galveno ideju. Svarīgākās sakarības:
 
-#### Ideja
-
-> **TODO:** Ar ko LZW atšķiras no LZ78 (vārdnīca sākumā satur visus alfabēta burtus, tāpēc izvadē ir tikai vārdnīcas indeksi).
-
-#### Pseidokods
-
-**Saspiešanas algoritms:** Ievade: $F$ -- plūsma (sākotnējais teksts). Izvade: saarhivēts teksts.
-
-$\textsf{LZWencode}(F)$
-1. $\quad C = \textsf{ReadSymbol}(F)$
-2. $\quad$ **while** $C \neq \textsf{eof}$
-3. $\quad\quad x = \textsf{ReadSymbol}(F)$
-4. $\quad\quad C' = \textsf{getIndex}$
-5. $\quad\quad$ **while** $C' \neq -1$:
-6. $\quad\quad\quad C = C'$
-7. $\quad\quad\quad C' = \textsf{getIndex}(C,x)$
-8. $\quad\quad \textsf{output}(C)$
-9. $\quad\quad \textsf{addDict}(C,x)$
-10. $\quad\quad C = x$
-
-**Atspiešanas algoritms:** Ievade: $F$ -- plūsma (saspiests teksts). Izvade: atarhivēts teksts.
-
-$\textsf{LZWdecode}(F)$
-1. $\quad C = \textsf{readIndex}(F)$
-2. $\quad W = \textsf{getString}(C)$
-3. $\quad \textsf{output}(W)$
-4. $\quad$ **while** $C \neq \textsf{eof}$:
-5. $\quad\quad C' = \textsf{readIndex}(F)$
-6. $\quad\quad$ **if** $\textsf{indexInDict}(C')$:
-7. $\quad\quad\quad W = \textsf{getString}(C')$
-8. $\quad\quad\quad \textsf{addDict}(C,W[0])$
-9. $\quad\quad$ **else**:
-10. $\quad\quad\quad C' = \textsf{addDict}(C, W[0])$
-11. $\quad\quad\quad W = \textsf{getString}(C')$
-12. $\quad\quad \textsf{output}(W)$
-13. $\quad\quad C = C'$
+* **Klasiskais LZ78** sāk ar tukšu vārdnīcu un izvada pārus $(i, x)$: garākās vārdnīcā atrastās frāzes numuru $i$ ($0$ -- tukšā frāze) un simbolu $x$, kas seko aiz tās. Vārdnīcai pievieno $i$-to frāzi, kurai galā pierakstīts $x$.
+* **LZW** (T.Velčs, 1984) vārdnīcā jau sākumā ievieto visus alfabēta simbolus (piemēram, visus $256$ baitus). Tāpēc garākā atrastā frāze vienmēr eksistē, un izvadē pietiek ar frāžu numuriem -- nākamo simbolu $x$ nesūta, tas kļūst par nākamās frāzes pirmo simbolu.
+* **Šajā kursā** aplūkotais algoritms ($\textsf{LZ78-Encode}$, $\textsf{LZ78-Decode}$) ir tieši šāds: vārdnīcā sākumā ir visi burti (tos izvada kā burtus), bet garākas frāzes numurē ar $1, 2, 3, \ldots$ Atkodētājs vārdnīcu būvē ar viena soļa nobīdi, tāpēc var saņemt numuru, kas vēl nav vārdnīcā -- tad jaunā frāze ir iepriekšējā frāze $w$ ar pievienotu tās pirmo burtu $w[1]$ (sk. 3.4. uzdevumu).
+* **Praksē** LZW izmanto mainīga garuma kodus (UNIX `compress` sāk ar $9$ bitu kodiem un palielina tos līdz $16$ bitiem, GIF -- līdz $12$ bitiem) un notīra vārdnīcu, kad tā ir pilna (GIF formātā tam ir īpašs *Clear* kods). LZW patenti (sk. "Vēsture") mudināja GIF vietā izveidot PNG formātu, kas lieto LZ77 (DEFLATE).
 
 ## Matemātiskais pamatojums un sarežģītība
 
@@ -283,17 +264,72 @@ Iespējamie risinājumi:
 
 ## Uzdevumi
 
-**3.1. uzdevums:** Aizkodēt virkni `abcabcabcdabc` ar LZ77, ja loga garums $k = 6$.
+**3.1. uzdevums:** Aizkodēt virkni `abcabcabcdabc` ar $\textsf{LZ77-Encode}$, ja loga garums $W = 6$, bet priekšskata buferis nav ierobežots. Pēc tam pierakstīt to pašu virkni *gzip* formātā (sk. "Uzlabojumi gzip implementācijā"), kurā atsevišķu burtu $x$ izvada kā $(1, x)$, bet sakritību, kuras garums ir vismaz $3$, izvada kā $(0, d, \ell)$.
 
-Vajadzētu sanākt `(1,a),(1,b),(1,c),(0,1,6),(1,d),(0,3,3)`.
+**Atbilde:** Numurējam ievades pozīcijas no $1$ līdz $13$:
+
+| Kursors $i$ | Logs | Garākā sakritība | Izvade |
+| --- | --- | --- | --- |
+| 1 | -- | nav | $(0, 0, \mathtt{a})$ |
+| 2 | `a` | nav | $(0, 0, \mathtt{b})$ |
+| 3 | `ab` | nav | $(0, 0, \mathtt{c})$ |
+| 4 | `abc` | `abcabc` no 1.pozīcijas: $d = 3$, $\ell = 6$ | $(3, 6, \mathtt{d})$ |
+| 11 | `bcabcd` | `ab` no 7.pozīcijas: $d = 4$, $\ell = 2$ | $(4, 2, \mathtt{c})$ |
+
+Pie $i = 4$ sakritība sākas logā, bet turpinās priekšskata buferī: pozīcijas $4 \ldots 9$ tiek kopētas no pozīcijām $1 \ldots 6$. Pie $i = 11$ atlikušie burti `abc` sakrīt ar pozīcijām $7 \ldots 9$, tomēr $\ell = 3$ nav atļauts, jo aiz sakritības jāpaliek simbolam $x$.
+
+Rezultāts: $(0,0,\mathtt{a}), (0,0,\mathtt{b}), (0,0,\mathtt{c}), (3,6,\mathtt{d}), (4,2,\mathtt{c})$.
+
+*gzip* formātā simbols aiz sakritības nav jāizvada, tāpēc pie $i = 11$ var izmantot visu sakritību `abc`: `(1,a),(1,b),(1,c),(0,3,6),(1,d),(0,4,3)`. $\square$
 
 **3.2. uzdevums:** Izmantot LZ78, lai atkodētu virknīti: `A.B.C.1.3.2.D.4.1.A`
 
-Ja atkodēšana veikta pareizi, vajadzētu sanākt `A.B.C.AB.CA.BC.D.ABC.AB.A`.
+**Atbilde:** Atkodētājs būvē to pašu vārdnīcu kā kodētājs. Katram nolasītajam kodam atrod frāzi (burtu vai vārdnīcas frāzi ar šo numuru), izvada to un -- sākot ar otro kodu -- pievieno vārdnīcai iepriekšējo frāzi $w$, kurai galā pierakstīts tekošās frāzes pirmais burts.
 
-**3.3. uzdevums:** Atkodēt `a,a,b,1,2,4,2` par `aabaaabaaaab`
+| Kods | Frāze | Pievieno vārdnīcai |
+| --- | --- | --- |
+| A | A | -- |
+| B | B | 1: AB |
+| C | C | 2: BC |
+| 1 | AB | 3: CA |
+| 3 | CA | 4: ABC |
+| 2 | BC | 5: CAB |
+| D | D | 6: BCD |
+| 4 | ABC | 7: DA |
+| 1 | AB | 8: ABCA |
+| A | A | 9: ABA |
 
-**3.4. uzdevums:** Atkodēt `a,b,a,3,4` par `abaaaaaa`
+Atkodētās frāzes ir `A.B.C.AB.CA.BC.D.ABC.AB.A`, tātad virkne ir `ABCABCABCDABCABA`. Tā ir tā pati virkne, kuru kodējām LZ78 piemērā, un arī vārdnīca sakrīt. $\square$
+
+**3.3. uzdevums:** Izmantot LZ78, lai atkodētu virknīti: `a,a,b,1,2,4,2`
+
+**Atbilde:**
+
+| Kods | Frāze | Pievieno vārdnīcai |
+| --- | --- | --- |
+| a | a | -- |
+| a | a | 1: aa |
+| b | b | 2: ab |
+| 1 | aa | 3: ba |
+| 2 | ab | 4: aaa |
+| 4 | aaa | 5: aba |
+| 2 | ab | 6: aaaa |
+
+Atkodētās frāzes ir `a.a.b.aa.ab.aaa.ab`, tātad virkne ir `aabaaabaaaab`. $\square$
+
+**3.4. uzdevums:** Izmantot LZ78, lai atkodētu virknīti: `a,b,a,3,4`
+
+**Atbilde:**
+
+| Kods | Frāze | Pievieno vārdnīcai |
+| --- | --- | --- |
+| a | a | -- |
+| b | b | 1: ab |
+| a | a | 2: ba |
+| 3 | aa | 3: aa |
+| 4 | aaa | 4: aaa |
+
+Nolasot kodu $3$, vārdnīcā ir tikai frāzes $1$ un $2$ -- frāzi $3$ kodētājs jau izveidoja, bet atkodētājs to vēl nezina. Jaunā frāze sākas ar iepriekšējo frāzi $w$ un beidzas ar savu pirmo burtu, kas sakrīt ar $w[1]$. Tātad frāze ir $w\,w[1] = \mathtt{a}\,\mathtt{a} = \mathtt{aa}$ ($\textsf{LZ78-Decode}$ 9.rindiņa). Tāpat kodam $4$: $w = \mathtt{aa}$, tātad frāze ir $\mathtt{aa}\,\mathtt{a} = \mathtt{aaa}$. Atkodētās frāzes ir `a.b.a.aa.aaa`, tātad virkne ir `abaaaaaa`. $\square$
 
 ## Izmantotā literatūra
 
