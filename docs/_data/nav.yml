@@ -1,26 +1,19 @@
 - title: Sākums
   url: /
-- title: ĀVĢ fakultatīvs
+- title: ĀVĢ MatF 7.-8.klasei
   children:
-    - title: 7.-8.klases programma
+    - title: 7.-8.kl. nodarbību plāns
+      url: /matf78/26_27/schedule/      
+    - title: 7.-8.kl. programma
       url: /matf78/26_27/curriculum_7_8/
-    - title: 7.-8.klases informācija vecākiem
+    - title: 7.-8.kl. informācija vecākiem
       url: /matf78/26_27/for_parents_7_8/
-    - title: 9.-10.klases programma
-      url: /matf78/26_27/curriculum_9_10/
-    - title: 9.-10.klases informācija vecākiem
-      url: /matf78/26_27/for_parents_9_10/
-- title: Lietišķie algoritmi
+- title: ĀVĢ Mat 9.-10.klasei
   children:
-    - title: Kursa apraksts
-      url: /applied_algorithms/
-    - title: Entropija un Hafmana koki
-      url: /applied_algorithms/lossless_entropy_and_huffman/
-    - title: Aritmētiskā saspiešana un ANS
-      url: /applied_algorithms/lossless_arithmetic_and_ans/
-    - title: Lempela-Ziva algoritmi
-      url: /applied_algorithms/lossless_lempel_ziv/
-    - title: Berouza-Vīlera transformācija
-      url: /applied_algorithms/lossless_burrows_wheeler/
-    - title: Bezzudumu saspiešanas uzdevumi
-      url: /applied_algorithms/lossless_final_problemsets/
+    - title: 9.-10.kl. nodarbību plāns
+      url: /matf910/26_27/schedule/
+    - title: 9.-10.kl. programma
+      url: /matf910/26_27/curriculum_9_10/
+    - title: 9.-10.kl. informācija vecākiem
+      url: /matf910/26_27/for_parents_9_10/
+
