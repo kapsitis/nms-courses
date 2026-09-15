@@ -137,6 +137,8 @@ Ja atkodēšana veikta pareizi, vajadzētu sanākt `A.B.C.AB.CA.BC.D.ABC.AB.A`.
 
 ### LZW algoritms
 
+Pie šī algoritma kurss neatgriežas, tas ievietots tikai salīdzināšanai.
+
 **Saspiešanas algoritms:** Ievade: $F$ -- plūsma (sākotnējais teksts). Izvade: saarhivēts teksts.
 
 $\textsf{LZWencode}(F)$
@@ -190,7 +192,7 @@ Varbūtiski procesi var apmierināt šādas īpašības:
 
 **Ergodiski procesi:** Ziņojumu ģenerēšanas process ir ergodisks, ja darbinot vairākus identiskus procesus, iegūstam tādu pašu varbūtisko sadalījumu kā darbinot to pašu procesu ilgu laiku (*ensemble average* sakrīt ar *time average*).
 
-**Piemēri:** Markova ķēdes, ja no katra stāvokļa var nonākt katrā citā, ir ergodiskas; rodas stabils stā Bet ir Iespējamas jocīgas Markova ķēdes, kurās process var aiziet pa vienu vai otru zaru un veidot divus pilnīgi dažādus sadalījumus.
+**Piemēri:** Markova ķēdes, ja no katra stāvokļa var nonākt katrā citā, ir ergodiskas; rodas stabils stāvokļu maiņas paraugs. Bet ir Iespējamas jocīgas Markova ķēdes, kurās process var aiziet pa vienu vai otru zaru un veidot divus pilnīgi dažādus sadalījumus.
 
 **Stacionāri procesi:** Process ir *stacionārs*, ja tā vidējā vērtība, dispersija un citas statistiskās īpašības nemainās, pabīdot novērojumu par laiku $T$ uz priekšu. Piemēram, $E(X_i) = E(X_{i + T})$. Var gadīties, ka varbūtisks process sākumā ģenerē ziņojumus atbilstoši kādam citam sadalījumam, bet kļūst *asimptotiski stacionārs*.
 
@@ -206,18 +208,22 @@ $$
 
 Līdzīga teorēma ir spēkā arī LZ77 saspiešanai. Praksē to ne vienmēr var izmantot, jo LZW vārdnīcas un LZ77 atpakaļskata loga izmērs nav neierobežots.
 
-## LZ77 un LZW lietojumi
+## LZ77 salīdzinājums ar LZ78 un LZW
 
 **Par LZ77 algoritmu:** LZ77 (publicēts 1977.gadā) izmanto pašu tekstu kā vārdnīcu; slīdošo logu un atpakaļejošās references. Saspiešanas formāti kā DEFLATE, ko izmanto ZIP un gzip failos un PNG attēlos.
 
-**Par LZW algoritmu:** LZW (publicēts 1984.gadā) ievieš dinamisku vārdnīcas veidošanu, neprasot iepriekšdefinētu simbolu tabulu (ir adaptīva saspiešanas metode). Tas ir uzlabojums, salīdzinot ar līdzīgu un nedaudz agrāku metodi LZ78 (Lempela-Ziva 1978.gada algoritms). Sastopams GIF attēlu saspiešanas formātā un UNIX "compress" lietojumprogrammā.
+**Par LZW algoritmu:** LZW (publicēts 1984.gadā) ievieš dinamisku vārdnīcas veidošanu, neprasot iepriekšdefinētu simbolu tabulu (ir adaptīva saspiešanas metode). Tas ir 
+konkrēts variants algoritmam LZ78 (Lempela-Ziva 1978.gada algoritms). Sastopams GIF attēlu saspiešanas formātā un UNIX "compress" lietojumprogrammā.
 
-* LZ77 bieži panāk labāku saspiešanas attiecību nekā LZW (sākotnējo baitu skaita attiecība pret saspiestajiem baitiem). Eksistē izņēmumi - teksti, kuri ir piemērotākie tieši LZW (saspiešana "ar vārdnīcu").
+* LZ77 bieži panāk labāku saspiešanas attiecību nekā LZW (sākotnējo baitu skaita attiecība pret saspiestajiem baitiem). 
 * LZW ātrdarbība mēdz būt labāka, jo ar vārdnīcu (heštabulu) var strādāt efektīvāk nekā pārskatīt visu tekstu.
 * LZ77 ļauj kontrolēt izmantoto atmiņu - ierobežojot bufera izmēru. LZW algoritmam var vajadzēt daudz atmiņas, ja saspiežamie bloki ir gari.
-* GIF un PNG abi ir bezzudumu saspiešanas formāti. GIF (LZW algoritms) piemērots primitīvākiem attēliem, kuros daudz vienkrāsainu laukumu. GIF krāsu palete satur 256 krāsas (nevis pilnu $256^3$ RGB paleti). GIF saspiešana/atspiešana parasti notiek ātrāk; savukārt PNG panāk labāku saspiešanas attiecību sarežģītiem attēliem.
-* SVG ir XMLisks vektorgrafikas formāts, bet šādu attēlu apmaiņai un iekļaušanai citos dokumentos bieži izmanto LZ77 un Hafmana saspiešanas algoritmus (gzip jeb DEFLATE).
-* LZ77 uzvedas robustāk gadījumos, ja datus izdodas nosūtīt tikai daļēji; tas arī nodrošina vienkāršāku un ātrāku atspiešanu. Savukārt LZW labi darbojas tad, ja arhīvs nosūtīts pilnībā (var atjaunot pilnu vārdnīcu); tas toties nodrošina labāku saspiešanas attiecību.
+
+Daudzveidīgākie mūsdienu lietojumi ir algoritmam LZ77. 
+LZW lietojumi ir GIF un UNIX "compress" programma, 
+bet licencēšanas ierobežojumu un arī citu iemeslu dēļ GIF šobrīd ir 
+pamatos aizstāts ar PNG. 
+
 
 ### Arhīvi un DLP produkti
 

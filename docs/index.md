@@ -36,10 +36,13 @@ parauga](https://mape.gov.lv/catalog/materials/AAAB8194-FF4F-4A89-835F-2DCBC1611
 *Piezīme:* Pāru gados (tsk. 2026.gadā) sāktos 7.-8.kl. pulciņa plānus saucam par "B gadu". 
 Pavasara semestrī datumi var mainīties, ja pulciņi vairs nav piektdienā.
 
-| Nedēļa | Temats: Apraksts |
+
+
+| Nedēļa | Temats: Apraksts | 
 |---|---|
-| 2026-09-11 | 1. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde |
-| 2026-09-18 | 1. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde |
+| 1. temats  | [7.1. temats. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde]({{ '/courses_26_27/topic7_1_structure/index/' | relative_url }}) |
+| 2026-09-11 | 7.1. Atrisinājumu struktūras: [1.dienas darba lapa PDF]() |
+| 2026-09-18 | 1. Atrisinājumu struktūras |
 | 2026-09-25 | 2. Invarianti: Kas saglabājas, veicot atļautos gājienus |
 | 2026-09-02 | 2. Invarianti: Kas saglabājas, veicot atļautos gājienus |
 | 2026-10-09 | 3. temats. Dirihlē princips: Kad (trušu) sadursmes ir neizbēgamas |
