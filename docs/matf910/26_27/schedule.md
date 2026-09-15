@@ -6,13 +6,15 @@ permalink: /matf910/26_27/schedule/
 # Nodarbību plāns 9.-10.klasei, 2026./2027. m.g.
 
 *Piezīme:* Novada olimpiāde 9.-12. klasēm notiek aptuveni mēnesi agrāk 
-nekā 7.-8. klasēm, tāpēc arī "NOL gatavošanās" un "NOL analīze" ir agrāk.
+nekā 7.-8. klasēm, tāpēc arī "NOL gatavošanās" un "NOL analīze" ir agrāk
+nekā [7.-8.klašu nodarbību plānā]({{ '' | relative_url }})
 Pavasara semestrī datumi var mainīties, ja pulciņi vairs nav piektdienā.
 
 | Nedēļa | Temats |
-|---|---|
-| 2026-09-11 | 1. Atrisinājumu struktūras: kas ir pilns pierādījums |
-| 2026-09-18 | 1. Atrisinājumu struktūras: kas ir pilns pierādījums |
+| --- | --- |
+| **1. temats** | 1. Atrisinājumu struktūras: kas ir pilns pierādījums |
+| 2026-09-11 | 9.1. Atrisinājumu struktūras: |
+| 2026-09-18 | 9.1. Atrisinājumu struktūras: |
 | 2026-09-25 | 2. Izteiksmes un nevienādības: pilnā kvadrāta metode |
 | 2026-10-02 | 2. Izteiksmes un nevienādības: pilnā kvadrāta metode |
 | 2026-10-09 | 3. Dalāmība, atlikumi un kongruences |
@@ -26,7 +28,6 @@ Pavasara semestrī datumi var mainīties, ja pulciņi vairs nav piektdienā.
 | 2026-11-27 | **AMO analīze** |
 | 2026-12-04 | **AMO analīze** (9. un 10. klases komplekti) |
 | 2026-12-11 | Kopsavilkums tematiem 1.-4., individuāls tests |
-| 2026-12-18 | ?? |
 | - | *Ziemas brīvdienas* |
 | 2027-01-08 | 5. Invarianti, monovarianti un spēles |
 | 2027-01-15 | 5. Invarianti, monovarianti un spēles |

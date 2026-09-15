@@ -11,15 +11,21 @@ permalink: /
 Laiki un telpas pēc brīža tiks publicēti arī
 [Interešu grafikā](https://avg.lv/interesu-izglitibas-grafiks/). 
 
-* [7.-8.klašu fakultatīva programma]({{ '/matf78/26_27/curriculum_7_8/' | relative_url }})
+* [7.-8.klašu fakultatīva programma]({{ '/matf78/26_27/curriculum_7_8/' | relative_url }}) - 2026 ir pāra skaitlis, tāpēc mācību gads ir **B gads**. 
 * [Informācija vecākiem 7.-8.kl.]({{ '/matf78/26_27/for_parents_7_8/' | relative_url }})
-* [9.-10.klašu fakultatīva programma]({{ '/matf78/26_27/curriculum_9_10/' | relative_url }})
-* [Informācija vecākiem 9.-10.kl.]({{ '/matf78/26_27/for_parents_9_10/' | relative_url }})
-
-*Piezīme.* 9.-10.klašu programmai ir tikai 1 variants; nav atšķirību A un B gados.
+* [9.-10.klašu fakultatīva programma]({{ '/matf910/26_27/curriculum_9_10/' | relative_url }}) - 9.-10.klašu programmai ir tikai 1 variants; nav A un B gadu.
+* [Informācija vecākiem 9.-10.kl.]({{ '/matf910/26_27/for_parents_9_10/' | relative_url }})
 
 
-## Plānošanas dokumenti
+## Īso atbilžu testi
+
+* [Testu vieta AVGROOM1](https://api.socrative.com/rc/UAYbNH?method=qr)
+* [Kārtot testu AVGROOM2](https://api.socrative.com/rc/4ZxD36?method=qr)
+
+Sk. [Pieslēgšanās instrukciju]({{ '/reference/socrative_instruction/' | relative_url }}). 
+
+
+## Cita literatūra
 
 * [Matemātikas olimpiāžu programma](https://www.nms.lu.lv/fileadmin/user_upload/lu_portal/projekti/nms.lu.lv/Dazadi/_matematikas_olimpiazu_programma_2022.pdf) - visu zināšanu uzskaitījums, [NMS olimpiāžu programmas]({{ '/common_olympiad_program/index/' | relative_url }}) dokuments Markdown formā.
 * [Pamatskolas standarts]({{ '/common_olympiad_program/pamatskolas_standarts/' | relative_url }}) - MK noteikumi Nr. 747 Markdown tabulas veidā.
@@ -30,11 +36,4 @@ parauga](https://mape.gov.lv/catalog/materials/AAAB8194-FF4F-4A89-835F-2DCBC1611
 * **Nav vēl izdarīts:** Olimpiāžu temati pa klašu grupām tā, lai atbilstu 
 [2026.g. publicētās programmas parauga](https://mape.gov.lv/catalog/materials/21A3C087-BE0A-4B66-9E47-AE98A0F56EC9/view) izkārtojumu pa tematiem.
 
-
-## Īso atbilžu testi
-
-* [Testu vieta AVGROOM1](https://api.socrative.com/rc/UAYbNH?method=qr)
-* [Kārtot testu AVGROOM2](https://api.socrative.com/rc/4ZxD36?method=qr)
-
-Sk. [Pieslēgšanās instrukciju]({{ '/reference/socrative_instruction/' | relative_url }}). 
 

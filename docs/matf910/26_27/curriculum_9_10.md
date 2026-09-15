@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Mācību programma 9.-10.klasei"
-permalink: /matf78/26_27/curriculum_9_10/
+permalink: /matf910/26_27/curriculum_9_10/
 ---
 # Mācību programma 9.-10.klasei
 
@@ -629,7 +629,7 @@ Atkarībā no temata specifikas var būt arī kādas praktiskas
 nodarbes - ģeometrisku attēlu zīmēšana ar brīvu roku vai GeoGebra, spēļu spēlēšana,
 aritmētiski piemēri skaitļu teorijā, Desmos vai WolframAlpha algebrā.
 
-Šis plānojums nodarbību dabiski sadala divās aptuveni 45 minūšu daļās: pirmā
+Šis plānojums nodarbību dabiski sadala divās aptuveni 40 minūšu daļās: pirmā
 daļa (teorija, paraugpiemēri, iesildīšanās) ievieš tematu, bet otrā daļa
 (uzdevumu kāpnes) ir pašpietiekama prakse. Ja daļai skolēnu stundu saraksta
 dēļ nodarbība jāsāk ar nobīdi, viņi pievienojas otrās daļas sākumā un saņem

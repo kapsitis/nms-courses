@@ -10,7 +10,7 @@ Pavasara semestrī datumi var mainīties, ja pulciņi vairs nav piektdienā.
 
 | Nedēļa | Temats: Apraksts | 
 |---|---|
-| 1. temats  | [7.1. temats. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde]({{ '/matf78/26_27/78STRUCT_solution_structure/' | relative_url }}) |
+| **1. temats** | [7.1. temats. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde]({{ '/matf78/26_27/78STRUCT_solution_structure/' | relative_url }}) |
 | 2026-09-11 | 7.1. Atrisinājumu struktūras: [1.dienas darba lapa PDF]({{ '/matf78/26_27/78STRUCT_solution_structure/handout_class1.pdf' | relative_url }}), [uzdevumi]({{ '/matf78/26_27/78STRUCT_solution_structure/problems/' | relative_url }}) |
 | 2026-09-18 | 1. Atrisinājumu struktūras |
 | 2026-09-25 | 2. Invarianti: Kas saglabājas, veicot atļautos gājienus |

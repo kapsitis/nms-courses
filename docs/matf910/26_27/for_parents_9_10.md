@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Informācija vecākiem"
-permalink: /matf78/26_27/for_parents_9_10/
+permalink: /matf910/26_27/for_parents_9_10/
 ---
 # Informācija vecākiem
 
