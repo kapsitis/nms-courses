@@ -1490,11 +1490,11 @@ sakarīgumu (`LV.VOL.2023.12.5`).
 
 ## Avoti un saistītie dokumenti
 
-* [Matemātikas olimpiāžu programma (2022)](https://kapsitis.github.io/nms-courses/courses_26_27/common_olympiad_program/) -
+* [Matemātikas olimpiāžu programma (2022)]({{ '/common_olympiad_program/index/' | relative_url }}) -
   tēmu saraksts, īsa teorija un paraugpiemēri.
-* [Pamatskolas standarts (MK Nr. 747)](https://kapsitis.github.io/nms-courses/pamatskolas_standarts/) - sasniedzamie
+* [Pamatskolas standarts (MK Nr. 747)]({{ '/common_olympiad_program/pamatskolas_standarts/' | relative_url }}) - sasniedzamie
   rezultāti, beidzot 3., 6. un 9. klasi.
-* [Vidusskolas standarts (MK Nr. 416)](https://kapsitis.github.io/nms-courses/vidusskolas_standarts/) - sasniedzamie
+* [Vidusskolas standarts (MK Nr. 416)]({{ '/common_olympiad_program/vidusskolas_standarts/' | relative_url }}) - sasniedzamie
   rezultāti vispārīgajā, optimālajā un augstākajā apguves līmenī.
 * Uzdevumu arhīvs: mapes `docs/LV.AMO`, `docs/LV.NOL` un `docs/LV.VOL`; uzdevumi
   pa tēmām - [uzdevumu pārlūkā](https://www.dudajevagatve.lv/eliozo/curriculum).

@@ -11,10 +11,10 @@ permalink: /
 Laiki un telpas pēc brīža tiks publicēti arī
 [Interešu grafikā](https://avg.lv/interesu-izglitibas-grafiks/). 
 
-* [7.-8.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_7_8/' | relative_url }})
-* [Informācija vecākiem 7.-8.kl.]({{ '/courses_26_27/for_parents_7_8/' | relative_url }})
-* [9.-10.klašu fakultatīva programma]({{ '/courses_26_27/curriculum_9_10/' | relative_url }})
-* [Informācija vecākiem 9.-10.kl.]({{ '/courses_26_27/for_parents_9_10/' | relative_url }})
+* [7.-8.klašu fakultatīva programma]({{ '/matf78/26_27/curriculum_7_8/' | relative_url }})
+* [Informācija vecākiem 7.-8.kl.]({{ '/matf78/26_27/for_parents_7_8/' | relative_url }})
+* [9.-10.klašu fakultatīva programma]({{ '/matf78/26_27/curriculum_9_10/' | relative_url }})
+* [Informācija vecākiem 9.-10.kl.]({{ '/matf78/26_27/for_parents_9_10/' | relative_url }})
 
 *Piezīme.* 9.-10.klašu programmai ir tikai 1 variants; nav atšķirību A un B gados.
 
@@ -40,8 +40,8 @@ Pavasara semestrī datumi var mainīties, ja pulciņi vairs nav piektdienā.
 
 | Nedēļa | Temats: Apraksts | 
 |---|---|
-| 1. temats  | [7.1. temats. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde]({{ '/courses_26_27/topic7_1_structure/index/' | relative_url }}) |
-| 2026-09-11 | 7.1. Atrisinājumu struktūras: [1.dienas darba lapa PDF]() |
+| 1. temats  | [7.1. temats. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde]({{ '/matf78/26_27/78STRUCT_solution_structure/' | relative_url }}) |
+| 2026-09-11 | 7.1. Atrisinājumu struktūras: [1.dienas darba lapa PDF]({{ '/matf78/26_27/78STRUCT_solution_structure/handout_class1.pdf' | relative_url }}), [uzdevumi]({{ '/matf78/26_27/78STRUCT_solution_structure/problems/' | relative_url }}) |
 | 2026-09-18 | 1. Atrisinājumu struktūras |
 | 2026-09-25 | 2. Invarianti: Kas saglabājas, veicot atļautos gājienus |
 | 2026-09-02 | 2. Invarianti: Kas saglabājas, veicot atļautos gājienus |

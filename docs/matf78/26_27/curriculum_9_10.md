@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Mācību programma 9.-10.klasei"
-permalink: /courses_26_27/curriculum_9_10/
+permalink: /matf78/26_27/curriculum_9_10/
 ---
 # Mācību programma 9.-10.klasei
 
@@ -50,9 +50,9 @@ Gada ritmu iezīmē pieci sacensību punkti: skolas olimpiāde septembra beigās
 atklātā olimpiāde (AMO) novembra vidū, novada olimpiādes 2. kārta 9.-12. klasēm
 februārī, "Latvijas kauss" un "Ķengurs bez robežām" ziemas otrajā pusē, un
 valsts olimpiādes 3. kārta aprīlī. Sk. arī
-[informāciju vecākiem 9.-10.kl.]({{ '/courses_26_27/for_parents_9_10/' | relative_url }}).
+[informāciju vecākiem 9.-10.kl.]({{ '/matf78/26_27/for_parents_9_10/' | relative_url }}).
 
-![](calendar.png)
+![]({{ '/matf78/26_27/calendar.png' | relative_url }})
 
 ### Programmas mērķis
 

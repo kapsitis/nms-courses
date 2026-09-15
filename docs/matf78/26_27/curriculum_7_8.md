@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Atsauksme par pamatskolas_standartu"
-permalink: /courses_26_27/curriculum_7_8/
+permalink: /matf78/26_27/curriculum_7_8/
 ---
 # Mācību programma 7.-8.klasei
 
@@ -574,7 +574,7 @@ patstāvīgi atrisinājis / spēj izskaidrot citiem).
 Pēc olimpiādēm rezultātus pa uzdevumiem
 salīdzina ar agrāk novērotajiem apguves līmeņiem.
 
-![](calendar.png)
+![]({{ '/matf78/26_27/calendar.png' | relative_url }})
 
 
 

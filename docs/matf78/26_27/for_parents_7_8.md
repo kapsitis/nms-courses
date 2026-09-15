@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Informācija vecākiem"
-permalink: /courses_26_27/for_parents_7_8/
+permalink: /matf78/26_27/for_parents_7_8/
 ---
 # Informācija vecākiem 7.-8.kl.
 
@@ -39,7 +39,7 @@ visam vajadzētu notikt stabili. (Telpas tomēr mēdz bieži mainīties,
 par to izmaiņām brīdināsim atsevišķi.)
 
 **Par ko tieši ir nodarbības:** 
-Sk. [7.-8.klases plānu]({{ '/courses_26_27/curriculum_7_8/' | relative_url }}). Detalizēta programma tiks publicēta līdz 
+Sk. [7.-8.klases plānu]({{ '/matf78/26_27/curriculum_7_8/' | relative_url }}). Detalizēta programma tiks publicēta līdz 
 septembra beigām. 
 
 

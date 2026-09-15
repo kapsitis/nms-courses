@@ -10,8 +10,8 @@ Tabulā ir visas [Olimpiāžu satura standarta]({{ '/common_olympiad_program/oli
 tematiskās līnijas. Šūnu fona krāsa rāda, **kurā no mūsu fakultatīviem** attiecīgā
 prasība tiek mācīta:
 
-* [7.-8. klašu programma]({{ '/courses_26_27/curriculum_7_8/' | relative_url }}) - divgadu rotācijā (A gads / B gads);
-* [9.-10. klašu programma]({{ '/courses_26_27/curriculum_9_10/' | relative_url }}) - vienāda katru gadu.
+* [7.-8. klašu programma]({{ '/matf78/26_27/curriculum_7_8/' | relative_url }}) - divgadu rotācijā (A gads / B gads);
+* [9.-10. klašu programma]({{ '/matf78/26_27/curriculum_9_10/' | relative_url }}) - vienāda katru gadu.
 
 Formulējumi šūnās ir saīsināti; pilnu tekstu sk. standarta dokumentā, bet
 konkrētos sasniedzamos rezultātus (SR) un uzdevumu piemērus - programmās.
