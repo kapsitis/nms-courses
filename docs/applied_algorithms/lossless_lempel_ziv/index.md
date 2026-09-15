@@ -7,34 +7,46 @@ permalink: /applied_algorithms/lossless_lempel_ziv/
 
 A.Lempels (*Abraham Lempel*), J.Zivs (*Jacob Ziv*) un T.Velčs (*Terry Welch*) izveidoja dažus radniecīgus saspiešanas algoritmus, kas izmanto adaptīvu vārdnīcu, kurā glabājas biežāk atkārtojamās apakšvirknes. Šos sauc par Lempela-Ziva algoritmiem. Tie ir [LZ77 un LZ78](https://en.wikipedia.org/wiki/LZ77_and_LZ78), [Lempel–Ziv–Welch (LZW)](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch), [LZMA](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm) un daži citi.
 
-Kursā aplūkosim LZ77 un LZW (kas ir uzlabots LZ78 variants). Saspiešana ar vārdnīcu (LZ77 vai LZW) var sasniegt lielāku saspiešanas attiecību nekā entropijas kodi (Hafmana vai aritmētiskais), jo izmanto to, ka ievades datos nākošie simboli ir atkarīgi no iepriekšējiem.
+Kursā aplūkosim LZ77 un LZW (kas ir uzlabots LZ78 variants).
 
-## Markova ķēdes
+## Motivācija
 
-Entropijas kodu ievadei bija teorētisks modelis - neatkarīgi vienādi sadalīti gadījuma lielumi. Ir vienkāršs matemātisks modelis -- Markova ķēde (*Markov chain*), kurā ziņojumu (burtu vai vārdu) virknīte ir nejauša, tomēr ziņojumu varbūtības ir atkarīgas no konteksta -- tie vairs nav savstarpēji neatkarīgi. Markova procesos
+Saspiešana ar vārdnīcu (LZ77 vai LZW) var sasniegt lielāku saspiešanas attiecību nekā entropijas kodi (Hafmana vai aritmētiskais), jo izmanto to, ka ievades datos nākošie simboli ir atkarīgi no iepriekšējiem.
 
-**Definīcija:** Par *Markova ķēdi* (*Markov chain*) diskrētā laikā ar galīgu stāvokļu alfabētu sauc varbūtisku procesu, kurš pārvietojas galīgā stāvokļu/ziņojumu kopā $S = \lbrace x_1, x_2, \ldots, x_n \rbrace$ un uzvedas sekojoši:
+> **TODO:** Entropijas kodi ir optimāli neatkarīgiem, vienādi sadalītiem ziņojumiem ar zināmu sadalījumu. Kādēļ ar to nepietiek reāliem datiem (atkārtoti vārdi un koda fragmenti; varbūtību modelis nav zināms iepriekš un tas būtu jānosūta). Kāds varbūtisks modelis ievaddatiem atbilst LZ algoritmiem -- sk. sadaļu "Matemātiskais pamatojums".
 
-* Pašā sākumā tas nostājas vienā no stāvokļiem atbilstoši noteiktam sākuma sadalījumam; tā ir pirmā Markova ķēdes izvade.
-* Katrā laika solī Markova ķēdes izvade ir šobrīd sasniegtais stāvoklis.
-* Pāreja no viena stāvokļa uz citu ir izsakāma ar varbūtību (no dotā stāvokļa visu izejošo varbūtību summa ir $1$). Šo varbūtību nosaka tikai pašreizējais stāvoklis.
+## Vēsture
 
-Markova ķēdē stāvokļi nav neatkarīgi un var nebūt identiski sadalīti (*independent and identically distributed*). Markova ķēdei nav atmiņas -- visa uzkrātā informācija ir ietverta tekošajā stāvoklī.
+**Par LZ77 algoritmu:** LZ77 (publicēts 1977.gadā) izmanto pašu tekstu kā vārdnīcu; slīdošo logu un atpakaļejošās references. Saspiešanas formāti kā DEFLATE, ko izmanto ZIP un gzip failos un PNG attēlos.
 
-**Piemērs:** Šāds orientēts grafs ar $3$ stāvokļiem apraksta Markova ķēdi:
+**Par LZW algoritmu:** LZW (publicēts 1984.gadā) ievieš dinamisku vārdnīcas veidošanu, neprasot iepriekšdefinētu simbolu tabulu (ir adaptīva saspiešanas metode). Tas ir 
+konkrēts variants algoritmam LZ78 (Lempela-Ziva 1978.gada algoritms). Sastopams GIF attēlu saspiešanas formātā un UNIX "compress" lietojumprogrammā.
 
-![Markova ķēde](figs/markov-chain.png)
+Daudzveidīgākie mūsdienu lietojumi ir algoritmam LZ77. 
+LZW lietojumi ir GIF un UNIX "compress" programma, 
+bet licencēšanas ierobežojumu un arī citu iemeslu dēļ GIF šobrīd ir 
+pamatos aizstāts ar PNG. 
 
-$18$ burtu virknīte iegūta nejauši staigājot pa šo grafu, sākot ar $A$: `ABCABCBCAAABCABBAB`.
+> **TODO:** Kur un kā algoritmi izgudroti (publikācijas 1977., 1978. un 1984.g.). Pirmie nozīmīgie produkti (compress, GIF, PKZIP, gzip, PNG). LZW patenti un to ietekme uz GIF un "compress" lietošanu (sk. literatūras sarakstu).
 
-## Lempela-Ziva algoritmi
+## Algoritmi
 
 ### LZ77 algoritms
+
+#### Ideja
 
 Algoritms izmanto logu (*view*) -- buferi ar fiksētu garumu (piemēram, 32 KiB jeb 32768 baiti). Tuvu loga beigām atrodas kursors, kas rāda uz kādu burtu.
 
 * Pirms kursora ir atpakaļskata buferis (gandrīz viss 32 KiB logs)
 * Pēc kursora ir priekšskata buferis -- piemēram, $32$ baiti. (Izvēlēties garāku priekšskata buferi apgrūtina prefiksu meklēšanu; bet $32$ burtu virknītes ir tādas, ko varam cerēt atrast iepriekšējos datos.)
+
+Šajā gadījumā vārdnīca ir gabals no jau iekodētās virknes. Iekodētājs redz beigu gabalu no iekodētās virknes kā slīdošo logu:
+
+![LZ77 logs](figs/lz77-window.png)
+
+Logs ir kā atmiņas buferis, kurā var atrast nesen iekodētas virknes un izmantot tās, lai īsāk pierakstītu to virknes gabaliņu, kurš sekos.
+
+#### Pseidokods
 
 $\textsf{LZ77Encode}(\textit{input})$
 1. $\quad \textit{input}$ burtus ielādē logā.
@@ -46,19 +58,13 @@ $\textsf{LZ77Encode}(\textit{input})$
 7. $\quad\quad \textsf{output}(i, j, X)$
 8. $\quad\quad$ Pabīda logu uz priekšu par $j+1$ simboliem.
 
-Šajā gadījumā vārdnīca ir gabals no jau iekodētās virknes. Iekodētājs redz beigu gabalu no iekodētās virknes kā slīdošo logu:
+> **TODO:** LZ77 atspiešanas pseidokods.
 
-![LZ77 logs](figs/lz77-window.png)
-
-Logs ir kā atmiņas buferis, kurā var atrast nesen iekodētas virknes un izmantot tās, lai īsāk pierakstītu to virknes gabaliņu, kurš sekos.
-
-**Piemērs:**
+#### Piemērs
 
 ![LZ77 piemērs](figs/lz77-example.png)
 
-**Piemērs:** Aizkodēt virkni `abcabcabcdabc`, ja loga garums $k = 6$.
-
-Vajadzētu sanākt `(1,a),(1,b),(1,c),(0,1,6),(1,d),(0,3,3)`.
+#### Uzlabojumi gzip implementācijā
 
 Dažas LZ77 izmaiņas, ko lieto "gzip".
 
@@ -71,6 +77,12 @@ Dažas LZ77 izmaiņas, ko lieto "gzip".
 **Heštabulas ar prefiksiem:** `gzip` būvē heštabulu, kurā salikti visi sastaptie stringi garumā 3 kā atslēgas. (Ja tiem ir vairāki turpinājumi, tos saliek heštabulas spainītī atpakaļejošā secībā). Ja ir vairāki prefiksi, tad LZ77 ir izdevīgāk izvēlēties pašu nesenāko (ar vismazāko nobīdi jeb *offset*), jo tas rada visnevienmērīgāko sadalījumu, ko labi saspiest ar Hafmana kodu.
 
 ### LZ78 algoritms
+
+#### Ideja
+
+> **TODO:** Vārdnīca, kas sastāv no iepriekš sastaptām frāzēm (nevis slīdošais logs); katra jauna frāze ir kādas vārdnīcas frāzes turpinājums ar vienu burtu.
+
+#### Pseidokods
 
 **LZ78 saspiešanas algoritms**
 
@@ -110,7 +122,9 @@ $\textsf{LZ78decode}(F)$:
 11. $\quad\quad\quad D.\textsf{add}(wk) \quad\quad \textcolor{teal}{\textit{add wk to dictionary}}$
 12. $\quad\quad\quad w = wn$
 
-**Piemērs:** Dota virkne `abcabcabcdabcaba`, kura jānokodē, izmantojot LZ78 algoritmu.
+#### Piemērs
+
+Dota virkne `abcabcabcdabcaba`, kura jānokodē, izmantojot LZ78 algoritmu.
 
 | Solis | Garākais w vārdnīcā | k | Izvade | Pievieno vārdnīcai |
 | --- | --- | --- | --- | --- |
@@ -125,19 +139,17 @@ $\textsf{LZ78decode}(F)$:
 | 9. | ab | a | ab | aba |
 | 10. |  |  | a |  |
 
-Parasti kodē burtus par burtiem, bet garākas virknes aizstāj ar tā soļa numuru, kurā šī virkne ir ievietota vārdnīcā. Tas nozīmē, ka 1. piemērā virkne `ab` tiktu kodēta kā 1, `bc` kā 2, `ca` kā 3, utt. Beigās iegūta virkne `a,b,c,1,3,2,d,4,1,a`
-
-**2. piemērs:** Izmantot LZ78, lai atkodētu virknīti: `A.B.C.1.3.2.D.4.1.A`
-
-Ja atkodēšana veikta pareizi, vajadzētu sanākt `A.B.C.AB.CA.BC.D.ABC.AB.A`.
-
-**3. piemērs:** Atkodēt `a,a,b,1,2,4,2` par `aabaaabaaaab`
-
-**4. piemērs:** Atkodēt `a,b,a,3,4` par `abaaaaaa`
+Parasti kodē burtus par burtiem, bet garākas virknes aizstāj ar tā soļa numuru, kurā šī virkne ir ievietota vārdnīcā. Tas nozīmē, ka šajā piemērā virkne `ab` tiktu kodēta kā 1, `bc` kā 2, `ca` kā 3, utt. Beigās iegūta virkne `a,b,c,1,3,2,d,4,1,a`
 
 ### LZW algoritms
 
 Pie šī algoritma kurss neatgriežas, tas ievietots tikai salīdzināšanai.
+
+#### Ideja
+
+> **TODO:** Ar ko LZW atšķiras no LZ78 (vārdnīca sākumā satur visus alfabēta burtus, tāpēc izvadē ir tikai vārdnīcas indeksi).
+
+#### Pseidokods
 
 **Saspiešanas algoritms:** Ievade: $F$ -- plūsma (sākotnējais teksts). Izvade: saarhivēts teksts.
 
@@ -170,7 +182,27 @@ $\textsf{LZWdecode}(F)$
 12. $\quad\quad \textsf{output}(W)$
 13. $\quad\quad C = C'$
 
-### Saistība ar entropiju
+## Matemātiskais pamatojums un sarežģītība
+
+### Markova ķēdes
+
+Entropijas kodu ievadei bija teorētisks modelis - neatkarīgi vienādi sadalīti gadījuma lielumi. Ir vienkāršs matemātisks modelis -- Markova ķēde (*Markov chain*), kurā ziņojumu (burtu vai vārdu) virknīte ir nejauša, tomēr ziņojumu varbūtības ir atkarīgas no konteksta -- tie vairs nav savstarpēji neatkarīgi. Markova procesos
+
+**Definīcija:** Par *Markova ķēdi* (*Markov chain*) diskrētā laikā ar galīgu stāvokļu alfabētu sauc varbūtisku procesu, kurš pārvietojas galīgā stāvokļu/ziņojumu kopā $S = \lbrace x_1, x_2, \ldots, x_n \rbrace$ un uzvedas sekojoši:
+
+* Pašā sākumā tas nostājas vienā no stāvokļiem atbilstoši noteiktam sākuma sadalījumam; tā ir pirmā Markova ķēdes izvade.
+* Katrā laika solī Markova ķēdes izvade ir šobrīd sasniegtais stāvoklis.
+* Pāreja no viena stāvokļa uz citu ir izsakāma ar varbūtību (no dotā stāvokļa visu izejošo varbūtību summa ir $1$). Šo varbūtību nosaka tikai pašreizējais stāvoklis.
+
+Markova ķēdē stāvokļi nav neatkarīgi un var nebūt identiski sadalīti (*independent and identically distributed*). Markova ķēdei nav atmiņas -- visa uzkrātā informācija ir ietverta tekošajā stāvoklī.
+
+**Piemērs:** Šāds orientēts grafs ar $3$ stāvokļiem apraksta Markova ķēdi:
+
+![Markova ķēde](figs/markov-chain.png)
+
+$18$ burtu virknīte iegūta nejauši staigājot pa šo grafu, sākot ar $A$: `ABCABCBCAAABCABBAB`.
+
+### Vidējā entropija, stacionāri un ergodiski procesi
 
 **Definīcija:** Aplūkojam $X_1 X_2 X_3\ldots$ - ziņojumu virkni, kas ģenerēta ar varbūtisku procesu (neatkarīgi gadījumlielumi, Markova ķēde, slēpta Markova ķēde, neironu tīkls u.c.). Par par šīs virknes *vidējo entropiju* (*entropy rate*) sauc robežu:
 
@@ -198,6 +230,8 @@ Varbūtiski procesi var apmierināt šādas īpašības:
 
 **Piemēri:** Markova ķēdes var veidot periodiskas virknes. Periodiskas virknes (ar periodu $T>1$) nevar būt stacionāras -- visi varbūtību sadalījumi atkarīgi no tā, kurā perioda fāzē mēs esam.
 
+### Saspiešanas asimptotiskā optimalitāte
+
 **Teorēma:** Ja $X$ ir bināru ziņojumu avots (alfabēts ir $\lbrace 0,1 \rbrace$), kas ir stacionārs un ergodisks, tad
 
 $$
@@ -208,22 +242,17 @@ $$
 
 Līdzīga teorēma ir spēkā arī LZ77 saspiešanai. Praksē to ne vienmēr var izmantot, jo LZW vārdnīcas un LZ77 atpakaļskata loga izmērs nav neierobežots.
 
-## LZ77 salīdzinājums ar LZ78 un LZW
+> **TODO:** Piemērs, kurā Markova ķēdes vidējā entropija $H(X)$ ir mazāka nekā viena simbola entropija $H(X_1)$ -- t.i. Hafmana kods katram simbolam atsevišķi nevar sasniegt $H(X)$, bet LZ algoritmi asimptotiski to sasniedz.
 
-**Par LZ77 algoritmu:** LZ77 (publicēts 1977.gadā) izmanto pašu tekstu kā vārdnīcu; slīdošo logu un atpakaļejošās references. Saspiešanas formāti kā DEFLATE, ko izmanto ZIP un gzip failos un PNG attēlos.
-
-**Par LZW algoritmu:** LZW (publicēts 1984.gadā) ievieš dinamisku vārdnīcas veidošanu, neprasot iepriekšdefinētu simbolu tabulu (ir adaptīva saspiešanas metode). Tas ir 
-konkrēts variants algoritmam LZ78 (Lempela-Ziva 1978.gada algoritms). Sastopams GIF attēlu saspiešanas formātā un UNIX "compress" lietojumprogrammā.
+### Sarežģītība; LZ77 un LZW salīdzinājums
 
 * LZ77 bieži panāk labāku saspiešanas attiecību nekā LZW (sākotnējo baitu skaita attiecība pret saspiestajiem baitiem). 
 * LZW ātrdarbība mēdz būt labāka, jo ar vārdnīcu (heštabulu) var strādāt efektīvāk nekā pārskatīt visu tekstu.
 * LZ77 ļauj kontrolēt izmantoto atmiņu - ierobežojot bufera izmēru. LZW algoritmam var vajadzēt daudz atmiņas, ja saspiežamie bloki ir gari.
 
-Daudzveidīgākie mūsdienu lietojumi ir algoritmam LZ77. 
-LZW lietojumi ir GIF un UNIX "compress" programma, 
-bet licencēšanas ierobežojumu un arī citu iemeslu dēļ GIF šobrīd ir 
-pamatos aizstāts ar PNG. 
+> **TODO:** LZ77 laika sarežģītība ar naivu prefiksu meklēšanu logā un ar heštabulām; LZ78/LZW vārdnīcas (*trie*) izmērs un laika sarežģītība; atspiešanas ātrums salīdzinājumā ar saspiešanu.
 
+## Papildu tēmas
 
 ### Arhīvi un DLP produkti
 
@@ -252,7 +281,21 @@ Iespējamie risinājumi:
 * Konfigurēt DLP produktus novērošanas (*monitoring*) režīmā - tad ir vairāk laika analīzei, jo transakcijas var uzreiz atļaut neatkarīgi no to satura.
 * Dažus grūti analizējamus failus (dīvaini saspiestus, ar parolēm aizsargātus biroja programmu dokumentus, šifrētus datus) var nelaist cauri vārtejām, piespiest lietotājus sūtīt DLP rīkam saprotami vai šifrēt tikai uz organizācijas drošības perimetra.
 
-## Bibliogrāfija
+## Uzdevumi
+
+**3.1. uzdevums:** Aizkodēt virkni `abcabcabcdabc` ar LZ77, ja loga garums $k = 6$.
+
+Vajadzētu sanākt `(1,a),(1,b),(1,c),(0,1,6),(1,d),(0,3,3)`.
+
+**3.2. uzdevums:** Izmantot LZ78, lai atkodētu virknīti: `A.B.C.1.3.2.D.4.1.A`
+
+Ja atkodēšana veikta pareizi, vajadzētu sanākt `A.B.C.AB.CA.BC.D.ABC.AB.A`.
+
+**3.3. uzdevums:** Atkodēt `a,a,b,1,2,4,2` par `aabaaabaaaab`
+
+**3.4. uzdevums:** Atkodēt `a,b,a,3,4` par `abaaaaaa`
+
+## Izmantotā literatūra
 
 * [LZW algoritma piemērs](http://web.mit.edu/6.02/www/f2010/handouts/recitations/Recitation21VergheseFall2010.pdf).
 * Praktiski LZW algoritma apsvērumi: [What if dictionary is full](https://stackoverflow.com/questions/40054218/what-if-dictionary-size-in-lzw-algorithm-is-full).
