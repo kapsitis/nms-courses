@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "7.1.temats: Atrisinājumu struktūras"
-permalink: /matf78/26_27/78STRUCT_solution_structure/handout_class1/
+permalink: /matf78/26_27/78STRUCT_solution_structure/class1/
 
 docx_header: "1.temats: Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde"
 docx_footer: "ĀVĢ 7.-8.klašu matemātikas fakultatīvs"
@@ -13,7 +13,7 @@ docx_heading1_size: 14
 geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 ---
 
-# 1.1. Atrisinājumu struktūras: Ko prasa uzdevums?
+# 7.1. Atrisinājumu struktūras: Ko prasa uzdevums?
 
 No jautājuma atkarīgs, kas jāraksta, lai atrisinājums būtu pilnīgs.
 

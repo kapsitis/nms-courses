@@ -13,7 +13,7 @@ docx_heading1_size: 14
 geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 ---
 
-# 9.1. Atrisinājumu struktūras: Ko prasa uzdevums?
+# 9.1. Atrisinājumu struktūras: Seši jautājumu tipi
 
 No jautājuma atkarīgs, kas jāraksta, lai atrisinājums būtu pilnīgs.
 

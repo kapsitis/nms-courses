@@ -62,7 +62,8 @@ gadīties, ka viens skaitlis ir tieši trīs reizes lielāks nekā otrs skaitlis
 Vai skaitli $119$ var izteikt kā vairāku naturālu skaitļu summu tā, lai arī šo skaitļu
 reizinājums būtu $119$?
 
-(*Saprašana*): Ar kādiem naturāliem skaitļiem dalās 119? Tikai tie un vieninieki var būt starp saskaitāmajiem. #ClarifyGoal
+(*Saprašana*): Ar kādiem naturāliem skaitļiem dalās 119? Tikai tie un vieninieki 
+var būt starp saskaitāmajiem. `#ClarifyGoal`
 
 
 ## LV.AMO.2011.6.1
@@ -71,7 +72,8 @@ Vai eksistē tādi naturāli skaitļi $a$ un $b$, kuriem izpildās vienādība
 
 $$a \cdot b \cdot(a+b)=20102011?$$
 
-(*Izpēte*): Pārbaudi visas paritāšu kombinācijas: a un b abi pāra, viens pāra, abi nepāra. Kāda paritāte ir a·b·(a+b)? #ParityAndRemainders
+(*Izpēte*): Pārbaudi visas paritāšu kombinācijas (kurš ir pāra, kurš nepāra).
+Cik paritāšu kombināciju ir? Kāda paritāte ir $a \cdot b \cdot (a+b)? `#ParityAndRemainders`
 
 
 ## LV.NOL.2023.6.4
@@ -80,7 +82,8 @@ Vai skaitli: **(A)** $72$, **(B)** $73$ var izteikt kā trīs dažādu
 naturālu skaitļu summu tā, lai katru divu šo skaitļu summa dalītos 
 ar atlikušo skaitli?
 
-(*Izpēte*): Sāc ar mazu skaitli: 6 = 1+2+3 der. Ko pamani – ar kuriem saskaitāmajiem dalās visu triju skaitļu summa? #SmallCases
+(*Izpēte*): Sāc ar mazu skaitli, piemēram, $6 = 1+2+3$. Ar kuriem saskaitāmajiem 
+dalās divu (visu triju?) skaitļu summa? `#SmallCases`
 
 
 ## LV.NOL.2012.6.4
@@ -88,7 +91,8 @@ ar atlikušo skaitli?
 Vai piecstūra virsotnēs var ierakstīt piecus dažādus naturālus skaitļus, lai 
 jebkuru divu blakus stāvošu skaitļu summa būtu pirmskaitlis?
 
-(*Saprašana*): Divu dažādu naturālu skaitļu summa ir vismaz 3. Kāda paritāte ir pirmskaitļiem, kas lielāki par 2? #ClarifyGoal
+(*Saprašana*): Divu dažādu naturālu skaitļu summa ir vismaz 3. Kāda paritāte 
+ir pirmskaitļiem, kas lielāki par 2? #ClarifyGoal
 
 
 # 2. daļa
@@ -132,7 +136,8 @@ Sivēntiņš $229$ ābolus salika $60$ grozos. Dažos grozos viņš ielika $x$ �
 bet pārējos - katrā pa $3$ āboliem. Nosaki visas iespējamās naturālās $x$ 
 vērtības!
 
-(*Saprašana*): Vai x var būt 3 vai mazāks? Ja nē, vispirms ieliec katrā grozā 3 ābolus. Cik paliek pāri? #ClarifyGoal
+(*Saprašana*): Vai $x$ var būt 3 vai mazāks? Ja nē, vispirms ieliec katrā 
+grozā $3$ ābolus. Cik paliek pāri? `#ClarifyGoal`
 
 
 ## LV.AMO.2022B.7.1

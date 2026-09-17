@@ -116,6 +116,35 @@ end
 """
 
 
+# A kramdown span IAL right after an image, e.g. ![](x.png){: width="300"} or
+# ![](x.png){: style="width:3in"}. Jekyll turns it into an <img> attribute;
+# pandoc needs its own {width=...} syntax, so translate_image_sizes() rewrites it.
+_IMG_IAL = re.compile(r"(!\[[^\]]*\]\([^)]*\))\{:\s*([^}\n]*)\}")
+_IMG_ATTR = re.compile(r"""(width|height)\s*[:=]\s*["']?\s*([\d.]+\s*(?:px|in|cm|mm|pt|%)?)""",
+                       re.IGNORECASE)
+
+
+def translate_image_sizes(text: str) -> str:
+    """Rewrite kramdown image IALs into pandoc image attributes.
+
+    ``width``/``height`` are taken from the attribute itself or from a CSS
+    ``style``; a unitless value means pixels (as in HTML), which pandoc scales
+    at 96 dpi -- so e.g. 300 px comes out as 3.125 in in Word, matching the
+    browser at its default zoom.
+    """
+    def _rewrite(match: "re.Match") -> str:
+        image, ial = match.group(1), match.group(2)
+        dims = []
+        for key, value in _IMG_ATTR.findall(ial):
+            value = value.replace(" ", "")
+            if value[-1].isdigit():   # unitless, i.e. an HTML pixel count
+                value += "px"
+            dims.append(f"{key.lower()}={value}")
+        return f"{image}{{{' '.join(dims)}}}" if dims else image
+
+    return _IMG_IAL.sub(_rewrite, text)
+
+
 def preprocess_markdown(text: str) -> str:
     """Rewrite the Markdown so solution regions get highlighted in the .docx.
 
@@ -127,7 +156,11 @@ def preprocess_markdown(text: str) -> str:
       * any display equation ``$$ ... $$`` that contains ``\\color`` is treated
         as a *solution* and wrapped automatically -- convenient for the common
         case where the whole answer is a single blue formula.
+
+    Image sizes written as kramdown IALs are translated for pandoc as well.
     """
+    text = translate_image_sizes(text)
+
     # 1) Bracket explicit ::: solution ... ::: blocks with invisible sentinels;
     #    post-processing shades every paragraph and table cell between them.
     text = _SOL_BLOCK.sub(

@@ -2,6 +2,15 @@
 layout: default
 title: "Atsauksme par pamatskolas_standartu"
 permalink: /matf78/26_27/curriculum_7_8/
+
+docx_header: "Mācību programma 7.-8.klasei"
+docx_footer: "ĀVĢ 7.-8.klašu matemātikas fakultatīvs"
+docx_font: "Calibri"
+docx_fontsize: 10
+docx_heading_font: "Calibri Light"
+docx_heading_color: "2F5496"
+docx_heading1_size: 14
+geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 ---
 # Mācību programma 7.-8.klasei
 
