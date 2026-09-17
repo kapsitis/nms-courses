@@ -18,8 +18,9 @@ geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 > Ja kaut ko **var izdarīt** - pamato ar konkrētu piemēru, ja **nevar izdarīt** - ar vispārīgu spriedumu.
 
 Apgalvojumi bieži ir par kādu nezināmu parametru $n$ (vai $a$ vai $b$). 
-Ja parametrs $n$ **eksistē** - Jūs (kā risinātājs) pats varat izvēlēties šo parametru. 
-Ja parametrs $n$ **neeksistē** - Parametru izvēlas žūrija (Jūs nezināt kādu), un Jūsu spriedumam tas jāapgāž. 
+Ja parametrs $n$ **eksistē** - Jūs (kā risinātājs) pats varat izvēlēties šo parametru.  
+Ja parametrs $n$ **neeksistē** - Parametru izvēlas žūrija (Jūs olimpiādes risināšanas laikā 
+nezināt kādu), un Jūsu spriedumam jāparāda, ka viņiem nekas nesanāks.
 
 **1.piemērs:** Ir divu veidu pastmarkas - ar vērtību $5$ centi un $21$ cents.  
 **(A)** Pierādīt, ka ar šīm pastmarkām nevar apmaksāt $79$ centus (neeksistē $a$ un $b$, kam $5a + 21b = 79$).   
