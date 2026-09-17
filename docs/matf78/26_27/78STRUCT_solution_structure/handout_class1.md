@@ -1,4 +1,8 @@
 ---
+layout: default
+title: "7.1.temats: Atrisinājumu struktūras"
+permalink: /matf78/26_27/78STRUCT_solution_structure/handout_class1/
+
 docx_header: "1.temats: Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde"
 docx_footer: "ĀVĢ 7.-8.klašu matemātikas fakultatīvs"
 docx_font: "Calibri"

@@ -25,7 +25,14 @@ Laiki un telpas pēc brīža tiks publicēti arī
 Sk. [Pieslēgšanās instrukciju]({{ '/reference/socrative_instruction/' | relative_url }}). 
 
 
-## Cita literatūra
+## Plānošanas dokumenti
+
+Fakultatīva programma ņēmusi vērā  
+pamata un vidējās izglītības standartus (un atbilstošos
+2023.g. un 2026.g. programmu paraugus) kā arī NMS publicēto 
+Matemātikas olimpiāžu programmu. Izmantojot šo informāciju, piedāvājam 
+"olimpiāžu tematu" sadalījumu pa 4 vecuma grupām (5/6, 7/8, 9/10, 11/12 klases). 
+No tām mūsu fakultatīvā ir tikai 7/8 un 9/10. 
 
 * [Matemātikas olimpiāžu programma](https://www.nms.lu.lv/fileadmin/user_upload/lu_portal/projekti/nms.lu.lv/Dazadi/_matematikas_olimpiazu_programma_2022.pdf) - visu zināšanu uzskaitījums, [NMS olimpiāžu programmas]({{ '/common_olympiad_program/index/' | relative_url }}) dokuments Markdown formā.
 * [Pamatskolas standarts]({{ '/common_olympiad_program/pamatskolas_standarts/' | relative_url }}) - MK noteikumi Nr. 747 Markdown tabulas veidā.
