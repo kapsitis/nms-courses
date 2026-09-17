@@ -567,64 +567,47 @@ def normalize_footer(value) -> list[str]:
     return [str(v) for v in value]
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Convert a Markdown file to a styled .docx (running header/footer, base font)."
-    )
-    parser.add_argument("md_file", help="Input Markdown file")
-    parser.add_argument("docx_file", help="Output .docx file")
-    parser.add_argument("--reference-doc", help="Optional pandoc reference .docx for styles")
-    parser.add_argument("--header", help="Override the running header (left) text")
-    parser.add_argument("--header-right", help="Override the running header (right) text")
-    parser.add_argument("--footer", action="append",
-                        help="Override a running footer line (repeatable)")
-    parser.add_argument("--font", help="Override the body font name (default: Calibri)")
-    parser.add_argument("--fontsize", type=float,
-                        help="Override the body font size in pt (default: 11)")
-    parser.add_argument("--heading-font",
-                        help="Override the heading font name (default: Calibri Light)")
-    parser.add_argument("--heading-color",
-                        help="Override the heading colour, hex RGB (default: 2F5496)")
-    parser.add_argument("--heading1-size", type=float,
-                        help="Override the Heading 1 size in pt (default: 16)")
-    parser.add_argument("--title", help="Set the visible document title (default: suppressed)")
-    parser.add_argument("--math-align", choices=("left", "center", "right"),
-                        help="Justify display equations (default from front-matter or center)")
-    args = parser.parse_args()
+def has_docx_front_matter(md_path: Path) -> bool:
+    """True if the Markdown front-matter declares any ``docx_*`` key."""
+    return any(str(key).startswith("docx_") for key in parse_front_matter(md_path))
 
-    md_path = Path(args.md_file)
-    docx_path = Path(args.docx_file)
+
+def convert(md_path: Path, docx_path: Path, *, reference_doc: Path | None = None,
+            header: str | None = None, header_right: str | None = None,
+            footer: list[str] | None = None, font: str | None = None,
+            fontsize: float | None = None, heading_font: str | None = None,
+            heading_color: str | None = None, heading1_size: float | None = None,
+            title: str | None = None, math_align: str | None = None) -> None:
+    """Convert ``md_path`` to a styled ``docx_path`` (overwriting it).
+
+    Keyword arguments override the corresponding front-matter values; ``None``
+    means "use the front-matter (or built-in default)".
+    """
+    md_path, docx_path = Path(md_path), Path(docx_path)
     if not md_path.exists():
         sys.exit(f"Input file not found: {md_path}")
     docx_path.parent.mkdir(parents=True, exist_ok=True)
 
     fm = parse_front_matter(md_path)
-    header_text = args.header if args.header is not None else fm.get("docx_header")
-    header_right = (args.header_right if args.header_right is not None
-                    else fm.get("docx_header_right"))
-    footer_lines = (normalize_footer(args.footer) if args.footer
+    header_text = header if header is not None else fm.get("docx_header")
+    header_right = header_right if header_right is not None else fm.get("docx_header_right")
+    footer_lines = (normalize_footer(footer) if footer
                     else normalize_footer(fm.get("docx_footer")))
-    font_name = args.font or fm.get("docx_font") or "Calibri"
-    font_size = args.fontsize if args.fontsize is not None else fm.get("docx_fontsize", 11)
-    heading_font = args.heading_font or fm.get("docx_heading_font") or "Calibri Light"
-    heading_color = str(args.heading_color or fm.get("docx_heading_color")
+    font_name = font or fm.get("docx_font") or "Calibri"
+    font_size = fontsize if fontsize is not None else fm.get("docx_fontsize", 11)
+    heading_font = heading_font or fm.get("docx_heading_font") or "Calibri Light"
+    heading_color = str(heading_color or fm.get("docx_heading_color")
                         or "2F5496").lstrip("#")
-    h1_size = (args.heading1_size if args.heading1_size is not None
-               else fm.get("docx_heading1_size", 16))
-    math_align = args.math_align or fm.get("docx_math_align")
+    h1_size = heading1_size if heading1_size is not None else fm.get("docx_heading1_size", 16)
+    math_align = math_align or fm.get("docx_math_align")
     solution_fill = str(fm.get("docx_solution_fill", "DCE6F1"))   # light blue
     # Suppress pandoc's visible Title unless one is explicitly requested. The
     # front-matter `title` is kept for Jekyll; here we blank it for the .docx.
-    if args.title is not None:
-        title = args.title
-    elif fm.get("docx_title"):
-        title = str(fm["docx_title"])
-    else:
-        title = ""  # blank -> pandoc emits no Title paragraph
+    if title is None:
+        title = str(fm["docx_title"]) if fm.get("docx_title") else ""
 
     src_text = preprocess_markdown(md_path.read_text(encoding="utf-8"))
-    ref = Path(args.reference_doc) if args.reference_doc else None
-    run_pandoc(src_text, md_path.parent, docx_path, ref, title)
+    run_pandoc(src_text, md_path.parent, docx_path, reference_doc, title)
 
     document = docx.Document(str(docx_path))
     apply_page_geometry(document, fm.get("geometry"))
@@ -651,6 +634,39 @@ def main() -> None:
     if math_align:
         print(f"  math:   {math_align}-aligned")
     print(f"  marks:  solutions shaded #{solution_fill} (no bar); problems plain text")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Convert a Markdown file to a styled .docx (running header/footer, base font)."
+    )
+    parser.add_argument("md_file", help="Input Markdown file")
+    parser.add_argument("docx_file", help="Output .docx file")
+    parser.add_argument("--reference-doc", help="Optional pandoc reference .docx for styles")
+    parser.add_argument("--header", help="Override the running header (left) text")
+    parser.add_argument("--header-right", help="Override the running header (right) text")
+    parser.add_argument("--footer", action="append",
+                        help="Override a running footer line (repeatable)")
+    parser.add_argument("--font", help="Override the body font name (default: Calibri)")
+    parser.add_argument("--fontsize", type=float,
+                        help="Override the body font size in pt (default: 11)")
+    parser.add_argument("--heading-font",
+                        help="Override the heading font name (default: Calibri Light)")
+    parser.add_argument("--heading-color",
+                        help="Override the heading colour, hex RGB (default: 2F5496)")
+    parser.add_argument("--heading1-size", type=float,
+                        help="Override the Heading 1 size in pt (default: 16)")
+    parser.add_argument("--title", help="Set the visible document title (default: suppressed)")
+    parser.add_argument("--math-align", choices=("left", "center", "right"),
+                        help="Justify display equations (default from front-matter or center)")
+    args = parser.parse_args()
+
+    convert(Path(args.md_file), Path(args.docx_file),
+            reference_doc=Path(args.reference_doc) if args.reference_doc else None,
+            header=args.header, header_right=args.header_right, footer=args.footer,
+            font=args.font, fontsize=args.fontsize, heading_font=args.heading_font,
+            heading_color=args.heading_color, heading1_size=args.heading1_size,
+            title=args.title, math_align=args.math_align)
 
 
 if __name__ == "__main__":

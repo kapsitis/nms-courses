@@ -10,13 +10,13 @@ atbilstošu risinājuma struktūru. Kādus jautājumus sev
 uzdot pirms uzskatīt par atrisinātu. Kā analizēt vienkāršus 
 6.-7.kl. olimpiāžu uzdevumus.
 
-* **Uzdevumu lapa:** [web]({{ '/matf78/26_27/78STRUCT_solution_structure/problems/' | relative_url }}), [pdf]({{ '/matf78/26_27/78STRUCT_solution_structure/problems.pdf' | relative_url }}), [docx]({{ '/matf78/26_27/78STRUCT_solution_structure/problems.docx' | relative_url }})
-* **1.nodarbības izdales materiāls:** [web]({{ '/matf78/26_27/78STRUCT_solution_structure/handout_class1/' | relative_url }}), [pdf]({{ '/matf78/26_27/78STRUCT_solution_structure/handout_class1.pdf' | relative_url }}), [docx]({{ '/matf78/26_27/78STRUCT_solution_structure/handout_class1.docx' | relative_url }})
+* **Uzdevumu lapa:** {% include doc_links.html url="/matf78/26_27/78STRUCT_solution_structure/problems/" %}
+* **1.nodarbības izdales materiāls:** {% include doc_links.html url="/matf78/26_27/78STRUCT_solution_structure/handout_class1/" %}
 * **2.nodarbības izdales materiāls:** TBD
 {: .small}
 
 
-**Rezultātu izklāsts:** 
+**Prasmes:** 
 
 * SR: Atšķir 6 olimpiāžu jautājumu pamattipus — "atrast visus", 
   "atrast lielāko/mazāko vērtību" (optimizācijas uzdevumi), 
