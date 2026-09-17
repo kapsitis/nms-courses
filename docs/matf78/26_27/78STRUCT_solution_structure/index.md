@@ -11,8 +11,8 @@ uzdot pirms uzskatīt par atrisinātu. Kā analizēt vienkāršus
 6.-7.kl. olimpiāžu uzdevumus.
 
 * **Uzdevumu lapa:** {% include doc_links.html url="/matf78/26_27/78STRUCT_solution_structure/problems/" %}
-* **1.nodarbības izdales materiāls:** {% include doc_links.html url="/matf78/26_27/78STRUCT_solution_structure/handout_class1/" %}
-* **2.nodarbības izdales materiāls:** TBD
+* **1.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78STRUCT_solution_structure/class1/" %}
+* **2.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78STRUCT_solution_structure/class2/" %}
 {: .small}
 
 
