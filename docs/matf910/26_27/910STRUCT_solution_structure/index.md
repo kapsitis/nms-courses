@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "7.1.temats: Atrisinājumu struktūras"
-permalink: /matf78/26_27/78STRUCT_solution_structure/
+permalink: /matf78/26_27/910STRUCT_solution_structure/
 ---
 # 1.temats: Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde
 
