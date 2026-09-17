@@ -23,8 +23,12 @@ Ja parametrs $n$ **neeksistē** - Parametru izvēlas žūrija (Jūs olimpiādes 
 nezināt kādu), un Jūsu spriedumam jāparāda, ka viņiem nekas nesanāks.
 
 **1.piemērs:** Ir divu veidu pastmarkas - ar vērtību $5$ centi un $21$ cents.  
-**(A)** Pierādīt, ka ar šīm pastmarkām nevar apmaksāt $79$ centus (neeksistē $a$ un $b$, kam $5a + 21b = 79$).   
-**(B)** Pierādīt, ka visas summas, kas lielākas par $79$, var apmaksāt (katram $n>79$ eksistē $a$ un $b$, ka $5a + 21b = n$). 
+**(A)** Vai ar šīm pastmarkām var apmaksāt $79$ centus? 
+**(B)** Vai eksistē summa $n>79$, kuru nevar apmaksāt ar šīm pastmarkām?  
+
+Risinājuma shēma:  
+(A) Pamatosim, ka neeksistē $a \geq 0$ un $b \geq 0$, kam $5a + 21b = 79$.  
+(B) Pamatosim, ka katram $n>79$ eksistē $a \geq 0$ un $b \geq 0$, ka $5a + 21b = n$.
 
 ![](postage_stamps.png){: width="300"}
 

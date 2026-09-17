@@ -1,0 +1,6 @@
+% Extra preamble for the PDFs built by scripts/convert_directory.py.
+
+% Since pandoc 3.2 a caption-less table is emitted as \def\LTcaptype{none},
+% which Eisvogel's caption setup turns into "No counter 'none' defined".
+% Defining the counter makes such tables typeset again (still uncaptioned).
+\newcounter{none}
