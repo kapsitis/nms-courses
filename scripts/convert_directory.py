@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Batch-convert the Markdown files of a course directory to .docx and .pdf.
 
-For every subdirectory directly under ``input_dir``, each ``*.md`` file in it
-that has ``docx_*`` front-matter is converted with md_to_docx.convert() and, via
-pandoc + the Eisvogel LaTeX template, to a PDF of the same name. Files without
-such front-matter (index.md, README.md, ...) are skipped.
+Each ``*.md`` file directly in ``input_dir`` or in one of its immediate
+subdirectories is converted with md_to_docx.convert() and, via pandoc + the
+Eisvogel LaTeX template, to a PDF of the same name -- so ``input_dir`` can be a
+whole school year (docs/matf78/26_27/) or a single topic folder
+(docs/matf78/26_27/78STRUCT_solution_structure/), which is much quicker. Files
+without ``docx_*`` front-matter (index.md, README.md, ...) are skipped.
 
 The .docx is written next to its source under a download-friendly name that
 encodes the file's path relative to the GitHub Pages root (the nearest ancestor
@@ -117,11 +119,20 @@ def convert_pdf(md_path: Path, pdf_path: Path, *, show_solutions: bool = True) -
     print(f"Wrote {pdf_path}")
 
 
+def markdown_files(input_dir: Path) -> list[Path]:
+    """The .md files in ``input_dir`` itself and in its immediate subdirectories."""
+    found = sorted(input_dir.glob("*.md"))
+    for subdir in sorted(d for d in input_dir.iterdir() if d.is_dir()):
+        found += sorted(subdir.glob("*.md"))
+    return found
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Convert .md files in the subdirectories of a directory to prefixed .docx files."
+        description="Convert .md files in a directory (and its immediate subdirectories) "
+                    "to prefixed .docx and .pdf files."
     )
-    parser.add_argument("input_dir", help="Directory whose subdirectories are scanned, e.g. docs/matf78/26_27/")
+    parser.add_argument("input_dir", help="A topic folder or a school year, e.g. docs/matf78/26_27/")
     args = parser.parse_args()
 
     input_dir = Path(args.input_dir)
@@ -131,23 +142,22 @@ def main() -> None:
     root = site_root(input_dir) or input_dir.resolve().parent
 
     converted, failed = 0, []
-    for subdir in sorted(d for d in input_dir.iterdir() if d.is_dir()):
-        for md_path in sorted(subdir.glob("*.md")):
-            if not has_docx_front_matter(md_path):
-                print(f"Skipped {md_path} (no docx_* front-matter)")
-                continue
-            try:
-                convert(md_path, md_path.with_name(prefixed_name(md_path, root, ".docx")))
-                converted += 1
-            except SystemExit as exc:  # md_to_docx reports errors via sys.exit
-                print(f"FAILED (docx) {md_path}: {exc}", file=sys.stderr)
-                failed.append(md_path)
-            try:
-                convert_pdf(md_path, md_path.with_name(prefixed_name(md_path, root, ".pdf")))
-                converted += 1
-            except (subprocess.CalledProcessError, FileNotFoundError) as exc:
-                print(f"FAILED (pdf) {md_path}: {exc}", file=sys.stderr)
-                failed.append(md_path)
+    for md_path in markdown_files(input_dir):
+        if not has_docx_front_matter(md_path):
+            print(f"Skipped {md_path} (no docx_* front-matter)")
+            continue
+        try:
+            convert(md_path, md_path.with_name(prefixed_name(md_path, root, ".docx")))
+            converted += 1
+        except SystemExit as exc:  # md_to_docx reports errors via sys.exit
+            print(f"FAILED (docx) {md_path}: {exc}", file=sys.stderr)
+            failed.append(md_path)
+        try:
+            convert_pdf(md_path, md_path.with_name(prefixed_name(md_path, root, ".pdf")))
+            converted += 1
+        except (subprocess.CalledProcessError, FileNotFoundError) as exc:
+            print(f"FAILED (pdf) {md_path}: {exc}", file=sys.stderr)
+            failed.append(md_path)
 
     print(f"\nWrote {converted} output file(s), {len(failed)} failed.")
     if failed:
