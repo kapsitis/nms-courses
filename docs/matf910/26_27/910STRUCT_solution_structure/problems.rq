@@ -1,0 +1,42 @@
+# 9.1. temats "Atrisinājumu struktūras": kandidāti "Tipiskiem uzdevumiem" un
+# "Skaidrojamiem piemēriem".
+#
+# Meklējam 8.-9. klases uzdevumus, kuros svarīga ir apgalvojuma NOLIEGŠANA:
+# "vai var / vai vienmēr" (ProveDisprove), pierādījumi no pretējā
+# (MTH_ContradictionForExistence) un konstruktīvi piemēri (FindExample).
+# Teksts - īss un viegli lasāms, bez attēliem un bez smagas formulu tehnikas,
+# lai priekšplānā paliek spriedumu loģiskā struktūra.
+#
+# Izpilde: python scripts/select_problems.py docs/matf910/26_27/910STRUCT_solution_structure/problems.rq
+
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+SELECT ?problemID ?questionType ?domain ?method (STRLEN(?text) AS ?len) ?text
+WHERE {
+  ?p a eliozo:Problem ;
+     eliozo:problemID ?problemID ;
+     eliozo:problemGrade ?grade ;
+     eliozo:problemYear ?year ;
+     eliozo:questionType ?questionType ;
+     eliozo:domain ?domain ;
+     eliozo:_readingDifficulty "low" ;
+     eliozo:problemText ?text .
+  OPTIONAL { ?p eliozo:method ?method }
+
+  FILTER (LANGMATCHES(LANG(?text), "lv"))
+  FILTER (?grade >= 8 && ?grade <= 9)
+  FILTER (?year >= 2011 && ?year <= 2026)
+
+  # Noliegšana: "vai var/vai vienmēr", pierādi, konstruē piemēru
+  FILTER (?questionType IN ("ProveDisprove", "Prove", "FindExample"))
+
+  # Formulu tehnika (nevienādības, GCD) lai neaizēno spriedumu struktūru
+  FILTER (?domain != "Geom")
+  FILTER (STRLEN(?text) <= 300)
+  FILTER (!CONTAINS(?text, "![") && !CONTAINS(?text, "att.") && !CONTAINS(?text, "zīm.")
+          && !CONTAINS(?text, "frac") && !CONTAINS(?text, "sqrt") && !CONTAINS(?text, "^"))
+
+  # Skaidri izslēgtie (skat. curriculum_9_10.md)
+  FILTER (?problemID != "LV.AMO.2025.9.5" && ?problemID != "LV.VOL.2024.10.1")
+}
+ORDER BY ?questionType ?len ?problemID

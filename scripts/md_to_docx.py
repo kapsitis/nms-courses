@@ -104,10 +104,11 @@ _SOL_RAW_START = f'\n\n```{{=openxml}}\n<w:p><w:r><w:t>{_SOL_MARK_START}</w:t></
 _SOL_RAW_END = f'\n\n```{{=openxml}}\n<w:p><w:r><w:t>{_SOL_MARK_END}</w:t></w:r></w:p>\n```\n\n'
 _SOL_BLOCK = re.compile(r"(?ms)^:::+[ \t]*solution[ \t]*$\n(.*?)^:::+[ \t]*$")
 
-# Pandoc's Markdown reader keeps ``<br>`` as raw HTML, which the docx writer
-# silently drops. This Lua filter turns each such tag into a real LineBreak
-# (<w:br/>), so e.g. multi-line table cells keep their breaks in Word.
-_BR_FILTER = """\
+# Pandoc's Markdown reader keeps ``<br>`` as raw HTML, which the docx and LaTeX
+# writers silently drop. This Lua filter turns each such tag into a real
+# LineBreak, so e.g. multi-line table cells keep their breaks in Word and PDF.
+# (convert_directory.py uses it for the PDFs.)
+BR_FILTER = """\
 function RawInline(el)
   if el.format:match('html') and el.text:lower():match('^<br%s*/?>$') then
     return pandoc.LineBreak()
@@ -198,7 +199,7 @@ def run_pandoc(src_text: str, resource_dir: Path, docx_path: Path,
     try:
         tmp.write(src_text)
         tmp.close()
-        lua.write(_BR_FILTER)
+        lua.write(BR_FILTER)
         lua.close()
         cmd = [
             pandoc,

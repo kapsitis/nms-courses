@@ -271,24 +271,15 @@ lieto visos pārējos tematos.
   "lielākā/mazākā vērtība", "pierādīt", "konstruēt piemēru", "aprakstīt
   procedūru vai stratēģiju" - un zina katram atbilstošo pilnas atbildes
   struktūru.
-* SR: Optimizācijas uzdevumā ("kāds ir lielākais/mazākais ...") uzraksta abas
-  daļas - konkrētu konstrukciju ar prasīto vērtību un vispārīgu novērtējumu,
-  kāpēc labāk nevar. Zina, ka katra no daļām atsevišķi ir aptuveni puse punktu.
-* SR: Atšķir nepieciešamu nosacījumu no pietiekama; pēc pārveidojumu ķēdes
-  pārbauda, vai atrastie kandidāti tiešām der (t.i. vai ķēde ir atgriezeniska).
-* SR: Sadala risināmo situāciju gadījumos pēc skaidra kritērija un pieraksta
-  pārlasi tā, lai lasītājam viegli pārliecināties, ka nekas nav izlaists;
-  pārlases apjomu vispirms samazina ar novērtējumu.
+* SR: Atšķir nepieciešamos un pietiekamos nosacījumus; lieto secināšanas
+  rezultātus pareizajā virzienā. 
+* SR: Sadala risināmo situāciju apakšgadījumos un pārliecinās, ka nekas nav izlaists.
 * SR: Raksta pierādījumu no pretējā: formulē pieņēmuma noliegumu, iegūst
-  pretrunu ar novērtējumu vai dalāmību; pazīst minimālā pretpiemēra shēmu
-  ("aplūkosim mazāko skaitli, kuram apgalvojums nav spēkā").
-* SR: Konstrukciju apraksta kā bezgalīgu sēriju - dod formulu vai procedūru,
-  kas der visiem $n$, nevis vienu izrēķinātu piemēru.
-* SR: Pieraksta matemātiskās indukcijas pierādījumu ar soli $1$: bāze,
-  induktīvais pieņēmums, pāreja - un saprot, kāpēc bez bāzes pierādījuma nav.
-* SR: Izmanto secību *Saprašana → Izpēte → Pārformulēšana → Risināšana →
-  Atskats* (*En: Understand → Explore → Attack → Review*) un spēj pateikt,
-  kurā solī šobrīd atrodas.
+  pretrunu ar novērtējumu vai dalāmību.
+* SR: Izmanto mērķtiecīgu risināšanas secību. Piemēram, 
+  Saprast (tekstu), izpētīt (uzdevuma modeli), īstenot (risināšanas plānu), 
+  atskatīties (uz risinājumu). (*En: Understand → Explore → Attack → Review.*)
+  jeb *Saprašana → Izpēte → Pārformulēšana → Risināšana → Atskats*.
 
 **Piemēri:** [LV.AMO.2025.9.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.AMO.2025.9.5)
 ($255$ kg ķirbju - mazākais reižu skaits: konstrukcija plus novērtējums),

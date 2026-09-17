@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "7.1.temats: Atrisinājumu struktūras"
+title: "9.1.A. Atrisinājumu struktūras: Seši jautājumu tipi"
 permalink: /matf910/26_27/910STRUCT_solution_structure/handout_class1/
 
-docx_header: "1.temats: Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde"
-docx_footer: "ĀVĢ 7.-8.klašu matemātikas fakultatīvs"
+docx_header: "9.1.A. Atrisinājumu struktūras: Seši jautājumu tipi"
+docx_footer: "ĀVĢ 9.-10.klašu matemātikas fakultatīvs"
 docx_font: "Calibri"
 docx_fontsize: 10
 docx_heading_font: "Calibri Light"
@@ -33,16 +33,21 @@ No jautājuma atkarīgs, kas jāraksta, lai atrisinājums būtu pilnīgs.
 
 ---
 
-**LV.AMO.2003.7.3:**  
-Divi spēlētāji pamīšus raksta uz tāfeles pa vienam naturālam skaitlim no 1 līdz 9 ieskaitot.
-Nedrīkst rakstīt skaitļus, ar kuriem dalās kaut viens jau uzrakstīts skaitlis. 
-Kas nevar izdarīt gājienu, zaudē.
-Parādiet, kā tas, kas izdara pirmo gājienu, var uzvarēt.
+## 1.uzdevums
 
-(*Vēlams mācēt spēlēt spēli un uzvarēt tajā, bet jau sākumā vēlams labi saprast, kas jāraksta atrisinājumā.*)
+> **LV.AMO.2003.7.3:**  
+> Divi spēlētāji pamīšus raksta uz tāfeles pa vienam naturālam skaitlim no 1 līdz 9 ieskaitot.
+> Nedrīkst rakstīt skaitļus, ar kuriem dalās kaut viens jau uzrakstīts skaitlis. 
+> Kas nevar izdarīt gājienu, zaudē.
+> Parādiet, kā tas, kas izdara pirmo gājienu, var uzvarēt.
 
-**2.jautājums:**  
+Pirms šo risināt, pierakstiet, kādas daļas būtu jāsatur pilnam šī uzdevuma atrisinājumam.
+Kad tas pierakstīts, var mēģināt spēlēt šo spēli un arī uzvarēt tajā.
+
+## 2.uzdevums
+
 Kā mainīsies iepriekšējā uzdevuma atrisinājums, ja pēdējā teikumā "Parādiet" nomainītu uz "Pierādiet": 
 *Pierādiet, kā tas, kas izdara pirmo gājienu, var uzvarēt.*
 
 Vai vieglāk ir "parādīt" vai "pierādīt"?
+

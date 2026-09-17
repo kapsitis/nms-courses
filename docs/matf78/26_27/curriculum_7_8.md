@@ -425,10 +425,10 @@ Ievieš jautājumu tipus un atbilstošās atrisinājumu struktūras,
 ko izmanto turpmākajos tematos.
 *Standarta līnijas: M1, M2, M3, M5, M8.*
 
-* SR: Atšķir 6 olimpiāžu jautājumu pamattipus — "atrast visus", 
-  "atrast lielāko/mazāko vērtību" (optimizācijas uzdevumi), 
-  "vai vienmēr var?"/"vai kādam var?" (JĀ/NĒ izlemšanas uzdevumi), 
-  "pierādīt", "konstruēt piemēru" (aprakstīt 
+* SR: Atšķir 6 olimpiāžu jautājumu pamattipus — (1) "atrast visus", 
+  (2) "atrast lielāko/mazāko vērtību" (optimizācijas uzdevumi), 
+  (3) "vai vienmēr var?" / (4) "vai kādam var?" (JĀ/NĒ izlemšanas uzdevumi), 
+  (5) "pierādīt", (6) "konstruēt piemēru" (aprakstīt 
   algoritmu vai spēles stratēģiju). Zina katram atbilstošo pilnas atbildes struktūru 
   (piem., "atrast visus" = atrast + pamatot, ka citu nav).
 * SR: Apgalvojumu "var/eksistē" pamato ar konkrētu piemēru, bet "nevar/vienmēr" — 
@@ -436,12 +436,10 @@ ko izmanto turpmākajos tematos.
   piemēru + neiespējamību to uzlabot.
 * SR: Sistemātiski izmanto mazos gadījumus un sakārtotu pilno pārlasi; apskata 
   gadījumus tā, lai būtu redzams, ka nekas nav izlaists.
-
-Tematā veicināta arī mērķtiecīga risināšanas secība. Piemēram, 
-Saprast (tekstu), izpētīt (uzdevuma modeli), īstenot (risināšanas plānu), 
-atskatīties (uz risinājumu). (*En: Understand → Explore → Attack → Review.*)
-jeb *Saprašana → Izpēte → Pārformulēšana → Risināšana → Atskats*.
-
+* SR: Izmanto mērķtiecīgu risināšanas secību. Piemēram, 
+  Saprast (tekstu), izpētīt (uzdevuma modeli), īstenot (risināšanas plānu), 
+  atskatīties (uz risinājumu). (*En: Understand → Explore → Attack → Review.*)
+  jeb *Saprašana → Izpēte → Pārformulēšana → Risināšana → Atskats*.
 
 **Piemēri:** [LV.NOL.2024.7.2](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.2) 
 (atrast lielāko: piemērs + uzlabošanas neiespējamība), 

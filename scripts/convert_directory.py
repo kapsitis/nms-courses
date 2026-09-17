@@ -17,7 +17,9 @@ components such as ``26_27`` are expanded to ``2026_27``:
       -> docs/matf78/26_27/78STRUCT_solution_structure/
          matf78-2026_27-78STRUCT_solution_structure-problems.docx
 
-Existing .docx/.pdf files are overwritten.
+Existing .docx/.pdf files are overwritten -- except PDFs made by hand, which are
+listed (one site-relative path per line) in ``<site root>/manual_pdfs.txt``;
+a line commented out with '#' is built again like any other.
 
 The PDF reuses the front-matter: ``geometry`` is read by pandoc itself, while
 ``docx_header``/``docx_header_right``/``docx_footer`` become Eisvogel's running
@@ -39,8 +41,8 @@ import sys
 import tempfile
 from pathlib import Path
 
-from md_to_docx import (convert, has_docx_front_matter, normalize_footer,
-                        parse_front_matter, translate_image_sizes)
+from md_to_docx import (BR_FILTER, convert, has_docx_front_matter,
+                        normalize_footer, parse_front_matter, translate_image_sizes)
 
 _SCHOOL_YEAR = re.compile(r"^\d{2}_\d{2}$")
 # The same reader extensions the repo's other PDF scripts use.
@@ -64,6 +66,26 @@ def prefixed_name(md_path: Path, root: Path, suffix: str) -> str:
     parts = md_path.resolve().relative_to(root).with_suffix("").parts
     parts = [f"20{p}" if _SCHOOL_YEAR.match(p) else p for p in parts]
     return "-".join(parts) + suffix
+
+
+def manual_pdfs(root: Path) -> set[str]:
+    """PDFs listed in ``<site root>/manual_pdfs.txt``, which we must not rebuild.
+
+    Those are made by hand (exported from Word, compiled with LaTeX, ...). The
+    file holds one path per line, relative to the site root; blank lines and
+    lines starting with '#' are ignored, so commenting a line out hands that PDF
+    back to this script. Paths are matched case-insensitively, '/' or '\\'.
+    """
+    listing = root / "manual_pdfs.txt"
+    if not listing.exists():
+        return set()
+    entries = set()
+    for line in listing.read_text(encoding="utf-8-sig").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#"):
+            entry = line.replace("\\", "/").lower()
+            entries.add(entry.removeprefix("./").removeprefix("/"))
+    return entries
 
 
 def find_lua_filter(md_path: Path) -> Path | None:
@@ -109,13 +131,18 @@ def convert_pdf(md_path: Path, pdf_path: Path, *, show_solutions: bool = True) -
     # The temp file lives beside the source so relative image paths resolve.
     tmp = tempfile.NamedTemporaryFile(
         "w", encoding="utf-8", suffix=".md", dir=str(md_path.parent), delete=False)
+    lua = tempfile.NamedTemporaryFile("w", encoding="utf-8", suffix=".lua", delete=False)
     try:
         tmp.write(translate_image_sizes(md_path.read_text(encoding="utf-8")))
         tmp.close()
+        lua.write(BR_FILTER)   # keep <br> line breaks (e.g. inside table cells)
+        lua.close()
+        cmd += [f"--lua-filter={lua.name}"]
         cmd.insert(1, tmp.name)
         subprocess.run(cmd, check=True)
     finally:
         Path(tmp.name).unlink(missing_ok=True)
+        Path(lua.name).unlink(missing_ok=True)
     print(f"Wrote {pdf_path}")
 
 
@@ -141,6 +168,7 @@ def main() -> None:
     # Outside a Jekyll site, encode the path starting from input_dir itself.
     root = site_root(input_dir) or input_dir.resolve().parent
 
+    by_hand = manual_pdfs(root)
     converted, failed = 0, []
     for md_path in markdown_files(input_dir):
         if not has_docx_front_matter(md_path):
@@ -152,8 +180,13 @@ def main() -> None:
         except SystemExit as exc:  # md_to_docx reports errors via sys.exit
             print(f"FAILED (docx) {md_path}: {exc}", file=sys.stderr)
             failed.append(md_path)
+        pdf_path = md_path.with_name(prefixed_name(md_path, root, ".pdf"))
+        listed = pdf_path.resolve().relative_to(root).as_posix().lower()
+        if listed in by_hand:
+            print(f"Kept {pdf_path.name} (listed in manual_pdfs.txt)")
+            continue
         try:
-            convert_pdf(md_path, md_path.with_name(prefixed_name(md_path, root, ".pdf")))
+            convert_pdf(md_path, pdf_path)
             converted += 1
         except (subprocess.CalledProcessError, FileNotFoundError) as exc:
             print(f"FAILED (pdf) {md_path}: {exc}", file=sys.stderr)
