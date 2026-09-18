@@ -13,7 +13,7 @@ par atrisinātu. Analizēt grūti lasāmus uzdevumus.
 * **Uzdevumu lapa:** {% include doc_links.html url="/matf910/26_27/910STRUCT_solution_structure/problems/" %}
 * **1.nodarbības materiāls:** {% include doc_links.html url="/matf910/26_27/910STRUCT_solution_structure/class1/" %}
 * **2.nodarbības materiāls:** {% include doc_links.html url="/matf910/26_27/910STRUCT_solution_structure/class2/" %}
-* **Īso atbilžu tests:** {% include doc_links.html url="/matf910/26_27/910STRUCT_solution_structure/test19_intermediate/" %}
+* **Īso atbilžu tests:** {% include doc_links.html url="/matf910/26_27/910SHORT_ANSWERS/test19_intermediate/" %}
 {: .small}
 
 ## Prasmes 
