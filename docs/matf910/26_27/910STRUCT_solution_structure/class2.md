@@ -14,9 +14,14 @@ geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 ---
 # 9.1.B. Atrisinājumu struktūras: Pierādījumi no pretējā
 
-**TODO:** 
-(1) Minēt piemēru (var izmantot Lūisa Kerola loģikas grāmatas utml.), 
-kurā parādīts De Morgana likums (piemēram NOT (A AND B)  vai arī  NOT (A OR B)). 
+Pierādījums no pretējā sākas ar noliegumu. 
+Kurš no apgalvojumiem ir patiess un kāpēc?
+
+* "Ja $a = b$, tad $ac = bc$".
+* "Ja šodien ir trešdiena, tad rīt ir sestdiena".
+* "Visas manas pildspalvas ir zilas" (pieņemot, ka runātājam vispār nav pildspalvu).
+* "Ja naturāls skaitlis $n$ nav pirmskaitlis, tad tas ir salikts skaitlis".
+* "Ja virkne $a_1,a_2,a_3,a_4$ nav augoša, tad tā ir dilstoša".
 
 
 **1.piemērs:** Vai var atrast tādus veselus skaitļus $a$ un $b$, ka $ab(a+43b)=434343$?
@@ -46,6 +51,9 @@ vismaz $4$ skolēni ieguva atzīmi, kas ir augstāka nekā $7$.
 * *Saprašana:* Ko nozīmē "Ne B" (pateikt vienkāršāk šo: "nav taisnība, ka vismaz $4$ skolēni 
   ieguva atzīmi, kas augstāka par $7$").
 
+<!-- 
+LV.AMO.2024.9.2 — "Vai nu A, vai B" (pieņem pretējo)
+-->
 
 ---
 

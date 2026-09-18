@@ -90,24 +90,7 @@ Vai eksistē tāds naturāls skaitlis, kura kvadrāta pēdējie $9$ cipari ir $9
 * *Atskats:* Viens piemērs pabeidz atrisinājumu - nekas vairs nav jāpierāda. Cik daudz vairāk 
   būtu jāraksta, ja atbilde būtu "nē"?
 
-### 3. LV.AMO.2024.9.2 — "Vai nu A, vai B" (pieņem pretējo)
 
-Katrs no $28$ klases skolēniem kontroldarbā saņēma atzīmi, kas ir vesels skaitlis robežās 
-no $0$ līdz $10$ ballēm. Pamatot, ka vai nu vismaz $4$ skolēniem ir vienāda atzīme, vai arī 
-vismaz $4$ skolēni ieguva atzīmi, kas ir augstāka nekā $7$.
-
-1. *Saprašana:* Jāpierāda "A vai B". Pieņem pretējo - pēc De Morgana likuma noliegums ir 
-   "ne A **un** ne B", t.i., jāpieņem abas daļas reizē. `#AssumeContrary`
-2. *Saprašana:* "Ne A" = katra atzīme atkārtojas ne vairāk kā $3$ reizes; "ne B" = ne vairāk 
-   kā $3$ skolēniem atzīme ir augstāka nekā $7$. `#ClarifyGoal`
-3. *Pārformulēšana:* Atzīmes, kas augstākas nekā $7$, ir $8$, $9$, $10$; pārējās ir 
-   $0, 1, \ldots, 7$, pavisam $8$ dažādas vērtības. `#Paraphrase`
-4. *Risināšana:* No "ne A": skolēnu ar atzīmi no $0$ līdz $7$ ir ne vairāk kā $8 \cdot 3 = 24$. 
-   No "ne B": pārējo ir ne vairāk kā $3$. `#Pigeonhole`
-5. *Risināšana:* Kopā ne vairāk kā $24 + 3 = 27$ skolēni, bet klasē to ir $28$ - pretruna. 
-   Tātad izpildās vismaz viens no apgalvojumiem. `#AssumeContrary`
-6. *Atskats:* Kur tika izmantota katra pieņēmuma puse? Vai spriedums vēl strādātu, ja klasē 
-   būtu $27$ skolēni? `#LookBack`
 
 
 
