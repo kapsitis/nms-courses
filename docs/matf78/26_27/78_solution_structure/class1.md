@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "7.1.A. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde"
+title: "7.1.A. Atrisinājumu struktūras: Seši jautājumu tipi"
 permalink: /matf78/26_27/78STRUCT_solution_structure/class1/
 
-docx_header: "7.1.A. Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde"
+docx_header: "7.1.A. Atrisinājumu struktūras: Seši jautājumu tipi"
 docx_footer: "ĀVĢ 7.-8.klašu matemātikas fakultatīvs"
 docx_font: "Calibri"
 docx_fontsize: 10

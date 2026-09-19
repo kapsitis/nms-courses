@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "7.1.B. Atrisinājumu struktūras: Vispārīgie un atsevišķie pamatojumi"
+title: "7.1.B. Atrisinājumu struktūras: Vispārīgie un atsevišķie apgalvojumi"
 permalink: /matf78/26_27/78STRUCT_solution_structure/class2/
 
-docx_header: "7.1.B. Atrisinājumu struktūras: Vispārīgie un atsevišķie pamatojumi"
+docx_header: "7.1.B. Atrisinājumu struktūras: Vispārīgie un atsevišķie apgalvojumi"
 docx_footer: "ĀVĢ 7.-8.klašu matemātikas fakultatīvs"
 docx_font: "Calibri"
 docx_fontsize: 10
@@ -13,7 +13,7 @@ docx_heading1_size: 14
 geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 ---
 
-# 7.1.B. Atrisinājumu struktūras: Vispārīgie un atsevišķie pamatojumi
+# 7.1.B. Atrisinājumu struktūras: Vispārīgie un atsevišķie apgalvojumi
 
 > Ja kaut ko **var izdarīt** - pamato ar konkrētu piemēru, ja **nevar izdarīt** - ar vispārīgu spriedumu.
 

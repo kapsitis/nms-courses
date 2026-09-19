@@ -1,0 +1,85 @@
+# 7.2. temats "Invarianti": garais kandidātu saraksts.
+#
+# Meklējam 6.-9. klases uzdevumus, kuros atrisinājuma kodols ir INVARIANTS -
+# lielums vai apgalvojums, kas atļauto gājienu laikā nemainās. Šī ideja
+# datubāzē ir ierakstīta trīs dažādos birku slāņos, tāpēc tos apvienojam
+# ar UNION un salīdzinām kā vienu tekstisku ?tag:
+#
+#   * eliozo:_hasSolutionConcept - "Invariant", "ParityInvariant",
+#     "ChessboardColoring", "Monovariant";
+#   * eliozo:_hasReasoningMethod - "FixedInvariantNumeric", "InvariantMethod",
+#     "ColoringInvariant", "ColoringArgumentForCoverageOrUnreachability",
+#     "GameInvariantsInNT", "ParameterizedInvariantValue",
+#     "MonovariantStrictlyChangingQuantity", "InvariantByColoring";
+#   * eliozo:topic / eliozo:method IRI - InvariantParity, InvariantRemainder,
+#     InvariantAlgebraic, GameInvariant, ColoringProblems, MTH_FixedInvariant,
+#     MTH_PeriodicInvariant, MTH_Monovariant.
+#
+# Apzināti NEŅEMAM vērā birkas "Tiling" un "Coloring" pašas par sevi: tās
+# apzīmē tikai to, ka uzdevumā kaut ko sagriež vai izkrāso (arī sudoku un
+# grafu krāsošanu), nevis to, ka krāsojums kalpo par invariantu. Palīgkrāsojumu
+# atpazīstam pēc "ChessboardColoring", "ColoringInvariant", "ColoringProblems"
+# un "ColoringArgumentForCoverageOrUnreachability".
+#
+# ?families sagrupē kandidātus pēc invarianta tipa, lai no garā saraksta būtu
+# ērti veidot abu nodarbību "trepes":
+#   Parity   - paritātes invariants                      (1. nodarbība),
+#   Numeric  - nemainīga izteiksme, summa vai atlikums    (1. nodarbība),
+#   Coloring - palīgkrāsojums: pārklāšana, izgriešana,
+#              apstaigāšana                               (2. nodarbība),
+#   Game     - invariants spēles stratēģijas pamatošanai  (2. nodarbība),
+#   Mono     - monovariants (tikai aug vai tikai dilst)   (2. nodarbība).
+#
+# Izpilde:
+#   python nms-courses/scripts/select_problems.py \
+#          nms-courses/docs/matf78/26_27/78_invariants/problems.rq
+
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+SELECT ?problemID ?grade ?diff
+       (GROUP_CONCAT(DISTINCT ?family;       separator="+") AS ?families)
+       (GROUP_CONCAT(DISTINCT ?domain;       separator="/") AS ?domains)
+       (GROUP_CONCAT(DISTINCT ?questionType; separator="/") AS ?questionTypes)
+       (GROUP_CONCAT(DISTINCT ?tag;          separator=",") AS ?tags)
+WHERE {
+  ?p a eliozo:Problem ;
+     eliozo:problemID ?problemID ;
+     eliozo:problemGrade ?grade ;
+     eliozo:problemYear ?year ;
+     eliozo:domain ?domain ;
+     eliozo:questionType ?questionType ;
+     eliozo:problemText ?text .
+  OPTIONAL { ?p eliozo:_readingDifficulty ?diff }
+
+  {
+    { ?p eliozo:_hasSolutionConcept ?tag }
+    UNION
+    { ?p eliozo:_hasReasoningMethod ?tag }
+    UNION
+    { ?p eliozo:topic  ?topicIRI  . BIND(REPLACE(STR(?topicIRI),  "^.*#", "") AS ?tag) }
+    UNION
+    { ?p eliozo:method ?methodIRI . BIND(REPLACE(STR(?methodIRI), "^.*#", "") AS ?tag) }
+  }
+
+  FILTER (CONTAINS(?tag, "Invariant") || CONTAINS(?tag, "Monovariant")
+          || ?tag = "ChessboardColoring" || ?tag = "ColoringProblems"
+          || ?tag = "ColoringArgumentForCoverageOrUnreachability")
+
+  # Invarianta tips; krāsojumu pārbaudām pirms paritātes, jo krāsojuma
+  # uzdevumi gandrīz vienmēr nes līdzi arī ParityInvariant birku.
+  BIND (
+    IF (CONTAINS(?tag, "Monovariant"), "Mono",
+    IF (CONTAINS(?tag, "Game"),        "Game",
+    IF (CONTAINS(?tag, "Coloring"),    "Coloring",
+    IF (CONTAINS(?tag, "Parity"),      "Parity",
+                                       "Numeric")))) AS ?family )
+
+  FILTER (LANGMATCHES(LANG(?text), "lv"))
+  FILTER (?grade >= 6 && ?grade <= 9)   # 7.-8. klases līmenis ar rezervi uz abām pusēm
+  FILTER (?year >= 2003 && ?year <= 2026)
+
+  # Invarianta stāsts prasa pierādījumu, nevis tikai skaitlisku atbildi.
+  FILTER (?questionType != "ShortAnswer")
+}
+GROUP BY ?problemID ?grade ?diff
+ORDER BY ?families ?grade ?problemID

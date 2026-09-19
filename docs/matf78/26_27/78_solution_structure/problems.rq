@@ -1,0 +1,21 @@
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT ?problemID ?questionType ?domain (STRLEN(?text) AS ?len) ?text
+WHERE {
+  ?p a eliozo:Problem ;
+     eliozo:problemID ?problemID ;
+     eliozo:problemGrade ?grade ;
+     eliozo:problemYear ?year ;
+     eliozo:questionType ?questionType ;
+     eliozo:domain ?domain ;
+     eliozo:_readingDifficulty "low" ;
+     eliozo:problemText ?text .
+  FILTER (LANGMATCHES(LANG(?text), "lv"))
+  FILTER (?grade >= 5 && ?grade <= 7)
+  FILTER (?year >= 2011 && ?year <= 2026)
+  FILTER (?questionType != "ShortAnswer")
+  FILTER (?domain != "Geom")
+  FILTER (STRLEN(?text) <= 220)
+  FILTER (!CONTAINS(?text, "![") && !CONTAINS(?text, "att.") && !CONTAINS(?text, "zīm.")
+          && !CONTAINS(?text, "frac") && !CONTAINS(?text, "sqrt") && !CONTAINS(?text, "^"))
+}
+ORDER BY ?questionType ?len ?problemID

@@ -1,18 +1,18 @@
 ---
 layout: default
-title: "7.1.temats: Atrisinājumu struktūras"
+title: "7.1.temats. Atrisinājumu struktūras. Uzdotajam jautājumam atbilstoša atbilde"
 permalink: /matf78/26_27/78STRUCT_solution_structure/
 ---
-# 1.temats: Atrisinājumu struktūras. Uzdotajam jautājumam atbilstoša atbilde
+# 7.1.temats. Atrisinājumu struktūras. Uzdotajam jautājumam atbilstoša atbilde
 
 **Mērķis:** Kā lasīt uzdevumu, kā veidot jautājumam 
 atbilstošu risinājuma struktūru. Kādus jautājumus sev 
 uzdot pirms uzskatīt par atrisinātu. Kā analizēt vienkāršus 
 6.-7.kl. olimpiāžu uzdevumus.
 
-* **Uzdevumu lapa:** {% include doc_links.html url="/matf78/26_27/78STRUCT_solution_structure/problems/" %}
-* **1.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78STRUCT_solution_structure/class1/" %}
-* **2.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78STRUCT_solution_structure/class2/" %}
+* **Uzdevumu lapa:** {% include doc_links.html url="/matf78/26_27/78_solution_structure/problems/" %}
+* **1.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78_solution_structure/class1/" %}
+* **2.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78_solution_structure/class2/" %}
 {: .small}
 
 
