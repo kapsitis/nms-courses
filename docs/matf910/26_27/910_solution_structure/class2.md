@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "9.1.B. Atrisinājumu struktūras: Pierādījumi no pretējā"
-permalink: /matf910/26_27/910STRUCT_solution_structure/handout_class1/
+permalink: /matf910/26_27/910_solution_structure/handout_class1/
 
 docx_header: "9.1.B. Atrisinājumu struktūras: Pierādījumi no pretējā"
 docx_footer: "ĀVĢ 9.-10.klašu matemātikas fakultatīvs"

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "7.1.B. Atrisinājumu struktūras: Vispārīgie un atsevišķie apgalvojumi"
-permalink: /matf78/26_27/78STRUCT_solution_structure/class2/
+permalink: /matf78/26_27/78_solution_structure/class2/
 
 docx_header: "7.1.B. Atrisinājumu struktūras: Vispārīgie un atsevišķie apgalvojumi"
 docx_footer: "ĀVĢ 7.-8.klašu matemātikas fakultatīvs"

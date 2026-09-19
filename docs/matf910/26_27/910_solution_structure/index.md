@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "9.1. temats. Atrisinājumu struktūras: Kas ir pilns pierādījums"
-permalink: /matf910/26_27/910STRUCT_solution_structure/
+permalink: /matf910/26_27/910_solution_structure/
 ---
 # 9.1. temats. Atrisinājumu struktūras: Kas ir pilns pierādījums
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "7.1.temats: Atrisinājumu struktūras. Uzdevumi"
-permalink: /matf78/26_27/78STRUCT_solution_structure/problems/
+permalink: /matf78/26_27/78_solution_structure/problems/
 
 docx_header: "7.1.temats: Atrisinājumu struktūras: Uzdevumi"
 docx_footer: "ĀVĢ 7.-8.klašu matemātikas fakultatīvs"
