@@ -56,6 +56,32 @@ formulē invariantu, kurš procesa laikā nemainās.
 
 
 
+
+## Rezerves piemēri
+
+### 1.1. LV.NOL.2015.8.2 — invarianta trīs soļu shēma
+
+Autoservisā "Šrotiņš" ir $39$ mašīnas. Naskais Maigonis katra mēneša $20.$
+datumā vai nu pārdod $7$ restaurētas mašīnas un to vietā nopērk $16$ vecas
+mašīnas, vai arī $19$ mašīnas nodod metāllūžņos un to vietā nopērk $4$ vecas
+mašīnas. Vai iespējams, ka "Šrotiņā" kāda mēneša $21.$ datumā būs tieši $2015$
+mašīnas?
+
+* *Saprašana:* "Vai iespējams" — ja atbilde ir "nē", vajag vispārīgu spriedumu,
+  kas aptver **visas** iespējamās darbību virknes, ne tikai dažas.
+* *Izpēte:* Uzraksti abus gājienus kā vienu skaitli: $-7+16 = +9$ un
+  $-19+4 = -15$. Kas kopīgs skaitļiem $9$ un $15$?
+* *Pārformulēšana:* Invariants: "mašīnu skaits vienmēr dalās ar $3$".
+* *Risināšana:* (1) Sākumā $39$ dalās ar $3$. (2) $3k \pm 3m = 3(k \pm m)$,
+  tātad pēc katra gājiena dalāmība saglabājas. (3) $2+0+1+5 = 8$ nedalās ar $3$,
+  tātad $2015$ nav sasniedzams.
+* *Atskats:* Vai spriedumā kaut kur tika izmantota gājienu **secība** vai
+  **skaits**? Ja nē — tieši tāpēc arguments der visām virknēm uzreiz.
+
+
+
+
+
 ## SPARQL vaicājums 
 
 

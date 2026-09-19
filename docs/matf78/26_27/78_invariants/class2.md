@@ -16,77 +16,53 @@ geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 
 Īsa teorija
 
-**1.piemērs:** Skaitļu virknes pirmais loceklis ir $12$. Katru nākamo iegūst iepriekšējo vai
-nu reizinot ar $2$ vai $3$, vai arī izdalot ar $2$ vai $3$ (ja dalās bez
-atlikuma). Vai virknes $61.$ loceklis var būt $54$?
 
-* *Izpēte:* Uzraksti dažus pirmos locekļus. Vai pats skaitlis aug vai dilst?
-  Nē — tātad jāmeklē cits lielums.
-* *Pārformulēšana:* Sadali pirmreizinātājos: $12 = 2 \cdot 2 \cdot 3$ (trīs
-  reizinātāji), $54 = 2 \cdot 3 \cdot 3 \cdot 3$ (četri). Par cik mainās
-  reizinātāju skaits vienā gājienā?
-* *Risināšana:* Katrā gājienā $\pm 1$, tātad reizinātāju skaita **paritāte**
-  mainās katrā solī. No $1.$ līdz $61.$ loceklim ir $60$ gājieni — pāra skaits,
-  tātad $61.$ loceklim reizinātāju skaits ir nepāra, kā $12$. Bet $54$ tas ir
-  pāra. Nevar.
-* *Atskats:* Šeit invariants nav "lielums, kas nemainās", bet "lielums, kas
-  mainās pilnīgi regulāri". Kāds ir vispārīgais secinājums par $n$-to locekli?
+**1.piemērs:** 
+No $8 \times 8$ kvadrāta izgriež vienu rūtiņu. Vai atlikušās $63$ rūtiņas var
+sagriezt $1 \times 3$ taisnstūrīšos? Kur jāizgriež rūtiņa, lai varētu šādi
+sagriezt?
 
+![](image05.png)
+
+* *Saprašana:* $63 = 3 \cdot 21$, tātad laukums netraucē — vajadzīgs cits
+  arguments.
+* *Izpēte:* Šaha krāsojums nepalīdz, jo $1 \times 3$ figūra noklāj gan $2+1$,
+  gan $1+2$ rūtiņas. Kāpēc der krāsojums **trīs** krāsās pa diagonālēm?
+* *Pārformulēšana:* Katrs $1 \times 3$ taisnstūrītis noklāj tieši vienu $A$,
+  vienu $B$ un vienu $C$ rūtiņu. Tātad invariants: noklāto $A$, $B$ un $C$
+  skaitiem jābūt vienādiem.
+* *Risināšana:* Saskaiti $A$, $B$, $C$ rūtiņas abos attēlā dotajos krāsojumos.
+  Izgrieztajai rūtiņai jābūt tādā krāsā, kuras ir par vienu vairāk — un tas
+  jāizpildās abiem krāsojumiem vienlaikus. Kuras rūtiņas tam atbilst?
+* *Atskats:* Uzdevumā ir divas daļas: "kur var" (piemērs) un "citur nevar"
+  (invariants). Vai atbildē ir abas?
 
 
 <!--
-LV.AMO.2024.7.3 — invariants, kas nav pats skaitlis
+Klasiskais piemērs — trīs krāsu krāsojums
 -->
 
 **2.piemērs:** 
+Vai taisnstūri ar izmēriem $7 \times 6$ rūtiņas var pārklāt ar 4.att.
+redzamajām figūrām?
 
-Kastē atrodas baltas, sarkanas un zaļas lodītes. Ar vienu gājienu var izņemt
-divas dažādu krāsu lodītes un ielikt vienu trešās krāsas lodīti. Vai var
-panākt, ka paliek tikai viena lodīte, ja sākumā ir **(A)** $10$ baltas, $12$
-sarkanas, $16$ zaļas; **(B)** $10$ baltas, $12$ sarkanas, $15$ zaļas?
+![](LV.AMO.2015.7.2.png)
 
-* *Saprašana:* Divas daļas — atbildes var būt dažādas, un katrai vajag savu
-  pamatojuma veidu.
-* *Izpēte:* Viens gājiens: divi skaiti $-1$, viens skaits $+1$. Tātad **visas
-  trīs** paritātes mainās vienlaikus. Kas tad paliek nemainīgs? Jebkuru divu
-  skaitu **starpība** pēc moduļa $2$.
-* *Risināšana (A):* Sākumā visi trīs skaiti pāra — visas starpības pāra. Beigu
-  stāvoklī $(1,0,0)$ divas starpības ir nepāra. Pretruna, tātad nevar.
-* *Risināšana (B):* Paritātes $(\text{p}, \text{p}, \text{n})$ neizslēdz
-  rezultātu $(0,0,1)$ — bet tas vēl nenozīmē, ka var! Jāuzrāda gājienu virkne:
-  trīs gājieni *bs*, *bz*, *sz* samazina visus trīs skaitus par $1$; ar tiem
-  nonāk pie $(1,3,6)$ un tālāk pabeidz ar rokām.
-* *Atskats:* Formulē vienā teikumā, kāpēc invariants nekad nevar pierādīt "jā".
+* *Saprašana:* "Vai var" ar sagaidāmo atbildi "nē" — vajag spriedumu par visiem
+  iespējamiem pārklājumiem uzreiz.
+* *Izpēte:* Nokrāso taisnstūri šaha galdiņa veidā un saskaiti melnās rūtiņas:
+  $7 \cdot 6 : 2 = 21$ — nepāra skaits.
+* *Izpēte:* Katrai figūrai pārbaudi visus pagriezienus un spoguļattēlus: cik
+  melnas rūtiņas tā noklāj? Katru reizi sanāk **pāra** skaits.
+* *Risināšana:* Vairāku pāra skaitļu summa ir pāra, bet melno rūtiņu kopskaits
+  ir $21$ — nepāra. Pretruna.
+* *Atskats:* Piezīme risinājumā: der arī krāsojums joslās. Pārbaudi, vai ar to
+  sanāk tas pats. Kāpēc šis pats spriedums bez izmaiņām strādā arī
+  $10 \times 9$ taisnstūrim (LV.AMO.2015.8.2)?
 
 <!--
-LV.NOL.2023.7.5 — kad invarianta vien nepietiek
+LV.AMO.2015.7.2 — figūras un melno rūtiņu paritāte
 -->
-
-
-
-#### 1.2. LV.NOL.2023.7.5 — kad invarianta vien nepietiek
-
-Kastē atrodas baltas, sarkanas un zaļas lodītes. Ar vienu gājienu var izņemt
-divas dažādu krāsu lodītes un ielikt vienu trešās krāsas lodīti. Vai var
-panākt, ka paliek tikai viena lodīte, ja sākumā ir **(A)** $10$ baltas, $12$
-sarkanas, $16$ zaļas; **(B)** $10$ baltas, $12$ sarkanas, $15$ zaļas?
-
-* *Saprašana:* Divas daļas — atbildes var būt dažādas, un katrai vajag savu
-  pamatojuma veidu.
-* *Izpēte:* Viens gājiens: divi skaiti $-1$, viens skaits $+1$. Tātad **visas
-  trīs** paritātes mainās vienlaikus. Kas tad paliek nemainīgs? Jebkuru divu
-  skaitu **starpība** pēc moduļa $2$.
-* *Risināšana (A):* Sākumā visi trīs skaiti pāra — visas starpības pāra. Beigu
-  stāvoklī $(1,0,0)$ divas starpības ir nepāra. Pretruna, tātad nevar.
-* *Risināšana (B):* Paritātes $(\text{p}, \text{p}, \text{n})$ neizslēdz
-  rezultātu $(0,0,1)$ — bet tas vēl nenozīmē, ka var! Jāuzrāda gājienu virkne:
-  trīs gājieni *bs*, *bz*, *sz* samazina visus trīs skaitus par $1$; ar tiem
-  nonāk pie $(1,3,6)$ un tālāk pabeidz ar rokām.
-* *Atskats:* Formulē vienā teikumā, kāpēc invariants nekad nevar pierādīt "jā".
-
-#### 1.3. LV.AMO.2024.7.3 — invariants, kas nav pats skaitlis
-
-
 
 
 ---
