@@ -58,6 +58,12 @@ formulē invariantu, kurš procesa laikā nemainās.
 
 ## SPARQL vaicājums 
 
+
+
+Birkas: ParityInvariant, ColoringInvariant, ModularInvariant, MonovariantArgument, TilingByDominoesAndColoring; MTH_FixedInvariant, MTH_AuxiliaryColoring.
+
+
+
 Vaicājums glabājas failā [`problems.rq`](problems.rq); to izpilda ar
 
 ```

@@ -20,10 +20,6 @@ likumi fizikā.
 * **2.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78_invariants/class2/" %}
 {: .small}
 
-
-* **Uzdevumu lapa:** {% include doc_links.html url="/matf78/26_27/78_invariants/problems/" %}
-{: .small}
-
 * SR: Procesam (gājienu vai pārveidojumu virknei) formulē invariantu un uzraksta neiespējamības pamatojumu ("invarianta vērtība sākumā nevar atšķirties no vērtības beigās").
 Invariants var būt, piemēram, nemainīga izteiksme, nemainīgs atlikums vai 
 kāds apgalvojums, kurš pārmaiņu gaitā saglabājas patiess.
@@ -32,26 +28,30 @@ lai pamatotu pārklāšanas, figūriņu izgriešanas vai apstaigāšanas neiesp�
 formulē invariantu, kurš procesa laikā nemainās.
 * SR: Pazīst monovariantu — lielumu, kas katrā gājienā tikai aug vai tikai dilst, lai pamatotu, ka process apstājas vai tā beigās izpildās kāda nevienādība.
 
-
-Birkas: ParityInvariant, ColoringInvariant, ModularInvariant, MonovariantArgument, TilingByDominoesAndColoring; MTH_FixedInvariant, MTH_AuxiliaryColoring.
-
-
-
 ## 1.nodarbības saturs
 
-Pirmajā nodarbībā invariantu ievieš kā **skaitli, kas procesa laikā nemainās**.
-Sākam ar gadījumiem, kur tas ir pats acīmredzamākais lielums — visu monētu
-kopsumma vai uzrakstīto skaitļu summa —, un pierakstām trīs soļu shēmu:
-(1) nosauc invariantu, (2) katram atļautā gājiena veidam parādi, ka tas
-nemainās, (3) salīdzini vērtību sākumā un beigās. Tad pāriet uz gadījumiem, kur
-nemainās nevis pats skaitlis, bet tā **atlikums**, dalot ar $2$, $3$ vai $4$:
-"apēd $5$, pieliek $9$" tipa procesi, gabalu skaita maiņas, starpību summa pa
-apli. Nodarbības beigās skolēni redz divus uzdevumus, kuros invariants nav
-atrodams uzdevuma tekstā — jāizvēlas pašam, ko skaitīt (pirmreizinātāju skaitu,
-vienas krāsas bumbiņu skaitu). Uzsveram arī robežu: invariants pierāda **tikai**
-neiespējamību; ja atbilde ir "jā", papildus vajag konkrētu piemēru.
+Invariantu risinātājs pats definē kā **skaitli, kas procesa laikā nemainās**.
+Dažos gadījumos tas ir viegli atpazīstams lielums — visu monētu
+kopsumma vai uzrakstīto skaitļu summa. Citreiz nemainīga
+var būt skaitļu summa mīnus izdarīto gājienu skaits (ja katrā solī summa palielinās par $1$). 
 
-Šai nodarbībai specifiskie sasniedzamie rezultāti:
+Pēc invarianta definēšanas, pieraksta šo 3 soļu shēmu: 
+
+1. nosauc invariantu, 
+2. katram atļautā gājiena veidam parāda, ka invariants nemainās, 
+3. salīdzina vērtību sākumā un beigās. 
+
+Tālāk seko gadījumi, kad invariants ir nevis izrēķinātā izteiksme (summa vai tml.), 
+bet gan **atlikums**, dalot ar kādu (visbiežāk nelielu) skaitli. 
+Tie ir "apēd $5$, pieskaiti $9$, sagriez jebkuru gabalu $3$ gabalos" tipa procesi, 
+kur gabalu skaits nepaliek nemainīgs, bet mainās prognozējamā veidā.  
+Nodarbības beigās - divi uzdevumi, kuros invariants neparādās uzdevuma 
+tekstā, tas jāizvēlas pašam (pirmreizinātāju skaits,
+vienas krāsas bumbiņu skaits). *Piezīme:* Invariants pierāda **tikai**
+neiespējamību. Tas nepalīdz konstruēt sarežģītus piemērus, kuri risinātājam 
+jāveido ar citām metodēm. 
+
+Šai nodarbībai specifiski sasniedzamie rezultāti:
 
 * SR: Procesa aprakstā atpazīst "gājienu" un pieraksta, par cik katrs gājiena
   veids maina izvēlēto lielumu; pārbauda **visus** gājienu veidus, nevis vienu.
