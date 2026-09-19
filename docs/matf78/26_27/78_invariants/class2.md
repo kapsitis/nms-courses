@@ -12,4 +12,5 @@ docx_heading_color: "2F5496"
 docx_heading1_size: 14
 geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 ---
+# 7.2.B. Invarianti: Rūtiņu krāsojumi
 
