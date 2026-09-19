@@ -1,17 +1,14 @@
----
-layout: default
-title: "7.2.temats: Invarianti"
-permalink: /matf78/26_27/78STRUCT_invariants/
----
-# 2.temats: Invarianti: Kas saglabājas, veicot atļautos gājienus
+## 78INV_invariants
 
-**Mērķis:** Kā lasīt uzdevumu, kā veidot jautājumam 
-atbilstošu risinājuma struktūru. Kādus jautājumus sev 
-uzdot pirms uzskatīt par atrisinātu. Kā analizēt vienkāršus 
-6.-7.kl. olimpiāžu uzdevumus.
-Matemātikā var izmantot jau zināmus vai izdomāt jaunus invariantus; 
-tie veic līdzīgu lomu kā (enerģijas, masas, u.c.) nezūdamības 
-likumi fizikā.
+**Virsraksts:** Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde
+
+**Tvērums:** Izmantot invariantus neiespējamības pierādījumos. 
+Ja invarianti izmantoti kā vairāksoļu procesa pētīšanas sastāvdaļa, 
+līdzīgi kā saglabāšanās jeb nezūdamības likumi fizikā, tad apskatām arī tos.
+Laukumi, tilpumi un masa parasti netiek aplūkoti šajā sadaļā, izņemot tad, 
+ja tie palīdz analizēt  kombinatoriku, algoritmus vai spēles.
+
+**Sasniedzamie rezultāti:** 
 
 * SR: Procesam (gājienu vai pārveidojumu virknei) formulē invariantu un uzraksta neiespējamības pamatojumu ("invarianta vērtība sākumā nevar atšķirties no vērtības beigās").
 Invariants var būt, piemēram, nemainīga izteiksme, nemainīgs atlikums vai 
@@ -21,6 +18,25 @@ lai pamatotu pārklāšanas, figūriņu izgriešanas vai apstaigāšanas neiesp�
 formulē invariantu, kurš procesa laikā nemainās.
 * SR: Pazīst monovariantu — lielumu, kas katrā gājienā tikai aug vai tikai dilst, lai pamatotu, ka process apstājas vai tā beigās izpildās kāda nevienādība.
 
+
+## 1. Motivācija
+
+
+
+
+## Atlasīšana no RDF datubāzes
+
+Sk. `select_problems.py` skriptu. 
+
+### Jūsu piedāvātais SPARQL vaicājums (vai vairāki vaicājumi)
+
+
+
+
+### Piemēri, ko varētu atlasīt
+
+Invarianti ir apzīmēti uzdevumu metainformācijā kā "methods". 
+Bet var būt arī invarianti, kuri atkarīgi no 
 
 Birkas: ParityInvariant, ColoringInvariant, ModularInvariant, MonovariantArgument, TilingByDominoesAndColoring; MTH_FixedInvariant, MTH_AuxiliaryColoring.
 
@@ -34,4 +50,4 @@ Birkas: ParityInvariant, ColoringInvariant, ModularInvariant, MonovariantArgumen
 (lodīšu krāsu maiņa — atlikuma invariants).
 
 
-## Skaidrojamie piemēri
+

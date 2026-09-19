@@ -31,19 +31,14 @@ SR: Atbildes rakstiska noformēšana: Uzdevumi ar apakšgadījumiem, atrisināju
   Šķiltavas ir par 1 eiro dārgākas nekā sērkociņi. 
   Cik maksā sērkociņi un cik - šķiltavas?"
 
-**Kāpēc to mācīties?** Jautājuma veids nosaka, kāda atbilde ir pietiekama, — 
-un tā ir arī ārpus matemātikas. Ja draugs jautā *"Vai sestdien vari atnākt?"*, 
+**Kāpēc to mācīties?** Jautājuma veids nosaka, kāda atbilde ir pietiekama. 
+Ja draugs jautā *"Vai sestdien vari atnākt?"*, 
 pietiek atrast vienu brīvu stundu. Ja treneris jautā *"Vai vari trenēties 
 jebkurā nedēļas dienā?"*, jāpārbauda viss grafiks, un pietiek ar vienu 
 aizņemtu dienu, lai godīgā atbilde būtu "nē". Ja apgalvo *"Lētāk par 25 eiro 
 šīs austiņas nekur nopirkt nevar"*, nepietiek parādīt vienu veikalu ar šādu 
 cenu — jāpārliecinās, ka arī citos veikalos lētāk nav (piemērs + pamatojums, 
-ka labāk nevar). Programmētājs zina, ka viens veiksmīgs tests nepierāda, ka 
-programma strādās vienmēr. Kontroldarbā garš risinājums, kas atbild uz citu 
-jautājumu, dabū maz punktu — tāpat kā sacerējums par citu tēmu. Olimpiādē, 
-eksāmenā, darba intervijā vai strīdā ar draugiem pārliecina tas, kurš atbild 
-tieši uz uzdoto jautājumu un pamato visu, kas jāpamato, nevis tikai to, ko 
-bija viegli pamanīt.
+ka labāk nevar). 
 
 
 ## 2. Uzdevumu atlases SPARQL
