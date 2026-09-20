@@ -132,7 +132,7 @@ geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 **(D)** 450 ml;  
 **(E)** 500 ml.
 
-15. Rūtiņu lapa novietota tā, ka tās $x$ ass vērsta tieši uz austrumiem, bet $y$ ass — tieši uz ziemeļiem. Gauss gliemezis sāk ceļu punktā $(0,0)$ un lēni, bet vienmērīgi līen 1 vienību uz ziemeļiem, 2 vienības uz austrumiem, 3 vienības uz dienvidiem, 4 vienības uz rietumiem, 5 vienības uz ziemeļiem, 6 vienības uz austrumiem, 7 vienības uz dienvidiem, 8 vienības uz rietumiem, 9 vienības uz ziemeļiem un (beidzot!) 10 vienības uz austrumiem. Kurā punktā gliemezis beigās nonāk?
+15. Rūtiņu lapa novietota tā, ka tās $x$ ass vērsta tieši uz austrumiem, bet $y$ ass — tieši uz ziemeļiem. Gausais gliemezis sāk ceļu punktā $(0,0)$ un lēni, bet vienmērīgi līen 1 vienību uz ziemeļiem, 2 vienības uz austrumiem, 3 vienības uz dienvidiem, 4 vienības uz rietumiem, 5 vienības uz ziemeļiem, 6 vienības uz austrumiem, 7 vienības uz dienvidiem, 8 vienības uz rietumiem, 9 vienības uz ziemeļiem un (beidzot!) 10 vienības uz austrumiem. Kurā punktā gliemezis beigās nonāk?
 
 **(A)** $(-6,5)$;  
 **(B)** $(5,6)$;  

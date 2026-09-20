@@ -3,7 +3,7 @@ layout: default
 title: "9.1. temats. Atrisinājumu struktūras: Kas ir pilns pierādījums"
 permalink: /matf910/26_27/910_solution_structure/
 ---
-# 9.1. temats. Atrisinājumu struktūras: Kas ir pilns pierādījums
+# 9.1. temats. Atrisinājumu struktūras. Kas ir pilns pierādījums
 
 **Apraksts:** Kā lasīt uzdevumu, kā veidot jautājumam atbilstošu 
 risinājuma struktūru. Kādus jautājumus sev uzdot pirms uzskatīt uzdevumu
