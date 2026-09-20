@@ -21,7 +21,7 @@ Pavasara semestrī arī datumi var mainīties, ja pulciņi vairs nav piektdienā
 |---|---|
 | **7.1. temats** | [Atrisinājumu struktūras. Uzdotajam jautājumam atbilstoša atbilde]({{ '/matf78/26_27/78_solution_structure/' | relative_url }}) |
 | 2026-09-11 | **7.1.A.** Atrisinājumu struktūras: Seši jautājumu tipi [1.materiāls (pdf)]({{ '/matf78/26_27/78_solution_structure/matf78-2026_27-78_solution_structure-class1.pdf' | relative_url }}) |
-| 2026-09-18 | **7.1.B.** Atrisinājumu struktūras: Vispārīgie un atsevišķie pamatojumi [2.materiāls (pdf)]({{ '/matf78/26_27/78_solution_structure/matf78-2026_27-78_solution_structure-class2.pdf' | relative_url }}) |
+| 2026-09-18 | **7.1.B.** Atrisinājumu struktūras: Vispārīgi un atsevišķi apgalvojumi [2.materiāls (pdf)]({{ '/matf78/26_27/78_solution_structure/matf78-2026_27-78_solution_structure-class2.pdf' | relative_url }}) |
 | **7.2. temats** | [Invarianti: Kas saglabājas, veicot atļautos gājienus]({{ '/matf78/26_27/78_invariants/' | relative_url }}) |
 | 2026-09-25 | **7.2.A.** Invarianti: Skaitliski invarianti [1.materiāls (pdf)]({{ '/matf78/26_27/78_invariants/matf78-2026_27-78_invariants-class1.pdf' | relative_url }}) |
 | 2026-09-02 | **7.2.B.** Invarianti: Rūtiņu krāsojumi [2.materiāls (pdf)]({{ '/matf78/26_27/78_invariants/matf78-2026_27-78_invariants-class2.pdf' | relative_url }}) |

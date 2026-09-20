@@ -34,6 +34,26 @@ Veiciet šādas izmaiņas direktorijā `nms-courses\docs\matf78\26_27\78_invaria
    tad 4 uzdevumi - standarts veids, kā pielietot tematu; visbeidzot 2 uzdevumi, 
    kuros bez temata ir arī citu tematu metodes un zināšanas būtiski izmantotas.)
 
+```
+# 7.3. temats: Temata nosaukums
+
+## 1. daļa: Temata nosaukums. Apakšvirsraksts
+
+| Kāpnes | Uzdevumi |
+|---|---|
+| Iesildīšanās | LV.AMO.2015.6.2 (šaha krāsojums un domino), LV.NOL.2015.7.3 (krāsojums palīdz uzbūvēt piemēru) |
+| Viennozīmīga metode | LV.AMO.2015.7.2 (melno rūtiņu skaita paritāte), LV.AMO.2015.8.2 (tas pats solis lielākā taisnstūrī), LV.AMO.2016.7.5 (varde maina krāsu katrā lēcienā), LV.AMO.2016.8.5 (uzvarošo/zaudējošo rūtiņu krāsojums) |
+| Neviennozīmīga metode | LV.AMO.2022A.7.3 (novērtējums + konstrukcija), LV.NOL.2013.8.5 (monovariants un piemērs) |
+
+
+
+* *Izpēte*: Cik melnas un cik baltas rūtiņas noklāj **viens** domino kauliņš?
+Cik melnas rūtiņas ir vienā izgrieztajā $3 \times 5$ taisnstūrī?
+
+
+```
+
+
 ## Pieejamie resursi
 
 

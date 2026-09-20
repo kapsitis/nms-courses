@@ -15,7 +15,7 @@ geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 
 # 7.2.A. Invarianti: Skaitliski invarianti
 
-Īsa teorija
+> Vai no stāvokļa $A$ var pāriet uz stāvokli $B$ ar noteikta veida gājieniem?
 
 **1.piemērs:** Skaitļu virknes pirmais loceklis ir $12$. Katru nākamo iegūst iepriekšējo vai
 nu reizinot ar $2$ vai $3$, vai arī izdalot ar $2$ vai $3$ (ja dalās bez
@@ -24,7 +24,7 @@ atlikuma). Vai virknes $61.$ loceklis var būt $54$?
 * *Izpēte:* Var izdarīt dažus gājienus. Vai rezultāts aug vai dilst? 
 * *Izpēte:* Kā var sadalīt reizinātājos $12$ vai $54$?
 * *Pārformulēšana:* Kas mainās un kas saglabājas reizinot/dalot ar $2$ vai $3$?
-  Vai šo procesu var attēlot kaut kā citādi?
+  Vai pirmreizinātāju skaitu (t.i. pašreizējo stāvokli) var attēlot citādi?
 
 <!--
 LV.AMO.2024.7.3 — invariants, kas nav pats skaitlis
@@ -36,22 +36,29 @@ divas dažādu krāsu lodītes un ielikt vienu trešās krāsas lodīti. Vai var
 panākt, ka paliek tikai viena lodīte, ja sākumā ir **(A)** $10$ baltas, $12$
 sarkanas, $16$ zaļas; **(B)** $10$ baltas, $12$ sarkanas, $15$ zaļas?
 
-* *Saprašana:* Divas daļas — atbildes var būt dažādas, un katrai vajag savu
-  pamatojuma veidu.
-* *Izpēte:* Viens gājiens: divi skaiti $-1$, viens skaits $+1$. Tātad **visas
-  trīs** paritātes mainās vienlaikus. Kas tad paliek nemainīgs? Jebkuru divu
-  skaitu **starpība** pēc moduļa $2$.
-* *Risināšana (A):* Sākumā visi trīs skaiti pāra — visas starpības pāra. Beigu
-  stāvoklī $(1,0,0)$ divas starpības ir nepāra. Pretruna, tātad nevar.
-* *Risināšana (B):* Paritātes $(\text{p}, \text{p}, \text{n})$ neizslēdz
-  rezultātu $(0,0,1)$ — bet tas vēl nenozīmē, ka var! Jāuzrāda gājienu virkne:
-  trīs gājieni *bs*, *bz*, *sz* samazina visus trīs skaitus par $1$; ar tiem
-  nonāk pie $(1,3,6)$ un tālāk pabeidz ar rokām.
-* *Atskats:* Formulē vienā teikumā, kāpēc invariants nekad nevar pierādīt "jā".
+* *Saprašana:* Ir divas daļas, katrai var vajadzēt citu pamatojuma veidu.
+* *Izpēte:* Vienā gājienā **visas trīs** paritātes mainās vienlaikus. 
+  Ja diviem skaitļiem reizē mainās paritāte - kas tad paliek nemainīgs?
 
 <!--
 LV.NOL.2023.7.5 — kad invarianta vien nepietiek
 -->
+
+
+
+## LV.NOL.2023.7.5
+
+Kastē atrodas baltas, sarkanas un zaļas lodītes. Ar vienu gājienu no kastes var
+izņemt divas dažādu krāsu lodītes un ielikt kastē vienu trešās krāsas lodīti
+(vienmēr pietiek jebkuras krāsas lodīšu, ko ielikt kastē). Vai var panākt, ka
+kastē paliek tikai viena lodīte, ja sākumā kastē atrodas: **(A)** $10$ baltas,
+$12$ sarkanas un $16$ zaļas lodītes; **(B)** $10$ baltas, $12$ sarkanas un $15$
+zaļas lodītes?
+
+
+
+
+
 
 ---
 

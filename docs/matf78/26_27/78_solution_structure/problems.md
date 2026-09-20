@@ -13,7 +13,7 @@ docx_heading1_size: 14
 geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 ---
 
-# 1.temats: Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde
+# 1.temats: Atrisinājumu struktūras. Uzdotajam jautājumam atbilstoša atbilde
 
 ## 1.daļa
 

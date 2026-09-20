@@ -14,7 +14,17 @@ geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 ---
 # 7.2.B. Invarianti: Rūtiņu krāsojumi
 
-Īsa teorija
+Dažos uzdevumos nav uzreiz nekā derīga, ko invariants varētu saskaitīt, 
+bet to iegūst, piemēram **izvēloties krāsojumu** (šaha, joslu, trīs krāsu) un tad
+skaitot noteiktas krāsas rūtiņas. 
+Arī apstaigāšanas uzdevumus un spēles var analizēt izvēloties *krāsošanas invariantu*.
+Piemēram, šaha laidnis nekad nemaina rūtiņas krāsu, 
+šaha zirdziņš katrā gājienā maina rūtiņas krāsu -- var atsevišķi aplūkot 
+pāra un nepāra gājienus.
+
+Krāsojums ir tikai palīglīdzeklis, tāpat kā agrāk risinājumā jāformulē 
+pats invariants, jāsalīdzina vērtība sākuma un beigu stāvokļos, jāsecina.
+
 
 
 **1.piemērs:** 
