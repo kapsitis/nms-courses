@@ -5,3 +5,4 @@ matf910/26_27/910_solution_structure/matf910-2026_27-910_solution_structure-clas
 matf78/26_27/78_invariants/matf78-2026_27-78_invariants-problems.pdf
 matf78/26_27/78_invariants/matf78-2026_27-78_invariants-class1.pdf
 matf78/26_27/78_invariants/matf78-2026_27-78_invariants-class2.pdf
+matf78/26_27/78SHORT_ANSWERS/test19_junior/matf78-2026_27-78SHORT_ANSWERS-test19_junior-index.pdf

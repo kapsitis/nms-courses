@@ -16,6 +16,7 @@ likumi fizikā.
 * **Uzdevumu lapa:** {% include doc_links.html url="/matf78/26_27/78_invariants/problems/" %}
 * **1.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78_invariants/class1/" %}
 * **2.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78_invariants/class2/" %}
+* **Izvēļu tests:** {% include doc_links.html url="/matf78/26_27/78SHORT_ANSWERS/test19_junior/" %}
 {: .small}
 
 * SR: Procesam (gājienu vai pārveidojumu virknei) formulē invariantu un uzraksta neiespējamības pamatojumu ("invarianta vērtība sākumā nevar atšķirties no vērtības beigās").
