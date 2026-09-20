@@ -2,8 +2,6 @@
 layout: default
 title: "7.2.temats: Invarianti: Kas saglabājas, veicot atļautos gājienus"
 permalink: /matf78/26_27/78_invariants/
-
-
 ---
 # 7.2.temats: Invarianti: Kas saglabājas, veicot atļautos gājienus
 

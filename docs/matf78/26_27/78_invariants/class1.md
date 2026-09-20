@@ -17,6 +17,22 @@ geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 
 > Vai no stāvokļa $A$ var pāriet uz stāvokli $B$ ar noteikta veida gājieniem?
 
+Invarianti ir "nezūdamības likumi" matemātikā. 
+(Piemēram, ja pārvieto plaknes figūras daļas bez pārklāšanās, tad figūras laukums nemainās.)
+Šajā nodarbībā par invariantiem algebrā (izteiksmju vērtības, atlikumu, kopskaits). 
+Olimpiādēs invariants parasti jādefinē pašam risinātājam. 
+Pēc invarianta definēšanas, risinājumā var iekļaut šo 3 soļu shēmu:
+
+1. Nosauc invariantu (pasaka, ka vēlamies aplūkot kaut kādu lielumu). 
+2. Katram atļautā gājiena veidam parāda, ka Jūsu invariants nemainās 
+   (jāapskata **visi** atļautie gājieni, visi figūriņu novietošanas veidi utml.), 
+3. Salīdzina vērtību sākumā un beigās. Un iegūst pretrunu, ja nesakrīt. 
+
+Invariantu var izveidot arī tad, ja izteiksme mainās, bet to dara "ritmiski". 
+Ar invariantu var pierādīt neiespējamību, bet nevar pierādīt iespējamību
+(ja no stāvokļa $A$ **var** nonākt stāvoklī $B$, tad jākonstruē piemērs; 
+nepietiek pateikt, ka "sakrita invariants"). 
+
 **1.piemērs:** Skaitļu virknes pirmais loceklis ir $12$. Katru nākamo iegūst iepriekšējo vai
 nu reizinot ar $2$ vai $3$, vai arī izdalot ar $2$ vai $3$ (ja dalās bez
 atlikuma). Vai virknes $61.$ loceklis var būt $54$?
@@ -33,8 +49,9 @@ LV.AMO.2024.7.3 — invariants, kas nav pats skaitlis
 **2.piemērs:** 
 Kastē atrodas baltas, sarkanas un zaļas lodītes. Ar vienu gājienu var izņemt
 divas dažādu krāsu lodītes un ielikt vienu trešās krāsas lodīti. Vai var
-panākt, ka paliek tikai viena lodīte, ja sākumā ir **(A)** $10$ baltas, $12$
-sarkanas, $16$ zaļas; **(B)** $10$ baltas, $12$ sarkanas, $15$ zaļas?
+panākt, ka paliek tikai viena lodīte, ja sākumā ir  
+**(A)** $10$ baltas, $12$ sarkanas, $16$ zaļas;  
+**(B)** $10$ baltas, $12$ sarkanas, $15$ zaļas?
 
 * *Saprašana:* Ir divas daļas, katrai var vajadzēt citu pamatojuma veidu.
 * *Izpēte:* Vienā gājienā **visas trīs** paritātes mainās vienlaikus. 
@@ -45,25 +62,42 @@ LV.NOL.2023.7.5 — kad invarianta vien nepietiek
 -->
 
 
-
-## LV.NOL.2023.7.5
-
-Kastē atrodas baltas, sarkanas un zaļas lodītes. Ar vienu gājienu no kastes var
-izņemt divas dažādu krāsu lodītes un ielikt kastē vienu trešās krāsas lodīti
-(vienmēr pietiek jebkuras krāsas lodīšu, ko ielikt kastē). Vai var panākt, ka
-kastē paliek tikai viena lodīte, ja sākumā kastē atrodas: **(A)** $10$ baltas,
-$12$ sarkanas un $16$ zaļas lodītes; **(B)** $10$ baltas, $12$ sarkanas un $15$
-zaļas lodītes?
-
-
-
-
-
-
 ---
 
 ## 1.uzdevums
+Ieslēdzot kalkulatoru, uz tā ekrāna redzams skaitlis $1$; kalkulatoram ir divas 
+pogas -- nospiežot zilo pogu, uz ekrāna redzamajam skaitlim pieskaita 
+$15$, bet nospiežot zaļo pogu, skaitli pareizina ar $4$.  
+**(A)** Vai kaut kādā secībā spiežot pogas var iegūt skaitli $1234$?  
+**(B)** Vai uz šī kalkulatora var iegūt skaitli $12341234$?
 
+<!--
+Jauns. 
+((1 * 4 * 4 + 3) * 4 * 4  + 3) * 4 + 3 + 3 = 1234
+
+(1 * 4 * 4 * 4 * 4 + 15 + 15 + 15) * 4 + 15 + 15
+
+
+12341234 nevar dabūt (atlikums, dalot ar 3). 
+-->
 
 
 ## 2.uzdevums
+Uz galda ir divas konfekšu kaudzītes ar $3$ un $5$ konfektēm. Vienā gājienā 
+jebkurai no kaudzītēm var pievienot tik daudz konfekšu, cik ir otrā kaudzītē
+(pieņemsim, ka mums vienmēr pietiek konfekšu, ko pielikt). 
+Vai pēc vairākiem gājieniem var iegūt kaudzītes, kurās ir attiecīgi 
+$34$ un $144$ konfektes? 
+
+
+<!--
+Jauns. 
+No (41, 62) ejam atpakaļ. (41, 62) -> (41, 21) -> (21, 20)
+
+(34, 144) -> (34, 110) -> (34, 76) -> (34, 42) -> (34, 6) -> 
+(28, 6) -> (22, 6) -> (16, 6) -> (10,6) -> (4,6) -> (4,2) -> (2,2) 
+
+
+0,1,1,2,3,5,8,13,21,34,55,89,144
+0,1,3,4,7,11,18,29,
+-->

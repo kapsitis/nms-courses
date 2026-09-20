@@ -159,16 +159,3 @@ Rūtiņa ir uzvaroša, ja no tās var aiziet uz kādu zaudējošu. Aizpildi visu
 laukumu - atzīmējot ar "U" vai "Z". `#AuxiliaryColoring`
 
 
-## LV.NOL.2013.8.5
-
-Rindā kaut kādā secībā stāv $10$ zēni un $10$ meitenes. Divus bērnus var mainīt
-vietām, ja starp tiem stāv ne vairāk kā $9$ citi bērni.
-
-**(A)** Pierādi, ka ar $10$ maiņām noteikti pietiek, lai panāktu, ka vispirms
-stāv $10$ zēni un pēc tam $10$ meitenes.
-**(B)** Pierādi, ka sākuma situācija var būt tāda, ka ar $9$ maiņām nevar
-panākt, ka vispirms stāv $10$ zēni un pēc tam $10$ meitenes.
-
-* *Izpēte*: (A) Kārto pozīcijas pēc kārtas: ja $1.$ vietā ir meitene, kur
-noteikti atrodas kāds zēns, ar ko to samainīt? (B) Izvēlies vissliktāko sākuma
-izkārtojumu. Cik zēnu vietu **vienā** maiņā var izmainīt? `#ExampleAndBound`
