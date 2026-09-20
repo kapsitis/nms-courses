@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "7.2.A. Invarianti: Skaitliski invarianti"
-permalink: /matf78/26_27/78_invariants/class2/
+permalink: /matf78/26_27/78_invariants/class1/
 
 docx_header: "7.2.A. Invarianti: Skaitliski invarianti"
 docx_footer: "ĀVĢ 7.-8.klašu matemātikas fakultatīvs"

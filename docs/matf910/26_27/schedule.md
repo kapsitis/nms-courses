@@ -12,7 +12,7 @@ Pavasara semestrī datumi var mainīties, ja pulciņi vairs nav piektdienā.
 
 | Nedēļa | Temats |
 | --- | --- |
-| **9.1. temats** | [Atrisinājumu struktūras: Kas ir pilns pierādījums]({{ '/matf910/26_27/910STRUCT_solution_structure/' | relative_url }}) |
+| **9.1. temats** | [Atrisinājumu struktūras: Kas ir pilns pierādījums]({{ '/matf910/26_27/910_solution_structure/' | relative_url }}) |
 | 2026-09-11 | **9.1.A.** Atrisinājumu struktūras: Seši jautājumu tipi [1.materiāls (pdf)]({{ '/matf910/26_27/910_solution_structure/matf910-2026_27-910_solution_structure-class1.pdf' | relative_url }}) |
 | 2026-09-18 | **9.1.B.** Atrisinājumu struktūras: Pierādījumi no pretējā [2.materiāls (pdf)]({{ '/matf910/26_27/910_solution_structure/matf910-2026_27-910_solution_structure-class2.pdf' | relative_url }}) |
 | **9.2. temats** | Izteiksmes un nevienādības: pilnā kvadrāta metode |
