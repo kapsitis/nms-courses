@@ -87,3 +87,55 @@ noskaidrot, kura no iespējām pastāv īstenībā?
 <!--
 LV.NOL.2020.8.5 — kad līdzsvars nav atbilde, bet jautājums
 -->
+
+
+---
+
+## 1.uzdevums
+
+Dotas $9$ pēc ārējā izskata vienādas monētas, no kurām viena ir viltota - tā ir
+vieglāka nekā citas. Kā ar divām svēršanām uz sviras svariem bez atsvariem
+atrast viltoto monētu, ja zināms, ka visu īsto monētu masas ir vienādas?
+
+* *Izpēte:* $3^2 = 9$ - tieši tik, cik monētu. Rezerves nav; cik monētām
+  drīkst palikt "aizdomās" pēc pirmās svēršanas?
+
+<!--
+Klasika, bez konkrēta olimpiādes avota (sk. prompt.md).
+3+3+3; tad 1+1+1. Precīza sakritība ar 3^2 = 9.
+-->
+
+
+## 2.uzdevums
+
+Doti seši atsvari, uz kuriem ir uzraksti $1~\text{g}$, $2~\text{g}$,
+$3~\text{g}$, $4~\text{g}$, $5~\text{g}$, $6~\text{g}$, kas atbilst atsvara
+masai gramos. Zināms, ka pieci no šiem uzrakstiem ir pareizi, bet viens ir
+nepareizs - attiecīgā atsvara masa ir lielāka nekā norādīts uzrakstā. Kā ar
+divām svēršanām uz sviru svariem var noskaidrot, kurš uzraksts ir nepareizs?
+
+![](LV.NOL.2025.6.5.png){: width="120"}
+
+* *Pārformulēšana:* Masas šeit ir zināmi skaitļi, tāpēc katru svēršanu vari
+  izvēlēties pats kā **pārbaudāmu vienādību**. Kādas vienādības var salikt no
+  skaitļiem $1, 2, 3, 4, 5, 6$? (Piemēram, $1+2=3$.)
+
+<!--
+LV.NOL.2025.6.5 — zināmas masas: svēršana kā vienādības pārbaude.
+Attēls nokopēts no math/problembase/LV.NOL/lv-nol-2025/.
+-->
+
+
+## 3.uzdevums
+
+Dotas $9$ pēc ārējā izskata vienādas monētas, no kurām $2$ ir viltotas. Visu
+īsto monētu masas ir vienādas. Arī abām viltotajām monētām ir vienāda masa,
+bet tā ir lielāka nekā īstās monētas masa. Kā ar $4$ svēršanām uz sviras
+svariem bez atsvariem atrast abas viltotās monētas?
+
+* *Saprašana:* Viltotas ir **divas**. Ja sadali monētas trijās grupās pa trim
+  un divas grupas izrādās līdzsvarā - vai tas nozīmē, ka tajās viltoto nav?
+
+<!--
+LV.AMO.2015.5.5 — divi īpašie priekšmeti: līdzsvars vairs nenozīmē "viss kārtībā".
+-->

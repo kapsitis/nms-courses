@@ -93,3 +93,55 @@ katras bumbiņas masu?
 <!--
 LV.AMO.2015.7.5 — ko svari principā nevar pateikt
 -->
+
+
+---
+
+## 1.uzdevums
+
+Doti $4$ atsvari. Katram no tiem masa ir $10~\mathrm{g}$ vai $11~\mathrm{g}$.
+Doti arī svari, kas rāda uz tiem uzlikto atsvaru kopējo masu. Vai ar $3$
+svēršanām var noteikt katra atsvara masu?
+
+* *Pārformulēšana:* Ja uz svariem uzliec $k$ atsvarus un rādījums ir $M$, tad
+  skaitlis $M - 10k$ pasaka kaut ko ļoti konkrētu. Ko tieši - un cik dažādus
+  iznākumus tāpēc dod viena svēršana?
+
+<!--
+LV.AMO.2003.6.5 — cits instruments: viens rādījums dod skaitu, nevis "lielāks/mazāks".
+Atbilde: jā, var.
+-->
+
+
+## 2.uzdevums
+
+Katrs no trīs rūķīšiem ir iedomājies vienu no skaitļiem $1,\ 2$ vai $3$,
+katrs - citu skaitli. Katrs rūķītis zina, kādus skaitļus ir iedomājušies
+pārējie rūķīši. Kā var noskaidrot, kuru skaitli katrs rūķītis ir iedomājies,
+ja katram rūķītim var uzdot tieši vienu jautājumu, uz kuru viņš var atbildēt
+tikai ar "jā" vai "nē"? Katram rūķītim drīkst jautāt arī par citu rūķīšu
+iedomātajiem skaitļiem.
+
+* *Izpēte:* Cik pavisam ir iespējamo izkārtojumu? Cik dažādu atbilžu kopumu
+  var dot trīs "jā/nē" atbildes? Salīdzini abus skaitļus, pirms sāc izdomāt
+  pašus jautājumus.
+
+<!--
+LV.NOL.2012.6.5 — 3! = 6 izkārtojumi pret 2^3 = 8 atbildēm; jautājums par citu skaitļiem.
+-->
+
+
+## 3.uzdevums
+
+Doti $16$ akmeņi ar dažādām masām. Pierādiet, ka ar $18$ svēršanām uz sviru
+svariem bez atsvariem var atrast pašu smagāko un otru smagāko akmeni!
+
+* *Pārformulēšana:* Izspēlē "izslēgšanas turnīru": vispirms $8$ pāri, tad $4$,
+  tad $2$, tad fināls. Otrais smagākais akmens varēja zaudēt **tikai**
+  čempionam - ar cik akmeņiem čempions tieši cīnījās?
+
+<!--
+Klasika, bez konkrēta olimpiādes avota (sk. prompt.md, 8. piemērs).
+15 svēršanas čempionam + 3 svēršanas starp 4 tiešajiem zaudētājiem = 18.
+Atšķirībā no 1.piemēra (smagākais UN vieglākais) te vajadzīgs turnīra KOKS.
+-->

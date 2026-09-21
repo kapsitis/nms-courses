@@ -24,6 +24,12 @@ geometry: "a4paper, top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm"
 | Vairākas metodes kopā | LV.NOL.2020.8.5 (līdzsvars nav atbilde, bet jautājums), LV.NOL.2015.7.5 (vispirms loģika par kārtību, tad svēršana) |
 
 
+
+
+
+
+
+
 ### LV.NOL.2019.6.2
 
 Dotas $11$ pēc ārējā izskata vienādas monētas, no kurām $10$ ir īstas, bet
@@ -127,6 +133,81 @@ var pateikt tikai no nosacījuma par kārtību?
 * *Izpēte*: Tagad tev ir viena zināma īsta un viena zināma viltota monēta.
 Kas notiek, ja liec šo pāri vienā kausā un divas nezināmas monētas otrā?
 Cik iznākumi iespējami un ko katrs nozīmē?
+
+
+
+### 7 monētas
+
+No $7$ monētām vienai monētai masa ir mazāka nekā pārējām. Kā ar divām
+svēršanām noskaidrot, kura ir vieglākā monēta?
+
+* *Izpēte*: Ar divām svēršanām var atšķirt līdz $9$ gadījumiem, bet monētu ir
+tikai $7$ - tātad rezerve ir. Kā tagad sadalīt monētas trijās daļās?
+
+<!--
+Klasika, bez konkrēta olimpiādes avota (sk. prompt.md, 6. piemērs).
+3+3+1, tad 1+1+1. Kontrasts ar 9 monētām, kur rezerves nav.
+-->
+
+
+### LV.NOL.2019.10.2
+
+Dotas $6$ pēc ārējā izskata vienādas monētas. Trim no tām masa katrai ir
+$50~\mathrm{g}$, bet pārējām trim - katrai $51~\mathrm{g}$. Kā, lietojot
+sviras svarus bez atsvariem, ar divām svēršanām atrast vienu monētu, kuras
+masa ir $51~\mathrm{g}$?
+
+* *Saprašana*: Uzdevums **neprasa** noskaidrot visu monētu masas - pietiek ar
+vienu monētu, par kuru esi drošs. Cik atbilžu tātad jāatšķir?
+* *Izpēte*: Sver $3$ pret $3$. Vai svari vispār var būt līdzsvarā? Ko par
+smagāko kausu var pateikt jebkurā gadījumā?
+
+<!--
+LV.NOL.2019.10.2 — pietiek atrast vienu "liecinieku", nevis visu sadalījumu.
+Smagākajā kausā vienmēr ir vismaz divas smagās 51 g monētas.
+-->
+
+
+### LV.VOL.2025.9.4
+
+Dotas septiņas pēc ārējā izskata vienādas monētas, no kurām piecas ir īstas
+(tām visām ir vienāda masa), bet divas ir viltotas (abām viltotajām ir vienāda
+masa), turklāt zināms, ka viltotā monēta ir vieglāka nekā īstā. Kā ar $3$
+svēršanām uz sviru svariem bez atsvariem atrast abas viltotās monētas?
+
+* *Izpēte*: Sver $3$ pret $3$ (viena paliek malā). Ja svari ir līdzsvarā - cik
+viltoto monētu ir katrā kausā? Vai tas var būt nulle?
+* *Saprašana*: Ja svari **nav** līdzsvarā, ko droši zini par smagāko kausu? Un
+cik viltoto monētu tad var būt vieglākajā kausā un malā atstātajā monētā?
+
+<!--
+LV.VOL.2025.9.4 — divas viltotās: līdzsvars nozīmē "pa vienai katrā kausā"
+nevis viltoto nav.
+-->
+
+
+### LV.VOL.2026.5.4
+
+Dotas $79$ pēc ārējā izskata vienādas monētas, no tām $7$ ir viltotas, bet
+pārējās ir īstas. Visu īsto monētu masa ir vienāda, visu viltoto monētu masa
+arī ir vienāda, īstā monēta ir smagāka par viltoto. Kā ar $3$ svēršanām uz
+sviras svariem bez atsvariem atrast $9$ īstās monētas?
+
+* *Saprašana*: Viltotās monētas **nav jāatrod**. Jāatrod tikai $9$ monētas,
+par kurām esi drošs, ka tās ir īstas.
+* *Pārformulēšana*: Sver $39$ pret $39$ (viena paliek malā) un paturi
+**smagāko** kausu. Cik viltoto monētu tajā var būt? (Ja tajā būtu vismaz $4$,
+tad otrā kausā būtu ne vairāk kā $3$ - un tad tas nebūtu vieglākais.)
+
+<!--
+LV.VOL.2026.5.4 — uz pusēm dala nevis monētu skaitu, bet VILTOTO skaitu: 7 -> 3 -> 1 -> 0.
+39 -> 19 -> 9.
+-->
+
+
+
+
+
 
 
 ## 2. daļa: Svēršanas uzdevumi. Cik informācijas dod viens mērījums
@@ -258,3 +339,86 @@ jautājumi nav domāti, lai uzzinātu visus četrus skaitļus.
 nesakrīt?
 * *Atskats*: Kurš jautājums šeit ir "adaptīvs" - tāds, ko izvēlas atkarībā no
 iepriekšējās atbildes? Vai ar trim **iepriekš fiksētiem** jautājumiem pietiktu?
+
+
+### Uzdevums (5 bumbas un elektroniskie svari)
+
+Dotas $5$ pēc ārējā izskata vienādas bumbas, kuru masas ir $1000~\mathrm{g}$,
+$1001~\mathrm{g}$, $1002~\mathrm{g}$, $1004~\mathrm{g}$ un $1007~\mathrm{g}$.
+Doti arī elektroniskie svari, kas rāda masu gramos. Kā ar trīs svēršanām
+atrast bumbu, kuras masa ir $1000~\mathrm{g}$?
+
+* *Izpēte*: Atņem no katras masas $1000$ - paliek $0, 1, 2, 4, 7$. Izraksti
+visas $10$ summas, ko var iegūt, saskaitot divus no šiem skaitļiem. Vai tās
+visas ir dažādas?
+* *Pārformulēšana*: Ja vienā svēršanā uzliec divas bumbas, ko tieši pasaka
+rādījums? Cik svēršanu vēl vajag, lai no pāra izvēlētos pareizo bumbu?
+
+<!--
+Klasika, bez konkrēta olimpiādes avota (sk. prompt.md, 9. piemērs).
+Nobīdes 0,1,2,4,7 - visas pāru summas dažādas, tāpēc viena svēršana identificē pāri.
+-->
+
+
+### LV.NOL.2009.6.5
+
+Dotas $200$ pēc ārējā izskata vienādas monētas. Puse no tām sver pa $100$
+gramiem katra, puse - pa $101$ gramu katra. Doti sviras svari bez atsvariem.
+Jāizveido divas monētu kaudzītes, lai to svari atšķirtos, bet monētu daudzumi
+tajās būtu vienādi. Ar kādu mazāko svēršanu skaitu Jūs to spējat izdarīt?
+(**Piezīme.** Nav jācenšas pierādīt, ka Jūsu sasniegtais svēršanu skaits ir
+mazākais iespējamais.)
+
+* *Saprašana*: Atbilde ir pārsteidzoši maza. Pirms sāc būvēt garu procedūru,
+pamēģini, cik tālu var tikt ar **vienu** svēršanu.
+* *Izpēte*: Sver $67$ pret $67$ ($66$ paliek malā). Ja svari nav līdzsvarā -
+gatavs. Ja ir līdzsvarā, pieņem, ka arī malā atstātās $66$ sver tikpat, cik
+kādas $66$ no kausa, un saskaiti, cik pavisam sanāk "vieglo" monētu. Vai $100$
+tā var iegūt?
+
+<!--
+LV.NOL.2009.6.5 — atbilde ir 1 svēršana; pamatojums: vieglo monētu skaits iznāktu
+3x vai 3x+2, bet 100 nav neviena no tiem.
+-->
+
+
+### LV.NOL.2007.7.5
+
+Profesoram Cipariņam ir $10$ monētas; tieši $2$ no tām ir viltotas, bet viņš
+nezina, kuras. Cipariņš pazīst burvi, kuram vienā reizē var iedot pārbaudīt
+$3$ monētas; pēc pārbaudes burvis atdod monētas atpakaļ un klusējot norāda uz
+vienu no tām. Ir zināms: burvis nenorāda uz īstu monētu, ja starp viņam
+iedotajām trim monētām ir kaut viena viltota. Kā ar $4$ pārbaudēm Cipariņš var
+garantēti noskaidrot vismaz vienu viltoto monētu?
+
+* *Saprašana*: Pieraksti precīzi, ko burvja norāde **garantē** un ko **ne**.
+Ja iedotajās trijās monētās viltoto nav, vai burvja norādei ir kāda nozīme?
+* *Izpēte*: Izmanto pirmās trīs pārbaudes deviņām monētām (trīs reizes pa
+trim). Vai starp šīm deviņām noteikti ir vismaz viena viltota?
+
+<!--
+LV.NOL.2007.7.5 — nedrošs informācijas avots: garantija ir nosacīta.
+3 pārbaudes dod A, D, G; ceturtajā pārbauda tieši tās.
+-->
+
+
+### LV.AMO.2016.9.5
+
+Sivēnam ir $10$ podi ar medu, kas pēc kārtas sanumurēti ar skaitļiem no $1$
+līdz $10$. Kādu dienu viņš uzzināja, ka Vinnijs Pūks slepeni ir izēdis četrus
+no tiem, pie tam to numuri veido aritmētisko progresiju. Katra poda saturu
+Sivēns var pārbaudīt. Pierādīt, ka viņš var noskaidrot, kuri tieši ir izēstie
+podi, pārbaudot ne vairāk kā četrus podus!
+
+* *Izpēte*: Cik pavisam ir iespējamu atbilžu? Uzraksti visas aritmētiskās
+progresijas ar četriem locekļiem no $1$ līdz $10$ - cik lielas var būt
+diferences $d$ vērtības?
+* *Atskats*: Cik dažādus iznākumus dod četras pārbaudes? Salīdzini ar atbilžu
+skaitu - vai rezerve ir liela?
+
+<!--
+LV.AMO.2016.9.5 — nosacījums "aritmētiskā progresija" samazina iespēju skaitu līdz 12
+(d=1: 7 gadījumi, d=2: 4, d=3: 1), un 2^4 = 16 > 12.
+Atrisinājums: pārbauda 4., 5., 6. podu un vēl vienu.
+-->
+
