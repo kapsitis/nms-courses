@@ -3,7 +3,7 @@
 **Ievads:** 
 Jūsu uzdevums ir atlasīt piemērotākos uzdevumus tematam, 
 `910_expressions_inequalities` - tas ir 9. un 10.klasei domāts temats, kurā stāsta 
-par invariantiem. 
+par algebrisku izteiksmju pārveidojumiem un nevienādībām.
 Sk. `nms-courses\docs\matf910\26_27\910_expressions_inequalities\index.md` - šī 
 temata tvērumu, motivāciju un sasniedzamos rezultātus. 
 Temats ir daļa no apmācību kursa 
@@ -11,7 +11,7 @@ Temats ir daļa no apmācību kursa
 
 **Kas jāizdara:** 
 
-Veiciet šādas izmaiņas direktorijā `nms-courses\docs\matf78\26_27\78_invariants`:
+Veiciet šādas izmaiņas direktorijā `nms-courses\docs\matf910\26_27\910_expressions_inequalities`:
 
 1. Izveidojiet tajā jaunu failu `problems.rq` ar SPARQL vaicājumu, kas izveido 
    garo sarakstu ar tiem uzdevumiem, kuri (pēc formulējuma vai kāda no atrisinājumiem)
