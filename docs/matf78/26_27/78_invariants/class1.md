@@ -101,3 +101,10 @@ No (41, 62) ejam atpakaļ. (41, 62) -> (41, 21) -> (21, 20)
 0,1,1,2,3,5,8,13,21,34,55,89,144
 0,1,3,4,7,11,18,29,
 -->
+
+## 3.uzdevums (LV.NOL.2026.10.3)
+No $24$ melniem un $25$ baltiem kubiņiem ir izveidots "tornis", saliekot 
+kubiņus vienu virs otra. Uz katra melnā kubiņa ir uzrakstīts balto 
+kubiņu skaits, kas atrodas virs tā, bet uz katra baltā kubiņa 
+ir uzrakstīts melno kubiņu skaits, kas atrodas virs tā. 
+Kāda var būt visu uzrakstīto skaitļu summa?

@@ -32,7 +32,7 @@ Pavasara semestrī arī datumi var mainīties, ja pulciņi vairs nav piektdienā
 | **7.4. temats** | Dalāmība un atlikumi: Darbības ar dažādu krāsu skaitļiem |
 | 2026-10-30 | **7.4.A.** Dalāmība un atlikumi |
 | 2026-11-06 | **7.4.B.** Dalāmība un atlikumi |
-| 2026-11-13 | **AMO gatavošanās**. Atklātajai olimpiādei līdzīgi uzdevumi |
+| 2026-11-13 | **AMO gatavošanās**. [Svēršanas uzdevumi]({{'/matf78/26_27/78AMO_PREPARATION/78_weighing_problems/' | relative_url }}), [1.materiāls (pdf)]({{ '/matf78/26_27/78AMO_PREPARATION/78_weighing_problems/class1/' | relative_url }}), [2.materiāls (pdf)]({{ '/matf78/26_27/78AMO_PREPARATION/78_weighing_problems/class2/' | relative_url }}) |
 | 2026-11-20 | **AMO gatavošanās**. Atklātajai olimpiādei līdzīgi uzdevumi |
 | - | *AMO, 22.novembrī* |
 | 2026-11-27 | **AMO analīze** |
