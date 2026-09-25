@@ -15,9 +15,9 @@ Pavasara semestrī datumi var mainīties, ja pulciņi vairs nav piektdienā.
 | **9.1. temats** | [Atrisinājumu struktūras: Kas ir pilns pierādījums]({{ '/matf910/26_27/910_solution_structure/' | relative_url }}) |
 | 2026-09-11 | **9.1.A.** Atrisinājumu struktūras: Seši jautājumu tipi [1.materiāls (pdf)]({{ '/matf910/26_27/910_solution_structure/matf910-2026_27-910_solution_structure-class1.pdf' | relative_url }}) |
 | 2026-09-18 | **9.1.B.** Atrisinājumu struktūras: Pierādījumi no pretējā [2.materiāls (pdf)]({{ '/matf910/26_27/910_solution_structure/matf910-2026_27-910_solution_structure-class2.pdf' | relative_url }}) |
-| **9.2. temats** | Izteiksmes un nevienādības: pilnā kvadrāta metode |
-| 2026-09-25 | **9.2.A.** Izteiksmes un nevienādības: pilnā kvadrāta metode |
-| 2026-10-02 | **9.2.B.** Izteiksmes un nevienādības: pilnā kvadrāta metode |
+| **9.2. temats** | [Izteiksmes un nevienādības: Pilnā kvadrāta metode]({{ '/matf910/26_27/910_expressions_inequalities/' | relative_url }}) |
+| 2026-09-25 | **9.2.A.** Izteiksmes un nevienādības: Identitātes un pilnais kvadrāts [1.materiāls]({{ '/matf910/26_27/910_expressions_inequalities/class1/' | relative_url }}) |
+| 2026-10-02 | **9.2.B.** Izteiksmes un nevienādības: Daļas un saknes [2.materiāls]({{ '/matf910/26_27/910_expressions_inequalities/class2/' | releative_url }}) |
 | **9.3. temats** | Dalāmība, atlikumi un kongruences |
 | 2026-10-09 | **9.3.A.** Dalāmība, atlikumi un kongruences |
 | 2026-10-16 | **9.3.B.** Dalāmība, atlikumi un kongruences |

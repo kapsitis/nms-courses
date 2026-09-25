@@ -12,6 +12,8 @@ Nevienādību pierādīšana bez matemātiskās analīzes.
 (Sk. [Matemātikas olimpiāžu satura standarts]({{ '/common_olympiad_program/olimpiazu_standarts/' | relative_url }})
 
 * **Uzdevumu lapa:** {% include doc_links.html url="/matf910/26_27/910_expressions_inequalities/problems/" %}
+* **1.nodarbības materiāls:** {% include doc_links.html url="/matf910/26_27/910_expressions_inequalities/class1/" %}
+* **2.nodarbības materiāls:** {% include doc_links.html url="/matf910/26_27/910_expressions_inequalities/class2/" %}
 {: .small}
 
 * SR: Lieto saīsinātās reizināšanas formulas abos virzienos, arī identitātes

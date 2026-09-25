@@ -6,3 +6,6 @@ matf78/26_27/78_invariants/matf78-2026_27-78_invariants-problems.pdf
 matf78/26_27/78_invariants/matf78-2026_27-78_invariants-class1.pdf
 matf78/26_27/78_invariants/matf78-2026_27-78_invariants-class2.pdf
 matf78/26_27/78SHORT_ANSWERS/test19_junior/matf78-2026_27-78SHORT_ANSWERS-test19_junior-index.pdf
+matf910/26_27/910_expressions_inequalities/matf910-2026_27-910_expressions_inequalities-problems.pdf
+matf910/26_27/910_expressions_inequalities/matf910-2026_27-910_expressions_class1.pdf
+matf910/26_27/910_expressions_inequalities/matf910-2026_27-910_expressions_class2.pdf
