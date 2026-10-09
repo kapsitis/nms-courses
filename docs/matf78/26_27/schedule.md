@@ -25,9 +25,9 @@ Pavasara semestrī arī datumi var mainīties, ja pulciņi vairs nav piektdienā
 | **7.2. temats** | [Invarianti: Kas saglabājas, veicot atļautos gājienus]({{ '/matf78/26_27/78_invariants/' | relative_url }}) |
 | 2026-09-25 | **7.2.A.** Invarianti: Skaitliski invarianti [1.materiāls (pdf)]({{ '/matf78/26_27/78_invariants/matf78-2026_27-78_invariants-class1.pdf' | relative_url }}) |
 | 2026-09-02 | **7.2.B.** Invarianti: Rūtiņu krāsojumi [2.materiāls (pdf)]({{ '/matf78/26_27/78_invariants/matf78-2026_27-78_invariants-class2.pdf' | relative_url }}) |
-| **7.3. temats** | 7.3. Dirihlē princips: Kad (trušu) sadursmes ir neizbēgamas |
-| 2026-10-09 | **7.3.A.** Dirihlē princips |
-| 2026-10-16 | **7.3.B.** temats. Dirihlē princips |
+| **7.3. temats** | Dirihlē princips: Kad (trušu) sadursmes ir neizbēgamas |
+| 2026-10-09 | **7.3.A.** Dirihlē princips. |
+| 2026-10-16 | **7.3.B.** Dirihlē princips. |
 | - | *Rudens brīvdienas 19.-23. oktobris* |
 | **7.4. temats** | Dalāmība un atlikumi: Darbības ar dažādu krāsu skaitļiem |
 | 2026-10-30 | **7.4.A.** Dalāmība un atlikumi |

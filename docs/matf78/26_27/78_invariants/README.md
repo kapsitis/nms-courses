@@ -1,4 +1,4 @@
-## 78INV_invariants
+## 7.8. Invarianti
 
 **Virsraksts:** Atrisinājumu struktūras: Uzdotajam jautājumam atbilstoša atbilde
 

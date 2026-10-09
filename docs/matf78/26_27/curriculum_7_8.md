@@ -468,9 +468,12 @@ Dirihlē princips kopā ar novērtējuma pierādījumu, izmantojot vidējās vē
 ekstremālā elementa metodi. 
 *Standarta līnijas: K2, M5, M7.*
 
-* SR: Lieto vienkāršo un vispārināto Dirihlē principu, patstāvīgi izvēloties "trušus" un "kastes" (atlikumu klases, krāsas, plaknes apgabalus, u.c.).
-* SR: Sāk spriedumu no ekstremālā elementa ("aplūkojam lētāko / lielāko / malējo..."), lai iegūtu novērtējumu.
-* SR: Optimizācijas uzdevumos ("atrast lielāko ...") — konstruē piemēru un ar Dirihlē principu pierāda, ka to nevar uzlabot.
+* SR: Lieto vienkāršo un vispārināto Dirihlē principu, patstāvīgi izvēloties 
+  "trušus" un "kastes" (atlikumu klases, krāsas, plaknes apgabalus, u.c.).
+* SR: Sāk spriedumu no ekstremālā elementa ("aplūkojam lētāko / lielāko / malējo..."), 
+  lai iegūtu novērtējumu, balstoties uz elementu skaitu kopā.
+* SR: Optimizācijas uzdevumos ("atrast lielāko ...") — konstruē piemēru 
+  un ar Dirihlē principu pierāda, ka to nevar uzlabot.
 
 **Piemēri:** [LV.NOL.2024.7.5](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.7.5) un [LV.NOL.2024.8.4](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.8.4) (toršu pirkšana — ekstremālais elements + novērtējums), [LV.NOL.2024.8.3](https://eliozo.dudajevagatve.lv/problem?problemid=LV.NOL.2024.8.3) (punkti režģī — Dirihlē pa rindām).
 

@@ -3,15 +3,10 @@ layout: default
 title: "7.2.temats: Invarianti: Kas saglabājas, veicot atļautos gājienus"
 permalink: /matf78/26_27/78_invariants/
 ---
-# 7.2.temats: Invarianti: Kas saglabājas, veicot atļautos gājienus
+# 7.2.temats. Invarianti: Kas saglabājas, veicot atļautos gājienus
 
-**Mērķis:** Kā lasīt uzdevumu, kā veidot jautājumam 
-atbilstošu risinājuma struktūru. Kādus jautājumus sev 
-uzdot pirms uzskatīt par atrisinātu. Kā analizēt vienkāršus 
-6.-7.kl. olimpiāžu uzdevumus.
-Matemātikā var izmantot jau zināmus vai izdomāt jaunus invariantus; 
-tie veic līdzīgu lomu kā (enerģijas, masas, u.c.) nezūdamības 
-likumi fizikā.
+**Mērķis:** Kā izmantot jau zināmus vai izdomāt jaunus invariantus, 
+lai pamatotu kādas procedūras vai konstrukcijas neiespējamību.
 
 * **Uzdevumu lapa:** {% include doc_links.html url="/matf78/26_27/78_invariants/problems/" %}
 * **1.nodarbības materiāls:** {% include doc_links.html url="/matf78/26_27/78_invariants/class1/" %}
@@ -32,7 +27,10 @@ formulē invariantu, kurš procesa laikā nemainās.
 Invariantu risinātājs pats definē kā **skaitli, kas procesa laikā nemainās**.
 Dažos gadījumos tas ir viegli atpazīstams lielums — visu monētu
 kopsumma vai uzrakstīto skaitļu summa. Citreiz nemainīga
-var būt skaitļu summa mīnus izdarīto gājienu skaits (ja katrā solī summa palielinās par $1$). 
+var būt skaitļu summa mīnus izdarīto gājienu skaits (ja katrā solī summa palielinās par $1$).
+Invarianti matemātikā veic līdzīgu lomu kā (enerģijas, masas, u.c.) nezūdamības 
+likumi fizikā.
+
 
 Pēc invarianta definēšanas, pieraksta šo 3 soļu shēmu: 
 
