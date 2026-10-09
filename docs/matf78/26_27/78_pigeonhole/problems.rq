@@ -1,0 +1,89 @@
+# 7.3. temats "Dirihlē princips": garais kandidātu saraksts.
+#
+# Meklējam 6.-9. klases uzdevumus, kuros atrisinājuma kodols ir DIRIHLĒ
+# PRINCIPS ("ja n+1 trusis ir n būros, tad kādā būrī ir vismaz divi truši")
+# vai tā tuvākie radinieki - vidējās vērtības spriedums un ekstremālā elementa
+# metode, kad tos lieto novērtējuma pierādīšanai. Kandidātus atrodam divos
+# neatkarīgos veidos un apvienojam ar UNION:
+#
+#   (a) birkas - trīs slāņi, salīdzināti kā viens tekstisks ?tag:
+#       * eliozo:_hasSolutionConcept / _hasReasoningMethod - "PigeonholePrinciple",
+#         "PigeonholePrincipleBasic", "PigeonholePrincipleGeneralized",
+#         "PigeonholeInNT", "NumTheoryPigeonhole", "ExtremalElementArgument",
+#         "NumTheoryExtremeElement";
+#       * eliozo:topic / eliozo:method IRI - MTH_PigeonholePrincipleBasic,
+#         MTH_PigeonholePrincipleGeneralized, MTH_ContinuousPigeonholePrinciple,
+#         MTH_ExtremeElements, MTH_MeanValuePrinciple;
+#   (b) atrisinājuma teksts - kāds no oficiālajiem atrisinājumiem
+#       (eliozo:problemSolution / eliozo:solutionText) piemin "Dirihl...".
+#       Tas noķer vecākus uzdevumus, kuriem birkas vēl nav pievienotas.
+#
+# Apzināti NEŅEMAM birku "ArithmeticMean" pašu par sevi: ar to iezīmēti arī
+# vienkārši vidējā aritmētiskā aprēķini (vidējā atzīme, vidējais ātrums),
+# kuros nav nekāda novērtējuma "kāds elements ir vismaz vidējais".
+#
+# ?families sagrupē kandidātus, lai no garā saraksta būtu ērti veidot
+# abu nodarbību "trepes":
+#   Basic    - vienkāršais/vispārinātais princips, kastes - krāsas, atlikumi,
+#              komplekti                                     (1. nodarbība),
+#   Geom     - kastes - plaknes apgabali, rūtiņas, rindas    (1.-2. nodarbība),
+#   Extremal - ekstremālais elements, vidējā vērtība,
+#              optimizācija "piemērs + novērtējums"          (2. nodarbība),
+#   Text     - atrasts tikai pēc atrisinājuma teksta.
+#
+# Izpilde:
+#   python nms-courses/scripts/select_problems.py \
+#          nms-courses/docs/matf78/26_27/78_pigeonhole/problems.rq
+
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+SELECT ?problemID ?grade ?diff
+       (GROUP_CONCAT(DISTINCT ?family;       separator="+") AS ?families)
+       (GROUP_CONCAT(DISTINCT ?domain;       separator="/") AS ?domains)
+       (GROUP_CONCAT(DISTINCT ?questionType; separator="/") AS ?questionTypes)
+       (GROUP_CONCAT(DISTINCT ?tag;          separator=",") AS ?tags)
+WHERE {
+  ?p a eliozo:Problem ;
+     eliozo:problemID ?problemID ;
+     eliozo:problemGrade ?grade ;
+     eliozo:problemYear ?year ;
+     eliozo:domain ?domain ;
+     eliozo:questionType ?questionType ;
+     eliozo:problemText ?text .
+  OPTIONAL { ?p eliozo:_readingDifficulty ?diff }
+
+  {
+    {
+      { ?p eliozo:_hasSolutionConcept ?tag }
+      UNION
+      { ?p eliozo:_hasReasoningMethod ?tag }
+      UNION
+      { ?p eliozo:topic  ?topicIRI  . BIND(REPLACE(STR(?topicIRI),  "^.*#", "") AS ?tag) }
+      UNION
+      { ?p eliozo:method ?methodIRI . BIND(REPLACE(STR(?methodIRI), "^.*#", "") AS ?tag) }
+      FILTER (REGEX(STR(?tag), "Pigeonhole|ExtremalElement|ExtremeElement|MeanValuePrinciple"))
+    }
+    UNION
+    {
+      ?p eliozo:problemSolution ?sol .
+      ?sol eliozo:solutionText ?solText .
+      FILTER (CONTAINS(STR(?solText), "Dirihl"))
+      BIND ("SolutionMentionsDirichlet" AS ?tag)
+    }
+  }
+
+  BIND (
+    IF (REGEX(?tag, "Extrem|Mean"),                 "Extremal",
+    IF (?tag = "SolutionMentionsDirichlet",         "Text",
+    IF (?domain = "Geom" || CONTAINS(?tag, "Continuous"), "Geom",
+                                                    "Basic"))) AS ?family )
+
+  FILTER (LANGMATCHES(LANG(?text), "lv"))
+  FILTER (?grade >= 6 && ?grade <= 9)   # 7.-8. klases līmenis ar rezervi uz abām pusēm
+  FILTER (?year >= 2003 && ?year <= 2026)
+
+  # Dirihlē uzdevumā vērtīgs ir pamatojums, nevis tikai skaitliskā atbilde.
+  FILTER (?questionType != "ShortAnswer")
+}
+GROUP BY ?problemID ?grade ?diff
+ORDER BY ?families ?grade ?problemID
